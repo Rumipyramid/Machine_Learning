@@ -1,6 +1,6 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 6
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 7
 (integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; ocho documentos
 internos del equipo se omiten de esta copia; el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.1, 2026-10-28). Las fuentes se
@@ -13,7 +13,12 @@ citan como (Autor, año) y con su número del registro de fuentes del proyecto (
 - RIMAC está excluida como caso, fuente o benchmark.
 
 **Cómo leer las marcas:** 📎 señala lo que entró o cambió con los documentos aportados. Así se ve en qué secciones
-repercutieron. La §7 resume ese cambio teoría por teoría.
+repercutieron. La §7 resume ese cambio teoría por teoría. 🔧 señala lo que se agregó en la versión 7 para aterrizar el
+informe: qué significa cada teoría, cómo se mide, ejemplos y qué decisión ayuda a tomar.
+
+**Mapa rápido para decidir:** la §2.1 explica cada forma de valor con ejemplos; la §3.1 muestra qué tarea conviene en
+qué canal; la §4.1 traduce la lectura conductual en reglas de decisión; la §5 ordena las decisiones de la gerencia; el
+Anexo C explica los métodos de medición con ejemplos; el Anexo D lista los datos que hay que pedir a los ramos.
 
 ---
 
@@ -64,6 +69,86 @@ escalados. La otra es el costo de servir, limitado a las tareas de información 
 teoría 2, que es la tesis central del canal ("el cliente digital es más fiel"), es la menos probada en
 seguros. 📎 La teoría 5 sigue siendo asociación, pero es la única que acumula evidencia peruana de varios tipos.
 
+### 2.1 🔧 Qué significa cada teoría, con ejemplos
+
+Cada teoría es una respuesta distinta a la pregunta "¿para qué queremos que el cliente use el canal digital?". Elegir
+una cambia qué se construye, qué se mide y qué se considera éxito. Los ejemplos de seguros son ilustrativos: muestran
+cómo se vería la teoría en la práctica, no son evidencia.
+
+**1. Costo de servir: que resolver le cueste menos a la compañía.**
+
+- **Qué es.** Lo digital crea valor si atiende una necesidad que hoy cuesta más por otro canal (una llamada, una visita,
+  un correo que alguien procesa a mano).
+- **Cómo produce valor.** Un pedido resuelto en el app cuesta menos que el mismo pedido en el call center. Pero solo si
+  el pedido no vuelve por otro canal.
+- **Ejemplo.** Un asegurado de salud quiere saber en qué va su reembolso. Si el app muestra "en revisión, pago estimado
+  el jueves, no falta ningún documento", no llama. Si solo dice "en proceso", llama dos veces.
+- **Qué decisión informa.** Qué flujos mover primero a digital y cuáles rediseñar antes de moverlos.
+- **Cómo se mide.** Con **contactos por necesidad resuelta**: cuántas veces tuvo que contactar el cliente, por cualquier
+  canal, para resolver una necesidad. Ejemplos de necesidad: "cobrar un reembolso", "obtener la carta de garantía",
+  "reportar un choque y tener el auto reparado", "descargar la constancia del SOAT", "cambiar la tarjeta de cobro". Si un
+  reembolso generó una carga en el app, dos llamadas de "¿en qué va?" y un chat, son cuatro contactos para una
+  necesidad. La meta es bajar ese número, no subir las visitas al app. Indicadores derivados: tasa de recontacto a 7
+  días, contactos de "¿en qué va mi trámite?" por caso y porcentaje resuelto sin intervención humana (detalle en el
+  Anexo C).
+- **Trampa.** Contar como éxito las sesiones del app. El cliente que entra cinco veces a revisar su reembolso no es un
+  cliente comprometido: es un cliente que no sabe qué está pasando.
+
+**2. Retención: que el cliente se quede más tiempo.**
+
+- **Qué es.** Lo digital crea valor si hace que el cliente renueve o mantenga su póliza más que si no lo usara.
+- **Cómo produce valor.** Cada año que el cliente se queda aporta prima sin costo de adquisición.
+- **Ejemplo.** Dos clientes de vehicular. Uno usa el app y renueva; el otro no la usa y se va. La pregunta es si el app
+  *causó* la renovación o si el que la usa ya era el tipo de cliente que renueva.
+- **Qué decisión informa.** Cuánto invertir en el app como herramienta de fidelización.
+- **Cómo se mide.** Con **renovación** (porcentaje que renueva al vencer la póliza) o **persistencia** (porcentaje de
+  pólizas que siguen vigentes a los 13 y 25 meses, la medida usual en vida). Para saber si lo digital la causa, se
+  compara contra **cohortes emparejadas** o con un **despliegue escalonado** (explicados en el Anexo C).
+- **Trampa.** Comparar usuarios y no usuarios del app y atribuir la diferencia al app. Quien adopta lo digital ya era
+  distinto antes de adoptarlo (§3.2).
+
+**3. Venta cruzada: que el cliente compre más productos.**
+
+- **Qué es.** Lo digital crea valor si un cliente que lo usa termina comprando otro seguro.
+- **Cómo produce valor.** Vender a quien ya es cliente cuesta menos que conseguir uno nuevo.
+- **Ejemplo.** Quien compra el SOAT en línea recibe, en el momento correcto, una oferta de vehicular o de salud. O una
+  billetera ofrece un seguro a quien paga con ella todos los días.
+- **Qué decisión informa.** Si construir una puerta de entrada propia (como el SOAT) o aliarse con quien ya tiene la
+  relación diaria (un banco, una billetera, un empleador).
+- **Cómo se mide.** Productos por cliente; tasa de conversión de oferta a póliza; prima nueva que viene de clientes
+  existentes; y, para saber si es efecto, la misma comparación contra un grupo de control.
+- **Trampa.** Ver que los clientes digitales tienen más productos y concluir que lo digital los vendió. Puede ser al
+  revés: quien ya tiene varios productos usa más el app.
+
+**4. Prevención: que el cliente tenga menos siniestros.**
+
+- **Qué es.** Lo digital crea valor si cambia la conducta de riesgo: manejar mejor, hacerse chequeos, cuidar la casa.
+- **Cómo produce valor.** Menos siniestros o siniestros más baratos bajan el costo de la cartera.
+- **Ejemplo.** Un programa de manejo con puntaje en el app; un programa de bienestar con retos de pasos.
+- **Qué decisión informa.** Si invertir en programas de engagement y bienestar, y cómo evaluarlos.
+- **Cómo se mide.** Con **siniestralidad por cohorte, separando selección de efecto**. "Siniestralidad" es cuánto se
+  paga en siniestros frente a la prima. "Por cohorte" significa comparar grupos que entraron en el mismo momento.
+  "Separar selección de efecto" significa distinguir si el grupo siniestra menos *porque el programa lo cambió* (efecto)
+  o *porque los que se inscriben ya eran de menor riesgo* (selección). El ejemplo más claro es el de un ensayo de
+  bienestar laboral: los que se inscribieron gastaban 24% menos en salud *antes* de empezar; una comparación simple decía
+  que el programa ahorraba US$104 al mes por persona; el ensayo con grupo de control mostró que no ahorraba nada (Jones,
+  Molitor y Reif, 2019, F-854; detalle en §3.4 y en el Anexo C).
+- **Trampa.** Presentar como prevención lo que es selección. La selección también vale (atrae buenos riesgos), pero se
+  mide distinto y tiene otro costo: puede trasladar el costo a los clientes más pobres o enfermos.
+
+**5. Confianza en el momento de verdad: que el cliente sienta que el seguro cumplió.**
+
+- **Qué es.** Lo digital crea valor si ayuda a que el siniestro, el reembolso o la atención se resuelvan rápido, claro y
+  con justicia.
+- **Cómo produce valor.** El cliente decide si se queda, recomienda o reclama según cómo le fue cuando lo necesitó.
+- **Ejemplo.** Tras un choque, el cliente reporta por el canal que prefiera, ve en todo momento en qué va su caso y sabe
+  qué falta; si hay rechazo, recibe una explicación que entiende y una persona a quien preguntar.
+- **Qué decisión informa.** Dónde poner la inversión digital en el siniestro y dónde poner personas.
+- **Cómo se mide.** Tiempo desde el aviso hasta la resolución; porcentaje resuelto al primer intento; porcentaje que
+  escala de digital a humano sin haberlo planificado; reclamos ante la compañía, y los que escalan a Indecopi o la SBS.
+- **Trampa.** Medir solo el porcentaje de siniestros reportados por el app. Un reporte digital que termina en tres
+  llamadas y un reclamo no es un éxito.
+
 ---
 
 ## 3. Hallazgos por teoría de valor
@@ -73,9 +158,20 @@ seguros. 📎 La teoría 5 sigue siendo asociación, pero es la única que acumu
 - **El estudio causal más directo es de una aseguradora de salud.** Usar el portal subió las llamadas 14% en
   total. Bajaron 29% las de información clara. Subieron las de información ambigua, como pólizas y reclamos
   (Kumar y Telang, 2012, F-850).
-- **En banca pasa lo mismo.** Quienes adoptan la banca online hacen más transacciones en total y usan *más* el
-  call center y la sucursal. En el corto plazo, el cliente se vuelve menos rentable (Campbell y Frei, 2010,
-  F-847).
+- 🔧 **En banca pasó algo parecido, y vale la pena entenderlo bien.** Campbell y Frei siguieron a 100.000 clientes de un
+  banco grande de EE.UU. durante 30 meses (2010, F-847; detalle verificado con el resumen editorial de la revista,
+  Gorman, 2010, F-931). Quienes empezaron a usar la banca online:
+  - usaron *menos* el cajero y la respuesta automática por teléfono, los canales baratos;
+  - usaron *más* la sucursal y el call center, los canales caros. Los autores lo atribuyen, como hipótesis, a que les
+    costaba entender y usar el canal nuevo;
+  - hicieron más transacciones en total, porque cada una les costaba menos esfuerzo; por eso el costo promedio por
+    cliente subió;
+  - dejaron 11% menos de utilidad por cliente el primer año, por más costo y por menos comisiones cobradas.
+
+  A cambio, el banco ganó satisfacción, retención a uno y tres años, y participación de mercado. Los autores controlan
+  que quien adopta ya era distinto. La lección del editor de la revista: el beneficio principal del canal en línea es
+  atraer y retener clientes, más que hacer más rentables a los que ya están. **Para un seguro:** lanzar un canal digital
+  puede *subir* los contactos al principio. Si la meta es costo, hay que medir contactos por necesidad, no adopción.
 - **Un banco alemán muestra lo contrario.** Con un grupo de control emparejado, quienes adoptan la banca móvil
   usan *menos* el call center (Becker et al., 2022, F-849).
 - **Perú:** Pacífico reporta que más de 60% de las consultas y solicitudes se resuelven por autoservicio (chatbot
@@ -93,6 +189,20 @@ ambigua. En lo ambiguo, primero se rediseña el contenido; si no, el ahorro espe
 Este patrón coincide con lo que muestra el diagnóstico interno de julio: lo digital gana en consultar y pierde
 en gestionar y en lo urgente. 📎 La meta no es mover todo a digital. Es que cada tarea se resuelva en el canal que
 mejor la resuelve, y medir la resolutividad por canal.
+
+**🔧 Qué tarea conviene en qué canal: ejemplos.** La regla de fondo sale de la evidencia: lo claro y repetible migra a
+digital; lo ambiguo, emocional o de alto monto necesita una persona, con lo digital acompañando. La tabla es una
+propuesta para discutir con los ramos, no un hallazgo.
+
+| Tipo de tarea | Ejemplos | Canal que mejor resuelve | Cómo saber si funciona | Evidencia detrás |
+|---|---|---|---|---|
+| Información clara y transaccional | Descargar la póliza o la constancia del SOAT; pagar la prima; cambiar la tarjeta; ver el estado de un reembolso; ubicar una clínica de la red | Autoservicio digital | Porcentaje resuelto sin ningún contacto posterior en 7 días | Lo claro migra y baja las llamadas (F-850) |
+| Seguimiento de un trámite en curso | "¿En qué va mi reembolso?", "¿cuándo me pagan?", "¿mi auto ya está en el taller?" | Digital proactivo: avisar antes de que el cliente pregunte | Llamadas de "¿en qué va?" por caso | El seguimiento visible devuelve control; la ambigüedad genera llamadas (F-850) |
+| Información ambigua o con consecuencias | "¿Esto me cubre?", preexistencias, deducibles, por qué rechazaron un reembolso | Digital con explicación en lenguaje claro y salida a una persona a un clic | Tasa de recontacto y de escalamiento | Lo ambiguo vuelve al teléfono (F-850); 30% de los reclamos complejos termina en una persona (F-183) |
+| Siniestro simple y de bajo monto | Choque leve, rotura de lunas, reembolso de una consulta | Digital de punta a punta, con reglas de pago rápido | Tiempo hasta el pago; porcentaje pagado sin intervención | Vía rápida para siniestros simples (F-865, F-900) |
+| Siniestro grave o de alta carga emocional | Hospitalización, fallecimiento, pérdida total, robo con violencia | Persona que acompaña, con lo digital para documentos y seguimiento | Tiempo a resolución; reclamos; satisfacción al cierre | La confianza pesa más que el canal (F-874); el pago rápido y justo crea valor (F-896) |
+| Decisión de compra compleja | Elegir un seguro de salud o de vida | Buscar en línea y cerrar con una persona | Conversión de cotización en línea a póliza con asesor | La gente busca en línea y compra con una persona (F-918, F-900); solo 20% en Perú compraría digital (F-903) |
+| Cancelación | Dar de baja una póliza | Digital y sin fricción artificial, con una oferta de retención opcional | Tiempo para cancelar; quejas | El regulador británico sancionó la fricción para retener (F-886) |
 
 ### 3.2 Retención: plausible en otras industrias, sin probar en seguros
 
@@ -120,9 +230,26 @@ mejor la resuelve, y medir la resolutividad por canal.
   (representantes del sector citados por prensa, vía el diagnóstico del PNUD, F-902; cita secundaria). En México, 47%
   de quienes dejaron de tener seguro lo atribuye a un cambio de trabajo (Treo, c. 2021, F-898, con datos de la ENIF
   2018). Ese tipo de fuga no la resuelve ningún canal.
+
+  🔧 **Qué es un "ancla".** Es la relación externa al seguro que lo mantiene vigente sin que el cliente lo decida cada
+  año. Cuando el ancla se acaba, el seguro queda expuesto. Las anclas más comunes:
+
+  | Ancla | Qué seguros sostiene | Qué pasa cuando se acaba | Evidencia |
+  |---|---|---|---|
+  | Crédito hipotecario | Desgravamen; incendio y terremoto de la vivienda | Al terminar de pagar, solo 12% mantiene el seguro de terremoto | F-902 (cita secundaria) |
+  | Empleo | Salud (EPS, planes colectivos), vida ley, seguros del empleador | Al cambiar de trabajo, 47% de quienes dejaron de tener seguro en México lo perdió | F-898 |
+  | Crédito o financiamiento del vehículo | Seguro vehicular exigido por el banco | Al terminar el crédito, el cliente decide solo por primera vez | Inferencia; no se encontró dato |
+  | Microcrédito | Microseguro de vida o de desgravamen | Se sostiene mientras dura el crédito, pagado al ritmo de la cuota | F-896, F-897 |
+  | Cuenta, tarjeta o billetera | Seguros masivos vendidos por el banco o la billetera | Depende del banco; la billetera no subió la tenencia por sí sola | F-906 |
+  | La clínica (en salud) | Planes y seguros de salud | Si el cliente puede atenderse en su clínica sin el seguro, el seguro sobra | Hipótesis |
+  | El corredor | Cartera del segmento de mayor ingreso | Si el corredor se cambia de aseguradora, puede llevarse al cliente | Hipótesis |
+
+  **Para decidir:** identificar el ancla de cada cartera y diseñar el momento en que se suelta (el último pago del
+  crédito, la salida del empleo, el fin del financiamiento) como un momento de elección, con una oferta de continuidad.
 - **La amenaza principal es la selección.** En un ensayo aleatorizado, quienes se inscriben en programas de
   bienestar ya tenían menor gasto y mejores hábitos antes de empezar (Jones et al., 2019, F-854). La misma
-  lógica aplica al cliente digital: quien adopta ya era distinto.
+  lógica aplica al cliente digital: quien adopta ya era distinto. 🔧 El mismo ensayo midió retención y no encontró
+  efecto a 30 meses: el programa no hizo que los empleados se quedaran más (leído completo; F-854).
 - 📚 **Tener más productos no blinda.** En una aseguradora europea, la primera cancelación predijo la fuga total
   del hogar. Los clientes con 3 o más pólizas fueron *más* propensos a irse del todo tras cancelar una
   (Brockett et al., 2008, F-852).
@@ -182,6 +309,20 @@ una puerta" y pasa a ser con quién y en qué condiciones (pregunta 3).
   incertidumbre declarada por la propia empresa (F-871).
 - **Salud:** dos ensayos aleatorizados de programas de bienestar no encontraron efecto en gasto médico, salud
   clínica ni ausentismo (F-854, F-855).
+- 🔧 **Por qué el ensayo de Illinois es la mejor lección de medición del informe** (Jones, Molitor y Reif, 2019, F-854;
+  leído completo). Invitaron a 12.459 empleados; 4.834 se inscribieron; 3.300 fueron sorteados al programa y 1.534 a un
+  grupo de control.
+  - **Antes de empezar**, quienes participaron gastaban US$115 menos al mes en salud que quienes no participaron.
+  - **Una comparación simple** entre participantes y no participantes, aun ajustando por muchas variables, decía que el
+    programa bajaba el gasto en US$104 al mes. Es el tipo de cifra que publican las empresas.
+  - **El sorteo** mostró que el programa no bajaba el gasto: la diferencia era de quién se inscribía, no de lo que el
+    programa hacía.
+  - **Lo único que cambió** fue que más gente se hizo chequeos (+4 puntos).
+  - **Quienes no participaron** eran más a menudo del cuartil de salario más bajo: un incentivo ligado al programa
+    traslada costo a los más pobres y enfermos.
+
+  **Para un seguro:** cualquier cifra del tipo "los usuarios del app siniestran X% menos" o "renuevan X% más" tiene este
+  problema hasta que se demuestre lo contrario.
   - Vitality reporta 4% menos siniestros, con una revisión actuarial que declara (F-353).
   - Alan duplicó sus usuarios activos diarios con gamificación y aún no mide el efecto en retención (F-859).
 
@@ -230,6 +371,34 @@ teoría con más respaldo, y su indicador natural incluye los reclamos que escal
 
 Esta sección es nueva. La sostienen papers que verificamos a partir de la revisión de literatura aportada.
 
+🔧 **La idea en una frase:** cada canal es bueno para algo distinto, y por eso los canales no se reemplazan entre sí; se
+reparten el trabajo. Hay cinco mecanismos que lo explican:
+
+1. **Un canal sirve para buscar y otro para cerrar.** El canal digital es bueno para comparar precios a cualquier hora;
+   la persona es buena para resolver dudas y dar seguridad antes de firmar. El cliente usa los dos en secuencia
+   ("research shopping", Verhoef, Neslin y Vroomen, 2007, F-918).
+2. **El canal digital retiene poco hasta la compra.** En internet el cliente abandona con un clic; en una conversación con
+   una persona, el proceso tiende a terminar (F-918).
+3. **Los canales se potencian entre sí.** Usar uno da información o confianza para usar el otro (F-918). Por eso un buen
+   canal digital puede *aumentar* las conversaciones con asesores, como pasó en banca (F-847).
+4. **El canal caro sobrevive porque resuelve algo que el barato no.** En vida en España, el banco es el canal más
+   eficiente en costo, pero agentes y corredores siguen existiendo porque dan mejor producto, más servicio y defienden
+   al cliente frente a la compañía (Rubio-Misas, 2022, F-923).
+5. **Agregar el canal que todos agregan no da ventaja.** Si todas las aseguradoras abren el mismo canal, todas cargan el
+   costo y ninguna gana posición (Neslin et al., 2006, F-917, según la revisión aportada); los incumbentes tienden a
+   usar lo digital para defenderse, no para crear productos nuevos (Holland y Kavuri, 2024, F-922).
+
+**Qué significa para las decisiones:**
+
+- **Diseñar el traspaso entre canales,** no solo cada canal. Cuando un cliente pasa del app al asesor, el asesor debe ver
+  lo que el cliente ya hizo. Repetir información es la señal de que el recorrido digital terminó antes que la
+  necesidad.
+- **Medir el recorrido, no el canal.** Un indicador por canal premia al canal; un indicador por necesidad resuelta
+  premia al cliente.
+- **Cuidar el costo interno.** Si los asesores sienten que el canal digital les quita ventas, se comprometen menos, sobre
+  todo cuando el mercado ofrece pocas oportunidades (F-924). El diseño de comisiones importa tanto como el diseño de
+  pantallas.
+
 - 📚 **La gente busca en un canal y compra en otro.** Se llama "research shopping": un canal sirve para buscar, otro
   para cerrar, y el canal digital retiene poco al cliente hasta la compra (Verhoef, Neslin y Vroomen, 2007, F-918).
   Calza con lo que se ve en la región: 67% busca seguro de vida en línea y compra con una persona (F-900).
@@ -263,10 +432,21 @@ es la pregunta 2. "Salud 100% digital" o "todo al app" pueden ser metas equivoca
 La pregunta conductual no es "cómo hacemos que entren más". Es **qué conducta tiene que ocurrir para que haya
 valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de negocio no ve:
 
-1. **Lealtad o inercia.** En seguros, cambiarse cuesta mucho, y por eso la gente se queda donde está (Handel,
-   2013, F-889). El regulador británico prohibió cobrarle más a quien renueva por inercia. También documentó
-   fricción puesta a propósito para retener, como exigir una llamada para cancelar (FCA, 2025, F-886). Si la
-   meta de fidelidad no separa la elección activa de la renovación pasiva, premia la fricción para irse.
+1. **Lealtad o inercia.** 🔧 Dicho simple: un cliente que se queda no es necesariamente un cliente leal.
+   - **Lealtad** es quedarse *por elección*: el cliente sabe que tiene alternativas, las consideró y prefirió quedarse.
+   - **Inercia** es quedarse *porque cambiarse cuesta*: no revisó, la renovación fue automática, comparar da pereza,
+     teme perder coberturas o no sabe cómo irse.
+
+   En seguros, la inercia es grande: en un seguro de salud en EE.UU., la gente se quedó en planes que le costaban más
+   solo por no cambiarse (Handel, 2013, F-889). En el Reino Unido, las aseguradoras cobraban más a quien renovaba sin
+   mirar, y ponían fricción para cancelar, como exigir una llamada; el regulador lo prohibió (FCA, 2025, F-886).
+
+   **Por qué importa para la meta digital:** un buen canal digital hace más fácil comparar, entender y cancelar. Si la
+   renovación actual se sostiene en inercia, un mejor canal puede *bajar* la renovación en el corto plazo, y una meta de
+   "fidelidad" que no distinga ambas cosas castigaría el buen diseño. **Señales para distinguirlas:** renovación
+   automática sin ninguna interacción (probable inercia); renovación después de una subida de prima sin reclamo
+   (inercia o lealtad, hay que preguntar); cliente que cotizó con otros y se quedó (lealtad); cliente que cambió
+   coberturas al renovar (elección activa).
 2. **Usar el app no es formar un hábito.** El hábito necesita frecuencia y un contexto estable (Wood y Neal,
    2007, F-888). Con una o dos interacciones al año (McKinsey, 2023, vía cita secundaria, F-876), un hábito en
    el app propia es improbable; esto es inferencia. La recurrencia se toma prestada de hábitos que ya existen
@@ -288,6 +468,21 @@ valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de n
    seguro de terremoto (F-902).
 6. 📎 **La seguridad pesa en el canal.** 35% de la región teme hacer transacciones digitales (F-906). En México, la
    desconfianza en la banca móvil aparece en casi todos los perfiles estudiados (F-898).
+
+### 4.1 🔧 Cómo usar la lectura conductual para decidir
+
+La lectura conductual sirve para tres cosas concretas: evitar indicadores que premian lo equivocado, elegir dónde
+invertir y anticipar efectos no buscados. Cada fila es una regla de decisión.
+
+| Si la gerencia está por decidir… | La lectura conductual dice… | Entonces… |
+|---|---|---|
+| Medir la fidelidad con la tasa de renovación | Parte de la renovación es inercia, no elección | Separar renovación activa de pasiva antes de fijar metas; no premiar la fricción para irse |
+| Invertir en funciones para que el cliente "entre más" al app | Con una o dos necesidades al año no se forma un hábito en un app propia | Llevar el servicio a donde ya hay hábito (WhatsApp, billetera, banca, la clínica) en vez de pelear por la frecuencia |
+| Repartir la inversión del siniestro | El cliente recuerda el peor momento y el final | Invertir primero en el cierre: pago, explicación del resultado y siguiente paso |
+| Lanzar campañas para atraer clientes de otras aseguradoras | Quien llega cambiándose puede siniestrar más; empujar decisiones cambia el riesgo de la cartera | Revisar el efecto actuarial de toda campaña de adquisición o de cambio |
+| Incluir coberturas por defecto en una puerta de entrada | El defecto es la palanca más fuerte, pero sin consentimiento claro genera reclamos (38,4% de los reclamos de seguros en Indecopi) | Usar defectos con aviso claro y salida fácil; medir reclamos por cargo indebido |
+| Forzar el uso del app | Una parte de los clientes desconfía de las transacciones digitales | Ofrecer el canal digital como opción, no como obligación; mantener una vía segura y conocida |
+| Lanzar un programa de puntos o niveles | Un beneficio que baja se vive como pérdida, y los programas atraen a quien ya está sano | Medirlo como selección y no como prevención; probarlo con un grupo de control antes de escalar |
 
 **Hipótesis conductuales para el trabajo de campo.** El estudio mexicano de inclusión financiera y las voces de
 practitioners no son evidencia, pero abren mecanismos que coinciden con otras fuentes. Valen como hipótesis:
@@ -323,6 +518,14 @@ corregir el sesgo de publicación (Maier et al., 2022, F-17).
   por cuántas veces entra. 📎 Puede resolver por medio de su corredor o de otro canal y seguir siendo sano.
 - **Cliente de alto valor:** suma el riesgo que trae, no solo la prima que paga.
 
+🔧 **Las tres definiciones, aterrizadas.** Los umbrales son puntos de partida para discutir con los ramos, no estándares.
+
+| Definición | Cómo se calcula | Datos que necesita | Ejemplo |
+|---|---|---|---|
+| **Fidelidad activa** | Porcentaje de renovaciones en las que hubo un momento de elección: el cliente abrió el aviso de vencimiento, comparó o cotizó, cambió coberturas o confirmó la renovación. El resto se cuenta como **renovación pasiva** | Tipo de renovación (automática o activa); interacciones en los 60 días previos al vencimiento; cambios de prima y de coberturas; cotizaciones | Cliente con débito automático que no abrió ningún aviso y renovó: pasiva. Cliente que recibió una prima más alta, comparó y renovó: activa |
+| **Cliente digitalmente sano** | Porcentaje de las necesidades del cliente en 12 meses que se resolvieron dentro del plazo prometido, al primer intento y sin recontacto en 7 días, por cualquier canal (incluido su corredor) | Registro de casos o necesidades por cliente, con canal, fechas de inicio y cierre, y recontactos | Cliente con dos reembolsos pagados a tiempo sin llamar y una constancia descargada: sano, aunque solo haya entrado tres veces al app. Cliente que entró 40 veces y llamó seis por el mismo reembolso: no sano |
+| **Cliente de alto valor** | Margen esperado del cliente: prima, menos siniestralidad esperada, menos costo de servir, menos comisión; más el potencial de otros productos y menos el riesgo de fuga | Prima y siniestralidad por póliza; costo de servir por canal (sale de la teoría 1); comisión; productos; renovaciones | Dos clientes con la misma prima: el que siniestra poco, resuelve solo y renueva activamente vale más que el que siniestra mucho y genera muchos contactos |
+
 **Herramienta para el ejercicio con los ramos:** una auditoría de fricciones por recorrido (Sunstein, 2022,
 F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la que protege al cliente.
 
@@ -330,16 +533,33 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 ## 5. Implicancias para las hipótesis del diagnóstico
 
+### 5.1 🔧 Las decisiones que tiene que tomar la gerencia
+
+Cada fila es una decisión. Se indica qué dice la evidencia, qué dato propio la cierra y cómo conseguirlo. El orden
+sugiere una secuencia: primero el indicador, luego dónde invertir.
+
+| # | Decisión | Opciones | Qué dice la evidencia | Qué dato propio la cierra | Cómo y en cuánto tiempo |
+|---|---|---|---|---|---|
+| 1 | Qué indicador acompaña o reemplaza al MAU | MAU; contactos por necesidad resuelta; renovación activa; tiempo a resolución del siniestro | El MAU no tiene relación probada con valor; en dos teorías el buen resultado baja la actividad | Contactos por necesidad y tiempo a resolución por flujo | Medición con datos que ya existen en call center y siniestros; semanas |
+| 2 | Qué flujos mover primero a digital | Todos; los más usados; los de información clara | Lo claro migra y baja llamadas; lo ambiguo las sube (F-850) | Motivos de contacto clasificados en claros y ambiguos, y su volumen | Análisis de motivos de contacto del call center; semanas |
+| 3 | Qué hacer con el siniestro | Todo digital; todo humano; híbrido por tipo de siniestro | Híbrido: digital para iniciar y seguir; persona para lo complejo (F-183, F-874) | Tiempo a resolución y reclamos por tipo de siniestro y canal | Corte de datos por ramo; piloto de vía rápida en siniestros simples |
+| 4 | Cómo usar el app para retener | Invertir para "enganchar"; invertir en cumplir; no invertir | No hay prueba causal en seguros; los motivos de fuga no dependen del canal | Efecto del app en renovación | Despliegue escalonado de una función de renovación; 12 meses (Anexo C) |
+| 5 | Puerta de entrada | Producto propio (SOAT); alianza con banco, billetera o empleador | La puerta ajena vende pero no retiene sin ancla, cobra peaje y genera reclamos sin consentimiento claro | Renovación de clientes por canal de origen; reclamos por canal | Datos de cartera por canal de venta; pregunta 3 |
+| 6 | Programas de bienestar o puntos | Lanzar; no lanzar; piloto controlado | Seleccionan más de lo que previenen (F-854, F-855) | Siniestralidad de inscritos antes y después, contra un control | Piloto con sorteo o despliegue escalonado; 12 a 24 meses |
+| 7 | Meta de "salud 100% digital" | Mantenerla; reemplazarla por una meta por tarea | Los canales conviven por función (§3.6) | Qué tareas de salud se resuelven bien en digital | Mapa de tareas por canal con el ramo salud (pregunta 2) |
+
+### 5.2 Las hipótesis del diagnóstico
+
 | Hipótesis | Qué dice el benchmarking | Cómo se cierra |
 |---|---|---|
-| El cliente digital es más fiel | No confirmada para seguros. Las analogías dicen que puede ser cierta; la selección dice que puede ser falsa. 📎 Los motivos de fuga documentados (precio, no uso, promesa incumplida, fin del ancla) no dependen del canal | Cohortes emparejadas o despliegue escalonado con data propia |
+| El cliente digital es más fiel | No confirmada para seguros. Las analogías dicen que puede ser cierta; la selección dice que puede ser falsa. 📎 Los motivos de fuga documentados (precio, no uso, promesa incumplida, fin del ancla) no dependen del canal | 🔧 Con datos propios, de dos formas (Anexo C). **Cohortes emparejadas:** comparar la renovación de clientes que adoptaron el app con la de clientes que no lo hicieron pero eran iguales antes (mismo producto, antigüedad, prima, canal de venta, siniestros y renovaciones previas). **Despliegue escalonado:** lanzar una función por oleadas a grupos elegidos al azar y comparar los que la recibieron primero con los que aún no |
 | Hace falta una llave de entrada para cada cartera | Sin evidencia de que un producto propio de bajo ticket y uso anual abra la puerta. Funciona cuando la cobertura viene por defecto y anclada a una relación frecuente (microcrédito semanal en México, F-896 y F-897) o a una app ajena de uso diario. 📎 Pero esa puerta no retiene sin el ancla (F-902), no basta por sí sola (F-906) y genera reclamos si el consentimiento no es claro (F-902) | Decidir si se compite por esa puerta o se alía con quien la tiene, y en qué condiciones (pregunta 3) |
 | Un canal digital ahorra costo por sí mismo | 📎 No por sí mismo: lo ambiguo vuelve al teléfono (F-850) y ofrecer el canal no traslada la tarea (F-921) | Medir resolutividad por canal y flujo |
-| La actividad la determina el producto, no el canal | Consistente con la baja frecuencia estructural del seguro y con que la recurrencia de los referentes venga de servicios cercanos | Validar por ramo en el ejercicio con los ramos |
-| La gente casi no interactúa con la propuesta de valor | Consistente con lo anterior | Igual que la anterior |
+| La actividad la determina el producto, no el canal | Consistente con la baja frecuencia estructural del seguro y con que la recurrencia de los referentes venga de servicios cercanos | 🔧 Con los datos del Anexo D: frecuencia natural de necesidad por producto y motivos de contacto por canal |
+| La gente casi no interactúa con la propuesta de valor | Consistente con lo anterior | 🔧 Con los datos del Anexo D: tasa de uso de cada beneficio, tiempo hasta el primer uso y relación entre uso y renovación |
 | El siniestro debería resolverse en digital | La evidencia apunta a un modelo híbrido: digital para iniciar y seguir, persona para lo complejo. 📎 En Perú, lo que falla es resolver y pagar, y lo mal resuelto escala (F-902, F-903) | Rol del canal por momento (pregunta 2) |
 | 📎 Implícita en la meta: más uso del app es mejor | No: en dos teorías, el buen resultado baja la actividad; y en el segmento que delega en su corredor, poca actividad propia no significa poco valor | Reemplazar o acompañar el MAU con el indicador de la teoría elegida |
-| 📎 Implícita: el objetivo es llevar todo (o salud) a 100% digital | La evidencia dice que los canales conviven por función (F-918, F-921, F-923) | Definir qué tarea va a qué canal (pregunta 2) |
+| 📎 Implícita: el objetivo es llevar todo (o salud) a 100% digital | La evidencia dice que los canales conviven por función: la gente busca en línea y cierra con una persona (F-918); en Francia, 75% a 90% termina por teléfono aun pudiendo hacerlo en línea (F-921); los canales caros sobreviven por lo que resuelven (F-923). Detalle en §3.6 | Definir qué tarea va a qué canal con la tabla de §3.1 (pregunta 2) |
 
 ---
 
@@ -402,6 +622,10 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 - **§4 Lectura conductual:** se agregan el defecto que no crea lealtad, el peso de la seguridad en el canal.
 - **§5 Implicancias:** se actualizan cuatro hipótesis y se agregan dos que la meta de MAU da por supuestas.
 - **§6:** se corrige "todo se leyó por resumen", que era inexacto, y se detalla cómo se leyó cada fuente.
+- 🔧 **Versión 7, para aterrizar:** §2.1 (qué significa cada teoría, con ejemplos y cómo se mide); §3.1 (detalle del
+  caso bancario y tabla de qué tarea va a qué canal); §3.2 (qué es un ancla); §3.4 (el ensayo de bienestar leído
+  completo); §3.6 (los cinco mecanismos de convivencia de canales); §4 (lealtad e inercia explicadas, reglas de
+  decisión y definiciones operativas); §5.1 (decisiones de la gerencia); Anexos E y F.
 
 ### 7.3 Veredicto por documento
 
@@ -419,6 +643,7 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 | Artículo de Beway sobre seguro marítimo (F-909) | **Parcial.** El lenguaje conductual en el siniestro mueve conducta y costo (caso de segunda mano) |
 | Diagnóstico de microseguros en el Perú para el PNUD (F-902) y encuesta SBS-CAF 2022 (F-903) | **Sí, el más fuerte para Perú.** Solo 20% compraría digital; la puerta ajena cobra comisiones cercanas a 50%; los siniestros devuelven poco valor; los reclamos que escalan subieron; 38,4% de los reclamos ante Indecopi fue por cargo indebido; solo 12% mantiene el seguro de terremoto al terminar el crédito |
 | Reporte de McKinsey sobre seguros en LatAm (F-900) | **Parcial.** Búsqueda en línea y compra con persona; seguros últimos en experiencia en Perú. Casos sin cifras verificables |
+| 🔧 Texto completo del ensayo de bienestar de Illinois (F-854) y resumen editorial de Campbell y Frei (F-931) | **Sí, y aclara el método.** El ensayo muestra con cifras cómo una comparación simple confunde selección con efecto, y que no hubo efecto en retención. El resumen confirma el detalle del caso bancario: sube el uso de canales caros y baja la utilidad por cliente el primer año, pero sube la retención |
 | Licitación de seguros hipotecarios en Chile (F-904) | **Sí, para la puerta por defecto** (y para la pregunta 3): sin competencia, el seguro atado cobra de más |
 | Informe mundial de seguros generales de Capgemini (F-901) | **Débil.** Al irse, pesa más el precio que lo digital |
 | Voces de practitioners de Flat 101 (F-899) | **No valida; muestra que la idea ya circula** en el sector. Coincide con la evidencia sobre el siniestro y el escalamiento a una persona |
@@ -490,15 +715,73 @@ teoría de valor.
 aseguradora, un banco o una billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis para el
 ejercicio, no un hallazgo.
 
-## Anexo C · Escala de evidencia usada
+## Anexo C · 🔧 Métodos de medición, explicados con ejemplos
+
+**Contactos por necesidad resuelta.** Se define primero la necesidad ("cobrar un reembolso"), con su inicio y su
+cierre. Luego se cuentan todos los contactos del cliente sobre esa necesidad, por cualquier canal: llamadas, chats,
+correos, visitas, mensajes al corredor. Se divide entre las necesidades cerradas. *Ejemplo:* 1.000 reembolsos pagados
+en un mes que generaron 2.600 contactos dan 2,6 contactos por reembolso. Si tras rediseñar el seguimiento en el app
+baja a 1,4, el canal ahorró costo, aunque las visitas al app no hayan cambiado.
+
+**Tasa de recontacto.** Porcentaje de casos en que el cliente vuelve a contactar por lo mismo dentro de 7 días después
+de que se dio por resuelto. Mide si de verdad se resolvió.
+
+**Renovación y persistencia.** Renovación: de las pólizas que vencen en un periodo, qué porcentaje se renueva.
+Persistencia: de las pólizas emitidas en un mes, qué porcentaje sigue vigente 13 y 25 meses después. Se usa en
+productos de pago continuo, como vida.
+
+**Cohortes emparejadas.** Sirve para estimar el efecto de algo que el cliente elige usar, como el app. Se toma a los
+clientes que adoptaron el app en un periodo y se busca, para cada uno, un "gemelo" que no lo adoptó pero que antes era
+igual en lo que importa: mismo producto, antigüedad, prima, canal de venta, región, siniestros y renovaciones previas.
+Luego se compara la renovación de ambos grupos en los 12 meses siguientes. *Límite:* solo empareja lo que se puede
+medir. El ensayo de bienestar de Illinois mostró que, aun con muchos controles, la comparación seguía confundiendo
+selección con efecto (F-854). Por eso es un primer paso, no la prueba final.
+
+**Despliegue escalonado.** Es la forma práctica de tener un grupo de control sin negarle nada a nadie para siempre. Se
+lanza una función (por ejemplo, el aviso de renovación con comparación de coberturas en el app) por oleadas: un mes a un
+grupo de clientes elegido al azar, el mes siguiente a otro, y así. Mientras tanto, los que aún no la reciben sirven de
+comparación. *Ejemplo:* si los que recibieron el aviso en la primera oleada renuevan 3 puntos más que los que todavía no
+lo tienen, y la diferencia se repite en cada oleada, es un efecto del aviso, no de quién lo usa.
+
+**Separar selección de efecto.** Selección: el grupo es distinto porque se eligió solo (los sanos se inscriben en el
+programa de bienestar; los clientes ordenados usan el app). Efecto: el grupo cambió por lo que hicimos. *Cómo
+distinguirlos:* (1) mirar al grupo *antes* de la intervención: si ya era distinto, hay selección; (2) comparar contra un
+grupo de control sorteado o escalonado; (3) desconfiar de cifras que comparan usuarios con no usuarios sin control. En
+Illinois, los participantes gastaban US$115 menos al mes *antes* de empezar; la comparación simple atribuía al programa
+un ahorro de US$104; el sorteo mostró que no había ahorro (F-854).
+
+**Siniestralidad por cohorte.** Siniestros pagados entre prima ganada, calculados para un grupo que entró en el mismo
+periodo (por ejemplo, los que se inscribieron en el programa de manejo en enero) y seguido en el tiempo. Se compara con
+su propia siniestralidad antes de entrar y con un grupo de control.
+
+## Anexo D · 🔧 Insumos para el ejercicio con los ramos
+
+Para validar dos hipótesis del diagnóstico ("la actividad la determina el producto, no el canal" y "la gente casi no
+interactúa con la propuesta de valor") y para elegir la teoría de valor, conviene pedir a cada ramo estos datos. Si un
+dato no existe, que no exista también es un hallazgo.
+
+| Dato | Para qué sirve | Cómo se lee |
+|---|---|---|
+| Frecuencia natural de necesidad por producto: siniestros por póliza al año; atenciones al año en salud; consultas por póliza | Saber cuántas veces al año el producto le da al cliente una razón para interactuar | Si un producto genera una necesidad al año, una meta de uso mensual no tiene sentido |
+| Motivos de contacto por canal, con volumen (call center, app, web, WhatsApp, oficinas, corredor) | Ver qué buscan los clientes y dónde | Separar motivos claros (migran a digital) de ambiguos (necesitan rediseño o persona) |
+| Contactos por necesidad y recontacto a 7 días, por flujo | Medir resolutividad | Los flujos con más recontacto son los primeros candidatos a rediseño |
+| Porcentaje de clientes sin ninguna interacción en 12 meses, por producto | Dimensionar el silencio normal del seguro | Un silencio alto con renovación alta sugiere inercia; con renovación baja, falta de valor percibido |
+| Tasa de uso de cada beneficio de la propuesta de valor (por ejemplo, médico a domicilio, chequeo preventivo, asistencia vehicular) | Saber si la propuesta de valor se usa | Beneficios que casi nadie usa no generan recurrencia ni valor percibido |
+| Tiempo desde la compra hasta el primer uso de un beneficio o servicio | Ver si el cliente "estrena" su seguro | Un primer uso temprano puede ser el momento de confianza (hipótesis 7 de §4) |
+| Renovación según uso de beneficios y según adopción del app, con las variables de emparejamiento del Anexo C | Primera lectura de retención | Si la diferencia desaparece al emparejar, era selección |
+| Canal de origen de cada póliza (directo, corredor, banco, empleador, concesionario) y su renovación | Identificar el ancla de cada cartera | Las carteras que dependen de un ancla necesitan un diseño para el momento en que el ancla se suelta |
+| Tiempo a resolución de siniestros y reclamos, por tipo y canal; reclamos que escalan a Indecopi o la SBS | Medir la teoría 5 | Ubicar dónde se rompe la confianza |
+| Costo por contacto por canal | Convertir resolutividad en dinero | Permite calcular el costo de servir de cada cliente (definición de cliente de alto valor) |
+
+## Anexo E · Escala de evidencia usada
 
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-930, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
-reservados para documentos internos que no se publican aquí). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-931, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
+reservados para documentos internos que no se publican aquí). Enlaces en el Anexo F.
 
-## Anexo D · Referencias con enlace
+## Anexo F · Referencias con enlace
 
 Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó. Los documentos aportados por la usuaria se indican como tales.
 
@@ -574,3 +857,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-922** · Holland, C. P. & Kavuri, A. S. (The Geneva Papers on Risk and Insurance – Issues and Practice 50(1); DOI 10.1057/s41288-024-00341-0) (2024). *Insurtech strategies: a comparison of incumbent insurance firms with new entrants*. 🟢 A. [Ver fuente](https://link.springer.com/10.1057/s41288-024-00341-0)
 - **F-923** · Rubio-Misas, M. (International Journal of Bank Marketing 40(4):724-745; DOI 10.1108/IJBM-04-2021-0129) (2022). *Bancassurance and the coexistence of multiple insurance distribution channels*. 🟢 A. [Ver fuente](https://doi.org/10.1108/IJBM-04-2021-0129)
 - **F-924** · Sharma, D. & Gassenheimer, J. B. (European Journal of Marketing 43(7/8):1076-1091) (2009). *Internet channel and perceived cannibalization: Scale development and validation in a personal selling context*. 🟢 A. [Ver fuente](https://doi.org/10.1108/03090560910961524)
+- **F-931** · Gorman, M. F. (Management Science 56(1):iv-vii; DOI 10.1287/mnsc.1090.1132) (2010). *Management Insights (resumen editorial de los artículos del número, incluido Campbell y Frei, 2010)*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1090.1132)

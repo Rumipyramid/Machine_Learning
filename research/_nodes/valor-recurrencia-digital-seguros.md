@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-930 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-930; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-931 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-931; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -435,6 +435,15 @@ reservados.
 se consultó, pero su contenido no se registra en este repositorio; ese número queda reservado. Con autorización de la
 usuaria, el Índice de Inclusión Financiera de Credicorp (F-906) sube de 🟡 C a 🔵 B: es una encuesta probabilística
 representativa con anexo metodológico completo.
+
+**Lote 7 (mismo día): dos lecturas completas.** La usuaria aportó el texto completo del ensayo de bienestar de
+Illinois (Jones, Molitor y Reif, 2019, F-854) y el resumen editorial de Management Science sobre Campbell y Frei
+(Gorman, 2010, F-931). El ensayo da el mejor ejemplo para separar selección de efecto: quienes se inscribieron gastaban
+US$115 menos al mes *antes* de empezar; una comparación simple atribuía al programa un ahorro de US$104 al mes; el
+sorteo mostró que no había ahorro, y tampoco efecto en retención a 30 meses. El resumen confirma el caso bancario: la
+banca online bajó el uso de canales baratos (cajero, respuesta automática) y subió el de los caros (sucursal, call
+center), con 11% menos de utilidad por cliente el primer año, pero más retención y participación de mercado. Con ambas,
+el informe pasó a la versión de trabajo 7, que aterriza cada teoría con ejemplos, métodos de medición y decisiones.
 
 ---
 
