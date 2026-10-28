@@ -1,7 +1,7 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 2 (incorpora
-los documentos aportados por la usuaria)
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 3 (incorpora
+diez documentos aportados por la usuaria)
 (el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.0, 2026-10-28). Las fuentes se
 citan como (Autor, año) y con su número del registro de fuentes del proyecto (F-n).
@@ -60,6 +60,9 @@ seguros.
   usan *menos* el call center (Becker et al., 2022, F-849).
 - **Perú:** Pacífico reporta que más de 60% de las consultas y solicitudes se resuelven por autoservicio (chatbot
   y app), según Forbes Perú (2022, F-866). Es una cifra de la empresa, sin método.
+- **LatAm:** una aseguradora sin nombre desvía 30% de sus siniestros a una vía rápida por reglas, y otras pasaron la
+  mayoría de sus siniestros de salud a digital con más satisfacción y menos costo, según McKinsey (2023, F-900), sin
+  cifras verificables.
 - **Proveedores de software:** prometen bajar entre 30% y 40% el costo de servir. No tienen método (F-877). No
   usar como dato.
 
@@ -87,6 +90,8 @@ en gestionar y en lo urgente.
   considera cancelar su seguro privado de salud. La razón más citada después del precio fue "no lo usé tanto como
   esperaba" (27%), y es la primera entre 18 y 34 años (Graphite Digital, 2025, F-895). Es intención declarada, y la
   autora vende experiencia digital. Confirma el problema de valor percibido en productos de baja frecuencia.
+- **🌐 Al irse, pesa más el precio que lo digital.** 27% de asegurados cambió de aseguradora en dos años, sobre todo
+  por precio (60%) y cobertura (53%) (Capgemini, 2024, F-901; encuesta de una consultora).
 - **Parte de la fuga es estructural.** En México, 47% de quienes dejaron de tener seguro lo atribuye a un cambio
   de trabajo (Treo, c. 2021, F-898, con datos de la ENIF 2018). Ese tipo de fuga no la resuelve ningún canal.
 - **La amenaza principal es la selección.** En un ensayo aleatorizado, quienes se inscriben en programas de
@@ -114,6 +119,13 @@ con data propia: cohortes emparejadas o un despliegue escalonado.
   voluntarios (Poulton y Magnoni, 2013, F-896). En un ensayo aleatorizado con esos clientes, al quitar la
   cobertura automática la gente compró más por su cuenta, pero terminó menos protegida (Zimmerman et al., 2013,
   F-897). La relación era semanal (el pago del crédito) y no fue digital.
+- **La puerta ajena cobra peaje.** En Perú, los microseguros llegan 97,8% por bancos y microfinancieras, con comisiones
+  cercanas a 50% (Inga Falcón para el PNUD, 2025, F-902). En Chile, obligar a los bancos a licitar el seguro atado
+  al crédito hipotecario bajó el desgravamen 62% (Coloma, 2019, F-904). La puerta por defecto funciona, pero sin
+  competencia encarece el seguro.
+- **En Perú, la venta 100% digital tiene techo.** Solo 20% compraría un seguro de forma digital; el canal presencial
+  domina (encuesta SBS-CAF 2022, vía F-903). En LatAm, 67% empieza a buscar seguro de vida en línea, pero compra con
+  una persona (McKinsey, 2023, F-900).
 - **No se encontró evidencia de que un producto propio de bajo ticket y frecuencia anual, como el SOAT, funcione
   como puerta de entrada.** La venta digital de SOAT de Interseguro creció 66% en 2019. Su memoria también dice que mejoró la
   renovación, pero sin cifra (F-867).
@@ -152,6 +164,10 @@ legítimo, pero es **selección**, no prevención, y se mide distinto.
   interés a su red, y evitaron deuda cara o vender activos. Después del siniestro, todos los asegurados dijeron que
   fue buena decisión (Poulton y Magnoni, 2013, F-896). La muestra es pequeña (32 familias aseguradas y 36 no
   aseguradas) y no aleatoria.
+- **Perú: el problema está en pagar, no en el canal.** Los microseguros devuelven en siniestros solo 16,7% de la
+  prima (en LatAm ronda 40%); 18 productos no pagaron ningún siniestro en 2024; reclamar exige documentos que no
+  existen en zonas remotas (F-902). De quienes desconfían de las aseguradoras, 47% dice que no cumplen lo ofrecido
+  (F-903). En un ranking de experiencia de cliente de 2022, los seguros quedaron últimos de 20 industrias (F-900).
 - **🌐 21% de quienes consideran dejar su seguro de salud cita la dificultad para reclamar** (Graphite Digital,
   2025, F-895; intención declarada).
 - **Perú:** la fricción registrada está en la **resolución**, no en el canal. Indecopi recibió 8.248 reclamos de
@@ -187,7 +203,9 @@ valor, y qué la frena**. Esta lectura agrega cuatro distinciones que el anális
    Todo empujón de adquisición o de cambio tiene un costo actuarial.
 5. **La cobertura por defecto pesa más que el mensaje.** En el ensayo de microseguro en México, quitar la
    cobertura automática redujo la protección total, y los mensajes emocionales o factuales no cambiaron la compra
-   (Zimmerman et al., 2013, F-897). Lo que viene incluido define cuánto queda protegido.
+   (Zimmerman et al., 2013, F-897). Lo que viene incluido define cuánto queda protegido. Pero el defecto también se
+   presta para cobrar de más, y ahí interviene el regulador: en Chile, licitar el seguro atado al crédito bajó el
+   precio del desgravamen 62% (F-904).
 
 **Propuesta para las tres definiciones que hoy no existen:**
 
@@ -228,7 +246,8 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 
 **Pendientes para la siguiente versión:**
 
-- el resto de los documentos de la otra conversación (ya se incorporaron cinco: ver §7);
+- el resto de los documentos de la otra conversación (ya se incorporaron diez: ver §7);
+- el blog de Beway sobre seguros: el dominio `blog.beway.com` está bloqueado desde el entorno de trabajo;
 - las memorias anuales completas de Perú y LatAm;
 - la búsqueda de estudios causales de retención en seguros.
 
@@ -242,6 +261,10 @@ F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la qu
 | Whitepaper sobre apps de seguros de salud (F-895). ⚠️ El archivo venía rotulado como J.D. Power, pero es de Graphite Digital, una agencia | **Parcial.** Suma el "no lo usé" como razón de fuga y confirma el siniestro y la sobrecarga de información como puntos críticos. Intención declarada, con conflicto de interés |
 | Microseguro de vida en México (F-896) y su ensayo aleatorizado (F-897) | **Sí.** Da evidencia de LatAm para la confianza en el momento de verdad y para la cobertura por defecto. Matiza la puerta de entrada: funciona por defecto y anclada a una relación frecuente |
 | Estudio de inclusión financiera en México (F-898) | **No para esta pregunta.** Sí aporta que parte de la fuga es estructural (cambio de trabajo) y que los adultos mayores se alcanzan mejor por intermediarios |
+| Diagnóstico de microseguros en el Perú para el PNUD (F-902) y encuesta SBS-CAF 2022 (F-903) | **Sí, el más fuerte para Perú.** Solo 20% compraría digital; la puerta ajena cobra comisiones cercanas a 50%; los siniestros devuelven poco valor. Refuerza que el problema está en pagar, no en el canal |
+| Reporte de McKinsey sobre seguros en LatAm (F-900) | **Parcial.** Búsqueda en línea y compra con persona; seguros últimos en experiencia en Perú. Casos sin cifras verificables |
+| Licitación de seguros hipotecarios en Chile (F-904) | **Sí, para la puerta por defecto** (y para la pregunta 3): sin competencia, el seguro atado cobra de más |
+| Informe mundial de seguros generales de Capgemini (F-901) | **Débil.** Al irse, pesa más el precio que lo digital |
 | Voces de practitioners de Flat 101 (F-899) | **No valida; muestra que la idea ya circula** en el sector. Coincide con la evidencia sobre el siniestro y el escalamiento a una persona |
 
 ---
@@ -295,6 +318,8 @@ teoría de valor.
 - **Recuperación de la inversión insurtech en LatAm en 2025, con más disciplina** (F-878).
 - **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones
   (practitioners de Flat 101, F-899; opinión).
+- **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902).
+- **Seguros paramétricos en desarrollo en Perú**, aún sin oferta (F-902).
 - **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
   resultados).
 
@@ -307,7 +332,7 @@ ejercicio, no un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-899, más F-183, F-353 y F-442). Enlaces en el Anexo D.
+`research/fuentes/codice.md` (F-847 a F-904, más F-183, F-353 y F-442). Enlaces en el Anexo D.
 
 ## Anexo D · Referencias con enlace
 
@@ -360,4 +385,9 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-896** · Poulton, D. & Magnoni, B. (MicroInsurance Centre, proyecto MILK) (2013). *MILK Brief #16: 'Doing the Math' – Life Microinsurance in Mexico (Compartamos Banco)*. 🟡 C. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-brief-16-doing-the-math-life-microinsurance-in-mexico) · PDF aportado por la usuaria.
 - **F-897** · Zimmerman, E.; Bauchet, J.; Magnoni, B.; Poulton, D. (MicroInsurance Centre, proyecto MILK); trabajo relacionado de Bauchet (8.700 prestatarios) (2013). *Protecting those left behind: an experimental study of life microinsurance purchase decisions of Compartamos Banco's borrowers*. 🔵 B. [Ver fuente](https://microinsurancecentre.milliman.com/en/insight/milk-rct-protecting-those-left-behind-an-experimental-study-of-life-microinsurance-purchase-decision)
 - **F-898** · Martínez Gutiérrez, A. L. (coord.); Hindriks, P.; Reséndiz Ruiz, C.; Santos Ochoa, J. (por encargo de Treo) (c. 2021 (año no visible en el documento)). *El camino a la tranquilidad financiera: oportunidades para la disrupción de las finanzas personales en México. Estudio completo*. 🟡 C. [Ver fuente](https://treo.mx) · PDF aportado por la usuaria.
-- **F-899** · Flat 101 (Vanessa Ballesteros Abad y Ricardo Tayar López; posts de LinkedIn resumidos por Claude a partir de capturas de la usuaria) — cuentan como una sola fuente de origen (2025-2026). *Voces de practitioners de behavioral design sobre confianza, fricción, delegación a IA y segmentación por situación*. 🔴 E. Documento aportado por la usuaria (voces-practitioners.md).
+- **F-899** · Flat 101 (Vanessa Ballesteros Abad y Ricardo Tayar López; posts de LinkedIn resumidos por Claude a partir de capturas de la usuaria) — cuentan como una sola fuente de origen (2025-2026). *Voces de practitioners de behavioral design sobre confianza, fricción, delegación a IA y segmentación por situación*. 🔴 E. Archivo de la usuaria: voces-practitioners.md (posts de LinkedIn, sin URL individual).
+- **F-900** · Craddock, C.; Marchi, R.; Morales, J.; Spak, S.; Waisser, S. (McKinsey & Company) (2023). *Reporte Global de Seguros 2023: Capturando la siguiente ola de crecimiento en América Latina (septiembre 2023)*. 🟡 C. PDF aportado por la usuaria (versión en español); URL pública no verificada en esta sesión.
+- **F-901** · Capgemini Research Institute for Financial Services (2024). *World Property and Casualty Insurance Report 2024: Become an underwriting trailblazer*. 🟡 C. DOCX aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-902** · Inga Falcón, P. (por encargo de la Oficina de Perú del PNUD y su Iniciativa de Seguros y Financiamiento de Riesgos) (2025). *Informe de diagnóstico de microseguros en el Perú (15 de diciembre de 2025)*. 🔵 B. PDF aportado por la usuaria; URL pública no verificada en esta sesión.
+- **F-903** · SBS y CAF (citada vía el diagnóstico del PNUD, F-902) (2022). *Encuesta de Capacidades Financieras del Perú 2022 (resultados sobre seguros)*. 🔵 B. Cita secundaria en F-902; documento original no consultado.
+- **F-904** · Coloma C., F. (Instituto de Economía, Pontificia Universidad Católica de Chile; ex Superintendente de Valores y Seguros) (2019). *Licitación de los seguros asociados a los créditos hipotecarios: algunos resultados y propuestas de mejoramiento (Documento de Política Pública)*. 🔵 B. PDF aportado por la usuaria (Documento de Política Pública, Instituto de Economía UC); URL pública no verificada.

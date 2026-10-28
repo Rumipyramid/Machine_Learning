@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-899), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-899 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-904), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -360,10 +360,22 @@ confirma el problema de valor percibido en productos de baja frecuencia.
 | Estudio de inclusión financiera en México (Treo, c. 2021, F-898) | 47% de quienes dejaron de tener seguro lo atribuye a cambiar de trabajo. La educación y la formalidad predicen la tenencia de seguro. Recomienda llegar a adultos mayores por intermediarios familiares | **No para la pregunta 1** (no habla de recurrencia digital). **Sí para la diversidad de usuarios:** parte de la fuga es estructural (empleo) y no la resuelve un canal. Útil para la pregunta 2 y el foresight |
 | Voces de practitioners de Flat 101 (2025-2026, F-899), una sola fuente de origen | La confianza se gana cuando algo falla; la fidelidad no se automatiza; persona "a un clic"; delegar en IA exige confirmaciones; segmentar por momento vital y no por edad | **No valida; muestra que la idea circula** en el sector. Coincide con F-183, F-872 y F-890, que sí son evidencia |
 
+**Lote 2 (mismo día):**
+
+| Documento | Qué aporta | ¿Robustece? |
+|---|---|---|
+| Diagnóstico de microseguros en el Perú para el PNUD (Inga Falcón, dic-2025, F-902) y la encuesta de capacidades financieras SBS-CAF 2022 que cita (F-903) | Solo 20% compraría un seguro de forma digital; el canal presencial domina. Los microseguros llegan 97,8% por bancos y microfinancieras, con comisiones cercanas a 50% y una siniestralidad de 16,7% (en LatAm ronda 40%): devuelven poco valor. Reclamar exige documentos que no existen en zonas remotas. Las billeteras venden seguros masivos, no microseguros | **Sí, es el aporte más fuerte para Perú.** Refuerza la confianza en el momento de verdad (§2.5): el problema está en pagar, no en el canal. Muestra que la puerta ajena (banco, billetera) cobra un peaje alto. Marca que la venta 100% digital tiene techo en Perú |
+| Reporte de McKinsey sobre seguros en LatAm (2023, F-900) | 67% empieza a buscar seguro de vida en línea, pero compra con una persona. En un ranking de experiencia de cliente en Perú (2022), los seguros quedaron últimos de 20 industrias. Hay casos sin nombre de siniestros de salud digitalizados con más satisfacción y menos costo, y una vía rápida que desvía 30% de los siniestros | **Parcial.** Coincide con el modelo híbrido y con el siniestro como palanca. Los casos no traen cifras verificables |
+| Licitación de seguros hipotecarios en Chile (Coloma, 2019, F-904) | Al obligar a los bancos a licitar el seguro atado al crédito, el desgravamen bajó 62% y el de incendio y sismo 34% | **Sí, para la puerta por defecto y la pregunta 3.** El seguro por defecto funciona como puerta, pero sin competencia cobra de más, y el regulador interviene (como el británico, F-886) |
+| Informe mundial de seguros generales de Capgemini (2024, F-901) | 27% cambió de aseguradora en dos años, sobre todo por precio (60%) y cobertura (53%). Se centra en la suscripción | **Débil.** Recuerda que el precio pesa más que lo digital al irse |
+| Blog de Beway sobre seguros | No se pudo leer: el dominio está bloqueado desde la sesión | Pendiente |
+
 **Para el banco de señales (§6):**
 
 - **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones (Flat 101 sobre Revolut, F-899). Es una señal, sin resultados.
 - **Hubs de salud con valor diario** como respuesta al "no lo usé" (F-895). Es una propuesta de agencia, sin resultados.
+- **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil**, que permitirían ofertas según datos compartidos por el cliente (F-900, F-902).
+- **Seguros paramétricos en desarrollo en Perú** (una microfinanciera y el Ministerio de Desarrollo Agrario), aún sin oferta (F-902).
 
 ---
 
