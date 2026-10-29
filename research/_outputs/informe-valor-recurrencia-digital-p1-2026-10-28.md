@@ -568,6 +568,20 @@ valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de n
    2007, F-888). Con una o dos interacciones al año (McKinsey, 2023, vía cita secundaria, F-876), un hábito en
    el app propia es improbable; esto es inferencia. La recurrencia se toma prestada de hábitos que ya existen
    (billetera, WhatsApp, banca) o de servicios cercanos de alta frecuencia.
+
+   🔧 **Hipótesis de trabajo de la usuaria: WhatsApp es el canal que ya convive con la gente.** Lo respalda un dato
+   oficial: al cierre de 2025, 68,6% de los peruanos usó mensajería instantánea, y 98,6% de ellos usó WhatsApp, sobre todo
+   para hablar con familia y amigos (80,9%) (encuesta Erestel de OSIPTEL, 2025, F-943). Eso equivale a cerca de dos de
+   cada tres peruanos (cálculo propio). La hipótesis calza con la teoría del hábito: se aprovecha un contexto que ya se
+   repite, en vez de pedir que se forme uno nuevo en un app de seguros que se abre una o dos veces al año.
+
+   Lo que falta probar: (1) que el uso diario de WhatsApp para hablar con la familia se transfiera a resolver trámites de
+   seguros, porque usar un canal a diario no es lo mismo que querer recibir ahí a una empresa; (2) que resolver por
+   WhatsApp mejore los resultados (tiempo a resolución, recontacto, renovación), y no solo el volumen de contactos; en la
+   región solo hay pilotos sin resultados (§3.4.1); (3) cuánto pesan la privacidad, la dependencia de una plataforma de
+   terceros y el riesgo de fraude por suplantación. Una forma de probarla: ofrecer el mismo servicio (por ejemplo, el
+   seguimiento de un reembolso) por WhatsApp a un grupo sorteado y por el app a otro, y comparar contactos por necesidad
+   resuelta y satisfacción.
 3. **El siniestro es el pico de la relación.** La regla pico-final es uno de los efectos más robustos de la
    psicología: recordamos una experiencia por su peor o mejor momento y por cómo terminó. Por eso el cierre del
    siniestro (el pago, la explicación, el siguiente paso) pesa más que la cantidad de interacciones.
@@ -711,6 +725,8 @@ sugiere una secuencia: primero el indicador, luego dónde invertir.
   artículo aportado por la usuaria);
 - las memorias anuales completas de Perú y LatAm;
 - la búsqueda de estudios causales de retención en seguros;
+- 🔧 el paso de un enfoque de siniestralidad a uno de prevención en salud: hay literatura amplia y merece su propia
+  investigación, fuera de esta pregunta;
 - 📎 para la pregunta 3: la cifra de McKinsey sobre el peso de bancaseguros en LatAm, que no se pudo verificar.
 
 ---
@@ -749,7 +765,8 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 - 🔧 **Versión 7.2:** aclaración del SOAT como puerta de entrada (§3.3); qué significa "selección" en salud y nueva
   §3.4.1 sobre el uso cotidiano del seguro de salud (medicación, reposición, mensajería, teleconsulta, WhatsApp).
 - 🔧 **Versión 7.3:** el caso de Pacífico Salud (seguro en Yape, telemedicina propia y orientación médica por WhatsApp)
-  en §3.4.1, §3.8 y Anexos A y B; corrige que no se había encontrado información pública sobre WhatsApp.
+  en §3.4.1, §3.8 y Anexos A y B; corrige que no se había encontrado información pública sobre WhatsApp. Se suma la
+  hipótesis de WhatsApp como canal de uso diario, con el dato de OSIPTEL (§4).
 
 ### 7.3 Veredicto por documento
 
@@ -919,7 +936,7 @@ dato no existe, que no exista también es un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-942, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
+`research/fuentes/codice.md` (F-847 a F-943, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
 reservados para documentos internos que no se publican aquí). Enlaces en el Anexo F.
 
 ## Anexo F · Referencias con enlace
@@ -1006,7 +1023,8 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-936** · Duru, O. K.; Schmittdiel, J. A.; Dyer, W. T.; et al. (American Journal of Managed Care 16(1):33-40) (2010). *Mail-Order Pharmacy Use and Adherence to Diabetes-Related Medications*. 🟢 A. [Ver fuente](https://californiahealthline.org/morning-breakout/kaiser-study-finds-access-to-mailorder-pharmacies)
 - **F-937** · Roebuck, M. C.; Liberman, J. N.; Gemmill-Toyama, M.; Brennan, T. A. (Health Affairs 30(1):91-99) (2011). *Medication Adherence Leads To Lower Health Care Use And Costs Despite Increased Drug Spending*. 🟢 A. [Ver fuente](https://scholarhub.vn/publication/:slug/ef630f12-adfb-453e-8e75-a80a76b8da93)
 - **F-938** · Trome y Diario Correo (publirreportajes sobre el seguro de salud de Pacífico vendido en Yape) (c. 2025-2026). *Atenciones médicas en línea con seguro de salud Yape*. 🟠 D. [Ver fuente](https://diariocorreo.pe/publireportaje/atenciones-medicas-en-linea-con-seguro-de-salud-yape-noticia/)
-- **F-939** · Cortez Carpio, J. (líder de innovación y diseño, laboratorio de innovación La Cápsula de Pacífico Salud), publicación en LinkedIn; captura aportada por la usuaria (c. 2025 (27 de agosto; año no visible en la captura)). *¿Y si el mejor canal para una experiencia de salud no siempre es una app o una web? (orientación médica por WhatsApp en Tsana)*. 🔴 E. Captura de LinkedIn aportada por la usuaria (enlace acortado lnkd.in/d9WJzB8g).
+- **F-939** · Cortez Carpio, J. (líder de innovación y diseño, laboratorio de innovación La Cápsula de Pacífico Salud), publicación en LinkedIn; captura aportada por la usuaria (2026 (27 de agosto; año confirmado por la usuaria)). *¿Y si el mejor canal para una experiencia de salud no siempre es una app o una web? (orientación médica por WhatsApp en Tsana)*. 🔴 E. Captura de LinkedIn aportada por la usuaria (enlace acortado lnkd.in/d9WJzB8g).
 - **F-940** · Gestión (entrevista a José Enrique Deza, subgerente de Productos Masivos de Pacífico Salud); notas parafraseadas por la usuaria (2025). *Yape espera afiliar a su seguro de salud a 30.000 usuarios en su primer año (26 de junio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-941** · Gestión (redacción) (2025). *Pacífico Salud: inversión en innovación e infraestructura (20 de octubre de 2025; título truncado en la captura)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-942** · Gestión (entrevista a Guillermo Garrido-Lecca, CEO de Pacífico Salud) (2025). *Pacífico Salud explora zonas para expandir su red y afianza apuesta por diversificar segmentos (21 de julio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
+- **F-943** · OSIPTEL (Organismo Supervisor de Inversión Privada en Telecomunicaciones), Encuesta Residencial de Servicios de Telecomunicaciones (Erestel) 2025; vía nota de prensa del organismo y cobertura de medios (2026). *Erestel 2025: ¿cuáles son las herramientas y servicios digitales que más usan los peruanos?*. 🔵 B. [Ver fuente](https://www.osiptel.gob.pe/media/erhitdop/np-erestel-2025_cuáles-son-las-herramientas-y-servicios-digitales-que-más-usan-los-peruanos-revp-rev-jgm-revp.docx)

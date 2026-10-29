@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-942 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-942; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-943 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-943; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -468,7 +468,9 @@ salud y por el bajo ticket: seguro de S/9,90 en Yape con teleconsultas ilimitada
 medio millón de asegurados. Es el primer caso peruano de una aseguradora intentando la forma de valor "alcance". Son
 declaraciones de la empresa, sin datos de retención ni conversión. Inferencia a verificar: más de 1.000 atenciones al mes
 sobre más de 90.000 suscriptores sugieren un uso mensual cercano a 1%. Corrige el lote 8, que decía que no había casos de
-aseguradoras intentándolo por su propio canal.
+aseguradoras intentándolo por su propio canal. La publicación de LinkedIn es de 2026. Se suma la hipótesis de WhatsApp como
+canal de uso diario: según OSIPTEL, cerca de dos de cada tres peruanos usan WhatsApp (F-943); falta probar que ese hábito
+se transfiera a trámites de seguros y que mejore resultados.
 
 ---
 
