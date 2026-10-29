@@ -1,7 +1,7 @@
 # Evaluación de calidad de agentes conversacionales de IA (chatbots)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-15 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-15 · Última actualización: 2026-10-29 · Versión: v1.0
 > Origen: `/seeker` — investigación de espectro amplio (empírico + teórico)
 
 ---
@@ -253,3 +253,4 @@ mayormente 🟡, el problema es más de percepción/tono — ahí CUQ/BUS-11 rin
   descontarse frente a la medición objetiva.
 - [[conducta-humano-ia|Conducta humano-IA]] — la adulación de la IA (F-488) y la brecha preferencia-juicio son un problema de calidad que las escalas de ese node deberían medir: satisfacción alta con juicio degradado.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — la fragilidad de los LLMs ante la redacción (F-557, F-561) y la dependencia de la versión del modelo (F-572) son problemas de medición que las escalas de este node deberían controlar.
+- [[canal-servicio-siniestro-seguros|Rol del canal en el servicio y el siniestro]] — si el aviso o el seguimiento del siniestro se automatizan con un agente, estas escalas sirven para medirlo.
