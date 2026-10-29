@@ -36,6 +36,8 @@
 
 **Contraevidencia que obliga a medir el retorno, no a suponerlo:** los ratios de costo de la industria son 10% a 17% más altos que en 2005 pese a la inversión digital; la productividad subió, pero la absorbieron tecnología, cumplimiento y complejidad (F-946, F-948). La inversión **dirigida** sí bajó gastos en vida (F-947). Las estimaciones de ahorro por digitalizar (1 a 4 puntos del ratio de gastos, F-949) son proyecciones, no resultados.
 
+**¿Fortalecer el core o generar toques?** Es la decisión de estrategia que suele plantearse. **El core** es lo que el cliente ya necesita hacer con su seguro: pagar, renovar, reportar y seguir un siniestro, pedir un reembolso, consultar la póliza. Fortalecerlo no crea razones nuevas para entrar: hace que las que existen terminen bien. **Los toques** son razones nuevas para entrar aunque no haya un trámite pendiente: bienestar, puntos, retos, recompensas, contenido; buscan frecuencia. La evidencia favorece ordenarlas en el tiempo: primero el core, donde está el retorno mejor respaldado (F-918, F-861); después los toques, solo en salud y vida individual y con grupo de control, porque se piden y no se usan (F-859) y su efecto no está probado en la región (F-805, F-807; ver 1c).
+
 **Dónde no está el retorno:** en la frecuencia de uso por sí misma (el seguro tiene 1 a 3 contactos naturales al año, F-857), en el bienestar que se pide y no se usa (F-859) y en carteras cuya permanencia depende de otra cosa, como el crédito en bancaseguros (F-883).
 
 ## 1c. Vitality, Alan y Oscar Health: por qué ellos sí logran interacción frecuente (iteración 5, 2026-10-29)

@@ -286,6 +286,8 @@ Donde el Perú, LATAM y los mercados parecidos no tenían evidencia, se usó la 
 
 ### Objetivo 4 · Evaluar el core antes de sumar nada
 
+*El core es lo que el cliente ya necesita hacer con su seguro: pagar, renovar, reportar y seguir un siniestro, pedir un reembolso y entender su póliza. Lo opuesto son los «toques»: razones nuevas para entrar a la App, como bienestar o recompensas.*
+
 - **🇵🇪 Perú:** los dos motivos principales de reclamo (información y cancelación) son fallas de core, no de funciones nuevas (F-910). La competencia local compite en velocidad del aviso de siniestro y en facilidad de pago (F-890, F-892).
 - **🌎 LATAM:** Porto bajó 29% los contactos de siniestro rediseñando el recorrido existente (F-914).
 - **🌐 Global:** tras una mala experiencia digital, solo 27% vuelve al canal (F-861).
