@@ -132,6 +132,7 @@ Estados: `abierta` · `parcial` · `respaldada` · `refutada`.
 
 ## Conexiones
 
+- [[cliente-digital-seguros-recurrencia-canales|Cliente digital en seguros: recurrencia, canales y retención]] — aplica la regla «la IA asiste, no decide» al canal de seguros con datos de aceptación por tarea (F-863) y el castigo por revelar el bot (F-852).
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — fuente del contexto (crisis del nudge, megastudies, *s-frame*, "AI Behavioral Science"); este node asume esa base y reúne la evidencia humano-IA que allí estaba solo esbozada.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — su §2.2 (explicabilidad, sobre-confianza) y las reglas C8/C11 son el antecedente directo de §2.1-2.2; la evidencia de generative UI (preferencia vs. soporte funcional) ilustra RP3.
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de calidad de agentes conversacionales de IA]] — la adulación (F-488) es un problema de calidad que ese node debería medir: satisfacción alta con juicio degradado.

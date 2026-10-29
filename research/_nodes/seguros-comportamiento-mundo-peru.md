@@ -300,6 +300,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ## Conexiones
 
+- [[cliente-digital-seguros-recurrencia-canales|Cliente digital en seguros: recurrencia, canales y retención]] — agrega la dimensión digital: frecuencia natural del seguro, canal por momento, referencias de techo de digitalización y contexto digital peruano (F-873, F-874, F-878).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — caso
   real de la brecha de protección (~3,3% de hogares con seguro de desastres): en el Niño Costero 2017 el seguro cubrió ~7% del daño
   (F-773) y los hogares se recuperaron con donaciones, no con indemnizaciones (F-752); coyuntura 2026-27.

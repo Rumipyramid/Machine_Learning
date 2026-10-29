@@ -220,6 +220,7 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
 
 ## Conexiones
 
+- [[cliente-digital-seguros-recurrencia-canales|Cliente digital en seguros: recurrencia, canales y retención]] — marco de canal por momento (compra asistida, servicio digital, siniestro híbrido) en el que se inscriben estos casos.
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — este node
   es la extensión regional (LATAM) de esa investigación global; confirma el mismo patrón
   (digital-first potencia al intermediario, no lo reemplaza) con evidencia propia de Brasil,

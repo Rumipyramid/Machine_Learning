@@ -215,6 +215,7 @@
 
 ## Conexiones
 
+- [[cliente-digital-seguros-recurrencia-canales|Cliente digital en seguros: recurrencia, canales y retención]] — los motores de frecuencia de seguros (Vitality, Alan, Ping An) y sus cifras de retención autorreportadas, a contrastar con la autoselección documentada aquí.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — marco general (crisis del nudge, megaestudios); este node baja a un dominio concreto donde casi no hay experimentos aleatorizados.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de la aversión a la pérdida (§5.4) y del sesgo del presente (§5.11), que sustentan caducidad, niveles y recompensas.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Discovery Vitality es el caso de gamificación + recompensa en seguros; aquí se contrasta con lo que se sabe en retail.

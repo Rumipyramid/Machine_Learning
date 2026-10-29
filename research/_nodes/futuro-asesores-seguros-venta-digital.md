@@ -364,6 +364,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
 
 ## Conexiones
 
+- [[cliente-digital-seguros-recurrencia-canales|Cliente digital en seguros: recurrencia, canales y retención]] — evidencia externa de que lo solo digital deja el NPS más bajo y el cliente prefiere un recorrido híbrido (F-856, F-858, F-862, F-866).
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
   confianza sube con intermediación de un broker (§3.3); este node aporta el marco
