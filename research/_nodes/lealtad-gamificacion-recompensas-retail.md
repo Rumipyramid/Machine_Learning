@@ -220,3 +220,5 @@
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Discovery Vitality es el caso de gamificación + recompensa en seguros; aquí se contrasta con lo que se sabe en retail.
 - [[tendencias-diseno-innovacion|Tendencias en diseño e innovación]] — la regla de confrontar el impacto declarado con el demostrado se aplica a las cifras de las empresas (F-833, F-834).
 - [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — aplica la pregunta de la recurrencia a un producto de baja frecuencia: el seguro.
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — extiende este
+  catálogo a seguros, microfinanzas, pagos, salud, educación e impuestos.

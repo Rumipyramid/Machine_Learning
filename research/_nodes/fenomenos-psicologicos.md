@@ -546,3 +546,5 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (lapuerta)]] — RF6 y PF6: sesgos como rangos.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — dónde se aplican la aversión a la pérdida (caducidad, niveles) y el progreso dotado en programas de lealtad, y qué demuestra el campo.
 - [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — aplica la regla pico-final al siniestro y el sesgo del presente a la renovación y la venta cruzada (§9 de ese node).
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — aplicaciones de
+  campo de norma social, defaults y recordatorios.

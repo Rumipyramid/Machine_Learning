@@ -104,3 +104,5 @@ Síntesis de la evidencia de este node, no un dato.
   reclamos (cargo indebido, PPI) son el mismo problema de consentimiento.
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en las personas]] — el seguro paramétrico (F-786, F-792)
   llega a las personas a través de un tomador colectivo: otra forma de cliente intermediado.
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — el embebido y la
+  afiliación por defecto como métricas de alcance, no de conducta.

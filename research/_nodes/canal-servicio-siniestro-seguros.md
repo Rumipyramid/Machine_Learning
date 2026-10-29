@@ -87,3 +87,5 @@
   complejidad, aplicada a la venta. Aquí se extiende al servicio y al siniestro.
 - [[evaluacion-calidad-agentes-conversacionales-ia|Evaluación de agentes conversacionales de IA]] — si el
   seguimiento o el aviso se automatizan con un agente, cómo medir su calidad.
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — ver pagar un
+  siniestro sostiene la recompra (F-990, F-896).
