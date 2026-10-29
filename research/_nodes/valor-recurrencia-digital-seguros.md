@@ -518,3 +518,5 @@ se transfiera a trámites de seguros y que mejore resultados.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en lenguaje claro]] — la palanca contra la ambigüedad que genera llamadas (§9).
 - [[canal-servicio-siniestro-seguros|Rol del canal en el servicio y el siniestro]] — pregunta 2 del mismo benchmarking: qué canal sirve en cada momento del servicio y del siniestro.
 - [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado: banco, billetera, empleador y corredor]] — pregunta 3: quién controla cada momento cuando el cliente llega por una puerta ajena (anclas de este node).
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — qué
+  intervenciones mueven cada forma de valor, en seguros e industrias análogas (2026-10-29).

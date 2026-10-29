@@ -319,3 +319,5 @@ chicos, ROI alto por costo marginal ~0) — útil para fijar expectativas con st
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos: qué sobrevive a la replicación]] — capa de base: estado de replicación de los efectos de laboratorio (anclaje, encuadre, aversión a la pérdida, priming, agotamiento del ego) que los nudges aplicados de este node presuponen.
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — aplicación concreta a retail: casi no hay experimentos aleatorizados; el mejor resultado de gamificación viene de un solo experimento (F-807) y persiste tras retirarlo.
 - [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — usa la telemetría vehicular (F-442) como la única evidencia causal de prevención vía digital en seguros.
+- [[intervenciones-adopcion-conducta|Intervenciones que cambiaron (o no) la adopción y la conducta]] — inventario de
+  intervenciones con efecto, duración y costo (2026-10-29).
