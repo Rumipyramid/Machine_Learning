@@ -1,6 +1,6 @@
 # Research fuentes secundarias
 
-**Cliente digital RIMAC · Entregable 1 del plan de investigación (Módulo 1) · versión 2, con foco en el Perú**
+**Cliente digital RIMAC · Entregable 1 del plan de investigación (Módulo 1) · versión 3, con foco en el Perú**
 **Fecha:** 29 de octubre de 2026 · **Método:** investigación de 360° en tres pistas que no se mezclan: 🔬 evidencia académica, 📱 conversación y percepción social, 📈 desempeño de negocio
 **Basado en:** `_nodes/cliente-digital-seguros-recurrencia-canales.md` (v2.0, 2026-10-29). Las fuentes se citan con su código del registro de fuentes del proyecto (`research/fuentes/codice.md`), entre paréntesis.
 
@@ -14,22 +14,96 @@
 
 ## Resumen ejecutivo
 
-1. **El peruano ya vive en digital, pero para pagar y conversar, no para asegurarse.** 67% de los adultos tiene billetera digital (F-897), Yape promedia 66 transacciones al mes por usuario (F-894) y el uso de banca y billeteras por internet móvil se triplicó en dos años (F-896). Pero el seguro privado llega a una minoría: la penetración es ~2% del PBI (F-904) y una aseguradora estima que solo ~6% de la población tiene un seguro privado (F-891).
-2. **En el Perú, el digital ganó donde el producto es simple y obligatorio: el SOAT.** Nueve de cada diez SOAT emitidos son digitales (F-902). En lo voluntario y complejo el digital apenas avanza: solo ~2 de cada 10 vehículos tienen seguro vehicular (F-903) y ~8% de los trabajadores formales tiene EPS (F-911).
-3. **La barrera peruana número uno no es la tecnología, es la confianza.** Entre 14% y 23% de los peruanos confía en las aseguradoras según la fuente (F-884, F-899), contra 38% que confía en el sistema financiero (F-895). En Chile, aseguradoras e isapres también están entre las instituciones menos confiables (F-923). En un mercado así, el canal humano cumple una función de confianza que la app no reemplaza.
-4. **El peruano aprende rápido lo que le resuelve algo cotidiano, y lento lo demás.** Hay alta adopción de pagos y mensajería (77% hace llamadas por apps, F-896; 45% de las consultas de atención ya llega por WhatsApp o redes, F-905), pero la apropiación digital del Perú es la más baja de Colombia, Chile y Perú (0,21 contra 0,32 de Chile, F-908).
-5. **Las aseguradoras peruanas tienen escala digital, pero no frecuencia.** RIMAC reporta 550 mil usuarios recurrentes de la app sobre más de 3 millones de clientes (F-871); Interseguro, más de 540 mil clientes activos en canales digitales (F-872). Pacífico ya lleva el pago de primas a Yape (F-892) y resuelve en menos de cinco minutos la mitad de los avisos de siniestro vehicular menor (F-890). Ninguna publica uso mensual ni conversión.
-6. **En la región, quien logró frecuencia la logró dentro de otra app o con otro trabajo.** Porto (Brasil) tiene más de 4 millones de clientes activos en su app y resuelve 72% de la atención en digital, sobre todo por WhatsApp (F-914). Nubank, GCash y PhonePe venden seguros dentro de apps de pago o banca, pero con penetración de un dígito sobre su base y muchas pólizas gratuitas atadas a una transacción (F-915, F-916, F-917).
-7. **La mejor evidencia de que lo digital retiene en un mercado parecido al peruano viene de Ghana.** Pagar y renovar el seguro desde el celular aumentó en 17,4 puntos la renovación, sobre todo en trabajadores informales (F-918, estudio arbitrado). Es la pista más concreta para cualquier hipótesis de fidelidad: **lo que retiene es quitar fricción al pago y la renovación**, no la frecuencia de visita.
-8. **Hay vacíos importantes en el Perú.** No hay un dato público de qué parte de las primas se vende en digital, ni del uso de las apps por aseguradora, ni un estudio peruano sobre qué gatilla el registro. Varias fuentes primarias peruanas (Credicorp, Ipsos Perú, APESEG, SBS) no se pudieron leer completas desde este entorno.
+1. **El peruano sube una escalera digital, y el seguro está en el último peldaño.** 82% usa internet (F-926) y ~70% usa WhatsApp (F-929). 67% tiene billetera digital (F-897) y en 2025 hizo 655 pagos digitales por adulto, casi dos al día (F-933). La banca ya es digital: más de 80% de las transacciones del BCP y del BBVA ocurre en sus apps (F-936, F-937). Pero solo ~6% tiene un seguro privado voluntario (F-891) y la penetración es ~2% del PBI (F-904).
+2. **Cuando el seguro se vuelve digital en masa, lo hace dentro del banco o de la billetera, no en la app de la aseguradora.** Pacífico llega a más de 3,4 millones de personas con seguros de S/ 1 a S/ 30 vía BCP, Mibanco y Yape (F-941); la app del BCP vende SOAT, seguro de celular y protección de tarjetas (F-942); en Sudamérica, el seguro fue el producto más vendido en digital por BBVA (F-938). La recurrencia ocurre en la billetera: la aseguradora capta la póliza, pero no la visita.
+3. **En el Perú, el digital ganó donde el producto es simple y obligatorio: el SOAT.** Nueve de cada diez SOAT emitidos son digitales (F-902). En lo voluntario y complejo el digital apenas avanza: solo ~2 de cada 10 vehículos tienen seguro vehicular (F-903) y ~8% de los trabajadores formales tiene EPS (F-911).
+4. **La barrera peruana número uno no es la tecnología, es la confianza.** Entre 14% y 23% de los peruanos confía en las aseguradoras según la fuente (F-884, F-899), contra 38% que confía en el sistema financiero (F-895). En Chile, aseguradoras e isapres también están entre las instituciones menos confiables (F-923). En un mercado así, el canal humano cumple una función de confianza que la app no reemplaza.
+5. **El peruano adopta rápido lo cotidiano, pequeño e inmediato, y lento lo demás.** El ticket promedio de una billetera es de ~S/ 48 (F-933); 45% de las consultas de atención ya llega por WhatsApp o redes (F-905). Pero la apropiación digital del Perú es la más baja frente a Colombia y Chile (F-908), la zona rural y los mayores de 60 se quedan atrás (F-926, F-927) y el fraude es una experiencia común: 3 de cada 4 limeños sufrió un intento en el último año (F-931).
+6. **Las aseguradoras peruanas tienen escala digital, pero no frecuencia.** RIMAC reporta 550 mil usuarios recurrentes de la app sobre más de 3 millones de clientes (F-871); Interseguro, más de 540 mil clientes activos en canales digitales (F-872). Pacífico ya lleva el pago de primas a Yape (F-892) y resuelve en menos de cinco minutos la mitad de los avisos de siniestro vehicular menor (F-890). Ninguna publica uso mensual ni conversión.
+7. **En la región, quien logró frecuencia la logró dentro de otra app o con otro trabajo.** Porto (Brasil) tiene más de 4 millones de clientes activos en su app y resuelve 72% de la atención en digital, sobre todo por WhatsApp (F-914). Nubank, GCash y PhonePe venden seguros dentro de apps de pago o banca, pero con penetración de un dígito sobre su base y muchas pólizas gratuitas atadas a una transacción (F-915, F-916, F-917).
+8. **La mejor evidencia de que lo digital retiene en un mercado parecido al peruano viene de Ghana.** Pagar y renovar el seguro desde el celular aumentó en 17,4 puntos la renovación, sobre todo en trabajadores informales (F-918, estudio arbitrado). Es la pista más concreta para cualquier hipótesis de fidelidad: **lo que retiene es quitar fricción al pago y la renovación**, no la frecuencia de visita.
+9. **Hay vacíos importantes en el Perú.** No hay un dato público de qué parte de las primas se vende en digital, ni del uso de las apps por aseguradora, ni un estudio peruano sobre qué gatilla el registro. Varias fuentes primarias peruanas (Credicorp, Ipsos Perú, APESEG, SBS) no se pudieron leer completas desde este entorno.
 
 **Cómo se comportan las tres pistas.** Para el Perú, la **pista de negocio** es la más rica (memorias, gremio, regulador). La **pista social** es débil pero coherente: desconfianza alta, reclamos por información y cancelación, atención poco valorada. La **pista académica** casi no tiene estudios peruanos sobre seguros digitales; la evidencia arbitrada más útil viene de mercados parecidos (Ghana) y de banca. Las tres **convergen** en que el seguro peruano se digitaliza por el pago y lo obligatorio, y que la confianza sigue pasando por una persona.
 
 ---
 
-## 1. 🇵🇪 La industria peruana de seguros
+## 1. 🇵🇪 El peruano digital: de lo general a la banca y el seguro
 
-### 1.1 Tamaño y penetración
+**Conclusión:** el peruano sube una **escalera digital**. Primero se comunica, luego paga, luego hace banca y, muy pocas veces, gestiona un seguro. Cada peldaño tiene menos gente que el anterior. Quien llega al seguro digital casi siempre llega desde un peldaño previo: la billetera o la app del banco.
+
+### 1.1 Uso general de lo digital
+
+| Dato | Fuente y solidez | Pista |
+|---|---|---|
+| 82,2% de la población de 6+ años usa internet: Lima Metropolitana 90,8%, resto urbano 85,1%, rural 58,9% (III trimestre 2025) | F-926 · 🔵 B | 📈 |
+| 90,7% de los usuarios de internet entra por el celular; 62,7% de los hogares tiene conexión a internet, pero 92,6% a 96% tiene acceso fijo o móvil si se cuenta el celular | F-878, F-896, F-929 · 🔵 B | 📈 |
+| 28,4 millones de usuarios de internet y 28,3 millones de identidades en redes sociales (oct-2025) | F-928 · 🟡 C | 📈 |
+| Mensajería: WhatsApp lo usa 68,6% de los peruanos y 98% de los usuarios urbanos de internet; 77,1% hace llamadas por apps | F-929, F-930, F-896 · 🔵 B / 🟡 C | 📱 |
+| ~60% de los adultos compra en línea; 65% de esas compras se hace desde el smartphone; el e-commerce movió ~US$ 15.600 millones en 2024 (+21,2%) | F-906, F-905 · 🟠 D | 📈 |
+| 16,3% usa herramientas de inteligencia artificial (Lima 23%, rural 6%); 87% de ellos usa ChatGPT | F-929 · 🔵 B | 📈 |
+| Brecha de edad: 47% de los mayores de 60 usa internet (56,8% urbano, 14,6% rural) | F-927 · 🟠 D | 📈 |
+| Apropiación digital: Perú 0,21 frente a Chile 0,32 | F-908 · 🟡 C | 📈 |
+| Fraude: 3 de cada 4 limeños sufrió un intento en el último año; los delitos informáticos crecieron 40% en 2024 | F-931 · 🟠 D | 📱 |
+| Punto de partida (2019): 43,6% veía la compra por internet poco o nada segura; 14,4% nunca había hecho una transacción en línea. La desconfianza en el canal es anterior al auge de las billeteras | F-944 · 🟠 D (dato antiguo) | 📱 |
+
+**Lectura:** lo digital es masivo para comunicarse y entretenerse, y crece rápido en compras. Hay dos brechas claras, rural y mayores de 60, justo donde el canal humano sigue siendo necesario. Y el fraude es una experiencia común: el peruano entra a lo digital con cautela, y espera que la empresa lo proteja.
+
+### 1.2 Pagos y banca: donde el peruano ya es digital
+
+| Dato | Fuente y solidez | Pista |
+|---|---|---|
+| 655 pagos digitales por adulto en 2025 (+45,8% en un año; 29 en 2018); ~2,1 al día a mediados de 2026 | F-933 · 🔵 B | 📈 |
+| Ticket promedio de una billetera: ~S/ 48 (eran ~S/ 80 cuatro años antes) | F-933 · 🔵 B | 📈 |
+| 67% de los adultos tiene billetera digital y 57% tiene cuenta (2024) | F-897 · 🔵 B | 📈 |
+| El efectivo sigue primero en frecuencia: 23 pagos al mes, contra 18 con billetera y 12 con tarjeta; pero solo 14% paga únicamente en efectivo. En los niveles D y E el efectivo predomina (65%) | F-934 · 🔵 B | 📈 |
+| Yape: ~16,9 millones de usuarios activos y ~66 transacciones al mes por usuario; la interoperabilidad Yape-Plin supera 263 millones de transacciones al mes (dic-2025) | F-936, F-894, F-939 · 🟠 D / 🟡 C | 📈 |
+| Uso de banca o billeteras por internet móvil: 13,8% (2022) → 43,6% (2024) de los usuarios de internet; en 2025, 3 de cada 4 hace operaciones financieras en línea | F-896 · 🔵 B | 📈 |
+| BCP: 17,3 millones de clientes digitales, 81% de su base; 9 millones de usuarios activos de la Banca Móvil | F-936 · 🟠 D | 📈 |
+| BBVA Perú: 81,7% de las ventas son digitales sin ninguna asistencia; más de 81% de las transacciones por la app; 3,28 millones de clientes móviles activos | F-937 · 🔵 B | 📈 |
+| Las oficinas bancarias bajaron de 1.837 a 1.646 entre 2022 y 2025 | F-935 · 🔵 B | 📈 |
+| La confianza en el sistema financiero subió de 29% a 38% en cinco años | F-895 · 🟠 D | 📱 |
+| Las operaciones no reconocidas (fraudes) son hoy la primera causa de reclamo al sistema financiero | F-932 · 🟡 C | 📱 |
+
+**Lectura:** la banca peruana ya es digital primero: más de 80% de las transacciones y de las ventas de los grandes bancos pasa por la app. El hábito que se formó es **pequeño, frecuente e inmediato** (pagar S/ 48, transferir, consultar). Tiene dos frenos: el efectivo en los niveles D y E, atado a la informalidad, y el fraude, que convierte la seguridad en una condición para usar el canal, no en un diferenciador.
+
+### 1.3 Seguros: el peldaño que todavía no se sube
+
+| Dato | Fuente y solidez | Pista |
+|---|---|---|
+| ~9 de cada 10 SOAT emitidos son digitales; Interseguro vendía ~70% de su SOAT por plataformas digitales (2022) | F-902, F-940 · 🟠 D | 📈 |
+| Peso del canal digital en el negocio total: 5-10% de los ingresos de Interseguro (2022); ~25% de las nuevas emisiones de RIMAC (sin fecha); ~7% de los ingresos globales de Mapfre (2022) | F-940, F-884, F-925 · 🟠 D | 📈 |
+| **Seguros dentro de la app del banco:** el BCP vende SOAT, seguro de celular, seguro de viajes y protección de tarjetas en su app; en Sudamérica, el seguro fue el producto más vendido en digital por BBVA (66% de sus ventas digitales); los seguros opcionales que Interseguro vende vía Interbank crecieron 18,9% en 2025 | F-942, F-938, F-940 · 🔵 B / 🟠 D | 📈 |
+| **Seguros dentro de la billetera:** más de 3,4 millones de personas con seguros de S/ 1 a S/ 30 vía BCP, Mibanco y Yape; Yape es «uno de los principales canales de distribución de seguros» de Pacífico; Seguro Salud Yape desde S/ 9,90; pago de primas de Pacífico desde Yape | F-941, F-893, F-892 · 🔵 B / 🟠 D | 📈 |
+| **App de la aseguradora:** RIMAC, 550 mil usuarios recurrentes sobre más de 3 millones de clientes; Interseguro, más de 540 mil activos digitales; Mi Espacio Pacífico, 3,0 de 5 en la tienda | F-871, F-872, F-885 · 🔵 B / 🟠 D | 📈 |
+| Más de 40% usa canales digitales en la posventa; el gasto promedio en seguros era 4,5% de un sueldo mínimo al mes (2022) | F-943 · 🟠 D | 📈 |
+
+**Lectura:** el contraste con la banca es fuerte. En banca, más de 80% de las transacciones es digital. En seguros, el digital domina solo en el SOAT y en los microseguros embebidos; en el resto del negocio pesa entre 5% y 25% según la aseguradora. Y cuando el seguro se vuelve digital en masa, **lo hace dentro de la app del banco o de la billetera**, donde el peruano ya tiene el hábito. La aseguradora consigue la póliza; la billetera se queda con la frecuencia.
+
+### 1.4 La escalera digital del peruano
+
+| Peldaño | Adopción aproximada | Fuente |
+|---|---|---|
+| Comunicarse por mensajería | ~70% de los peruanos; 98% de los usuarios urbanos de internet | F-929, F-930 |
+| Usar internet | 82% de la población de 6+ años | F-926 |
+| Pagar con algo distinto al efectivo | 86% de los adultos; 67% tiene billetera | F-934, F-897 |
+| Hacer operaciones financieras en línea | 3 de cada 4 usuarios de internet (2025) | F-896 |
+| Comprar en línea | ~60% de los adultos | F-906 |
+| Usar inteligencia artificial | ~16% | F-929 |
+| Tener un seguro privado voluntario | ~6% | F-891 |
+| Usar la app de su aseguradora de forma recurrente | ~1,6% de la población, si se divide el dato de RIMAC (550 mil) por ~34 millones de peruanos (cálculo propio, solo orden de magnitud) | F-871 |
+
+**Qué implica para el cliente digital de seguros:**
+- **Bajar el seguro de peldaño.** El seguro debe estar donde el peruano ya tiene el hábito: la billetera para pagar, WhatsApp para preguntar, la app del banco para contratar lo simple.
+- **Reservar la app propia para los momentos de alta necesidad.** Siniestro, reembolso y pago, no frecuencia.
+- **Hacer visible la seguridad.** Con el fraude como experiencia común y primera causa de reclamo bancario, la confianza en el canal es una condición de entrada.
+- **Mantener el canal asistido donde está la brecha.** Zona rural, mayores de 60 y niveles D y E, donde el efectivo y la desconfianza pesan más.
+
+---
+
+## 2. 🇵🇪 La industria peruana de seguros
+
+### 2.1 Tamaño y penetración
 
 | Indicador | Dato | Fuente y solidez | Pista |
 |---|---|---|---|
@@ -42,7 +116,7 @@
 
 **Lectura:** la «tenencia de seguros» cambia de 6% a 40% según qué se cuente (privado voluntario, SOAT, seguro público). Cualquier meta de digitalización tiene que decir sobre qué base se calcula.
 
-### 1.2 Dónde el digital ya ganó y dónde no
+### 2.2 Dónde el digital ya ganó y dónde no
 
 | Producto | Situación digital en el Perú | Fuente y solidez |
 |---|---|---|
@@ -55,13 +129,13 @@
 
 **Lectura:** el SOAT es la prueba de que el peruano compra en digital cuando el producto es obligatorio, simple y barato. Fuera de eso, el problema no es el canal: la mayoría ni siquiera tiene el seguro.
 
-### 1.3 Regulación y canales
+### 2.3 Regulación y canales
 
 - **Venta a distancia.** La SBS proyecta ampliar la venta por internet y teléfono a más productos, además de los masivos y vehiculares (F-912).
 - **Desgravamen.** Desde 2025 es voluntario fuera del hipotecario, y su cobertura termina al pagarse el crédito (F-883). Las carteras de bancaseguros pueden achicarse y su permanencia sigue atada al crédito.
 - **Corredores.** El gremio identifica como barreras el costo, no ver la necesidad y la desconfianza, y ve al corredor como fuente de confianza (F-899).
 
-### 1.4 Qué hacen las aseguradoras peruanas en digital
+### 2.4 Qué hacen las aseguradoras peruanas en digital
 
 | Aseguradora | Dato público | Fuente y solidez |
 |---|---|---|
@@ -74,7 +148,7 @@
 
 **Lectura:** el mercado peruano compite en **pago fácil, aviso de siniestro rápido y presencia en la billetera**. Ninguna aseguradora publica uso mensual de la app ni conversión, así que no hay un benchmark local de frecuencia.
 
-### 1.5 Lo que no se sabe de la industria peruana
+### 2.5 Lo que no se sabe de la industria peruana
 
 - Qué parte de las primas se vende por canal digital, por aseguradora o por ramo (la SBS lo tendría en sus boletines; no está en fuentes abiertas).
 - Cuántos clientes de cada aseguradora usan su app cada mes.
@@ -82,9 +156,9 @@
 
 ---
 
-## 2. 🇵🇪 El consumidor peruano
+## 3. 🇵🇪 El consumidor peruano
 
-### 2.1 Confianza: la barrera central
+### 3.1 Confianza: la barrera central
 
 | Dato | Fuente y solidez | Pista |
 |---|---|---|
@@ -97,36 +171,25 @@
 
 **Lectura:** el peruano confía en una aseguradora la mitad de lo que confía en un banco. La billetera móvil ganó confianza transaccional (pagar), no confianza de largo plazo (proteger). Por eso la intermediación humana sigue siendo el principal recurso de confianza del seguro.
 
-### 2.2 Capacidades financieras
+### 3.2 Capacidades financieras
 
 - 41% de los peruanos carece de capacidades financieras, 46% está en nivel medio y solo 13% en nivel adecuado (F-898, 🔵 B).
 - ~4 de cada 10 tiene o tuvo un seguro y muchos confunden «seguro» con salud pública (SIS o EsSalud) (F-1, 🔵 B).
 
 **Lectura:** la mayoría no puede evaluar un seguro sola. Esto empuja la compra asistida y exige que los flujos digitales expliquen dentro del mismo paso, no en una sección aparte.
 
-### 2.3 Hábito digital: alto en pagar y conversar, bajo en lo demás
+### 3.3 Hábito digital
 
-| Dato | Fuente y solidez |
-|---|---|
-| 67% de los adultos tiene billetera digital; 57% tiene cuenta en el sistema financiero (2024) | F-897 · 🔵 B |
-| Yape: ~16 millones de usuarios activos al mes y 66 transacciones al mes por usuario (2025) | F-894 · 🟡 C |
-| Usuarios de internet que usan banca o billeteras por internet móvil: 13,8% (2022) → 43,6% (2024); en 2025, 3 de cada 4 usuarios de internet hace operaciones financieras en línea | F-896 · 🔵 B |
-| 77,1% de los usuarios de internet hace llamadas por apps de mensajería | F-896 · 🔵 B |
-| 45% de las consultas de atención al cliente se hizo por WhatsApp o redes sociales (2024) | F-905 · 🟠 D |
-| ~60% de los adultos compra en línea; 65% de esas compras se hace desde el smartphone | F-906 · 🟠 D |
-| 62,7% de los hogares tiene conexión a internet; 90,7% de los usuarios entra por el celular | F-878 · 🔵 B |
-| Índice de apropiación digital: Perú 0,21 frente a Chile 0,32 | F-908 · 🟡 C |
+El detalle está en la sección 1. En corto: el peruano ya hace en el celular lo cotidiano (pagar, transferir, conversar, comprar) y todavía no lo complejo o poco frecuente. Para un seguro, eso sugiere que **viva donde el peruano ya está** (billetera, WhatsApp, app del banco) y que la app propia se reserve para los momentos de alta necesidad (siniestro, reembolso, pago).
 
-**Lectura:** el peruano ya hace en el celular las tareas cotidianas: pagar, transferir, conversar por WhatsApp, comprar. Lo que todavía no hace es usar el celular para tareas complejas o poco frecuentes. Para un seguro, esto sugiere dos cosas: que el seguro **viva donde el peruano ya está** (billetera, WhatsApp) y que la app propia se reserve para los momentos de alta necesidad (siniestro, reembolso, pago).
-
-### 2.4 Salud digital
+### 3.4 Salud digital
 
 - 29,2% de una muestra de 1.255 peruanos usó teleconsultas; en un hospital de EsSalud (2025) se observó que, pasada la cuarentena, muchos volvieron a preferir la atención presencial (F-909, 🟡 C, artículo exacto por confirmar).
 - La telemedicina pública creció en volumen (MINSA y EsSalud), pero no hay datos públicos de uso de telemedicina en EPS o seguros privados.
 
 **Lectura:** la pandemia probó que el peruano puede usar la teleconsulta, pero no la convirtió en hábito. Un servicio de salud digital necesita una razón recurrente para usarse, no solo disponibilidad.
 
-### 2.5 Servicio y reclamos
+### 3.5 Servicio y reclamos
 
 - Solo 31% aprueba la atención de las empresas; la posventa en canales digitales tiene 35% de calificación positiva (F-907, 🟠 D, año no visible).
 - Los reclamos a RIMAC en feb-2025 fueron ~0,2% de las operaciones, sobre todo por información insuficiente y cancelación indebida de pólizas (F-910, 🔵 B).
@@ -134,7 +197,7 @@
 
 **Lectura:** el reclamo peruano típico no es por la app, es por **no entender qué se contrató** o por **una cancelación no esperada**. Son dos fallas que un buen canal digital puede prevenir: explicar la póliza y avisar antes de cancelar.
 
-### 2.6 Disposición al seguro embebido
+### 3.6 Disposición al seguro embebido
 
 - 43% de los peruanos compraría un seguro vinculado a otro producto o servicio; ~60% entre jóvenes y nivel medio-bajo (BCG 2023) (F-887, F-900, 🟠 D).
 - Pacífico se propuso llegar a 6 millones de pólizas de bajo costo hacia 2025 (F-891, 🟠 D).
@@ -143,7 +206,7 @@
 
 ---
 
-## 3. 🌎 Latinoamérica: lo que completa al Perú
+## 4. 🌎 Latinoamérica: lo que completa al Perú
 
 | Hallazgo | País | Fuente y solidez | Pista |
 |---|---|---|---|
@@ -160,7 +223,7 @@
 
 ---
 
-## 4. 🌏🌍 Mercados emergentes parecidos
+## 5. 🌏🌍 Mercados emergentes parecidos
 
 Se eligieron mercados con alta informalidad, billetera móvil masiva y baja penetración de seguros.
 
@@ -176,7 +239,7 @@ Se eligieron mercados con alta informalidad, billetera móvil masiva y baja pene
 
 ---
 
-## 5. 🌐 Lo que solo existe a nivel global (resumen)
+## 6. 🌐 Lo que solo existe a nivel global (resumen)
 
 Donde el Perú, LATAM y los mercados parecidos no tenían evidencia, se usó la global (detalle por fuente en el registro de fuentes, F-847 a F-889):
 
@@ -189,7 +252,7 @@ Donde el Perú, LATAM y los mercados parecidos no tenían evidencia, se usó la 
 
 ---
 
-## 6. Respuestas por objetivo del plan
+## 7. Respuestas por objetivo del plan
 
 ### Objetivo 1 · Cómo se logra el registro y qué lo gatilla
 
@@ -244,7 +307,7 @@ Donde el Perú, LATAM y los mercados parecidos no tenían evidencia, se usó la 
 
 ---
 
-## 7. Las tres definiciones que el plan quiere crear
+## 8. Las tres definiciones que el plan quiere crear
 
 | Definición | Qué sugiere la evidencia, adaptada al Perú |
 |---|---|
@@ -254,7 +317,7 @@ Donde el Perú, LATAM y los mercados parecidos no tenían evidencia, se usó la 
 
 ---
 
-## 8. Las hipótesis del plan frente a la evidencia externa
+## 9. Las hipótesis del plan frente a la evidencia externa
 
 La evidencia externa **no cierra** hipótesis sobre RIMAC; eso lo hacen los datos propios y el campo. La columna «Capa» indica de dónde viene la evidencia más cercana.
 
@@ -278,7 +341,7 @@ La evidencia externa **no cierra** hipótesis sobre RIMAC; eso lo hacen los dato
 
 ---
 
-## 9. Lo que la evidencia secundaria no puede responder
+## 10. Lo que la evidencia secundaria no puede responder
 
 | Pregunta | Por qué no | Quién la responde |
 |---|---|---|

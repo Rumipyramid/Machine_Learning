@@ -1,7 +1,7 @@
 # Cliente digital en seguros: recurrencia, canales y retención (foco Perú)
 
-*Node v2.0 · creado 2026-10-29 con `/trinidad` (pistas académica, social y de negocio).*
-*v1.0 (2026-10-29): evidencia global, fuentes F-847 a F-889. **v2.0 (2026-10-29): cambio de alcance** — la evidencia se ordena por cercanía al usuario: 🇵🇪 Perú → 🌎 Latinoamérica → 🌏🌍 mercados emergentes parecidos → 🌐 global; fuentes F-890 a F-925.*
+*Node v2.0 · creado 2026-10-29 con `/trinidad` (pistas académica, social y de negocio) · actualizado 2026-10-29.*
+*v1.0 (2026-10-29): evidencia global, fuentes F-847 a F-889. **v2.0 (2026-10-29): cambio de alcance** — la evidencia se ordena por cercanía al usuario: 🇵🇪 Perú → 🌎 Latinoamérica → 🌏🌍 mercados emergentes parecidos → 🌐 global; fuentes F-890 a F-925. Iteración 3 (2026-10-29, incremental): usos digitales del peruano en general y luego en banca y seguros; fuentes F-926 a F-944.*
 *Output derivado: `_outputs/research-fuentes-secundarias.md` (Entregable 1 del plan de investigación de cliente digital de RIMAC), con tablas completas por objetivo y la verificación cifra por cifra de los insumos de referencia.*
 
 **Pregunta del node:** ¿qué sabe la evidencia externa sobre cómo se digitaliza el cliente de seguros peruano, para qué sirve la recurrencia digital y qué canal conviene en cada momento?
@@ -18,7 +18,10 @@
 6. **🌎 En la región, se cotiza en el móvil y se cierra con una persona** (F-913, F-921); más de 60% quiere un recorrido híbrido (F-866). El servicio se digitaliza por WhatsApp antes que por la app (Porto, F-914).
 7. **🌏 En mercados parecidos, las billeteras masifican pólizas, no relaciones** (GCash, PhonePe: penetración de un dígito, muchas pólizas gratis atadas a una transacción; F-916, F-917).
 8. **🌍 La evidencia arbitrada más cercana sobre retención apunta al pago:** pagar y renovar por el celular sube 17,4 puntos la renovación en Ghana, más en informales (F-918).
-9. **🌐 Global:** la frecuencia natural del seguro es de 1 a 3 contactos al año (F-857, F-877); lo híbrido gana (F-862, F-856); lo digital se asocia a permanencia sin causalidad probada (F-847, F-848, F-869); la IA se acepta si asiste y se rechaza si decide (F-863, F-852).
+9. **🇵🇪 El peruano sube una escalera digital y el seguro es el peldaño que falta.** 82% usa internet (F-926) y la mensajería es casi universal (F-929); se hacen 655 pagos digitales por adulto al año (F-933); en la banca grande más de 80% de las transacciones y de las ventas ya es digital (F-936, F-937). En seguros, la escala digital llega por el banco o la billetera: Seguros para Todos de Pacífico suma 3,4 millones de personas vendiendo dentro del ecosistema BCP y Yape (F-941, F-942), y en BBVA Sudamérica el seguro es el producto más vendido en digital (66% de esas ventas, impulsado por Colombia y el Perú; F-938). Ver la escalera completa en el output, sección 1.4.
+10. **🇵🇪 El fraude es condición de entrada, no diferenciador.** 3 de cada 4 limeños sufrió un intento de fraude en el último año (F-931) y las operaciones no reconocidas son la primera causa de reclamo a la banca (F-932). La desconfianza en el canal ya existía antes de las billeteras (F-944).
+11. **🇵🇪 Las brechas digitales están donde el canal humano sigue siendo necesario:** zona rural (58,9% usa internet, F-926), mayores de 60 (47%, F-927) y niveles D/E, donde 65% de los pagos sigue en efectivo (F-934).
+12. **🌐 Global:** la frecuencia natural del seguro es de 1 a 3 contactos al año (F-857, F-877); lo híbrido gana (F-862, F-856); lo digital se asocia a permanencia sin causalidad probada (F-847, F-848, F-869); la IA se acepta si asiste y se rechaza si decide (F-863, F-852).
 
 ## 2. 🔬 Pista académica (resumen)
 
@@ -34,7 +37,8 @@
 ## 4. 📈 Pista de negocio (resumen)
 
 - 🇵🇪 Mercado: S/ 24.035 millones en primas 2025 (F-890); BCG ve un mercado posible cuatro veces mayor, vía bancaseguros y embebido (F-900); 43% compraría un seguro vinculado a otra compra (F-887). SOAT 2024: más de 68.000 siniestros (F-901). Venta a distancia en ampliación regulatoria (F-912); desgravamen voluntario desde 2025 (F-883).
-- 🇵🇪 Aseguradoras: RIMAC (F-871, F-910), Pacífico (F-890, F-891, F-892), Interseguro (F-872), La Positiva (F-924), Mapfre (F-925), Yape (F-893, F-894).
+- 🇵🇪 Aseguradoras: RIMAC (F-871, F-910), Pacífico (F-890, F-891, F-892, F-941), Interseguro (F-872, F-940), La Positiva (F-924), Mapfre (F-925), Yape (F-893, F-894); gremio (F-943).
+- 🇵🇪 Pagos y banca: BCRP (F-933, F-934, F-935, F-939), BCP (F-936, F-942), BBVA (F-937, F-938).
 - 🌎 Porto (F-914), Nubank (F-915), México (F-921), Brasil (F-922), Colombia (F-920).
 - 🌏 GCash (F-916), PhonePe (F-917), Swiss Re Asia (F-919), Ping An (F-867).
 
