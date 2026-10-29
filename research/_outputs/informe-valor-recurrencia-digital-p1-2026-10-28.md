@@ -310,9 +310,19 @@ se entra al app.
 - 📎 **En Perú, la venta 100% digital tiene techo.** Solo 20% compraría un seguro de forma digital; el canal presencial
   domina (encuesta SBS-CAF 2022, vía F-903). En LatAm, 67% empieza a buscar seguro de vida en línea, pero compra con
   una persona (McKinsey, 2023, F-900).
-- **No se encontró evidencia de que un producto propio de bajo ticket y frecuencia anual, como el SOAT, funcione
-  como puerta de entrada.** La venta digital de SOAT de Interseguro creció 66% en 2019. Su memoria también dice que mejoró la
-  renovación, pero sin cifra (F-867).
+- 🔧 **El SOAT se vende bien en digital, pero no hay evidencia de que abra la puerta a otra cosa.** Hay que separar dos
+  preguntas:
+  - *¿Se puede vender el SOAT en digital?* Sí. La venta digital de SOAT de Interseguro creció 66% en 2019 (F-867). Es
+    digitalización de una venta que ya existía.
+  - *¿Comprar el SOAT en digital lleva al cliente a algo más?* Es decir, a comprar otro seguro (vehicular, salud,
+    hogar), a volver a usar el canal durante el año o a renovar más. No se encontró ninguna cifra que lo muestre. La
+    memoria de Interseguro dice que mejoró la renovación, sin dar el número (F-867). Las razones para dudar: el SOAT es
+    obligatorio, de precio regulado y de compra anual; se compra para cumplir, no por una relación con la marca.
+
+  **Mi punto:** el éxito del SOAT digital prueba que el canal sirve para vender un producto simple. No prueba que ese
+  cliente se convierta en un cliente digital recurrente o en un comprador de otros productos. Esa es la apuesta que
+  habría que medir con datos propios: de los compradores digitales de SOAT, cuántos compran otro seguro en 12 meses,
+  contra un grupo comparable que lo compró por otro canal.
 
 **Implicancia:** si la apuesta es usar el SOAT como llave de entrada, hoy no hay evidencia que la respalde. Lo
 que sí muestra la región es que la relación diaria con el cliente la puede tener una billetera o un banco. 📎 Esa
@@ -348,6 +358,46 @@ una puerta" y pasa a ser con quién y en qué condiciones (pregunta 3).
 
 **Implicancia:** en salud, el valor más probable del engagement es atraer y retener buenos riesgos. Es un valor
 legítimo, pero es **selección**, no prevención, y se mide distinto.
+
+🔧 **Qué significa "selección" aquí, en simple.** Un programa de bienestar (retos de pasos, puntos por ir al gimnasio)
+atrae sobre todo a quien ya se cuida. Si esas personas siniestran menos, no es porque el programa las cambió: ya eran
+así. Para la aseguradora eso igual puede valer, porque atrae y retiene clientes de menor riesgo. Pero tiene dos costos:
+no baja el gasto de quienes más gastan, y si el programa da descuentos, los pagan de hecho los que no participan, que
+suelen ser de menor ingreso y peor salud (F-854). Por eso se mide distinto: no como "cuánto bajó la siniestralidad del
+programa", sino como "qué tipo de cliente atrajo y retuvo".
+
+### 3.4.1 🔧 Salud en el día a día: cuando la frecuencia es real
+
+Hay una diferencia importante entre los programas de bienestar y el uso cotidiano de un seguro de salud. Un paciente
+crónico, una familia con niños o alguien en tratamiento sí tiene necesidades frecuentes: consultar, renovar recetas,
+tomar medicación, seguir un reembolso. Ahí la recurrencia no hay que inventarla. La evidencia sobre esos usos es
+distinta, y más alentadora en algunos casos:
+
+| Uso cotidiano | Qué dice la evidencia | Qué tan sólida | Teoría de valor |
+|---|---|---|---|
+| Recordatorios de medicación por mensaje de texto | En 16 ensayos aleatorizados con 2.742 pacientes crónicos, los recordatorios duplicaron la probabilidad de tomar bien la medicación (razón de momios 2,11); si la adherencia base es 50%, sube a cerca de 68% (Thakkar et al., 2016, F-933). Ojo: ensayos cortos y adherencia casi siempre autorreportada | 🟢 A, causal sobre la adherencia | Prevención en crónicos |
+| Que la adherencia baje el costo | En 135.008 pacientes con enfermedades cardiovasculares crónicas, la buena adherencia subió el gasto en medicinas, pero bajó más el de hospitalización y emergencias (Roebuck et al., 2011, F-937). Estudio de una administradora de beneficios farmacéuticos, con datos observacionales | 🟢 A, asociación con método fuerte | Prevención en crónicos |
+| Reposición de medicamentos a domicilio | En pacientes con diabetes de Kaiser, recibir la medicación por envío se asoció a 7 u 8 puntos más de adherencia (Duru et al., 2010, F-936). Observacional: quien elige el envío puede ser distinto | 🟢 A, asociación | Prevención en crónicos y costo de servir |
+| Mensajería segura con el médico | En Kaiser, quienes usaban el portal con mensajes al médico tuvieron entre 6,7% y 9,7% menos consultas presenciales al año (Zhou et al., 2007, F-935). Cohorte observacional | 🟢 A, asociación | Costo de servir |
+| Teleconsulta directa al paciente | Solo 12% de las teleconsultas reemplazó una consulta presencial; 88% fue uso nuevo. El gasto neto subió US$45 por usuario al año (Ashwood et al., 2017, F-934) | 🟢 A, observacional con datos de reclamos | Advierte contra la teoría de costo: la teleconsulta puede subir el gasto |
+| Teleconsulta o atención por WhatsApp en LatAm | Solo se encontraron pilotos y experiencias descriptivas: videoconsultas por WhatsApp en un hospital de Brasil (factibilidad) y teledermatología entre médicos en Chile, con 41% de concordancia diagnóstica. No se encontró ningún ensayo aleatorizado con pacientes en la región. Hay advertencias de privacidad por ser una plataforma no clínica | Señal, sin evidencia de resultados | Por definir |
+| Seguimiento de reembolsos y trámites | Lo claro migra y baja llamadas; lo ambiguo las sube (F-850) | 🟢 A, causal | Costo de servir |
+
+**Perú.** Pacífico ofrece teleconsultas por videollamada dentro de un seguro de salud vendido en Yape, desde S/9,90 al
+mes (cobertura de prensa, F-938). No se encontró información pública sobre un piloto de teleconsulta por WhatsApp; si
+existe, sería un dato de mercado a confirmar.
+
+**Qué cambia para la decisión.**
+
+- **Separar dos públicos.** Para el asegurado sano, el engagement selecciona. Para el asegurado crónico, hay evidencia
+  de que acompañar la medicación cambia la conducta, y una asociación fuerte con menor costo. Si la gerencia quiere
+  recurrencia en salud, el lugar con más respaldo es el paciente crónico, no el reto de pasos.
+- **La teleconsulta no ahorra por sí sola.** Atiende demanda que antes no se atendía. Puede valer por acceso y
+  satisfacción, pero si la meta es costo, hay que medir sustitución: cuántas teleconsultas evitaron una consulta
+  presencial o una emergencia.
+- **El canal puede ser WhatsApp o el app; lo que tiene evidencia es la función** (recordar, reponer, responder), no la
+  plataforma. Un piloto por WhatsApp debería medirse con grupo de control, porque en la región no hay estudios de
+  resultados.
 
 ### 3.5 Confianza en el momento de verdad: el siniestro define la relación
 
@@ -669,6 +719,8 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
   decisión y definiciones operativas); §5.1 (decisiones de la gerencia); Anexos C y D.
 - 🔧 **Versión 7.1:** cada ejemplo tiene ahora una línea de sustento con su fuente y su rigor; nueva §3.8 con la
   entrevista al CEO de Credicorp (comoditización, agentes de IA, alcance y portafolio de apuestas); decisión 8 en §5.1.
+- 🔧 **Versión 7.2:** aclaración del SOAT como puerta de entrada (§3.3); qué significa "selección" en salud y nueva
+  §3.4.1 sobre el uso cotidiano del seguro de salud (medicación, reposición, mensajería, teleconsulta, WhatsApp).
 
 ### 7.3 Veredicto por documento
 
@@ -829,7 +881,7 @@ dato no existe, que no exista también es un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-932, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
+`research/fuentes/codice.md` (F-847 a F-938, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
 reservados para documentos internos que no se publican aquí). Enlaces en el Anexo F.
 
 ## Anexo F · Referencias con enlace
@@ -910,3 +962,9 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-924** · Sharma, D. & Gassenheimer, J. B. (European Journal of Marketing 43(7/8):1076-1091) (2009). *Internet channel and perceived cannibalization: Scale development and validation in a personal selling context*. 🟢 A. [Ver fuente](https://doi.org/10.1108/03090560910961524)
 - **F-931** · Gorman, M. F. (Management Science 56(1):iv-vii; DOI 10.1287/mnsc.1090.1132) (2010). *Management Insights (resumen editorial de los artículos del número, incluido Campbell y Frei, 2010)*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1090.1132)
 - **F-932** · Gianfranco Ferrari, CEO de Credicorp (entrevista; notas tomadas por la usuaria) (2026). *Entrevista sobre transformación digital, IA y estrategia en servicios financieros (notas)*. 🔴 E. Notas de la usuaria; entrevista pública sin enlace aportado.
+- **F-933** · Thakkar, J.; Kurup, R.; Laba, T.-L.; et al. (JAMA Internal Medicine 176(3):340-349; DOI 10.1001/jamainternmed.2015.7667) (2016). *Mobile Telephone Text Messaging for Medication Adherence in Chronic Disease: A Meta-analysis*. 🟢 A. [Ver fuente](https://doi.org/10.1001/jamainternmed.2015.7667)
+- **F-934** · Ashwood, J. S.; Mehrotra, A.; Cowling, D.; Uscher-Pines, L. (Health Affairs 36(3):485-491; DOI 10.1377/hlthaff.2016.1130) (2017). *Direct-To-Consumer Telehealth May Increase Access To Care But Does Not Decrease Spending*. 🟢 A. [Ver fuente](https://www.rand.org/pubs/external_publications/EP67074.html)
+- **F-935** · Zhou, Y. Y.; Garrido, T.; Chin, H. L.; Wiesenthal, A. M.; Liang, L. L. (American Journal of Managed Care 13(7):418-424) (2007). *Patient Access to an Electronic Health Record With Secure Messaging: Impact on Primary Care Utilization*. 🟢 A. [Ver fuente](https://www.ajmc.com/journals/issue/2007/2007-07-vol13-n7/jul07-2509p418-424)
+- **F-936** · Duru, O. K.; Schmittdiel, J. A.; Dyer, W. T.; et al. (American Journal of Managed Care 16(1):33-40) (2010). *Mail-Order Pharmacy Use and Adherence to Diabetes-Related Medications*. 🟢 A. [Ver fuente](https://californiahealthline.org/morning-breakout/kaiser-study-finds-access-to-mailorder-pharmacies)
+- **F-937** · Roebuck, M. C.; Liberman, J. N.; Gemmill-Toyama, M.; Brennan, T. A. (Health Affairs 30(1):91-99) (2011). *Medication Adherence Leads To Lower Health Care Use And Costs Despite Increased Drug Spending*. 🟢 A. [Ver fuente](https://scholarhub.vn/publication/:slug/ef630f12-adfb-453e-8e75-a80a76b8da93)
+- **F-938** · Trome y Diario Correo (publirreportajes sobre el seguro de salud de Pacífico vendido en Yape) (c. 2025-2026). *Atenciones médicas en línea con seguro de salud Yape*. 🟠 D. [Ver fuente](https://diariocorreo.pe/publireportaje/atenciones-medicas-en-linea-con-seguro-de-salud-yape-noticia/)

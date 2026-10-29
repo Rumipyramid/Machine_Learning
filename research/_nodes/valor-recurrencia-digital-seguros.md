@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-932 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-932; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-938 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-938; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -452,6 +452,14 @@ había nombrado: la comoditización de los productos, los agentes de IA que elig
 costo de llegar a los segmentos informales. Inferencia derivada: las carteras retenidas por inercia son las más
 expuestas a agentes que comparan y cambian por el cliente. Aparece una posible sexta forma de valor, el alcance, sin
 evidencia de aseguradoras que la hayan logrado por su propio canal.
+
+**Lote 9 (2026-10-29): salud en el día a día.** A pedido de la usuaria se buscó evidencia sobre el uso cotidiano del
+seguro de salud. Hallazgo central: el engagement de personas sanas selecciona, pero en pacientes crónicos hay evidencia
+causal de que los recordatorios mejoran la adherencia (meta-análisis de 16 ensayos, F-933) y una asociación fuerte entre
+adherencia y menor costo (F-937); la reposición a domicilio y la mensajería con el médico se asocian a más adherencia y
+menos consultas (F-936, F-935). La teleconsulta directa al paciente fue sobre todo uso nuevo y subió el gasto (F-934).
+Para WhatsApp en la región solo hay pilotos sin resultados. Pacífico vende teleconsultas dentro de un seguro en Yape
+(F-938); no se encontró información pública de un piloto por WhatsApp.
 
 ---
 
