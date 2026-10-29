@@ -383,9 +383,36 @@ distinta, y más alentadora en algunos casos:
 | Teleconsulta o atención por WhatsApp en LatAm | Solo se encontraron pilotos y experiencias descriptivas: videoconsultas por WhatsApp en un hospital de Brasil (factibilidad) y teledermatología entre médicos en Chile, con 41% de concordancia diagnóstica. No se encontró ningún ensayo aleatorizado con pacientes en la región. Hay advertencias de privacidad por ser una plataforma no clínica | Señal, sin evidencia de resultados | Por definir |
 | Seguimiento de reembolsos y trámites | Lo claro migra y baja llamadas; lo ambiguo las sube (F-850) | 🟢 A, causal | Costo de servir |
 
-**Perú.** Pacífico ofrece teleconsultas por videollamada dentro de un seguro de salud vendido en Yape, desde S/9,90 al
-mes (cobertura de prensa, F-938). No se encontró información pública sobre un piloto de teleconsulta por WhatsApp; si
-existe, sería un dato de mercado a confirmar.
+**🔧 Perú: Pacífico Salud ya está probando esta estrategia.** Es el caso peruano más cercano a lo que discute esta
+sección. Todo lo que sigue son declaraciones de la empresa en prensa o redes, sin resultados auditados:
+
+- **Un seguro de salud dentro de Yape.** Lanzado en junio de 2025 con Yape: S/9,90, teleconsultas ilimitadas de
+  medicina general y pediatría por videollamada desde el app de Yape para el titular y hasta tres familiares, receta,
+  orientación telefónica 24 horas y S/500 si hay hospitalización. Apunta a personas sin seguro de los niveles C, D y E.
+  Meta: 30.000 asegurados el primer año, sobre una base de 17 millones de usuarios de Yape (Gestión, 2025, F-940;
+  también F-938).
+- **Telemedicina propia (Tsana).** Teleconsultas, recetas válidas en cualquier farmacia y órdenes de análisis. Unos
+  80.000 clientes en menos de un año, según el CEO de Pacífico Salud en julio de 2025 (F-942). En octubre de 2025, más de
+  90.000 suscriptores y más de 1.000 atenciones al mes (F-941).
+- **Orientación médica por WhatsApp.** El equipo de innovación de Pacífico Salud lanzó orientación médica 24/7 por
+  WhatsApp con médicos reales, para resolver malestares cotidianos y decidir si algo requiere emergencia. También
+  diseñó experiencias de gestión de citas y de búsqueda de medicamentos por ese canal. La responsable lo resume así:
+  "diseñar una buena conversación también es diseñar un buen servicio" (publicación en LinkedIn de su líder de
+  innovación y diseño, con menos de tres meses de operación al publicarse, F-939).
+- **La lógica declarada por la empresa:** mucha gente se automedica o va directo a la farmacia, así que un médico a
+  precio accesible, virtual o presencial, puede ser la puerta a quienes no tienen seguro privado. Su segmento de menor
+  ticket empezó con seguros indemnizatorios, que superan el medio millón de asegurados (F-942).
+
+**Lo que este caso sí y no dice.**
+
+- *Sí dice* que un competidor peruano está apostando por la frecuencia real en salud (consultas cotidianas, recetas,
+  citas, medicamentos) y por WhatsApp como canal, no solo por el app.
+- *No dice* cuántos usan el servicio de forma recurrente, si renuevan o si pasan a productos de mayor valor. Las notas no
+  reportan retención ni conversión.
+- *Una cifra para mirar con cuidado.* Si los más de 90.000 suscriptores generan algo más de 1.000 atenciones al mes, el
+  uso mensual rondaría 1% de los suscriptores (cálculo propio). Sería un uso bajo incluso para telemedicina barata, en
+  línea con el "no lo usé". Pero las dos cifras pueden medir cosas distintas, y la de clientes no coincide entre notas
+  (80.000 en julio, más de 90.000 suscriptores en octubre): no es una conclusión, es una pregunta para la gerencia.
 
 **Qué cambia para la decisión.**
 
@@ -511,7 +538,7 @@ nombrado, y se contrasta cada idea con lo que ya sabemos.
 | Con agentes de IA que comparan por el cliente, "ya no importa quién tenga el mejor app": la relación emocional puede desaparecer | La gente ya acepta que una IA cotice (46%), menos que presente un siniestro (22%) (F-916); revelar que es un bot baja la compra (F-912) | **Inferencia nuestra:** si parte de la renovación se sostiene en inercia (F-889), un agente que compara y cambia por el cliente la elimina. Las carteras retenidas por inercia son las más expuestas; las retenidas por buen servicio en el siniestro, las menos |
 | Agencias, personas e IA van a convivir; la hipoteca necesita una persona, el celular se compra en línea | Coincide con la convivencia de canales por función (§3.6): se busca en línea y se cierra con una persona (F-918) | Asignar canal según el peso de la decisión y la carga emocional (tabla de §3.1) |
 | La confianza se construye de a poco y se destruye rápido; hay que equilibrar "pro-agente" y "anti-agente" | Una mala experiencia del siniestro multiplica el riesgo de fuga (F-872); la aversión a la IA baja si la persona puede corregir el resultado (F-915) | Introducir IA con confirmación humana en los pasos sensibles (hipótesis 5 de §4) |
-| La penetración financiera es baja, ligada a informalidad y nivel socioeconómico; llegar a esos clientes es caro | Perú tiene la tenencia de seguros privados más baja de la región, 13% (F-906); los microseguros llegan 97,8% por bancos, con comisiones cercanas a 50% (F-902); el mercado se orienta a segmentos de mayor ingreso, alcanzables por canales digitales (F-902) | **Posible sexta forma de valor: alcance.** Usar lo digital para llegar con costo bajo a quien hoy no es rentable atender. No se encontró evidencia de que una aseguradora lo haya logrado por su propio canal; los casos regionales son de billeteras y bancos (F-863, F-864, F-869). Es materia de la pregunta 3 |
+| La penetración financiera es baja, ligada a informalidad y nivel socioeconómico; llegar a esos clientes es caro | Perú tiene la tenencia de seguros privados más baja de la región, 13% (F-906); los microseguros llegan 97,8% por bancos, con comisiones cercanas a 50% (F-902); el mercado se orienta a segmentos de mayor ingreso, alcanzables por canales digitales (F-902) | **Posible sexta forma de valor: alcance.** Usar lo digital para llegar con costo bajo a quien hoy no es rentable atender. 🔧 En Perú, Pacífico Salud lo está intentando: seguro de salud de S/9,90 en Yape, telemedicina propia con unos 80.000 a 90.000 suscriptores y orientación médica por WhatsApp (F-940, F-941, F-942, F-939). Son declaraciones de la empresa, sin datos de uso recurrente, retención ni conversión. Aún no hay evidencia de que funcione como negocio. Es materia de la pregunta 3 |
 | Gestionar las apuestas como un portafolio de inversiones: una base segura y apuestas pequeñas de alta incertidumbre para "tocar el agua" | No es un hallazgo; es un criterio de gestión | Ordenar las decisiones de §5.1 como portafolio (ver decisión 8) |
 
 **Lo que no se debe concluir.** La entrevista no prueba que los agentes de IA vayan a comoditizar los seguros ni cuándo.
@@ -721,6 +748,8 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
   entrevista al CEO de Credicorp (comoditización, agentes de IA, alcance y portafolio de apuestas); decisión 8 en §5.1.
 - 🔧 **Versión 7.2:** aclaración del SOAT como puerta de entrada (§3.3); qué significa "selección" en salud y nueva
   §3.4.1 sobre el uso cotidiano del seguro de salud (medicación, reposición, mensajería, teleconsulta, WhatsApp).
+- 🔧 **Versión 7.3:** el caso de Pacífico Salud (seguro en Yape, telemedicina propia y orientación médica por WhatsApp)
+  en §3.4.1, §3.8 y Anexos A y B; corrige que no se había encontrado información pública sobre WhatsApp.
 
 ### 7.3 Veredicto por documento
 
@@ -751,6 +780,7 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 | Referente | Bloque | Aportó a | Rigor de lo encontrado |
 |---|---|---|---|
 | Pacífico Seguros | Perú | Costo de servir | 🟠 D (F-866) |
+| 🔧 Pacífico Salud | Perú | Alcance y salud en el día a día: seguro en Yape, telemedicina propia, orientación por WhatsApp | 🟠 D / 🔴 E (F-938 a F-942) |
 | Interseguro | Perú | Venta digital de SOAT; renovación (débil) | 🟡 C (F-867) |
 | La Positiva | Perú | **No aportó evidencia**: solo declara una plataforma en construcción | 🟠 D (F-868) |
 | Mapfre Perú | Perú | **No aportó evidencia** | — |
@@ -813,6 +843,14 @@ teoría de valor.
 - **Un "funcionario" de IA para 18 millones de peruanos** que hoy no tienen quién los asesore.
 - **Definir al competidor como una conducta** (el efectivo, en el caso de Yape), no como otra empresa.
 - **Apuestas pequeñas que fracasan varias veces antes de funcionar**, como Yape en su origen.
+
+**🔧 Señales de Pacífico Salud (F-939 a F-942; declaraciones de la empresa):**
+
+- **Orientación médica por WhatsApp 24/7** con médicos reales, y gestión de citas y búsqueda de medicamentos por el mismo
+  canal.
+- **Ecosistema de seguro, telemedicina y prestación propia** para segmentos de bajo ticket, con inversión en nuevas sedes
+  en zonas desatendidas de Lima y regiones.
+- **El seguro como puerta de entrada a la atención,** no al revés: un médico accesible para quien hoy se automedica.
 
 **Eje candidato para escenarios:** quién será dueño de la relación diaria con el cliente. Puede ser la
 aseguradora, un banco o una billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis para el
@@ -881,7 +919,7 @@ dato no existe, que no exista también es un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-938, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
+`research/fuentes/codice.md` (F-847 a F-942, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
 reservados para documentos internos que no se publican aquí). Enlaces en el Anexo F.
 
 ## Anexo F · Referencias con enlace
@@ -968,3 +1006,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-936** · Duru, O. K.; Schmittdiel, J. A.; Dyer, W. T.; et al. (American Journal of Managed Care 16(1):33-40) (2010). *Mail-Order Pharmacy Use and Adherence to Diabetes-Related Medications*. 🟢 A. [Ver fuente](https://californiahealthline.org/morning-breakout/kaiser-study-finds-access-to-mailorder-pharmacies)
 - **F-937** · Roebuck, M. C.; Liberman, J. N.; Gemmill-Toyama, M.; Brennan, T. A. (Health Affairs 30(1):91-99) (2011). *Medication Adherence Leads To Lower Health Care Use And Costs Despite Increased Drug Spending*. 🟢 A. [Ver fuente](https://scholarhub.vn/publication/:slug/ef630f12-adfb-453e-8e75-a80a76b8da93)
 - **F-938** · Trome y Diario Correo (publirreportajes sobre el seguro de salud de Pacífico vendido en Yape) (c. 2025-2026). *Atenciones médicas en línea con seguro de salud Yape*. 🟠 D. [Ver fuente](https://diariocorreo.pe/publireportaje/atenciones-medicas-en-linea-con-seguro-de-salud-yape-noticia/)
+- **F-939** · Cortez Carpio, J. (líder de innovación y diseño, laboratorio de innovación La Cápsula de Pacífico Salud), publicación en LinkedIn; captura aportada por la usuaria (c. 2025 (27 de agosto; año no visible en la captura)). *¿Y si el mejor canal para una experiencia de salud no siempre es una app o una web? (orientación médica por WhatsApp en Tsana)*. 🔴 E. Captura de LinkedIn aportada por la usuaria (enlace acortado lnkd.in/d9WJzB8g).
+- **F-940** · Gestión (entrevista a José Enrique Deza, subgerente de Productos Masivos de Pacífico Salud); notas parafraseadas por la usuaria (2025). *Yape espera afiliar a su seguro de salud a 30.000 usuarios en su primer año (26 de junio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
+- **F-941** · Gestión (redacción) (2025). *Pacífico Salud: inversión en innovación e infraestructura (20 de octubre de 2025; título truncado en la captura)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
+- **F-942** · Gestión (entrevista a Guillermo Garrido-Lecca, CEO de Pacífico Salud) (2025). *Pacífico Salud explora zonas para expandir su red y afianza apuesta por diversificar segmentos (21 de julio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.

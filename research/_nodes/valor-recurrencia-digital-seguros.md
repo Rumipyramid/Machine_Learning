@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-938 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-938; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-942 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-942; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -460,6 +460,15 @@ adherencia y menor costo (F-937); la reposición a domicilio y la mensajería co
 menos consultas (F-936, F-935). La teleconsulta directa al paciente fue sobre todo uso nuevo y subió el gasto (F-934).
 Para WhatsApp en la región solo hay pilotos sin resultados. Pacífico vende teleconsultas dentro de un seguro en Yape
 (F-938); no se encontró información pública de un piloto por WhatsApp.
+
+**Lote 10 (2026-10-29): el caso de Pacífico Salud.** La usuaria aportó tres notas de Gestión (2025) y una publicación de
+LinkedIn del equipo de innovación de Pacífico Salud (F-939 a F-942). Pacífico Salud apuesta por la frecuencia real en
+salud y por el bajo ticket: seguro de S/9,90 en Yape con teleconsultas ilimitadas, telemedicina propia (Tsana, 80.000 a
+90.000 clientes o suscriptores según la nota), orientación médica por WhatsApp 24/7 y seguros indemnizatorios con más de
+medio millón de asegurados. Es el primer caso peruano de una aseguradora intentando la forma de valor "alcance". Son
+declaraciones de la empresa, sin datos de retención ni conversión. Inferencia a verificar: más de 1.000 atenciones al mes
+sobre más de 90.000 suscriptores sugieren un uso mensual cercano a 1%. Corrige el lote 8, que decía que no había casos de
+aseguradoras intentándolo por su propio canal.
 
 ---
 
