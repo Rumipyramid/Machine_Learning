@@ -1,7 +1,7 @@
 # Valor de la recurrencia digital en seguros: por qué mecanismos la actividad digital se vuelve valor de negocio
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-28 · Versión: v1.1
+> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-29 · Versión: v1.1
 > Origen: `/trinidad` (empírica como ancla, negocio como segundo pilar, social acotada al momento crítico).
 > Pregunta: ¿por qué mecanismos la actividad digital (recurrencia en app o web) se convierte en valor de
 > negocio en un seguro, quién lo ha demostrado y con qué evidencia?
@@ -9,7 +9,7 @@
 > insumo para la Gerencia de Digital de RIMAC. RIMAC está excluida como caso, fuente o benchmark.
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
-> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-931 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-931; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
+> Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-932 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-932; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
 > F-353, F-376, F-442, F-638 y F-816 ya existentes.
 
 ---
@@ -444,6 +444,14 @@ sorteo mostró que no había ahorro, y tampoco efecto en retención a 30 meses. 
 banca online bajó el uso de canales baratos (cajero, respuesta automática) y subió el de los caros (sucursal, call
 center), con 11% menos de utilidad por cliente el primer año, pero más retención y participación de mercado. Con ambas,
 el informe pasó a la versión de trabajo 7, que aterriza cada teoría con ejemplos, métodos de medición y decisiones.
+
+**Lote 8 (2026-10-29): sustento de los ejemplos y una entrevista.** Cada ejemplo del informe tiene ahora su fuente y su
+rigor. La usuaria aportó notas de una entrevista al CEO de Credicorp (F-932, opinión, 🔴 E). Coincide con la
+conclusión central (lo digital es un medio) y con la convivencia de canales, y agrega tres riesgos que la evidencia no
+había nombrado: la comoditización de los productos, los agentes de IA que eligen por precio en nombre del cliente y el
+costo de llegar a los segmentos informales. Inferencia derivada: las carteras retenidas por inercia son las más
+expuestas a agentes que comparan y cambian por el cliente. Aparece una posible sexta forma de valor, el alcance, sin
+evidencia de aseguradoras que la hayan logrado por su propio canal.
 
 ---
 

@@ -47,6 +47,12 @@ cuatro matices:
 4. **Digitalizar lo que ya se vende es defensa, no ventaja.** Si todos agregan el mismo canal, todos cargan el costo
    y nadie gana posición.
 
+🔧 **Una voz del sector coincide.** En una entrevista, el CEO de Credicorp dijo que lo digital "es un medio, no un fin";
+que Yape nació para resolver dos problemas a la vez, mejorar la experiencia del cliente y reducir el costo de servirle;
+que los productos financieros son hoy commodities; y que los canales (agencias, personas e IA) van a convivir según la
+importancia de la decisión. Es una opinión, no evidencia (F-932, 🔴 E), pero calza con cuatro hallazgos de este
+informe (§3.8).
+
 **Lo que la gerencia tiene que decidir:** cuál de las cinco formas de valor persigue el canal digital, y
 por lo tanto qué indicador acompaña o reemplaza al MAU. Este informe no toma esa decisión. Entrega las
 opciones y qué tan probada está cada una. 📎 Como inferencia, no como hallazgo: la evidencia acumulada favorece
@@ -72,8 +78,8 @@ seguros. 📎 La teoría 5 sigue siendo asociación, pero es la única que acumu
 ### 2.1 🔧 Qué significa cada teoría, con ejemplos
 
 Cada teoría es una respuesta distinta a la pregunta "¿para qué queremos que el cliente use el canal digital?". Elegir
-una cambia qué se construye, qué se mide y qué se considera éxito. Los ejemplos de seguros son ilustrativos: muestran
-cómo se vería la teoría en la práctica, no son evidencia.
+una cambia qué se construye, qué se mide y qué se considera éxito. Cada ejemplo es una situación construida para
+explicar la teoría, pero cada uno descansa en una fuente: la línea **Sustento** dice cuál, y qué tan sólida es.
 
 **1. Costo de servir: que resolver le cueste menos a la compañía.**
 
@@ -83,6 +89,8 @@ cómo se vería la teoría en la práctica, no son evidencia.
   el pedido no vuelve por otro canal.
 - **Ejemplo.** Un asegurado de salud quiere saber en qué va su reembolso. Si el app muestra "en revisión, pago estimado
   el jueves, no falta ningún documento", no llama. Si solo dice "en proceso", llama dos veces.
+- **Sustento.** En una aseguradora de salud de EE.UU., el portal web bajó 29% las llamadas sobre información clara y subió
+  las llamadas sobre información ambigua, como pólizas y reclamos (Kumar y Telang, 2012, F-850; 🟢 A, causal).
 - **Qué decisión informa.** Qué flujos mover primero a digital y cuáles rediseñar antes de moverlos.
 - **Cómo se mide.** Con **contactos por necesidad resuelta**: cuántas veces tuvo que contactar el cliente, por cualquier
   canal, para resolver una necesidad. Ejemplos de necesidad: "cobrar un reembolso", "obtener la carta de garantía",
@@ -100,6 +108,9 @@ cómo se vería la teoría en la práctica, no son evidencia.
 - **Cómo produce valor.** Cada año que el cliente se queda aporta prima sin costo de adquisición.
 - **Ejemplo.** Dos clientes de vehicular. Uno usa el app y renueva; el otro no la usa y se va. La pregunta es si el app
   *causó* la renovación o si el que la usa ya era el tipo de cliente que renueva.
+- **Sustento.** En banca, la adopción digital se asoció a más retención aun controlando la autoselección (Campbell y
+  Frei, 2010, F-847; 🟢 A). Pero en un ensayo con sorteo, quienes eligieron participar en un programa ya eran distintos
+  antes de empezar, y el programa no cambió su permanencia (Jones et al., 2019, F-854; 🟢 A).
 - **Qué decisión informa.** Cuánto invertir en el app como herramienta de fidelización.
 - **Cómo se mide.** Con **renovación** (porcentaje que renueva al vencer la póliza) o **persistencia** (porcentaje de
   pólizas que siguen vigentes a los 13 y 25 meses, la medida usual en vida). Para saber si lo digital la causa, se
@@ -113,6 +124,9 @@ cómo se vería la teoría en la práctica, no son evidencia.
 - **Cómo produce valor.** Vender a quien ya es cliente cuesta menos que conseguir uno nuevo.
 - **Ejemplo.** Quien compra el SOAT en línea recibe, en el momento correcto, una oferta de vehicular o de salud. O una
   billetera ofrece un seguro a quien paga con ella todos los días.
+- **Sustento.** Interseguro hizo crecer 66% su venta digital de SOAT en 2019, sin cifra publicada de venta cruzada
+  (F-867; 🟡 C). Nubank llegó a 2 millones de pólizas vendidas en su app de uso diario, pero solo a 1,6% de su base
+  (F-863; 🟠 D), y en Perú la billetera diaria no subió la tenencia de seguros (F-906; 🔵 B).
 - **Qué decisión informa.** Si construir una puerta de entrada propia (como el SOAT) o aliarse con quien ya tiene la
   relación diaria (un banco, una billetera, un empleador).
 - **Cómo se mide.** Productos por cliente; tasa de conversión de oferta a póliza; prima nueva que viene de clientes
@@ -125,6 +139,8 @@ cómo se vería la teoría en la práctica, no son evidencia.
 - **Qué es.** Lo digital crea valor si cambia la conducta de riesgo: manejar mejor, hacerse chequeos, cuidar la casa.
 - **Cómo produce valor.** Menos siniestros o siniestros más baratos bajan el costo de la cartera.
 - **Ejemplo.** Un programa de manejo con puntaje en el app; un programa de bienestar con retos de pasos.
+- **Sustento.** En un experimento de campo nacional, la retroalimentación telemática redujo la velocidad y las frenadas
+  bruscas (F-442; 🟢 A). Dos ensayos de bienestar laboral no bajaron el gasto médico (F-854, F-855; 🟢 A).
 - **Qué decisión informa.** Si invertir en programas de engagement y bienestar, y cómo evaluarlos.
 - **Cómo se mide.** Con **siniestralidad por cohorte, separando selección de efecto**. "Siniestralidad" es cuánto se
   paga en siniestros frente a la prima. "Por cohorte" significa comparar grupos que entraron en el mismo momento.
@@ -143,6 +159,10 @@ cómo se vería la teoría en la práctica, no son evidencia.
 - **Cómo produce valor.** El cliente decide si se queda, recomienda o reclama según cómo le fue cuando lo necesitó.
 - **Ejemplo.** Tras un choque, el cliente reporta por el canal que prefiera, ve en todo momento en qué va su caso y sabe
   qué falta; si hay rechazo, recibe una explicación que entiende y una persona a quien preguntar.
+- **Sustento.** Con una mala experiencia digital del siniestro, 52% de los clientes está en riesgo de irse; con una
+  excelente, 4% (J.D. Power, 2025, F-872; 🟡 C, EE.UU.). En México, un pago de seguro de vida en 9 días evitó a las
+  familias endeudarse caro (F-896; 🟡 C). En Perú, los reclamos de seguros que escalan a Indecopi o la SBS subieron de
+  61,6 a 141 por cada mil entre 2018 y 2024 (F-902; 🔵 B).
 - **Qué decisión informa.** Dónde poner la inversión digital en el siniestro y dónde poner personas.
 - **Cómo se mide.** Tiempo desde el aviso hasta la resolución; porcentaje resuelto al primer intento; porcentaje que
   escala de digital a humano sin haberlo planificado; reclamos ante la compañía, y los que escalan a Indecopi o la SBS.
@@ -238,7 +258,7 @@ propuesta para discutir con los ramos, no un hallazgo.
   |---|---|---|---|
   | Crédito hipotecario | Desgravamen; incendio y terremoto de la vivienda | Al terminar de pagar, solo 12% mantiene el seguro de terremoto | F-902 (cita secundaria) |
   | Empleo | Salud (EPS, planes colectivos), vida ley, seguros del empleador | Al cambiar de trabajo, 47% de quienes dejaron de tener seguro en México lo perdió | F-898 |
-  | Crédito o financiamiento del vehículo | Seguro vehicular exigido por el banco | Al terminar el crédito, el cliente decide solo por primera vez | Inferencia; no se encontró dato |
+  | Crédito o financiamiento del vehículo | Seguro vehicular exigido por el banco o vendido con el auto | Al terminar el crédito, el cliente decide solo por primera vez | El ancla existe: 42% compraría su seguro en el concesionario (F-905). Qué pasa al terminar el crédito: sin dato; es inferencia por analogía con el seguro de terremoto (F-902) |
   | Microcrédito | Microseguro de vida o de desgravamen | Se sostiene mientras dura el crédito, pagado al ritmo de la cuota | F-896, F-897 |
   | Cuenta, tarjeta o billetera | Seguros masivos vendidos por el banco o la billetera | Depende del banco; la billetera no subió la tenencia por sí sola | F-906 |
   | La clínica (en salud) | Planes y seguros de salud | Si el cliente puede atenderse en su clínica sin el seguro, el seguro sobra | Hipótesis |
@@ -427,6 +447,26 @@ es la pregunta 2. "Salud 100% digital" o "todo al app" pueden ser metas equivoca
 
 ---
 
+### 3.8 🔧 Comoditización, agentes de IA y alcance: lo que agrega la visión de un líder del sector
+
+**Qué es esta sección.** Una entrevista al CEO de Credicorp, en notas tomadas por la usuaria (F-932). Es opinión de un
+ejecutivo con interés en el tema: rigor 🔴 E. Se usa porque plantea tres riesgos que la evidencia del informe no había
+nombrado, y se contrasta cada idea con lo que ya sabemos.
+
+| Idea de la entrevista | Qué dice la evidencia del informe | Qué agrega para decidir |
+|---|---|---|
+| "Lo digital es un medio para mejorar algo de los clientes, no un fin" | Coincide con la conclusión central: la actividad crea valor cuando resuelve algo (§1) | Refuerza que la meta no puede ser el uso del canal |
+| Yape se aprobó porque prometía dos cosas medibles: mejor experiencia y menor costo de servir. Su competencia no era otro banco, sino el efectivo | Son las teorías 1 y 5 de este informe. Yape vende SOAT y salud (F-869) | **Definir contra qué conducta compite el canal.** Para Yape fue el efectivo. Para un seguro podría ser la llamada al call center, el "guardadito", la red familiar o la clínica (§4) |
+| Los productos son commodities; la diferencia está en la propuesta de valor y la experiencia | Si todos agregan el mismo canal, nadie gana posición (F-917); los incumbentes digitalizan para defenderse (F-922) | Digitalizar el trámite básico es condición para competir, no ventaja. La ventaja está en resolver mejor el momento de verdad |
+| Con agentes de IA que comparan por el cliente, "ya no importa quién tenga el mejor app": la relación emocional puede desaparecer | La gente ya acepta que una IA cotice (46%), menos que presente un siniestro (22%) (F-916); revelar que es un bot baja la compra (F-912) | **Inferencia nuestra:** si parte de la renovación se sostiene en inercia (F-889), un agente que compara y cambia por el cliente la elimina. Las carteras retenidas por inercia son las más expuestas; las retenidas por buen servicio en el siniestro, las menos |
+| Agencias, personas e IA van a convivir; la hipoteca necesita una persona, el celular se compra en línea | Coincide con la convivencia de canales por función (§3.6): se busca en línea y se cierra con una persona (F-918) | Asignar canal según el peso de la decisión y la carga emocional (tabla de §3.1) |
+| La confianza se construye de a poco y se destruye rápido; hay que equilibrar "pro-agente" y "anti-agente" | Una mala experiencia del siniestro multiplica el riesgo de fuga (F-872); la aversión a la IA baja si la persona puede corregir el resultado (F-915) | Introducir IA con confirmación humana en los pasos sensibles (hipótesis 5 de §4) |
+| La penetración financiera es baja, ligada a informalidad y nivel socioeconómico; llegar a esos clientes es caro | Perú tiene la tenencia de seguros privados más baja de la región, 13% (F-906); los microseguros llegan 97,8% por bancos, con comisiones cercanas a 50% (F-902); el mercado se orienta a segmentos de mayor ingreso, alcanzables por canales digitales (F-902) | **Posible sexta forma de valor: alcance.** Usar lo digital para llegar con costo bajo a quien hoy no es rentable atender. No se encontró evidencia de que una aseguradora lo haya logrado por su propio canal; los casos regionales son de billeteras y bancos (F-863, F-864, F-869). Es materia de la pregunta 3 |
+| Gestionar las apuestas como un portafolio de inversiones: una base segura y apuestas pequeñas de alta incertidumbre para "tocar el agua" | No es un hallazgo; es un criterio de gestión | Ordenar las decisiones de §5.1 como portafolio (ver decisión 8) |
+
+**Lo que no se debe concluir.** La entrevista no prueba que los agentes de IA vayan a comoditizar los seguros ni cuándo.
+Es una señal para el ejercicio de foresight (Anexo B), no una tendencia medida.
+
 ## 4. Lectura conductual
 
 La pregunta conductual no es "cómo hacemos que entren más". Es **qué conducta tiene que ocurrir para que haya
@@ -476,13 +516,13 @@ invertir y anticipar efectos no buscados. Cada fila es una regla de decisión.
 
 | Si la gerencia está por decidir… | La lectura conductual dice… | Entonces… |
 |---|---|---|
-| Medir la fidelidad con la tasa de renovación | Parte de la renovación es inercia, no elección | Separar renovación activa de pasiva antes de fijar metas; no premiar la fricción para irse |
-| Invertir en funciones para que el cliente "entre más" al app | Con una o dos necesidades al año no se forma un hábito en un app propia | Llevar el servicio a donde ya hay hábito (WhatsApp, billetera, banca, la clínica) en vez de pelear por la frecuencia |
-| Repartir la inversión del siniestro | El cliente recuerda el peor momento y el final | Invertir primero en el cierre: pago, explicación del resultado y siguiente paso |
-| Lanzar campañas para atraer clientes de otras aseguradoras | Quien llega cambiándose puede siniestrar más; empujar decisiones cambia el riesgo de la cartera | Revisar el efecto actuarial de toda campaña de adquisición o de cambio |
-| Incluir coberturas por defecto en una puerta de entrada | El defecto es la palanca más fuerte, pero sin consentimiento claro genera reclamos (38,4% de los reclamos de seguros en Indecopi) | Usar defectos con aviso claro y salida fácil; medir reclamos por cargo indebido |
-| Forzar el uso del app | Una parte de los clientes desconfía de las transacciones digitales | Ofrecer el canal digital como opción, no como obligación; mantener una vía segura y conocida |
-| Lanzar un programa de puntos o niveles | Un beneficio que baja se vive como pérdida, y los programas atraen a quien ya está sano | Medirlo como selección y no como prevención; probarlo con un grupo de control antes de escalar |
+| Medir la fidelidad con la tasa de renovación | Parte de la renovación es inercia, no elección (F-889, 🟢 A; F-886, 🔵 B) | Separar renovación activa de pasiva antes de fijar metas; no premiar la fricción para irse |
+| Invertir en funciones para que el cliente "entre más" al app | Con una o dos necesidades al año no se forma un hábito en un app propia (el hábito necesita frecuencia y contexto estable, F-888, 🟢 A; frecuencia del seguro, F-876, 🟠 D) | Llevar el servicio a donde ya hay hábito (WhatsApp, billetera, banca, la clínica) en vez de pelear por la frecuencia |
+| Repartir la inversión del siniestro | El cliente recuerda el peor momento y el final (regla pico-final; estado de replicación en el registro de fenómenos psicológicos del proyecto); el siniestro pesa en la fuga (F-872, F-890) | Invertir primero en el cierre: pago, explicación del resultado y siguiente paso |
+| Lanzar campañas para atraer clientes de otras aseguradoras | Quien llega cambiándose siniestró el doble con el mismo historial (F-891, 🔵 B, nota de prensa de la revista); reducir la inercia empeoró la selección adversa (F-889, 🟢 A) | Revisar el efecto actuarial de toda campaña de adquisición o de cambio |
+| Incluir coberturas por defecto en una puerta de entrada | El defecto es la palanca más fuerte (meta-análisis, d=0,68, F-913, 🟢 A; ensayo en México, F-897, 🔵 B), pero sin consentimiento claro genera reclamos: 38,4% de los reclamos de seguros en Indecopi (F-902, 🔵 B) | Usar defectos con aviso claro y salida fácil; medir reclamos por cargo indebido |
+| Forzar el uso del app | 35% de la región teme hacer transacciones digitales (F-906, 🔵 B); solo 20% en Perú compraría un seguro de forma digital (F-903, 🔵 B) | Ofrecer el canal digital como opción, no como obligación; mantener una vía segura y conocida |
+| Lanzar un programa de puntos o niveles | Los programas atraen a quien ya está sano (F-854, 🟢 A); que un beneficio que baja se vive como pérdida es aversión a la pérdida, una inferencia aplicada a este diseño | Medirlo como selección y no como prevención; probarlo con un grupo de control antes de escalar |
 
 **Hipótesis conductuales para el trabajo de campo.** El estudio mexicano de inclusión financiera y las voces de
 practitioners no son evidencia, pero abren mecanismos que coinciden con otras fuentes. Valen como hipótesis:
@@ -520,11 +560,11 @@ corregir el sesgo de publicación (Maier et al., 2022, F-17).
 
 🔧 **Las tres definiciones, aterrizadas.** Los umbrales son puntos de partida para discutir con los ramos, no estándares.
 
-| Definición | Cómo se calcula | Datos que necesita | Ejemplo |
-|---|---|---|---|
-| **Fidelidad activa** | Porcentaje de renovaciones en las que hubo un momento de elección: el cliente abrió el aviso de vencimiento, comparó o cotizó, cambió coberturas o confirmó la renovación. El resto se cuenta como **renovación pasiva** | Tipo de renovación (automática o activa); interacciones en los 60 días previos al vencimiento; cambios de prima y de coberturas; cotizaciones | Cliente con débito automático que no abrió ningún aviso y renovó: pasiva. Cliente que recibió una prima más alta, comparó y renovó: activa |
-| **Cliente digitalmente sano** | Porcentaje de las necesidades del cliente en 12 meses que se resolvieron dentro del plazo prometido, al primer intento y sin recontacto en 7 días, por cualquier canal (incluido su corredor) | Registro de casos o necesidades por cliente, con canal, fechas de inicio y cierre, y recontactos | Cliente con dos reembolsos pagados a tiempo sin llamar y una constancia descargada: sano, aunque solo haya entrado tres veces al app. Cliente que entró 40 veces y llamó seis por el mismo reembolso: no sano |
-| **Cliente de alto valor** | Margen esperado del cliente: prima, menos siniestralidad esperada, menos costo de servir, menos comisión; más el potencial de otros productos y menos el riesgo de fuga | Prima y siniestralidad por póliza; costo de servir por canal (sale de la teoría 1); comisión; productos; renovaciones | Dos clientes con la misma prima: el que siniestra poco, resuelve solo y renueva activamente vale más que el que siniestra mucho y genera muchos contactos |
+| Definición | Cómo se calcula | Datos que necesita | Ejemplo | Sustento |
+|---|---|---|---|---|
+| **Fidelidad activa** | Porcentaje de renovaciones en las que hubo un momento de elección: el cliente abrió el aviso de vencimiento, comparó o cotizó, cambió coberturas o confirmó la renovación. El resto se cuenta como **renovación pasiva** | Tipo de renovación (automática o activa); interacciones en los 60 días previos al vencimiento; cambios de prima y de coberturas; cotizaciones | Cliente con débito automático que no abrió ningún aviso y renovó: pasiva. Cliente que recibió una prima más alta, comparó y renovó: activa | La inercia es grande en seguros (F-889, 🟢 A) y el regulador británico separó a quien renueva sin mirar (F-886, 🔵 B) |
+| **Cliente digitalmente sano** | Porcentaje de las necesidades del cliente en 12 meses que se resolvieron dentro del plazo prometido, al primer intento y sin recontacto en 7 días, por cualquier canal (incluido su corredor) | Registro de casos o necesidades por cliente, con canal, fechas de inicio y cierre, y recontactos | Cliente con dos reembolsos pagados a tiempo sin llamar y una constancia descargada: sano, aunque solo haya entrado tres veces al app. Cliente que entró 40 veces y llamó seis por el mismo reembolso: no sano | Usar más el portal puede subir las llamadas (F-850, 🟢 A); en banca, el adoptante digital usó más los canales caros (F-847, F-931) |
+| **Cliente de alto valor** | Margen esperado del cliente: prima, menos siniestralidad esperada, menos costo de servir, menos comisión; más el potencial de otros productos y menos el riesgo de fuga | Prima y siniestralidad por póliza; costo de servir por canal (sale de la teoría 1); comisión; productos; renovaciones | Dos clientes con la misma prima: el que siniestra poco, resuelve solo y renueva activamente vale más que el que siniestra mucho y genera muchos contactos | El riesgo que trae el cliente cambia el valor de la cartera (F-891, F-889); el costo de servir varía por canal (F-847) |
 
 **Herramienta para el ejercicio con los ramos:** una auditoría de fricciones por recorrido (Sunstein, 2022,
 F-894). Usa la conversión de cada flujo y separa la fricción excesiva de la que protege al cliente.
@@ -547,6 +587,7 @@ sugiere una secuencia: primero el indicador, luego dónde invertir.
 | 5 | Puerta de entrada | Producto propio (SOAT); alianza con banco, billetera o empleador | La puerta ajena vende pero no retiene sin ancla, cobra peaje y genera reclamos sin consentimiento claro | Renovación de clientes por canal de origen; reclamos por canal | Datos de cartera por canal de venta; pregunta 3 |
 | 6 | Programas de bienestar o puntos | Lanzar; no lanzar; piloto controlado | Seleccionan más de lo que previenen (F-854, F-855) | Siniestralidad de inscritos antes y después, contra un control | Piloto con sorteo o despliegue escalonado; 12 a 24 meses |
 | 7 | Meta de "salud 100% digital" | Mantenerla; reemplazarla por una meta por tarea | Los canales conviven por función (§3.6) | Qué tareas de salud se resuelven bien en digital | Mapa de tareas por canal con el ramo salud (pregunta 2) |
+| 8 | Cómo repartir la inversión digital | Apostar todo a una teoría; repartir como portafolio | Solo la teoría 1 tiene evidencia causal; la 5 es la más respaldada en Perú; el resto no está probado en seguros (§2) | El resultado de los pilotos de las decisiones 4 y 6 | Propuesta: una base en lo probado (flujos claros y siniestro híbrido), apuestas medianas con medición (renovación activa, puerta aliada) y apuestas pequeñas para aprender (agentes de IA, finanzas abiertas), cada una con un criterio para escalar o cerrar. Criterio tomado de la entrevista al CEO de Credicorp (F-932, 🔴 E), no de evidencia |
 
 ### 5.2 Las hipótesis del diagnóstico
 
@@ -625,7 +666,9 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 - 🔧 **Versión 7, para aterrizar:** §2.1 (qué significa cada teoría, con ejemplos y cómo se mide); §3.1 (detalle del
   caso bancario y tabla de qué tarea va a qué canal); §3.2 (qué es un ancla); §3.4 (el ensayo de bienestar leído
   completo); §3.6 (los cinco mecanismos de convivencia de canales); §4 (lealtad e inercia explicadas, reglas de
-  decisión y definiciones operativas); §5.1 (decisiones de la gerencia); Anexos E y F.
+  decisión y definiciones operativas); §5.1 (decisiones de la gerencia); Anexos C y D.
+- 🔧 **Versión 7.1:** cada ejemplo tiene ahora una línea de sustento con su fuente y su rigor; nueva §3.8 con la
+  entrevista al CEO de Credicorp (comoditización, agentes de IA, alcance y portafolio de apuestas); decisión 8 en §5.1.
 
 ### 7.3 Veredicto por documento
 
@@ -711,6 +754,14 @@ teoría de valor.
 - 📎 **Hubs de salud con valor diario como respuesta al "no lo usé"** (F-895; propuesta de una agencia, sin
   resultados).
 
+**🔧 Señales de la entrevista al CEO de Credicorp (F-932; opinión):**
+
+- **Agentes de IA que compran por el cliente** y eligen por precio o beneficios: la relación con la marca podría
+  desaparecer.
+- **Un "funcionario" de IA para 18 millones de peruanos** que hoy no tienen quién los asesore.
+- **Definir al competidor como una conducta** (el efectivo, en el caso de Yape), no como otra empresa.
+- **Apuestas pequeñas que fracasan varias veces antes de funcionar**, como Yape en su origen.
+
 **Eje candidato para escenarios:** quién será dueño de la relación diaria con el cliente. Puede ser la
 aseguradora, un banco o una billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis para el
 ejercicio, no un hallazgo.
@@ -778,7 +829,7 @@ dato no existe, que no exista también es un hallazgo.
 🟢 A: académico revisado por pares, con método y muestra explícitos · 🔵 B: regulador, organismo oficial o
 reporte auditado · 🟡 C: consultora o industria con método propio no auditable · 🟠 D: prensa o cifra de la
 propia empresa sin método · 🔴 E: opinión o marketing sin método. Detalle de cada fuente en
-`research/fuentes/codice.md` (F-847 a F-931, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
+`research/fuentes/codice.md` (F-847 a F-932, más F-17, F-183, F-353 y F-442; F-910, F-911 y F-925 a F-930 están
 reservados para documentos internos que no se publican aquí). Enlaces en el Anexo F.
 
 ## Anexo F · Referencias con enlace
@@ -858,3 +909,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-923** · Rubio-Misas, M. (International Journal of Bank Marketing 40(4):724-745; DOI 10.1108/IJBM-04-2021-0129) (2022). *Bancassurance and the coexistence of multiple insurance distribution channels*. 🟢 A. [Ver fuente](https://doi.org/10.1108/IJBM-04-2021-0129)
 - **F-924** · Sharma, D. & Gassenheimer, J. B. (European Journal of Marketing 43(7/8):1076-1091) (2009). *Internet channel and perceived cannibalization: Scale development and validation in a personal selling context*. 🟢 A. [Ver fuente](https://doi.org/10.1108/03090560910961524)
 - **F-931** · Gorman, M. F. (Management Science 56(1):iv-vii; DOI 10.1287/mnsc.1090.1132) (2010). *Management Insights (resumen editorial de los artículos del número, incluido Campbell y Frei, 2010)*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1090.1132)
+- **F-932** · Gianfranco Ferrari, CEO de Credicorp (entrevista; notas tomadas por la usuaria) (2026). *Entrevista sobre transformación digital, IA y estrategia en servicios financieros (notas)*. 🔴 E. Notas de la usuaria; entrevista pública sin enlace aportado.
