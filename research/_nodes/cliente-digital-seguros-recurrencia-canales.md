@@ -1,7 +1,7 @@
 # Cliente digital en seguros: recurrencia, canales y retención (foco Perú)
 
 *Node v2.0 · creado 2026-10-29 con `/trinidad` (pistas académica, social y de negocio) · actualizado 2026-10-29.*
-*v1.0 (2026-10-29): evidencia global, fuentes F-847 a F-889. **v2.0 (2026-10-29): cambio de alcance** — la evidencia se ordena por cercanía al usuario: 🇵🇪 Perú → 🌎 Latinoamérica → 🌏🌍 mercados emergentes parecidos → 🌐 global; fuentes F-890 a F-925. Iteración 3 (2026-10-29, incremental): usos digitales del peruano en general y luego en banca y seguros; fuentes F-926 a F-944. Iteración 4 (2026-10-29, incremental): dónde está el retorno de digitalizar al cliente (sección 1b); fuentes F-945 a F-956.*
+*v1.0 (2026-10-29): evidencia global, fuentes F-847 a F-889. **v2.0 (2026-10-29): cambio de alcance** — la evidencia se ordena por cercanía al usuario: 🇵🇪 Perú → 🌎 Latinoamérica → 🌏🌍 mercados emergentes parecidos → 🌐 global; fuentes F-890 a F-925. Iteración 3 (2026-10-29, incremental): usos digitales del peruano en general y luego en banca y seguros; fuentes F-926 a F-944. Iteración 4 (2026-10-29, incremental): dónde está el retorno de digitalizar al cliente (sección 1b); fuentes F-945 a F-956. Iteración 5 (2026-10-29, incremental): Vitality, Alan y Oscar Health frente al caso peruano, definiciones propuestas y qué puede responder el campo (secciones 1c a 1e); fuentes F-957 a F-962.*
 *Output derivado: `_outputs/research-fuentes-secundarias.md` (Entregable 1 del plan de investigación de cliente digital de RIMAC), con tablas completas por objetivo y la verificación cifra por cifra de los insumos de referencia.*
 
 **Pregunta del node:** ¿qué sabe la evidencia externa sobre cómo se digitaliza el cliente de seguros peruano, para qué sirve la recurrencia digital y qué canal conviene en cada momento?
@@ -37,6 +37,55 @@
 **Contraevidencia que obliga a medir el retorno, no a suponerlo:** los ratios de costo de la industria son 10% a 17% más altos que en 2005 pese a la inversión digital; la productividad subió, pero la absorbieron tecnología, cumplimiento y complejidad (F-946, F-948). La inversión **dirigida** sí bajó gastos en vida (F-947). Las estimaciones de ahorro por digitalizar (1 a 4 puntos del ratio de gastos, F-949) son proyecciones, no resultados.
 
 **Dónde no está el retorno:** en la frecuencia de uso por sí misma (el seguro tiene 1 a 3 contactos naturales al año, F-857), en el bienestar que se pide y no se usa (F-859) y en carteras cuya permanencia depende de otra cosa, como el crédito en bancaseguros (F-883).
+
+## 1c. Vitality, Alan y Oscar Health: por qué ellos sí logran interacción frecuente (iteración 5, 2026-10-29)
+
+**Conclusión:** estas aseguradoras logran que el cliente use la App seguido porque **cambiaron el producto y el modelo de negocio**, no porque tengan una mejor App. Le dieron al seguro una razón de uso semanal o diaria y pagan esa interacción con lo que ahorran en siniestros. Las tres son de salud o de vida con salud. Copiar la frecuencia sin copiar el modelo no funciona.
+
+| Caso | Qué le agregó al seguro | Interacción que logra | Cómo la paga |
+|---|---|---|---|
+| **Vitality** (Discovery) [Sudáfrica y más de 40 mercados] | Programa de conducta saludable con puntos, estatus y recompensas de socios (F-25) | Cientos de interacciones al año, contra 1 o 2 de un cliente de vida tradicional (F-868) | Valor compartido: parte del ahorro en siniestros y caducidad financia las recompensas (F-959); las recompensas son parte del seguro, no un club aparte (F-960). La utilidad operativa de Vitality creció 41% en el semestre a dic-2025 (F-637) |
+| **Alan** [Francia] | Seguro de salud complementario con reembolso casi inmediato y un juego de salud (Alan Play) | 10% usa la App cada día y 26% cada semana (F-961); usuarios diarios ×2,3 tras el juego (F-879); 90% de los reembolsos en menos de un día (F-962) | El seguro de salud ya tiene uso frecuente: la App es el canal de algo que el cliente necesita seguido |
+| **Oscar Health** [EE.UU.] | App, atención virtual y guías de cuidado que llevan al afiliado al lugar correcto (F-957) | Más de 4 de cada 5 afiliados mayores o con condiciones complejas usó el acompañamiento (F-958); NPS de 66 (F-351) | Con el ahorro en costo médico. Su resultado depende igual de la suscripción: pérdida en 2025, ganancia en el 1T 2026 (F-106). Casi todos sus afiliados llegan por corredores (F-880) |
+
+**Por qué no se traslada tal cual a una aseguradora multirramo peruana:**
+
+1. **La frecuencia la pone el producto.** En SOAT, vehicular, riesgos generales o desgravamen, el cliente contacta a su aseguradora 1 a 3 veces al año (F-857, F-877). Solo salud y vida con salud tienen el terreno de Vitality, Alan u Oscar.
+2. **La interacción tiene que pagarse sola.** Exige medir el ahorro en el propio asegurado, tarificar con esa información y tener socios que financien recompensas.
+3. **La prueba de causalidad es débil.** Las cifras de menor mortalidad y caducidad de Vitality son de la empresa y no descartan autoselección (F-869, F-638); el estudio con revisión actuarial independiente encuentra 4% menos siniestros (F-353); un artículo académico independiente concluye que los incentivos económicos dan mejoras modestas y a menudo de corta duración (F-100).
+4. **El cliente usa poco lo que no necesita:** entre 2% y 4% usa los servicios de prevención de su aseguradora (F-859).
+
+**Por qué bienestar y gamificación no tienen respaldo como motor de uso:** se piden y no se usan (F-859); los estudios con efecto no separan causa de autoselección (F-869, F-638), y en lealtad de supermercados corregirla reduce el efecto siete veces (F-805); el único experimento fuerte de gamificación es de un centro comercial, no de seguros (F-807); y no hay estudios en el Perú ni en Latinoamérica.
+
+**Qué sí se puede tomar:** de Alan, hacer instantáneo lo que el cliente ya necesita (el reembolso); de Oscar, usar la App para llevar al cliente al lugar correcto de atención (buscador de clínicas, médico a domicilio), que mejora el servicio y baja el costo médico; de Vitality, solo en salud y vida individual y solo con un piloto medido contra un grupo de control.
+
+## 1d. Tres definiciones propuestas (iteración 5)
+
+- **Cliente digitalmente sano:** resuelve en digital lo que necesita, cuando lo necesita, sin cambiar de canal. Se mide con tres condiciones: tiene el pago resuelto (débito, tarjeta afiliada o pago habitual por App o billetera); resolvió su última gestión sin volver a llamar en siete días; y no reclamó por falta de información en 12 meses. No se mide por frecuencia: el seguro tiene 1 a 3 contactos naturales al año (F-857, F-877), el pago es la recurrencia que retiene (F-918) y el reclamo típico es por información (F-910).
+- **Fidelidad:** separar tres cosas que suelen usarse como sinónimos: **permanecer** (renovación o ausencia de baja a 12 meses), **profundizar** (productos por cliente) y **recomendar** (NPS). La actividad digital no equivale a permanencia. La primera cancelación es la mejor alerta de pérdida total del cliente (F-851); tres cuartos del valor de un promotor es retención (F-858).
+- **Cliente de alto valor:** margen anual × permanencia esperada × productos, calculado **por hogar**: en vida, salud y hogar decide el hogar, no la persona frente al asesor (F-236). Con 3 o más productos, Ping An retiene 99% (F-867).
+
+## 1e. Qué puede responder el campo con clientes y no clientes (iteración 5)
+
+**Conclusión:** los datos dicen cuánto y dónde; el campo dice por qué y qué espera la gente. Tiene que incluir clientes, no clientes y a quienes venden.
+
+| Grupo | Qué puede responder |
+|---|---|
+| Cliente no registrado | Por qué no se registró; si se lo ofrecieron al contratar; por qué canal resuelve hoy |
+| Registrado que no vuelve | Para qué entró, qué encontró y por qué no volvió |
+| Cliente digital activo | Qué resuelve en la App, qué todavía por teléfono y cuándo da algo por resuelto |
+| Cliente con siniestro reciente | Qué canal usó y por qué; si llamar en un choque es preferencia o falla del flujo |
+| Cliente nuevo | Qué pasó en el momento de alta |
+| Cliente de bancaseguros o de vida por el empleador | Si sabe que tiene un seguro con la aseguradora y a quién acude |
+| Familiar cubierto | Quién decide y quién usa |
+| Ex cliente | Por qué se fue: canal, precio, fin del crédito o siniestro mal resuelto |
+| Cliente de otra aseguradora | Con qué estándar compara: qué hace mejor o peor su aseguradora |
+| Asegurado por banco o billetera | Si sabe quién es su aseguradora y qué relación espera, si espera alguna |
+| Persona sin seguro privado | Qué la frena: costo, recursos, no ver la necesidad o desconfianza (F-899) |
+| Quien abandonó una cotización | En qué paso se detuvo y si quería hablar con alguien |
+| Fuerza de ventas, corredores, concesionarios, banco | Si piden el registro al vender, qué hacen distinto los que más registran y qué incentivo tienen |
+
+**Lo que el campo no responde:** cuántos (eso lo dan una encuesta o los datos internos), si la App causa la permanencia (eso lo da un experimento) y lo que la gente hará (lo declarado no coincide con lo que se hace: F-859). Por eso conviene observar tareas reales además de preguntar, reclutar desde la base de la aseguradora y evitar paneles en línea abiertos: un encuestado simulado con IA ya supera 99,8% de los controles de atención (F-598). Las personas sintéticas sirven para ordenar hipótesis, no para responder por los clientes (F-543).
 
 ## 2. 🔬 Pista académica (resumen)
 
@@ -81,3 +130,4 @@ Conclusiones sólidas, cifras frágiles. Errores: Yape (804 transacciones son al
 - [[seguros-comportamiento-mundo-peru|Comportamiento y percepción de seguros (Mundo vs. Perú)]] — contexto de confianza y tenencia en el Perú; este node agrega el hábito digital del peruano y la dimensión de canal.
 - [[conducta-humano-ia|Conducta humano-IA]] — base para la regla «la IA asiste, no decide» (F-852, F-853, F-854, F-863).
 - [[lealtad-gamificacion-recompensas-retail|Gamificación, recompensas y lealtad en retail]] — los motores de frecuencia (Vitality, Alan) y la autoselección en programas de lealtad.
+- [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Vitality y Oscar Health como modelos que pagan la interacción con ahorro en siniestros; la sección 1c explica por qué ese modelo no se traslada tal cual a una aseguradora multirramo peruana.
