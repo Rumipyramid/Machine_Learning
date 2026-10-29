@@ -6132,6 +6132,27 @@ F-744 (Danysh, Gilman, Wells, Pan, Zaitchik, Gonzálvez y otros, *Climate Change
 - **Leído a fondo:** 2026-10-28 (`WebSearch`; UCL Discovery, ScienceDaily y fichas; lectura débil, declarada)
 - **Conexión razonada, no forzada:** refuerza la tesis 26 (el hueco está en la liquidez del hogar) y la intuición 231; sin cambio de confianza.
 
+### 247. Un cambio mínimo al final de un procedimiento doloroso mejora cómo se recuerda y sube algo la vuelta: el cierre de la experiencia es una palanca barata
+F-717 (Redelmeier, Katz y Kahneman, *Pain* 104, 2003). Ensayo aleatorizado con 682 pacientes de colonoscopía. A la mitad se le agregó un intervalo corto y menos doloroso al final. Ese grupo calificó los últimos momentos como menos dolorosos (1,7 contra 2,5 sobre 10) y el procedimiento completo como menos desagradable (4,4 contra 4,9). Volvió algo más a repetir el examen: odds ratio 1,41 (P=0,038) tras ajustar, con seguimiento mediano de 5,3 años y cerca de 50% de retorno. El efecto en retorno es modesto y apenas significativo.
+**Heurística:** en reclamos, cobranzas y atención de siniestros, cuidar cómo termina el contacto, porque el cliente recuerda el final más que la duración. Probar cierres distintos (llamada de seguimiento, mensaje claro del próximo paso) con grupo comparable. No prometer más que "mejor recuerdo, retorno algo mayor"; es un ensayo clínico, no uno de seguros.
+- **Fuente:** F-717 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-29 (`WebSearch`; ficha de PubMed y repositorio de York; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la intuición 217 (el recuerdo del dolor sigue al pico y al final); sin cambio de confianza.
+
+### 248. La defensa del "power posing" sobrevive solo para el ánimo declarado, no para conducta ni hormonas: leer quién firma el análisis
+F-698 (Cuddy, Schultz y Fosse, *Psychological Science* 29(4), 2018). Responde al análisis de Simmons y Simonsohn (2017) con un p-curve sobre un conjunto más amplio de estudios (suma 21 y mide también sensación de poder) y concluye que hay valor evidencial, sobre todo en estados emocionales. La firma una autora del efecto original. Las réplicas preregistradas del número especial (Cesario y otros, 2017) dan un efecto casi nulo en conducta y hormonas; un metaanálisis bayesiano sí halla efecto en sensación de poder, más débil entre quienes no conocían el efecto. Credé (2019) objeta que la mayoría de los estudios no comparaba contra una postura neutra. No leí los textos completos.
+**Heurística:** cuando el defensor de un efecto es su autor y la evidencia sobrevive solo en la medida autoinformada, tratarlo como "cómo se siente", no como palanca de conducta. Pedir la comparación contra control neutro y la medida objetiva antes de usarlo en capacitación de asesores.
+- **Fuente:** F-698 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-29 (`WebSearch`; resúmenes y comentarios; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la intuición 201 y 219 (efectos de cognición encarnada que no sobreviven a réplicas); sin cambio de confianza.
+
+### 249. La réplica polaca de Milgram da ~90% de obediencia, pero se frenó en 150 voltios y tuvo 80 personas: sirve de señal, no de cifra
+F-652 (Doliński y otros, *Social Psychological and Personality Science* 8(8), 2017). Réplica en Polonia con 80 adultos de 18 a 69 años (la toma de datos fue en 2015). Alrededor de 90% estuvo dispuesto a llegar al nivel más alto de la versión acotada. El tope fue 150 voltios, como en Burger (2009), y eso supone que obedecer ahí predice obedecer a 450. El diseño sin gritos de la víctima pudo subir la obediencia. Muestra pequeña, sin conclusiones por género según los propios autores. Las cifras de comparación varían entre fuentes de prensa y no vi el artículo.
+**Heurística:** una réplica con versión acotada y muestra pequeña confirma que la obediencia a la autoridad persiste, no su tasa. Para el asesor o el guion de venta que presiona, usar la dirección (la autoridad percibida pesa), no el 90%. Ver también la intuición 222 (el guion del experimento de Stanford indujo la conducta).
+- **Fuente:** F-652 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-29 (`WebSearch`; prensa, nota de SPSP y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la intuición 230 (Milgram: guion improvisado y réplica que llega solo a 150 V); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6185,7 +6206,7 @@ F-744 (Danysh, Gilman, Wells, Pan, Zaitchik, Gonzálvez y otros, *Climate Change
 - **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28 y 09-28→2026-10-29; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
   sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
@@ -6336,52 +6357,8 @@ F-744 (Danysh, Gilman, Wells, Pan, Zaitchik, Gonzálvez y otros, *Climate Change
 
 - **2026-09-27** — *(Detalle podado y fusionado al resumen el 2026-10-28)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
 
-- **2026-09-28** — Corrida diaria de refinamiento. Confirmé `main` al día (`git checkout main` + `git
-  pull`, fast-forward limpio hasta el commit de la corrida de ayer, working tree limpio) y verifiqué
-  `research/fuentes/codice.md` por conteo directo con script: **468 filas, F-1 a F-468 sin huecos ni
-  duplicados** — mismo tope exacto que las últimas 28 corridas, **cero fuentes nuevas** registradas por
-  `cronista`/`/trinidad`/`/seeker`/`/gossip`/`/marketer` desde entonces, cuadragésimo séptimo día
-  seguido sin cambios sustanciales en el ledger. **Esta corrida sí matizó tesis 8 y su Riesgo asociado,
-  no por evidencia nueva del ledger sino por la lectura a fondo de la rutina diaria de intuición (ver
-  abajo):** el caso de Pacífico Seguros (F-117) que el ledger solo registraba como "abierto" ya tiene
-  resolución (sep-2025, todavía sin F-n propio) — multa final de S/162,051.5, ~8% del techo de >S/2M
-  amenazado al abrir el caso, sobre solo 1,395 de 50,000 llamadas auditadas. No baja la confianza de que
-  el expediente propio de Rímac es un riesgo real y activo, pero calibra a la baja la magnitud esperada
-  de una eventual sanción frente al peor caso. El resto de las 25 tesis se repasó contra el mismo tope de
-  468 sin más matices forzados — la revisión profunda de `cronista` sigue sin correr desde el 2026-08-12
-  (no la disparo aquí, es rutina de `cronista`, no de este proceso diario; ya lleva cuarenta y siete días
-  sin correr). **Poda de bitácora:** el bloque "2026-08-29" salió por completo de la ventana de ~30 días
-  (cutoff ≈2026-08-29) — lo fusioné con el bloque "2026-08-01 a 2026-08-28" en un resumen ampliado
-  "2026-08-01 a 2026-08-29"; aproveché para comprimir la lista de fechas de fusiones intermedias del
-  propio bloque resumen (crecía sin límite cada día) a una sola frase con el conteo y las fusiones más
-  recientes — no se pierde ningún dato porque el detalle de cada tesis e intuición de ese día ya vive en
-  sus propias secciones con fecha. **La rutina diaria de intuición corrió con el nivel 🔵B en curso (🟢A
-  agotado desde el 2026-08-26):** recalculé por script el universo 🔵B del ledger con un filtro estricto
-  sobre marcadores de rigor en la fila completa (fila con exactamente un marcador de rigurosidad y que
-  ese marcador sea 🔵B, excluyendo filas mixtas tipo F-333): **73 filas puras** (cifra distinta a la de
-  ayer, 75; el método de conteo se ajustó para capturar filas donde el campo de rigurosidad contiene un
-  `|` interno que desalineaba el split por columnas de versiones anteriores del script — no hay pérdida
-  de fuentes, solo una forma de contar más precisa) — contra `fuentes_leidas_lobo.md` (20 ya leídas de
-  este nivel tras las corridas de los siete días previos: F-104, F-32, F-359, F-37, F-194, F-7, F-256,
-  F-309, F-285, F-308, F-132, F-383, F-105, F-360, F-1, F-231, F-207, F-70, F-387, F-431) — **53
-  pendientes** — y elegí 3 al azar sin reemplazo (Python `random.shuffle`, sin semilla fija): F-117,
-  F-112 y F-353. Las tres bloqueadas por el proxy en su URL directa (infobae.com, moh.gov.sg,
-  vitalitygroup.com); `WebSearch` sí funcionó y permitió reconstruir detalle nuevo en las tres vía
-  cobertura convergente (Forbes Perú + Infobae + RPP + Gestión + Panamericana + Diario Correo + Exitosa +
-  eBiz + Lima Gris para la resolución real de F-117, no solo la apertura ya citada; White Paper oficial +
-  MOH Newsroom + revisión académica 2025 de Taylor & Francis para F-112; comunicado propio de Vitality +
-  BusinessWire para F-353), no solo el resumen de una línea ya citado. Sumé las entradas 154, 155 y 156
-  de Intuición acumulada: (154) F-117 trae el hallazgo más material de hoy — el caso Pacífico ya resuelto
-  en ~8% del techo amenazado, calibrador directo de magnitud para el expediente propio de Rímac (tesis 8,
-  actualizada hoy); (155) F-112 confirma con mecanismo que subsidiar el canal preferido sin cambiar el
-  incentivo del proveedor puede empujar volumen hacia el canal saturado por defecto, no hacia el nuevo —
-  contexto para el riesgo de steering (tesis 23); (156) F-353 separa la cifra de siniestros (auditada por
-  Arbital Health) de la cifra de mortalidad por status Diamond que viaja adjunta en el mismo resumen sin
-  compartir necesariamente el mismo estudio de origen — higiene de cita antes de usar F-353 en un
-  argumento de negocio futuro. Esta corrida sí cambió el contenido de tesis 8 y su Riesgo (calibración de
-  magnitud) sin bajar su nivel de confianza. Actualicé `research/lobo/fuentes_leidas_lobo.md` con las
-  tres fuentes leídas hoy. Bitácora con 30 días de historial (2026-08-30 a hoy) tras la poda de hoy —
-  cumple la ventana de ~30 días.
+- **2026-09-28** — *(Detalle podado y fusionado al resumen el 2026-10-29)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
+
 - **2026-09-29** — Corrida diaria de refinamiento. `main` al día (fast-forward limpio) y ledger verificado
   por script: **468 filas, F-1 a F-468 sin huecos** — cero fuentes nuevas, cuadragésimo octavo día seguido
   sin cambios en el ledger; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12 (rutina
@@ -6526,3 +6503,5 @@ F-744 (Danysh, Gilman, Wells, Pan, Zaitchik, Gonzálvez y otros, *Climate Change
 - **2026-10-27** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 105 pendientes → 102 tras hoy):** sorteo F-580, F-548 y F-815, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 241 (la IA generativa ayuda sobre todo al novato: preguntar quién gana), 242 (el modelo que imita al público falla con grupos concretos: pedir el error por grupo) y 243 (la tasa de canje mide a quien participa, no el efecto). Pendiente para `cronista`: F-815 ya tiene autores (Bombaij, Gelper y Dekimpe), año 2022 y DOI 10.1016/j.ijresmar.2022.04.005 verificados en fichas de Tilburg; y F-580 debe confirmar 5.172 vs. 5.179 agentes. Poda: 09-26 fusionado al resumen; Bitácora cubre 2026-09-27 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-28** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 105 pendientes → 102 tras hoy):** sorteo F-720, F-731 y F-744, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 244 (la mera exposición tiene forma de U invertida: medir la curva de contactos), 245 (el efecto IKEA se replica en dirección, no en magnitud: medir abandono del cotizador) y 246 (El Niño de 1997-98 frenó el crecimiento infantil en Tumbes, sobre todo en hogares inundables). Pendiente para `cronista`: F-720, confirmar los moderadores (visual/auditivo, duración) y que el ledger no recoge la U invertida como límite de la frecuencia; F-731, sin tamaños de efecto verificados. Poda: 09-27 fusionado al resumen; Bitácora cubre 2026-09-28 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-29** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 103 pendientes → 100 tras hoy):** sorteo F-717, F-698 y F-652, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 247 (el cierre de una experiencia dolorosa mejora el recuerdo y sube algo el retorno), 248 (el power posing sobrevive solo en ánimo declarado, y lo defiende su autora) y 249 (Milgram en Polonia: ~90% con tope de 150 V y 80 personas; dirección, no cifra). Pendiente para `cronista`: F-698 no recoge las réplicas preregistradas (Cesario y otros, 2017) ni la crítica de Credé (2019); F-652, aclarar en la ficha el tope de 150 V y que la toma de datos fue en 2015. Poda: 09-28 fusionado al resumen; Bitácora cubre 2026-09-29 a hoy. `fuentes_leidas_lobo.md` actualizado.

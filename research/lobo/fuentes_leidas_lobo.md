@@ -264,3 +264,6 @@
 | F-720 | 🟢 A | 2026-10-28 | Intuición 244 — la mera exposición tiene forma de U invertida; medir la curva de contactos antes de subir la frecuencia (resumen; lectura débil) |
 | F-731 | 🟢 A | 2026-10-28 | Intuición 245 — el efecto IKEA se replica en dirección, no en magnitud; medir abandono en cotizadores configurables (nota breve; lectura débil) |
 | F-744 | 🟢 A | 2026-10-28 | Intuición 246 — El Niño 1997-98 frenó el crecimiento infantil en hogares inundables de Tumbes; segmentar por vulnerabilidad del hogar (lectura débil) |
+| F-717 | 🟢 A | 2026-10-29 | Intuición 247 — cuidar el cierre de la experiencia: mejora el recuerdo y sube algo el retorno (resumen; lectura débil) |
+| F-698 | 🟢 A | 2026-10-29 | Intuición 248 — el power posing sobrevive solo en ánimo declarado y lo defiende su autora; pedir control neutro y medida objetiva (secundarias; lectura débil) |
+| F-652 | 🟢 A | 2026-10-29 | Intuición 249 — Milgram en Polonia: ~90% con tope de 150 V y 80 personas; usar la dirección, no la cifra (prensa y resúmenes; lectura débil) |
