@@ -1,6 +1,6 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 · **Estado:** versión de trabajo 7
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 (banco de señales ampliado el 29-10-2026) · **Estado:** versión de trabajo 7.4
 (integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; ocho documentos
 internos del equipo se omiten de esta copia; el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.1, 2026-10-28). Las fuentes se
@@ -843,8 +843,9 @@ teoría de valor.
 - **Recuperación de la inversión insurtech en LatAm en 2025, con más disciplina** (F-878).
 - 📎 **Bancos que compiten por "custodiar el permiso para actuar"** de agentes de IA que ejecutan con confirmaciones
   (practitioners de Flat 101, F-899; opinión).
-- 📎 **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902).
-- 📎 **Seguros paramétricos en desarrollo en Perú**, aún sin oferta (F-902).
+- 📎 **Finanzas abiertas en la agenda regulatoria peruana y "seguro abierto" en Brasil** (F-900, F-902). Actualizado
+  abajo, en las señales de pago, indemnización y datos abiertos.
+- 📎 **Seguros paramétricos en Perú:** ya hay reglamento (F-786). Actualizado abajo.
 - 📎 **Reglamento peruano de IA por niveles de riesgo (sept-2025)**, que alcanzará a la tarificación y los siniestros con
   IA (F-907).
 - 📎 **Seguros de vida que se usan en vida y cambian con la etapa** (Bradesco Vida Viva, F-905), sin cifras.
@@ -868,6 +869,43 @@ teoría de valor.
 - **Ecosistema de seguro, telemedicina y prestación propia** para segmentos de bajo ticket, con inversión en nuevas sedes
   en zonas desatendidas de Lima y regiones.
 - **El seguro como puerta de entrada a la atención,** no al revés: un médico accesible para quien hoy se automedica.
+
+**🔧 Señales de pago, indemnización, datos abiertos y seguro embebido (agregadas el 29-10-2026):**
+
+Lectura de conjunto: las señales que más pueden cambiar las reglas tocan **cómo se paga y cómo se indemniza**. El
+"mercado abierto" de seguros tiene, hasta ahora, más regulación que adopción.
+
+- **Seguro paramétrico con reglamento propio en Perú** (Res. SBS 02260-2026, F-786). Paga al superar un umbral de un
+  parámetro objetivo, sin peritaje. Solo lo contratan entidades públicas o personas jurídicas, para sí o para una
+  colectividad. Por eso, para llegar a personas, el camino es un tomador intermediario (una microfinanciera, un
+  gremio, un municipio), no la venta individual.
+- 🌐 **Paramétricos con dinero móvil y satélite en Kenia y México.** La prima se paga por M-Pesa y el pago llega al
+  celular (F-980). Es la evidencia causal más sólida del bloque: los pagos protegen consumo y activos (Janzen y Carter,
+  2019, F-792; CADENA en México, F-984). Hay dos frenos. El asegurado conserva cerca del 69% de su riesgo de grandes
+  pérdidas (Jensen y otros, 2016, F-976). Y la demanda voluntaria es baja: rara vez pasa de 30% (F-977, F-978). Los
+  programas que escalan los paga el Estado (KLIP, F-979; CADENA, F-984).
+- **Iniciación de pagos y TAPP del BCRP** (piloto previsto para diciembre de 2026; F-969, F-971). El cliente autoriza
+  una vez desde la app que elija y los pagos se debitan de su cuenta. *Hipótesis:* es la vía para un pago recurrente
+  consentido y revocable, en vez de un débito preseleccionado. Importa porque dejar de pagar parece deberse más a la
+  molestia de pagar que al monto (McIntyre y otros, 2021, F-962; contraste EE.UU.).
+- **Finanzas abiertas en Perú: proyecto, no norma** (F-970). Cuentas desde 2028; los seguros entrarían "desde 2029"
+  según la prensa, sin confirmar en el texto oficial. El reglamento de Banking as a Service ya está aprobado, pero no
+  incluye aseguradoras (F-974).
+- 🌐 **El seguro abierto no ha despegado donde existe.** En Brasil, tras cinco años, 61 instituciones y más de
+  R$1.000 millones invertidos, hay menos de 10.000 consentimientos activos (F-983). Bima Sugam, en India, incumplió al
+  menos cinco plazos de lanzamiento (F-975). La infraestructura no crea demanda si el cliente no gana algo inmediato.
+- **Seguro embebido: escala declarada, resultados sin publicar.** MetLife con Klimber (19 millones de personas, F-985),
+  Leonisa con BNP Paribas Cardif (cerca de 2 millones, F-965), Turaco en África (pagos en menos de 3 días, F-981).
+  Ninguno publica siniestralidad ni renovación. En Perú, el embebido es menos de 1% de la cartera de Pacífico, con 14
+  lanzamientos previstos en 2026 (F-967), y su línea de seguros inclusivos suma más de 3 millones de pólizas (F-966).
+- **Plataformas de salud para empresas que cubren todo el ecosistema.** Betterfly salió de Perú en 2025 y hoy se
+  define como plataforma por suscripción para empresas: seguro complementario, médicos, farmacias, exámenes
+  preventivos y beneficios flexibles (F-964, F-372).
+- 🌐 **Consumo diario ligado al producto, no al beneficio.** Cling Cling, de Caser (España): cada compra alimenta un
+  seguro de ahorro (F-982; sin cifras).
+- **WhatsApp como ventanilla financiera en Perú:** pagos en el chat (Plin) y créditos de punta a punta (Mibanco, Caja
+  Arequipa) (F-973).
+- **Suscripción mensual que premia al buen conductor desde el primer mes** (Darwin Seguros, Brasil; F-965).
 
 **Eje candidato para escenarios:** quién será dueño de la relación diaria con el cliente. Puede ser la
 aseguradora, un banco o una billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis para el
@@ -946,7 +984,10 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-17** · Maier, M. et al. (2022). *No evidence for nudging after adjusting for publication bias (PNAS)*. 🟢 A. [Ver fuente](https://www.pnas.org/doi/10.1073/pnas.2200300119)
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-353** · Vitality Group; validación actuarial de Arbital Health (2024). *Vitality Impact Study*. 🔵 B. [Ver fuente](https://vitalitygroup.com/insights/independent-actuaries-confirm-methodology-in-vitalitys-impact-study/)
+- **F-372** · AméricaEconomía, BioBioChile, El Dínamo, Emol (cobertura convergente) (2025). *Betterfly (Chile) despide personal y cierra operaciones en cinco países*. 🟡 C. [Ver fuente](https://www.americaeconomia.com/en/node/290934 · https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2025/03/14/la-empresa-chilena-betterfly-aplica-despidos-y-determina-cerrar-sus-operaciones-en-cinco-paises.shtml)
 - **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (Accident Analysis & Prevention)*. 🟢 A. [Ver registro del ensayo](https://clinicaltrials.gov/study/NCT06101251) · [Ver revista](https://www.sciencedirect.com/journal/accident-analysis-and-prevention)
+- **F-786** · SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado) (2026). *Reglamento de Seguros Paramétricos*. 🔵 B. [Ver fuente](https://elperuano.pe/noticia/304594-sbs-aprueba-reglamento-de-seguros-parametricos-para-su-funcionamiento-en-el-mercado-peruano · https://lpderecho.pe/reglamento-de-seguros-parametricos-resolucion-sbs-02260-2026/)
+- **F-792** · Janzen, S. A. & Carter, M. R. (2019). *After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection (American Journal of Agricultural Economics, 101(3):651-671)*. 🟢 A. [Ver fuente](https://ideas.repec.org/f/pja593.html)
 - **F-847** · Campbell, D. & Frei, F. (Management Science 56(1):4-24) (2010). *Cost Structure, Customer Profitability, and Retention Implications of Self-Service Distribution Channels*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.1090.1132)
 - **F-848** · Xue, M.; Hitt, L. M.; Chen, P. (Management Science 57(2):291-307) (2011). *Determinants and Outcomes of Internet Banking Adoption*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1100.1187)
 - **F-849** · Becker, Stolper & Walter (Zeitschrift für das gesamte Genossenschaftswesen 72(4):234-267) (2022). *The Impact of Mobile Banking Adoption on Retail Banking in Germany*. 🟢 A. [Ver fuente](https://doi.org/10.1515/zfgg-2022-0019)
@@ -1028,3 +1069,24 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-941** · Gestión (redacción) (2025). *Pacífico Salud: inversión en innovación e infraestructura (20 de octubre de 2025; título truncado en la captura)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-942** · Gestión (entrevista a Guillermo Garrido-Lecca, CEO de Pacífico Salud) (2025). *Pacífico Salud explora zonas para expandir su red y afianza apuesta por diversificar segmentos (21 de julio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-943** · OSIPTEL (Organismo Supervisor de Inversión Privada en Telecomunicaciones), Encuesta Residencial de Servicios de Telecomunicaciones (Erestel) 2025; vía nota de prensa del organismo y cobertura de medios (2026). *Erestel 2025: ¿cuáles son las herramientas y servicios digitales que más usan los peruanos?*. 🔵 B. [Ver fuente](https://www.osiptel.gob.pe/media/erhitdop/np-erestel-2025_cuáles-son-las-herramientas-y-servicios-digitales-que-más-usan-los-peruanos-revp-rev-jgm-revp.docx)
+- **F-962** · McIntyre, A. L.; Shepard, M. & Wagner, M. (NBER Working Paper 28630; preparado para AER Papers & Proceedings) (2021). *Can Automatic Retention Improve Health Insurance Market Outcomes?*. 🟡 C. [Ver fuente](https://www.nber.org/papers/w28630)
+- **F-964** · Gestión (con declaraciones de Betterfly al Diario Financiero) (2025). *Chilena Betterfly cierra operación en Perú y cuatro países más: ¿cuál es la razón? (18 de marzo de 2025)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-965** · Gestión (cobertura del Insurance Day 2025 de Apeseg) (2025). *Insurance Day 2025: historias reales que están transformando el sector asegurador (26 de mayo de 2025)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-966** · Gestión (entrevista a Mónica Rivas, gerente de Bancaseguros y Ecosistemas Credicorp de Pacífico Seguros) (2024). *Pacífico Seguros: "Queremos llegar a millones de personas más con los seguros inclusivos" (19 de mayo de 2024)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-967** · Gestión (con declaraciones de María José Alfaro, gerente de embebidos e innovación de Pacífico Seguros) (2026). *Lanzan seguros desde S/3 para protección en viajes, ¿qué peligros cubren? (22 de abril de 2026)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-969** · Gestión (con declaraciones de María del Carmen Yuta, Vodanovic) (2025). *Pagos en segundos y menores precios: la revolución de iniciación de pagos que busca el BCRP (3 de diciembre de 2025)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-970** · Superintendencia de Banca, Seguros y AFP — proyecto de Reglamento General del Sistema de Finanzas Abiertas (bloque I prepublicado con la Res. SBS N.° 02433-2026, 5 de octubre de 2026; bloque II el 19 de octubre), vía Gestión (21 de octubre de 2026), El Peruano y Cuatrecasas (2026). *Finanzas abiertas: datos de cuentas de ahorro podrán ser compartidos*. 🔵 B. [Ver fuente](https://elperuano.pe/noticia/307111-que-cambios-propone-la-sbs-para-las-finanzas-abiertas-revisa-el-proyecto-normativo)
+- **F-971** · Banco Central de Reserva del Perú — TAPP, vía Gestión (2 de septiembre y 13 de octubre de 2026), Infobae y Cuatrecasas; Circular 0017-2026-BCRP (2026). *TAPP: plataforma pública de pagos inmediatos*. 🟠 D. [Ver fuente](https://gestion.pe/tu-dinero/bcrp-pronto-revolucionara-pagos-en-peru-con-masivo-sistema-como-funcionara-tapp-noticia/)
+- **F-973** · Gestión (sobre Interbank, Mibanco, Caja Arequipa y Banco de la Nación) (2025-2026). *Plin WhatsApp: la apuesta de Interbank para pagar sin salir del chat (31 de octubre de 2025); Bancos y cajas empiezan a dar créditos y permitir pagos por WhatsApp (10 de febrero de 2026)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
+- **F-974** · Superintendencia de Banca, Seguros y AFP — Resolución SBS N.° 01747-2026, vía El Peruano y Cuatrecasas (2026). *Reglamento de Banking as a Service (publicado el 3 de julio de 2026)*. 🔵 B. [Ver fuente](https://elperuano.pe/noticia/299414-mas-competencia-y-nuevas-soluciones-sbs-publica-reglamento-para-banking-as-a-service)
+- **F-975** · Prensa india y aseguradoras (Business Today, Reinsurance Asia, Tata AIA) (2025-2026). *Bima Sugam: mercado digital único de seguros del regulador indio IRDAI*. 🟠 D. [Ver fuente](https://www.businesstoday.in/personal-finance/insurance/story/irdai-announces-bima-sugam-portal-launch-first-phase-expected-in-december-494470-2025-09-17)
+- **F-976** · Jensen, N. D.; Barrett, C. B. & Mude, A. G. (American Journal of Agricultural Economics 98(5):1450-1469) (2016). *Index Insurance Quality and Basis Risk: Evidence from Northern Kenya*. 🟢 A. [Ver fuente](https://www.ilri.org/knowledge/publications/index-insurance-quality-and-basis-risk-evidence-northern-kenya)
+- **F-977** · Takahashi, K.; Ikegami, M.; Sheahan, M. & Barrett, C. B. (World Development 78:324-340) (2016). *Experimental evidence on the drivers of index-based livestock insurance demand in Southern Ethiopia*. 🟢 A. [Ver fuente](https://repo.mel.cgiar.org/handle/20.500.11766/4688)
+- **F-978** · J-PAL (Abdul Latif Jameel Poverty Action Lab), boletín de políticas (2016). *Make It Rain*. 🔵 B. [Ver fuente](https://www.povertyactionlab.org/sites/default/files/publication/make-it-rain.pdf)
+- **F-979** · ILRI y Gobierno de Kenia (nota de 2019); Swiss Re (informe 2017); Artemis (2017-2019). *Kenya Livestock Insurance Program (KLIP)*. 🔵 B. [Ver fuente](https://www.ilri.org/news/kenya-government-declares-pay-out-ksh87-million-cushion-6000-pastoralists-effects-drought)
+- **F-980** · ACRE Africa / Kilimo Salama (brief de IFC y Syngenta; 3ie; prensa) (2012-2016). *Seguro agrícola por índice climático con pago por M-Pesa*. 🟡 C. [Ver fuente](https://www.3ieimpact.org/evidence-hub/publications/other-evaluations/formative-evaluation-increasing-uptake-acre-hakika)
+- **F-981** · Turaco (sitio propio) y prensa tecnológica africana (Disrupt Africa, NextBillion, Insurtech Insights) (2020-2026). *Turaco: microseguro embebido de salud y vida en Kenia, Uganda, Nigeria y otros países*. 🟠 D. [Ver fuente](https://www.insurtechinsights.com/kenyan-insurtech-turaco-passes-one-million-customers-insured-milestone/)
+- **F-982** · Caser Seguros (notas de prensa propias; Funds Society) (2019-2020). *Cling Cling: seguro de ahorro por consumo*. 🟡 C. [Ver fuente](https://www.caser.es/conocenos/actualidad/productos-y-servicios/caser-presenta-una-solucion-innovadora-de-ahorro-facil-y-por-consumo)
+- **F-983** · Susep (Brasil), vía LetsMoney (republica Valor Econômico) y The Paypers (2024-2026). *Open Insurance en Brasil: transacciones, consentimientos y estado del sistema*. 🟠 D. [Ver fuente](https://www.letsmoney.com.br/noticias/open-insurance-menos-10-mil-consentimentos/)
+- **F-984** · de Janvry, A.; Ramírez Ritchie, E. & Sadoulet, E. (World Bank Policy Research Working Paper 7715) (2016). *Weather Index Insurance and Shock Coping: Evidence from Mexico's CADENA Program*. 🟡 C. [Ver fuente](https://openknowledge.worldbank.org/handle/10986/24632)
+- **F-985** · Prensa regional (Corresponsables, Bloomberg Línea, Expansión, Pulzo) (2023-2026). *Seguros dentro de billeteras y "sponsors" en LatAm: Klimber con MetLife, Mercado Pago México, Nequi Colombia*. 🟠 D. [Ver fuente](https://www.corresponsables.com/arg/actualidad/klimber-expande-su-operacion-a-uruguay-y-colombia-y-celebra-15-millones-de-asegurados-en-america-latina)

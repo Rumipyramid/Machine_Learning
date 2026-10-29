@@ -1,7 +1,7 @@
 # Cliente intermediado: cuando el cliente llega por el banco, la billetera, el empleador o el corredor
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-29 · Versión: v1.0
+> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-29 (§3.1 señales de embebido, paramétrico y finanzas abiertas) · Versión: v1.0
 > Origen: pregunta 3 del brief "Benchmarking: el valor de la recurrencia digital en seguros" (sobre todo
 > investigación de negocio; lo académico solo para la teoría del intermediario). Insumo para la Gerencia de
 > Digital de RIMAC; RIMAC está excluida como caso, fuente o benchmark.
@@ -71,6 +71,17 @@ Síntesis de la evidencia de este node, no un dato.
 | CI3 | El seguro embebido retiene menos que el elegido | 🟠 Sin datos públicos | Cohortes por canal de origen con renovación a 12 y 24 meses |
 | CI4 | Con el desgravamen de consumo opcional, sube la caída de ese producto | 🟡 Plausible por F-952 | Comparar la contratación antes y después del 9 de septiembre de 2025 |
 
+### 3.1 Señales para la conversación con los ramos (2026-10-29)
+
+- **El seguro embebido escala por volumen declarado, no por resultados publicados.** MetLife con Klimber
+  (F-985), Leonisa con BNP Paribas Cardif (F-965) y Turaco (F-981) reportan millones de asegurados, sin
+  siniestralidad ni renovación. En Perú, el embebido pesa menos de 1% de la cartera de Pacífico (F-967).
+- **El paramétrico peruano exige un tomador colectivo** (F-786). Es otra forma de intermediación: el
+  cliente final llega por una microfinanciera, un gremio o el Estado.
+- **El banco ya no es el único dueño posible de los rieles.** Finanzas abiertas (F-970, en proyecto) y TAPP
+  (F-971) abren pagos y datos a terceros; Banking as a Service no incluye aseguradoras (F-974). En Brasil,
+  el seguro abierto no encontró demanda (F-983).
+
 ## 4. Vacíos
 
 - Reparto público de primas por canal en Perú.
@@ -91,3 +102,5 @@ Síntesis de la evidencia de este node, no un dato.
   momento de contacto directo con el cliente intermediado.
 - [[transicion-venta-fria-a-opt-in|Transición de venta fría a opt-in]] — la venta en la puerta del crédito y sus
   reclamos (cargo indebido, PPI) son el mismo problema de consentimiento.
+- [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en las personas]] — el seguro paramétrico (F-786, F-792)
+  llega a las personas a través de un tomador colectivo: otra forma de cliente intermediado.
