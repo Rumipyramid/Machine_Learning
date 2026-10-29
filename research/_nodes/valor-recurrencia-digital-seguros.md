@@ -494,3 +494,5 @@ se transfiera a trámites de seguros y que mejore resultados.
   mismo.
 - [[fenomenos-psicologicos|Fenómenos psicológicos clásicos]] — estado de replicación de los efectos que usa la lectura conductual (§9): regla pico-final y sesgo del presente.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en lenguaje claro]] — la palanca contra la ambigüedad que genera llamadas (§9).
+- [[canal-servicio-siniestro-seguros|Rol del canal en el servicio y el siniestro]] — pregunta 2 del mismo benchmarking: qué canal sirve en cada momento del servicio y del siniestro.
+- [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado: banco, billetera, empleador y corredor]] — pregunta 3: quién controla cada momento cuando el cliente llega por una puerta ajena (anclas de este node).

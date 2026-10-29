@@ -1,7 +1,7 @@
 # ¿Desaparecerán los asesores de seguros? Automatización, venta 100% digital y el rol del intermediario
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-22 · Última actualización: 2026-10-29 · Versión: v1.0
 > (Actualización 2026-07-27, sin bump de versión, incremental: §3.7 ampliación sobre casos de
 > éxito comercial verificable en venta 100% digital de vida — Ethos, Bowtie, contraevidencia
 > Bestow/Singlife — afina la tesis existente, no la cambia.)
@@ -387,3 +387,5 @@ apostar a que la conversación compleja deje de necesitar a una persona.
   patrón con evidencia propia de LATAM: el insurtech de vida de mejor desempeño de la región
   (Azos, Brasil) crece a través de 9.000+ corredores, no reemplazándolos.
 - [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — extiende la regla de complejidad (lo simple migra, lo complejo pide persona) del canal de venta al servicio y al siniestro.
+- [[canal-servicio-siniestro-seguros|Rol del canal en el servicio y el siniestro]] — aplica la regla de complejidad al servicio y al siniestro.
+- [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado: banco, billetera, empleador y corredor]] — qué pasa después de la venta con el cliente que llega por banco, billetera, empleador o corredor; reutiliza F-180.

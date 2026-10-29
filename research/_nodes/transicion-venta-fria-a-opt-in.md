@@ -1,7 +1,7 @@
 # Transición de venta fría a venta opt-in: cómo lo hacen las organizaciones
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-14 · Última actualización: 2026-10-29 · Versión: v1.0
 > Origen: `/trinidad` — investigación de 360° (empírica + social + negocio)
 
 ---
@@ -322,3 +322,4 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
   este node documenta (ninguna transición evita contracción de volumen; migrar la táctica en
   vez de cambiar el modelo de fondo es un riesgo, no una solución).
 - [[futuro-asesores-seguros-venta-digital|¿Desaparecerán los asesores de seguros?]] — retoma de este node la lógica de reducir la carga de «pedir antes de dar valor» como argumento a favor de potenciar al asesor con tecnología, no de reemplazarlo.
+- [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado: banco, billetera, empleador y corredor]] — la venta en la puerta del crédito (cargo indebido en Indecopi, PPI en el Reino Unido) es el mismo problema de consentimiento.

@@ -1,7 +1,7 @@
 # Venta de seguros de vida en LATAM: modelo digital vs. híbrido vs. tradicional, y cómo performa cada uno
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-10-04 · Versión: v1.0
+> Fecha de elaboración: 2026-07-27 · Última actualización: 2026-10-29 · Versión: v1.0
 > Origen: `/marketer` — investigación de espectro de negocio
 > Pregunta original: ¿cómo están funcionando las aseguradoras de LATAM en venta de seguros
 > de vida — 100% digital, híbrido, o tradicional — y cómo performa cada modelo?
@@ -231,3 +231,4 @@ proyecto Back to Basics más allá de Perú, si eso llegara a plantearse.
   potenciar al asesor con tecnología, no reemplazarlo — el patrón que este node confirma a nivel
   regional es la misma apuesta que ya está validando el proyecto.
 - [[valor-recurrencia-digital-seguros|Valor de la recurrencia digital en seguros]] — muestra que en LatAm la puerta digital a escala la tienen bancos digitales y billeteras (Nubank, Mercado Pago, Yape), no las aseguradoras.
+- [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado: banco, billetera, empleador y corredor]] — bancos digitales y billeteras como puerta: escalan la venta, sin cifras públicas de retención.
