@@ -118,7 +118,7 @@ suscripción que cubre todo el ecosistema de salud (F-964).
 ### 3.1 Vida individual
 
 **Lo que vemos.**
-La versión interna trae aquí cartera, digitalización por canal de venta, conversión de los flujos de venta y reclamos
+La versión interna trae aquí cartera, clientes con cuenta por canal de venta, conversión de los flujos de venta y reclamos
 de cobranza.
 
 **Qué forma de valor aplica.** Retención (persistencia) y venta cruzada asistida. No costo de servir: la frecuencia
@@ -150,7 +150,7 @@ F-905; sin cifras). Consumo diario que alimenta un seguro de ahorro (F-982).
 ### 3.2 Vida por bancaseguros y worksite
 
 **Lo que vemos.**
-La versión interna trae aquí cartera, digitalización por rol (titular y dependiente) y la presencia del seguro en el
+La versión interna trae aquí cartera, clientes con cuenta por rol (titular y dependiente) y la presencia del seguro en el
 app del banco socio.
 
 **Qué forma de valor aplica.** Alcance, con el riesgo de que la relación sea del banco o del empleador. El
@@ -188,7 +188,7 @@ confirmar (F-970). Banking as a Service aprobado, sin aseguradoras (F-974). Segu
 ### 3.3 SOAT y Vehicular
 
 **Lo que vemos.**
-La versión interna trae aquí cartera, digitalización, reparto del reporte de choque entre app y teléfono, y reclamos
+La versión interna trae aquí cartera, clientes con cuenta, reparto del reporte de choque entre app y teléfono, y reclamos
 por indemnización.
 
 **Qué forma de valor aplica.** Confianza en el siniestro y prevención (telemática). En SOAT, el canal digital prueba que
@@ -223,7 +223,7 @@ simples (Porto Seguro, F-865).
 ### 3.4 Salud: EPS y AMI
 
 **Lo que vemos.**
-La versión interna trae aquí cartera y digitalización por rol (titular y dependiente) y el reparto entre app y
+La versión interna trae aquí cartera y clientes con cuenta por rol (titular y dependiente) y el reparto entre app y
 teléfono de reembolsos, buscador de clínicas y médico a domicilio.
 
 **Qué forma de valor aplica.** Costo de servir (reembolsos), prevención en crónicos y confianza en la atención. Ojo: en
@@ -257,7 +257,7 @@ farmacias y exámenes preventivos (Betterfly, F-964). WhatsApp como canal de ate
 ### 3.5 Generales y hogar
 
 **Lo que vemos.**
-La versión interna trae aquí cartera y digitalización.
+La versión interna trae aquí cartera y clientes con cuenta.
 
 **Qué forma de valor aplica.** Prevención y confianza en el siniestro, en especial ante eventos naturales.
 
