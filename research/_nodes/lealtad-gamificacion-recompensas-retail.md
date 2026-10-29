@@ -1,7 +1,7 @@
 # Gamificación, recompensas y lealtad en retail: qué intervenciones existen y qué efecto demostrado tuvieron
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-15 · Última actualización: 2026-10-15 · Versión: **v1.0**
+> Fecha de elaboración: 2026-10-15 · Última actualización: 2026-10-29 (corrección de F-808 tras leer el texto completo) · Versión: **v1.0**
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
 > Fuentes en `research/fuentes/codice.md`: **F-802 a F-846** (empírica F-802 a F-822 · social F-823 a F-830 y F-842 · negocio F-831 a F-841 y F-843 a F-846).
 > Pregunta permanente: **¿qué intervenciones de juego, recompensa y lealtad cambian de verdad lo que compra la gente, frente a un control creíble, y cuáles solo parecen funcionar?**
@@ -22,7 +22,7 @@
 ## 1. ⚖️ Resumen ejecutivo
 
 1. **Los programas de lealtad mueven la conducta, pero menos de lo que sugieren las cifras de miembros.** El meta-análisis más amplio (429 efectos, 1990-2020) confirma efecto sobre la compra, más que sobre la actitud (F-804). Cuando se corrige la autoselección, el efecto sobre la cuota de gasto es unas 7 veces menor que el ingenuo (F-805, canónico).
-2. **La mejor prueba causal reciente son dos experimentos aleatorizados.** En un centro comercial de Asia, insignias y tablas de posiciones subieron ventas ~21-23% y el efecto **sobrevivió al retiro**; el cupón subió más (+31,7%) pero **se desvaneció** (F-807). En un programa de tienda, los mensajes push repetidos pierden efecto y buena parte del gasto es canje de puntos ya ganados (F-808).
+2. **La mejor prueba causal reciente son dos experimentos aleatorizados.** En un centro comercial de Asia, insignias y tablas de posiciones subieron ventas ~21-23% y el efecto **sobrevivió al retiro**; el cupón subió más (+31,7%) pero **se desvaneció** (F-807). En un programa de sellos de supermercados de Indonesia, los mensajes push subieron el gasto 14% y duplicaron el canje; cada mensaje adicional suma menos (F-808; corregido el 2026-10-29 tras leer el texto completo: antes decía que los push repetidos pierden efecto).
 3. **Gamificación pura en retail: evidencia causal escasa y a menudo nula.** El único experimento en supermercado dio resultado nulo; las insignias en un e-tailer europeo no cambiaron frecuencia ni gasto (F-818, F-820). No hallé experimento publicado en farmacia, QSR ni LatAm.
 4. **Los rediseños dañan cuando quitan valor o castigan al cliente.** Starbucks 2016 y 2026 y Shoppers Drug Mart generaron rechazo (F-823 a F-827); bajar a alguien de nivel deteriora la lealtad (F-813, F-814). Las cifras de éxito de las empresas (p. ej. Starbucks, Prime) son **correlaciones**, no efecto incremental (F-833, F-834).
 5. **LatAm: cero evidencia causal.** Solo hay cambios de diseño anunciados sin resultados (Cencosud, Falabella) y encuestas de percepción (F-836, F-837, F-839).
@@ -64,7 +64,7 @@
 | 11 | **Membresía en programa de puntos del supermercado** | n.d. (no se leyó el diseño del programa) | Hogares de Países Bajos; 20 cadenas | Panel con variables instrumentales (corrige autoselección) | Efecto pequeño sobre cuota de gasto; **7 veces menor** que el modelo ingenuo | Parcialmente incremental, pequeño. **Fuera de ventana (clásico metodológico)** | [F-805](https://repository.tilburguniversity.edu/items/3fc12a59-7823-4842-9792-de0262adaea7) · 🟢A |
 | 12 | **Programa de puntos en conveniencia** | Puntos y premios | Franquicia de tiendas de conveniencia; datos longitudinales | Observacional | Compradores intensivos: **sin cambio** (pero canjean más). Ligeros y moderados: suben gasto, sobre todo en 3 meses | Incremental solo en ligeros/moderados. **Fuera de ventana** | [F-806](https://www.yupingliu.com/wordpress/?p=8) · 🟢A |
 | 13 | **Programa de supermercado: ¿autoselección o cambio?** | Programa general | Supermercado; país n.d. | Observacional | Cambio pequeño tras afiliarse; **se erosiona a los 6-9 meses** | Gran parte es autoselección. **Fuera de ventana** | [F-812](https://link.springer.com/article/10.1007/s11747-008-0123-z) · 🟢A |
-| 14 | **Mensajes push a miembros** | Push repetidos en app de tienda; 18 semanas | 46.504 miembros, 11.895 tiendas | **Aleatorizado** con control sin mensajes | Efecto decae; puede ser contraproducente; mucho es **canje de puntos ya ganados** | Incremental dudoso (margen neto posiblemente bajo) | [F-808](https://www.sciencedirect.com/science/article/pii/S0167811621000082) · 🟢A |
+| 14 | **Mensajes push a miembros** | Push repetidos en app de tienda; 18 semanas | 46.504 miembros, 11.895 tiendas | **Aleatorizado** con control sin mensajes | Gasto +14% y canje ×2 frente al control; cada mensaje adicional suma menos; sin irritación con hasta 3 por semana (corregido 2026-10-29) | Incremental positivo; el canje es costo para quien paga los premios | [F-808](https://www.sciencedirect.com/science/article/pii/S0167811621000082) · 🟢A |
 | 15 | **Canje de una recompensa** | Sin caducidad ni umbral vinculante | 3.094 miembros, 183 semanas | Panel observacional | Canjear sube frecuencia y gasto antes y después | Asociación; sostenimiento parcial | [F-809](https://biopen.bi.no/bi-xmlui/bitstream/11250/278821/1/Dorotic_Verhoef_IJRM_2014.pdf) · 🟢A |
 | 16 | **Caducidad de puntos** | Ventana finita (p. ej. mensual) | Datos reales + laboratorio; caso de conveniencia: sube participación y ventas en tienda, no en combustible (preliminar, no arbitrado) | Mixto | Sube compras en quienes pueden ajustarse (uso alto, multi-tienda) | Depende del tipo de cliente | [F-810](https://link.springer.com/doi/10.1007/s11002-017-9438-1) · 🟢A |
 | 17 | **Programas temporales** | Campaña con inicio y fin | Varios minoristas y países | Estudio arbitrado | Quienes canjearon gastaron más (coef. 0,207); los demás, nada (−0,017) | Efecto concentrado en canjeadores; riesgo de autoselección | [F-815](https://www.sciencedirect.com/science/article/pii/S0167811622000258) · 🟢A |
@@ -137,7 +137,7 @@
 **Respaldado (con control creíble):**
 - Que un programa de lealtad eleve la **compra** más que la actitud (F-804), con efecto **pequeño** una vez corregida la autoselección (F-805, F-812).
 - Que **gamificación bien hecha** pueda sumar ventas y **mantenerse tras retirarla**, a diferencia del cupón (F-807). Una sola muestra, un solo lugar.
-- Que **repetir mensajes push** fatigue y que parte del "efecto" sea canje de puntos viejos (F-808).
+- Que **repetir mensajes push** sume cada vez menos y que con más de tres por semana aparezca irritación, que el estudio no pudo medir (F-808, corregido 2026-10-29).
 - Que **bajar de nivel** dañe (F-813, F-814), aunque no en retail.
 - Que una **membresía de pago** eleve compras de forma persistente (F-816), con riesgo de impulso (F-817).
 
@@ -147,7 +147,7 @@
 - Efectos de rediseños en LatAm (F-836, F-837).
 - Sobrejustificación, patrones oscuros y privacidad en retail: **no encontré estudios**; solo menciones de fatiga y de precios para miembros (F-829, F-830).
 
-**Búsqueda adversarial.** Lo hallado en contra: autoselección que reduce el efecto 7× (F-805), erosión a los 6-9 meses (F-812), push contraproducente (F-808), gamificación nula (F-818, F-820), rechazo a devaluaciones (F-823 a F-828). Lo que **no** encontré: replicaciones de F-807, programas cancelados por falta de incrementalidad con datos publicados, y estudios de caída al retirar el incentivo en retail.
+**Búsqueda adversarial.** Lo hallado en contra: autoselección que reduce el efecto 7× (F-805), erosión a los 6-9 meses (F-812), rendimientos decrecientes del push (F-808, corregido 2026-10-29: el efecto neto fue positivo), gamificación nula (F-818, F-820), rechazo a devaluaciones (F-823 a F-828). Lo que **no** encontré: replicaciones de F-807, programas cancelados por falta de incrementalidad con datos publicados, y estudios de caída al retirar el incentivo en retail.
 
 ---
 
@@ -169,7 +169,7 @@
 
 1. **Progreso dotado en la tarjeta/app.** *Experimento:* aleatorizar a nuevos socios de una farmacia o supermercado a tarjeta de 10 compras con 2 ya dadas vs 8 sin dotar. *Mide:* % que completa, frecuencia a 90 días, margen. *Hipótesis:* sube la completitud sin bajar el margen; si solo adelanta compras, el efecto será nulo a 6 meses.
 2. **Insignias y ranking vs cupón, con retiro.** *Experimento:* tres brazos más control; retirar a las 8 semanas y medir 8 semanas más. *Hipótesis:* la gamificación se sostiene y el cupón decae (réplica de F-807 fuera de Asia).
-3. **Frecuencia de push.** *Experimento:* 0, 1 y 3 mensajes por semana, con control puro. *Mide:* ventas incrementales netas de canje de puntos viejos. *Hipótesis:* el óptimo es bajo (F-808).
+3. **Frecuencia de push.** *Experimento:* 0, 1 y 3 mensajes por semana, con control puro. *Mide:* ventas incrementales netas de canje de puntos viejos. *Hipótesis:* cada mensaje suma menos y existe un techo por irritación que F-808 no alcanzó a medir.
 4. **Caducidad por tipo de cliente.** *Experimento:* sin vencimiento vs 12 meses, estratificado por intensidad de compra. *Hipótesis:* sube compras en uso alto y multi-tienda, y daña la confianza en el resto (F-810).
 5. **Cambio de reglas con y sin protección de lo ganado.** *Experimento:* a un subconjunto se le reconoce lo acumulado (grandfathering) y a otro no. *Mide:* baja de uso y quejas. *Hipótesis:* sin protección, cae el uso de los clientes más activos (F-813, F-823 a F-827).
 6. **Membresía de pago sin autoselección.** *Experimento:* oferta de prueba gratuita asignada al azar (diseño de "empujón"). *Hipótesis:* el efecto causal es menor que el que muestran los miembros actuales (F-816, F-834).

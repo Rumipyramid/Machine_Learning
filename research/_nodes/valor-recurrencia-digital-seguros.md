@@ -1,7 +1,7 @@
 # Valor de la recurrencia digital en seguros: por qué mecanismos la actividad digital se vuelve valor de negocio
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-29 · Versión: v1.1
+> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-29 (§6 amplía el banco de señales: F-962 a F-985) · Versión: v1.1
 > Origen: `/trinidad` (empírica como ancla, negocio como segundo pilar, social acotada al momento crítico).
 > Pregunta: ¿por qué mecanismos la actividad digital (recurrencia en app o web) se convierte en valor de
 > negocio en un seguro, quién lo ha demostrado y con qué evidencia?
@@ -10,7 +10,7 @@
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
 > Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-943 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-943; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
-> F-353, F-376, F-442, F-638 y F-816 ya existentes.
+> F-353, F-376, F-442, F-638 y F-816 ya existentes. Banco de señales ampliado (2026-10-29): F-962 a F-985, más F-372, F-786, F-792.
 
 ---
 
@@ -265,6 +265,28 @@ Separado de las prácticas probadas. Las señales todavía no tienen resultados.
 - **Indemnización instantánea en siniestros simples** (Porto, celular en 48 h, F-865).
 - **Gamificación de salud como motor de uso diario** (Alan Play, F-859), con la advertencia de selección.
 - **Inversión insurtech en LatAm que se recupera en 2025, con más disciplina y menos mortalidad** (F-878).
+
+**Señales de pago, indemnización, datos abiertos y seguro embebido (agregadas el 2026-10-29):**
+
+Lectura de conjunto: lo que más puede cambiar las reglas toca **cómo se paga y cómo se indemniza**. El
+"mercado abierto" de seguros tiene más regulación que adopción.
+
+- **Paramétrico con reglamento propio en Perú** (F-786): solo lo contratan entidades públicas o personas
+  jurídicas, para sí o para una colectividad. Para llegar a personas hace falta un tomador intermediario.
+- 🌐 **Paramétricos con dinero móvil en Kenia y México:** protegen consumo y activos (F-792, F-984), con
+  riesgo base alto (F-976) y demanda voluntaria baja (F-977, F-978); escalan cuando paga el Estado
+  (F-979, F-984). Pago de prima y de indemnización por M-Pesa (F-980).
+- **Iniciación de pagos y TAPP del BCRP** (F-969, F-971): posible vía para un pago recurrente consentido
+  y revocable. Dejar de pagar responde más a la molestia que al monto (F-962, contraste EE.UU.).
+- **Finanzas abiertas en Perú, todavía en proyecto** (F-970); Banking as a Service aprobado sin
+  aseguradoras (F-974).
+- 🌐 **Seguro abierto sin demanda:** menos de 10.000 consentimientos en Brasil tras cinco años (F-983);
+  Bima Sugam con plazos incumplidos (F-975).
+- **Embebido con escala declarada y sin resultados publicados** (F-965, F-981, F-985); en Perú, menos de
+  1% de la cartera de Pacífico (F-967) y más de 3 millones de pólizas inclusivas (F-966).
+- **Plataformas de salud para empresas que cubren todo el ecosistema** (Betterfly, F-964).
+- 🌐 **Consumo diario ligado al producto** (Cling Cling de Caser, F-982).
+- **WhatsApp como ventanilla financiera** (F-973).
 
 Eje candidato para escenarios: **quién es dueño de la relación diaria con el cliente.** Puede ser la
 aseguradora, el banco o la billetera, el empleador o corredor, o una interfaz de IA. Es una hipótesis

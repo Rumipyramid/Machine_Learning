@@ -1,7 +1,7 @@
 # Fenómeno El Niño: qué le hace a la vida de las personas (evidencia cuanti y cualitativa)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.1** (iter. 2: el alcance
+> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-29 (conexión con cliente intermediado) · Versión: **v1.1** (iter. 2: el alcance
 > se amplía a la aplicación de negocio para RIMAC, §8)
 > Origen: `/trinidad` (pista empírica/teórica + social/mediática + negocio), a pedido del usuario:
 > *"la documentación y evidencia más sólida, cuanti y cualitativa, que retrate el impacto del fenómeno
@@ -401,3 +401,5 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
   norte. Es un caso de estrés para el diseño del triage.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — se propone una variable
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
+- [[cliente-intermediado-bancaseguros-embebido|Cliente intermediado]] — el paramétrico peruano exige un tomador
+  colectivo (F-786); ese node lo trata como una forma de intermediación (§3.1, 2026-10-29).
