@@ -76,7 +76,7 @@ mercado.
 | Momento | Rol que muestra la evidencia | Evidencia | Rigor |
 |---|---|---|---|
 | Consultar la póliza, descargar documentos | Digital por defecto | Información clara: baja llamadas (F-850) | 🟢 A |
-| Pagar la prima | Digital o automático | 26% de los asegurados peruanos ya paga con cargo en cuenta o débito automático (SBS y CAF, 2022, F-903). La opción por defecto mueve decisiones con un efecto considerable (Jachimowicz et al., 2019, F-913) | 🔵 B y 🟢 A |
+| Pagar la prima | Digital o automático | 26% de los asegurados peruanos ya paga con cargo en cuenta o débito automático (SBS y CAF, 2022, F-903). La opción por defecto mueve decisiones con un efecto considerable (Jachimowicz et al., 2019, F-913). Pagar y renovar por el celular se asocia a 17,4 puntos más de renovación (Ghana, observacional, F-1031). Señal: BCP y Yape trabajan en la iniciación de pagos de TAPP, que permitiría un pago recurrente autorizado una vez y revocable (F-1036, F-971) | 🔵 B y 🟢 A |
 | Pedir y seguir un reembolso de salud | Digital cuando las reglas son claras | Lo claro migra (F-850). Algunas aseguradoras de la región pasaron la mayoría de sus reembolsos a digital con más satisfacción y menos costo, sin cifras (F-900) | 🟢 A + 🟡 C |
 | Cambiar la póliza, trámites | Mixto: se inicia en digital y lo cierra una persona | Son gestiones ambiguas (qué cambia, cuánto cuesta). La aceptación de que un sistema lo haga solo cae a 16% cuando se trata de cancelar o renovar (Insurity, 2026, F-916, 🟠 D, 🌐) | 🟠 D |
 | Avisar el siniestro (choque, robo, daño) | Teléfono o persona; digital para lo simple | Solo 9% avisa el siniestro de auto en digital y su satisfacción es 16 puntos menor que la de quien llama (F-947, 🌐). 44% de los siniestros entra por teléfono y 10,5% por app (Lightico, 2021, F-948, 🌐) | 🟡 C y 🟠 D |
@@ -252,6 +252,12 @@ línea (86%) (F-956, 🟠 D, 🌐). Ambas cifras mezclan selección con efecto d
   de la base potencial (F-940, 🟠 D). La tenencia de seguros privados en Perú es 13%, la más baja de los países
   medidos, aunque 49% tiene billetera y 73% de sus usuarios la usa a diario o varias veces por semana (Credicorp e
   Ipsos, 2026, F-906, 🔵 B).
+- **La billetera ya presta.** Según el CEO de Credicorp, dos millones de peruanos obtuvieron su primer crédito formal
+  en Yape, que tiene cerca de 18 millones de usuarios sobre unos veintitantos millones de adultos (El Comercio, 2026,
+  F-1036, 🟠 D; declaraciones). *Inferencia:* con el crédito vienen los seguros atados a él, así que la billetera
+  también es una puerta de bancaseguros, sujeta a la regla del desgravamen opcional (F-952).
+- **El techo del acceso.** El mismo CEO dice que el acceso financiero lleva tres años estancado por conectividad,
+  internet y educación financiera (F-1036). La billetera no llega sola a quien más falta le hace el seguro.
 
 **Lo que no se sabe.** No se encontró ninguna cifra pública de retención, uso del seguro o siniestralidad del seguro
 embebido en la región. Las cifras son de venta. Los casos de proveedores (por ejemplo, plataformas de embebido con
@@ -393,3 +399,6 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-958** · Society of Actuaries (EE.UU.), boletín NewsDirect (2014). *Enrolling Voluntary Benefits Is Risky Business*. 🟡 C. [Ver fuente](https://www.soa.org/news-and-publications/newsletters/newsdirect/2014/september/ndn-2014-iss69-760oop/enrolling-voluntary-benefits-is-risky-business)
 - **F-959** · Aseguradoras peruanas (Interseguro 2022-2024; BNP Paribas Cardif 2025): reportes de reclamos publicados en el formato que exige la SBS (2022-2025). *Reportes de reclamos recibidos por ramo y motivo*. 🟡 C. [Ver fuente](https://www.interseguro.pe/wp-content/uploads/2024/02/MKT-enero-2024.pdf)
 - **F-960** · Insurance Journal (sobre Cambridge Mobile Telematics, Claims Studio) (2020). *Accident Reports Now Ready Minutes After Crash on Smartphone, Says Telematics Firm*. 🟠 D. [Ver fuente](https://www.insurancejournal.com/news/national/2020/01/10/554252.htm)
+- **F-971** · Banco Central de Reserva del Perú — TAPP, vía Gestión (2 de septiembre y 13 de octubre de 2026), Infobae y Cuatrecasas; Circular 0017-2026-BCRP (2026). *TAPP: plataforma pública de pagos inmediatos*. 🟠 D. [Ver fuente](https://gestion.pe/tu-dinero/bcrp-pronto-revolucionara-pagos-en-peru-con-masivo-sistema-como-funcionara-tapp-noticia/)
+- **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
+- **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.
