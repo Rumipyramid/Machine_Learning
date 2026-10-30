@@ -17,7 +17,8 @@ fijó un segmento único: la columna de transferibilidad (sección 6) dice qué 
 ## Conclusión
 
 1. **Cuándo y cómo se cobra pesa más que el mensaje.** Cobrar el seguro en la cosecha, cuando hay liquidez, llevó la
-   contratación de 5% a 72% en Kenia (F-988, 🟢 A, R). Dejar de pagar responde más a la molestia de pagar que al monto
+   contratación de 5% a 72% en Kenia (F-988, 🟢 A, R). Pagar y renovar por el celular se asocia a 17,4 puntos más de
+   renovación en el seguro nacional de salud de Ghana, sobre todo en informales (F-1031, 🟢 A, observacional, R). Dejar de pagar responde más a la molestia de pagar que al monto
    (F-962, 🟡 C). Un periodo de gracia en microcrédito subió las ganancias, pero triplicó el no pago (F-998, 🟢 A, R).
 2. **Acceso no es uso.** Seguros y cuentas gratis o subsidiados se adoptan y se abandonan: en Nicaragua, menos de 10%
    seguía afiliado al año de vencer el subsidio (F-989, R); en Kenia, el afiliado mediano no usó su seguro gratis
@@ -97,6 +98,7 @@ conducta real · rigor y fuente.
 | Amigo capacitado sobre el seguro · 5.300 hogares, China | Adquisición · prueba social | Información por redes | Como bajar 13% la prima (R) | No publicado | Sí, contratación | 🟢 A · F-993 |
 | Cupones de descuento contra educación · pastores, Etiopía 📚 | Adquisición · precio contra información | Precio contra conocimiento | Cupones suben la compra de forma duradera; educación sube el conocimiento, **no** la compra (R) | No publicado | Sí (cupones); no (educación) | 🟢 A · F-977 |
 | Pago rápido y justo · microseguro de vida, México 📚 | Siniestro · operativo | Confianza | 17 horas de procesamiento; pago a los 9 días; el pago esperado servía de garantía para pedir prestado | No publicado | Valor percibido, sin medir permanencia | 🟡 C · F-896 |
+| Pagar y renovar por USSD con dinero móvil · seguro nacional de salud, Ghana | Pago y renovación · canal | Menos fricción para pagar | Renovación +17,4 puntos frente a pagar en oficina; más en informales (R) | No publicado | Sí, renovación (observacional: puede haber selección) | 🟢 A · F-1031 |
 | Pix en la cobranza de primas · Brasil | Pago · infraestructura | Menos fricción que el boleto | Menos demoras y bajas, sin cifra | No publicado | Sin medir | 🟡 C · F-986 |
 | Afiliación por defecto en microseguro móvil | Onboarding · opción por defecto | Inercia | ~90% de adopción; muchos no saben que están cubiertos (R) | No publicado | **No**: métrica de alcance | 🟡 C · F-1027 |
 | Avisar el estado del siniestro en digital · EE.UU. 🌐 📚 | Siniestro · operativo | Reducir la incertidumbre | +33 puntos de satisfacción (asociación) | No publicado | Satisfacción, no permanencia | 🟡 C · F-947 |
@@ -130,6 +132,8 @@ conducta real · rigor y fuente.
 | Terminales de pago en tiendas pequeñas · **México** | Adopción · red | Externalidad de red | Adopción de tarjeta de los demás +21% (R) | No publicado | Sí | 🟢 A · F-1005 |
 | SMS para reactivar billeteras inactivas · Kenia | Abandono · nudge | Recordar | **Sin efecto** (piloto sin control) | Bajo | No | 🟡 C · F-1026 |
 | Banca en línea · EE.UU. 🌐 📚 | Uso · canal | Autoservicio | Más retención controlando selección; más transacciones totales | No publicado | Sí | 🟢 A · F-847 |
+| Revelar al inicio que se habla con un bot · ~6.000 clientes de servicios financieros, Asia | Venta · IA conversacional | Sesgo contra las máquinas | Compra −79,7% frente a no revelarlo; revelarlo tarde atenúa el efecto (R) | No aplica | Sí, compra | 🟢 A · F-1034 |
+| Comunicación más clara sobre la cuenta · 124.000 ahorristas, Reino Unido 🌐 | Uso · información | Atención | Casi nadie cambió de cuenta (R) | No publicado | **No** cambió conducta | 🟢 A · F-1033 |
 
 ### 3.4 Retail y lealtad
 
@@ -138,6 +142,7 @@ conducta real · rigor y fuente.
 | Insignias y tablas de posiciones · centro comercial, Asia | Uso · gamificación | Logro y comparación | Ventas +21% a +23%; **se sostuvo** al retirarlo; el cupón (+31,7%) se desvaneció | No publicado | Sí | 🟢 A · F-807 |
 | Mensajes push en un programa de sellos · 46.504 miembros, Indonesia | Uso · nudge | Acercar el premio | Gasto +14%; canje ×2; cada mensaje suma menos | No publicado | Sí, pero el canje es costo | 🟢 A · F-808 |
 | Programa de lealtad corregido por autoselección · Países Bajos 📚 | Uso · incentivo | Recompensa | Efecto real 7 veces menor que el ingenuo | No publicado | Poco | 🟢 A · F-805 |
+| Seguir usando el app de la marca · programa internacional de lealtad | Uso · canal | Recencia | Gasto +19% a +48% en tres meses si se sigue usando; quien deja de usarla compra menos (R) | No aplica | Sí; la descarga sola no | 🟢 A · F-1035 |
 
 ### 3.5 Salud
 
@@ -188,7 +193,8 @@ débito (F-1001), la adherencia (F-1007), los promotores de salud (F-1008), los 
 - satisfacción sin permanencia (F-947, F-890).
 
 **Engañan si no se separa la selección:** los programas de bienestar (F-854) y de lealtad (F-805) parecen funcionar
-porque se inscribe quien ya se iba a portar bien.
+porque se inscribe quien ya se iba a portar bien. Pocos usan los servicios de prevención de su aseguradora aunque digan
+quererlos: entre 2,1% y 4,3% según el país (Bain, 2023, F-4).
 
 
 ---
@@ -248,6 +254,7 @@ comparación social en energía (F-1022). Sirven para el mecanismo, no para el t
 
 Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó. Los documentos internos se indican como tales.
 
+- **F-4** · Bain & Company (2023). *Customer Behavior and Loyalty in Insurance (Global Edition)*. 🟡 C. [Ver fuente](https://www.bain.com/insights/customer-behavior-and-loyalty-in-insurance-global-edition-2023/)
 - **F-22** · RGA / Society of Actuaries (2024-25). *Behavioral Science and Insurance: The value of improved comprehension*. 🟡 C. [Ver fuente](https://www.rgare.com/knowledge-center/article/behavioral-science-and-life-insurance--the-value-of-improved-comprehension-in-the-customer-journey)
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-185** · The Korea Times (2025). *Life insurers still favor face-to-face sales in digital era*. 🟠 D. [Ver fuente](https://www.koreatimes.co.kr/business/banking-finance/20250206/life-insurers-still-favor-face-to-face-sales-in-digital-era)
@@ -332,3 +339,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1026** · CGAP (blog sobre KPOSB, Kenia) (2015). *Understanding Customer Inactivity with Customer Data in Kenya*. 🟡 C. [Ver fuente](https://www.cgap.org/blog/understanding-customer-inactivity-with-customer-data-kenya)
 - **F-1027** · Microinsurance Network (artículo sobre microseguro móvil) (s.f.). *From connectivity to coverage via collaboration: revisiting mobile microinsurance*. 🟡 C. [Ver fuente](https://microinsurancenetwork.org/posts/from-connectivity-to-coverage-via-collaboration-revisiting-mobile-microinsurance)
 - **F-1028** · Blogs de proveedores de software de seguros (atribuido a LIMRA) (s.f.). *«El onboarding estructurado reduce 20-35% la caducidad del primer año»*. 🔴 E. Sin URL primaria (cifra repetida en blogs de proveedores).
+- **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
+- **F-1033** · Adams, P.; Hunt, S.; Palmer, C. & Zaliauskas, R. (Journal of Financial Economics 141(1):122-147) (2021). *Testing the Effectiveness of Consumer Financial Disclosure: Experimental Evidence from Savings Accounts*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jfinec:v:141:y:2021:i:1:p:122-147)
+- **F-1034** · Luo, X.; Tong, S.; Fang, Z. & Qu, Z. (Marketing Science 38(6):937-947; DOI 10.1287/mksc.2019.1192) (2019). *Frontiers: Machines vs. Humans: The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:inm:ormksc:v:38:y:2019:i:6:p:937-947)
+- **F-1035** · Kim, S. J.; Wang, R. J.-H. & Malthouse, E. C. (Journal of Interactive Marketing 31:28-41; DOI 10.1016/j.intmar.2015.05.004) (2015). *The Effects of Adopting and Using a Brand's Mobile Application on Customers' Subsequent Purchase Behavior*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/eee/joinma/v31y2015icp28-41.html)

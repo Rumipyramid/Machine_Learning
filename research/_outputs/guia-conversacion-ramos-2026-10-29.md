@@ -246,7 +246,7 @@ farmacias y exámenes preventivos (Betterfly, F-964). WhatsApp como canal de ate
 **Preguntas para el ramo.**
 1. ¿Qué resuelven el corredor y Recursos Humanos por el asegurado de EPS?
 2. ¿Qué busca la gente cuando llama para encontrar una clínica, y por qué no lo encuentra en el app?
-3. ¿Qué haría falta para que el médico a domicilio tenga flujo digital?
+3. ¿Por qué el médico a domicilio se pide casi solo por teléfono si el flujo existe en el app?
 4. ¿Cuántos pacientes crónicos hay, cuánto gastan y qué programa tienen?
 5. ¿Qué parte de la relación vive en la clínica y no en la aseguradora?
 
