@@ -59,7 +59,8 @@ banca, salud, retail y otras industrias como análogos; RIMAC no se usa como cas
 - Los clientes interactúan con su aseguradora pocas veces al año (McKinsey, 2023, F-900, 🟡 C).
 - Un hábito necesita repetición frecuente en un contexto estable; con una o dos interacciones al año, formarlo en el
   app propio es improbable (Wood y Neal, 2007, F-888, 🟢 A 📚).
-- La frecuencia diaria ya tiene dueño: Yape tiene 15,9 millones de usuarios activos al mes (F-869, 🟠 D).
+- La frecuencia diaria ya tiene dueño: Yape tiene 15,9 millones de usuarios activos al mes (F-869, 🟠 D) y, según su
+  CEO, cerca de 18 millones de usuarios sobre unos veintitantos millones de adultos (F-1036, 🟠 D).
 
 ### 2.2 Cinco formas de valor, cada una con su indicador
 
@@ -186,6 +187,9 @@ el cliente que resolvió rápido no vuelve a entrar.
 - Perú: la tenencia de seguros no sube pese al uso masivo de billeteras (Credicorp e Ipsos, 2026, F-906, 🔵 B); el
   embebido es menos de 1% de la cartera de Pacífico (F-967, 🟠 D).
 - Ninguno publica siniestralidad, renovación ni uso posterior.
+- La billetera ya presta: dos millones de peruanos tuvieron su primer crédito formal en Yape, según su CEO (F-1036,
+  🟠 D). *Inferencia:* con el crédito vienen los seguros atados a él, así que la billetera es también una nueva puerta
+  de bancaseguros.
 
 ### 4.4 Empleador y corredor
 
@@ -237,7 +241,9 @@ adopción.**
 - **Paramétrico con reglamento propio en Perú** (Res. SBS 02260-2026, F-786): paga sin peritaje, pero solo lo contratan
   entidades públicas o empresas para una colectividad. Llega a personas por un tomador intermediario.
 - **Iniciación de pagos y TAPP del BCRP** (piloto en diciembre de 2026, F-971): posible vía para un pago recurrente
-  consentido y revocable.
+  consentido y revocable. BCP y Yape ya trabajan en la iniciación de pagos, según el CEO de Credicorp (F-1036).
+- **El alcance digital tiene techo:** el acceso financiero lleva tres años estancado por conectividad, internet y
+  educación financiera (F-1036).
 - **Finanzas abiertas en Perú, en proyecto** (F-970): bancos desde 2028; seguros "desde 2029" según la prensa.
 - 🌐 **El seguro abierto no despega donde existe:** menos de 10.000 consentimientos en Brasil tras cinco años (F-983);
   Bima Sugam en India incumplió al menos cinco plazos (F-975).
@@ -374,3 +380,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
 - **F-1032** · Gartner (resumen público de un informe de pago) (2024). *Benchmark de costo por contacto en servicio al cliente*. 🟡 C. [Ver fuente](https://www.gartner.com/en/documents/5164231)
 - **F-1033** · Adams, P.; Hunt, S.; Palmer, C. & Zaliauskas, R. (Journal of Financial Economics 141(1):122-147) (2021). *Testing the Effectiveness of Consumer Financial Disclosure: Experimental Evidence from Savings Accounts*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jfinec:v:141:y:2021:i:1:p:122-147)
+- **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.

@@ -1,7 +1,7 @@
 # Valor de la recurrencia digital en seguros: por qué mecanismos la actividad digital se vuelve valor de negocio
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-29 (§6 amplía el banco de señales: F-962 a F-985) · Versión: v1.1
+> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-30 (§6 amplía el banco de señales: F-962 a F-985 y F-1036) · Versión: v1.1
 > Origen: `/trinidad` (empírica como ancla, negocio como segundo pilar, social acotada al momento crítico).
 > Pregunta: ¿por qué mecanismos la actividad digital (recurrencia en app o web) se convierte en valor de
 > negocio en un seguro, quién lo ha demostrado y con qué evidencia?
@@ -10,7 +10,7 @@
 > Alcance: seguros primero (Perú y LatAm); análogos de banca, salud y retail; EE.UU., Europa y Asia solo
 > como contraste, marcados (🌐). Periodo 2021-2026; los estudios canónicos anteriores van marcados (📚).
 > Fuentes registradas en `research/fuentes/codice.md`: F-847 a F-943 (lectura conductual F-886 a F-894; documentos aportados por la usuaria F-895 a F-943; F-910, F-911 y F-925 a F-930 reservados), más F-25, F-180, F-183, F-186,
-> F-353, F-376, F-442, F-638 y F-816 ya existentes. Banco de señales ampliado (2026-10-29): F-962 a F-985, más F-372, F-786, F-792.
+> F-353, F-376, F-442, F-638 y F-816 ya existentes. Banco de señales ampliado (2026-10-29): F-962 a F-985, más F-372, F-786, F-792; F-1036 (2026-10-30).
 
 ---
 
@@ -278,6 +278,9 @@ Lectura de conjunto: lo que más puede cambiar las reglas toca **cómo se paga y
   (F-979, F-984). Pago de prima y de indemnización por M-Pesa (F-980).
 - **Iniciación de pagos y TAPP del BCRP** (F-969, F-971): posible vía para un pago recurrente consentido
   y revocable. Dejar de pagar responde más a la molestia que al monto (F-962, contraste EE.UU.).
+  BCP y Yape trabajan en la iniciación de pagos (F-1036, declaración del CEO de Credicorp).
+- **La billetera como puerta al crédito y su techo:** dos millones de primeros créditos formales en Yape; el acceso
+  lleva tres años estancado por conectividad y educación financiera (F-1036).
 - **Finanzas abiertas en Perú, todavía en proyecto** (F-970); Banking as a Service aprobado sin
   aseguradoras (F-974).
 - 🌐 **Seguro abierto sin demanda:** menos de 10.000 consentimientos en Brasil tras cinco años (F-983);

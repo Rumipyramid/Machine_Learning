@@ -70,7 +70,7 @@ grande: no se encontró ningún experimento publicado, y la cifra que circula at
 | Seguro abierto en Brasil | Competencia y elección | Menos de 10.000 consentimientos activos tras cinco años (F-983) | Fracaso de adopción |
 | Bima Sugam (India) | "El UPI de los seguros" | Sin cifras; cinco plazos incumplidos (F-975) | Sin resultado |
 | Afiliación automática al SIS (Perú) | Cobertura universal | Más de 20 millones de asegurados (F-1012) | Sin datos de uso |
-| Yape con DNI (Perú) | Inclusión financiera | 1,3 millones incluidos según la empresa (F-1006) | En 2022, 19% tenía billetera y solo 12% pagaba con ella |
+| Yape con DNI (Perú) | Inclusión financiera | 1,3 millones incluidos según la empresa (F-1006); dos millones de primeros créditos formales y cerca de 18 millones de usuarios, según el CEO de Credicorp (F-1036) | En 2022, 19% tenía billetera y solo 12% pagaba con ella; el acceso lleva tres años estancado por conectividad y educación financiera (F-1036) |
 | Pix (Brasil) | Digitalizar pagos e incluir | Adopción de 91,7% (67,8% en hogares de menor ingreso) (F-1004) | Sin efecto causal probado en el bienestar de los más pobres |
 | M-Pesa (Kenia) | Inclusión | Se asocia a la salida de la pobreza de 2% de los hogares (F-1000) | Cifra discutida |
 
@@ -343,3 +343,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1033** · Adams, P.; Hunt, S.; Palmer, C. & Zaliauskas, R. (Journal of Financial Economics 141(1):122-147) (2021). *Testing the Effectiveness of Consumer Financial Disclosure: Experimental Evidence from Savings Accounts*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jfinec:v:141:y:2021:i:1:p:122-147)
 - **F-1034** · Luo, X.; Tong, S.; Fang, Z. & Qu, Z. (Marketing Science 38(6):937-947; DOI 10.1287/mksc.2019.1192) (2019). *Frontiers: Machines vs. Humans: The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:inm:ormksc:v:38:y:2019:i:6:p:937-947)
 - **F-1035** · Kim, S. J.; Wang, R. J.-H. & Malthouse, E. C. (Journal of Interactive Marketing 31:28-41; DOI 10.1016/j.intmar.2015.05.004) (2015). *The Effects of Adopting and Using a Brand's Mobile Application on Customers' Subsequent Purchase Behavior*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/eee/joinma/v31y2015icp28-41.html)
+- **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.
