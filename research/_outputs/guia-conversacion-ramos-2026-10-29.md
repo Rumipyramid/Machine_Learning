@@ -1,6 +1,6 @@
 # Guía de conversación con los ramos
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 29-10-2026 · **Estado:** versión de trabajo 0.1
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 29-10-2026 · **Estado:** versión de trabajo 0.2
 **Basada en:** `research/_nodes/valor-recurrencia-digital-seguros.md`, `research/_nodes/canal-servicio-siniestro-seguros.md`
 y `research/_nodes/cliente-intermediado-bancaseguros-embebido.md`. Esta copia omite los datos propios de la compañía y
 los documentos internos del equipo; la versión interna los trae en cada ficha.
@@ -22,6 +22,7 @@ La guía propone tres pasos:
    valor aplica, evidencia externa, señales que pueden cambiar las reglas, preguntas que solo el ramo puede responder e
    hipótesis para probar juntos.
 3. **Síntesis** (sección 4). Una plantilla para que cada conversación deje lo mismo y se pueda comparar.
+4. **Matriz momento, canal y ramo** (sección 5). El rol propuesto del canal en cada momento, por ramo, para validar.
 
 
 ---
@@ -303,6 +304,46 @@ Una plantilla igual para todos los ramos, para poder comparar:
 
 ---
 
+## 5. Matriz momento, canal y ramo
+
+**Para qué sirve.** Junta en un solo lugar el rol del canal en cada momento, por ramo. Es una propuesta para validar en
+cada conversación, no una decisión. Hay tres roles:
+- **Migrar:** lo claro y no urgente se resuelve en digital de punta a punta. Se mide con porcentaje digital y costo
+  por gestión.
+- **Acompañar:** una persona al frente y lo digital para seguir el caso. Se mide con tiempo hasta resolver y contactos
+  por caso, no con porcentaje digital.
+- **No forzar:** lo urgente o complejo va por el canal que despache más rápido. Se mide con tiempo de despacho y
+  satisfacción.
+
+### 5.1 Rol propuesto y canal recomendado
+
+| Momento | Vida individual | Bancaseguros y worksite | SOAT y vehicular | Salud (EPS y AMI) | Generales y hogar |
+|---|---|---|---|---|---|
+| **Venta** | Acompañar: cierra el asesor; el app genera y traza el lead | Del banco o del empleador: póliza dentro de su canal, con consentimiento registrado | SOAT: migrar. Vehicular: acompañar (concesionario y asesor) | Acompañar: corredor en EPS, asesor en AMI | Acompañar o embebido en la hipoteca |
+| **Registro** | En la entrega de la póliza | No perseguirlo hasta decidir si se construye una oferta | En la misma compra, con la póliza cargada | En el alta, también al dependiente que usa algo | En la venta |
+| **Pago** | Migrar a pago recurrente consentido y revocable | Lo cobra el banco con el crédito o la planilla | Migrar; renovación automática con aviso | Migrar a pago recurrente consentido | Migrar a pago recurrente consentido |
+| **Consulta** | Migrar | Migrar, dentro del app del banco | Migrar | Migrar | Migrar |
+| **Aviso del siniestro** | Acompañar (fallecimiento: una persona) | Acompañar, con aviso desde el app del banco | No forzar: teléfono; digital solo para lo simple | Reembolso: migrar | Acompañar |
+| **Seguimiento del siniestro** | Digital proactivo | Digital proactivo | Digital proactivo (estado del taller y del pago) | Digital proactivo (estado del reembolso) | Digital proactivo |
+| **Urgencias y asistencias** | — | — | No forzar: teléfono o WhatsApp, con ubicación y seguimiento en el app | No forzar en médico a domicilio; buscador de clínicas: migrar | No forzar |
+| **Renovación** | Automática con aviso previo | Diseñar la salida del ancla: aviso de continuidad cuando termina el crédito o el empleo | Automática con aviso previo | Automática con aviso previo | Salida del ancla: aviso cuando termina la hipoteca |
+| **Salida o anulación** | Acompañar: se inicia en digital y la cierra una persona | Acompañar | Acompañar | Acompañar | Acompañar |
+
+### 5.2 Cómo lo resuelven otros en cada momento
+
+| Momento | Referente o evidencia | Fuente |
+|---|---|---|
+| Venta | Venta cruzada a clientes existentes con corredores (Porto Seguro); pólizas simples por WhatsApp y sponsors (MetLife con Klimber); 20% de los peruanos compraría un seguro en digital | F-865, F-965, F-903 |
+| Registro | No hay experimentos de onboarding en seguros; la afiliación por defecto da adopción sin conocimiento de la cobertura | F-1028, F-1027 |
+| Pago | Pagar por celular se asocia a +17,4 puntos de renovación (Ghana); Pix redujo la fricción del boleto (Brasil); cobrar cuando hay liquidez llevó la contratación de 5% a 72% (Kenia); dejar de pagar es más por molestia que por monto | F-1031, F-986, F-988, F-962 |
+| Consulta | Lo claro migra: las llamadas sobre información clara bajaron 29% | F-850 |
+| Aviso del siniestro | Solo 9% avisa en digital y queda menos satisfecho; 44% avisa por teléfono | F-947, F-948 |
+| Seguimiento del siniestro | Recibir el estado en digital: +33 puntos de satisfacción; solo 36% (auto) y 31% (hogar) lo recibe por app | F-947, F-872 |
+| Urgencias y asistencias | El app gana si da la ubicación exacta | F-951 |
+| Renovación | Retener por inercia es explotable y el regulador puede prohibirlo; la primera cancelación predice la fuga del hogar | F-886, F-852 |
+| Salida o anulación | El regulador británico documentó obstáculos para cancelar como práctica para retener | F-886 |
+
+
 ## Anexo A · Datos para pedir antes de cada conversación
 
 La lista completa está en el informe P1 (Anexo D). Los cinco que más cambian la conversación:
@@ -357,6 +398,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-939** · Cortez Carpio, J. (líder de innovación y diseño, laboratorio de innovación La Cápsula de Pacífico Salud), publicación en LinkedIn; captura aportada por la usuaria (2026 (27 de agosto; año confirmado por la usuaria)). *¿Y si el mejor canal para una experiencia de salud no siempre es una app o una web? (orientación médica por WhatsApp en Tsana)*. 🔴 E. Captura de LinkedIn aportada por la usuaria (enlace acortado lnkd.in/d9WJzB8g).
 - **F-942** · Gestión (entrevista a Guillermo Garrido-Lecca, CEO de Pacífico Salud) (2025). *Pacífico Salud explora zonas para expandir su red y afianza apuesta por diversificar segmentos (21 de julio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-947** · J.D. Power (vía Insurance-Canada y FenderBender) (2017). *2017 U.S. Auto Claims Satisfaction Study*. 🟡 C. [Ver fuente](https://insurance-canada.ca/2017/10/26/jd-power-auto-claims-satisfaction/)
+- **F-948** · Lightico (encuesta a aseguradoras de EE.UU., vía PropertyCasualty360 y Money.com) (2021). *Mobile use still lagging for insurance sales, claims*. 🟠 D. [Ver fuente](https://www.propertycasualty360.com/2021/11/11/mobile-use-still-lagging-for-insurance-sales-claims/)
 - **F-950** · CCC Intelligent Solutions (vía Repairer Driven News) (2024). *Crash Course 2024 / estudio de experiencia del siniestro de auto (2.400 asegurados con siniestro propio)*. 🟡 C. [Ver fuente](https://www.repairerdrivennews.com/2024/10/08/ccc-customers-see-repair-process-as-single-cohesive-experience-between-repairers-insurers/)
 - **F-951** · Agero (blog corporativo) (s.f. (c. 2020-2023)). *Consumer Insights: How Coverage Expectations and Request Channel Can Impact NPS*. 🟠 D. [Ver fuente](https://blog.agero.com/consumer-insights-how-coverage-expectations-and-request-channel-can-impact-nps)
 - **F-952** · Superintendencia de Banca, Seguros y AFP (Resolución SBS N.° 00890-2025), vía Agencia Andina y diario El Peruano (2025). *Modificación de las normas sobre el seguro de desgravamen (publicada en marzo de 2025; vigente desde el 9 de septiembre de 2025)*. 🔵 B. [Ver fuente](https://andina.pe/agencia/noticia-entidades-financieras-deben-ofrecer-productos-crediticios-y-sin-seguro-desgravamen-1021963.aspx)
@@ -376,3 +418,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-982** · Caser Seguros (notas de prensa propias; Funds Society) (2019-2020). *Cling Cling: seguro de ahorro por consumo*. 🟡 C. [Ver fuente](https://www.caser.es/conocenos/actualidad/productos-y-servicios/caser-presenta-una-solucion-innovadora-de-ahorro-facil-y-por-consumo)
 - **F-986** · Microinsurance Network (artículo de su sección de publicaciones; autoría individual no indicada) (s.f. (página vista el 2026-10-29; © 2026)). *Open insurance for inclusion: what will it really take?*. 🟡 C. [Ver fuente](https://microinsurancenetwork.org/posts/open-insurance-for-inclusion-what-will-it-really-take)
 - **F-987** · Cover Genius (encuesta encargada a Momentive.ai, unidad de investigación de SurveyMonkey) (2021 (publicado el 30 de julio de 2021)). *The Embedded Insurance Report: Brazil*. 🟡 C. [Ver fuente](https://covergenius.com/resources/reports/embedded-insurance-brazil/)
+- **F-988** · Casaburi, L. & Willis, J. (American Economic Review 108(12):3778-3813) (2018). *Time versus State in Insurance: Experimental Evidence from Contract Farming in Kenya*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:aea:aecrev:v:108:y:2018:i:12:p:3778-3813)
+- **F-1027** · Microinsurance Network (artículo sobre microseguro móvil) (s.f.). *From connectivity to coverage via collaboration: revisiting mobile microinsurance*. 🟡 C. [Ver fuente](https://microinsurancenetwork.org/posts/from-connectivity-to-coverage-via-collaboration-revisiting-mobile-microinsurance)
+- **F-1028** · Blogs de proveedores de software de seguros (atribuido a LIMRA) (s.f.). *«El onboarding estructurado reduce 20-35% la caducidad del primer año»*. 🔴 E. Sin URL primaria (cifra repetida en blogs de proveedores).
+- **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
