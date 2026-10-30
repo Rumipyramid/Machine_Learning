@@ -159,7 +159,7 @@ conducta real · rigor y fuente.
 | Intervención y población | Momento · tipo | Mecanismo | Efecto y duración | Costo | ¿Conducta real? | Rigor · fuente |
 |---|---|---|---|---|---|---|
 | SMS frecuentes a padres · colegios de bajos ingresos, **Chile** | Uso · información | Cerrar la brecha de información | Matemáticas +0,08 a 0,09 DE; asistencia mínima +4,5 a 4,7 puntos; 18 meses (R) | Bajo | Sí | 🟢 A · F-1013 |
-| Videos sobre lo que rinde estudiar · **Perú** (MineduLAB) | Permanencia · información | Corregir creencias | Deserción −18% (R); escalado a 500.000 alumnos | No publicado | Sí | 🔵 B · F-1014 |
+| Videos sobre lo que rinde estudiar · **Perú** (MineduLAB) | Permanencia · información | Corregir creencias | Deserción −18,8% urbana y hasta −50% rural (R) | No publicado | Sí | 🔵 B · F-1014 |
 | SMS a alumnos en la pandemia · 18.256 alumnos, **Brasil** | Permanencia · nudge | Encuadre de ganancia | Riesgo de deserción −20% a −26% (R); solo si llegaba al celular del alumno | No publicado | Sí | 🟢 A · F-1015 |
 | SMS más llamadas de tutoría · Botsuana | Uso · acompañamiento | Práctica con contacto humano | +0,12 DE (R) | 0,89 DE por US$100 | Sí | 🟢 A · F-1016 |
 | Nudges y coaching a universitarios 🌐 | Uso · nudge | Planificación | **Sin efecto** académico (R) | No publicado | No | 🟡 C · F-1017 |
@@ -169,9 +169,9 @@ conducta real · rigor y fuente.
 | Intervención y población | Momento · tipo | Mecanismo | Efecto y duración | Costo | ¿Conducta real? | Rigor · fuente |
 |---|---|---|---|---|---|---|
 | Norma social en el impuesto predial · **Perú** | Pago · prueba social | Cuántos vecinos pagan | Efectos mezclados; el recordatorio simple funcionó (R, sin cifra) | No publicado | Sí, mezclado | 🟡 C · F-1018 |
-| Carta disuasiva contra carta de equidad · **Argentina** | Pago · nudge | Sanción contra reciprocidad | Disuasiva +4 puntos; equidad **sin efecto** (R) | No publicado | Sí | 🟢 A · F-1019 |
+| Carta disuasiva contra carta de equidad · **Argentina** | Pago · nudge | Sanción contra reciprocidad | Disuasiva: casi +5 puntos; reciprocidad y vecinos **sin efecto promedio** (R) | No publicado | Sí | 🟢 A · F-1019 |
 | Mismo mensaje por visita, carta o correo · **Colombia** | Cobranza · canal | Contacto personal | La visita supera a la carta y al correo (R, sin cifra) | No publicado | Sí | 🟢 A · F-1020 |
-| Medidor eléctrico prepago · Sudáfrica | Pago · modelo de pago | Precio visible, sin deuda | Consumo −13% a −14%; mejor recaudo con los más pobres (R) | No publicado | Sí | 🟢 A · F-1021 |
+| Medidor eléctrico prepago · Sudáfrica | Pago · modelo de pago | Precio visible, sin deuda | Consumo −14%; mejor recaudo con los más pobres (R) | No publicado | Sí | 🟢 A · F-1021 |
 | Factura con comparación social · EE.UU. 🌐 📚 | Uso · prueba social | Comparación con vecinos | Consumo −2%; decae entre cartas y vuelve con cada una (R) | Bajo | Sí | 🟢 A · F-1022 |
 | Comparación con el barrio en agua · **Costa Rica** | Uso · prueba social | Comparación cercana | −4,9% en dos meses; la comparación con toda la ciudad no fue significativa (R) | No publicado | Sí, corto plazo | 🟢 A · F-1024 |
 | SMS a responsables de mantenimiento escolar · **Perú** | Cumplimiento · nudge | Recordar | Incumplimiento −15% (R); escalado nacional | No publicado | Sí | 🔵 B · F-1025 |
@@ -332,7 +332,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1018** · Del Carpio, L. (GRADE, documento de investigación 73) (2014). *Are the Neighbors Cheating? Evidence from a Social Norm Experiment on Property Taxes in Peru*. 🟡 C. [Ver fuente](https://www.grade.org.pe/wp-content/uploads/DI73.pdf)
 - **F-1019** · Castro, L. & Scartascini, C. (Journal of Economic Behavior & Organization 116:65-82) (2015). *Tax compliance and enforcement in the pampas: Evidence from a field experiment*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jeborg:v:116:y:2015:i:c:p:65-82)
 - **F-1020** · Ortega, D. & Scartascini, C. (Journal of Economic Behavior & Organization 170:286-300) (2020). *Don't blame the messenger: the delivery method of a message matters*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jeborg:v:170:y:2020:i:c:p:286-300)
-- **F-1021** · Jack, B. K. & Smith, G. (AEJ: Applied Economics) (2020). *Charging Ahead: Prepaid Metering, Electricity Use, and Utility Revenue*. 🟢 A. [Ver fuente](https://www.aeaweb.org/doi/10.1257/app.20180155)
+- **F-1021** · Jack, B. K. & Smith, G. (AEJ: Applied Economics 12(2):134-168) (2020). *Charging Ahead: Prepaid Metering, Electricity Use, and Utility Revenue*. 🟢 A. [Ver fuente](https://www.aeaweb.org/doi/10.1257/app.20180155)
 - **F-1022** · Allcott, H. (Journal of Public Economics, 2011); Allcott, H. & Rogers, T. (American Economic Review, 2014) (2011-2014). *Social Norms and Energy Conservation; The Short-Run and Long-Run Effects of Behavioral Interventions*. 🟢 A. [Ver fuente](https://ceepr.mit.edu/workingpaper/social-norms-and-energy-conservation)
 - **F-1024** · Autores no verificados (World Bank Economic Review 34(2):444-463) (2020). *Experimento de comparación social y planificación del consumo de agua en Belén, Costa Rica*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:oup:wbecrv:v:34:y:2020:i:2:p:444-463)
 - **F-1025** · Innovations for Poverty Action (con Pronied y MineduLAB) (s.f.). *Improving School Maintenance with Text Message Alerts in Peru*. 🔵 B. [Ver fuente](https://poverty-action.org/impact/improving-school-maintenance-with-text-message-alerts-peru)

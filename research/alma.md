@@ -1,6 +1,6 @@
 # 00 — Hub de investigación (research/) — Rumipyramid/Machine_Learning
 
-*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-29.*
+*Mapa maestro de los documentos de conocimiento del proyecto. Última actualización: 2026-10-30 (verificación de enlaces leídos por resumen: corrige F-862, F-890, F-921, F-985, F-991, F-1014, F-1019 y F-1021; registra F-1037; próximo ID libre F-1038).*
 
 Este archivo es el **índice vivo** de `research/`: la vista **global** de qué está vigente y qué
 deriva de qué. Como `_nodes/` es plano (sin carpetas por tema), la navegación no la dan las

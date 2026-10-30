@@ -131,8 +131,8 @@ el cliente que resolvió rápido no vuelve a entrar.
 - 🌐 Solo 36% (auto) y 31% (hogar) recibe el estado por app; 22% usa varios canales para la misma pregunta; con una
   mala experiencia digital, 52% probablemente no renovará, contra 4% con una excelente (J.D. Power, 2025, F-872,
   🟡 C).
-- 🌐 Satisfacción no es permanencia: tras un siniestro, la probabilidad de cambiar sube 35% aunque 94% esté
-  satisfecho (LexisNexis, 2023, F-890, 🟡 C).
+- 🌐 Satisfacción no es permanencia: tras un siniestro, la propensión a considerar cambiarse sube 35% aunque
+  94% diga estar en algún grado satisfecho (LexisNexis, 2023, F-890, 🟡 C).
 - Perú: la aseguradora tiene 30 días desde la documentación completa para responder un siniestro sin ajustador; si no
   responde, se entiende aceptado (F-907, 🟡 C). El seguimiento proactivo también protege a la empresa.
 
@@ -182,8 +182,8 @@ el cliente que resolvió rápido no vuelve a entrar.
 
 **Mensaje: la billetera y el embebido venden millones de pólizas, pero nadie publica cuántas se quedan.**
 
-- Mercado Pago: 11 millones de clientes con póliza en Brasil (F-954, 🟠 D); MetLife con Klimber dice proteger a 19
-  millones (F-985, 🟠 D).
+- Mercado Pago: 11 millones de clientes con póliza en Brasil (F-954, 🟠 D); MetLife con Klimber celebra 15
+  millones de asegurados (F-985, 🟠 D).
 - Perú: la tenencia de seguros no sube pese al uso masivo de billeteras (Credicorp e Ipsos, 2026, F-906, 🔵 B); el
   embebido es menos de 1% de la cartera de Pacífico (F-967, 🟠 D).
 - Ninguno publica siniestralidad, renovación ni uso posterior.

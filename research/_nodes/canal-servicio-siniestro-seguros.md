@@ -1,7 +1,7 @@
 # Rol del canal en el servicio y el siniestro de un seguro
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-29 · Versión: v1.0
+> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-30 (verificación de enlaces: F-890 matizada) · Versión: v1.0
 > Origen: pregunta 2 del brief "Benchmarking: el valor de la recurrencia digital en seguros" (académica +
 > negocio; lo social solo para el siniestro). Insumo para la Gerencia de Digital de RIMAC; RIMAC está excluida
 > como caso, fuente o benchmark.
@@ -23,8 +23,8 @@
 - **El siniestro son dos momentos.** Avisar es urgente: el teléfono domina y quien avisa en digital no queda más
   satisfecho (F-947, 🟡 C, 🌐). Seguir el caso es repetitivo: recibir el estado por app se asocia a más satisfacción,
   pero solo un tercio lo recibe (F-947, F-872, 🌐).
-- **El siniestro decide la permanencia, no el canal.** Tras un siniestro, cambiar de aseguradora es 35% más
-  probable aunque 94% diga estar satisfecho; pesan la demora, el monto y la complejidad (F-890, F-892, F-950, 🌐).
+- **El siniestro decide la permanencia, no el canal.** Tras un siniestro, considerar cambiarse de aseguradora es
+  35% más probable aunque 94% diga estar en algún grado satisfecho; pesan la demora, el monto y la complejidad (F-890, F-892, F-950, 🌐).
 - **Implicancia.** Tres metas en vez de una: migrar lo claro, acompañar lo ambiguo (persona al frente, digital
   para seguir) y no forzar lo urgente.
 
@@ -52,7 +52,7 @@
 
 ## 3. Siniestro: permanencia y voz del cliente
 
-- **Permanencia.** F-890 (35% más probabilidad de cambio en 180 días), F-892 (86% satisfecho y 41% cambiaría),
+- **Permanencia.** F-890 (35% más propensión a considerar cambiarse; 33% cotizó o cambió por su siniestro), F-892 (86% satisfecho y 41% cambiaría),
   F-950 (17% cambió; pesan pérdida total con crédito, lesiones y primer siniestro). Todas de proveedores y de EE.UU.
 - **Voz del cliente peruano.** El registro social rindió poco: solo categorías de reclamo (demora, monto, rechazo,
   plazo; F-959). El escalamiento a Indecopi o la SBS subió de 61,6 a 141 por cada 1.000 reclamos (F-902).

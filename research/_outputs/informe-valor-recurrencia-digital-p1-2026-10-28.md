@@ -65,7 +65,7 @@ escalados. La otra es el costo de servir, limitado a las tareas de información 
 
 | # | Teoría de valor | Indicador en vez del MAU | Mejor evidencia | 📎 Respaldo en Perú y LatAm | Qué tan probada |
 |---|---|---|---|---|---|
-| 1 | **Costo de servir:** resolver en digital lo que hoy va al teléfono | Contactos por necesidad resuelta, separados por tipo de tarea | 📚 En una aseguradora de salud, el portal bajó 29% las llamadas sobre información clara y fácil de encontrar, pero subió 14% el total de llamadas, porque generó llamadas sobre información ambigua (Kumar y Telang, 2012, F-850) | Solo cifras de empresa (Pacífico: más de 60% de consultas por autoservicio, F-866). 📎 🌐 En Francia, entre 75% y 90% de las contrataciones termina por teléfono aun con opción en línea (F-921) | 🟢 Causal, efecto en ambas direcciones |
+| 1 | **Costo de servir:** resolver en digital lo que hoy va al teléfono | Contactos por necesidad resuelta, separados por tipo de tarea | 📚 En una aseguradora de salud, el portal bajó 29% las llamadas sobre información clara y fácil de encontrar, pero subió 14% el total de llamadas, porque generó llamadas sobre información ambigua (Kumar y Telang, 2012, F-850) | Solo cifras de empresa (Pacífico: más de 60% de consultas por autoservicio, F-866). 📎 🌐 En Francia, la contratación seguiría cerrándose por teléfono aun con opción en línea (F-921; cifra no verificada) | 🟢 Causal, efecto en ambas direcciones |
 | 2 | **Retención:** el cliente digital se queda más | Renovación o persistencia en cohortes emparejadas | 📚 En banca, adoptar lo digital se asocia a más retención aun controlando que adopta quien ya era fiel (Campbell y Frei, 2010, F-847). En un plan de salud, 96,9% contra 90,5% (Turley et al., 2012, F-851; observacional). **En seguros no hay ningún estudio causal** | 📎 Ningún estudio de retención. Sí motivos de fuga que no dependen del canal: en Perú, solo 12% mantiene el seguro de terremoto al terminar el crédito (F-902); en México, 47% lo pierde al cambiar de trabajo (F-898) | 🔵 Plausible por analogía · ⚪ No demostrado en seguros |
 | 3 | **Venta cruzada:** el cliente digital compra más productos | Productos por cliente; lead a póliza; prima nueva de clientes existentes | Los usuarios digitales tienen más productos en banca (Xue et al., 2011, F-848; Becker et al., 2022, F-849). La venta digital de Porto Seguro es casi toda a clientes que ya tiene: 84%, según su meta 2025 (F-865) | Puertas ajenas venden a escala (F-863, F-864, F-869). 📎 Pero la tenencia no sube con la billetera (F-906), la puerta cobra comisiones cercanas a 50% (F-902) y 38,4% de los reclamos de seguros ante Indecopi en 2023 fue por contratación o cargo indebido (F-902) | 🟡 Asociación |
 | 4 | **Prevención:** lo digital cambia la conducta de riesgo | Siniestralidad por cohorte, separando selección de efecto | En auto, un experimento de campo con telemetría redujo velocidad y frenadas bruscas (F-442). En salud, dos ensayos aleatorizados de programas de bienestar no bajaron el gasto médico (Jones, Molitor y Reif, 2019, F-854; Song y Baicker, 2019, F-855) | Solo un dato de empresa en Brasil (Justos, F-870) | 🟢 En auto (conducta) · 🔴 Negativa en salud (gasto) |
@@ -285,7 +285,8 @@ se entra al app.
 ### 3.3 Venta cruzada: la puerta de entrada a escala la tienen otros
 
 - **Asociación, no efecto.** Los usuarios digitales tienen más productos en banca (F-848, F-849). 🌐 En Ping An,
-  quienes usan su ecosistema de salud tienen 1,6 veces más contratos, según prensa (F-862).
+  quienes tienen derecho a los beneficios de su ecosistema de salud (63% de los clientes) tienen 1,6 veces más
+  contratos, según su memoria anual (F-862).
 - **Lo digital vende sobre todo al que ya es cliente.** Porto Seguro proyecta que 84% de su venta digital sea a
   clientes existentes. Sus 45 mil corredores siguen siendo el motor de la venta cruzada (F-865).
 - **En LatAm, las apps de uso diario de otros venden seguros a escala:**
@@ -437,7 +438,7 @@ sección. Todo lo que sigue son declaraciones de la empresa en prensa o redes, s
   puntos de satisfacción (F-874).
 - 🌐 **Lo 100% digital falla en los reclamos complejos.** Más de 30% termina necesitando a una persona, y quien
   escala pierde 11 puntos de NPS (Bain, 2023, F-183).
-- 🌐 **Satisfacción no es retención.** Tras un siniestro, la probabilidad de cambiarse de aseguradora sube 35%,
+- 🌐 **Satisfacción no es retención.** Tras un siniestro, la propensión a considerar cambiarse de aseguradora sube 35%,
   aun entre clientes satisfechos (LexisNexis, 2023, F-890; dato de un proveedor).
 - 📎 **LatAm: el valor está en la rapidez y la justicia del pago.** En un microseguro de vida en México, el pago
   llegó en promedio 9 días después de la muerte. Las familias lo usaron como garantía para pedir prestado sin
@@ -502,9 +503,10 @@ reparten el trabajo. Hay cinco mecanismos que lo explican:
 - 📚 **La gente busca en un canal y compra en otro.** Se llama "research shopping": un canal sirve para buscar, otro
   para cerrar, y el canal digital retiene poco al cliente hasta la compra (Verhoef, Neslin y Vroomen, 2007, F-918).
   Calza con lo que se ve en la región: 67% busca seguro de vida en línea y compra con una persona (F-900).
-- 📚 🌐 **Ofrecer el canal no traslada la tarea.** En Francia, entre 75% y 90% de las contrataciones directas termina por
-  teléfono aunque exista la opción de terminar en línea (Dalla Pozza y Texier, 2014, F-921; cifra tomada de la revisión
-  aportada, no verificada en el texto).
+- 📚 🌐 **Ofrecer el canal no traslada la tarea.** Una revisión aportada atribuye a un estudio francés que entre 75% y
+  90% de las contrataciones directas termina por teléfono aunque exista la opción en línea. La cifra **no está en el
+  resumen del artículo** y el estudio es cualitativo (Dalla Pozza y Texier, 2014, F-921, 🟡 C): tómese como pista, no
+  como dato.
 - 🌐 **Los canales caros sobreviven por lo que resuelven.** En vida en España, el canal bancario es más eficiente en
   costos, pero agentes y corredores compensan con calidad de producto, más servicio y mejor manejo del conflicto de
   intereses. No hay un sistema de distribución óptimo único (Rubio-Misas, 2022, F-923).
@@ -705,7 +707,7 @@ sugiere una secuencia: primero el indicador, luego dónde invertir.
 | La gente casi no interactúa con la propuesta de valor | Consistente con lo anterior | 🔧 Con los datos del Anexo D: tasa de uso de cada beneficio, tiempo hasta el primer uso y relación entre uso y renovación |
 | El siniestro debería resolverse en digital | La evidencia apunta a un modelo híbrido: digital para iniciar y seguir, persona para lo complejo. 📎 En Perú, lo que falla es resolver y pagar, y lo mal resuelto escala (F-902, F-903) | Rol del canal por momento (pregunta 2) |
 | 📎 Implícita en la meta: más uso del app es mejor | No: en dos teorías, el buen resultado baja la actividad; y en el segmento que delega en su corredor, poca actividad propia no significa poco valor | Reemplazar o acompañar el MAU con el indicador de la teoría elegida |
-| 📎 Implícita: el objetivo es llevar todo (o salud) a 100% digital | La evidencia dice que los canales conviven por función: la gente busca en línea y cierra con una persona (F-918); en Francia, 75% a 90% termina por teléfono aun pudiendo hacerlo en línea (F-921); los canales caros sobreviven por lo que resuelven (F-923). Detalle en §3.6 | Definir qué tarea va a qué canal con la tabla de §3.1 (pregunta 2) |
+| 📎 Implícita: el objetivo es llevar todo (o salud) a 100% digital | La evidencia dice que los canales conviven por función: la gente busca en línea y cierra con una persona (F-918); en Francia, buena parte terminaría por teléfono aun pudiendo hacerlo en línea (F-921; cifra no verificada); los canales caros sobreviven por lo que resuelven (F-923). Detalle en §3.6 | Definir qué tarea va a qué canal con la tabla de §3.1 (pregunta 2) |
 
 ---
 
@@ -726,7 +728,7 @@ sugiere una secuencia: primero el indicador, luego dónde invertir.
   registro de fuentes indica cómo se leyó.
 - 📎 **Dos fuentes piden cuidado.** El artículo de la Universidad de Lima atribuye a estudios clásicos cifras que no
   parecen corresponderles; no se usan (F-908). La cifra francesa de contratación por teléfono viene de una revisión
-  y no se verificó en el texto (F-921).
+  y no está en el resumen del artículo; su rigor se bajó a 🟡 C (F-921).
 - **La pista social es la más débil.** No se encontró conversación pública sobre apps de aseguradoras peruanas.
 - **Varias cifras de Porto Seguro son metas, no resultados.** Las de Ping An que comparan usuarios con no
   usuarios vienen de prensa.
@@ -825,7 +827,7 @@ La versión 1 se armó solo con búsqueda web. Esta tabla compara aquella lectur
 | Oscar Health | 🌐 Contraste | Retención (sin dato publicado) | 🟡 C (F-858) |
 | Alan | 🌐 Contraste | Recurrencia, prevención | 🟠 D (F-859) |
 | AIA / Vitality | 🌐 Contraste | Retención (con selección) | 🟠 D (F-860, F-861) |
-| Ping An | 🌐 Contraste | Venta cruzada (asociación) | 🔵 B / 🟠 D (F-862) |
+| Ping An | 🌐 Contraste | Venta cruzada (asociación) | 🔵 B (F-862) |
 | Root | 🌐 Contraste | Prevención y selección | 🔵 B (F-871) |
 | Amica | 🌐 Contraste | Lealtad sin ser digital primero | 🟡 C (F-880) |
 | Zurich, AXA, Allianz y Allianz Direct, ZhongAn, Progressive, USAA, Coalition | 🌐 Extendidos | **No aportaron evidencia** a estas teorías en esta pasada; no se forzaron | — |
@@ -913,7 +915,7 @@ Lectura de conjunto: las señales que más pueden cambiar las reglas tocan **có
 - 🌐 **El seguro abierto no ha despegado donde existe.** En Brasil, tras cinco años, 61 instituciones y más de
   R$1.000 millones invertidos, hay menos de 10.000 consentimientos activos (F-983). Bima Sugam, en India, incumplió al
   menos cinco plazos de lanzamiento (F-975). La infraestructura no crea demanda si el cliente no gana algo inmediato.
-- **Seguro embebido: escala declarada, resultados sin publicar.** MetLife con Klimber (19 millones de personas, F-985),
+- **Seguro embebido: escala declarada, resultados sin publicar.** MetLife con Klimber (15 millones de asegurados, F-985),
   Leonisa con BNP Paribas Cardif (cerca de 2 millones, F-965), Turaco en África (pagos en menos de 3 días, F-981).
   Ninguno publica siniestralidad ni renovación. En Perú, el embebido es menos de 1% de la cartera de Pacífico, con 14
   lanzamientos previstos en 2026 (F-967), y su línea de seguros inclusivos suma más de 3 millones de pólizas (F-966).
@@ -1021,7 +1023,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-859** · Alan (carta a accionistas Q2 2025) (2025). *Alan - 2025 Q2 Letter to Shareholders*. 🟠 D. [Ver fuente](https://alan.com/en/blog/discover-alan/a/alan-2025-q2-letter-to-shareholders)
 - **F-860** · Vitality UK (materiales para asesores) / Discovery Life (presentaciones a inversionistas); SOA 2019 (2018-2025). *Vitality lapse-by-status claims (2023 Life claims and benefits report; adviser campaign pages; SOA 2019 Annual Meeting session 041)*. 🟠 D. [Ver fuente](https://adviser.vitality.co.uk/campaigns/live-longer-with-vitality)
 - **F-861** · AIA New Zealand (vía Insurance Business NZ) (s.f.). *"Advisers are crucial" in AIA NZ initiative*. 🟠 D. [Ver fuente](https://www.insurancebusinessmag.com/nz/news/breaking-news/advisers-are-crucial-in-aia-nz-initiative-423895.aspx)
-- **F-862** · Ping An Insurance (resultados anuales 2024, HKEX) y comunicados de prensa (2025). *2024 Annual Results announcement*. 🔵 B. [Ver fuente](https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0319/2025031900856.pdf)
+- **F-862** · Ping An Insurance (resultados anuales 2024, HKEX) (2025). *2024 Annual Results announcement*. 🔵 B. [Ver fuente](https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0319/2025031900856.pdf)
 - **F-863** · Nubank y Chubb (comunicados y prensa especializada) (2024). *Nubank and Chubb reach 2 million active insurance policies in Brazil*. 🟠 D. [Ver fuente](https://coverager.com/nubank-and-chubb-reach-2-million-active-insurance-policies-in-brazil/)
 - **F-864** · Mercado Pago (vía LatamFintech; El Cronista) (2025). *Mercado Pago acelera su estrategia en seguros en Brasil con cuatro nuevos productos impulsados por IA*. 🟠 D. [Ver fuente](https://www.latamfintech.co/articles/mercado-pago-acelera-su-estrategia-en-seguros-en-brasil-con-cuatro-nuevos-productos-impulsados-por-ia)
 - **F-865** · Porto Seguro (presentación a inversionistas vía Quartr; release 1T25; CQCS) (2025). *Porto Seguro investor presentation; Release 1T25; entrevista a Patrícia Chacon (COO)*. 🟡 C. [Ver fuente](https://cqcs.com.br/noticia/patricia-chacon-coo-da-porto-seguro-revela-como-a-seguradora-esta-se-preparando-para-o-futuro/)
@@ -1071,7 +1073,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-918** · Verhoef, P. C.; Neslin, S. A.; Vroomen, B. (International Journal of Research in Marketing 24(2):129-148) (2007). *Multichannel customer management: Understanding the research-shopper phenomenon*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.ijresmar.2006.11.002)
 - **F-919** · Verhoef, P. C.; Kannan, P. K.; Inman, J. J. (Journal of Retailing 91(2):174-181) (2015). *From Multi-Channel Retailing to Omni-Channel Retailing: Introduction to the Special Issue on Multi-Channel Retailing*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.jretai.2015.02.005)
 - **F-920** · Verhoef, P. C.; Broekhuizen, T.; Bart, Y.; Bhattacharya, A.; Dong, J. Q.; Fabian, N.; Haenlein, M. (Journal of Business Research 122:889-901) (2021). *Digital transformation: A multidisciplinary reflection and research agenda*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.jbusres.2019.09.022)
-- **F-921** · Dalla Pozza, I. & Texier, L. (Journal of Applied Business Research 30(3):863-868; versión previa IPAG Working Paper 2014-059) (2014). *Managing Multichannel Strategies in the Service Sector: The Example of the French Insurance Industry*. 🟢 A. [Ver fuente](https://clutejournals.com/index.php/JABR/article/view/8571)
+- **F-921** · Dalla Pozza, I. & Texier, L. (Journal of Applied Business Research 30(3):863-868; versión previa IPAG Working Paper 2014-059) (2014). *Managing Multichannel Strategies in the Service Sector: The Example of the French Insurance Industry*. 🟡 C. [Ver fuente](https://clutejournals.com/index.php/JABR/article/view/8571)
 - **F-922** · Holland, C. P. & Kavuri, A. S. (The Geneva Papers on Risk and Insurance – Issues and Practice 50(1); DOI 10.1057/s41288-024-00341-0) (2024). *Insurtech strategies: a comparison of incumbent insurance firms with new entrants*. 🟢 A. [Ver fuente](https://link.springer.com/10.1057/s41288-024-00341-0)
 - **F-923** · Rubio-Misas, M. (International Journal of Bank Marketing 40(4):724-745; DOI 10.1108/IJBM-04-2021-0129) (2022). *Bancassurance and the coexistence of multiple insurance distribution channels*. 🟢 A. [Ver fuente](https://doi.org/10.1108/IJBM-04-2021-0129)
 - **F-924** · Sharma, D. & Gassenheimer, J. B. (European Journal of Marketing 43(7/8):1076-1091) (2009). *Internet channel and perceived cannibalization: Scale development and validation in a personal selling context*. 🟢 A. [Ver fuente](https://doi.org/10.1108/03090560910961524)

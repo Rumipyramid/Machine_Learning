@@ -26,8 +26,8 @@ método propio), 🟠 D (prensa o blog), 🔴 E (opinión). La escala completa y
    mundo, y quien avisa en digital no queda más satisfecho (J.D. Power, 2017, F-947, 🟡 C). Seguir el caso es
    repetitivo y ansioso: ahí lo digital sí suma. Recibir el estado por app se asocia a más satisfacción (+33 puntos
    en una escala de 1.000), pero solo un tercio de los clientes en EE.UU. lo recibe (F-947; F-872).
-3. **El siniestro decide la permanencia, no el canal.** Tras un siniestro, la probabilidad de cambiar de
-   aseguradora sube 35% aunque 94% diga estar satisfecho (LexisNexis, 2023, F-890, 🟡 C). Pesan la demora, el monto
+3. **El siniestro decide la permanencia, no el canal.** Tras un siniestro, la propensión a considerar
+   cambiarse de aseguradora sube 35% aunque 94% diga estar en algún grado satisfecho (LexisNexis, 2023, F-890, 🟡 C). Pesan la demora, el monto
    y que el caso se complique; el canal del aviso pesa poco en lo publicado.
 4. **Implicancia.** No conviene una meta única de digitalización. Conviene clasificar las gestiones en tres: las
    que se migran, las que se acompañan (humano al frente y digital para seguir) y las que no se fuerzan.
@@ -95,12 +95,13 @@ El brief pide mirar el siniestro con tres registros: académico, de negocio y so
 
 **Qué decide la permanencia.** Tres estudios de proveedores en EE.UU. coinciden en lo esencial.
 
-- **Satisfacción no es retención.** Tras un siniestro de auto, la probabilidad de cambiar de aseguradora en 180
-  días sube 35%, sin importar la edad ni la antigüedad, aunque 94% diga estar satisfecho (LexisNexis, 2023,
-  F-890, 🟡 C, 🌐). En una encuesta de 2014 a 8.000 clientes de 14 países, 86% estaba satisfecho con el manejo de su
+- **Satisfacción no es retención.** Quienes tuvieron un siniestro fueron 35% más propensos a considerar
+  cambiarse de aseguradora; 94% dijo estar en algún grado satisfecho y aun así 33% cotizó o cambió por su siniestro
+  (LexisNexis, 2023, F-890, 🟡 C, 🌐). En una encuesta de 2014 a 8.000 clientes de 14 países, 86% estaba satisfecho con el manejo de su
   siniestro y aun así 41% probablemente cambiaría en 12 meses (Accenture, F-892, 🟡 C, 🌐).
-- **Lo que empuja la salida no es el canal.** Las razones citadas son el alza de la prima, la demora en liquidar y
-  el mal manejo del caso (F-890). En otro estudio, 17% cambió de aseguradora tras el siniestro; los mayores
+- **Lo que empuja la salida no es el canal.** Quienes se fueron calificaron peor al ajustador (profesionalismo,
+  precisión y disponibilidad) y encontraron menos fácil el autoservicio: solo la mitad lo vio «muy fácil», contra tres
+  de cada cuatro de los que se quedaron (F-890). En otro estudio, 17% cambió de aseguradora tras el siniestro; los mayores
   predictores fueron pérdida total con un crédito pendiente, lesiones y ser el primer siniestro (CCC, 2024,
   F-950, 🟡 C, 🌐).
 - **Lectura conductual.** El siniestro es el momento en que la promesa se cobra. Si la experiencia es "aceptable"
