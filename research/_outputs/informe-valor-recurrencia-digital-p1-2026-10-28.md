@@ -1,6 +1,6 @@
 # Informe · Pregunta 1 del benchmarking: ¿para qué sirve la recurrencia digital en un seguro?
 
-**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 (banco de señales ampliado el 29-10-2026) · **Estado:** versión de trabajo 7.4
+**Insumo para:** Gerencia de Digital, RIMAC · **Fecha:** 28-10-2026 (banco de señales ampliado el 29-10-2026; datos de retención el 30-10-2026) · **Estado:** versión de trabajo 7.5
 (integra quince documentos aportados por la usuaria y doce papers verificados a partir de ellos; ocho documentos
 internos del equipo se omiten de esta copia; el formato para la gerencia se define después)
 **Basado en:** `research/_nodes/valor-recurrencia-digital-seguros.md` (v1.1, 2026-10-28). Las fuentes se
@@ -233,6 +233,9 @@ propuesta para discutir con los ramos, no un hallazgo.
   - Vitality reporta entre 39% y 67% menos caídas de póliza en miembros comprometidos (F-860).
   - AIA habla de "mejoras significativas", sin cifra (F-861).
   - Oscar atribuye la retención a su plataforma, sin publicar la tasa (F-858).
+- **Seguros, el estudio más cercano:** en el seguro nacional de salud de Ghana, pagar y renovar por el celular se
+  asocia a 17,4 puntos más de renovación que pagar en oficina, sobre todo en informales (Nsiah-Boateng y otros, 2023,
+  F-1031, 🟢 A). Es observacional: quien elige el canal móvil puede ser distinto. Apunta al pago, no al uso del app.
 - **🌐 Ser nativo digital no garantiza retención alta.** Lemonade retiene 85% de sus primas año a año, según su
   reporte anual auditado (F-857).
 - 📎 **El estudio de India sobre seguros de vida, leído completo, es el ejemplo típico de esta evidencia débil**
@@ -1090,3 +1093,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-983** · Susep (Brasil), vía LetsMoney (republica Valor Econômico) y The Paypers (2024-2026). *Open Insurance en Brasil: transacciones, consentimientos y estado del sistema*. 🟠 D. [Ver fuente](https://www.letsmoney.com.br/noticias/open-insurance-menos-10-mil-consentimentos/)
 - **F-984** · de Janvry, A.; Ramírez Ritchie, E. & Sadoulet, E. (World Bank Policy Research Working Paper 7715) (2016). *Weather Index Insurance and Shock Coping: Evidence from Mexico's CADENA Program*. 🟡 C. [Ver fuente](https://openknowledge.worldbank.org/handle/10986/24632)
 - **F-985** · Prensa regional (Corresponsables, Bloomberg Línea, Expansión, Pulzo) (2023-2026). *Seguros dentro de billeteras y "sponsors" en LatAm: Klimber con MetLife, Mercado Pago México, Nequi Colombia*. 🟠 D. [Ver fuente](https://www.corresponsables.com/arg/actualidad/klimber-expande-su-operacion-a-uruguay-y-colombia-y-celebra-15-millones-de-asegurados-en-america-latina)
+- **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)

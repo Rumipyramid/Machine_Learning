@@ -1,6 +1,6 @@
 # Rol del canal por momento y cliente intermediado
 
-**Benchmarking para la Gerencia de Digital · Preguntas 2 y 3 · versión 1.0 · 29 de octubre de 2026**
+**Benchmarking para la Gerencia de Digital · Preguntas 2 y 3 · versión 1.1 · 30 de octubre de 2026**
 
 - **Pregunta 2.** ¿Qué rol cumple cada canal según el momento y el producto, sobre todo en el servicio y el siniestro?
 - **Pregunta 3.** ¿Qué cambia cuando el cliente llega por el banco, la billetera, el empleador o el corredor?
