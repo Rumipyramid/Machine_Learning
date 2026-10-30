@@ -267,3 +267,6 @@
 | F-717 | 🟢 A | 2026-10-29 | Intuición 247 — cuidar el cierre de la experiencia: mejora el recuerdo y sube algo el retorno (resumen; lectura débil) |
 | F-698 | 🟢 A | 2026-10-29 | Intuición 248 — el power posing sobrevive solo en ánimo declarado y lo defiende su autora; pedir control neutro y medida objetiva (secundarias; lectura débil) |
 | F-652 | 🟢 A | 2026-10-29 | Intuición 249 — Milgram en Polonia: ~90% con tope de 150 V y 80 personas; usar la dirección, no la cifra (prensa y resúmenes; lectura débil) |
+| F-729 | 🟢 A | 2026-10-30 | Intuición 250 — el efecto señuelo no aparece cuando el producto se experimenta; probar en el formato real (ficha y resumen; lectura débil) |
+| F-658 | 🟢 A | 2026-10-30 | Intuición 251 — Stanford: el liderazgo dio a los guardias una causa; revisar cómo enmarcan los supervisores (repositorio y notas; lectura débil) |
+| F-733 | 🟢 A | 2026-10-30 | Intuición 252 — las advertencias frenan la desinformación solo a veces; guion de siniestros neutro (ficha y PubMed; lectura débil) |

@@ -6153,6 +6153,27 @@ F-652 (Doliński y otros, *Social Psychological and Personality Science* 8(8), 2
 - **Leído a fondo:** 2026-10-29 (`WebSearch`; prensa, nota de SPSP y resúmenes; lectura débil, declarada)
 - **Conexión razonada, no forzada:** consistente con la intuición 230 (Milgram: guion improvisado y réplica que llega solo a 150 V); sin cambio de confianza.
 
+### 250. El efecto señuelo desaparece cuando el cliente experimenta el producto: probarlo con tablas de atributos no prueba que funcione en la vida real
+F-729 (Frederick, Lee y Baskin, *Journal of Marketing Research* 51(4), 2014, pp. 487-507). Serie de experimentos que no encontró efecto de atracción cuando los atributos se experimentan directamente (por ejemplo, bebidas) o se presentan de forma perceptual. El efecto parece restringido a productos descritos con números estilizados. Huber, Payne y Puto publicaron una respuesta en el mismo número (pp. 520-525): sostienen que el efecto es robusto si se replican las condiciones originales. Hay desacuerdo abierto sobre el alcance, no sobre la existencia.
+**Heurística:** si una cotización de seguros muestra planes con tres precios y coberturas numéricas, un señuelo puede mover la elección. No asumir que el mismo truco funciona en un recorrido donde el cliente vive la experiencia (asesor, llamada, demostración). Probarlo en el formato real, con grupo comparable, antes de diseñar planes alrededor de un señuelo.
+- **Fuente:** F-729 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-30 (`WebSearch`; ficha de la revista y resumen; PDF completo no abierto; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la tesis 12 (estructurar la comparación importa más que podar el catálogo) y la intuición 225 (la replicabilidad vive en el efecto); sin cambio de confianza.
+
+### 251. El archivo de la prisión de Stanford muestra que los guardias fueron alentados a ser duros: la crueldad se produce con liderazgo que da una causa noble, no solo con un rol
+F-658 (Haslam, Reicher y Van Bavel, *American Psychologist* 74(7), 2019, pp. 809-822; DOI 10.1037/amp0000443). Análisis de grabaciones y documentos del archivo del experimento. Un integrante del equipo ("superintendente") presionó a un guardia reacio a verse como parte de la misión del experimento, con pronombres colectivos (57 veces en una conversación corta). Los autores concluyen que la crueldad requiere que alguien convenza a los ejecutores de que su acción sirve a una causa del grupo. Una réplica de 2020 de Zimbardo, Haney y otros defendió la lectura clásica. Dos de los tres autores escribieron además un resumen divulgativo, que no es independiente.
+**Heurística:** cuando una meta de ventas, un guion o un incentivo lleva a conductas agresivas (presionar al cliente, ocultar exclusiones), mirar primero cómo lo enmarca el líder, antes de culpar al "tipo de persona" o al rol. Para Rimac: revisar mensajes de supervisores en los playbooks de venta. Ver también las intuiciones 222 y 230.
+- **Fuente:** F-658 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-30 (`WebSearch`; repositorio de St Andrews, ficha y notas de los autores; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la tesis 18 (playbook de venta con persuasión real mezclada con heurística sin base) y la intuición 222; sin cambio de confianza.
+
+### 252. Una advertencia de que la información puede ser engañosa solo a veces protege la memoria: el guion con que se pregunta por un siniestro debe ser neutro
+F-733 (Loftus, *Learning & Memory* 12(4), 2005, pp. 361-366; DOI 10.1101/lm.94705). Revisión de 30 años de experimentos sobre el efecto de la información engañosa: tras recibirla, el recuerdo se deteriora. Las advertencias lo frenan solo en circunstancias limitadas. El efecto se observa en varias especies y algunos grupos son más susceptibles. Es una revisión, sin datos nuevos; sirve de mapa del campo.
+**Heurística:** en entrevistas de siniestros y reclamos, no confiar en que avisar al cliente ("diga solo lo que recuerda") neutraliza las preguntas sugestivas. Diseñar el guion para que no sugiera y registrar la pregunta tal como se hizo. Complementa la intuición 226 (el verbo de la pregunta moldea el recuerdo).
+- **Fuente:** F-733 (🟢A según el ledger)
+- **Leído a fondo:** 2026-10-30 (`WebSearch`; ficha de la revista y PubMed; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con las intuiciones 226 y 217; sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6206,7 +6227,7 @@ F-652 (Doliński y otros, *Social Psychological and Personality Science* 8(8), 2
 - **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28 y 09-28→2026-10-29; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28 y 09-28→2026-10-29 y 09-29→2026-10-30; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
   sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
@@ -6359,19 +6380,8 @@ F-652 (Doliński y otros, *Social Psychological and Personality Science* 8(8), 2
 
 - **2026-09-28** — *(Detalle podado y fusionado al resumen el 2026-10-29)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
 
-- **2026-09-29** — Corrida diaria de refinamiento. `main` al día (fast-forward limpio) y ledger verificado
-  por script: **468 filas, F-1 a F-468 sin huecos** — cero fuentes nuevas, cuadragésimo octavo día seguido
-  sin cambios en el ledger; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12 (rutina
-  de `cronista`, no la disparo aquí). Nota: el prompt externo apunta a `registro_fuentes.md`, que no
-  existe; el ledger vigente es `codice.md`. **Único matiz de negocio:** en tesis 16 (Riesgos/ecosistema
-  LatAm), la cifra "phygital duplica la retención a primer año" (F-376) no se encontró en el informe
-  público de McKinsey; se degradó a hipótesis, conservando la preferencia declarada (>60% quiere recorrido
-  híbrido). Confianzas sin cambio. **Intuición (nivel 🔵B):** universo puro recalculado 71 filas, 22
-  leídas → 49 pendientes; sorteo al azar: F-191, F-376 y F-24 (todas leídas vía `WebSearch`, sitios
-  primarios bloqueados o parciales). Entradas 157 (moderador de confianza solo opera sobre la ruta de
-  normas subjetivas), 158 (cifra de consultora ausente del informe público) y 159 (fraude en estudio de
-  honestidad: mapear decisiones que dependían de él). Poda: bloque 08-30 fusionado al resumen; Bitácora
-  cubre 2026-08-31 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-09-29** — *(Detalle podado y fusionado al resumen el 2026-10-30)*: corrida diaria de refinamiento; un matiz (cifra de retención "phygital" no hallada en el informe público, degradada a hipótesis) y las intuiciones 157 a 159.
+
 - **2026-09-30** — Corrida diaria de refinamiento. `main` al día. El prompt externo apunta a
   `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero
   fuentes nuevas** — cuadragésimo noveno día sin cambios; la revisión profunda de `cronista` sigue sin
@@ -6505,3 +6515,5 @@ F-652 (Doliński y otros, *Social Psychological and Personality Science* 8(8), 2
 - **2026-10-28** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 105 pendientes → 102 tras hoy):** sorteo F-720, F-731 y F-744, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 244 (la mera exposición tiene forma de U invertida: medir la curva de contactos), 245 (el efecto IKEA se replica en dirección, no en magnitud: medir abandono del cotizador) y 246 (El Niño de 1997-98 frenó el crecimiento infantil en Tumbes, sobre todo en hogares inundables). Pendiente para `cronista`: F-720, confirmar los moderadores (visual/auditivo, duración) y que el ledger no recoge la U invertida como límite de la frecuencia; F-731, sin tamaños de efecto verificados. Poda: 09-27 fusionado al resumen; Bitácora cubre 2026-09-28 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-29** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 103 pendientes → 100 tras hoy):** sorteo F-717, F-698 y F-652, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 247 (el cierre de una experiencia dolorosa mejora el recuerdo y sube algo el retorno), 248 (el power posing sobrevive solo en ánimo declarado, y lo defiende su autora) y 249 (Milgram en Polonia: ~90% con tope de 150 V y 80 personas; dirección, no cifra). Pendiente para `cronista`: F-698 no recoge las réplicas preregistradas (Cesario y otros, 2017) ni la crítica de Credé (2019); F-652, aclarar en la ficha el tope de 150 V y que la toma de datos fue en 2015. Poda: 09-28 fusionado al resumen; Bitácora cubre 2026-09-29 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-30** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 96 pendientes → 93 tras hoy):** sorteo F-729, F-658 y F-733, leídas vía `WebSearch` (fichas, repositorios y resúmenes; lectura débil, declarada). Entradas 250 (el efecto señuelo no aparece cuando el producto se experimenta; probar en el formato real), 251 (el archivo de Stanford muestra que el liderazgo dio a los guardias una causa; revisar cómo enmarcan los supervisores) y 252 (las advertencias frenan la desinformación solo a veces; guion de siniestros neutro). Pendiente para `cronista`: F-729 no recoge la respuesta de Huber, Payne y Puto (2014) que defiende el efecto; F-658, la réplica de 2020 de Zimbardo y Haney. Poda: 09-29 fusionado al resumen; Bitácora cubre 2026-09-30 a hoy. `fuentes_leidas_lobo.md` actualizado.
