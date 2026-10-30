@@ -60,8 +60,8 @@ cada una se presenta como pregunta: "¿esto resuelve algo de tu cliente y cómo 
 - **Lo claro migra a digital y lo ambiguo llama.** En una aseguradora de salud de EE.UU., el portal bajó 29% las
   llamadas sobre información clara y subió las de pólizas y reclamos; en total, quien usaba el portal llamaba 14% más
   (Kumar y Telang, 2012, F-850 🌐 📚; cuasi experimento, leído por resumen).
-- **El siniestro decide la permanencia, no el canal.** Tras un siniestro, la probabilidad de cambiar de aseguradora
-  sube 35% en 180 días, aunque 94% esté satisfecho (LexisNexis, 2023, F-890 🌐). Lo que más predice la salida es el
+- **El siniestro decide la permanencia, no el canal.** Tras un siniestro, la propensión a considerar cambiarse de
+  aseguradora sube 35%, aunque 94% diga estar en algún grado satisfecho (LexisNexis, 2023, F-890 🌐). Lo que más predice la salida es el
   monto o la pérdida total (CCC, 2024, F-950 🌐).
 - **El ancla explica la permanencia.** Hipoteca, empleo, crédito vehicular, billetera o corredor: el cliente llega y se
   queda por un tercero. Lo crítico es el momento en que el ancla se suelta (P3; Brockett y otros, 2008, F-852 📚: la
