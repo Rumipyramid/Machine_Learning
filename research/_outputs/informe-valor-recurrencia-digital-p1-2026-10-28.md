@@ -544,6 +544,17 @@ nombrado, y se contrasta cada idea con lo que ya sabemos.
 | La penetración financiera es baja, ligada a informalidad y nivel socioeconómico; llegar a esos clientes es caro | Perú tiene la tenencia de seguros privados más baja de la región, 13% (F-906); los microseguros llegan 97,8% por bancos, con comisiones cercanas a 50% (F-902); el mercado se orienta a segmentos de mayor ingreso, alcanzables por canales digitales (F-902) | **Posible sexta forma de valor: alcance.** Usar lo digital para llegar con costo bajo a quien hoy no es rentable atender. 🔧 En Perú, Pacífico Salud lo está intentando: seguro de salud de S/9,90 en Yape, telemedicina propia con unos 80.000 a 90.000 suscriptores y orientación médica por WhatsApp (F-940, F-941, F-942, F-939). Son declaraciones de la empresa, sin datos de uso recurrente, retención ni conversión. Aún no hay evidencia de que funcione como negocio. Es materia de la pregunta 3 |
 | Gestionar las apuestas como un portafolio de inversiones: una base segura y apuestas pequeñas de alta incertidumbre para "tocar el agua" | No es un hallazgo; es un criterio de gestión | Ordenar las decisiones de §5.1 como portafolio (ver decisión 8) |
 
+🔧 **Una segunda entrevista, verificada (30-10-2026).** En El Comercio, el mismo CEO habló del Índice de Inclusión
+Financiera 2026 (F-1036, 🟠 D; declaraciones, sin datos propios del medio). Tres ideas tocan este informe:
+- **El techo del alcance digital:** el indicador de acceso lleva tres años estancado por límites de conectividad,
+  internet y educación financiera; Yape tiene cerca de 18 millones de usuarios sobre unos veintitantos millones de
+  adultos. La sexta forma de valor, el alcance, tiene un tope que no depende del app de la aseguradora.
+- **El crédito como puerta:** dos millones de peruanos tuvieron su primer crédito formal en Yape. La billetera ya no
+  solo paga: presta, y con el crédito vienen los seguros atados a él (pregunta 3).
+- **La experiencia decide:** sobre si TAPP cambiará el reparto entre bancos, "lo más importante es ofrecer la mejor
+  experiencia al cliente. Después, el cliente decidirá". Coincide con la idea de definir contra qué conducta compite el
+  canal: para Yape, el efectivo.
+
 **Lo que no se debe concluir.** La entrevista no prueba que los agentes de IA vayan a comoditizar los seguros ni cuándo.
 Es una señal para el ejercicio de foresight (Anexo B), no una tendencia medida.
 
@@ -890,7 +901,12 @@ Lectura de conjunto: las señales que más pueden cambiar las reglas tocan **có
 - **Iniciación de pagos y TAPP del BCRP** (piloto previsto para diciembre de 2026; F-969, F-971). El cliente autoriza
   una vez desde la app que elija y los pagos se debitan de su cuenta. *Hipótesis:* es la vía para un pago recurrente
   consentido y revocable, en vez de un débito preseleccionado. Importa porque dejar de pagar parece deberse más a la
-  molestia de pagar que al monto (McIntyre y otros, 2021, F-962; contraste EE.UU.).
+  molestia de pagar que al monto (McIntyre y otros, 2021, F-962; contraste EE.UU.). El CEO de Credicorp
+  dice que BCP y Yape "trabajan activamente" en la iniciación de pagos y que TAPP ayudará a ganarle la batalla al
+  efectivo (El Comercio, 2026, F-1036; declaración).
+- **La billetera como puerta al crédito:** dos millones de peruanos obtuvieron su primer crédito formal en Yape, según
+  su CEO (F-1036; declaración). *Inferencia:* si la billetera presta, también puede vender los seguros atados al
+  crédito; es una nueva puerta de bancaseguros que se rige por la regla del desgravamen opcional (F-952).
 - **Finanzas abiertas en Perú: proyecto, no norma** (F-970). Cuentas desde 2028; los seguros entrarían "desde 2029"
   según la prensa, sin confirmar en el texto oficial. El reglamento de Banking as a Service ya está aprobado, pero no
   incluye aseguradoras (F-974).
@@ -1072,6 +1088,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-941** · Gestión (redacción) (2025). *Pacífico Salud: inversión en innovación e infraestructura (20 de octubre de 2025; título truncado en la captura)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-942** · Gestión (entrevista a Guillermo Garrido-Lecca, CEO de Pacífico Salud) (2025). *Pacífico Salud explora zonas para expandir su red y afianza apuesta por diversificar segmentos (21 de julio de 2025)*. 🟠 D. Notas de la usuaria a partir de capturas de gestion.pe; URL no aportada.
 - **F-943** · OSIPTEL (Organismo Supervisor de Inversión Privada en Telecomunicaciones), Encuesta Residencial de Servicios de Telecomunicaciones (Erestel) 2025; vía nota de prensa del organismo y cobertura de medios (2026). *Erestel 2025: ¿cuáles son las herramientas y servicios digitales que más usan los peruanos?*. 🔵 B. [Ver fuente](https://www.osiptel.gob.pe/media/erhitdop/np-erestel-2025_cuáles-son-las-herramientas-y-servicios-digitales-que-más-usan-los-peruanos-revp-rev-jgm-revp.docx)
+- **F-952** · Superintendencia de Banca, Seguros y AFP (Resolución SBS N.° 00890-2025), vía Agencia Andina y diario El Peruano (2025). *Modificación de las normas sobre el seguro de desgravamen (publicada en marzo de 2025; vigente desde el 9 de septiembre de 2025)*. 🔵 B. [Ver fuente](https://andina.pe/agencia/noticia-entidades-financieras-deben-ofrecer-productos-crediticios-y-sin-seguro-desgravamen-1021963.aspx)
 - **F-962** · McIntyre, A. L.; Shepard, M. & Wagner, M. (NBER Working Paper 28630; preparado para AER Papers & Proceedings) (2021). *Can Automatic Retention Improve Health Insurance Market Outcomes?*. 🟡 C. [Ver fuente](https://www.nber.org/papers/w28630)
 - **F-964** · Gestión (con declaraciones de Betterfly al Diario Financiero) (2025). *Chilena Betterfly cierra operación en Perú y cuatro países más: ¿cuál es la razón? (18 de marzo de 2025)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
 - **F-965** · Gestión (cobertura del Insurance Day 2025 de Apeseg) (2025). *Insurance Day 2025: historias reales que están transformando el sector asegurador (26 de mayo de 2025)*. 🟠 D. Nota aportada por la usuaria (recopilación de Gestión).
@@ -1094,3 +1111,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-984** · de Janvry, A.; Ramírez Ritchie, E. & Sadoulet, E. (World Bank Policy Research Working Paper 7715) (2016). *Weather Index Insurance and Shock Coping: Evidence from Mexico's CADENA Program*. 🟡 C. [Ver fuente](https://openknowledge.worldbank.org/handle/10986/24632)
 - **F-985** · Prensa regional (Corresponsables, Bloomberg Línea, Expansión, Pulzo) (2023-2026). *Seguros dentro de billeteras y "sponsors" en LatAm: Klimber con MetLife, Mercado Pago México, Nequi Colombia*. 🟠 D. [Ver fuente](https://www.corresponsables.com/arg/actualidad/klimber-expande-su-operacion-a-uruguay-y-colombia-y-celebra-15-millones-de-asegurados-en-america-latina)
 - **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
+- **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.

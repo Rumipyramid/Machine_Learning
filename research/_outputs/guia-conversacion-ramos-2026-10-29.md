@@ -109,7 +109,8 @@ suscripción que cubre todo el ecosistema de salud (F-964).
   F-902). Un débito preseleccionado puede leerse así.
 - **Señal:** la iniciación de pagos de TAPP (BCRP, piloto en diciembre de 2026, F-971) permitiría un pago recurrente
   autorizado una vez y revocable. En Brasil, pasar la cobranza de primas al pago instantáneo Pix redujo las demoras y
-  bajas del pago con boleto (Microinsurance Network, F-986). *Hipótesis para Perú.*
+  bajas del pago con boleto (Microinsurance Network, F-986). BCP y Yape ya trabajan en la iniciación de pagos, según
+  el CEO de Credicorp (F-1036). *Hipótesis para Perú.*
 
 
 ---
@@ -173,7 +174,8 @@ intermediario es el dueño de la relación (Cummins y Doherty, 2006, F-180 📚)
 
 **Señales.** Finanzas abiertas en Perú, en proyecto: bancos desde 2028 y seguros "desde 2029" según la prensa, sin
 confirmar (F-970). Banking as a Service aprobado, sin aseguradoras (F-974). Seguros inclusivos por bancaseguros: más de
-3 millones de pólizas de S/1 a S/30 en un competidor (F-966).
+3 millones de pólizas de S/1 a S/30 en un competidor (F-966). La billetera ya presta: dos millones de primeros
+créditos formales en Yape (F-1036); con el crédito vienen los seguros atados a él.
 
 **Preguntas para el ramo.**
 1. ¿Qué permite hoy el acuerdo con el banco sobre datos, consentimiento y presencia en su app?
@@ -422,3 +424,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1027** · Microinsurance Network (artículo sobre microseguro móvil) (s.f.). *From connectivity to coverage via collaboration: revisiting mobile microinsurance*. 🟡 C. [Ver fuente](https://microinsurancenetwork.org/posts/from-connectivity-to-coverage-via-collaboration-revisiting-mobile-microinsurance)
 - **F-1028** · Blogs de proveedores de software de seguros (atribuido a LIMRA) (s.f.). *«El onboarding estructurado reduce 20-35% la caducidad del primer año»*. 🔴 E. Sin URL primaria (cifra repetida en blogs de proveedores).
 - **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
+- **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.
