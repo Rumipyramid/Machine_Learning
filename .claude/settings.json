@@ -10,5 +10,16 @@
         ]
       }
     ]
+  },
+  "extraKnownMarketplaces": {
+    "brainme": {
+      "source": {
+        "source": "github",
+        "repo": "jlatorree/brainme"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "brainme@brainme": true
   }
 }
