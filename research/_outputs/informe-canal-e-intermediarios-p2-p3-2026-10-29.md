@@ -32,7 +32,9 @@ método propio), 🟠 D (prensa o blog), 🔴 E (opinión). La escala completa y
 4. **Implicancia.** No conviene una meta única de digitalización. Conviene clasificar las gestiones en tres: las
    que se migran, las que se acompañan (humano al frente y digital para seguir) y las que no se fuerzan.
 
-**Pregunta 3.** Cuando el cliente es de otro, el dueño de la relación es el intermediario.
+**Pregunta 3.** Cuando el cliente llega por otro (banco, billetera, empleador o corredor), ¿de quién es la relación?
+
+**Hipótesis, no hallazgo.** Cuando el seguro es parte del crédito (desgravamen, hipoteca, vehicular), el banco decide: la evidencia lo muestra. En los otros seguros, como vida individual, es posible que el tercero tenga la relación diaria y que la aseguradora también tenga la suya; no está medido para Perú. Conviene preguntárselo a cada ramo.
 
 1. **El intermediario existe por una razón económica.** Reduce asimetrías de información y costos de búsqueda.
    No desaparece porque haya tecnología (Cummins y Doherty, 2006, F-180, 🟢 A). Los canales caros sobreviven
@@ -268,6 +270,11 @@ millones de pólizas) no aportan para esta pregunta: publican volumen y tasa de 
 la aseguradora, que queda detrás de la marca de la plataforma. Esto es inferencia: la relación entre uso diario de la
 billetera y uso del seguro no se midió en ningún estudio encontrado.
 
+**Recuadro: ¿y los programas de recompensas?** No están probados como motor de uso en seguros. En retail funcionan las
+recompensas ligadas a la propia conducta (F-807); corregida la autoselección, el programa de lealtad rinde unas siete
+veces menos (F-805); en salud, los programas de bienestar atraen a quien ya se cuida (F-854). Con prima fija y una o dos
+interacciones al año, el mecanismo del retail no se traslada (inferencia). Detalle en el consolidado, §2.4.
+
 ## B.4 Empleador: el cliente que no eligió
 
 **Lo que se sabe.**
@@ -366,8 +373,11 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-181** · BofA Global Research (vía Fortune) (2026). *$15 billion of the insurance industry is at risk from AI, BofA says*. 🟡 C. [Ver fuente](https://fortune.com/2026/03/03/15-billion-of-the-insurance-industry-is-at-risk-from-ai-bofa-says/)
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-375** · MAPFRE Economics (2024) y McKinsey & Company (2025) (2023-2025). *El mercado asegurador latinoamericano en 2023; Informe Global de Seguros 2025: en busca del crecimiento en América Latina*. 🔵 B. [Ver fuente](https://www.mckinsey.com/locations/south-america/latam/hispanoamerica-en-potencia/informe-global-de-seguros-2025-en-busca-del-crecimiento-en-america-latina/es-CL)
+- **F-805** · Leenheer, J.; van Heerde, H.; Bijmolt, T.; Smidts, A. (2007). *Do loyalty programs really enhance behavioral loyalty? An empirical analysis accounting for self-selecting members (Int. J. Res. Mark. 24(1):31-47)*. 🟢 A. [Ver fuente](https://repository.tilburguniversity.edu/items/3fc12a59-7823-4842-9792-de0262adaea7)
+- **F-807** · Ho, Y.-J.; Liu, S.; Wang, L. (2023). *Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147)*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/fpi/10.1287/isre.2022.1147)
 - **F-850** · Kumar, A. & Telang, R. (Information Systems Research 23(3-1):721-737) (2012). *Does the Web Reduce Customer Service Cost? Empirical Evidence from a Call Center*. 🟢 A. [Ver fuente](https://doi.org/10.1287/isre.1110.0390)
 - **F-851** · Turley, M. et al. (American Journal of Managed Care) (2012). *Patient portal use and health plan membership retention (Kaiser Permanente Northwest, My Health Manager)*. 🟢 A. [Ver fuente](https://pmc.ncbi.nlm.nih.gov/articles/PMC4215918)
+- **F-854** · Jones, D.; Molitor, D.; Reif, J. (Quarterly Journal of Economics 134(4):1747-1791) (2019). *What Do Workplace Wellness Programs Do? Evidence from the Illinois Workplace Wellness Study*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:oup:qjecon:v:134:y:2019:i:4:p:1747-1791.)
 - **F-872** · J.D. Power (2025). *2025 U.S. Claims Digital Experience Study*. 🟡 C. [Ver fuente](https://www.jdpower.com/business/press-releases/2025-us-claims-digital-experience-study/)
 - **F-890** · LexisNexis Risk Solutions (2023). *Moment of Truth: claims satisfaction and auto insurance switching (whitepaper)*. 🟡 C. [Ver fuente](https://www.claimsjournal.com/news/national/2023/06/08/317385.htm)
 - **F-892** · Accenture (vía PropertyCasualty360) (2014). *Customer loyalty: it's more than just claims satisfaction*. 🟡 C. [Ver fuente](https://www.propertycasualty360.com/2014/11/01/customer-loyalty-its-more-than-just-claims-satisfaction/)

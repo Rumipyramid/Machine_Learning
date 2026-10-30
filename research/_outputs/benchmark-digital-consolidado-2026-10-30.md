@@ -24,8 +24,9 @@ banca, salud, retail y otras industrias como análogos; RIMAC no se usa como cas
    ambiguo llama. Conviene tener tres metas (migrar, acompañar, no forzar) en vez de una.
 3. **El siniestro son dos momentos y decide la permanencia.** El aviso va por teléfono; el seguimiento debería ser
    digital y proactivo, que es donde más satisfacción se gana y donde la industria cumple menos.
-4. **Cuando el cliente llega por otro, el dueño de la relación es el intermediario.** El banco, la billetera o el
-   empleador venden a escala, pero la permanencia la decide el ancla, no el app.
+4. **Cuando el cliente llega por otro, la relación puede ser del intermediario (hipótesis).** El banco, la billetera o
+   el empleador venden a escala. En los seguros atados a un crédito, la permanencia la decide el ancla (dato). En los
+   demás, como vida individual, falta saber si la aseguradora también tiene su propia relación.
 5. **Lo que cambia la conducta es cómo y cuándo se cobra, y la información útil.** Regalar acceso, informar más o
    sumar beneficios sin relación con el seguro rara vez cambia la conducta real.
 6. **Primero el core, después razones nuevas para entrar.** Arreglar pagar, renovar y el siniestro rinde más que
@@ -156,9 +157,11 @@ el cliente que resolvió rápido no vuelve a entrar.
 
 ## 4. Pregunta 3 · Cuando el cliente es de otro
 
-### 4.1 El intermediario es el dueño de la relación
+### 4.1 Quién tiene la relación con el cliente
 
 **Mensaje: el intermediario existe por una razón económica y no desaparece con la tecnología.**
+
+**Hipótesis, no hallazgo.** Cuando el seguro es parte del crédito (desgravamen, hipoteca, vehicular), el banco decide: la evidencia lo muestra. En los otros seguros, como vida individual, es posible que el tercero tenga la relación diaria y que la aseguradora también tenga la suya; no está medido para Perú. Conviene preguntárselo a cada ramo.
 
 - Reduce asimetrías de información y costos de búsqueda (Cummins y Doherty, 2006, F-180, 🟢 A 📚).
 - Los canales caros sobreviven cuando aportan servicio o mejor manejo de conflictos (Rubio-Misas, 2022, F-923,
@@ -198,6 +201,11 @@ el cliente que resolvió rápido no vuelve a entrar.
 - 🌐 En un caso de afiliación por autoservicio con descuento por planilla, la caída de pólizas fue 45% mayor a la
   esperada (F-958, 🟡 C 📚); en México, 47% perdió el seguro al cambiar de trabajo (F-898, 🟡 C).
 - La compra de salud se negocia en el hogar (Davis, 1976, F-236, 🟢 A 📚).
+
+**Recuadro: ¿y los programas de recompensas?** No están probados como motor de uso en seguros. En retail funcionan
+las recompensas ligadas a la propia conducta (F-807); corregida la autoselección, el programa de lealtad rinde unas
+siete veces menos (F-805); y en salud, los programas de bienestar atraen a quien ya se cuida (F-854). Detalle en §2.4.
+*Inferencia:* con prima fija y una o dos interacciones al año, el mecanismo del retail no se traslada.
 
 ### 4.5 La implicancia: diseñar la salida del ancla
 
@@ -263,7 +271,7 @@ adopción.**
 7. Paramétricos: de señal futura a reglamento vigente, con tomador colectivo.
 
 **Se mantuvo:** la recurrencia vale si resuelve; lo claro migra y lo urgente llama; el siniestro son dos momentos; las
-tres metas; el intermediario dueño de la relación; primero el core; medir contra grupo de control.
+tres metas; la relación del intermediario como hipótesis a probar con cada ramo; primero el core; medir contra grupo de control.
 
 ---
 
@@ -303,7 +311,7 @@ Perú sobre el siniestro; qué parte de las primas se vende por cada canal en Pe
 | 6 | Lo claro migra; lo urgente y ambiguo llama | 3.1 |
 | 7 | El siniestro son dos momentos | 3.2 |
 | 8 | Tres metas en vez de una | 3.3 |
-| 9 | El intermediario es el dueño de la relación | 4.1 a 4.4 |
+| 9 | La relación puede ser del intermediario (hipótesis fuera del crédito) | 4.1 a 4.4 |
 | 10 | Diseñar la salida del ancla | 4.5 |
 | 11 | Qué cambia la conducta | 5 |
 | 12 | Señales que pueden cambiar las reglas | 6 |
@@ -326,6 +334,7 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (*Accident Analysis & Prevention*)*. 🟢 A. [Ver fuente](https://www.sciencedirect.com/journal/accident-analysis-and-prevention · https://clinicaltrials.gov/study/NCT06101251)
 - **F-786** · SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado) (2026). *Reglamento de Seguros Paramétricos*. 🔵 B. [Ver fuente](https://elperuano.pe/noticia/304594-sbs-aprueba-reglamento-de-seguros-parametricos-para-su-funcionamiento-en-el-mercado-peruano · https://lpderecho.pe/reglamento-de-seguros-parametricos-resolucion-sbs-02260-2026/)
 - **F-805** · Leenheer, J.; van Heerde, H.; Bijmolt, T.; Smidts, A. (2007). *Do loyalty programs really enhance behavioral loyalty? An empirical analysis accounting for self-selecting members (Int. J. Res. Mark. 24(1):31-47)*. 🟢 A. [Ver fuente](https://repository.tilburguniversity.edu/items/3fc12a59-7823-4842-9792-de0262adaea7)
+- **F-807** · Ho, Y.-J.; Liu, S.; Wang, L. (2023). *Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147)*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/fpi/10.1287/isre.2022.1147)
 - **F-808** · Bies, S. M. T. A.; Bronnenberg, B. J. & Gijsbrechts, E. (International Journal of Research in Marketing 38(4):877-899; DOI 10.1016/j.ijresmar.2021.02.001) (2021). *How push messaging impacts consumer spending and reward redemption in store-loyalty programs*. 🟢 A. [Ver fuente](https://doi.org/10.1016/j.ijresmar.2021.02.001)
 - **F-847** · Campbell, D. & Frei, F. (Management Science 56(1):4-24) (2010). *Cost Structure, Customer Profitability, and Retention Implications of Self-Service Distribution Channels*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.1090.1132)
 - **F-848** · Xue, M.; Hitt, L. M.; Chen, P. (Management Science 57(2):291-307) (2011). *Determinants and Outcomes of Internet Banking Adoption*. 🟢 A. [Ver fuente](https://doi.org/10.1287/mnsc.1100.1187)
