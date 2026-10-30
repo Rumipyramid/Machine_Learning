@@ -63,8 +63,9 @@ cada una se presenta como pregunta: "¿esto resuelve algo de tu cliente y cómo 
 - **El siniestro decide la permanencia, no el canal.** Tras un siniestro, la propensión a considerar cambiarse de
   aseguradora sube 35%, aunque 94% diga estar en algún grado satisfecho (LexisNexis, 2023, F-890 🌐). Lo que más predice la salida es el
   monto o la pérdida total (CCC, 2024, F-950 🌐).
-- **El ancla explica la permanencia.** Hipoteca, empleo, crédito vehicular, billetera o corredor: el cliente llega y se
-  queda por un tercero. Lo crítico es el momento en que el ancla se suelta (P3; Brockett y otros, 2008, F-852 📚: la
+- **El ancla explica la permanencia en los seguros atados a un crédito (dato); en los demás es hipótesis.** Hipoteca,
+  empleo, crédito vehicular, billetera o corredor: el cliente puede llegar y quedarse por un tercero, pero en vida
+  individual y otros no está medido si la aseguradora también tiene su propia relación. Lo crítico es el momento en que el ancla se suelta (P3; Brockett y otros, 2008, F-852 📚: la
   primera cancelación predice la fuga del hogar).
 
 ### 2.2 Tres reglas de lectura para las conversaciones
@@ -156,7 +157,8 @@ La versión interna trae aquí cartera, clientes con cuenta por rol (titular y d
 app del banco socio.
 
 **Qué forma de valor aplica.** Alcance, con el riesgo de que la relación sea del banco o del empleador. El
-intermediario es el dueño de la relación (Cummins y Doherty, 2006, F-180 📚).
+intermediario existe por razones económicas (Cummins y Doherty, 2006, F-180 📚); que además sea el dueño de la
+relación es una hipótesis a conversar.
 
 **Evidencia y casos.**
 - **Regulación peruana:** desde septiembre de 2025, las entidades deben ofrecer al menos un crédito de consumo que no
