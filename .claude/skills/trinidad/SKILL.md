@@ -31,6 +31,11 @@ en vez de `trinidad` — no fuerces las tres cuando solo una aplica.
 
 ### Paso 1: Tipologizar el tema una sola vez, para las tres pistas
 
+Si el tema es amplio o caro de investigar, arma primero el plan con `/rastreo`
+(`.claude/skills/rastreo/SKILL.md`): parte de la decisión que alimenta la investigación y de
+lo que el cerebro ya sabe, y reparte preguntas, prioridades y criterios de parada entre las
+tres pistas. Lo que el cerebro ya tiene documentado no se vuelve a buscar.
+
 Antes de lanzar ninguna búsqueda, identifica en una sola pasada qué aristas tiene el tema
 para cada registro:
 
@@ -72,6 +77,10 @@ académico con validación social ni con evidencia de negocio: son ejes distinto
 cosas distintas.
 
 ### Paso 3: Consolidar sin contaminar
+
+Juzga lo encontrado con `/criterio` (`.claude/skills/criterio/SKILL.md`): rigor de la fuente
+y madurez de la afirmación como dos ejes separados, filtros de juicio y auditoría hacia
+adentro antes de cerrar.
 
 Al armar el reporte final, mantén las tres pistas **visualmente separadas**. Nunca uses
 una fuente de una pista para respaldar la conclusión de otra: no uses volumen de tuits
