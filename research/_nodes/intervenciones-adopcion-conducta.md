@@ -1,7 +1,7 @@
 # Intervenciones que cambiaron (o no) la adopción y la conducta: seguros e industrias análogas
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-29 · Versión: v1.0
+> Fecha de elaboración: 2026-10-29 · Última actualización: 2026-10-30 (suma F-1031 a F-1035 y F-4 ampliada) · Versión: v1.0
 > Origen: ampliación del benchmarking para la Gerencia de Digital de RIMAC (RIMAC excluida como caso). Registro del
 > proyecto más una búsqueda nueva para los vacíos (onboarding, cobranza, microfinanzas, pagos, salud, educación,
 > impuestos y servicios públicos).
@@ -19,6 +19,7 @@
 1. **Cuándo y cómo se cobra pesa más que el mensaje.** Cobrar la prima en la cosecha llevó la contratación de 5% a 72%
    en Kenia (Casaburi y Willis, 2018, F-988). Dejar de pagar responde más a la molestia de pagar que al monto (F-962).
    La flexibilidad tiene costo: un periodo de gracia en microcrédito triplicó el no pago (F-998).
+   Pagar y renovar por el celular se asocia a 17,4 puntos más de renovación en Ghana (F-1031; observacional).
 2. **Acceso no es uso.** Seguros y cuentas gratis o subsidiados se adoptan y se abandonan: Nicaragua (F-989), Kenia
    (F-991), Chile, Malawi y Uganda (F-1002). En Indonesia, ni la ayuda para registrarse más un subsidio pasó de 30%
    (F-1011).
@@ -29,7 +30,9 @@
    tiempo +7% a 9% (F-997); solo funcionó con el nombre de un asesor conocido (F-999); la visita supera a la carta
    (F-1020); el efecto decae entre mensajes (F-1022).
 5. **La conducta cambia cuando el producto devuelve información útil y verificable.** Telemetría con
-   retroalimentación (F-442) y saldo visible en la tarjeta de débito (F-1001).
+   retroalimentación (F-442) y saldo visible en la tarjeta de débito (F-1001). Informar más, en cambio, no basta: comunicaciones
+   más claras no hicieron cambiar de cuenta a 124.000 ahorristas (F-1033). Lo que cuenta es seguir usando el app, no
+   descargarla (F-1035). Revelar al inicio que se habla con un bot bajó la compra 79,7% (F-1034).
 6. **Muchas métricas celebradas son de alcance.** Afiliación automática sin uso medido (F-1012, F-1027), usuarios
    diarios sin retención (F-859), millones de pólizas embebidas sin renovación publicada (F-965, F-985).
 
