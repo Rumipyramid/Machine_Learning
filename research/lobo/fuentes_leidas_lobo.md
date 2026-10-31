@@ -270,3 +270,6 @@
 | F-729 | 🟢 A | 2026-10-30 | Intuición 250 — el efecto señuelo no aparece cuando el producto se experimenta; probar en el formato real (ficha y resumen; lectura débil) |
 | F-658 | 🟢 A | 2026-10-30 | Intuición 251 — Stanford: el liderazgo dio a los guardias una causa; revisar cómo enmarcan los supervisores (repositorio y notas; lectura débil) |
 | F-733 | 🟢 A | 2026-10-30 | Intuición 252 — las advertencias frenan la desinformación solo a veces; guion de siniestros neutro (ficha y PubMed; lectura débil) |
+| F-670 | 🟢 A | 2026-10-31 | Intuición 253 — el «tiempo lento» del miedo es memoria, no percepción; contrastar el relato del siniestro con registros (ficha y PMC; lectura débil) |
+| F-655 | 🟢 A | 2026-10-31 | Intuición 254 — Milgram como seguidismo comprometido; corregir la causa que da el líder (ficha y resumen; lectura débil) |
+| F-812 | 🟢 A | 2026-10-31 | Intuición 255 — lealtad: autoselección y erosión a 6-9 meses; comparar contra no afiliados y medir a 9-12 meses (resumen; lectura débil) |

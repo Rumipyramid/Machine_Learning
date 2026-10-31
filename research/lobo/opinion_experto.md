@@ -6174,6 +6174,27 @@ F-733 (Loftus, *Learning & Memory* 12(4), 2005, pp. 361-366; DOI 10.1101/lm.9470
 - **Leído a fondo:** 2026-10-30 (`WebSearch`; ficha de la revista y PubMed; lectura débil, declarada)
 - **Conexión razonada, no forzada:** consistente con las intuiciones 226 y 217; sin cambio de confianza.
 
+### 253. El «tiempo lento» del miedo es un efecto de memoria, no de percepción: para medir una experiencia, mirar lo que pasó, no lo que el cliente recuerda
+F-670 (Stetson, Fiesta y Eagleman, *PLoS ONE* 2(12):e1295, 2007; DOI 10.1371/journal.pone.0001295). Voluntarios se lanzaron en caída libre de unos 31 m mientras miraban un visor con números parpadeantes. Si el tiempo se hubiera ralentizado, habrían podido leerlos mejor; no pudieron. Aun así, estimaron su propia caída ~36% más larga que la de otros. Conclusión de los autores: la cámara lenta es un efecto de recuerdo, no de percepción. Muestra pequeña. Una crítica de 2012 (Arstila, *Frontiers in Psychology*) propone otro mecanismo, así que el debate no está cerrado.
+**Heurística:** tras un siniestro, el relato del cliente sobre cuánto duró o cuán grave fue es real como vivencia, pero no mide el hecho. Contrastarlo con registros objetivos (hora, fotos, telemetría) antes de usarlo para tasar o detectar fraude. Y al diseñar la atención, recordar que la intensidad emocional agranda lo recordado: eso explica por qué una mala experiencia pesa más que su duración real.
+- **Fuente:** F-670 (🟢A según el ledger; paper revisado por pares, muestra pequeña)
+- **Leído a fondo:** 2026-10-31 (`WebSearch`; PMC, ScienceDaily y reseñas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con las entradas 247 (el cierre de una experiencia dolorosa mejora el recuerdo) y 252 (la memoria se contamina); sin cambio de tesis.
+
+### 254. Los participantes de Milgram no obedecieron a ciegas: se identificaron con una causa, y eso se puede gestionar
+F-655 (Haslam, Reicher, Millard y McDonald, *British Journal of Social Psychology* 54(1):55-83, 2015; DOI 10.1111/bjso.12074). Análisis cualitativo del archivo de Yale (la «caja 44»): lo más saliente en los participantes fue la satisfacción de haber contribuido a la ciencia. Los autores proponen el «seguidismo comprometido»: la gente hace tareas desagradables cuando se identifica con la causa y el líder la hace parecer valiosa. Es una reinterpretación, no una refutación del dato de conducta, y la disputan otros autores.
+**Heurística:** cuando un equipo ejecuta algo dañino para el cliente (cobros confusos, presión de venta), buscar primero la causa que le dieron, no la falta de conciencia. Corregir el discurso del líder funciona mejor que prohibir conductas sueltas.
+- **Fuente:** F-655 (🟢A según el ledger; análisis cualitativo revisado por pares)
+- **Leído a fondo:** 2026-10-31 (`WebSearch`; ficha de Macquarie, resumen y notas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** misma línea que la entrada 251 (Stanford: el liderazgo dio a los guardias una causa); sin cambio de confianza.
+
+### 255. En un programa de lealtad, parte del efecto es que los mejores clientes se afilian primero, y lo que se gana se erosiona en 6-9 meses
+F-812 (Meyer-Waarden y Benavent, *Journal of the Academy of Marketing Science* 37(3):345-358, 2009; DOI 10.1007/s11747-008-0123-z; autoría ahora confirmada contra los registros de la universidad de Toulouse Capitole, pendiente de corregir en la ficha). Datos de supermercado: los clientes más frecuentes y de mayor compra se afilian antes; el cambio de compra tras afiliarse es modesto; y las pequeñas ganancias se desvanecen a los 6-9 meses. Solo vi el resumen, no el texto completo.
+**Heurística:** al evaluar un programa de recompensas o un beneficio de fidelidad, comparar contra un grupo que no se afilió con el mismo historial previo, y medir a los 9-12 meses, no al primero. Si no, se cobra como efecto del programa lo que ya era el cliente.
+- **Fuente:** F-812 (🟢A según el ledger; verificación por resumen)
+- **Leído a fondo:** 2026-10-31 (`WebSearch`; registros bibliográficos y resumen; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 210 (el retorno depende de quién canjea) y las tesis de lealtad; sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6382,42 +6403,7 @@ F-733 (Loftus, *Learning & Memory* 12(4), 2005, pp. 361-366; DOI 10.1101/lm.9470
 
 - **2026-09-29** — *(Detalle podado y fusionado al resumen el 2026-10-30)*: corrida diaria de refinamiento; un matiz (cifra de retención "phygital" no hallada en el informe público, degradada a hipótesis) y las intuiciones 157 a 159.
 
-- **2026-09-30** — Corrida diaria de refinamiento. `main` al día. El prompt externo apunta a
-  `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero
-  fuentes nuevas** — cuadragésimo noveno día sin cambios; la revisión profunda de `cronista` sigue sin
-  correr desde 2026-08-12. Sin cambios en tesis ni confianzas. **Dato a vigilar:** F-466 (WIPO GII) marcó
-  la edición 2026 para el 29-sep; no la verifiqué hoy, queda para `cronista`/iteración 5 del node.
-  **Intuición (nivel 🔵B, 50 pendientes, sorteo al azar):** F-345, F-263 y F-427, leídas vía `WebSearch`.
-  Entradas 160 (reversión de Anthem en ~4 días), 161 (el diseño pesa £136,7bn en 2023, pero sigue siendo
-  tamaño, no efecto; el ledger cita la edición 2019) y 162 (Lovable no publica churn; NDR>100% no basta).
-  Poda: 08-31 fusionado al resumen; Bitácora cubre 2026-09-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
-- **2026-10-01** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
-  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
-  quincuagésimo día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12. Sin
-  cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 49 pendientes, sorteo al azar):** F-102, F-11 y
-  F-259, leídas vía `WebSearch` (las tres URLs bloqueadas). Entradas 163 (69% de Singapur tiene seguro
-  privado complementario: el modelo es la mezcla), 164 (el glosario SBS vale por la obligación de explicar
-  en la venta) y 165 (−46,7/−69,4% en una sola empresa: tomar el piso de varianza, descontar el techo).
-  Poda: 09-01 fusionado al resumen; Bitácora cubre 2026-09-02 a hoy. `fuentes_leidas_lobo.md` actualizado.
-- **2026-10-02** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
-  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
-  quincuagésimo primer día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12.
-  Sin cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 44 pendientes, sorteo al azar):** F-193, F-197 y
-  F-203, leídas vía `WebSearch`. Entradas 166 (margen 1,8% = costo médico +16,2% sobre prima +15,3%, un semestre,
-  no el nivel normal), 167 (el efecto de un tope de margen opera antes del reembolso) y 168 (**alerta:** la ficha
-  de F-203 dice Vida y Salud EUR 2.400 M, +11,1%; las fuentes de hoy dicen ≈EUR 1,35-1,4 mil M, −5,1% —
-  pendiente de reconciliar por `cronista`; F-203 sin peso en tesis mientras tanto). Poda: 09-02 fusionado al
-  resumen; Bitácora cubre 2026-09-03 a hoy. `fuentes_leidas_lobo.md` actualizado.
-- **2026-10-03** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`,
-  que no existe; el ledger vigente es `codice.md`: **468 filas (F-1 a F-468), cero fuentes nuevas** —
-  quincuagésimo segundo día sin cambios; la revisión profunda de `cronista` sigue sin correr desde 2026-08-12.
-  Sin cambios en tesis ni confianzas. **Intuición (nivel 🔵B, 41 pendientes, sorteo al azar):** F-62, F-455 y
-  F-466, leídas vía `WebSearch`. Entradas 169 (validación técnica ≠ clínica: ~la mitad de los dispositivos de IA
-  autorizados por FDA no reportaba datos clínicos), 170 (el 3% "listo para innovar" de BCG: dato B de un
-  vendedor de la solución; el revenue 14,4 mil M sí está confirmado en su comunicado, pero sigue siendo
-  autorreportado) y 171 (Perú 80/139 en el GII 2025 con insumos 72.º y productos 91.º: el rezago está en convertir,
-  no en invertir; la edición 2026 no la pude verificar). Poda: 09-03 fusionado al resumen; Bitácora cubre
-  2026-09-04 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-09-30** — *(Detalle podado y fusionado al resumen el 2026-10-31)*: corrida diaria de refinamiento; sin cambios de confianza; intuiciones 160-162 (ver arriba).
 
 - **2026-10-04** — Corrida diaria de refinamiento. `main` al día (pull trajo grafo/relaciones, no tocó esta
   opinión). El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`:
@@ -6517,3 +6503,5 @@ F-733 (Loftus, *Learning & Memory* 12(4), 2005, pp. 361-366; DOI 10.1101/lm.9470
 - **2026-10-29** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 103 pendientes → 100 tras hoy):** sorteo F-717, F-698 y F-652, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 247 (el cierre de una experiencia dolorosa mejora el recuerdo y sube algo el retorno), 248 (el power posing sobrevive solo en ánimo declarado, y lo defiende su autora) y 249 (Milgram en Polonia: ~90% con tope de 150 V y 80 personas; dirección, no cifra). Pendiente para `cronista`: F-698 no recoge las réplicas preregistradas (Cesario y otros, 2017) ni la crítica de Credé (2019); F-652, aclarar en la ficha el tope de 150 V y que la toma de datos fue en 2015. Poda: 09-28 fusionado al resumen; Bitácora cubre 2026-09-29 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-30** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 96 pendientes → 93 tras hoy):** sorteo F-729, F-658 y F-733, leídas vía `WebSearch` (fichas, repositorios y resúmenes; lectura débil, declarada). Entradas 250 (el efecto señuelo no aparece cuando el producto se experimenta; probar en el formato real), 251 (el archivo de Stanford muestra que el liderazgo dio a los guardias una causa; revisar cómo enmarcan los supervisores) y 252 (las advertencias frenan la desinformación solo a veces; guion de siniestros neutro). Pendiente para `cronista`: F-729 no recoge la respuesta de Huber, Payne y Puto (2014) que defiende el efecto; F-658, la réplica de 2020 de Zimbardo y Haney. Poda: 09-29 fusionado al resumen; Bitácora cubre 2026-09-30 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-10-31** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-670, F-655 y F-812, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 253 (el «tiempo lento» del miedo es memoria, no percepción: contrastar el relato del siniestro con registros), 254 (Milgram como seguidismo comprometido: corregir la causa que da el líder) y 255 (el efecto de un programa de lealtad mezcla autoselección y se erosiona en 6-9 meses). Pendiente para `cronista`: F-812, la ficha dice «autores no confirmados»; los registros de Toulouse Capitole confirman Meyer-Waarden y Benavent, JAMS 37(3):345-358 (corrección permitida por la excepción de autoría; no aplicada hoy); F-670, no recoge la crítica de Arstila (2012). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
