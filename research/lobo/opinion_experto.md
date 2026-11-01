@@ -6195,6 +6195,27 @@ F-812 (Meyer-Waarden y Benavent, *Journal of the Academy of Marketing Science* 3
 - **Leído a fondo:** 2026-10-31 (`WebSearch`; registros bibliográficos y resumen; lectura débil, declarada)
 - **Conexión razonada, no forzada:** refuerza la entrada 210 (el retorno depende de quién canjea) y las tesis de lealtad; sin cambio de confianza.
 
+### 256. Un modelo que imita a una encuesta puede parecer representativo solo porque responde casi al azar
+F-560 (Dominguez-Olmedo, Hardt y Mendler-Dünner, NeurIPS 2024, presentación oral). Contra la encuesta del censo de EE. UU., las respuestas de 43 modelos de lenguaje las gobiernan el orden y la etiqueta de las opciones (sesgo hacia la «A»). Al aleatorizar el orden, los modelos tienden a responder casi al azar. Por eso parecen representar mejor a los subgrupos cuya distribución real ya es cercana a la uniforme. Solo vi el resumen oficial y fichas; las versiones del preprint citan entre 39 y 43 modelos.
+**Heurística:** antes de creer que una muestra sintética «representa» a un grupo, aleatorizar el orden de las opciones y comparar contra una respuesta uniforme al azar. Si el parecido con el grupo no supera al azar, no mide nada.
+- **Fuente:** F-560 (🟢A según el ledger; verificación por resumen)
+- **Leído a fondo:** 2026-11-01 (`WebSearch`; resumen de NeurIPS y fichas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 212 (una muestra sintética acierta la media y falla dispersión y coeficientes); sin cambio de confianza.
+
+### 257. Un modelo que predice bien sirve para generar hipótesis, no para explicar la decisión
+F-569 (Ludwig y Mullainathan, *Quarterly Journal of Economics* 139(2), 2024). Un modelo que solo ve la foto de ficha policial capta hasta la mitad de la variación predecible en las decisiones de detención de los jueces. Los autores lo usan como punto de partida: personas evalúan imágenes modificadas y proponen rasgos nuevos («bien arreglado», «cara abultada») que luego se prueban. Aclaran que predice la conducta del juez, no la del acusado. Solo vi resumen y fichas.
+**Heurística:** cuando un modelo predice una decisión (de un suscriptor, de un asesor), pedirle hipótesis legibles y probarlas con personas. No tratar el predictor como explicación ni como regla de negocio.
+- **Fuente:** F-569 (🟢A según el ledger; verificación por resumen)
+- **Leído a fondo:** 2026-11-01 (`WebSearch`; ficha de NBER y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 198 (un predictor flexible detecta fallas de la teoría, no es teoría); sin cambio de confianza.
+
+### 258. El efecto de las poses de poder sobrevive solo en lo que la persona dice sentir
+F-695 (Carney, Cuddy y Yap, *Psychological Science* 21(10), 2010; N = 42). Una réplica con 200 personas (Ranehill y otros, 2015) halló efecto en la sensación de poder declarada, pero no en hormonas ni en tolerancia al riesgo. Otras tres réplicas grandes tampoco hallaron efecto en conducta. Dos análisis de la curva de valores p discrepan: Simmons y Simonsohn (2017) ven evidencia débil; Cuddy, Schultz y Fosse (2018) ven efecto en sensación de poder. Solo vi resúmenes y secundarias.
+**Heurística:** si un efecto sobrevive únicamente en el autorreporte y cae en la conducta medida, no diseñar producto sobre la conducta. Si el negocio vive de la percepción (confianza, ánimo), probarlo con medidas de conducta propias.
+- **Fuente:** F-695 (🟢A según el ledger; sus límites ya constan en la ficha)
+- **Leído a fondo:** 2026-11-01 (`WebSearch`; resúmenes y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 248 (el power posing sobrevive solo en ánimo declarado); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6248,7 +6269,7 @@ F-812 (Meyer-Waarden y Benavent, *Journal of the Academy of Marketing Science* 3
 - **2026-08-01 a 2026-08-30** — *(Detalle diario original podado el 2026-09-10 al salir por completo
   de la ventana de ~30 días. El bloque se volvió a resumir y fusionar 21 veces desde entonces, cada
   vez que el día más antiguo salía de la ventana de ~30 días (de 08-10 el 2026-09-10 hasta, más
-  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28 y 09-28→2026-10-29 y 09-29→2026-10-30; lista completa de fusiones
+  recientemente, 08-27→2026-09-26, 08-28→2026-09-27 y 08-29→2026-09-28 y 08-30→2026-09-29 y 08-31→2026-09-30 y 09-01→2026-10-01 y 09-27→2026-10-28 y 09-28→2026-10-29 y 09-29→2026-10-30 y 09-30→2026-10-31; lista completa de fusiones
   intermedias omitida aquí por brevedad — no hay pérdida de información: el detalle de cada tesis
   creada o matizada en esta ventana vive en 🎯 Tesis vigentes y el de cada Intuición en su propia
   sección, cada una con su propia fecha de "Actualizado"/lectura.)* Veintiocho corridas.
@@ -6403,8 +6424,6 @@ F-812 (Meyer-Waarden y Benavent, *Journal of the Academy of Marketing Science* 3
 
 - **2026-09-29** — *(Detalle podado y fusionado al resumen el 2026-10-30)*: corrida diaria de refinamiento; un matiz (cifra de retención "phygital" no hallada en el informe público, degradada a hipótesis) y las intuiciones 157 a 159.
 
-- **2026-09-30** — *(Detalle podado y fusionado al resumen el 2026-10-31)*: corrida diaria de refinamiento; sin cambios de confianza; intuiciones 160-162 (ver arriba).
-
 - **2026-10-04** — Corrida diaria de refinamiento. `main` al día (pull trajo grafo/relaciones, no tocó esta
   opinión). El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`:
   **528 filas (F-1 a F-528), +60 desde la última entrada (F-469 a F-528)**, primer movimiento del ledger en
@@ -6505,3 +6524,5 @@ F-812 (Meyer-Waarden y Benavent, *Journal of the Academy of Marketing Science* 3
 - **2026-10-30** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 96 pendientes → 93 tras hoy):** sorteo F-729, F-658 y F-733, leídas vía `WebSearch` (fichas, repositorios y resúmenes; lectura débil, declarada). Entradas 250 (el efecto señuelo no aparece cuando el producto se experimenta; probar en el formato real), 251 (el archivo de Stanford muestra que el liderazgo dio a los guardias una causa; revisar cómo enmarcan los supervisores) y 252 (las advertencias frenan la desinformación solo a veces; guion de siniestros neutro). Pendiente para `cronista`: F-729 no recoge la respuesta de Huber, Payne y Puto (2014) que defiende el efecto; F-658, la réplica de 2020 de Zimbardo y Haney. Poda: 09-29 fusionado al resumen; Bitácora cubre 2026-09-30 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-10-31** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-670, F-655 y F-812, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 253 (el «tiempo lento» del miedo es memoria, no percepción: contrastar el relato del siniestro con registros), 254 (Milgram como seguidismo comprometido: corregir la causa que da el líder) y 255 (el efecto de un programa de lealtad mezcla autoselección y se erosiona en 6-9 meses). Pendiente para `cronista`: F-812, la ficha dice «autores no confirmados»; los registros de Toulouse Capitole confirman Meyer-Waarden y Benavent, JAMS 37(3):345-358 (corrección permitida por la excepción de autoría; no aplicada hoy); F-670, no recoge la crítica de Arstila (2012). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-11-01** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-560, F-569 y F-695, leídas vía `WebSearch` (resúmenes, fichas y secundarias; lectura débil, declarada). Entradas 256 (una muestra sintética parece representativa si responde casi al azar: comparar contra el azar), 257 (un predictor que acierta sirve para generar hipótesis, no para explicar) y 258 (las poses de poder sobreviven solo en lo declarado). Pendiente para `cronista`: F-560, las versiones del preprint citan entre 39 y 43 modelos; F-695, no recoge las réplicas de 2015 a 2017 ni el debate de la curva de valores p (2017-2018). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.

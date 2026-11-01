@@ -273,3 +273,6 @@
 | F-670 | 🟢 A | 2026-10-31 | Intuición 253 — el «tiempo lento» del miedo es memoria, no percepción; contrastar el relato del siniestro con registros (ficha y PMC; lectura débil) |
 | F-655 | 🟢 A | 2026-10-31 | Intuición 254 — Milgram como seguidismo comprometido; corregir la causa que da el líder (ficha y resumen; lectura débil) |
 | F-812 | 🟢 A | 2026-10-31 | Intuición 255 — lealtad: autoselección y erosión a 6-9 meses; comparar contra no afiliados y medir a 9-12 meses (resumen; lectura débil) |
+| F-560 | 🟢 A | 2026-11-01 | Intuición 256 — una muestra sintética parece representativa si responde casi al azar; comparar contra el azar (resumen de NeurIPS; lectura débil) |
+| F-569 | 🟢 A | 2026-11-01 | Intuición 257 — un predictor que acierta sirve para generar hipótesis, no para explicar (ficha y resúmenes; lectura débil) |
+| F-695 | 🟢 A | 2026-11-01 | Intuición 258 — las poses de poder sobreviven solo en lo declarado; no diseñar sobre conducta (resúmenes y secundarias; lectura débil) |
