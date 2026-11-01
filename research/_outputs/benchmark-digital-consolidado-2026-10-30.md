@@ -84,7 +84,7 @@ el cliente que resolvió rápido no vuelve a entrar.
 
 - 🌐 En banca, lo digital se asocia a más retención aun controlando quién adopta (Campbell y Frei, 2010, F-847, 🟢 A
   📚); pero el canal en línea también subió el total de contactos y el costo de servir.
-- 🌐 Ser nativo digital no garantiza retención: Lemonade retiene 85% de sus primas año a año (F-857, 🔵 B).
+- 🌐 Lemonade, nativa digital, reporta una retención anual en dólares de 85% (86% el año anterior), en parte por no renovar pólizas de hogar a propósito (F-857, 🔵 B). No hay un valor de referencia verificado para decir si es alto o bajo; falta leer el reporte y compararlo con aseguradoras tradicionales.
 - Las cifras de retención de los programas de bienestar son de las propias empresas y no separan a quien ya era más
   sano y fiel (P1, §3.2).
 
