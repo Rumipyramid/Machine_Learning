@@ -1,10 +1,10 @@
-# Recurrencia en apps de inversión: qué la produce y qué solo parece producirla
+# Recurrencia y persistencia en inversión y seguros de vida: qué la produce y qué solo parece producirla
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-01 · Versión: **v1.0**
+> Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-01 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-873** (empírica F-847 a F-855 · social F-856 a F-859 · negocio F-860 a F-873).
-> Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?**
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-907** (v1.0: F-847 a F-873 · v2.0: F-874 a F-907).
+> Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?** Desde v2.0 incluye también: **¿qué mantiene el dinero aportando hasta la meta en seguros de vida y protección de crédito, y qué papel juega la digitalización?**
 > ⚠️ **Decisión que alimenta: no definida.** Se asumió benchmarking para el diseño de recurrencia en inversión y seguros de vida con ahorro. Si hay decisión concreta, volver a §6.
 
 ---
@@ -101,9 +101,80 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - Sentimiento real de usuarios peruanos (Reddit, X, reseñas de tienda): no se pudo ver.
 - Bancos globales, Vanguard, Fidelity, AFP y fondos de inversión: sin datos útiles en esta pasada.
 - Si los defaults de F-850 funcionan igual con ingresos informales e inestables, típicos en Perú.
+- **v2.0:** tasa de conversión al terminar un préstamo; resultados posteriores a sep-2025 del desgravamen opcional; ingreso a la app por día de cobro; efecto de la facilidad de cancelar sobre la caducidad; persistencia (mes 13, 25) de vida con ahorro en Perú.
 
-## 8. 📓 Bitácora
+## 8. 🔭 Ampliación v2.0 (2026-11-01): ocho preguntas sobre persistencia y digitalización
 
+> **Por qué se amplió.** La pregunta cambió de "qué hace volver a la app" a "qué mantiene el dinero aportando hasta la meta, y qué papel juega la digitalización". Cubre protección de crédito (desgravamen), seguro de vida con ahorro y fondos/apps de inversión. Fuentes nuevas: F-874 a F-907 (empírica F-874 a F-880, F-882, F-891, F-903 a F-905 · social/regulatoria F-883 a F-885, F-888 · negocio F-881, F-886, F-887, F-889, F-890, F-892 a F-902, F-906, F-907).
+> **Estado de cada respuesta:** 🟢 respondida con evidencia razonable · 🟡 parcial · ⚪ sin evidencia hallada.
+
+### 8.1 Protección de crédito: ¿dónde se gana o se pierde al cliente? — 🟡 parcial
+- **Perú.** La prima va dentro de la cuota y se calcula sobre el saldo, así que baja con la deuda (F-889). Desde el 9-sep-2025 el seguro solo puede ser condición en hipotecas de vivienda; las entidades deben ofrecer crédito sin seguro, informar las comisiones que reciben y no cobrar comisión por póliza endosada (F-887). Un experto dice que buena parte de la prima termina como comisión al banco (F-888, opinión).
+- **Lectura (inferencia mía).** Con el cobro atado a la cuota, el riesgo no es el olvido. Los puntos de pérdida son (a) quién coloca el seguro al originar el crédito y (b) la posibilidad de cambiar de póliza (F-890).
+- **Fuera de Perú.** España y Portugal permiten póliza propia; la barrera práctica sería el descuento de tasa atado a la póliza del banco (F-886, contenido de corredores). En Portugal la retención se volvió difícil tras 2009 (F-891, estudio sin verificar). Irlanda habla de "brecha de cambio" por inercia (F-885).
+- **Lo que no hay:** ningún dato cuantitativo de cuánto cliente se pierde en cada punto.
+
+### 8.2 Conversión cuando termina el préstamo — ⚪ sin evidencia
+- No hallé ninguna tasa de conversión publicada.
+- Hallé lo contrario: casos de ombudsman en Reino Unido e Irlanda donde la póliza siguió cobrándose años después de pagar la hipoteca, y se ordenó devolver primas (F-884). **Cualquier estrategia de conversión necesita consentimiento explícito**; la continuación silenciosa es un riesgo regulatorio y de reputación.
+- Algunas pólizas están diseñadas para continuar tras el préstamo (F-884, caso CommBank).
+
+### 8.3 Efecto de que el desgravamen sea opcional — ⚪ sin resultados
+- No hay datos posteriores a septiembre de 2025 sobre contratación, tasas ni balances (F-887). Hay proyecciones de prensa: alza de tasas en créditos sin seguro, sobre todo para adultos mayores, y ahorros para los deudores (F-887, titulares sin verificar).
+- Es un **experimento natural en curso**: las estadísticas de la SBS antes y después serían la vía de dato.
+
+### 8.4 Por qué se deja de pagar — 🟡 parcial
+- **Voluntaria por liquidez: respaldada.** Choques como nacimiento o divorcio suben el rescate (F-878). El desempleo se asocia a mayor caducidad (F-879). Una revisión dice que la literatura apoya sobre todo la hipótesis del fondo de emergencia; la de tasas de interés tiene menos respaldo; en pólizas tradicionales alemanas no hay evidencia de ninguna y en las ligadas a fondos hay más (F-880).
+- **Involuntaria: sin dato de seguros.** En suscripciones, ~50% del abandono involuntario viene de tarjetas rechazadas (encuesta a ejecutivos) y proveedores dan 20-40% del total (F-900). No es seguros ni Perú.
+- **Cuando cae el canal de cobro, cae la póliza.** En un caso de microseguros solo 14% de ~10.000 pólizas seguía activa dos años después, porque los clientes dejaron de pedir préstamos (F-883). Es una lección de diseño del cobro, no un promedio.
+- **Perú: nada.** Ni causas ni mes de caída.
+
+### 8.5 Qué sostiene la persistencia (evidencia) — 🟡 débil
+- Todo son cifras de proveedores o internas, sin grupo de control: Vitality y AIA solo dan cifras internas (F-870) y Discovery no publica persistencia en sus resultados (F-897), un SMS el día de la renovación bajó cancelaciones 52%, usuarios de portal cancelan 12% menos (observacional) (F-899), una alerta temprana redujo caducidad 22% (F-892).
+- Referencia de mercado: caducidad de la industria en EE.UU. 5,6% en 2025 vs 7,0% en 2024 (F-898).
+- **La mejor prueba pendiente** es el ensayo de Ghana con recordatorios y renovación automática por dinero móvil (F-882); aún sin resultados.
+
+### 8.6 Segmentos por ritmo de uso y qué necesita cada uno — 🟡 parcial
+- La heterogeneidad existe en operaciones: los activos son un tercio (F-903), 41% operó un solo día en Italia (F-904) y en Colombia los más activos rinden peor (F-905).
+- **Ojo con la intuición de que mirar mucho daña:** con ingresos a la cuenta, más atención se asoció a mejor desempeño en un corredor de EE.UU. (F-877, no generalizable). Y el ingreso baja tras caídas del mercado (F-875).
+- Los recordatorios suben el ahorro sobre todo cuando apuntan a un gasto concreto (F-876).
+- **La hipótesis de que el cliente promedio entra a la app el día de cobro no la encontré probada ni refutada.** Es medible con datos propios.
+
+### 8.7 Qué hacen Nubank, Vitality, Revolut, XTB y otros — 🟡 parcial
+| Actor | Qué hace (publicado) | Qué no publica |
+|---|---|---|
+| **Nubank** | Depósitos recurrentes en Caixinhas desde 2022, con aviso previo y pausa (F-894); Nubank Vida con Chubb, contratación en <1 min, ~560 mil pólizas en 2023 (F-893); 36,2 M de clientes activos en inversión (F-861) | % con aporte recurrente; caducidad del seguro |
+| **Vitality (Discovery)** | Recompensas por conducta; mortalidad 57% menor en estatus Gold/Diamond (F-897) | Persistencia por cohorte; control de selección |
+| **Revolut** | Planes de ETF desde €1 y robo-advisor con recurrentes desde €10 (F-896); aporte medio ~€47 en Rumania (F-871) | Retención del plan |
+| **XTB** | 864 mil clientes nuevos en 2025 (F-901); ingreso por cliente activo de 7.400 a 1.800 PLN y solo 7% de nuevos en CFD (F-902) | Retención; clientes activos |
+| **Trade Republic** | Planes de ahorro desde €1 (F-895) | Clientes con plan; aporte medio |
+| **Yape (Perú)** | ~15,9 M activos mensuales y 54,5 transacciones al mes por activo (F-906) | Desglose por función |
+| **BCP/tyba (Perú)** | Aporte automático y fondos desde S/ 20 (F-865, F-907) | Uso real |
+
+**Patrón (inferencia):** ninguno publica retención de aporte. Todos construyen la recurrencia **por diseño** (aporte programado, aviso previo, pausa) y la montan sobre un hábito existente (cuenta, pagos). XTB sugiere que el negocio de operar mucho rinde cada vez menos por cliente.
+
+### 8.8 ¿Digitalizar facilita irse? — ⚪ sin evidencia rigurosa
+- No hallé estudio alguno sobre facilidad de cancelar y abandono, ni en seguros ni en suscripciones.
+- Lo cercano: el cobro desde saldo móvil sostiene la persistencia pero el cliente puede no saber que está inscrito (F-881); un SMS el día de renovación redujo cancelaciones (F-899, proveedor); y los ombudsman tratan la continuidad silenciosa como problema (F-884). Muestran que el momento de decidir existe y se puede intervenir, no que digitalizar suba o baje la caducidad.
+- **La hipótesis sigue abierta.**
+
+### 8.9 Síntesis de la ampliación (pistas separadas)
+- **🔬 Empírica:** lo mejor respaldado es que los choques de liquidez explican rescates y que defaults y automatización sostienen el aporte (F-850, F-878). Más funciones no tienen respaldo causal y pueden empeorar la satisfacción (F-874). Atención y operación no son lo mismo (F-875, F-877).
+- **📱 Social/regulatoria:** lo más sólido son los ombudsman extranjeros sobre cobros que continúan tras el préstamo (F-884). Sobre usuarios peruanos no hay foros ni quejas accesibles con esta herramienta.
+- **💼 Negocio:** crecimiento y tamaño en todos los competidores, sin retención de aporte ni caducidad. Las cifras de persistencia que existen son de proveedores (F-899, F-892).
+- **Convergencia débil:** nadie demuestra que digitalizar sostenga el aporte; lo que sí aparece repetido es automatizar con aviso previo y pausa. **Divergencia:** los proveedores reportan reducciones grandes de caducidad que la evidencia independiente no corrobora.
+
+### 8.10 Implicaciones para RIMAC (hipótesis, no hallazgos)
+1. **Desgravamen:** la palanca competitiva está en la originación y en la experiencia al reclamar, no en el engagement. Vigilar el efecto del cambio normativo con las estadísticas de la SBS.
+2. **Vida con ahorro:** primero diagnosticar por qué cae el cliente (liquidez vs. cobro fallido). Si domina la liquidez, evaluar una opción de pausa o rescate parcial; no está probada.
+3. **Inversión:** aporte programado atado al ingreso, con aviso antes del cargo y pausa fácil (patrón de Nubank); probarlo contra un grupo de control y medir aporte a 3, 6 y 12 meses.
+4. **Conversión al terminar un préstamo:** solo con consentimiento explícito.
+
+---
+
+## 9. 📓 Bitácora
+
+- **2026-11-01 · v2.0** — Ampliación de alcance (cambio estructural): las ocho preguntas de §8; 34 fuentes nuevas (F-874 a F-907). Competidores: Nubank, Vitality, Revolut, XTB, Trade Republic, Yape. Lectura por resúmenes de búsqueda.
 - **2026-11-01 · v1.0** — Creación. `/trinidad`; 27 fuentes (F-847 a F-873). Búsqueda sin acceso a textos completos; todo por resúmenes.
 
 ---
@@ -114,6 +185,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - La pista **de negocio** es abundante pero toda es cifra de empresa; ninguna sirve para inferir retención.
 - Varias fuentes empíricas (F-851, F-854, F-855) tienen autores o revista sin verificar; no apoyar decisiones en sus cifras sin abrir el original.
 - Las cifras de Trii se contradicen entre fuentes y no se resolvió cuál es la correcta.
+- **v2.0:** las cuatro preguntas sobre desgravamen (8.1 a 8.3) y persistencia (8.4, 8.5) quedaron sin dato peruano; la norma de la SBS se leyó solo vía prensa y consultora. Los estudios de Portugal, China y Alemania tienen autor o revista sin verificar. Ninguno de los competidores publica retención de aporte.
 
 ## Conexiones
 
@@ -123,3 +195,4 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC]] — productos de vida con ahorro donde la persistencia de aporte es el indicador clave.
 - [[mecanismos-seguros-salud|Mecanismos de seguros de salud]] — Vitality como caso de recompensa y caducidad, con la misma salvedad de selección.
 - [[seguros-comportamiento-mundo-peru|Seguros: comportamiento y mercado, Mundo vs. Perú]] — baja confianza y educación financiera como contexto del aporte.
+- [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — términos de caducidad, rescate y desgravamen para leer esta evidencia.

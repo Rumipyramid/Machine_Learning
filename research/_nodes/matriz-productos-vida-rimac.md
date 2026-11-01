@@ -181,3 +181,4 @@ lámina o deck ya construido que use "170%" como cifra puntual.
 - [[glosario-seguro-vida-peru|Glosario de seguro de vida en lenguaje claro]] — glosario de
   cliente que deliberadamente no cubre el detalle técnico de coberturas (IAFA, EG, ITP,
   PEI, DPP); ese detalle vive en el §3 de este node.
+- [[recurrencia-apps-inversion-benchmark|Recurrencia y persistencia en inversión y seguros de vida]] — qué se sabe de persistencia y caducidad para los productos de vida con ahorro y la protección de crédito.

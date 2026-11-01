@@ -213,3 +213,4 @@ responder con honestidad.
 - [[matriz-productos-vida-rimac|Matriz de productos Vida RIMAC]] — el vocabulario de
   coberturas (IAFA, EG, ITP, PEI, DPP) de ese node es el nivel de detalle técnico que este
   glosario deliberadamente no cubre en su primera capa — evitar duplicar, referenciar.
+- [[recurrencia-apps-inversion-benchmark|Recurrencia y persistencia en inversión y seguros de vida]] — evidencia sobre caducidad, desgravamen y rescate que usa estos términos.
