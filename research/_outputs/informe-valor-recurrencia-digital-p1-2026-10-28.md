@@ -236,8 +236,7 @@ propuesta para discutir con los ramos, no un hallazgo.
 - **Seguros, el estudio más cercano:** en el seguro nacional de salud de Ghana, pagar y renovar por el celular se
   asocia a 17,4 puntos más de renovación que pagar en oficina, sobre todo en informales (Nsiah-Boateng y otros, 2023,
   F-1031, 🟢 A). Es observacional: quien elige el canal móvil puede ser distinto. Apunta al pago, no al uso del app.
-- **🌐 Ser nativo digital no garantiza retención alta.** Lemonade retiene 85% de sus primas año a año, según su
-  reporte anual auditado (F-857).
+- **🌐 Ser nativo digital no basta para decir que la retención es alta o baja.** Lemonade, nativa digital, reporta una retención anual en dólares de 85% (86% el año anterior), en parte por no renovar pólizas de hogar a propósito (F-857). No hay un valor de referencia verificado para decir si es alto o bajo; falta leer el reporte y compararlo con aseguradoras tradicionales.
 - 📎 **El estudio de India sobre seguros de vida, leído completo, es el ejemplo típico de esta evidencia débil**
   (Singh, Panigrahi y Shekhar, 2024, F-856). Mide la retención como actitud ("siento lealtad", "estoy dispuesto
   a seguir") y no como renovación real. Su muestra es de usuarios digitales diarios, 67% de ingreso alto y 97%

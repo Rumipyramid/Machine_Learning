@@ -194,7 +194,7 @@ auditadas. Ninguna separa el efecto del canal del tipo de cliente que lo usa.
 
 | Actor | Qué publica | Rigor | Aporta a |
 |---|---|---|---|
-| Lemonade | Retención en dólares de 85%: ser nativo digital no garantiza retención alta; más de 5% multiproducto aporta ~1/5 de la prima | 🔵 B (F-857) | Retención, venta cruzada |
+| Lemonade | Retención en dólares de 85% (sin valor de referencia verificado para juzgarla); más de 5% multiproducto aporta ~1/5 de la prima | 🔵 B (F-857) | Retención, venta cruzada |
 | Vitality (Discovery, Reino Unido) | 39% a 67% menos caídas en miembros comprometidos, sin método de comparación | 🟠 D (F-860) | Retención (selección) |
 | AIA | "Mejoras significativas" de persistencia, sin cifra | 🟠 D (F-861) | Retención |
 | Ping An | 2,92 contratos por cliente; quienes tienen derecho a los beneficios de salud (63% de los clientes) tienen 1,6 veces más contratos | 🔵 B (F-862) | Venta cruzada (asociación) |
