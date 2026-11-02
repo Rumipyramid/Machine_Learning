@@ -152,6 +152,11 @@
 - **Mapfre (CX Index 2025): «la mejor experiencia del cliente entre las aseguradoras».** Se sostuvo: tercer año en el XPI 2026, más los premios de IZO y del eCommerce Award 2026 (F-970, F-998). No hay puntajes públicos.
 - **Mapfre AutoWin! (2023): «premiar al buen conductor».** La app sigue, pero sin cifras de uso ni efecto en siniestros; el premio pasó a convivir con un seguro por kilómetros con hasta 30% de descuento (F-997, F-999). La telemática en el Perú no ha mostrado escala pública.
 
+### Referentes de siniestro digital y de ecosistema (2026-11-02)
+- **Porto Seguro (Brasil):** 56% de las activaciones de servicios de 2024 se hizo por App y WhatsApp; el aviso de siniestro bajó a cuatro pasos, se sigue el reparo en tiempo real y los contactos por siniestro bajaron 29% (F-1004). Es la mejor prueba latinoamericana de que digitalizar el siniestro sirve mejor y más barato, sin depender de un producto de uso frecuente.
+- **Mutua Madrileña (España):** ecosistema de movilidad alrededor del seguro de auto (carsharing Voltio con 178.822 usuarios en 2025, Cabify desde su App, ElParking, App MutuaMás) (F-1005). Muestra el juego del ecosistema fuera de salud; no hay datos públicos de su efecto en la retención.
+- **Vitality:** la frecuencia viene de rediseñar el producto: una meta semanal de actividad que se ajusta a cada persona (F-1006).
+
 ### Las Apps de seguros por dentro y en la tienda (2026-11-02)
 **Cómo se ven los flujos** (evidencia de observación, no medición):
 - **Pacífico** (recorrido con una cuenta real, 29-oct-2026): la portada pone adelante un botón de emergencia, un asistente con IA que solo informa (pagos, coberturas, beneficios) y un catálogo de descuentos de comercios sin relación con la póliza, más un juego diario y un aviso de préstamo del BCP. Los trámites son una sola puerta genérica («Ingresar requerimiento»); en la prueba, el formulario falló con un error que solo pedía reintentar, sin código ni canal alterno.
