@@ -1,6 +1,6 @@
 # Cliente digital en seguros: recurrencia, canales y retención (foco Perú)
 
-*Node v2.0 · creado 2026-10-29 con `/trinidad` (pistas académica, social y de negocio) · actualizado 2026-10-29.*
+*Node v2.0 · creado 2026-10-29 con `/trinidad` (pistas académica, social y de negocio) · actualizado 2026-11-02.*
 *v1.0 (2026-10-29): evidencia global, fuentes F-847 a F-889. **v2.0 (2026-10-29): cambio de alcance** — la evidencia se ordena por cercanía al usuario: 🇵🇪 Perú → 🌎 Latinoamérica → 🌏🌍 mercados emergentes parecidos → 🌐 global; fuentes F-890 a F-925. Iteración 3 (2026-10-29, incremental): usos digitales del peruano en general y luego en banca y seguros; fuentes F-926 a F-944. Iteración 4 (2026-10-29, incremental): dónde está el retorno de digitalizar al cliente (sección 1b); fuentes F-945 a F-956. Iteración 5 (2026-10-29, incremental): Vitality, Alan y Oscar Health frente al caso peruano, definiciones propuestas y qué puede responder el campo (secciones 1c a 1e); fuentes F-957 a F-962.*
 *Output derivado: `_outputs/research-fuentes-secundarias.md` (Entregable 1 del plan de investigación de cliente digital de RIMAC), con tablas completas por objetivo y la verificación cifra por cifra de los insumos de referencia.*
 
@@ -88,6 +88,41 @@
 | Fuerza de ventas, corredores, concesionarios, banco | Si piden el registro al vender, qué hacen distinto los que más registran y qué incentivo tienen |
 
 **Lo que el campo no responde:** cuántos (eso lo dan una encuesta o los datos internos), si la App causa la permanencia (eso lo da un experimento) y lo que la gente hará (lo declarado no coincide con lo que se hace: F-859). Por eso conviene observar tareas reales además de preguntar, reclutar desde la base de la aseguradora y evitar paneles en línea abiertos: un encuestado simulado con IA ya supera 99,8% de los controles de atención (F-598). Las personas sintéticas sirven para ordenar hipótesis, no para responder por los clientes (F-543).
+
+## 1f. Apps de banca y seguros en el Perú: uso, negocio, comentarios y funcionalidades (iteración 6, 2026-11-02)
+
+**Conclusión:** en el Perú la app del banco y la billetera ya son hábito de masas; la app de la aseguradora no. Cuatro apps concentran el uso (Yape, BCP, BBVA, Interbank), la experiencia se juzga por la confiabilidad y la seguridad, y las aseguradoras no publican uso ni conversión de sus apps.
+
+### 📈 Negocio: cuánto se usan
+- **Yape:** 16,7 millones de usuarios activos al mes y 69 transacciones por usuario al mes (2T 2026); base de 19,8 millones; comisiones +62,5% (F-963). Fue la tercera app más descargada del país en 2024: 10,6 millones de descargas (F-966).
+- **BCP:** ~8,6 a 8,9 millones de usuarios activos de su app a fines de 2025 (estimación de panel, F-965); 17,3 millones de clientes digitales, 81% de su base (F-936).
+- **Interbank:** 83,8% de sus clientes retail activos interactúa digitalmente; 68% de las ventas es digital; 55,5% de los nuevos clientes nace digital (dic-2025, F-964).
+- **BBVA:** 3,28 millones de clientes móviles activos y 81% de las transacciones por la app al cierre de 2025 (F-937).
+- **Banco de la Nación:** su app es 63,3% de las transacciones de canales alternos (F-974).
+- **Aseguradoras:** ninguna publica usuarios activos ni conversión de su app. RIMAC informa ~550 mil usuarios recurrentes (F-871); Interseguro vendía ~70% de su SOAT en digital en 2022 (F-940). La masificación pasa por el banco y la billetera: Pacífico llega a 3,4 millones de personas vía BCP, Mibanco y Yape (F-941).
+
+### 📱 Social: qué dicen y valoran los usuarios
+- **Calificaciones:** apps bancarias entre 4,5 y 4,8 en tiendas (F-968, F-971); App RIMAC 4,5 con 604 calificaciones en App Store Perú; Mi Espacio Pacífico 3,0 con 421 (F-885, F-971).
+- **Experiencia:** Yape lidera el ranking general de experiencia por tercer año; BCP lidera banca y Mapfre seguros (F-970). Interbank destaca en navegación y búsqueda, BCP en diseño de interfaz (F-967).
+- **Lo que molesta:** caídas recurrentes de Yape, BCP e Interbank (F-972), fraude y operaciones no reconocidas, primera causa de reclamo bancario (F-932, F-973), y en seguros, cierres inesperados de la app y trámites que no se completan tras un choque (F-971). 67% teme un fraude financiero (F-969).
+
+### 🔬 Empírica: qué explica la adopción
+- En el Perú, la intención de usar la banca móvil sube con la confianza y la compatibilidad con el día a día y baja con el riesgo percibido; la facilidad de uso pesa más que la utilidad (F-978, F-979). No hay estudios publicados sobre adopción de apps de seguros en el Perú.
+
+### Funcionalidades: dónde está cada uno
+| App | Lo que ofrece hoy |
+|---|---|
+| Yape | Pagos y transferencias, créditos de S/ 50 a S/ 10.000 evaluados al instante, remesas, recargas, servicios, entradas, juegos, gas y Seguro Salud desde S/ 9,90 (F-976, F-893) |
+| BCP | Banca completa, seguros simples (celular, SOAT, tarjetas) y banca conversacional con IA hacia 2030 (F-942, F-936) |
+| Interbank | Plin por WhatsApp, Modo Calle para limitar el saldo visible, más alertas y renovación centrada en seguridad (F-975) |
+| App RIMAC | Pólizas, reembolsos, clínicas, asistencia vehicular, reporte de choque, chofer de reemplazo, Estar Bien y ruleta de premios (F-971) |
+| Mi Espacio Pacífico | Pólizas, pagos, siniestros con fotos e IA, carta de garantía y anulación por autoservicio (F-885) |
+| La Positiva · Mapfre | Ver y pagar pólizas · citas médicas y clínicas; Mapfre AutoWin premia la buena conducción (F-971) |
+
+### ⚖️ Síntesis
+- **Convergen** las tres pistas: lo que hace masiva una app en el Perú es una tarea cotidiana y confiable (pagar, transferir); la seguridad es condición de entrada.
+- **Tensión:** las apps bancarias suman funciones de seguro y crédito, pero las aseguradoras compiten en servicio post-venta, que es poco frecuente. Ninguna aseguradora publica el uso de su app, así que no hay benchmark local.
+- **Límite:** las cifras de bancos vienen de reportes de las propias empresas o de paneles; los rankings de experiencia son de consultoras con metodología poco publicada; en esta sesión no se pudieron abrir Sensor Tower, AppGoblin ni Infomercado, solo sus resúmenes.
 
 ## 2. 🔬 Pista académica (resumen)
 
