@@ -600,13 +600,13 @@ valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de n
 3. **El siniestro es el pico de la relación.** La regla pico-final es uno de los efectos más robustos de la
    psicología: recordamos una experiencia por su peor o mejor momento y por cómo terminó. Por eso el cierre del
    siniestro (el pago, la explicación, el siguiente paso) pesa más que la cantidad de interacciones.
-4. **Empujar decisiones cambia el riesgo de la cartera.**
+4. **Atraer o mover clientes trae también su riesgo.**
    - Reducir la inercia empeoró la selección adversa en seguros de salud (Handel, 2013, F-889).
    - Quienes llegan cambiándose desde otra aseguradora siniestran el doble, con el mismo historial de manejo
      (estudio en Marketing Science, F-891).
 
    Todo empujón de adquisición o de cambio tiene un costo actuarial.
-5. 📎 **La cobertura por defecto pesa más que el mensaje.** En el ensayo de microseguro en México, quitar la
+5. 📎 **Lo que viene incluido protege más que cualquier mensaje, pero no crea fidelidad y puede prestarse a cobrar de más.** En el ensayo de microseguro en México, quitar la
    cobertura automática redujo la protección total, y los mensajes emocionales o factuales no cambiaron la compra
    (Zimmerman et al., 2013, F-897). Lo que viene incluido define cuánto queda protegido. Pero el defecto también se
    presta para cobrar de más, y ahí interviene el regulador: en Chile, licitar el seguro atado al crédito bajó el
@@ -614,6 +614,29 @@ valor, y qué la frena**. Esta lectura agrega distinciones que el análisis de n
    seguro de terremoto (F-902).
 6. 📎 **La seguridad pesa en el canal.** 35% de la región teme hacer transacciones digitales (F-906). En México, la
    desconfianza en la banca móvil aparece en casi todos los perfiles estudiados (F-898).
+7. **En la venta de salud, nombrar el sesgo no basta: hay que elegir la palanca.** Los sesgos que suelen citarse para
+   explicar por qué alguien contrata o no un seguro de salud son reales. Pero la evidencia apunta a palancas distintas
+   de "informar mejor":
+   - **Sesgo del presente.** Pesa más el pago de hoy que el beneficio futuro (Frederick, Loewenstein y O'Donoghue, 2002,
+     F-735). La palanca con evidencia es cuándo y cómo se cobra (cobrar cuando hay ingreso), no explicar mejor el costo:
+     en los casos medidos, la información sola no cambió la conducta (F-897, F-1033).
+   - **Encuadre.** La misma prima y el mismo beneficio, presentados de otra forma, cambian la elección de seguro (Johnson
+     et al., 1993, F-1040). Es evidencia de laboratorio, con ilustraciones de mercado.
+   - **Sobrecarga de opciones.** No es un efecto general: aparece cuando las opciones son difíciles de comparar o las
+     preferencias poco claras (F-119, F-120). En seguros de salud ese es justo el caso: la mayoría de 23.894 empleados de
+     una empresa de EE.UU. eligió planes dominados, con un gasto en exceso de 24% de la prima, y los de menor ingreso
+     eligieron peor (Bhargava, Loewenstein y Sydnor, 2017, F-1039). Simplificar sirve si ayuda a comparar, no por
+     reducir opciones.
+   - **Comprensión.** Quien no entiende su plan evita incluso la atención preventiva gratuita (Loewenstein et al., 2013,
+     F-6). Que entender más lleve a contratar más es una correlación: también puede ser que quien ya tiene seguro aprende.
+   - **Influencia social.** El efecto medido en seguros no es el testimonio en la web: es ver que a un vecino le pagaron
+     el siniestro, que pesa casi como el pago propio en la recompra (Cole, Stein y Tobacman, 2014, F-990). No se encontró
+     evidencia de efecto de los testimonios en seguros.
+   - **Percepción del riesgo.** La gente no asegura riesgos raros y graves, aun subsidiados, y sí sobreasegura eventos
+     frecuentes y pequeños (Kunreuther, F-84). No sirve suponer que sobrestimar lo poco probable empuja a contratar.
+
+   **Para la meta digital:** estas palancas actúan en la venta y la bienvenida (el cobro, la comparación, la primera
+   gestión resuelta), y casi todas se juegan en el diseño del momento, no en el mensaje.
 
 ### 4.1 🔧 Cómo usar la lectura conductual para decidir
 
@@ -1001,11 +1024,16 @@ reservados para documentos internos que no se publican aquí). Enlaces en el Ane
 
 Cada fuente citada en el informe, con su número del registro de fuentes del proyecto. Los enlaces llevan a la fuente original o, si no estuvo accesible, al resumen o la cobertura desde donde se leyó. Los documentos aportados por la usuaria se indican como tales.
 
+- **F-6** · Loewenstein, G. et al. (2013). *Consumers' misunderstanding of health insurance (Journal of Health Economics 32(5):850-862)*. 🟢 A. [Ver fuente](https://www.sciencedirect.com/science/article/abs/pii/S0167629613000532)
 - **F-17** · Maier, M. et al. (2022). *No evidence for nudging after adjusting for publication bias (PNAS)*. 🟢 A. [Ver fuente](https://www.pnas.org/doi/10.1073/pnas.2200300119)
+- **F-84** · Kunreuther, H. (con Pauly, McMorrow y coautores varios) (1984-2013). *Insurance and Behavioral Economics: Improving Decisions in the Most Misunderstood Industry (Cambridge University Press) + artículos relacionados*. 🟡 Variable. [Ver fuente](https://www.amazon.com/Insurance-Behavioral-Economics-Improving-Misunderstood/dp/0521608260)
+- **F-119** · Scheibehenne, B., Greifeneder, R. & Todd, P.M. (2010). *Can There Ever Be Too Many Options? A Meta-Analytic Review of Choice Overload*. 🟢 A. [Ver fuente](https://academic.oup.com/jcr/article-abstract/37/3/409/1827647)
+- **F-120** · Chernev, A., Böckenholt, U. & Goodman, J. (2015). *Choice Overload: A Conceptual Review and Meta-Analysis*. 🟢 A. [Ver fuente](https://www.sciencedirect.com/science/article/abs/pii/S1057740814000916)
 - **F-183** · Bain & Company, con datos de NPS Prism (2023). *Insurers Have a Digital Dilemma: Complex Claims*. 🟡 C. [Ver fuente](https://www.bain.com/insights/insurers-have-digital-dilemma-complex-claims-snap-chart/)
 - **F-353** · Vitality Group; validación actuarial de Arbital Health (2024). *Vitality Impact Study*. 🔵 B. [Ver fuente](https://vitalitygroup.com/insights/independent-actuaries-confirm-methodology-in-vitalitys-impact-study/)
 - **F-372** · AméricaEconomía, BioBioChile, El Dínamo, Emol (cobertura convergente) (2025). *Betterfly (Chile) despide personal y cierra operaciones en cinco países*. 🟡 C. [Ver fuente](https://www.americaeconomia.com/en/node/290934 · https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2025/03/14/la-empresa-chilena-betterfly-aplica-despidos-y-determina-cerrar-sus-operaciones-en-cinco-paises.shtml)
 - **F-442** · Equipo de investigación en seguridad vial (autoría no capturada en detalle) (2026). *A national randomized field experiment testing the impact of simulated usage-based insurance programs on driver safety (Accident Analysis & Prevention)*. 🟢 A. [Ver registro del ensayo](https://clinicaltrials.gov/study/NCT06101251) · [Ver revista](https://www.sciencedirect.com/journal/accident-analysis-and-prevention)
+- **F-735** · Frederick, S.; Loewenstein, G.; O'Donoghue, T. (2002). *Time Discounting and Time Preference: A Critical Review (Journal of Economic Literature, 40(2):351-401)*. 🟢 A. [Ver fuente](https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/b/5495/files/2015/10/FLO-JEL-2002-1ko3v9w.pdf)
 - **F-786** · SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, Infomercado) (2026). *Reglamento de Seguros Paramétricos*. 🔵 B. [Ver fuente](https://elperuano.pe/noticia/304594-sbs-aprueba-reglamento-de-seguros-parametricos-para-su-funcionamiento-en-el-mercado-peruano · https://lpderecho.pe/reglamento-de-seguros-parametricos-resolucion-sbs-02260-2026/)
 - **F-792** · Janzen, S. A. & Carter, M. R. (2019). *After the Drought: The Impact of Microinsurance on Consumption Smoothing and Asset Protection (American Journal of Agricultural Economics, 101(3):651-671)*. 🟢 A. [Ver fuente](https://ideas.repec.org/f/pja593.html)
 - **F-847** · Campbell, D. & Frei, F. (Management Science 56(1):4-24) (2010). *Cost Structure, Customer Profitability, and Retention Implications of Self-Service Distribution Channels*. 🟢 A. [Ver fuente](https://pubsonline.informs.org/doi/10.1287/mnsc.1090.1132)
@@ -1111,5 +1139,9 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-983** · Susep (Brasil), vía LetsMoney (republica Valor Econômico) y The Paypers (2024-2026). *Open Insurance en Brasil: transacciones, consentimientos y estado del sistema*. 🟠 D. [Ver fuente](https://www.letsmoney.com.br/noticias/open-insurance-menos-10-mil-consentimentos/)
 - **F-984** · de Janvry, A.; Ramírez Ritchie, E. & Sadoulet, E. (World Bank Policy Research Working Paper 7715) (2016). *Weather Index Insurance and Shock Coping: Evidence from Mexico's CADENA Program*. 🟡 C. [Ver fuente](https://openknowledge.worldbank.org/handle/10986/24632)
 - **F-985** · Prensa regional (Corresponsables, Bloomberg Línea, Expansión, Pulzo) (2023-2026). *Seguros dentro de billeteras y "sponsors" en LatAm: Klimber con MetLife, Mercado Pago México, Nequi Colombia*. 🟠 D. [Ver fuente](https://www.corresponsables.com/arg/actualidad/klimber-expande-su-operacion-a-uruguay-y-colombia-y-celebra-15-millones-de-asegurados-en-america-latina)
+- **F-990** · Cole, S.; Stein, D. & Tobacman, J. (American Economic Review: Papers & Proceedings 104(5):284-290) (2014). *Dynamics of Demand for Index Insurance: Evidence from a Long-Run Field Experiment*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:aea:aecrev:v:104:y:2014:i:5:p:284-90)
 - **F-1031** · Nsiah-Boateng, E. y otros (BMC Health Services Research; DOI 10.1186/s12913-023-09236-7) (2023). *Effect of mobile phone-based health insurance contribution payment system on retention of coverage in the National Health Insurance Scheme in Ghana*. 🟢 A. [Ver fuente](https://link.springer.com/10.1186/s12913-023-09236-7)
+- **F-1033** · Adams, P.; Hunt, S.; Palmer, C. & Zaliauskas, R. (Journal of Financial Economics 141(1):122-147) (2021). *Testing the Effectiveness of Consumer Financial Disclosure: Experimental Evidence from Savings Accounts*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jfinec:v:141:y:2021:i:1:p:122-147)
 - **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.
+- **F-1039** · Bhargava, S.; Loewenstein, G. & Sydnor, J. (Quarterly Journal of Economics 132(3):1319-1372) (2017). *Choose to Lose: Health Plan Choices from a Menu with Dominated Options*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/oup/qjecon/v132y2017i3p1319-1372..html)
+- **F-1040** · Johnson, E. J.; Hershey, J.; Meszaros, J. & Kunreuther, H. (Journal of Risk and Uncertainty 7(1):35-51; DOI 10.1007/BF01065313) (1993). *Framing, Probability Distortions, and Insurance Decisions*. 🟢 A. [Ver fuente](https://doi.org/10.1007/BF01065313)

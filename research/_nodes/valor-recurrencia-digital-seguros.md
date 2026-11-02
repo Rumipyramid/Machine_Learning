@@ -1,7 +1,7 @@
 # Valor de la recurrencia digital en seguros: por qué mecanismos la actividad digital se vuelve valor de negocio
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-10-30 (§6 amplía el banco de señales: F-962 a F-985 y F-1036; verificación de enlaces: corrige F-862, F-890 y F-921) · Versión: v1.1
+> Fecha de elaboración: 2026-10-28 · Última actualización: 2026-11-02 (§9: venta de salud desde la conducta, F-1039 y F-1040; §6 amplía el banco de señales: F-962 a F-985 y F-1036; verificación de enlaces: corrige F-862, F-890 y F-921) · Versión: v1.1
 > Origen: `/trinidad` (empírica como ancla, negocio como segundo pilar, social acotada al momento crítico).
 > Pregunta: ¿por qué mecanismos la actividad digital (recurrencia en app o web) se convierte en valor de
 > negocio en un seguro, quién lo ha demostrado y con qué evidencia?
@@ -391,6 +391,19 @@ de campo, no como conclusiones.
   cada flujo.
 - **En la validación de "el cliente digital es más fiel":** diseñar cohortes emparejadas o un despliegue
   escalonado. Es trabajo propio del behavioral design.
+
+**Venta de salud: nombrar el sesgo no basta, hay que elegir la palanca (agregado 2026-11-02).** Los sesgos que se citan
+para explicar por qué alguien contrata o no un seguro de salud son reales, pero apuntan a palancas distintas de
+"informar mejor":
+
+- *Sesgo del presente* (F-735): la palanca con evidencia es cuándo y cómo se cobra; informar no cambió la conducta en
+  los casos medidos (F-897, F-1033).
+- *Encuadre*: la misma prima y el mismo beneficio, presentados de otra forma, cambian la elección (F-1040, laboratorio).
+- *Sobrecarga de opciones*: condicional (F-119, F-120); en seguros de salud la mayoría de 23.894 empleados eligió planes
+  dominados, con un gasto en exceso de 24% de la prima (F-1039). Simplificar sirve si ayuda a comparar.
+- *Comprensión*: no se entiende el seguro (F-6); que entender lleve a contratar es correlación.
+- *Influencia social*: el efecto medido en seguros es ver pagar un siniestro a un vecino (F-990), no el testimonio.
+- *Percepción del riesgo*: los riesgos raros y graves no se aseguran, aun subsidiados (F-84).
 
 ## 10. Contraste con documentos aportados por la usuaria (2026-10-28)
 

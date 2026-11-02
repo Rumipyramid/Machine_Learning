@@ -230,6 +230,8 @@ acceso regalado.**
 | **Acceso no es uso** | Seguro gratis sin uso (Kenia); retención colapsa al vencer el subsidio (Nicaragua); 3% usa la cuenta gratuita (Chile) | F-991, F-989, F-1002 (R) |
 | **Ver pagar un siniestro** | El pago a un vecino pesa casi como el propio en la recompra (India) | F-990 🟢 A (R) |
 | **Mensajero conocido** | El SMS solo funcionó con el nombre del asesor (Filipinas); la visita supera a la carta (Colombia) | F-999, F-1020 (R) |
+| **Prueba social que sí se midió** | En seguros, la prueba social con efecto medido es ver que a un vecino le pagaron el siniestro, no el testimonio en la web; del testimonio no se encontró evidencia de efecto | F-990 🟢 A (R) |
+| **Comparar, no reducir opciones** | En un seguro de salud de EE.UU., la mayoría de 23.894 empleados eligió planes dominados, con un gasto en exceso de 24% de la prima; los de menor ingreso, peor | F-1039 🟢 A (R) |
 | **Información útil y verificable** | Telemetría con retroalimentación: exceso de velocidad −11% a −13%, sostenido | F-442 🟢 A |
 | **Informar más no basta** | Comunicaciones más claras no hicieron cambiar de cuenta a 124.000 ahorristas (Reino Unido) | F-1033 🟢 A |
 
@@ -298,6 +300,7 @@ tres metas; la relación del intermediario como hipótesis a probar con cada ram
 Perú sobre el siniestro; qué parte de las primas se vende por cada canal en Perú.
 
 ---
+
 
 ## Guion sugerido para la presentación
 
@@ -390,3 +393,4 @@ Cada fuente citada en el informe, con su número del registro de fuentes del pro
 - **F-1032** · Gartner (resumen público de un informe de pago) (2024). *Benchmark de costo por contacto en servicio al cliente*. 🟡 C. [Ver fuente](https://www.gartner.com/en/documents/5164231)
 - **F-1033** · Adams, P.; Hunt, S.; Palmer, C. & Zaliauskas, R. (Journal of Financial Economics 141(1):122-147) (2021). *Testing the Effectiveness of Consumer Financial Disclosure: Experimental Evidence from Savings Accounts*. 🟢 A. [Ver fuente](https://econpapers.repec.org/RePEc:eee:jfinec:v:141:y:2021:i:1:p:122-147)
 - **F-1036** · Villar(s), P. (El Comercio), entrevista a Gianfranco Ferrari, CEO de Credicorp (2026 (fecha no visible en el recorte; posterior a la publicación del Índice de Inclusión Financiera 2026, de octubre de 2026)). *«Estoy convencido de que TAPP, del BCR, ayudará a ganarle la batalla al efectivo»*. 🟠 D. Recorte de El Comercio aportado por la usuaria (adjunto 35 en el repositorio privado); sin enlace.
+- **F-1039** · Bhargava, S.; Loewenstein, G. & Sydnor, J. (Quarterly Journal of Economics 132(3):1319-1372) (2017). *Choose to Lose: Health Plan Choices from a Menu with Dominated Options*. 🟢 A. [Ver fuente](https://ideas.repec.org/a/oup/qjecon/v132y2017i3p1319-1372..html)
