@@ -12,7 +12,7 @@ nuevo (por ejemplo con `/trinidad`) y crear o ampliar su node.
 | Tema | Consultas | ✗ sin cobertura | ~ parcial | ✓ cubiertas | Protocolo |
 |---|---|---|---|---|---|
 | fenomenologia_infancia_desarrollo_psicologico | 1 | 1 | 0 | 0 | no |
-| relevancia_actual_diseno_estrategico | 15 | 0 | 5 | 10 | no |
+| relevancia_actual_diseno_estrategico | 16 | 0 | 6 | 10 | no |
 | ia_sycophancy_adulacion_sesgo | 3 | 0 | 2 | 1 | no |
 | estado_actual_ia_conducta_humana | 2 | 0 | 2 | 0 | no |
 | efectividad_nudges_comportamiento | 10 | 0 | 1 | 9 | no |
@@ -24,4 +24,4 @@ nuevo (por ejemplo con `/trinidad`) y crear o ampliar su node.
 | seguros_empresariales_peru_mercado | 1 | 0 | 1 | 0 | no |
 | conciencia_cuantica_evidencia_hipotesis | 1 | 0 | 0 | 1 | no |
 
-*Última revisión: 2026-10-26 (42 consultas, 1 temas, 0 protocolos activos).*
+*Última revisión: 2026-11-02 (43 consultas, 1 temas, 0 protocolos activos).*
