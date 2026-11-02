@@ -3,7 +3,7 @@
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-02 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-922** (v1.0: F-847 a F-873 · v2.0: F-874 a F-922; incluye una lámina interna, F-908).
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-923** (v1.0: F-847 a F-873 · v2.0: F-874 a F-923; incluye una lámina interna, F-908).
 > Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?** Desde v2.0 incluye también: **¿qué mantiene el dinero aportando hasta la meta en seguros de vida y protección de crédito, y qué papel juega la digitalización?**
 > ⚠️ **Decisión que alimenta: no definida.** Se asumió benchmarking para el diseño de recurrencia en inversión y seguros de vida con ahorro. Si hay decisión concreta, volver a §6.
 
@@ -211,10 +211,25 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 
 **No verifiqué:** otras piezas conocidas de la literatura (por ejemplo O'Donoghue y Rabin sobre procrastinación, o la teoría de miopía ante pérdidas) y las cifras originales de Save More Tomorrow. Todo se leyó por resúmenes.
 
+### 8.13 Hexágono de la Salud Financiera: un mapa de necesidades, no evidencia — 🟠
+
+> Fuente: F-923, material divulgativo de la consultora Beway (cinco de seis vértices). **No amplía el alcance ni responde ninguna de las ocho preguntas con evidencia.** Sirve para ubicar qué necesidad cubre cada producto.
+
+| Vértice | Qué propone | Dónde toca las preguntas |
+|---|---|---|
+| **1. Administración diaria** | Presupuesto, bolsillos, débito automático, tarjetas prepago | Refuerza automatizar y separar el dinero (8.12); aporte atado al ingreso (hipótesis 1 y 6) |
+| **2. Resiliencia financiera** | Fondo de emergencia de 3 a 6 meses de ingresos, en cuenta separada; los seguros como parte de la protección | Caducidad por liquidez (8.4) y bolsillo de emergencia (hipótesis 7). **Tensión (inferencia mía):** si el cliente no tiene un fondo propio, un producto de vida con ahorro puede terminar usándose como tal, y el rescate por liquidez es previsible |
+| **3. Metas a corto y medio plazo** | Metas SMART y ahorro periódico dentro del presupuesto | Recordatorios con un gasto concreto (F-876). Que fijar metas claras ayude a ahorrar **no tiene respaldo experimental en lo que leí** |
+| **4. Flexibilidad financiera** | Liquidez para aprovechar oportunidades, en activos de bajo riesgo | Tensión con la teoría de la liquidez (F-921): liquidez evita decisiones impulsivas pero puede bajar el ahorro. Se concilia (inferencia) separando cubetas: liquidez para emergencias y oportunidades, dinero comprometido para metas y largo plazo |
+| **5. La inversión** | Inflación, interés compuesto y control emocional ante caídas | Días malos (F-875) y 8.6. La aritmética del ejemplo cuadra, pero asume 5% real sin fuente |
+
+**Lectura (inferencia mía):** el hexágono ayuda a ubicar cada producto en una cubeta: resiliencia para el seguro, metas y largo plazo para ahorro e inversión. No cambia las preguntas. El vértice 6 no se recibió.
+
 ---
 
 ## 9. 📓 Bitácora
 
+- **2026-11-02** — Se añade §8.13: el Hexágono de la Salud Financiera (F-923) como mapa de necesidades; sin evidencia de efecto y sin ampliar el alcance. Incremental.
 - **2026-11-02** — Se añade §8.12 con la literatura conductual de ahorro (F-915 a F-922): automatización, erosión de los defaults, compromiso, ahorro para salud en Kenia y teoría de la liquidez. Incremental.
 - **2026-11-02** — Se añade §8.11 con cinco patrones fintech de una lámina interna (F-908) contrastados con Chime, Monzo, N26, Wise y Revolut (F-909 a F-914). Cambio incremental; la versión sigue en v2.0.
 - **2026-11-01 · v2.0** — Ampliación de alcance (cambio estructural): las ocho preguntas de §8; 34 fuentes nuevas (F-874 a F-907). Competidores: Nubank, Vitality, Revolut, XTB, Trade Republic, Yape. Lectura por resúmenes de búsqueda.
