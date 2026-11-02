@@ -152,11 +152,20 @@
 - **Mapfre (CX Index 2025): «la mejor experiencia del cliente entre las aseguradoras».** Se sostuvo: tercer año en el XPI 2026, más los premios de IZO y del eCommerce Award 2026 (F-970, F-998). No hay puntajes públicos.
 - **Mapfre AutoWin! (2023): «premiar al buen conductor».** La app sigue, pero sin cifras de uso ni efecto en siniestros; el premio pasó a convivir con un seguro por kilómetros con hasta 30% de descuento (F-997, F-999). La telemática en el Perú no ha mostrado escala pública.
 
-### Lo que dicen los clientes en Google Play (2026-11-02)
-- **Calificación:** App Mapfre Perú 4,7 estrellas y La Positiva Seguros 2,3 (F-1000). La de Mapfre coincide con su liderazgo en experiencia del cliente (F-998).
-- **La queja dominante es que la app funcione, no que haga más:** no deja ingresar, se cuelga, se cae por días. Igual que las reseñas negativas de la App RIMAC (cierres inesperados, F-971).
-- **El cliente lee la falla de la app como anticipo del siniestro** («ojalá que ante un siniestro, el servicio no sea tan malo como la App»), y rechaza que lo obliguen a descargarla para algo puntual, como ver su SOAT (F-1000).
-- **Derivar la queja a otro canal la empeora:** la respuesta de Mapfre pide escribir a un correo y un cliente editó su reseña para criticarla (F-1000). Las reseñas son seleccionadas y no representativas; el dato representativo es el promedio.
+### Las Apps de seguros por dentro y en la tienda (2026-11-02)
+**Cómo se ven los flujos** (evidencia de observación, no medición):
+- **Pacífico** (recorrido con una cuenta real, 29-oct-2026): la portada pone adelante un botón de emergencia, un asistente con IA que solo informa (pagos, coberturas, beneficios) y un catálogo de descuentos de comercios sin relación con la póliza, más un juego diario y un aviso de préstamo del BCP. Los trámites son una sola puerta genérica («Ingresar requerimiento»); en la prueba, el formulario falló con un error que solo pedía reintentar, sin código ni canal alterno.
+- **Mapfre** (imágenes de su ficha en la tienda, recientes): botón SOS en el centro del menú, sección «Mis siniestros» en el inicio, débito automático y tarjetas guardadas como norma, clínica digital (videoconsulta, citas, médico a domicilio) y el agente visible en la póliza.
+- **La Positiva** (imágenes de su ficha, con pólizas de ejemplo de 2022-2024): pólizas, pagos, una pestaña de compra con siete seguros y accesos a WhatsApp y teléfono; ninguna imagen muestra cómo avisar un siniestro.
+
+**Lo que dicen los clientes en Google Play:**
+- **Calificación:** App Mapfre Perú 4,7, App RIMAC 4,5 y La Positiva Seguros 2,3 (F-1000, F-1001). La de Mapfre coincide con su liderazgo en experiencia del cliente (F-998).
+- **La queja dominante es que la app funcione, no que haga más:** de 32 reseñas negativas revisadas, solo una pide algo nuevo (saber más sobre el seguro contratado). Las demás hablan de no poder entrar, cuelgues, lentitud o un trámite que falla (F-1000, F-1001). Coincide con las reseñas negativas de la App RIMAC en la tienda de Apple (cierres inesperados, F-971).
+- **En RIMAC, lo reciente es acceso y velocidad** (4 de 8 reseñas de 2026, entre agosto y octubre), y el tema específico más citado es la salud: citas, teleconsulta y un médico a domicilio que una actualización escondió en mayo de 2025 (F-1001).
+- **El cliente lee la falla de la app como anticipo del siniestro** («ojalá que ante un siniestro, el servicio no sea tan malo como la App») y una falla puede llevárselo: un cliente de RIMAC cuenta que el mal funcionamiento de la app de su seguro por kilómetro fue uno de los motivos para cambiarse (F-1000, F-1001).
+- **El aviso que busca frecuencia puede llevar a una falla:** al abrir el aviso del sorteo mensual de RIMAC, la app se queda en blanco (F-1001).
+- **Obligar a descargar la app para algo puntual molesta** (ver el SOAT) y **derivar la queja a otro canal la empeora** (plantilla de Mapfre que pide escribir a un correo; respuesta de La Positiva dos meses después) (F-1000).
+- Las reseñas son seleccionadas y no representativas; el dato representativo es el promedio.
 
 ## 2. 🔬 Pista académica (resumen)
 
