@@ -147,6 +147,11 @@
 - **Tensión:** las aseguradoras anuncian velocidad digital en el siniestro (60 segundos, 5 minutos), pero las sanciones siguen siendo por pagar tarde. El dato de 60 segundos de Rímac tiene una sola fuente.
 - **Límite:** no hay datos públicos de uso de apps de aseguradoras, ni de primas por canal, ni un ranking de reclamos por compañía para 2025; las cuotas de mercado difieren entre calificadoras.
 
+### Seguimiento de tres promesas públicas (2026-11-02)
+- **Interseguro (2022): «crecer a doble dígito y llevar el canal digital a ~10% de los ingresos».** Se cumplió con retraso: en 2023 las primas cayeron 5,3%, pero en 2024 crecieron 18,2% y el canal digital superó el 10% de las primas, con 85% del SOAT vendido en digital; en 2025 las primas subieron 67,2%, empujadas por rentas vitalicias y el banco, no por lo digital. Los clientes digitales no crecieron: 580 mil en 2022 y ~540 mil en 2025 (F-940, F-872, F-995). Novedad: filtración de datos de clientes en oct-2026 (F-996).
+- **Mapfre (CX Index 2025): «la mejor experiencia del cliente entre las aseguradoras».** Se sostuvo: tercer año en el XPI 2026, más los premios de IZO y del eCommerce Award 2026 (F-970, F-998). No hay puntajes públicos.
+- **Mapfre AutoWin! (2023): «premiar al buen conductor».** La app sigue, pero sin cifras de uso ni efecto en siniestros; el premio pasó a convivir con un seguro por kilómetros con hasta 30% de descuento (F-997, F-999). La telemática en el Perú no ha mostrado escala pública.
+
 ## 2. 🔬 Pista académica (resumen)
 
 - 🇵🇪 Casi no hay estudios peruanos sobre seguros digitales; un estudio de teleconsulta (29,2% de uso, abandono parcial tras la cuarentena; F-909, por confirmar).
