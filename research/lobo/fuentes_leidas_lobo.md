@@ -276,3 +276,6 @@
 | F-560 | 🟢 A | 2026-11-01 | Intuición 256 — una muestra sintética parece representativa si responde casi al azar; comparar contra el azar (resumen de NeurIPS; lectura débil) |
 | F-569 | 🟢 A | 2026-11-01 | Intuición 257 — un predictor que acierta sirve para generar hipótesis, no para explicar (ficha y resúmenes; lectura débil) |
 | F-695 | 🟢 A | 2026-11-01 | Intuición 258 — las poses de poder sobreviven solo en lo declarado; no diseñar sobre conducta (resúmenes y secundarias; lectura débil) |
+| F-545 | 🟢 A | 2026-11-02 | Intuición 259 — un modelo replica el promedio pero puede distorsionar la dispersión; pedir la distorsión por conducta (resumen; lectura débil) |
+| F-696 | 🟢 A | 2026-11-02 | Intuición 260 — réplica ciega con N = 200: sube lo declarado, no la conducta; pesar la réplica grande (PDF y prensa; lectura débil) |
+| F-741 | 🟢 A | 2026-11-02 | Intuición 261 — la letra difícil no mejora el razonamiento al sumar 16 réplicas; no meter fricción sin probarla (resúmenes; lectura débil) |

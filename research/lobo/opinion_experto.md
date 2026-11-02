@@ -6216,6 +6216,27 @@ F-695 (Carney, Cuddy y Yap, *Psychological Science* 21(10), 2010; N = 42). Una r
 - **Leído a fondo:** 2026-11-01 (`WebSearch`; resúmenes y secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** refuerza la entrada 248 (el power posing sobrevive solo en ánimo declarado); sin cambio de confianza.
 
+### 259. Un modelo de lenguaje puede replicar un experimento clásico y aun así distorsionar justo lo que uno quería medir
+F-545 (Aher, Arriaga y Kalai, ICML 2023). Los autores piden a modelos de lenguaje que simulen una muestra de participantes y replican cuatro estudios: ultimátum, frases garden-path, Milgram y sabiduría de multitudes. Los tres primeros salen como en humanos, y mejor cuanto más grande el modelo. El cuarto muestra una «hiperprecisión»: los modelos responden con demasiada exactitud y se pierde la dispersión que da valor a la multitud. Cambiaron detalles de los experimentos para descartar que el modelo los hubiera memorizado. Solo vi resumen, página del congreso y notas de código.
+**Heurística:** antes de usar una muestra simulada, pedir qué distorsión sistemática tiene frente a humanos en esa conducta concreta. Que replique el promedio no prueba que replique la dispersión, y la dispersión es lo que decide un segmento.
+- **Fuente:** F-545 (🟢A según el ledger; verificación por resumen)
+- **Leído a fondo:** 2026-11-02 (`WebSearch`; resumen del congreso y arXiv; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la tesis 27 (muestras sintéticas ordenan hipótesis, no estiman efectos) y la entrada 256; sin cambio de confianza.
+
+### 260. Una réplica con experimentador ciego y muestra cinco veces mayor separa lo que la gente dice sentir de lo que hace
+F-696 (Ranehill y otros, *Psychological Science* 26(5), 2015; N = 200, experimentador ciego a la condición). Las poses de poder subieron la sensación de poder declarada, pero no las hormonas ni ninguna de tres tareas de conducta, incluida la de riesgo. Los autores dicen que su potencia para detectar el efecto original superaba 95%. Un crítico (Gelman) discute ese cálculo. Ofrecen una causa posible: posar más tiempo pudo incomodar a los participantes. Solo vi el PDF del equipo y notas de prensa.
+**Heurística:** cuando un efecto original usa 42 personas y una réplica usa 200 con ciego, pesar más la réplica. Y si el producto depende de una conducta, exigir medida de conducta, no de ánimo.
+- **Fuente:** F-696 (🟢A según el ledger; sus límites ya constan en la ficha)
+- **Leído a fondo:** 2026-11-02 (`WebSearch`; PDF de la universidad y notas de prensa; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza las entradas 248 y 258 (el power posing sobrevive solo en lo declarado); sin cambio de confianza.
+
+### 261. Un efecto de «hacerlo más difícil» no se sostiene si se suma el original a 16 réplicas
+F-741 (Meyer, Frederick y otros, *Journal of Experimental Psychology: General* 144(2), 2015). Al juntar el experimento original con 16 intentos de réplica, la letra difícil de leer no mejoró la solución de problemas de matemática, ni por habilidad, formato o entorno. Solo alargó un poco el tiempo de respuesta. Una reseña secundaria habla de más de 7.000 participantes frente a unos 40 del original; no lo confirmé en el artículo. En Many Labs 2, otro estudio del mismo grupo original tampoco replicó.
+**Heurística:** no introducir fricción «para que el cliente piense más» (letra pequeña, formularios más largos) sin probarlo en la población propia. La evidencia solo respalda que cuesta tiempo.
+- **Fuente:** F-741 (🟢A según el ledger; cifra de participantes pendiente de confirmar)
+- **Leído a fondo:** 2026-11-02 (`WebSearch`; resúmenes de repositorio y secundarias; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la entrada 225 (los efectos de priming y fluidez replican poco); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6414,8 +6435,6 @@ F-695 (Carney, Cuddy y Yap, *Psychological Science* 21(10), 2010; N = 42). Una r
 - **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
 - **2026-09-24** — *(Detalle podado y fusionado al resumen el 2026-10-25)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio; sumó las intuiciones 142 y 143 y verificó el ledger por conteo directo.
 
-- **2026-09-25** — *(Detalle podado y fusionado al resumen el 2026-10-26)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
-
 - **2026-09-26** — *(Detalle podado y fusionado al resumen el 2026-10-27)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
 
 - **2026-09-27** — *(Detalle podado y fusionado al resumen el 2026-10-28)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
@@ -6526,3 +6545,5 @@ F-695 (Carney, Cuddy y Yap, *Psychological Science* 21(10), 2010; N = 42). Una r
 - **2026-10-31** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-670, F-655 y F-812, leídas vía `WebSearch` (fichas y resúmenes; lectura débil, declarada). Entradas 253 (el «tiempo lento» del miedo es memoria, no percepción: contrastar el relato del siniestro con registros), 254 (Milgram como seguidismo comprometido: corregir la causa que da el líder) y 255 (el efecto de un programa de lealtad mezcla autoselección y se erosiona en 6-9 meses). Pendiente para `cronista`: F-812, la ficha dice «autores no confirmados»; los registros de Toulouse Capitole confirman Meyer-Waarden y Benavent, JAMS 37(3):345-358 (corrección permitida por la excepción de autoría; no aplicada hoy); F-670, no recoge la crítica de Arstila (2012). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-11-01** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-560, F-569 y F-695, leídas vía `WebSearch` (resúmenes, fichas y secundarias; lectura débil, declarada). Entradas 256 (una muestra sintética parece representativa si responde casi al azar: comparar contra el azar), 257 (un predictor que acierta sirve para generar hipótesis, no para explicar) y 258 (las poses de poder sobreviven solo en lo declarado). Pendiente para `cronista`: F-560, las versiones del preprint citan entre 39 y 43 modelos; F-695, no recoge las réplicas de 2015 a 2017 ni el debate de la curva de valores p (2017-2018). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-11-02** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 91 pendientes → 88 tras hoy):** sorteo F-545, F-696 y F-741, leídas vía `WebSearch` (resúmenes, PDF del equipo y secundarias; lectura débil, declarada). Entradas 259 (un modelo replica el promedio de un experimento pero puede distorsionar la dispersión), 260 (réplica ciega con N = 200: sube lo declarado, no la conducta) y 261 (la letra difícil no mejora el razonamiento al sumar 16 réplicas). Pendiente para `cronista`: F-741, confirmar el número de participantes de las réplicas; F-545, la ficha no recoge el control de memorización de los autores. Poda: 09-25 retirado de los resúmenes; Bitácora cubre 2026-09-26 a hoy. `fuentes_leidas_lobo.md` actualizado.
