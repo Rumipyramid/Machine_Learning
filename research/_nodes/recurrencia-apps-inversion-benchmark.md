@@ -1,9 +1,9 @@
 # Recurrencia y persistencia en inversión y seguros de vida: qué la produce y qué solo parece producirla
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-01 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
+> Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-02 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-907** (v1.0: F-847 a F-873 · v2.0: F-874 a F-907).
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-914** (v1.0: F-847 a F-873 · v2.0: F-874 a F-914; incluye una lámina interna, F-908).
 > Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?** Desde v2.0 incluye también: **¿qué mantiene el dinero aportando hasta la meta en seguros de vida y protección de crédito, y qué papel juega la digitalización?**
 > ⚠️ **Decisión que alimenta: no definida.** Se asumió benchmarking para el diseño de recurrencia en inversión y seguros de vida con ahorro. Si hay decisión concreta, volver a §6.
 
@@ -93,6 +93,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 3. **Fricción de perfilamiento:** ¿abandona más quien debe pasar el cuestionario de perfil (BBVA, Interbank) que quien entra directo (BCP, Trii)? Hoy es conjetura mía.
 4. **Juego vs. sin juego en aporte**, no en operación: nadie lo midió; un A/B daría el primer dato.
 5. **Medir lo que falta:** pedir a los actores (si hay acceso) retención de aporte a 3, 6 y 12 meses por cohorte, con definición de "activo" explícita.
+6. **Métrica de 'cuenta principal' propia:** medir qué porcentaje de clientes tiene el aporte atado a su sueldo o a un débito vinculado a su ingreso, por cohorte, como hacen Chime y Monzo con el depósito directo (§8.11). Es una métrica, no una intervención; sirve para ver si el aporte sostenido se concentra ahí.
 
 ## 7. 🕳️ Vacíos
 
@@ -170,10 +171,27 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 3. **Inversión:** aporte programado atado al ingreso, con aviso antes del cargo y pausa fácil (patrón de Nubank); probarlo contra un grupo de control y medir aporte a 3, 6 y 12 meses.
 4. **Conversión al terminar un préstamo:** solo con consentimiento explícito.
 
+### 8.11 Cinco patrones fintech (lámina interna): qué hay de evidencia detrás — 🟡 parcial
+
+> Fuente: lámina de una investigación interna, sin autor ni método indicados (F-908). Etiqueta cinco apps con un patrón de diseño y afirma que son "transferibles a seguros". La lámina no trae ninguna cifra de efecto; esta sección contrasta cada patrón con lo que se halló. Fuentes: F-909 a F-914.
+
+| Patrón de la lámina | App | Qué se halló | Estado |
+|---|---|---|---|
+| **Prioriza** (productos sugeridos) | Revolut | Planes recurrentes y robo-advisor publicados, sin retención (F-896, F-871) | Sin evidencia de efecto |
+| **Reorganiza** (lista de inicio 0/6) | N26 | N26 no publica métricas de inicio ni retención (F-913); no busqué estudios de listas de inicio | Sin evidencia hallada |
+| **Transparenta** (desglose de comisión) | Wise | Bajó su comisión media a 53 puntos base y más de 70% de clientes nuevos llega por recomendación (F-914): correlación, no efecto probado. En Perú la SBS ya obliga a informar las comisiones del desgravamen (F-887) | Parcial: ya es norma en un caso |
+| **Adapta** (subir de nivel) | Chime | La empresa dice que su nivel Prime mejora la retención de quienes ya tienen depósito directo (F-910); sin grupo de control. El ingreso por miembro crece con la antigüedad (F-910), lo que puede ser supervivencia | Sin evidencia independiente |
+| **Experimenta** (sorteo y recompensas) | Monzo | Double Payday sortea el doble del sueldo de 10 clientes al mes desde dic-2025 (F-912); sin datos de uso ni efecto. El juego en inversión sube la operación, no el aporte (F-848) | Sin evidencia de efecto |
+
+**Lo más útil de estas cinco empresas no es ninguno de los cinco patrones.** Chime, Monzo y N26 miden la misma cosa: **qué porcentaje de sus clientes tiene el sueldo depositado ahí** ("cuenta principal"). Chime lo define con un depósito directo de al menos US$200 al mes o 15 compras (F-909); Monzo reporta 33% de clientes y 49% de activos mensuales (F-911); N26 dice buscar que el sueldo llegue a su cuenta (F-913). Es la métrica que eligieron, no evidencia causal, pero coincide con la hipótesis de que el hábito se ancla en el ingreso (§6, hipótesis 1 y 6).
+
+**Lectura (inferencia mía):** los patrones de la lámina son analogías de diseño razonables, pero ninguna de las cinco empresas publica retención, así que "transferible a seguros" es una hipótesis, no un resultado.
+
 ---
 
 ## 9. 📓 Bitácora
 
+- **2026-11-02** — Se añade §8.11 con cinco patrones fintech de una lámina interna (F-908) contrastados con Chime, Monzo, N26, Wise y Revolut (F-909 a F-914). Cambio incremental; la versión sigue en v2.0.
 - **2026-11-01 · v2.0** — Ampliación de alcance (cambio estructural): las ocho preguntas de §8; 34 fuentes nuevas (F-874 a F-907). Competidores: Nubank, Vitality, Revolut, XTB, Trade Republic, Yape. Lectura por resúmenes de búsqueda.
 - **2026-11-01 · v1.0** — Creación. `/trinidad`; 27 fuentes (F-847 a F-873). Búsqueda sin acceso a textos completos; todo por resúmenes.
 
@@ -185,7 +203,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - La pista **de negocio** es abundante pero toda es cifra de empresa; ninguna sirve para inferir retención.
 - Varias fuentes empíricas (F-851, F-854, F-855) tienen autores o revista sin verificar; no apoyar decisiones en sus cifras sin abrir el original.
 - Las cifras de Trii se contradicen entre fuentes y no se resolvió cuál es la correcta.
-- **v2.0:** las cuatro preguntas sobre desgravamen (8.1 a 8.3) y persistencia (8.4, 8.5) quedaron sin dato peruano; la norma de la SBS se leyó solo vía prensa y consultora. Los estudios de Portugal, China y Alemania tienen autor o revista sin verificar. Ninguno de los competidores publica retención de aporte.
+- **v2.0:** las cuatro preguntas sobre desgravamen (8.1 a 8.3) y persistencia (8.4, 8.5) quedaron sin dato peruano; la norma de la SBS se leyó solo vía prensa y consultora. Los estudios de Portugal, China y Alemania tienen autor o revista sin verificar. Ninguno de los competidores publica retención de aporte. De las cinco apps de la lámina interna, no se buscó evidencia de efecto de las listas de inicio ni de los cambios de nivel (§8.11).
 
 ## Conexiones
 
