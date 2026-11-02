@@ -196,7 +196,7 @@
 
 ## 6. Verificación de insumos de referencia (resumen)
 
-Conclusiones sólidas, cifras frágiles. Errores: Yape (804 transacciones son al año, F-873, F-894); uso de prevención (4,3% es EE.UU., F-859); el 63% es de Capgemini (F-864); la tenencia de seguros en el Perú va de 6% a 74% según la base (F-891, F-1). Sin fuente: «2,7 veces al año», «+90 de NPS», «r = 0,128». Matices: SOAT con médico a domicilio (F-882), Interseguro (F-872), Zurich (F-870), Oscar (F-880). Tabla completa en el output.
+Conclusiones sólidas, cifras frágiles. Errores: Yape (804 transacciones son al año, F-873, F-894); uso de prevención (4,3% es EE.UU., F-859); el 63% es de Capgemini (F-864); la tenencia de seguros en el Perú va de 6% a 74% según la base (F-891, F-1). Sin fuente: «+90 de NPS» y «r = 0,128». El «2,7 veces al año» tiene un origen probable: Bain (2018) habla de 2,7 necesidades de información relacionadas con seguros al año, no de usos de la App ni de contactos (F-1002, solo por resumen); los contactos reales son menos: un tercio de los clientes no interactúa en un año (F-1003) y 43% no tuvo ningún contacto (F-857). Matices: SOAT con médico a domicilio (F-882), Interseguro (F-872), Zurich (F-870), Oscar (F-880). Tabla completa en el output.
 
 ## 7. Preguntas abiertas
 

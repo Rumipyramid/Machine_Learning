@@ -375,7 +375,7 @@ Se revisaron el deck *Desk Research y Benchmark de Canales Digitales* (CoE Exper
 
 | Afirmación | Veredicto | Verificación |
 |---|:---:|---|
-| «El seguro se usa 2,7 veces al año» | ❓ | Sin fuente. Hay datos del mismo orden: 1 a 3 al año (F-857, F-877). |
+| «El seguro se usa 2,7 veces al año» | ⚠️ | Origen probable (actualizado 2026-11-02): Bain (2018), 2,7 **necesidades de información** relacionadas con seguros al año (F-1002, verificado solo por resumen). No son usos de la App ni contactos. Datos del mismo orden: 1 a 3 contactos al año (F-857, F-877); un tercio sin interacción en un año (F-1003). |
 | «Vitality 144 al año; John Hancock 240-360» | ⚠️ | Cifras de la empresa: John Hancock reporta 20+ al mes en 74% de los miembros activos (F-868). |
 | «5+ interacciones dan un NPS hasta 90 puntos más alto» | ❓ | Sin fuente. Lo verificable: asesor + digital, +34 puntos (F-858). |
 | «59% quiere recompensas por vivir sano» | ✅ | F-4. |
