@@ -124,6 +124,29 @@
 - **Tensión:** las apps bancarias suman funciones de seguro y crédito, pero las aseguradoras compiten en servicio post-venta, que es poco frecuente. Ninguna aseguradora publica el uso de su app, así que no hay benchmark local.
 - **Límite:** las cifras de bancos vienen de reportes de las propias empresas o de paneles; los rankings de experiencia son de consultoras con metodología poco publicada; en esta sesión no se pudieron abrir Sensor Tower, AppGoblin ni Infomercado, solo sus resúmenes.
 
+## 1g. Las aseguradoras peruanas: mercado, digital, reclamos y regulación (iteración 7, 2026-11-02)
+
+**Conclusión:** el mercado es chico y concentrado, y la competencia digital de las aseguradoras se juega en el siniestro y en la venta por terceros (banco, billetera, retail), no en la app propia. Ninguna aseguradora publica métricas de uso de su app; la reputación se mide en reclamos e Indecopi, no en reseñas.
+
+### 📈 Negocio
+- **Mercado:** 17 aseguradoras, penetración de 2,01% del PBI y ~US$ 212 por habitante (F-982). Cinco compañías tienen 84,7% de las primas (F-980). Participación a jun-2025: Rímac ~27-28%, Pacífico ~22-27% según la calificadora, Mapfre ~13%, La Positiva ~12% e Interseguro ~9% (F-980, F-981); al cierre de 2025, Pacífico 22,4-22,6% (F-890) y Mapfre 12,99% (F-985).
+- **Rentabilidad:** el sector ganó S/ 2.579 millones en 2025, 9% menos que en 2024 (F-983). Rímac bajó 40% su utilidad en el 2T 2026 (F-504); La Positiva −14,8% a mar-2026 (F-986); Mapfre Perú +6,4% (F-985). Las cifras de primas del 1S 2026 no coinciden entre notas (+1,1% en F-506 frente a +8% en F-983).
+- **Digital, por compañía:** Rímac, 550 mil usuarios recurrentes de su app, 68% de interacciones digitales y ~25% de las nuevas emisiones por el canal digital (F-871, F-884); agente de IA que lleva el siniestro vehicular de 48 horas a 60 segundos (F-984). Pacífico, la mitad de los siniestros vehiculares menores reportados en menos de 5 minutos (F-890) y 3,4 millones de personas aseguradas vía BCP, Mibanco y Yape (F-941). Interseguro, 540 mil clientes activos en canales digitales (F-872). Mapfre, líder en experiencia del cliente por tercer año (F-970) y app AutoWin que premia la conducción (F-971). La Positiva, 5,3 millones de asegurados (F-924).
+- **Alianzas e insurtech:** Insurama con Rímac para seguros de equipos en retail (F-987); 38 insurtechs en el país (F-989). Betterfly, que premiaba hábitos saludables con Interseguro, cerró en el Perú en 2025 sin llegar a escala (F-988). El bancaseguros sería ~38% del mercado (F-989, estimación débil).
+
+### 📱 Social
+- **Reclamos y sanciones:** Indecopi sancionó en 2025-2026 a Mapfre (negar una pensión, excluir a mayores de 85 años, pagar tarde), a Rímac (pagar tarde un SOAT por invalidez; desgravamen), a Pacífico (indemnización por robo subvaluada) y a Interseguro (F-990). Patrón: demora en el pago y negativa de cobertura, como en 2019-2022 (F-886).
+- **Seguridad:** filtración de datos del SOAT de Pacífico en nov-2024, 0,5% de sus clientes (F-992).
+- **Apps:** sin reseñas masivas; las calificaciones de comparadores no son verificables (F-993).
+
+### Regulación
+- La SBS aprobó en sep-2026 el Reglamento de Seguros Paramétricos y cambió el de comercialización: permite vender por bancaseguros, internet, redes sociales y comparadores (F-991).
+
+### ⚖️ Síntesis
+- **Convergen** negocio y social: la diferencia entre aseguradoras se juega en el siniestro (velocidad de pago, cobertura) y es ahí donde están las sanciones y donde invierten en IA.
+- **Tensión:** las aseguradoras anuncian velocidad digital en el siniestro (60 segundos, 5 minutos), pero las sanciones siguen siendo por pagar tarde. El dato de 60 segundos de Rímac tiene una sola fuente.
+- **Límite:** no hay datos públicos de uso de apps de aseguradoras, ni de primas por canal, ni un ranking de reclamos por compañía para 2025; las cuotas de mercado difieren entre calificadoras.
+
 ## 2. 🔬 Pista académica (resumen)
 
 - 🇵🇪 Casi no hay estudios peruanos sobre seguros digitales; un estudio de teleconsulta (29,2% de uso, abandono parcial tras la cuarentena; F-909, por confirmar).
