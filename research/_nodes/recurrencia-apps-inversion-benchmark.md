@@ -3,7 +3,7 @@
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-02 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-923** (v1.0: F-847 a F-873 · v2.0: F-874 a F-923; incluye una lámina interna, F-908).
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-924** (v1.0: F-847 a F-873 · v2.0: F-874 a F-924; incluye una lámina interna, F-908).
 > Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?** Desde v2.0 incluye también: **¿qué mantiene el dinero aportando hasta la meta en seguros de vida y protección de crédito, y qué papel juega la digitalización?**
 > ⚠️ **Decisión que alimenta: no definida.** Se asumió benchmarking para el diseño de recurrencia en inversión y seguros de vida con ahorro. Si hay decisión concreta, volver a §6.
 
@@ -93,7 +93,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 3. **Fricción de perfilamiento:** ¿abandona más quien debe pasar el cuestionario de perfil (BBVA, Interbank) que quien entra directo (BCP, Trii)? Hoy es conjetura mía.
 4. **Juego vs. sin juego en aporte**, no en operación: nadie lo midió; un A/B daría el primer dato.
 5. **Medir lo que falta:** pedir a los actores (si hay acceso) retención de aporte a 3, 6 y 12 meses por cohorte, con definición de "activo" explícita.
-6. **Métrica de 'cuenta principal' propia:** medir qué porcentaje de clientes tiene el aporte atado a su sueldo o a un débito vinculado a su ingreso, por cohorte, como hacen Chime y Monzo con el depósito directo (§8.11). Es una métrica, no una intervención; sirve para ver si el aporte sostenido se concentra ahí.
+6. **Métrica de 'cuenta principal' propia:** medir qué porcentaje de clientes tiene el aporte atado a su sueldo o a un débito vinculado a su ingreso, por cohorte, como hacen Chime y Monzo con el depósito directo (§8.11). Es una métrica, no una intervención; sirve para ver si el aporte sostenido se concentra ahí. Respaldo indirecto de que el sueldo dispara el ingreso a una app de cuentas: F-924 (§8.6).
 7. **Bolsillo de emergencia dentro del producto de ahorro o vida:** ¿una opción de pausa o rescate parcial reduce la caducidad por liquidez sin bajar el aporte promedio? Respaldo indirecto en F-919 y F-878; no probado en Perú (§8.12).
 
 ## 7. 🕳️ Vacíos
@@ -103,7 +103,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - Sentimiento real de usuarios peruanos (Reddit, X, reseñas de tienda): no se pudo ver.
 - Bancos globales, Vanguard, Fidelity, AFP y fondos de inversión: sin datos útiles en esta pasada.
 - Si los defaults de F-850 funcionan igual con ingresos informales e inestables, típicos en Perú.
-- **v2.0:** tasa de conversión al terminar un préstamo; resultados posteriores a sep-2025 del desgravamen opcional; ingreso a la app por día de cobro; efecto de la facilidad de cancelar sobre la caducidad; persistencia (mes 13, 25) de vida con ahorro en Perú.
+- **v2.0:** tasa de conversión al terminar un préstamo; resultados posteriores a sep-2025 del desgravamen opcional; ingreso a una app de inversión o de seguros por día de cobro (hay respaldo indirecto en una app de cuentas, F-924); efecto de la facilidad de cancelar sobre la caducidad; persistencia (mes 13, 25) de vida con ahorro en Perú.
 
 ## 8. 🔭 Ampliación v2.0 (2026-11-01): ocho preguntas sobre persistencia y digitalización
 
@@ -129,6 +129,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - **Voluntaria por liquidez: respaldada.** Choques como nacimiento o divorcio suben el rescate (F-878). El desempleo se asocia a mayor caducidad (F-879). Una revisión dice que la literatura apoya sobre todo la hipótesis del fondo de emergencia; la de tasas de interés tiene menos respaldo; en pólizas tradicionales alemanas no hay evidencia de ninguna y en las ligadas a fondos hay más (F-880).
 - **Involuntaria: sin dato de seguros.** En suscripciones, ~50% del abandono involuntario viene de tarjetas rechazadas (encuesta a ejecutivos) y proveedores dan 20-40% del total (F-900). No es seguros ni Perú.
 - **Cuando cae el canal de cobro, cae la póliza.** En un caso de microseguros solo 14% de ~10.000 pólizas seguía activa dos años después, porque los clientes dejaron de pedir préstamos (F-883). Es una lección de diseño del cobro, no un promedio.
+- **Evitar mirar cuando se anticipa un problema (inferencia mía).** Si el cliente sospecha que no podrá pagar, tiende a no abrir sus cuentas (F-924). Una app que depende de que el cliente entre llega menos a quien más lo necesita.
 - **Perú: nada.** Ni causas ni mes de caída.
 
 ### 8.5 Qué sostiene la persistencia (evidencia) — 🟡 débil
@@ -140,7 +141,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - La heterogeneidad existe en operaciones: los activos son un tercio (F-903), 41% operó un solo día en Italia (F-904) y en Colombia los más activos rinden peor (F-905).
 - **Ojo con la intuición de que mirar mucho daña:** con ingresos a la cuenta, más atención se asoció a mejor desempeño en un corredor de EE.UU. (F-877, no generalizable). Y el ingreso baja tras caídas del mercado (F-875).
 - Los recordatorios suben el ahorro sobre todo cuando apuntan a un gasto concreto (F-876).
-- **La hipótesis de que el cliente promedio entra a la app el día de cobro no la encontré probada ni refutada.** Es medible con datos propios.
+- **La hipótesis del día de cobro tiene respaldo indirecto.** En una app islandesa que agrega cuentas bancarias, los ingresos a la app suben cuando llega el sueldo (con fechas de pago movidas por fines de semana y feriados) y bajan cuando suben el gasto y los sobregiros (F-924). No es una app de inversión ni de seguros, y no está probado en Perú. Sigue siendo medible con datos propios.
 
 ### 8.7 Qué hacen Nubank, Vitality, Revolut, XTB y otros — 🟡 parcial
 | Actor | Qué hace (publicado) | Qué no publica |
@@ -213,7 +214,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 
 ### 8.13 Hexágono de la Salud Financiera: un mapa de necesidades, no evidencia — 🟠
 
-> Fuente: F-923, material divulgativo de la consultora Beway (cinco de seis vértices). **No amplía el alcance ni responde ninguna de las ocho preguntas con evidencia.** Sirve para ubicar qué necesidad cubre cada producto.
+> Fuente: F-923, material divulgativo de la consultora Beway (los seis vértices). **No amplía el alcance ni responde ninguna de las ocho preguntas con evidencia.** Sirve para ubicar qué necesidad cubre cada producto.
 
 | Vértice | Qué propone | Dónde toca las preguntas |
 |---|---|---|
@@ -222,14 +223,15 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 | **3. Metas a corto y medio plazo** | Metas SMART y ahorro periódico dentro del presupuesto | Recordatorios con un gasto concreto (F-876). Que fijar metas claras ayude a ahorrar **no tiene respaldo experimental en lo que leí** |
 | **4. Flexibilidad financiera** | Liquidez para aprovechar oportunidades, en activos de bajo riesgo | Tensión con la teoría de la liquidez (F-921): liquidez evita decisiones impulsivas pero puede bajar el ahorro. Se concilia (inferencia) separando cubetas: liquidez para emergencias y oportunidades, dinero comprometido para metas y largo plazo |
 | **5. La inversión** | Inflación, interés compuesto y control emocional ante caídas | Días malos (F-875) y 8.6. La aritmética del ejemplo cuadra, pero asume 5% real sin fuente |
+| **6. Deuda inteligente** | Usar deuda para adelantar metas de largo plazo; antes de endeudarse mirar tasa, plazos, **costo financiero total (comisiones y productos asociados)** y posibilidad de pago anticipado; cuota no mayor a 30-40% del ingreso; cuidarse del exceso de confianza y del efecto avestruz | Protección de crédito (8.1 a 8.3): el seguro de desgravamen es uno de los "productos asociados" del costo total, lo que encaja con la norma que obliga a informar comisiones (F-887) (inferencia mía). Efecto avestruz: 8.4 y 8.6 (F-924). El umbral de 30-40% no tiene fuente en la lámina |
 
-**Lectura (inferencia mía):** el hexágono ayuda a ubicar cada producto en una cubeta: resiliencia para el seguro, metas y largo plazo para ahorro e inversión. No cambia las preguntas. El vértice 6 no se recibió.
+**Lectura (inferencia mía):** el hexágono ayuda a ubicar cada producto en una cubeta: resiliencia para el seguro, metas y largo plazo para ahorro e inversión, deuda para el crédito que el desgravamen protege. No cambia las preguntas.
 
 ---
 
 ## 9. 📓 Bitácora
 
-- **2026-11-02** — Se añade §8.13: el Hexágono de la Salud Financiera (F-923) como mapa de necesidades; sin evidencia de efecto y sin ampliar el alcance. Incremental.
+- **2026-11-02** — Se añade §8.13: el Hexágono de la Salud Financiera (F-923, seis vértices) como mapa de necesidades, sin evidencia de efecto y sin ampliar el alcance; y en §8.6 y §8.4 el estudio islandés de atención a las finanzas (F-924), que apoya que el sueldo dispara el ingreso a una app de cuentas. Incremental.
 - **2026-11-02** — Se añade §8.12 con la literatura conductual de ahorro (F-915 a F-922): automatización, erosión de los defaults, compromiso, ahorro para salud en Kenia y teoría de la liquidez. Incremental.
 - **2026-11-02** — Se añade §8.11 con cinco patrones fintech de una lámina interna (F-908) contrastados con Chime, Monzo, N26, Wise y Revolut (F-909 a F-914). Cambio incremental; la versión sigue en v2.0.
 - **2026-11-01 · v2.0** — Ampliación de alcance (cambio estructural): las ocho preguntas de §8; 34 fuentes nuevas (F-874 a F-907). Competidores: Nubank, Vitality, Revolut, XTB, Trade Republic, Yape. Lectura por resúmenes de búsqueda.
