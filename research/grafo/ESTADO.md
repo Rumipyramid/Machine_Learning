@@ -96,11 +96,39 @@
 
 ### 3.2 Instantáneas por git (estado completo del grafo en cada día con commits)
 
-*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-09-21; antes de eso solo vale §3.1.*
+*Fuente: `git show` de cada commit. **El clon es superficial (shallow)**: el historial verificable empieza en 2026-06-21; antes de eso solo vale §3.1.*
 
 | Fecha | Commit | Fuentes | Nodes | Outputs | Wikilinks | Fuentes citadas | Diseño: líneas | H abiertas | H resueltas | Reglas |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 | `0c40870` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
+| 2026-06-21 | `2997753` | 0 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-06-22 | `3e89dce` | 5 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-06-23 | `715bccb` | 0 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-06-25 | `c456024` | 15 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-06-28 | `40a3ad9` | 0 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-06-29 | `6b05da2` | 15 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-06 | `9e36a2c` | 66 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-08 | `739861d` | 77 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-10 | `9dd75d5` | 95 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-11 | `832cc6b` | 116 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-12 | `d1b3f1c` | 27 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-13 | `773e9a2` | 127 | 5 | 0 | 14 | 62 | – | – | – | – |
+| 2026-07-14 | `8c161fe` | 138 | 6 | 0 | 18 | 73 | – | – | – | – |
+| 2026-07-15 | `e812f19` | 159 | 7 | 0 | 20 | 93 | – | – | – | – |
+| 2026-07-16 | `6b5adbd` | 27 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-17 | `4226b71` | 171 | 8 | 0 | 25 | 95 | – | – | – | – |
+| 2026-07-18 | `a9e7d9c` | 27 | 0 | 0 | 0 | 0 | – | – | – | – |
+| 2026-07-19 | `00e1c21` | 171 | 8 | 0 | 25 | 95 | – | – | – | – |
+| 2026-07-20 | `2561161` | 171 | 9 | 0 | 29 | 95 | – | – | – | – |
+| 2026-07-21 | `eb992b6` | 179 | 9 | 0 | 29 | 108 | – | – | – | – |
+| 2026-07-22 | `3c3935e` | 207 | 10 | 0 | 36 | 141 | – | – | – | – |
+| 2026-07-23 | `90e4fac` | 217 | 10 | 0 | 36 | 141 | – | – | – | – |
+| 2026-07-24 | `939d26e` | 235 | 13 | 1 | 52 | 162 | – | – | – | – |
+| 2026-07-26 | `9ee4d52` | 328 | 14 | 1 | 64 | 242 | – | – | – | – |
+| 2026-07-27 | `bf1df1e` | 371 | 14 | 2 | 65 | 256 | – | – | – | – |
+| 2026-07-28 | `1a68c70` | 379 | 15 | 2 | 68 | 264 | – | – | – | – |
+| 2026-07-29 | `ef3a2a3` | 398 | 15 | 2 | 68 | 283 | – | – | – | – |
+| 2026-08-02 | `e2760b7` | 468 | 15 | 2 | 69 | 352 | 1800 | 19 | 12 | 22 |
+| 2026-08-05 | `552b433` | 468 | 15 | 4 | 69 | 352 | 1800 | 19 | 12 | 22 |
 | 2026-10-02 | `e32e8e5` | 515 | 16 | 4 | 84 | 404 | 1898 | 19 | 14 | 22 |
 | 2026-10-03 | `d80e14b` | 645 | 17 | 4 | 96 | 540 | 2000 | 15 | 20 | 22 |
 | 2026-10-04 | `b635cd4` | 740 | 18 | 4 | 110 | 636 | 2001 | 15 | 20 | 22 |
@@ -134,7 +162,7 @@
 - ✅ Wikilinks **rotos** (destino inexistente): **0**
 - ✅ Nodes **aislados** (sin enlaces): **0**
 - ✅ Nodes **ausentes** de la tabla de `alma.md`: **0**
-- ⚠️ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-09-21; antes es indeterminable): **1** — matriz-productos-vida-rimac (alma 2026-07-26 < git 2026-10-03)
+- ✅ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2023-04-26; antes es indeterminable): **0**
 - ✅ Outputs que **no citan ningún node** (viola regla 4): **0**
 
 ## 6. Tabla por node
@@ -169,7 +197,7 @@
 | `glosario-seguro-vida-peru` | 218 | 8 | 4 | 5/5 | 2026-10-11 | 2026-10-11 v1.0 |
 | `venta-vida-digital-hibrida-latam` | 236 | 8 | 4 | 5/5 | 2026-10-25 | 2026-10-25 v1.0 |
 | `glosario-seguro-salud-peru` | 198 | 6 | 5 | 6/6 | 2026-10-11 | 2026-10-11 v1.0 |
-| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | 2026-10-03 | 2026-07-26 v1.2 |
+| `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | 2026-07-26 | 2026-07-26 v1.2 |
 | `modelo-personas-sinteticas` | 81 | 0 | 0 | 7/7 | 2026-10-25 | 2026-10-25 v1.0 |
 
 ## 7. Límites declarados de esta medición
