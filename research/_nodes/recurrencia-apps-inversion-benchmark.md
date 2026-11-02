@@ -3,7 +3,7 @@
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
 > Fecha de elaboración: 2026-11-01 · Última actualización: 2026-11-02 · Versión: **v2.0** (ampliación de alcance: protección de crédito, vida con ahorro y competidores)
 > Origen: `/trinidad` (pista empírica + social + negocio), rol *behavioral designer researcher*.
-> Fuentes en `research/fuentes/codice.md`: **F-847 a F-914** (v1.0: F-847 a F-873 · v2.0: F-874 a F-914; incluye una lámina interna, F-908).
+> Fuentes en `research/fuentes/codice.md`: **F-847 a F-922** (v1.0: F-847 a F-873 · v2.0: F-874 a F-922; incluye una lámina interna, F-908).
 > Pregunta permanente: **¿qué hace que una persona vuelva a aportar a una inversión (y no solo a abrir la app), y qué evidencia independiente lo respalda?** Desde v2.0 incluye también: **¿qué mantiene el dinero aportando hasta la meta en seguros de vida y protección de crédito, y qué papel juega la digitalización?**
 > ⚠️ **Decisión que alimenta: no definida.** Se asumió benchmarking para el diseño de recurrencia en inversión y seguros de vida con ahorro. Si hay decisión concreta, volver a §6.
 
@@ -94,6 +94,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 4. **Juego vs. sin juego en aporte**, no en operación: nadie lo midió; un A/B daría el primer dato.
 5. **Medir lo que falta:** pedir a los actores (si hay acceso) retención de aporte a 3, 6 y 12 meses por cohorte, con definición de "activo" explícita.
 6. **Métrica de 'cuenta principal' propia:** medir qué porcentaje de clientes tiene el aporte atado a su sueldo o a un débito vinculado a su ingreso, por cohorte, como hacen Chime y Monzo con el depósito directo (§8.11). Es una métrica, no una intervención; sirve para ver si el aporte sostenido se concentra ahí.
+7. **Bolsillo de emergencia dentro del producto de ahorro o vida:** ¿una opción de pausa o rescate parcial reduce la caducidad por liquidez sin bajar el aporte promedio? Respaldo indirecto en F-919 y F-878; no probado en Perú (§8.12).
 
 ## 7. 🕳️ Vacíos
 
@@ -187,10 +188,34 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 
 **Lectura (inferencia mía):** los patrones de la lámina son analogías de diseño razonables, pero ninguna de las cinco empresas publica retención, así que "transferible a seguros" es una hipótesis, no un resultado.
 
+### 8.12 Ahorro: qué dice la literatura conductual (2026-11-02) — 🟡 parcial
+
+> Fuentes nuevas: F-915 a F-922. Ya estaban en este node la inscripción automática (F-850), el ahorro con compromiso (F-853), los recordatorios (F-876) y la revisión de calidad de la evidencia (F-852).
+
+| Mecanismo | Qué se halló | Fuente | Límite principal |
+|---|---|---|---|
+| **Automatizar el aporte** | Con inscripción automática, la participación pasó de ~20% a ~90% (F-850). En Dinamarca, ~85% de la gente es "pasiva": no responde a subsidios y su ahorro sube con contribuciones automáticas; US$1 de subsidio sube el ahorro total 1 centavo (F-915). | F-850, F-915 (🟢A) | Pensiones en EE.UU. y Dinamarca; nada en América Latina |
+| **El efecto se erosiona** | ~20% del ahorro creado se compensa con más deuda (F-916). A mediano y largo plazo la dinámica reduce el efecto de la inscripción y de la escalada automáticas (F-917). Choukhmane halla más riqueza a los 65 (>12%) con poco desplazamiento, pero ganancias de corto plazo que se desvanecen (F-918). | F-916, F-917, F-918 (🟡C) | Documentos de trabajo; los estudios no coinciden en cuánto sobrevive |
+| **Aporte que sube con el sueldo** (Save More Tomorrow) | Diseño: se compromete hoy un aumento del aporte con cada futuro aumento de sueldo (F-851). CLEAR califica de baja la evidencia causal (F-922). Las cifras que circulan no coinciden entre fuentes y **no pude verificar ninguna**. | F-851 (🟢A), F-922 (🔵B) | Pocas empresas; sin grupo de control claro |
+| **Compromiso (dinero bloqueado hasta la meta)** | Saldo +82% a un año con una cuenta con compromiso; solo 28% la toma (F-853). Revisión general en F-920, sin tamaños de efecto leídos. | F-853 (🟢A), F-920 (🔵B) | Un banco en Filipinas |
+| **Ahorro para salud en mercados emergentes** | Un lugar seguro para guardar subió el ahorro para salud 66%. La cuenta reservada a emergencias de salud fue muy valorada. Quienes tienen sesgo de presente (~16%) no usaron el dispositivo sin restricción de retiro. El uso siguió alto tres años después (F-919). | F-919 (🟢A) | 771 personas en zonas rurales de Kenia |
+| **Teoría de la liquidez** | Los activos ilíquidos funcionan como compromiso; añadir liquidez puede bajar el ahorro y el bienestar (F-921). | F-921 (🟢A, modelo) | Es un modelo, no una prueba de campo |
+| **Recordatorios** | Suben el ahorro sobre todo cuando apuntan a un gasto concreto (F-876). | F-876 (🟢A) | Sin tamaños de efecto leídos |
+
+**Lectura (inferencia mía):**
+- **Lo que mueve el ahorro es quitar decisiones repetidas y limitar las salidas**, no dar más información ni más funciones. Eso refuerza lo ya visto: automatizar con aviso y pausa.
+- **La digitalización tiene una tensión de fondo.** La teoría (F-921) sugiere que facilitar el retiro puede bajar el ahorro. No hay prueba de campo, pero apunta a la pregunta abierta de 8.8.
+- **Compromiso con válvula de emergencia.** En Kenia, la cuenta reservada a emergencias fue muy valorada (F-919). Es una pista para una opción de pausa o rescate parcial dentro de un producto de ahorro (8.10, punto 2). Es hipótesis, no resultado.
+- **No asumir que lo automático asegura el aporte a 12-24 meses.** Los estudios recientes muestran erosión (F-916 a F-918).
+- **No hay evidencia peruana** y casi ninguna de América Latina.
+
+**No verifiqué:** otras piezas conocidas de la literatura (por ejemplo O'Donoghue y Rabin sobre procrastinación, o la teoría de miopía ante pérdidas) y las cifras originales de Save More Tomorrow. Todo se leyó por resúmenes.
+
 ---
 
 ## 9. 📓 Bitácora
 
+- **2026-11-02** — Se añade §8.12 con la literatura conductual de ahorro (F-915 a F-922): automatización, erosión de los defaults, compromiso, ahorro para salud en Kenia y teoría de la liquidez. Incremental.
 - **2026-11-02** — Se añade §8.11 con cinco patrones fintech de una lámina interna (F-908) contrastados con Chime, Monzo, N26, Wise y Revolut (F-909 a F-914). Cambio incremental; la versión sigue en v2.0.
 - **2026-11-01 · v2.0** — Ampliación de alcance (cambio estructural): las ocho preguntas de §8; 34 fuentes nuevas (F-874 a F-907). Competidores: Nubank, Vitality, Revolut, XTB, Trade Republic, Yape. Lectura por resúmenes de búsqueda.
 - **2026-11-01 · v1.0** — Creación. `/trinidad`; 27 fuentes (F-847 a F-873). Búsqueda sin acceso a textos completos; todo por resúmenes.
@@ -203,7 +228,7 @@ No encontré ningún experimento de campo que muestre que **metas, rachas o noti
 - La pista **de negocio** es abundante pero toda es cifra de empresa; ninguna sirve para inferir retención.
 - Varias fuentes empíricas (F-851, F-854, F-855) tienen autores o revista sin verificar; no apoyar decisiones en sus cifras sin abrir el original.
 - Las cifras de Trii se contradicen entre fuentes y no se resolvió cuál es la correcta.
-- **v2.0:** las cuatro preguntas sobre desgravamen (8.1 a 8.3) y persistencia (8.4, 8.5) quedaron sin dato peruano; la norma de la SBS se leyó solo vía prensa y consultora. Los estudios de Portugal, China y Alemania tienen autor o revista sin verificar. Ninguno de los competidores publica retención de aporte. De las cinco apps de la lámina interna, no se buscó evidencia de efecto de las listas de inicio ni de los cambios de nivel (§8.11).
+- **v2.0:** las cuatro preguntas sobre desgravamen (8.1 a 8.3) y persistencia (8.4, 8.5) quedaron sin dato peruano; la norma de la SBS se leyó solo vía prensa y consultora. Los estudios de Portugal, China y Alemania tienen autor o revista sin verificar. Ninguno de los competidores publica retención de aporte. De las cinco apps de la lámina interna, no se buscó evidencia de efecto de las listas de inicio ni de los cambios de nivel (§8.11). Las cifras originales de Save More Tomorrow no se pudieron verificar (§8.12).
 
 ## Conexiones
 
