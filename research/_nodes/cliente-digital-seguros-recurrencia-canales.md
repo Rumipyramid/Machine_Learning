@@ -152,6 +152,12 @@
 - **Mapfre (CX Index 2025): «la mejor experiencia del cliente entre las aseguradoras».** Se sostuvo: tercer año en el XPI 2026, más los premios de IZO y del eCommerce Award 2026 (F-970, F-998). No hay puntajes públicos.
 - **Mapfre AutoWin! (2023): «premiar al buen conductor».** La app sigue, pero sin cifras de uso ni efecto en siniestros; el premio pasó a convivir con un seguro por kilómetros con hasta 30% de descuento (F-997, F-999). La telemática en el Perú no ha mostrado escala pública.
 
+### Lo que dicen los clientes en Google Play (2026-11-02)
+- **Calificación:** App Mapfre Perú 4,7 estrellas y La Positiva Seguros 2,3 (F-1000). La de Mapfre coincide con su liderazgo en experiencia del cliente (F-998).
+- **La queja dominante es que la app funcione, no que haga más:** no deja ingresar, se cuelga, se cae por días. Igual que las reseñas negativas de la App RIMAC (cierres inesperados, F-971).
+- **El cliente lee la falla de la app como anticipo del siniestro** («ojalá que ante un siniestro, el servicio no sea tan malo como la App»), y rechaza que lo obliguen a descargarla para algo puntual, como ver su SOAT (F-1000).
+- **Derivar la queja a otro canal la empeora:** la respuesta de Mapfre pide escribir a un correo y un cliente editó su reseña para criticarla (F-1000). Las reseñas son seleccionadas y no representativas; el dato representativo es el promedio.
+
 ## 2. 🔬 Pista académica (resumen)
 
 - 🇵🇪 Casi no hay estudios peruanos sobre seguros digitales; un estudio de teleconsulta (29,2% de uso, abandono parcial tras la cuarentena; F-909, por confirmar).
