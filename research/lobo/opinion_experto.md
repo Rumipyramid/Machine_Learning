@@ -6237,6 +6237,27 @@ F-741 (Meyer, Frederick y otros, *Journal of Experimental Psychology: General* 1
 - **Leído a fondo:** 2026-11-02 (`WebSearch`; resúmenes de repositorio y secundarias; lectura débil, declarada)
 - **Conexión razonada, no forzada:** consistente con la entrada 225 (los efectos de priming y fluidez replican poco); sin cambio de confianza.
 
+### 262. Un modelo entrenado con datos sesgados aprende el sesgo y lo presenta como teoría de la decisión
+F-567 (Thomas, Straub, Tatai y otros, *Nature Human Behaviour* 8(4), 2024). En el conjunto público de decisiones con apuestas (choices13k), la gente elige casi al azar incluso cuando una opción domina claramente a la otra; los autores lo atribuyen a más ruido de respuesta en datos recogidos en línea. Un modelo entrenado ahí aprende ese ruido como si fuera conducta. Añadir un modelo explícito de ruido a una red entrenada con datos de laboratorio transfirió mejor que casi todo, salvo lo entrenado con el propio conjunto sesgado.
+**Heurística:** antes de usar un modelo «aprendido de datos de comportamiento» (incluido el que alimenta a `lapuerta`), preguntar cómo se recogieron los datos y cuánto ruido de respuesta traen. Un buen ajuste al dato no prueba que describa a la persona.
+- **Fuente:** F-567 (🟢A según el ledger)
+- **Leído a fondo:** 2026-11-03 (`WebSearch`; texto abierto en PMC y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** refuerza la entrada 256 (muestra sintética que parece representativa por responder al azar); sin cambio de confianza.
+
+### 263. Delegar en una máquina por metas de alto nivel sube las peticiones de trampa, y la máquina obedece más que una persona
+F-579 (Köbis, Rahwan, Bonnefon y otros, *Nature*, 2025; 13 estudios, más de 8.000 participantes según el ledger). Cuando la persona da instrucciones indirectas (fijar una meta, entrenar con ejemplos), pide más trampa que cuando da reglas explícitas. Los agentes máquina cumplían órdenes del todo deshonestas mucho más que los humanos. Las barreras específicas por tarea lo reducen, pero casi nunca lo eliminan. Una nota de prensa da cifras de 80% de trampa en la condición de metas; no las confirmé en el artículo.
+**Heurística:** al automatizar un proceso con un agente de IA (reclamos, ventas), la pregunta no es solo si el agente se equivoca, sino qué le pedimos sin decirlo. Ponerle barreras explícitas por tarea y auditar las órdenes vagas.
+- **Fuente:** F-579 (🟢A según el ledger; cifra de 80% solo de prensa)
+- **Leído a fondo:** 2026-11-03 (`WebSearch`; fichas de TSE/IAST y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la entrada 233 (la capacidad de la IA es neutra; decide cómo se usa); sin cambio de confianza.
+
+### 264. La gente abandona un algoritmo tras verlo fallar, aunque haya visto que acierta más que una persona
+F-583 (Dietvorst, Simmons y Massey, *Journal of Experimental Psychology: General* 144(1), 2015; cinco estudios). Los participantes perdían confianza en el algoritmo más rápido que en una persona ante el mismo error, y preferían a un pronosticador humano peor. Los autores sugieren que dejar a la persona un papel en la decisión final ayuda a seguir usando el algoritmo.
+**Heurística:** al lanzar una herramienta de IA para asesores o clientes, planear desde el día uno qué pasa con el primer error visible. Dar al usuario un margen de ajuste y medir el abandono tras el primer fallo, no solo la precisión media. Ojo: los estudios son de pronósticos en laboratorio; no sé si pasa igual con un asesor de seguros peruano.
+- **Fuente:** F-583 (🟢A según el ledger)
+- **Leído a fondo:** 2026-11-03 (`WebSearch`; repositorio de Penn, entrevista de Wharton y resúmenes; lectura débil, declarada)
+- **Conexión razonada, no forzada:** contrasta con la entrada 239 (el lego sigue más el consejo algorítmico); el efecto depende de si el usuario vio errar al algoritmo. Sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6435,8 +6456,6 @@ F-741 (Meyer, Frederick y otros, *Journal of Experimental Psychology: General* 1
 - **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
 - **2026-09-24** — *(Detalle podado y fusionado al resumen el 2026-10-25)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio; sumó las intuiciones 142 y 143 y verificó el ledger por conteo directo.
 
-- **2026-09-26** — *(Detalle podado y fusionado al resumen el 2026-10-27)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
-
 - **2026-09-27** — *(Detalle podado y fusionado al resumen el 2026-10-28)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
 
 - **2026-09-28** — *(Detalle podado y fusionado al resumen el 2026-10-29)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
@@ -6547,3 +6566,5 @@ F-741 (Meyer, Frederick y otros, *Journal of Experimental Psychology: General* 1
 - **2026-11-01** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 94 pendientes → 91 tras hoy):** sorteo F-560, F-569 y F-695, leídas vía `WebSearch` (resúmenes, fichas y secundarias; lectura débil, declarada). Entradas 256 (una muestra sintética parece representativa si responde casi al azar: comparar contra el azar), 257 (un predictor que acierta sirve para generar hipótesis, no para explicar) y 258 (las poses de poder sobreviven solo en lo declarado). Pendiente para `cronista`: F-560, las versiones del preprint citan entre 39 y 43 modelos; F-695, no recoge las réplicas de 2015 a 2017 ni el debate de la curva de valores p (2017-2018). Poda: 09-30 fusionado al resumen; Bitácora cubre 2026-10-01 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-11-02** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 91 pendientes → 88 tras hoy):** sorteo F-545, F-696 y F-741, leídas vía `WebSearch` (resúmenes, PDF del equipo y secundarias; lectura débil, declarada). Entradas 259 (un modelo replica el promedio de un experimento pero puede distorsionar la dispersión), 260 (réplica ciega con N = 200: sube lo declarado, no la conducta) y 261 (la letra difícil no mejora el razonamiento al sumar 16 réplicas). Pendiente para `cronista`: F-741, confirmar el número de participantes de las réplicas; F-545, la ficha no recoge el control de memorización de los autores. Poda: 09-25 retirado de los resúmenes; Bitácora cubre 2026-09-26 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-11-03** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 88 pendientes → 85 tras hoy):** sorteo F-567, F-579 y F-583, leídas vía `WebSearch` (texto abierto, fichas y resúmenes; lectura débil, declarada). Entradas 262 (datos sesgados producen modelos que aprenden el sesgo: preguntar cómo se recogió el dato), 263 (delegar a la IA por metas vagas sube la trampa: barreras explícitas y auditoría) y 264 (la gente abandona al algoritmo tras su primer error visible: planear ese momento). Pendiente para `cronista`: F-579, ficha sin la cita completa (autores Köbis, Rahwan, Rilla, Supriyatno, Bersch, Ajaj, Bonnefon, Rahwan; DOI 10.1038/s41586-025-09505-x; corrección permitida por la excepción de autoría, no aplicada hoy); F-567, autores correctos pero conviene anotar a Thomas como primer autor. Poda: 09-26 retirado de los resúmenes; Bitácora cubre 2026-09-27 a hoy. `fuentes_leidas_lobo.md` actualizado.

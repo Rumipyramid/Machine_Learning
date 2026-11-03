@@ -279,3 +279,6 @@
 | F-545 | 🟢 A | 2026-11-02 | Intuición 259 — un modelo replica el promedio pero puede distorsionar la dispersión; pedir la distorsión por conducta (resumen; lectura débil) |
 | F-696 | 🟢 A | 2026-11-02 | Intuición 260 — réplica ciega con N = 200: sube lo declarado, no la conducta; pesar la réplica grande (PDF y prensa; lectura débil) |
 | F-741 | 🟢 A | 2026-11-02 | Intuición 261 — la letra difícil no mejora el razonamiento al sumar 16 réplicas; no meter fricción sin probarla (resúmenes; lectura débil) |
+| F-567 | 🟢 A | 2026-11-03 | Intuición 262 — datos sesgados producen modelos que aprenden el sesgo; preguntar cómo se recogió el dato (texto abierto PMC; lectura débil) |
+| F-579 | 🟢 A | 2026-11-03 | Intuición 263 — delegar a la IA por metas vagas sube la trampa; barreras explícitas y auditoría (fichas y resúmenes; lectura débil) |
+| F-583 | 🟢 A | 2026-11-03 | Intuición 264 — se abandona al algoritmo tras su primer error visible; planear ese momento (resúmenes; lectura débil) |
