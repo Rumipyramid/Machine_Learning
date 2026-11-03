@@ -137,7 +137,7 @@
 ### 📱 Social
 - **Reclamos y sanciones:** Indecopi sancionó en 2025-2026 a Mapfre (negar una pensión, excluir a mayores de 85 años, pagar tarde), a Rímac (pagar tarde un SOAT por invalidez; desgravamen), a Pacífico (indemnización por robo subvaluada) y a Interseguro (F-990). Patrón: demora en el pago y negativa de cobertura, como en 2019-2022 (F-886).
 - **Seguridad:** filtración de datos del SOAT de Pacífico en nov-2024, 0,5% de sus clientes (F-992).
-- **La promesa digital de Pacífico, en el tiempo:** abre su laboratorio de innovación hacia 2017; según la empresa, triplica sus ventas digitales entre 2019 y 2021 y en 2022 pasa de 4 a más de 18 productos digitales, con más de 60% de las consultas resueltas por App y chatbot (F-1007). En sep-2024 declara que quiere «ser el Amazon del mercado asegurador», con Yape como canal principal (F-1008). En 2025 llega a 3,4 millones de personas por BCP, Mibanco y Yape (F-941), mientras su App propia sigue con 3,0 estrellas (F-885). Lectura: la promesa se cumplió en el canal de otro, no en la App propia.
+- **La promesa digital de Pacífico, en el tiempo:** abre su laboratorio de innovación hacia 2017; según la empresa, triplica sus ventas digitales entre 2019 y 2021 y en 2022 pasa de 4 a más de 18 productos digitales, con más de 60% de las consultas resueltas por App y chatbot (F-1007). En sep-2024 declara que quiere «ser el Amazon del mercado asegurador», con Yape como canal principal (F-1008). En 2025 llega a 3,4 millones de personas por BCP, Mibanco y Yape (F-941), mientras su App propia sigue con 3,0 estrellas (F-885). Antes de 2025 se fijó dos metas para sus seguros de bajo costo: superar los 4 millones de asegurados (F-1009) y duplicar a 6 millones esas pólizas (F-891); en 2025 informa 3,4 millones de personas (F-941), así que no reporta haberlas cumplido. Lectura: la promesa se cumplió en el canal de otro, no en la App propia, y más lento de lo prometido.
 - **Apps:** sin reseñas masivas; las calificaciones de comparadores no son verificables (F-993).
 
 ### Regulación
@@ -189,7 +189,7 @@
 ## 4. 📈 Pista de negocio (resumen)
 
 - 🇵🇪 Mercado: S/ 24.035 millones en primas 2025 (F-890); BCG ve un mercado posible cuatro veces mayor, vía bancaseguros y embebido (F-900); 43% compraría un seguro vinculado a otra compra (F-887). SOAT 2024: más de 68.000 siniestros (F-901). Venta a distancia en ampliación regulatoria (F-912); desgravamen voluntario desde 2025 (F-883).
-- 🇵🇪 Aseguradoras: RIMAC (F-871, F-910), Pacífico (F-890, F-891, F-892, F-941, F-1007, F-1008), Interseguro (F-872, F-940), La Positiva (F-924), Mapfre (F-925), Yape (F-893, F-894); gremio (F-943).
+- 🇵🇪 Aseguradoras: RIMAC (F-871, F-910), Pacífico (F-890, F-891, F-892, F-941, F-1007, F-1008, F-1009), Interseguro (F-872, F-940), La Positiva (F-924), Mapfre (F-925), Yape (F-893, F-894); gremio (F-943).
 - 🇵🇪 Pagos y banca: BCRP (F-933, F-934, F-935, F-939), BCP (F-936, F-942), BBVA (F-937, F-938).
 - 🌎 Porto (F-914), Nubank (F-915), México (F-921), Brasil (F-922), Colombia (F-920).
 - 🌏 GCash (F-916), PhonePe (F-917), Swiss Re Asia (F-919), Ping An (F-867).
