@@ -102,7 +102,7 @@
 - **Aseguradoras:** ninguna publica usuarios activos ni conversión de su app. RIMAC informa ~550 mil usuarios recurrentes (F-871); Interseguro vendía ~70% de su SOAT en digital en 2022 (F-940). La masificación pasa por el banco y la billetera: Pacífico llega a 3,4 millones de personas vía BCP, Mibanco y Yape (F-941).
 
 ### 📱 Social: qué dicen y valoran los usuarios
-- **Calificaciones:** apps bancarias entre 4,5 y 4,8 en tiendas (F-968, F-971); App RIMAC 4,5 con 604 calificaciones en App Store Perú; Mi Espacio Pacífico 3,0 con 421 (F-885, F-971).
+- **Calificaciones:** apps bancarias entre 4,5 y 4,8 en tiendas (F-968, F-971); App RIMAC 4,5 con 604 calificaciones en App Store Perú; Mi Espacio Pacífico 3,0 con 421 (F-885, F-971) y unas 3,3 en Google Play según un agregador (F-1011); App Mapfre Perú, 4,7 también en la App Store según otro agregador (F-1012).
 - **Experiencia:** Yape lidera el ranking general de experiencia por tercer año; BCP lidera banca y Mapfre seguros (F-970). Interbank destaca en navegación y búsqueda, BCP en diseño de interfaz (F-967).
 - **Lo que molesta:** caídas recurrentes de Yape, BCP e Interbank (F-972), fraude y operaciones no reconocidas, primera causa de reclamo bancario (F-932, F-973), y en seguros, cierres inesperados de la app y trámites que no se completan tras un choque (F-971). 67% teme un fraude financiero (F-969).
 
