@@ -282,3 +282,6 @@
 | F-567 | 🟢 A | 2026-11-03 | Intuición 262 — datos sesgados producen modelos que aprenden el sesgo; preguntar cómo se recogió el dato (texto abierto PMC; lectura débil) |
 | F-579 | 🟢 A | 2026-11-03 | Intuición 263 — delegar a la IA por metas vagas sube la trampa; barreras explícitas y auditoría (fichas y resúmenes; lectura débil) |
 | F-583 | 🟢 A | 2026-11-03 | Intuición 264 — se abandona al algoritmo tras su primer error visible; planear ese momento (resúmenes; lectura débil) |
+| F-816 | 🟢 A | 2026-11-04 | Intuición 265 — la membresía vende por cómo la vive el cliente y la cuota lo ata; separar valor real de costo hundido (resúmenes y SSRN; lectura débil) |
+| F-668 | 🟢 A | 2026-11-04 | Intuición 266 — la carga mental acorta o alarga el tiempo percibido según si avisaron; medir duración real y recordada (resúmenes y fichas; lectura débil) |
+| F-701 | 🟢 A | 2026-11-04 | Intuición 267 — sonreír mueve poco la emoción; no diseñar sobre un efecto pequeño y variable (PubMed y tesis previa; lectura débil) |

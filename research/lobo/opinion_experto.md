@@ -6258,6 +6258,27 @@ F-583 (Dietvorst, Simmons y Massey, *Journal of Experimental Psychology: General
 - **Leído a fondo:** 2026-11-03 (`WebSearch`; repositorio de Penn, entrevista de Wharton y resúmenes; lectura débil, declarada)
 - **Conexión razonada, no forzada:** contrasta con la entrada 239 (el lego sigue más el consejo algorítmico); el efecto depende de si el usuario vio errar al algoritmo. Sin cambio de confianza.
 
+### 265. Una membresía vende más sobre todo por cómo la vive el cliente, y la cuota pagada lo ata
+F-816 (Iyengar, Park y Yu, *Journal of Marketing Research* 59(6), 2022). En un minorista grande que lanzó un programa de suscripción, los autores combinan diferencias en diferencias con bosques aleatorios para separar el efecto de la membresía de la autoselección de quien se afilia. Las compras suben y el efecto persiste. Solo cerca de un tercio viene del beneficio económico; el resto es «no económico», y los autores lo atribuyen a una falacia del costo hundido por la cuota inicial. El detalle de la división 1/3–2/3 lo leí en resúmenes y notas de prensa, no en el texto completo.
+**Heurística:** si una membresía o un seguro con prima pagada «funciona», preguntar cuánto es valor real y cuánto es el cliente defendiendo lo que ya pagó. Ese segundo efecto sube la retención, pero también la molestia del cliente cuando se da cuenta. Es un solo minorista: no lo generalizo a seguros peruanos.
+- **Fuente:** F-816 (🟢A según el ledger)
+- **Leído a fondo:** 2026-11-04 (`WebSearch`; resúmenes, SSRN y notas de Wharton; lectura débil, declarada)
+- **Conexión razonada, no forzada:** complementa la entrada 255 (lealtad: autoselección y erosión a 6-9 meses); aquí el control de autoselección es más fuerte. Sin cambio de confianza.
+
+### 266. La carga mental cambia el tiempo percibido en direcciones opuestas según si te avisaron que lo ibas a medir
+F-668 (Block, Hancock y Zakay, *Acta Psychologica* 134, 2010; meta-análisis de 117 experimentos). Con más carga cognitiva, quien sabía de antemano que le preguntarían la duración la juzga más corta (la atención se va a otra tarea). Quien recibe la pregunta por sorpresa la juzga más larga (hay más contenido en la memoria). Los autores analizan seis tipos de carga por separado y descartan teorías que no encajan con ese patrón. Solo leí resúmenes y fichas, no el PDF completo.
+**Heurística:** cuando un cliente dice «esperé mucho» o «fue rápido», preguntar si estaba pendiente del tiempo o si lo recuerda después. Para medir una espera (call center, reclamo), no sirve una sola pregunta: hay que medir la duración real y la recordada por separado.
+- **Fuente:** F-668 (🟢A según el ledger)
+- **Leído a fondo:** 2026-11-04 (`WebSearch`; resúmenes y fichas de la autora y del autor; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la entrada 253 (el «tiempo lento» del miedo es memoria, no percepción); sin cambio de confianza.
+
+### 267. Sonreír mueve un poco la emoción, pero poco y de forma irregular: no diseñar sobre eso
+F-701 (Coles, Larsen y Lench, *Psychological Bulletin* 145(6), 2019). Meta-análisis de 286 tamaños de efecto en 138 estudios: la expresión facial sí influye en la emoción declarada, pero el efecto es pequeño y muy variable. La cifra d = 0,20 la confirmé solo en la tesis previa de los autores, no en el resumen publicado. Hay indicios de sesgo de publicación en los estudios de percepción afectiva, no en los de experiencia emocional.
+**Heurística:** un efecto «real pero pequeño y variable» sirve para una hipótesis, no para una promesa de producto. Si un diseño depende de que el gesto o el tono del asesor cambie el ánimo del cliente, probarlo con medidas de conducta antes de invertir.
+- **Fuente:** F-701 (🟢A según el ledger; d = 0,20 pendiente de confirmar en el texto publicado)
+- **Leído a fondo:** 2026-11-04 (`WebSearch`; PubMed, tesis de Tennessee y notas de prensa; lectura débil, declarada)
+- **Conexión razonada, no forzada:** consistente con la entrada 261 y con la 259 (efectos de priming y de encarnación replican poco); sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6426,59 +6447,6 @@ F-583 (Dietvorst, Simmons y Massey, *Journal of Experimental Psychology: General
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
   (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
-- **2026-09-08** — *(Detalle podado y fusionado al resumen el 2026-10-08)*: ledger fijo en F-468, corrida de intuición sin cambio de confianza en tesis.
-
-- **2026-09-09** — *(Detalle podado y fusionado al resumen el 2026-10-09)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-10** — *(Detalle podado y fusionado al resumen el 2026-10-10)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-11** — *(Detalle podado y fusionado al resumen el 2026-10-11)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-12** — *(Detalle podado y fusionado al resumen el 2026-10-12)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-13** — *(Detalle podado y fusionado al resumen el 2026-10-13)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-14** — *(Detalle podado y fusionado al resumen el 2026-10-14)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-15** — *(Detalle podado y fusionado al resumen el 2026-10-15)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-16** — *(Detalle podado y fusionado al resumen el 2026-10-16)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-17** — *(Detalle podado y fusionado al resumen el 2026-10-17)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-18** — *(Detalle podado y fusionado al resumen el 2026-10-19)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-19** — *(Detalle podado y fusionado al resumen el 2026-10-20)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-- **2026-09-20** — *(Detalle podado y fusionado al resumen el 2026-10-21)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-21** — *(Detalle podado y fusionado al resumen el 2026-10-22)*: corrida diaria de intuición y refinamiento; sin cambios de confianza.
-
-- **2026-09-22** — *(Detalle podado y fusionado al resumen el 2026-10-23)*: corrida diaria de refinamiento; sin cambios de confianza.
-
-- **2026-09-23** — *(Detalle podado y fusionado al resumen el 2026-10-24)*: corrida diaria de refinamiento; subió la confianza de la tesis 3 de Media a Alta (F-7) y sumó las intuiciones 139 a 141.
-- **2026-09-24** — *(Detalle podado y fusionado al resumen el 2026-10-25)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio; sumó las intuiciones 142 y 143 y verificó el ledger por conteo directo.
-
-- **2026-09-27** — *(Detalle podado y fusionado al resumen el 2026-10-28)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
-
-- **2026-09-28** — *(Detalle podado y fusionado al resumen el 2026-10-29)*: corrida diaria de refinamiento; sin cambio de confianza en tesis de negocio.
-
-- **2026-09-29** — *(Detalle podado y fusionado al resumen el 2026-10-30)*: corrida diaria de refinamiento; un matiz (cifra de retención "phygital" no hallada en el informe público, degradada a hipótesis) y las intuiciones 157 a 159.
-
-- **2026-10-04** — Corrida diaria de refinamiento. `main` al día (pull trajo grafo/relaciones, no tocó esta
-  opinión). El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`:
-  **528 filas (F-1 a F-528), +60 desde la última entrada (F-469 a F-528)**, primer movimiento del ledger en
-  días. Lectura de negocio de lo nuevo: (1) **Insurtech (tesis 25):** Root Q2 2026 (F-481) mantiene combined
-  ratio 92,1% pero con prima −1% y acción −10%; Lemonade (F-509/F-510) llega a loss ratio bruto 60% y pierde
-  24% en bolsa: el mercado castiga la falta de crecimiento rentable incluso con suscripción sana — matiz, sin
-  cambio de confianza. (2) **Perú (riesgos):** F-504/F-506 (Rímac utilidad −40% en 2T; sistema +1,1% en primas
-  1S) y F-505 (Mapfre Perú ratio combinado 102,4%) apuntan a compresión de rentabilidad, pero son 🟡C/🔵B sin
-  tabla SBS: instinto, no dato, hasta verificar; **no** subo ninguna confianza. (3) **Conducta humano-IA
-  (F-488 a F-503):** F-488 y F-489 dan base A/B a que la adulación y la persuasión de la IA son reales; F-499
-  (microtargeting no supera mensaje genérico) y F-518/F-519 refuerzan tesis 22 (personalizar no es gratis);
-  F-516 (🟢A) refuerza que el valor humano+IA está en crear, no en decidir — las comparaciones con asesor
-  conversacional de Rimac deben medirse en decisión. Varias filas son 🟡C/🟠D leídas solo por título
-  (F-494, F-497, F-500, F-501, F-503): no entran. **Intuición:** F-516 (🟢A nueva, prioridad por regla) más F-481 y
-  F-488 (🔵B, sorteo al azar), vía `WebSearch`. Entradas 172-174. Poda: 09-04 fusionado al resumen; Bitácora cubre
-  2026-09-05 a hoy. `fuentes_leidas_lobo.md` actualizado.
-
 - **2026-10-05** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
   existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** desde la entrada de ayer
   (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni confianzas; matiz de lectura: F-521 (🟢A) es
@@ -6568,3 +6536,5 @@ F-583 (Dietvorst, Simmons y Massey, *Journal of Experimental Psychology: General
 - **2026-11-02** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 91 pendientes → 88 tras hoy):** sorteo F-545, F-696 y F-741, leídas vía `WebSearch` (resúmenes, PDF del equipo y secundarias; lectura débil, declarada). Entradas 259 (un modelo replica el promedio de un experimento pero puede distorsionar la dispersión), 260 (réplica ciega con N = 200: sube lo declarado, no la conducta) y 261 (la letra difícil no mejora el razonamiento al sumar 16 réplicas). Pendiente para `cronista`: F-741, confirmar el número de participantes de las réplicas; F-545, la ficha no recoge el control de memorización de los autores. Poda: 09-25 retirado de los resúmenes; Bitácora cubre 2026-09-26 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-11-03** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 88 pendientes → 85 tras hoy):** sorteo F-567, F-579 y F-583, leídas vía `WebSearch` (texto abierto, fichas y resúmenes; lectura débil, declarada). Entradas 262 (datos sesgados producen modelos que aprenden el sesgo: preguntar cómo se recogió el dato), 263 (delegar a la IA por metas vagas sube la trampa: barreras explícitas y auditoría) y 264 (la gente abandona al algoritmo tras su primer error visible: planear ese momento). Pendiente para `cronista`: F-579, ficha sin la cita completa (autores Köbis, Rahwan, Rilla, Supriyatno, Bersch, Ajaj, Bonnefon, Rahwan; DOI 10.1038/s41586-025-09505-x; corrección permitida por la excepción de autoría, no aplicada hoy); F-567, autores correctos pero conviene anotar a Thomas como primer autor. Poda: 09-26 retirado de los resúmenes; Bitácora cubre 2026-09-27 a hoy. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-11-04** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 81 pendientes → 78 tras hoy):** sorteo F-816, F-668 y F-701, leídas vía `WebSearch` (resúmenes, fichas y repositorios; lectura débil, declarada). Entradas 265 (una membresía vende por cómo la vive el cliente y la cuota pagada lo ata: separar valor real de costo hundido), 266 (la carga mental acorta o alarga el tiempo percibido según si avisaron que se mediría: medir duración real y recordada por separado) y 267 (sonreír mueve poco la emoción: no diseñar sobre un efecto pequeño y variable). Pendiente para `cronista`: F-701, confirmar d = 0,20 en el texto publicado (hoy solo en la tesis previa); F-816, título exacto y año de publicación (JMR 59(6), 2022, pp. 1101-1119, según las fichas). Poda: Bitácora cubre 2026-10-05 a hoy. `fuentes_leidas_lobo.md` actualizado.
