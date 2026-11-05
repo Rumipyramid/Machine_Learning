@@ -285,3 +285,6 @@
 | F-816 | 🟢 A | 2026-11-04 | Intuición 265 — la membresía vende por cómo la vive el cliente y la cuota lo ata; separar valor real de costo hundido (resúmenes y SSRN; lectura débil) |
 | F-668 | 🟢 A | 2026-11-04 | Intuición 266 — la carga mental acorta o alarga el tiempo percibido según si avisaron; medir duración real y recordada (resúmenes y fichas; lectura débil) |
 | F-701 | 🟢 A | 2026-11-04 | Intuición 267 — sonreír mueve poco la emoción; no diseñar sobre un efecto pequeño y variable (PubMed y tesis previa; lectura débil) |
+| F-663 | 🟢 A | 2026-11-05 | Intuición 268 — la disonancia cognitiva no replicó en 39 laboratorios; no diseñar compromisos sobre esa teoría (abstracts; lectura débil) |
+| F-757 | 🟢 A | 2026-11-05 | Intuición 269 — vínculo clima-conflicto en disputa; plan con escenarios para ambos lados (prensa y resúmenes; lectura débil) |
+| F-546 | 🟢 A | 2026-11-05 | Intuición 270 — el ensayo de «IA reemplaza participantes» era más cauto que su titular; usar muestras sintéticas para pilotear (abstracto y críticas; lectura débil) |
