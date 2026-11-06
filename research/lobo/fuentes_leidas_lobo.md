@@ -288,3 +288,6 @@
 | F-663 | 🟢 A | 2026-11-05 | Intuición 268 — la disonancia cognitiva no replicó en 39 laboratorios; no diseñar compromisos sobre esa teoría (abstracts; lectura débil) |
 | F-757 | 🟢 A | 2026-11-05 | Intuición 269 — vínculo clima-conflicto en disputa; plan con escenarios para ambos lados (prensa y resúmenes; lectura débil) |
 | F-546 | 🟢 A | 2026-11-05 | Intuición 270 — el ensayo de «IA reemplaza participantes» era más cauto que su titular; usar muestras sintéticas para pilotear (abstracto y críticas; lectura débil) |
+| F-669 | 🟢 A | 2026-11-06 | Intuición 271 — la emoción acelera el reloj interno pero no se separa de la atención; medir tiempo real y recordado (fichas y citas; lectura débil) |
+| F-692 | 🟢 A | 2026-11-06 | Intuición 272 — una crítica teórica pide predicciones comprobables antes de diseñar sobre «el cuerpo influye» (abstract y réplica; lectura débil) |
+| F-806 | 🟢 A | 2026-11-06 | Intuición 273 — el programa de lealtad mueve al cliente ligero, no al intensivo; mirar el tercer mes (abstract y resumen de la autora; lectura débil) |
