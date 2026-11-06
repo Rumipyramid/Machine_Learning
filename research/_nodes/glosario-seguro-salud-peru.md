@@ -181,6 +181,7 @@ Por eso este glosario funciona mejor como parte de un sistema:
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — cuando un centro sale de la red, el aviso al asegurado tiene que usar bien "red de prestadores", "crédito" y "reembolso".
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — la falta de
   información/comprensión es la causa #1 de desconfianza en Perú (§3.3 de ese node); este
   glosario es una respuesta directa a esa brecha.

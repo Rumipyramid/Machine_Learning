@@ -335,6 +335,7 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — mira desde la comunicación lo que aquí es mecanismo de costo: redes cerradas y dirección del paciente hacia proveedores más baratos (imágenes, Anthem, recompensas).
 - [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias (Perú)]] — este node aporta el
   marco de mecanismos globales; ese node aplica el diseño concreto al caso peruano (PL 08488,
   automedicación, InkaFarma/Mifarma).

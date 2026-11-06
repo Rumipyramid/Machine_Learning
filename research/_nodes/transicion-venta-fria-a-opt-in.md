@@ -308,6 +308,7 @@ sustituyen la evidencia de §1-3, pero sirven como lectura de entrada al tema:
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — la llamada que redirige al asegurado a un centro nuevo roza el contacto comercial si ofrece un incentivo.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — la brecha de confianza y desconfianza en seguros (§1.2-1.3)
   es parte de por qué la venta fría erosiona la relación que este node describe.

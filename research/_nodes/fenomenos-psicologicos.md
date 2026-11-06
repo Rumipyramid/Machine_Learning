@@ -537,6 +537,7 @@ Lo que sigue es **inferencia** a partir de los 44 fenómenos; cada patrón cita 
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — aplica la aversión a la pérdida (§5.4) y la inercia al encuadre del aviso cuando un centro sale de la red.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] — la crisis del nudge allá, la de los efectos de laboratorio aquí; misma lección de replicación.
 - [[convergencia-psicologia-economia-ia|Convergencia psicología + economía + IA]] — los LLM como sujetos que "replican" estudios clásicos (F-545, Milgram); PF4 prueba si imitan la literatura.
 - [[conducta-humano-ia|Conducta humano-IA]] — obediencia a la autoridad y fluidez como base de la sobre-confianza en la IA.

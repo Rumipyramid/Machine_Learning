@@ -352,6 +352,7 @@ recomendación de mantenerlas se apoya en evidencia general de e-commerce/market
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — usa la regla de reducir opciones: recomendar un solo centro alternativo y dejar la lista completa como respaldo.
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — este node aplica el problema general de confianza/déficit
   de información (§1.2-1.3 de ese node) al momento específico de explicación del producto

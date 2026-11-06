@@ -300,6 +300,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ## Conexiones
 
+- [[comunicacion-salida-red-proveedores-salud|Aviso de salida de un proveedor de la red]] — un cambio de red mal comunicado confirma la desconfianza por falta de información que este node documenta.
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — caso
   real de la brecha de protección (~3,3% de hogares con seguro de desastres): en el Niño Costero 2017 el seguro cubrió ~7% del daño
   (F-773) y los hogares se recuperaron con donaciones, no con indemnizaciones (F-752); coyuntura 2026-27.
