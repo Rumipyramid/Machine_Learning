@@ -4,9 +4,10 @@
 > originalmente solo vivían en el chat (2026-07-10). Fuentes indexadas en
 > `fuentes/codice.md` (F-86 a F-116, F-193 a F-207; actualización 2026-10-02: F-477 a F-478, F-480, F-481 (y F-198), F-487).
 >
-> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-10-04 · Versión: v1.2
+> Fecha de elaboración: 2026-07-10 · Última actualización: 2026-11-07 · Versión: v1.3
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
-> con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`)
+> con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`;
+> v1.3 amplía con §7: programas cardiovasculares y recompensas tipo Vitality según quién paga, F-847 a F-864)
 
 ---
 
@@ -308,6 +309,35 @@ Swiss Re (sigma 2/2026): crecimiento real de primas de **1,3% en 2026** (3,9% en
 
 ### 6.5 Qué no se encontró
 Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farmacia/triage en Perú, y cualquier dato de seguros de salud en Perú posterior a agosto: sin evidencia en esta pasada.
+
+## 7. Programas cardiovasculares y recompensas tipo Vitality: qué funciona según quién paga
+
+*Agregado 2026-11-07, a partir del contraste del enfoque del programa de Cardiología de la Clínica Ricardo Palma (output abajo). Lectura por resúmenes y fuentes secundarias; F-847 a F-864.*
+
+**Conclusión:** el valor económico de un programa cardiovascular está en los pacientes con enfermedad, no en el bienestar general, y una dinámica de recompensas solo se paga sola en el corto plazo vía retención.
+
+### 7.1 Bienestar general vs. manejo de enfermedad
+- **Bienestar laboral, sin ahorro demostrado.** Dos experimentos aleatorizados grandes no hallaron efecto en gasto médico, ausentismo ni indicadores clínicos: Universidad de Illinois, 4.834 empleados, un año (F-847, 🟢A) y BJ's Wholesale, ~33.000 empleados, 18 meses (F-848, 🟢A). En Illinois los participantes ya eran más sanos antes del programa: el programa selecciona, no transforma.
+- **Manejo de enfermedad, sí.** En PepsiCo devolvió US$3,78 por dólar y bajó 29% las hospitalizaciones; el componente de estilo de vida devolvió US$0,48 (F-849, 🔵B, observacional y financiado por la empresa).
+- **Rehabilitación cardiaca:** reduce la mortalidad cardiovascular a largo plazo (RR 0,58) y los infartos; el efecto en hospitalizaciones es incierto (F-854, 🟢A, Cochrane).
+
+### 7.2 Precio y membresía
+- **El precio cero tiene efecto propio:** subir un producto preventivo de 0 a US$0,60 bajó la adopción 60 pp sin mejorar la focalización (F-850, 🟢A). Cobrarle a la persona un programa hoy gratuito arriesga achicarlo y perder a los de mayor riesgo.
+- **Las membresías ganan con el no uso:** socios de gimnasio sobrestiman su asistencia y pagan más por visita que con pase (F-851, 🟢A). Tensión directa con un programa de salud, donde se quiere el uso.
+
+### 7.3 Incentivos: qué diseño mueve la conducta
+- Funcionan mientras se pagan: ~600 pasos/día más durante la intervención (F-856, 🟢A, con conflicto de interés del autor); al retirar el pago la actividad volvió al nivel inicial y no hubo mejoras clínicas (F-855, 🟢A).
+- **El marco de pérdida supera a la ganancia equivalente** (+50% de días con meta; ganancia y lotería no superaron al control) (F-857, 🟢A).
+- **En cardiología la palanca importa:** la lotería por adherencia después de un infarto no funcionó (F-852, 🟢A); incentivos por asistir a rehabilitación casi duplicaron la tasa de completarla, 55% vs 29% (F-853, 🟢A, n=130).
+- Coincide con §3: los incentivos son más efectivos si son inmediatos, relevantes y con medición objetiva (F-100).
+
+### 7.4 Mecánica y reglas de referencia
+- **John Hancock Vitality:** estatus anual por puntos; al lanzar, 5/10/15% de descuento en prima por Plata/Oro/Platino; hoy anuncia hasta 25%; en 2015 podía subir la prima si se perdía el estatus (F-858, 🟠D).
+- **Regla de EE.UU. para recompensas por resultado de salud:** tope de 30% del costo de la cobertura y obligación de ofrecer una alternativa razonable (F-859, 🔵B). Buen estándar de diseño aunque no rija en Perú.
+- **Perú:** los datos de salud son sensibles y requieren consentimiento expreso y por escrito; nuevo reglamento vigente desde el 30-mar-2025 (F-860, 🔵B). Solo 10,8% de los 15+ tenía diagnóstico de hipertensión frente a 19,4% con presión alta medida en 2023 (F-861, 🔵B, dato citado): la detección es valor medible. Vitality opera en Argentina y México; no se halló alianza en Perú; Interseguro se alió con Betterfly (F-863, F-864, 🟠D; Betterfly cerró cinco países en 2025, F-372).
+
+### 7.5 Implicación de diseño
+La dinámica de recompensas encaja mejor donde quien paga también atiende (prepaga de clínica, lógica de §3 sobre Kaiser): ahí se captura la retención, que se mide en meses, y el ahorro por eventos, que tarda años. Regla práctica: el descuento del primer año se financia con retención medida; la selección de afiliados sanos mejora la cartera pero no es salud ganada y se mide aparte. Modelo completo en el output `_outputs/crp-cardiologia-contraste-recompensas-2026-11-07.html`.
 
 ## Limitaciones generales
 
