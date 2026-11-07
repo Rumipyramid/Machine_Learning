@@ -137,23 +137,38 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
   @keyframes trace{from{stroke-dashoffset:1400}to{stroke-dashoffset:0}}
 }
 </style>
+<style>
+.items{display:grid;gap:14px}
+.item{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:grid;gap:10px}
+.item-head{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;justify-content:space-between}
+.item h3{font-size:1.08rem}
+.ev{font-size:.95rem}
+.chip{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--line);border-radius:3px;padding:2px 6px;color:var(--muted);white-space:nowrap}
+.item .verdict{gap:10px}
+.item .flag{padding:10px 12px;font-size:.95rem;align-content:start}
+.item .tag{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px;display:grid;gap:8px;align-content:start}
+.box ul{margin:0;padding-left:1.1rem;display:grid;gap:4px}
+.fit{display:grid;gap:8px;padding:0;margin:0}
+.fit li{list-style:none;display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:12px;border-top:1px solid var(--line);padding-top:8px}
+.fit li.best b{color:var(--opp)}
+@media (max-width:720px){.fit li{grid-template-columns:minmax(0,1fr);gap:2px}}
+</style>
 
 <div class="wrap">
 <header class="top">
   <p class="eyebrow">Clínica Ricardo Palma · Cardiología · 7 nov 2026</p>
-  <h1>Lo que dice la literatura y una dinámica de recompensas para el programa</h1>
+  <h1>Riesgos y oportunidades del enfoque</h1>
   <svg class="ecg" viewBox="0 0 1000 48" preserveAspectRatio="none" aria-hidden="true">
     <line x1="0" y1="30" x2="1000" y2="30"/>
     <path d="M0 30 H180 l10 -6 l10 6 H240 l8 6 l10 -32 l10 38 l8 -12 H330 l14 -8 l14 8 H560 l10 -6 l10 6 H620 l8 6 l10 -32 l10 38 l8 -12 H710 l14 -8 l14 8 H1000"/>
   </svg>
-  <p class="lede">Este documento responde a <strong>“Nuestro enfoque y las preguntas para la clínica”</strong>. Primero contrasta cada pieza del enfoque con lo que la literatura dice de negocios de este tipo y levanta alertas y oportunidades. Después propone <strong>cómo funcionaría una dinámica de recompensas tipo Vitality</strong>: la persona hace acciones de valor y recibe descuentos en su cuota o póliza, dentro de los mismos cinco modelos.</p>
+  <p class="lede">Respuesta a <strong>“Nuestro enfoque y las preguntas para la clínica”</strong>. Contrastamos cada pieza del enfoque con fuentes secundarias para mapear sus riesgos y oportunidades. Al final proponemos una <strong>dinámica de recompensas tipo Vitality</strong> que encaja en los cinco modelos.</p>
   <nav class="toc" aria-label="Secciones">
     <a href="#mirada">En una mirada</a>
-    <a href="#contraste">Contraste con el enfoque</a>
-    <a href="#preguntas">Preguntas que sumaríamos</a>
-    <a href="#dinamica">La dinámica de recompensas</a>
-    <a href="#modelos">Cómo encaja en los cinco modelos</a>
-    <a href="#piloto">Cómo probarlo</a>
+    <a href="#mapa">Riesgos y oportunidades</a>
+    <a href="#dinamica">Dinámica de recompensas</a>
     <a href="#fuentes">Fuentes</a>
   </nav>
 </header>
@@ -161,177 +176,99 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
 <section id="mirada">
   <div class="sec-head"><p class="eyebrow">Resumen</p><h2>En una mirada</h2></div>
   <ol class="glance col">
-    <li><div><b>Cobrarle a la persona es el camino más riesgoso.</b> En un experimento, pasar de gratis a un precio bajo redujo la adopción en 60 puntos porcentuales, y quienes pagaron no eran los que más lo necesitaban <span class="cite">(Cohen y Dupas, 2010)</span>.</div></li>
-    <li><div><b>El valor económico está en los pacientes con enfermedad, no en el bienestar general.</b> En PepsiCo, el manejo de enfermedades crónicas devolvió 3,78 dólares por dólar invertido y el programa de estilo de vida 0,48 <span class="cite">(Caloyeras y otros, 2014)</span>. Dos experimentos grandes en empresas no hallaron ahorro <span class="cite">(Jones y otros, 2019; Song y Baicker, 2019)</span>.</div></li>
-    <li><div><b>Los programas de bienestar atraen a los más sanos.</b> Eso infla los resultados que publican las empresas. También es una palanca real de negocio para quien paga, y conviene nombrarla en lugar de esconderla.</div></li>
-    <li><div><b>Las recompensas mueven la conducta mientras se pagan, y el diseño decide.</b> En pacientes después de un infarto, una lotería por tomar la medicación no cambió nada <span class="cite">(Volpp y otros, 2017)</span>. Un incentivo por asistir a rehabilitación casi duplicó la tasa de completarla <span class="cite">(Gaalema y otros, 2019)</span>.</div></li>
-    <li><div><b>La dinámica tipo Vitality encaja mejor en la prepaga (modelo 4)</b>, porque ahí la clínica paga y atiende a la vez. En los demás modelos cambia quién financia el descuento; la mecánica es la misma.</div></li>
+    <li><div><b>Cobrarle a la persona es el camino más riesgoso.</b> Un precio bajo basta para que mucha gente deje de participar.</div></li>
+    <li><div><b>El valor económico está en pacientes con enfermedad.</b> Los programas de bienestar para personas sanas no han demostrado ahorro.</div></li>
+    <li><div><b>Los programas de bienestar atraen a los más sanos.</b> Eso infla los resultados y hay que medirlo aparte.</div></li>
+    <li><div><b>La prepaga es el mejor lugar para un piloto de recompensas</b>, porque la clínica cobra, atiende y retiene a la vez.</div></li>
   </ol>
 </section>
 
-<section id="contraste">
-  <div class="sec-head"><p class="eyebrow">Parte 1</p><h2>Contraste con el enfoque</h2></div>
-  <p class="col muted">Revisamos el enfoque pieza por pieza, en el orden del documento original. Cada tarjeta tiene cuatro partes: lo que dice el enfoque, lo que muestra la evidencia, el riesgo que vemos y lo que haríamos. La evidencia viene de los estudios citados. La alerta y la oportunidad son nuestra lectura.</p>
-
-  <div class="cards">
-    <article class="card">
-      <p class="tag">El encargo</p>
-      <h3>Cobrar la entrada puede achicar el programa en vez de hacerlo crecer</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica quiere que su programa gratuito de Cardiología vuelva a crecer y se sostenga. Su primera idea es cobrarlo como una membresía.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Pasar de gratis a un precio bajo espanta a mucha gente.</b> En clínicas de Kenia, un mosquitero pasó de gratis a 0,60 dólares. De cada 100 mujeres, 60 menos se lo llevaron <span class="cite">(Cohen y Dupas, 2010)</span>.</p>
-          <p><b>Cobrar tampoco filtró a quien más lo necesitaba.</b> Las que pagaron no estaban más enfermas ni lo usaron más que las que lo recibieron gratis.</p>
-          <p>Es otro producto y otro país. Lo que se traslada es el mecanismo: un precio pequeño frena mucho más de lo que su monto sugiere.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Es un experimento con grupos asignados al azar. Muestra el mecanismo, no la cifra que veríamos en Lima.</p>
+<section id="mapa">
+  <div class="sec-head"><p class="eyebrow">Parte 1</p><h2>Riesgos y oportunidades por pieza del enfoque</h2></div>
+  <p class="col muted">En el orden del documento original. La evidencia viene de las fuentes citadas; el riesgo y la oportunidad son nuestra lectura.</p>
+  <div class="items">
+    <article class="item">
+      <div class="item-head"><p class="tag">El encargo</p><span class="chip">Evidencia alta</span></div>
+      <h3>Cobrar la entrada puede achicar el programa</h3>
+      <p class="ev">Pasar de gratis a un precio bajo reduce mucho la participación y no filtra a quien más lo necesita <span class="cite">(Cohen y Dupas, 2010)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Cobrar podría reducir los participantes justo cuando la meta es aumentarlos. Y nada indica que se quedarían los de mayor riesgo cardiaco.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Que pague un tercero: la aseguradora, la empresa o la prepaga. La parte clínica sigue gratis para la persona. Si la persona paga, que sea por extras, como el seguimiento a distancia o un plan familiar.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>El programa pierde participantes, y entre ellos a los de mayor riesgo cardiaco.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Que pague un tercero (aseguradora, empresa o prepaga). La persona paga, si acaso, solo extras.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Públicos</p>
-      <h3>El ahorro está en quien ya tiene un problema cardiaco, no en quien solo quiere prevenir</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">El programa podría llegar a adultos mayores con la prepaga, a pacientes con seguro y a personas jóvenes que quieren prevenir.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Acompañar a quien ya está enfermo ahorra; promover hábitos en personas sanas, no.</b> En PepsiCo, el programa para empleados con enfermedades crónicas redujo 29% sus hospitalizaciones. Devolvió 3,78 dólares por cada dólar invertido. El programa de hábitos saludables no bajó el gasto médico <span class="cite">(Caloyeras y otros, 2014)</span>.</p>
-          <p><b>En Perú hay mucha hipertensión sin diagnosticar.</b> En la medición nacional de 2023, 19,4% de las personas de 15 años o más tenía la presión alta. Solo 10,8% tenía un diagnóstico médico <span class="cite">(INEI, ENDES 2023, citado en un estudio de 2024)</span>. La comparación es aproximada, pero sugiere que muchos hipertensos no saben que lo son.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Media. El dato de PepsiCo viene de una sola empresa, sin grupo de control, y la empresa financió el estudio. El dato peruano es oficial, aunque lo leímos citado en otro estudio.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Públicos</p><span class="chip">Evidencia media</span></div>
+      <h3>El ahorro está en quien ya tiene un problema cardiaco</h3>
+      <p class="ev">Acompañar a pacientes crónicos redujo hospitalizaciones; los programas de hábitos para personas sanas no bajaron el gasto <span class="cite">(Caloyeras y otros, 2014)</span>. En Perú, muchos hipertensos no están diagnosticados <span class="cite">(INEI, ENDES 2023)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Los jóvenes que quieren prevenir son el público que menos ahorro genera. Probablemente también son los primeros en dejar de participar.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Usar a jóvenes y empresas como puerta de entrada: un chequeo que encuentre a quienes tienen la presión alta y no lo saben. Cada caso detectado tiene valor clínico y comercial, y se puede contar en meses.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Los jóvenes que quieren prevenir generan poco ahorro y probablemente abandonen antes.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Usar a jóvenes y empresas como puerta de entrada para detectar hipertensión no diagnosticada.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Modelo 1 · Suscripción de la persona</p>
-      <h3>Una suscripción gana cuando la gente no la usa, y eso choca con un programa de salud</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La persona paga una suscripción propia, aunque ya tenga seguro o la prepaga. El programa tiene que mostrar qué suma frente a lo que ya le cubren.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>La gente paga pensando que usará más de lo que luego usa.</b> En tres gimnasios de EE.UU., los socios con cuota mensual iban en promedio 4,3 veces al mes. Así pagaban más de 17 dólares por visita, cuando el pase suelto costaba 10 <span class="cite">(DellaVigna y Malmendier, 2006)</span>.</p>
-          <p><b>En Perú pesa la desconfianza.</b> Según encuestas de percepción del sector, casi la mitad de las personas desconfía de las aseguradoras. La causa más citada es la falta de información.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para los gimnasios: son registros reales de 7.752 socios durante tres años. El dato de desconfianza viene de encuestas locales.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Modelo 1 · Suscripción de la persona</p><span class="chip">Evidencia alta</span></div>
+      <h3>Una suscripción gana cuando no se usa</h3>
+      <p class="ev">La gente paga membresías pensando en un uso que luego no cumple <span class="cite">(DellaVigna y Malmendier, 2006)</span>. En Perú, casi la mitad desconfía de las aseguradoras.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Quien ya tiene seguro siente que paga dos veces por lo mismo. Si no ve un beneficio distinto en el primer mes, cancela.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Explorar compradores que no son el paciente. Por ejemplo, el hijo o la hija que paga el seguimiento de su padre o madre. Es una hipótesis: hay que validarla con entrevistas.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Quien ya tiene seguro siente que paga dos veces y cancela pronto.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Explorar compradores que no son el paciente, como el hijo que paga el seguimiento de su padre. Es una hipótesis por validar.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Modelo 2 · La aseguradora lo contrata</p>
-      <h3>La aseguradora pagará por resultados que vea pronto, no por ahorros que lleguen en años</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">Para contratarlo, la aseguradora tendría que ver un beneficio, como menos eventos cardiacos costosos.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Para quien ya tuvo un evento, la rehabilitación funciona.</b> Una revisión de 85 ensayos halló que la rehabilitación cardiaca con ejercicio reduce en 42% las muertes cardiovasculares a largo plazo. También reduce los infartos. Su efecto sobre las hospitalizaciones no está claro <span class="cite">(Dibben y otros, 2021, revisión Cochrane)</span>.</p>
-          <p><b>Acompañar a pacientes crónicos bajó hospitalizaciones</b> en PepsiCo, como se ve en la tarjeta de públicos <span class="cite">(Caloyeras y otros, 2014)</span>.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para la rehabilitación: es la revisión de referencia en medicina. Pero los beneficios mayores aparecen años después.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Modelo 2 · La aseguradora lo contrata</p><span class="chip">Evidencia alta</span></div>
+      <h3>La aseguradora pagará por resultados cercanos</h3>
+      <p class="ev">La rehabilitación cardiaca reduce las muertes cardiovasculares a largo plazo; su efecto en hospitalizaciones es incierto <span class="cite">(Dibben y otros, 2021)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p><b>El ahorro llega tarde.</b> La aseguradora puede perder al asegurado antes de recuperar lo invertido. <b>Y los incentivos chocan.</b> Si paga a la clínica por cada atención, el programa le genera a la clínica más consultas y exámenes. La aseguradora quiere lo contrario.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Proponer otra forma de pago: un monto fijo por paciente inscrito y un bono si mejora el control, por ejemplo, más pacientes con la presión en meta. Empezar por personas ya diagnosticadas. La pregunta del brief sobre cómo pagan hoy las aseguradoras dirá si esto es viable.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>El ahorro llega en años. Y si la aseguradora paga por atención, el programa genera más consultas, lo contrario de lo que busca.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Un pago fijo por paciente inscrito más un bono por control, empezando por pacientes ya diagnosticados.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Modelo 3 · Una empresa lo contrata</p>
-      <h3>A una empresa no se le puede vender ahorro en salud; sí detección</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica le vende a las áreas de personas o de bienestar. Así llega a gente en edad de trabajar que hoy no va a Cardiología.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Los programas de bienestar laboral no ahorraron.</b> Dos experimentos grandes asignaron el programa al azar: en la Universidad de Illinois, con unos 4.800 empleados, y en la cadena BJ's, con unos 33.000. Ninguno encontró menos gasto médico, menos ausencias ni mejor salud medida, al año ni a los 18 meses <span class="cite">(Jones y otros, 2019; Song y Baicker, 2019)</span>.</p>
-          <p><b>Se inscribieron los que ya estaban mejor.</b> En Illinois, quienes participaron gastaban menos y tenían mejores hábitos antes de empezar.</p>
-          <p><b>El mercado regional es frágil.</b> En Perú, Interseguro se alió con Betterfly, una plataforma de bienestar para empresas. Betterfly cerró operaciones en cinco países en 2025.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para los dos experimentos, ambos en EE.UU. Lo de Betterfly viene de notas de prensa.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Modelo 3 · Una empresa lo contrata</p><span class="chip">Evidencia alta</span></div>
+      <h3>A una empresa no se le vende ahorro; se le vende detección</h3>
+      <p class="ev">Dos experimentos grandes no encontraron menos gasto, ausentismo ni mejor salud; participaron los que ya estaban mejor <span class="cite">(Jones y otros, 2019; Song y Baicker, 2019)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Si se le promete a la empresa que bajarán sus costos de salud, la evidencia indica que no ocurrirá, al menos en uno o dos años.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Ofrecer detección y derivación: un chequeo cardiovascular en la empresa y una cita en la clínica para quien salga con un problema. Reportar lo que sí se puede contar: casos detectados y casos que logran controlarse.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Prometer ahorro en salud que no llegará en uno o dos años.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Ofrecer chequeo cardiovascular y derivación a la clínica, y reportar casos detectados y controlados.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Modelo 4 · Beneficio de la prepaga</p>
-      <h3>La prepaga es el mejor lugar para probar, si se distingue quién entra de cuánto mejora</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">El programa va dentro de la cuota. A la clínica le sirve para vender y retener afiliados, y su costo se mide contra eso.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Vitality gana dinero, pero no sabe del todo por qué.</b> Discovery, la empresa sudafricana detrás de Vitality, reporta utilidades crecientes con su programa. No separa cuánto se debe a que sus clientes cambian de hábitos y cuánto a que atrae y retiene a clientes que ya eran más sanos <span class="cite">(Discovery, resultados del semestre a diciembre de 2025)</span>.</p>
-          <p><b>Nuestra lectura:</b> cuando la misma organización cobra la cuota y atiende al paciente, se queda con lo que ahorra la prevención. En los otros modelos, ese ahorro queda en otra empresa.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Media. Son resultados oficiales de una empresa que cotiza en bolsa, pero no aíslan el efecto del programa.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Modelo 4 · Beneficio de la prepaga</p><span class="chip">Evidencia media</span></div>
+      <h3>El mejor lugar para probar, midiendo quién entra</h3>
+      <p class="ev">Vitality gana dinero, pero no separa cuánto viene de cambiar hábitos y cuánto de atraer clientes más sanos <span class="cite">(Discovery, 2026)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Un programa que solo atrae afiliados sanos mejora las cuentas de la prepaga sin mejorar la salud de nadie. Mirando solo los resultados, los dos casos se ven iguales.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Hacer aquí el piloto de recompensas. La clínica fija el precio de la cuota y recibe directamente el beneficio de que los afiliados se queden. Medir por separado quién se inscribe y cuánto cambia su salud.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Confundir una cartera más sana con pacientes que mejoraron.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Hacer aquí el piloto: la clínica cobra la cuota, atiende y recibe el beneficio de la retención.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Modelo 5 · La clínica lo sigue financiando</p>
-      <h3>Comparar a quien participa con quien no participa exagera el resultado</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica lo trata como una inversión medida por consultas, exámenes y pacientes que se quedan. Es la línea de base para comparar los otros modelos.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Quien se inscribe ya era distinto.</b> En supermercados de Países Bajos, el efecto real de un programa de lealtad fue siete veces menor que el de una comparación simple entre socios y no socios <span class="cite">(Leenheer y otros, 2007)</span>.</p>
-          <p><b>En salud pasó lo mismo.</b> En Illinois, la comparación simple habría mostrado un ahorro que el experimento no encontró <span class="cite">(Jones y otros, 2019)</span>.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Los dos estudios corrigen el sesgo de quién decide participar; uno lo hace con un experimento.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Modelo 5 · La clínica lo sigue financiando</p><span class="chip">Evidencia alta</span></div>
+      <h3>Comparar participantes con no participantes exagera el resultado</h3>
+      <p class="ev">Quien se inscribe ya era distinto; corregirlo reduce el efecto aparente varias veces <span class="cite">(Leenheer y otros, 2007; Jones y otros, 2019)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Medir el retorno solo con consultas y exámenes premia hacer más atenciones. Además, le atribuye al programa pacientes que habrían venido igual.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Armar la línea de base con un grupo de comparación, por ejemplo, una lista de espera o una inscripción por etapas. Medir también indicadores clínicos, como la presión controlada, junto a los comerciales.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Medir solo consultas y exámenes premia el volumen y atribuye al programa pacientes que vendrían igual.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Una línea de base con grupo de comparación e indicadores clínicos, como la presión controlada.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">Mapa del sistema</p>
-      <h3>Al mapa le faltan dos piezas: los datos del paciente y el médico</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La persona llega por tres caminos y las empresas por dos. La aseguradora le paga a la clínica las atenciones.</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Los datos de salud tienen protección especial.</b> En Perú son datos sensibles. Usarlos exige el consentimiento expreso y por escrito del paciente <span class="cite">(Ley 29733; reglamento vigente desde el 30 de marzo de 2025)</span>.</p>
-          <p><b>Nuestra lectura:</b> cualquier modelo con recompensas mueve esos datos de la clínica a la aseguradora o a la empresa. Ese flujo no aparece en el mapa.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Es una norma vigente. La leímos en resúmenes; conviene que un abogado confirme los artículos exactos.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Mapa del sistema</p><span class="chip">Evidencia norma vigente</span></div>
+      <h3>Faltan los datos del paciente y el rol del médico</h3>
+      <p class="ev">Los datos de salud son sensibles: su uso exige consentimiento expreso y por escrito <span class="cite">(Ley 29733)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Sin un consentimiento bien diseñado, los modelos con aseguradoras y empresas no pueden operar.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Dibujar en el mapa qué dato viaja, a quién y con qué permiso. Sumar a los cardiólogos: ellos inscriben a los pacientes y pueden validar sus acciones.</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Sin un consentimiento bien diseñado, los modelos con aseguradoras y empresas no pueden operar.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Dibujar qué dato viaja, a quién y con qué permiso. Sumar a los cardiólogos como canal de inscripción.</p></div>
       </div>
     </article>
-
-    <article class="card">
-      <p class="tag">El entorno y el futuro</p>
-      <h3>Conviene confirmar la relación con Quirónsalud antes de la reunión</h3>
-      <div class="pair">
-        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">¿Cómo ven el programa las aseguradoras y los cardiólogos, y qué podría aportar la Red Quirónsalud?</p></div>
-        <div><p class="lbl">Lo que muestra la evidencia</p>
-          <p><b>Quirónsalud ya no es accionista de la clínica.</b> Fresenius, la dueña de Quirónsalud, anunció en abril de 2024 que cerró la venta de su participación. Compraron la familia Verme y otros inversionistas locales. Con esa venta, Fresenius salió del mercado hospitalario peruano <span class="cite">(Fresenius, 2024)</span>.</p>
-          <p>No sabemos si queda algún acuerdo de colaboración entre la clínica y la red.</p></div>
-      </div>
-      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Es un comunicado oficial de una empresa que cotiza en bolsa, confirmado por la prensa.</p>
+    <article class="item">
+      <div class="item-head"><p class="tag">Entorno y futuro</p><span class="chip">Evidencia alta</span></div>
+      <h3>La relación con Quirónsalud cambió</h3>
+      <p class="ev">Fresenius, dueña de Quirónsalud, vendió en 2024 su participación en la clínica a inversionistas locales <span class="cite">(Fresenius, 2024)</span>.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Preguntar por la red como si la clínica siguiera dentro puede restarle credibilidad al equipo.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Reformular la pregunta: «¿Qué relación tiene hoy la clínica con la Red Quirónsalud y qué queda de esa colaboración?».</p></div>
+        <div class="flag alert"><p class="lbl">Riesgo</p><p>Preguntar por la red como si la clínica siguiera dentro resta credibilidad.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Preguntar qué relación queda hoy con la Red Quirónsalud.</p></div>
       </div>
     </article>
   </div>
-</section>
-
-<section id="preguntas">
-  <div class="sec-head"><p class="eyebrow">Para el brief</p><h2>Preguntas que sumaríamos</h2></div>
-  <p class="col muted">Complementan las doce del documento original. Las tres primeras definen si una dinámica de recompensas es viable.</p>
-  <ol class="qs col">
-    <li>¿Cuántos participantes vienen a prevenir sin enfermedad y cuántos ya tienen hipertensión, diabetes o tuvieron un evento cardiaco?</li>
-    <li>De quienes se inscriben, ¿cuántos siguen activos a los 3, 6 y 12 meses?</li>
-    <li>¿La prepaga puede variar su cuota según la participación del afiliado? ¿Qué dice su contrato y qué permite la regulación de SUSALUD?</li>
-    <li>¿Qué datos clínicos registra hoy el programa (presión, colesterol, toma de medicación) y con qué consentimiento?</li>
-    <li>¿Qué relación tiene hoy la clínica con la Red Quirónsalud tras la venta de 2024?</li>
-  </ol>
 </section>
 
 <section id="dinamica">
@@ -400,62 +337,18 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
     <figcaption>La selección va en línea punteada: mejora la cartera de quien paga, pero no es salud ganada. No sirve como argumento ante una aseguradora que ya tenía a esos afiliados.</figcaption>
   </figure>
 
-  <h3>Reglas de diseño que salen de la evidencia</h3>
-  <ul class="rules">
-    <li><b>El descuento solo va hacia abajo.</b><span>Nadie paga más por no participar o por estar enfermo. En 2015, John Hancock advertía alzas de 1,1% a 1,6% al año si el cliente perdía su nivel; conviene evitarlo.</span></li>
-    <li><b>Premiar acciones más que resultados.</b><span>Si se premia un resultado, como la presión en meta, ofrecer otra vía a quien no puede llegar. En EE.UU. la regla exige esa alternativa y pone un tope de 30% del costo de la cobertura.</span></li>
-    <li><b>Recompensas inmediatas además del descuento anual.</b><span>Los incentivos funcionan mejor si son inmediatos, de monto relevante y con medición objetiva <span class="cite">(revisión en BMC Public Health, 2019)</span>. Un descuento que llega en doce meses compite mal con el presente.</span></li>
-    <li><b>Marco de pérdida para quien ya está activo.</b><span>Puntos cargados al inicio del mes que se pierden si no se cumple la meta subieron el cumplimiento 50% frente a la misma recompensa ganada <span class="cite">(Patel y otros, 2016)</span>. No usarlo con pacientes frágiles.</span></li>
-    <li><b>Diseñar para que dure.</b><span>Al dejar de pagar, la actividad volvió a su nivel inicial <span class="cite">(Finkelstein y otros, 2016)</span>. El programa debe ser permanente o tener una salida gradual.</span></li>
-    <li><b>Verificar en la clínica, no solo con relojes.</b><span>Un adulto mayor debe poder llegar a un nivel alto sin tecnología, con acciones que la clínica o la farmacia registran.</span></li>
-    <li><b>No premiar volumen.</b><span>Los puntos van a lo que recomiendan las guías clínicas, nunca a hacerse más exámenes. Así se evita el conflicto con el cobro por servicio.</span></li>
-    <li><b>Datos con permiso claro.</b><span>Consentimiento por escrito, aparte del contrato y revocable. Dar el consentimiento nunca da puntos. La empresa recibe solo cifras agregadas; la aseguradora, solo el nivel alcanzado.</span></li>
-    <li><b>Medir contra un grupo de comparación desde el primer día.</b><span>Sin él, la autoselección hace parecer exitoso cualquier programa.</span></li>
-  </ul>
-
-  <h3>Acciones de valor para la salud</h3>
-  <p class="col muted">Son las acciones que mejoran la salud del paciente. Los puntos son un ejemplo para calibrar con la clínica. La lógica: más puntos a las acciones con más valor clínico, y un tope a la actividad física para que nadie llegue al nivel más alto solo caminando.</p>
-  <div class="tbl">
-    <table>
-      <thead><tr><th>Acción</th><th>Para quién</th><th>Cómo se verifica</th><th>Puntos (ejemplo)</th><th>Qué dice la evidencia</th></tr></thead>
-      <tbody>
-        <tr class="best"><td>Completar la rehabilitación cardiaca</td><td><span class="seg r">Después de un evento</span></td><td>Asistencia registrada</td><td class="num">50 / sesión<br>+1.000 al completar</td><td>Incentivos escalonados casi duplicaron la tasa de completarla: 55% frente a 29% <span class="cite">(Gaalema y otros, 2019)</span>. La rehabilitación reduce la mortalidad cardiovascular a largo plazo <span class="cite">(Dibben y otros, 2021)</span>.</td></tr>
-        <tr><td>Chequeo cardiovascular anual: presión, colesterol, glucosa y peso</td><td><span class="seg">Todos</span></td><td>Clínica</td><td class="num">1.000 / año</td><td>Es la puerta de detección: muchos hipertensos no saben que lo son <span class="cite">(INEI)</span>.</td></tr>
-        <tr><td>Presión en meta en el control trimestral, o plan acordado con el médico si no llega</td><td><span class="seg r">Con riesgo</span></td><td>Medición en clínica</td><td class="num">400 / trimestre</td><td>Premia un resultado con alternativa razonable, como exige la regla de EE.UU. El efecto del incentivo no se evaluó en esta revisión.</td></tr>
-        <tr><td>Medirse la presión 8 veces al mes en casa o en farmacia</td><td><span class="seg r">Con riesgo</span></td><td>Tensiómetro con registro o farmacia aliada</td><td class="num">150 / mes</td><td>Incentivo no evaluado aquí. Le da al médico datos para ajustar el tratamiento.</td></tr>
-        <tr><td>Retirar la medicación a tiempo</td><td><span class="seg r">Con tratamiento</span></td><td>Registro de farmacia</td><td class="num">50 / mes</td><td>Una lotería por adherencia, sola, no funcionó después de un infarto <span class="cite">(Volpp y otros, 2017)</span>. Usarla como pieza, no como palanca principal.</td></tr>
-        <tr><td>150 minutos de actividad física a la semana</td><td><span class="seg">Quien pueda</span></td><td>App o reloj, o clase en la clínica</td><td class="num">60 / semana<br>tope 2.400 / año</td><td>Unos 600 pasos más al día mientras se paga <span class="cite">(Mitchell y otros, 2020)</span>. Se apaga al retirar el pago <span class="cite">(Finkelstein y otros, 2016)</span>.</td></tr>
-        <tr><td>Vacuna contra la influenza</td><td><span class="seg">Mayores de 60 y cardiópatas</span></td><td>Clínica o farmacia</td><td class="num">300 / año</td><td>Recomendación de guías; el incentivo no se evaluó aquí.</td></tr>
-        <tr><td>Programa para dejar de fumar; abstinencia verificada a los 6 meses</td><td><span class="seg">Fumadores</span></td><td>Clínica, con prueba de laboratorio</td><td class="num">500<br>+1.500</td><td>El incentivo no se evaluó en esta revisión.</td></tr>
-        <tr><td>Taller de nutrición o cocina</td><td><span class="seg">Todos</span></td><td>Asistencia</td><td class="num">200 / taller<br>hasta 2 / año</td><td>Sin evaluación aquí. Suma vínculo con la clínica.</td></tr>
-      </tbody>
-    </table>
+  <div class="two">
+    <div class="box">
+      <h3>Acciones de valor para la salud</h3>
+      <p class="muted">Las financia quien paga el programa.</p>
+      <ul><li>Chequeo cardiovascular anual.</li><li>Control de presión y presión en meta.</li><li>Rehabilitación cardiaca completa.</li><li>Medicación al día.</li></ul>
+    </div>
+    <div class="box">
+      <h3>Acciones de valor para la clínica</h3>
+      <p class="muted">Las financia la clínica, con un tope anual de puntos.</p>
+      <ul><li>Asistir a la cita o reprogramar con aviso.</li><li>Completar la ficha de salud.</li><li>Agendar por canal digital.</li><li>Subir exámenes externos para no repetirlos.</li></ul>
+    </div>
   </div>
-
-  <h3>Acciones de valor para la clínica</h3>
-  <p class="col">Son las acciones que ayudan a que la clínica funcione mejor: menos turnos vacíos, historias clínicas completas y menos llamadas. <b>Suman al mismo saldo de puntos, pero con un tope de 1.500 al año.</b> Así ayudan a subir de nivel sin reemplazar a las acciones de salud: con ellas solas no se llega a Plata.</p>
-  <div class="tbl">
-    <table>
-      <thead><tr><th>Acción</th><th>Qué gana la clínica</th><th>Cómo se verifica</th><th>Puntos (ejemplo)</th><th>Evidencia y cuidados</th></tr></thead>
-      <tbody>
-        <tr class="best"><td>Asistir a la cita, o reprogramarla con 24 horas de aviso</td><td>Menos horas vacías del cardiólogo; el turno se puede reasignar</td><td>Agenda de la clínica</td><td class="num">50 / cita</td><td>Lo que mejor funciona contra las inasistencias son los recordatorios. Con mensajes de texto, la asistencia fue 14% mayor que sin recordatorio, en 7 ensayos <span class="cite">(Gurol-Urganci y otros, 2013, revisión Cochrane)</span>. Los incentivos económicos por asistir tienen evidencia escasa y mixta <span class="cite">(Werner y otros, 2023)</span>. Cancelar con aviso no resta puntos: un paciente enfermo no debe perder por avisar.</td></tr>
-        <tr><td>Confirmar la cita al recibir el recordatorio</td><td>Saber a tiempo qué turnos quedarán libres</td><td>Respuesta al mensaje</td><td class="num">10 / cita</td><td>Refuerza el recordatorio, que es la medida con mejor evidencia.</td></tr>
-        <tr><td>Completar la ficha de salud antes de la consulta: medicamentos, alergias y antecedentes</td><td>Consultas más cortas y seguras; datos del programa completos</td><td>Formulario de la clínica</td><td class="num">100 / año</td><td>Pedir solo lo necesario para la atención. Los puntos se dan una vez al año, al actualizarla.</td></tr>
-        <tr><td>Subir los exámenes hechos en otro lugar</td><td>Historia completa; no se repiten exámenes</td><td>Portal del paciente o recepción</td><td class="num">30 / examen<br>tope 150 / año</td><td>Premia no repetir exámenes, en línea con la regla de no premiar volumen.</td></tr>
-        <tr><td>Mantener al día el celular y el correo</td><td>Los recordatorios llegan</td><td>Validación del dato</td><td class="num">50 / año</td><td>Sin un contacto válido, el recordatorio no sirve.</td></tr>
-        <tr><td>Agendar o pagar por la app o la web</td><td>Menos llamadas a la central de citas</td><td>Sistema de citas</td><td class="num">20 / cita</td><td>Mantener siempre el teléfono para quien no usa tecnología. Nadie debe perder puntos por llamar.</td></tr>
-        <tr><td>Usar teleconsulta en controles que no requieren examen físico</td><td>Libera consultorios y horas presenciales</td><td>Agenda de teleconsulta</td><td class="num">30 / control</td><td>Solo cuando el médico lo indica.</td></tr>
-        <tr><td>Responder la encuesta después de la consulta</td><td>Saber qué mejorar</td><td>Encuesta</td><td class="num">20 / encuesta</td><td>Los puntos son por responder, nunca por la nota. Premiar la nota sesga la encuesta.</td></tr>
-        <tr><td>Pagar la cuota de la prepaga a tiempo o con débito automático</td><td>Menos morosidad y menos afiliados que se caen</td><td>Cobranza</td><td class="num">100 / año</td><td>Aplica solo en la prepaga (modelo 4).</td></tr>
-        <tr><td>Recomendar el programa a un familiar que se inscribe</td><td>Afiliados nuevos a menor costo</td><td>Inscripción del familiar</td><td class="num">300 / inscrito<br>tope 2 / año</td><td>Cuenta solo si el familiar se inscribe. Sin presión y sin pedir listas de contactos.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <ul class="rules">
-    <li><b>El consentimiento no se compra.</b><span>Firmar el permiso para usar datos de salud o aceptar publicidad no da puntos. La ley peruana pide un consentimiento libre, y pagar por él puede leerse como presión.</span></li>
-    <li><b>Estas acciones las financia la clínica.</b><span>El beneficio es suyo: turnos ocupados, datos completos y menos llamadas. En los modelos 2 y 3, la aseguradora o la empresa financian lo que premia la salud; la clínica financia esto.</span></li>
-    <li><b>Se mide contra lo que ya pasa.</b><span>Antes de dar puntos por asistir, medir la tasa actual de inasistencias. Si ya es baja, los puntos solo pagan lo que la gente hacía igual.</span></li>
-  </ul>
 
   <h3>Niveles y recompensas</h3>
   <figure class="fig" style="margin:0">
@@ -492,97 +385,46 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
     </svg>
     <figcaption>Escala a proporción (0 a 10.000 puntos). Los porcentajes son un ejemplo. John Hancock lanzó su programa en 2015 con 5%, 10% y 15% por nivel; hoy anuncia hasta 25% de ahorro en la prima.</figcaption>
   </figure>
+  <p class="col muted">Rosa y Diego son casos ilustrativos. Rosa, 67 años, es hipertensa, está en la prepaga y llega a Oro solo con acciones en la clínica. A Diego, 34 años, el chequeo de su empresa le detectó hipertensión a mitad de año.</p>
 
-  <h3>Dos personas que cruzan modelos</h3>
-  <p class="col muted">Personas ficticias, para mostrar cómo se suman los puntos con el catálogo de arriba.</p>
-  <div class="people">
-    <article class="person">
-      <p class="eyebrow">Modelo 4 · prepaga</p>
-      <h3>Rosa, 67 años, hipertensa</h3>
-      <ol>
-        <li>Se inscribe en su control de Cardiología y hace el chequeo anual <span class="mono">1.000</span>.</li>
-        <li>Se vacuna contra la influenza <span class="mono">300</span>.</li>
-        <li>Se mide la presión en la farmacia aliada todo el año <span class="mono">1.800</span>.</li>
-        <li>Llega a la meta de presión en los cuatro controles <span class="mono">1.600</span>.</li>
-        <li>Retira su medicación a tiempo <span class="mono">600</span> y va a un taller <span class="mono">200</span>.</li>
-        <li>Asiste a clases de ejercicio en la clínica durante 20 semanas, sin reloj <span class="mono">1.200</span>.</li>
-      </ol>
-      <p class="end"><b>Cierra el año en Oro, con 6.700 puntos:</b> 10% menos en su cuota de renovación. Para la prepaga, una afiliada que se queda y con la presión controlada.</p>
-    </article>
-    <article class="person">
-      <p class="eyebrow">Modelo 3 · empresa → Modelo 2 · aseguradora</p>
-      <h3>Diego, 34 años, colaborador de una empresa con convenio</h3>
-      <ol>
-        <li>Hace el chequeo en su empresa <span class="mono">1.000</span>, registra actividad física <span class="mono">2.400</span> y va a un taller <span class="mono">200</span>.</li>
-        <li>En el chequeo descubre que tiene la presión alta y no lo sabía.</li>
-        <li>Desde la mitad del año pasa a la ruta de riesgo: se mide la presión <span class="mono">900</span>, llega a la meta en dos controles <span class="mono">800</span> y retira su medicación <span class="mono">300</span>.</li>
-        <li>Con su consentimiento, su aseguradora reconoce el nivel en su plan.</li>
-      </ol>
-      <p class="end"><b>Cierra el año en Plata, con 5.600 puntos;</b> con un año completo en la ruta de riesgo llegaría a Oro. Para la empresa, un caso detectado. Para la aseguradora, un hipertenso en control.</p>
-    </article>
-  </div>
-</section>
+  <h3>Cinco principios de diseño</h3>
+  <ul class="rules">
+    <li><b>Premiar la acción clínica correcta.</b><span>Incentivos por asistir a rehabilitación casi duplicaron su finalización <span class="cite">(Gaalema y otros, 2019)</span>. Una lotería por tomar la medicación tras un infarto no funcionó <span class="cite">(Volpp y otros, 2017)</span>.</span></li>
+    <li><b>Recompensas inmediatas además del descuento anual.</b><span>Los incentivos funcionan mejor si son inmediatos y se verifican <span class="cite">(BMC Public Health, 2019)</span>.</span></li>
+    <li><b>El descuento solo va hacia abajo.</b><span>Nadie paga más por estar enfermo, por no participar o por cancelar una cita con aviso.</span></li>
+    <li><b>El consentimiento no da puntos.</b><span>La ley pide que sea libre; pagar por él puede leerse como presión.</span></li>
+    <li><b>Pagar el descuento con lo que se mide primero.</b><span>Primero retención, que se ve en meses; después menos eventos, que tardan años.</span></li>
+  </ul>
 
-<section id="modelos">
-  <div class="sec-head"><p class="eyebrow">Parte 3</p><h2>Cómo encaja en los cinco modelos</h2></div>
-  <p class="col">La mecánica no cambia. Cambia quién financia el descuento, sobre qué se aplica y con qué lo recupera.</p>
-  <div class="tbl">
-    <table>
-      <thead><tr><th>Modelo</th><th>Quién financia el descuento</th><th>Dónde se aplica</th><th>Con qué lo recupera</th><th>Cuidado</th></tr></thead>
-      <tbody>
-        <tr><td><b>1</b> · Suscripción de la persona</td><td>La clínica</td><td>Precio de la suscripción del año siguiente</td><td>Suscriptores que renuevan</td><td>Gana más descuento quien más usa: lo opuesto al gimnasio. Es mejor para la salud y más caro.</td></tr>
-        <tr><td><b>2</b> · La aseguradora lo contrata</td><td>La aseguradora</td><td>Prima, deducible o copago del plan</td><td>Menos eventos y asegurados que se quedan</td><td>Requiere un producto aprobado por el regulador. La clínica cobra por paciente inscrito más un bono por resultado.</td></tr>
-        <tr><td><b>3</b> · Una empresa lo contrata</td><td>La empresa</td><td>Aporte del colaborador a la EPS o un beneficio flexible</td><td>Atracción y retención de talento; casos detectados</td><td>La empresa ve solo cifras agregadas. No prometer ahorro en salud.</td></tr>
-        <tr class="best"><td><b>4</b> · Beneficio de la prepaga</td><td>La prepaga, es decir, la clínica</td><td>Cuota de renovación</td><td>Afiliados que se quedan y menos atenciones de alto costo</td><td>El encaje más directo. Medir aparte la selección y el cambio de conducta.</td></tr>
-        <tr><td><b>5</b> · La clínica lo financia</td><td>La clínica</td><td>No hay póliza: beneficios en servicios</td><td>Consultas de seguimiento y pacientes que se quedan</td><td>Sirve para medir antes de llevarlo a los modelos 2 o 4.</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3>Cómo se paga el descuento</h3>
-  <p class="col">Hay tres fuentes para el descuento por salud, de la más rápida a la más lenta. <b>Retención:</b> un afiliado que se queda un año más vale su margen de ese año, y se mide en meses. <b>Selección:</b> el programa atrae personas más sanas o más comprometidas; mejora la cartera, pero no es salud ganada. <b>Menos eventos:</b> menos infartos y hospitalizaciones; es el argumento más fuerte y el más lento, con evidencia sólida para rehabilitación y manejo de enfermedad y débil para el bienestar general.</p>
-  <p class="formula">Valor por miembro activo = (afiliados retenidos de más × margen anual) + (eventos evitados × costo por evento) − costo de operar − costo de recompensas</p>
-  <p class="col"><b>Regla práctica:</b> que el descuento del primer año se pague con retención medida. Los ahorros por eventos evitados se suman cuando se midan, no antes.</p>
-  <p class="col">Las acciones para la clínica se pagan aparte y más rápido. Su valor se cuenta cada mes:</p>
-  <p class="formula">Valor operativo = (inasistencias evitadas × valor de una hora de consulta) + (llamadas evitadas × costo por llamada) + (exámenes no repetidos × costo del examen) − puntos entregados por estas acciones</p>
-</section>
-
-<section id="piloto">
-  <div class="sec-head"><p class="eyebrow">Parte 4</p><h2>Cómo probarlo: un piloto de 12 meses</h2></div>
-  <ol class="steps col">
-    <li><span class="when">Mes 0 a 1</span><div><b>Datos de base.</b> Con las respuestas de la clínica: cuántos participan, cuántos siguen activos, cuántos afiliados deja la prepaga cada año.</div></li>
-    <li><span class="when">Mes 2 a 7</span><div><b>Piloto en la prepaga</b> con afiliados hipertensos o que tuvieron un evento. Tres grupos, asignados por sorteo o por fecha de inscripción: el programa actual; el programa con recompensas inmediatas; y el programa con recompensas inmediatas más descuento al renovar.</div></li>
-    <li><span class="when">Lo que se mide</span><div>Porcentaje de activos al mes 3 y al mes 6. Pacientes con la presión en meta. Sesiones de rehabilitación completadas. Deserción de la prepaga. Inasistencias sin aviso y fichas completas. Costo de recompensas por miembro.</div></li>
-    <li><span class="when">Mes 8 a 12</span><div><b>Llevarlo afuera con datos.</b> Propuesta a una aseguradora (modelo 2) y a una empresa (modelo 3), con resultados propios en lugar de cifras de Vitality.</div></li>
+  <h3>Quién financia el descuento en cada modelo</h3>
+  <ol class="fit col">
+    <li><b>1 · Suscripción</b><span>La clínica, sobre la suscripción del año siguiente.</span></li>
+    <li><b>2 · Aseguradora</b><span>La aseguradora, sobre la prima o el copago.</span></li>
+    <li><b>3 · Empresa</b><span>La empresa, sobre el aporte del colaborador a la EPS.</span></li>
+    <li class="best"><b>4 · Prepaga</b><span>La clínica, sobre la cuota de renovación. Es el encaje más directo.</span></li>
+    <li><b>5 · La clínica financia</b><span>La clínica, en servicios. Sirve para medir antes de pasar a 2 o 4.</span></li>
   </ol>
-  <p class="note col">Límites de este documento. Leímos los resúmenes y fuentes secundarias de los estudios, no los textos completos. Las cifras de Vitality, Discovery y John Hancock vienen de las propias empresas. El dato de hipertensión de 2023 viene de un estudio que cita al INEI; conviene confirmarlo en la publicación oficial. Los puntos y porcentajes del modelo son un ejemplo para calibrar con la clínica.</p>
 </section>
 
 <section id="fuentes">
   <div class="sec-head"><p class="eyebrow">Respaldo</p><h2>Fuentes</h2></div>
+  <p class="note col">Fuentes secundarias, leídas por resumen. Las cifras de Vitality, Discovery y John Hancock vienen de las propias empresas.</p>
   <ol class="src col">
-    <li>Caloyeras JP, Liu H, Exum E, Broderick M, Mattke S (2014). Managing manifest diseases, but not health risks, saved PepsiCo money over seven years. <i>Health Affairs</i> 33(1). <span class="r">Observacional, 67.000 trabajadores; financiado por PepsiCo.</span> <a href="https://www.rand.org/news/press/2014/01/06/index1.html">RAND</a></li>
-    <li>Cohen J, Dupas P (2010). Free distribution or cost-sharing? Evidence from a randomized malaria prevention experiment. <i>Quarterly Journal of Economics</i> 125(1). <span class="r">Experimento aleatorizado.</span> <a href="https://www.nber.org/papers/w14406">NBER</a></li>
-    <li>DellaVigna S, Malmendier U (2006). Paying not to go to the gym. <i>American Economic Review</i> 96(3). <span class="r">Datos de 7.752 socios en tres años.</span> <a href="https://econpapers.repec.org/RePEc:aea:aecrev:v:96:y:2006:i:3:p:694-719">RePEc</a></li>
-    <li>Dibben G y otros (2021). Exercise-based cardiac rehabilitation for coronary heart disease. <i>Cochrane Database of Systematic Reviews</i>. <span class="r">Revisión sistemática, 85 ensayos, 23.430 personas.</span> <a href="https://pubmed.ncbi.nlm.nih.gov/34741536/">PubMed</a></li>
-    <li>Finkelstein EA y otros (2016). Effectiveness of activity trackers with and without incentives (TRIPPA). <i>Lancet Diabetes &amp; Endocrinology</i> 4. <span class="r">Experimento aleatorizado, 800 personas, Singapur.</span> <a href="https://www.eurekalert.org/news-releases/788250">EurekAlert</a></li>
-    <li>Gaalema DE, Higgins ST y otros (2019). Financial incentives to increase cardiac rehabilitation participation among low-socioeconomic status patients. <i>JACC: Heart Failure</i>. <span class="r">Experimento aleatorizado, 130 pacientes de Medicaid.</span> <a href="https://www.acc.org/latest-in-cardiology/articles/2024/07/01/17/28/accel-lite-02jul2024">ACC</a></li>
-    <li>Jones D, Molitor D, Reif J (2019). What do workplace wellness programs do? Evidence from the Illinois Workplace Wellness Study. <i>Quarterly Journal of Economics</i> 134(4). <span class="r">Experimento aleatorizado, 4.834 empleados.</span> <a href="https://www.nber.org/papers/w24229">NBER</a></li>
-    <li>Leenheer J, van Heerde H, Bijmolt T, Smidts A (2007). Do loyalty programs really enhance behavioral loyalty? <i>International Journal of Research in Marketing</i> 24(1). <span class="r">Panel de hogares con corrección por autoselección.</span></li>
-    <li>Mitchell MS y otros (2020). Financial incentives for physical activity in adults: systematic review and meta-analysis. <i>British Journal of Sports Medicine</i> 54(21). <span class="r">Meta-análisis de 23 ensayos; el autor principal declara vínculos con empresas de incentivos.</span> <a href="https://bjsm.bmj.com/content/54/21/1259">BJSM</a></li>
-    <li>Patel MS y otros (2016). Framing financial incentives to increase physical activity among overweight and obese adults. <i>Annals of Internal Medicine</i> 164(6). <span class="r">Experimento aleatorizado, 281 empleados.</span> <a href="https://pubmed.ncbi.nlm.nih.gov/26881417/">PubMed</a></li>
-    <li>Song Z, Baicker K (2019). Effect of a workplace wellness program on employee health and economic outcomes. <i>JAMA</i>. <span class="r">Experimento aleatorizado por tienda, 160 tiendas.</span> <a href="https://kffhealthnews.org/public-health/workplace-wellness-programs-barely-move-the-needle-study-finds/">KFF Health News</a></li>
-    <li>Volpp KG y otros (2017). Effect of electronic reminders, financial incentives, and social support on outcomes after myocardial infarction (HeartStrong). <i>JAMA Internal Medicine</i> 177(8). <span class="r">Experimento aleatorizado, 1.509 pacientes.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5710431">PMC</a></li>
-    <li>Revisión de incentivos financieros desde la economía del comportamiento (2019). <i>BMC Public Health</i>. <span class="r">Revisión académica independiente.</span></li>
-    <li>Discovery Limited (2026). Resultados interinos al 31 de diciembre de 2025. <span class="r">Resultados oficiales de empresa cotizada, vía prensa.</span></li>
-    <li>John Hancock. Vitality PLUS, página del programa; cobertura de lanzamiento (2015). <span class="r">Información de la propia empresa y prensa.</span> <a href="https://www.johnhancock.com/life-insurance/vitality/vitality-rewards.html">John Hancock</a></li>
-    <li>Reglas de programas de bienestar bajo HIPAA y la ACA, EE.UU. (reglamento final de 2013). <span class="r">Norma, leída vía resúmenes de estudios legales.</span> <a href="https://www.duanemorris.com/alerts/final_HIPAA_wellness_program_regulations_issued_under_affordable_care_act_4899.html">Duane Morris</a></li>
-    <li>Gurol-Urganci I y otros (2013). Mobile phone messaging reminders for attendance at healthcare appointments. <i>Cochrane Database of Systematic Reviews</i>. <span class="r">Revisión sistemática, 8 ensayos, 6.615 personas; evidencia de calidad baja a moderada.</span> <a href="https://www.cochrane.org/CD007458">Cochrane</a></li>
-    <li>Werner K y otros (2023). Revisión sistemática de intervenciones de economía del comportamiento para reducir las inasistencias a citas médicas. <i>BMC Health Services Research</i> (título original no verificado). <span class="r">Revisión sistemática; leída por resumen.</span> <a href="https://doi.org/10.1186/s12913-023-10059-9">BMC</a></li>
-    <li>Ley 29733 de Protección de Datos Personales y su reglamento (D.S. 016-2024-JUS). <span class="r">Norma peruana.</span> <a href="https://iapp.org/news/a/se-publica-el-nuevo-reglamento-de-protecci-n-de-datos-personales-en-per-">IAPP</a></li>
-    <li>INEI, Encuesta Demográfica y de Salud Familiar (ENDES): enfermedades no transmisibles. <span class="r">Estadística oficial; el dato de 2023 se leyó citado en un estudio de 2024.</span> <a href="https://encuestas.inei.gob.pe/endes/2023/SALUD/ENFERMEDADES_ENDES_2023.pdf">INEI</a></li>
-    <li>Fresenius (2024). Comunicado del 23 de abril sobre la venta de su participación en la Clínica Ricardo Palma; Forbes Perú (31 de octubre de 2023). <span class="r">Comunicado corporativo y prensa.</span> <a href="https://forbes.pe/negocios/2023-10-31/la-alemana-fresenius-vende-su-participacion-en-la-clinica-ricardo-palma-en-lima">Forbes Perú</a></li>
-    <li>El Comercio: alianza de Interseguro y Betterfly en Perú; prensa chilena sobre el cierre de operaciones de Betterfly en cinco países (2025). <span class="r">Prensa.</span> <a href="https://elcomercio.pe/economia/interseguro-y-betterfly-tienen-como-primera-meta-llegar-a-7-millones-de-peruanos-noticia/">El Comercio</a></li>
+    <li>Caloyeras JP y otros (2014). <i>Health Affairs</i> 33(1). Programa de salud de PepsiCo, siete años. <a href="https://www.rand.org/news/press/2014/01/06/index1.html">RAND</a></li>
+    <li>Cohen J, Dupas P (2010). <i>Quarterly Journal of Economics</i> 125(1). Experimento de precios en Kenia. <a href="https://www.nber.org/papers/w14406">NBER</a></li>
+    <li>DellaVigna S, Malmendier U (2006). Paying not to go to the gym. <i>American Economic Review</i> 96(3). <a href="https://econpapers.repec.org/RePEc:aea:aecrev:v:96:y:2006:i:3:p:694-719">RePEc</a></li>
+    <li>Dibben G y otros (2021). Rehabilitación cardiaca con ejercicio. <i>Cochrane</i>. <a href="https://pubmed.ncbi.nlm.nih.gov/34741536/">PubMed</a></li>
+    <li>Discovery Limited (2026). Resultados del semestre a diciembre de 2025.</li>
+    <li>Fresenius (2024). Venta de su participación en la Clínica Ricardo Palma. <a href="https://forbes.pe/negocios/2023-10-31/la-alemana-fresenius-vende-su-participacion-en-la-clinica-ricardo-palma-en-lima">Forbes Perú</a></li>
+    <li>Gaalema DE y otros (2019). Incentivos para rehabilitación cardiaca. <i>JACC: Heart Failure</i>. <a href="https://www.acc.org/latest-in-cardiology/articles/2024/07/01/17/28/accel-lite-02jul2024">ACC</a></li>
+    <li>INEI, ENDES: enfermedades no transmisibles. <a href="https://encuestas.inei.gob.pe/endes/2023/SALUD/ENFERMEDADES_ENDES_2023.pdf">INEI</a></li>
+    <li>John Hancock. Programa Vitality PLUS. <a href="https://www.johnhancock.com/life-insurance/vitality/vitality-rewards.html">John Hancock</a></li>
+    <li>Jones D, Molitor D, Reif J (2019). Illinois Workplace Wellness Study. <i>Quarterly Journal of Economics</i> 134(4). <a href="https://www.nber.org/papers/w24229">NBER</a></li>
+    <li>Leenheer J y otros (2007). Programas de lealtad y autoselección. <i>International Journal of Research in Marketing</i> 24(1).</li>
+    <li>Ley 29733 de Protección de Datos Personales y su reglamento (2024). <a href="https://iapp.org/news/a/se-publica-el-nuevo-reglamento-de-protecci-n-de-datos-personales-en-per-">IAPP</a></li>
+    <li>Revisión de incentivos financieros en salud (2019). <i>BMC Public Health</i>.</li>
+    <li>Song Z, Baicker K (2019). Programa de bienestar en BJ's Wholesale. <i>JAMA</i>. <a href="https://kffhealthnews.org/public-health/workplace-wellness-programs-barely-move-the-needle-study-finds/">KFF Health News</a></li>
+    <li>Volpp KG y otros (2017). HeartStrong. <i>JAMA Internal Medicine</i> 177(8). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5710431">PMC</a></li>
   </ol>
 </section>
 
