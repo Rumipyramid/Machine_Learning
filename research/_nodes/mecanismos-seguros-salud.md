@@ -7,7 +7,7 @@
 > Fecha de elaboración: 2026-07-10 · Última actualización: 2026-11-07 · Versión: v1.3
 > (v1.1 amplía con §2: balance financiero global/rentabilidad de la categoría; v1.2 amplía
 > con §2.6: contraste regional Europa/Asia/Perú-Latam — corrida adicional de `/trinidad`;
-> v1.3 amplía con §7: programas cardiovasculares y recompensas tipo Vitality según quién paga, F-847 a F-864)
+> v1.3 amplía con §7: programas cardiovasculares y recompensas tipo Vitality según quién paga, F-847 a F-870, incl. §7.6 pago por valor al prestador)
 
 ---
 
@@ -338,6 +338,14 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 
 ### 7.5 Implicación de diseño
 La dinámica de recompensas encaja mejor donde quien paga también atiende (prepaga de clínica, lógica de §3 sobre Kaiser): ahí se captura la retención, que se mide en meses, y el ahorro por eventos, que tarda años. Regla práctica: el descuento del primer año se financia con retención medida; la selección de afiliados sanos mejora la cartera pero no es salud ganada y se mide aparte. Modelo completo en el output `_outputs/crp-cardiologia-contraste-recompensas-2026-11-07.html`.
+
+### 7.6 Premiar al servicio médico por valor
+Pagar al prestador por resultados alinea al médico con el paciente si ambos persiguen el mismo indicador (por ejemplo, presión en meta). La evidencia pide cuidado:
+- El pago por desempeño mejora sobre todo procesos; no mostró mejoras consistentes en resultados de salud (F-867, 🟢A, revisión de 69 estudios).
+- Al retirar el incentivo, la calidad cae y no se recupera en 3 años (F-868, 🟢A): el premio debe ser permanente.
+- Premiar un solo indicador puede dañar otro: menos reingresos por insuficiencia cardiaca coincidieron con más mortalidad (F-869, 🟢A, asociación).
+- Los prestadores integrados a hospitales ahorran menos, porque ahorrar les quita ingresos (F-870, 🟢A). Aplica directo a una clínica con hospital: el bono debe compensar la facturación que se deja de hacer.
+- Deducción propia: sin ajuste por complejidad, el premio por resultado empuja a atender pacientes fáciles; premiar la mejora lo mitiga.
 
 ## Limitaciones generales
 

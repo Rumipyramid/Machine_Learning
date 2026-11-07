@@ -180,6 +180,7 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
     <li><div><b>El valor económico está en pacientes con enfermedad.</b> Los programas de bienestar para personas sanas no han demostrado ahorro.</div></li>
     <li><div><b>Los programas de bienestar atraen a los más sanos.</b> Eso infla los resultados y hay que medirlo aparte.</div></li>
     <li><div><b>La prepaga es el mejor lugar para un piloto de recompensas</b>, porque la clínica cobra, atiende y retiene a la vez.</div></li>
+    <li><div><b>Premiar también al servicio médico por resultados alinea a paciente y médico.</b> El riesgo: a una clínica con hospital, ahorrar le quita ingresos, y el bono debe compensarlo.</div></li>
   </ol>
 </section>
 
@@ -348,6 +349,11 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
       <p class="muted">Las financia la clínica, con un tope anual de puntos.</p>
       <ul><li>Asistir a la cita o reprogramar con aviso.</li><li>Completar la ficha de salud.</li><li>Agendar por canal digital.</li><li>Subir exámenes externos para no repetirlos.</li></ul>
     </div>
+    <div class="box">
+      <h3>Valor del servicio médico</h3>
+      <p class="muted">Lo paga quien financia el programa; lo recibe el equipo de cardiología.</p>
+      <ul><li>Pacientes con la presión controlada.</li><li>Rehabilitación completada tras un evento.</li><li>Tratamiento según guía tras un infarto.</li><li>Reingresos evitables, vigilando la mortalidad.</li></ul>
+    </div>
   </div>
 
   <h3>Niveles y recompensas</h3>
@@ -387,7 +393,7 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
   </figure>
   <p class="col muted">Rosa y Diego son casos ilustrativos. Rosa, 67 años, es hipertensa, está en la prepaga y llega a Oro solo con acciones en la clínica. A Diego, 34 años, el chequeo de su empresa le detectó hipertensión a mitad de año.</p>
 
-  <h3>Cinco principios de diseño</h3>
+  <h3>Cinco principios para premiar a la persona</h3>
   <ul class="rules">
     <li><b>Premiar la acción clínica correcta.</b><span>Incentivos por asistir a rehabilitación casi duplicaron su finalización <span class="cite">(Gaalema y otros, 2019)</span>. Una lotería por tomar la medicación tras un infarto no funcionó <span class="cite">(Volpp y otros, 2017)</span>.</span></li>
     <li><b>Recompensas inmediatas además del descuento anual.</b><span>Los incentivos funcionan mejor si son inmediatos y se verifican <span class="cite">(BMC Public Health, 2019)</span>.</span></li>
@@ -396,13 +402,56 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
     <li><b>Pagar el descuento con lo que se mide primero.</b><span>Primero retención, que se ve en meses; después menos eventos, que tardan años.</span></li>
   </ul>
 
-  <h3>Quién financia el descuento en cada modelo</h3>
+  <h3>El premio por valor en el servicio médico</h3>
+  <p class="col">La clínica y su equipo de cardiología también reciben un premio, por resultados clínicos y no por número de atenciones. Lo paga quien financia el programa. <b>La clave es usar el mismo indicador para los dos lados:</b> si la presión del paciente llega a la meta, el paciente suma puntos y el equipo suma su bono. Así paciente y médico empujan hacia el mismo resultado. Es el paso del pago por servicio al pago por valor (<i>value-based care</i>).</p>
+
+  <figure class="fig" style="margin:0">
+    <svg viewBox="0 0 760 270" role="img" aria-labelledby="d3t d3d">
+      <title id="d3t">Quién premia a quién</title>
+      <desc id="d3d">Quien paga entrega un bono por resultados a la clínica y sus cardiólogos, y un descuento por acciones de salud a la persona. La clínica da a la persona puntos por acciones que la ayudan a funcionar. Clínica y persona empujan el mismo indicador compartido, como la presión en meta.</desc>
+      <defs>
+        <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-head" d="M0 0 L10 5 L0 10 z"/></marker>
+        <marker id="aha3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-head-acc" d="M0 0 L10 5 L0 10 z"/></marker>
+      </defs>
+      <rect class="d-box" x="280" y="10" width="200" height="56" rx="4"/>
+      <text class="d-t" x="380" y="34" text-anchor="middle">Quien paga</text>
+      <text class="d-s" x="380" y="52" text-anchor="middle">aseguradora, empresa o prepaga</text>
+      <rect class="d-box" x="20" y="160" width="220" height="60" rx="4"/>
+      <text class="d-t" x="130" y="186" text-anchor="middle">Clínica y cardiólogos</text>
+      <text class="d-s" x="130" y="204" text-anchor="middle">el servicio médico</text>
+      <rect class="d-key" x="270" y="160" width="220" height="60" rx="4"/>
+      <text class="d-t" x="380" y="186" text-anchor="middle">Indicador compartido</text>
+      <text class="d-s" x="380" y="204" text-anchor="middle">presión en meta, rehabilitación completa</text>
+      <rect class="d-box" x="520" y="160" width="220" height="60" rx="4"/>
+      <text class="d-t" x="630" y="186" text-anchor="middle">La persona</text>
+      <text class="d-s" x="630" y="204" text-anchor="middle">paciente o afiliado</text>
+      <path class="d-acc" d="M310 66 L150 156" marker-end="url(#aha3)"/>
+      <text class="d-m" x="212" y="104" text-anchor="end">BONO POR RESULTADOS</text>
+      <path class="d-acc" d="M450 66 L610 156" marker-end="url(#aha3)"/>
+      <text class="d-m" x="548" y="104">DESCUENTO POR SALUD</text>
+      <path class="d-line" d="M240 190 H266" marker-end="url(#ah3)"/>
+      <path class="d-line" d="M520 190 H494" marker-end="url(#ah3)"/>
+      <path class="d-line" d="M130 220 V250 H630 V224" marker-end="url(#ah3)"/>
+      <text class="d-m" x="380" y="244" text-anchor="middle">PUNTOS POR ACCIONES PARA LA CLÍNICA</text>
+    </svg>
+    <figcaption>Tres premios, un mismo objetivo. Quien paga premia resultados; la clínica premia lo que la ayuda a funcionar; y paciente y médico persiguen el mismo indicador.</figcaption>
+  </figure>
+
+  <ul class="rules">
+    <li><b>Premiar procesos con vínculo probado al resultado.</b><span>Pagar por desempeño mejora sobre todo que se haga lo indicado; no ha demostrado de forma consistente mejores resultados de salud <span class="cite">(Mendelson y otros, 2017, revisión de 69 estudios)</span>.</span></li>
+    <li><b>El premio debe ser permanente.</b><span>En el Reino Unido, al retirar el incentivo de 12 indicadores, la calidad registrada cayó de inmediato y seguía baja tres años después <span class="cite">(Minchin y otros, 2018)</span>.</span></li>
+    <li><b>Vigilar siempre un indicador de seguridad.</b><span>Un programa de EE.UU. que castigaba los reingresos los redujo en insuficiencia cardiaca, pero coincidió con más muertes <span class="cite">(Gupta y otros, 2018)</span>. Es una asociación, no una causa probada.</span></li>
+    <li><b>Compensar lo que la clínica deja de facturar.</b><span>En Medicare, los grupos de médicos independientes ahorraron; los ligados a hospitales no, porque ahorrar les quitaba ingresos <span class="cite">(McWilliams y otros, 2018)</span>. La clínica es un hospital: sin compensación, el incentivo no empuja.</span></li>
+    <li><b>Ajustar por la complejidad del paciente.</b><span>Nuestra lectura: si se premia el resultado sin ajuste, conviene atender solo a los pacientes fáciles. Premiar la mejora, y no solo el valor final, reduce ese riesgo.</span></li>
+  </ul>
+
+  <h3>Quién financia cada premio en cada modelo</h3>
   <ol class="fit col">
-    <li><b>1 · Suscripción</b><span>La clínica, sobre la suscripción del año siguiente.</span></li>
-    <li><b>2 · Aseguradora</b><span>La aseguradora, sobre la prima o el copago.</span></li>
-    <li><b>3 · Empresa</b><span>La empresa, sobre el aporte del colaborador a la EPS.</span></li>
-    <li class="best"><b>4 · Prepaga</b><span>La clínica, sobre la cuota de renovación. Es el encaje más directo.</span></li>
-    <li><b>5 · La clínica financia</b><span>La clínica, en servicios. Sirve para medir antes de pasar a 2 o 4.</span></li>
+    <li><b>1 · Suscripción</b><span>La clínica paga el descuento en la suscripción. El premio al equipo médico es interno.</span></li>
+    <li><b>2 · Aseguradora</b><span>La aseguradora paga el descuento en la prima o el copago, y el bono por resultados a la clínica.</span></li>
+    <li><b>3 · Empresa</b><span>La empresa paga el beneficio al colaborador, y a la clínica por casos detectados y controlados.</span></li>
+    <li class="best"><b>4 · Prepaga</b><span>La clínica paga el descuento en la cuota y el bono interno a su equipo de cardiología. Es el encaje más directo.</span></li>
+    <li><b>5 · La clínica financia</b><span>La clínica, en servicios y con bono interno. Sirve para medir antes de pasar a 2 o 4.</span></li>
   </ol>
 </section>
 
@@ -417,11 +466,15 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
     <li>Discovery Limited (2026). Resultados del semestre a diciembre de 2025.</li>
     <li>Fresenius (2024). Venta de su participación en la Clínica Ricardo Palma. <a href="https://forbes.pe/negocios/2023-10-31/la-alemana-fresenius-vende-su-participacion-en-la-clinica-ricardo-palma-en-lima">Forbes Perú</a></li>
     <li>Gaalema DE y otros (2019). Incentivos para rehabilitación cardiaca. <i>JACC: Heart Failure</i>. <a href="https://www.acc.org/latest-in-cardiology/articles/2024/07/01/17/28/accel-lite-02jul2024">ACC</a></li>
+    <li>Gupta A y otros (2018). Programa de reducción de reingresos e insuficiencia cardiaca. <i>JAMA Cardiology</i> 3(1). <a href="https://psnet.ahrq.gov/issue/association-hospital-readmissions-reduction-program-implementation-readmission-and-mortality">AHRQ PSNet</a></li>
     <li>INEI, ENDES: enfermedades no transmisibles. <a href="https://encuestas.inei.gob.pe/endes/2023/SALUD/ENFERMEDADES_ENDES_2023.pdf">INEI</a></li>
     <li>John Hancock. Programa Vitality PLUS. <a href="https://www.johnhancock.com/life-insurance/vitality/vitality-rewards.html">John Hancock</a></li>
     <li>Jones D, Molitor D, Reif J (2019). Illinois Workplace Wellness Study. <i>Quarterly Journal of Economics</i> 134(4). <a href="https://www.nber.org/papers/w24229">NBER</a></li>
     <li>Leenheer J y otros (2007). Programas de lealtad y autoselección. <i>International Journal of Research in Marketing</i> 24(1).</li>
     <li>Ley 29733 de Protección de Datos Personales y su reglamento (2024). <a href="https://iapp.org/news/a/se-publica-el-nuevo-reglamento-de-protecci-n-de-datos-personales-en-per-">IAPP</a></li>
+    <li>McWilliams JM y otros (2018). Medicare Spending after 3 Years of the Medicare Shared Savings Program. <i>NEJM</i>. <a href="https://healthexec.com/topics/healthcare-policy/physician-led-acos-save-more-money-hospitals">HealthExec</a></li>
+    <li>Mendelson A y otros (2017). Revisión sistemática de pago por desempeño. <i>Annals of Internal Medicine</i>. <a href="https://medicalresearch.com/little-evidence-pay-performance-improves-patient-outcomes/">MedicalResearch</a></li>
+    <li>Minchin M y otros (2018). Quality of Care in the United Kingdom after Removal of Financial Incentives. <i>NEJM</i>. <a href="https://discovery.dundee.ac.uk/en/publications/quality-of-care-in-the-united-kingdom-after-removal-of-financial-/">Universidad de Dundee</a></li>
     <li>Revisión de incentivos financieros en salud (2019). <i>BMC Public Health</i>.</li>
     <li>Song Z, Baicker K (2019). Programa de bienestar en BJ's Wholesale. <i>JAMA</i>. <a href="https://kffhealthnews.org/public-health/workplace-wellness-programs-barely-move-the-needle-study-finds/">KFF Health News</a></li>
     <li>Volpp KG y otros (2017). HeartStrong. <i>JAMA Internal Medicine</i> 177(8). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5710431">PMC</a></li>
