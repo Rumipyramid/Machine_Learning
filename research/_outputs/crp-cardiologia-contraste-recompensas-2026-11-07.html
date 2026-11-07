@@ -72,6 +72,9 @@ section{padding-block:48px 0;display:grid;gap:20px}
 .flag.alert{background:var(--alert-bg)} .flag.alert .lbl{color:var(--alert)}
 .flag.opp{background:var(--opp-bg)} .flag.opp .lbl{color:var(--opp)}
 .cite{font-size:.85rem;color:var(--muted)}
+.solid{font-size:.9rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.solid .lbl{color:var(--ink)}
+.pair p b{font-weight:600}
 
 /* Tablas */
 .tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
@@ -168,122 +171,152 @@ footer{padding-block:48px 0;color:var(--muted);font-size:.85rem;font-family:var(
 
 <section id="contraste">
   <div class="sec-head"><p class="eyebrow">Parte 1</p><h2>Contraste con el enfoque</h2></div>
-  <p class="col muted">Cada tarjeta toma una pieza del enfoque, la compara con la evidencia y deja una alerta y una oportunidad. El orden sigue el del documento original.</p>
+  <p class="col muted">Revisamos el enfoque pieza por pieza, en el orden del documento original. Cada tarjeta tiene cuatro partes: lo que dice el enfoque, lo que muestra la evidencia, el riesgo que vemos y lo que haríamos. La evidencia viene de los estudios citados. La alerta y la oportunidad son nuestra lectura.</p>
 
   <div class="cards">
     <article class="card">
       <p class="tag">El encargo</p>
-      <h3>La primera idea: cobrar el programa como membresía</h3>
+      <h3>Cobrar la entrada puede achicar el programa en vez de hacerlo crecer</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">La clínica quiere que el programa gratuito vuelva a crecer y se sostenga. Su primera idea es cobrarlo.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>El precio cero tiene un efecto propio. En clínicas de Kenia, subir el precio de un mosquitero de 0 a 0,60 dólares redujo la adopción en 60 puntos porcentuales. Quienes pagaron no estaban más enfermos ni lo usaron más <span class="cite">(Cohen y Dupas, 2010)</span>.</p>
-          <p>En gimnasios de EE.UU., los socios con cuota mensual sobrestimaban cuánto irían. Pagaban más de 17 dólares por visita cuando el pase por visita costaba 10 <span class="cite">(DellaVigna y Malmendier, 2006)</span>. Parte del negocio de una membresía vive de quien no la usa.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica quiere que su programa gratuito de Cardiología vuelva a crecer y se sostenga. Su primera idea es cobrarlo como una membresía.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Pasar de gratis a un precio bajo espanta a mucha gente.</b> En clínicas de Kenia, un mosquitero pasó de gratis a 0,60 dólares. De cada 100 mujeres, 60 menos se lo llevaron <span class="cite">(Cohen y Dupas, 2010)</span>.</p>
+          <p><b>Cobrar tampoco filtró a quien más lo necesitaba.</b> Las que pagaron no estaban más enfermas ni lo usaron más que las que lo recibieron gratis.</p>
+          <p>Es otro producto y otro país. Lo que se traslada es el mecanismo: un precio pequeño frena mucho más de lo que su monto sugiere.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Es un experimento con grupos asignados al azar. Muestra el mecanismo, no la cifra que veríamos en Lima.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Cobrar puede achicar el programa justo cuando se quiere que crezca y dejar fuera a quienes tienen más riesgo. Una membresía que gana con el no uso choca con un programa de salud.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Cobrarle a un tercero (aseguradora, empresa o prepaga) y mantener gratis para la persona el núcleo clínico. Si la persona paga, que pague por extras como el seguimiento remoto o el plan familiar, no por la entrada.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Cobrar podría reducir los participantes justo cuando la meta es aumentarlos. Y nada indica que se quedarían los de mayor riesgo cardiaco.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Que pague un tercero: la aseguradora, la empresa o la prepaga. La parte clínica sigue gratis para la persona. Si la persona paga, que sea por extras, como el seguimiento a distancia o un plan familiar.</p></div>
       </div>
     </article>
 
     <article class="card">
       <p class="tag">Públicos</p>
-      <h3>Adultos mayores, asegurados y jóvenes que quieren prevenir</h3>
+      <h3>El ahorro está en quien ya tiene un problema cardiaco, no en quien solo quiere prevenir</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">Tres públicos posibles, cruzados con cinco pagadores.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>El retorno se concentra en quien ya tiene enfermedad o alto riesgo. En PepsiCo, el manejo de enfermedades redujo 29% las hospitalizaciones; el programa de estilo de vida no movió el gasto médico <span class="cite">(Caloyeras y otros, 2014)</span>.</p>
-          <p>En Perú, 19,4% de las personas de 15 años a más tenía la presión alta en la medición de 2023, y solo 10,8% tenía diagnóstico médico <span class="cite">(INEI, ENDES 2023, citado en un estudio de 2024)</span>. Casi la mitad no sabe que es hipertensa.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">El programa podría llegar a adultos mayores con la prepaga, a pacientes con seguro y a personas jóvenes que quieren prevenir.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Acompañar a quien ya está enfermo ahorra; promover hábitos en personas sanas, no.</b> En PepsiCo, el programa para empleados con enfermedades crónicas redujo 29% sus hospitalizaciones. Devolvió 3,78 dólares por cada dólar invertido. El programa de hábitos saludables no bajó el gasto médico <span class="cite">(Caloyeras y otros, 2014)</span>.</p>
+          <p><b>En Perú hay mucha hipertensión sin diagnosticar.</b> En la medición nacional de 2023, 19,4% de las personas de 15 años o más tenía la presión alta. Solo 10,8% tenía un diagnóstico médico <span class="cite">(INEI, ENDES 2023, citado en un estudio de 2024)</span>. La comparación es aproximada, pero sugiere que muchos hipertensos no saben que lo son.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Media. El dato de PepsiCo viene de una sola empresa, sin grupo de control, y la empresa financió el estudio. El dato peruano es oficial, aunque lo leímos citado en otro estudio.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Los jóvenes que quieren prevenir son el público con menor retorno en costos y el más difícil de mantener activo.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Tratar a jóvenes y empresas como un embudo de detección. Encontrar hipertensos que no lo saben tiene valor clínico y comercial, y se mide en meses.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Los jóvenes que quieren prevenir son el público que menos ahorro genera. Probablemente también son los primeros en dejar de participar.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Usar a jóvenes y empresas como puerta de entrada: un chequeo que encuentre a quienes tienen la presión alta y no lo saben. Cada caso detectado tiene valor clínico y comercial, y se puede contar en meses.</p></div>
       </div>
     </article>
 
     <article class="card">
-      <p class="tag">Modelo 1</p>
-      <h3>Suscripción de la persona</h3>
+      <p class="tag">Modelo 1 · Suscripción de la persona</p>
+      <h3>Una suscripción gana cuando la gente no la usa, y eso choca con un programa de salud</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">La persona paga una suscripción propia y el programa debe mostrar qué suma frente a su seguro o prepaga.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>Vale lo mismo que para el encargo: el precio frena la entrada y no filtra a quien más lo necesita <span class="cite">(Cohen y Dupas, 2010)</span>. En Perú se suma una barrera conocida: cerca de la mitad de las personas desconfía de los seguros, sobre todo por falta de información.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La persona paga una suscripción propia, aunque ya tenga seguro o la prepaga. El programa tiene que mostrar qué suma frente a lo que ya le cubren.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>La gente paga pensando que usará más de lo que luego usa.</b> En tres gimnasios de EE.UU., los socios con cuota mensual iban en promedio 4,3 veces al mes. Así pagaban más de 17 dólares por visita, cuando el pase suelto costaba 10 <span class="cite">(DellaVigna y Malmendier, 2006)</span>.</p>
+          <p><b>En Perú pesa la desconfianza.</b> Según encuestas de percepción del sector, casi la mitad de las personas desconfía de las aseguradoras. La causa más citada es la falta de información.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para los gimnasios: son registros reales de 7.752 socios durante tres años. El dato de desconfianza viene de encuestas locales.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>La persona con seguro siente que paga dos veces. Si no ve valor en el primer mes, cancela.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad (hipótesis)</p><p>El hijo o la hija que paga el seguimiento de su padre o madre. Quien compra no es el paciente, y valora la tranquilidad más que el precio.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Quien ya tiene seguro siente que paga dos veces por lo mismo. Si no ve un beneficio distinto en el primer mes, cancela.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Explorar compradores que no son el paciente. Por ejemplo, el hijo o la hija que paga el seguimiento de su padre o madre. Es una hipótesis: hay que validarla con entrevistas.</p></div>
       </div>
     </article>
 
     <article class="card">
-      <p class="tag">Modelo 2</p>
-      <h3>La aseguradora lo contrata para sus asegurados</h3>
+      <p class="tag">Modelo 2 · La aseguradora lo contrata</p>
+      <h3>La aseguradora pagará por resultados que vea pronto, no por ahorros que lleguen en años</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">La aseguradora necesita ver un beneficio, como menos eventos cardiacos costosos.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>La rehabilitación cardiaca con ejercicio reduce la mortalidad cardiovascular a largo plazo (riesgo relativo 0,58) y los infartos. Su efecto sobre las hospitalizaciones es incierto <span class="cite">(Dibben y otros, 2021, revisión Cochrane de 85 ensayos)</span>. El manejo de enfermedad sí redujo hospitalizaciones en una empresa grande <span class="cite">(Caloyeras y otros, 2014)</span>.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">Para contratarlo, la aseguradora tendría que ver un beneficio, como menos eventos cardiacos costosos.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Para quien ya tuvo un evento, la rehabilitación funciona.</b> Una revisión de 85 ensayos halló que la rehabilitación cardiaca con ejercicio reduce en 42% las muertes cardiovasculares a largo plazo. También reduce los infartos. Su efecto sobre las hospitalizaciones no está claro <span class="cite">(Dibben y otros, 2021, revisión Cochrane)</span>.</p>
+          <p><b>Acompañar a pacientes crónicos bajó hospitalizaciones</b> en PepsiCo, como se ve en la tarjeta de públicos <span class="cite">(Caloyeras y otros, 2014)</span>.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para la rehabilitación: es la revisión de referencia en medicina. Pero los beneficios mayores aparecen años después.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>El ahorro tarda años y la aseguradora puede perder al asegurado antes de cobrarlo. Además, si le paga a la clínica por servicio, el programa genera más consultas y exámenes, lo contrario de lo que ella busca. La pregunta del brief sobre cómo pagan hoy las aseguradoras decide si este modelo cierra.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Un pago por paciente inscrito más un bono por resultado, como el porcentaje de pacientes con la presión en meta. Sobre personas con enfermedad diagnosticada, donde la evidencia es más fuerte.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p><b>El ahorro llega tarde.</b> La aseguradora puede perder al asegurado antes de recuperar lo invertido. <b>Y los incentivos chocan.</b> Si paga a la clínica por cada atención, el programa le genera a la clínica más consultas y exámenes. La aseguradora quiere lo contrario.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Proponer otra forma de pago: un monto fijo por paciente inscrito y un bono si mejora el control, por ejemplo, más pacientes con la presión en meta. Empezar por personas ya diagnosticadas. La pregunta del brief sobre cómo pagan hoy las aseguradoras dirá si esto es viable.</p></div>
       </div>
     </article>
 
     <article class="card">
-      <p class="tag">Modelo 3</p>
-      <h3>Una empresa lo contrata para sus colaboradores</h3>
+      <p class="tag">Modelo 3 · Una empresa lo contrata</p>
+      <h3>A una empresa no se le puede vender ahorro en salud; sí detección</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">Permite llegar a gente en edad de trabajar que hoy no va a Cardiología.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>Dos experimentos aleatorizados grandes: la Universidad de Illinois (unos 4.800 empleados) y BJ's Wholesale (unos 33.000 empleados en 160 tiendas). Ninguno halló efecto en gasto médico, ausentismo ni indicadores clínicos al año o a los 18 meses. En Illinois, quienes participaron ya gastaban menos y tenían mejores hábitos antes de empezar <span class="cite">(Jones y otros, 2019; Song y Baicker, 2019)</span>.</p>
-          <p>En Perú, Interseguro se alió con Betterfly, una plataforma de bienestar para empresas. Betterfly cerró operaciones en cinco países en 2025.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica le vende a las áreas de personas o de bienestar. Así llega a gente en edad de trabajar que hoy no va a Cardiología.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Los programas de bienestar laboral no ahorraron.</b> Dos experimentos grandes asignaron el programa al azar: en la Universidad de Illinois, con unos 4.800 empleados, y en la cadena BJ's, con unos 33.000. Ninguno encontró menos gasto médico, menos ausencias ni mejor salud medida, al año ni a los 18 meses <span class="cite">(Jones y otros, 2019; Song y Baicker, 2019)</span>.</p>
+          <p><b>Se inscribieron los que ya estaban mejor.</b> En Illinois, quienes participaron gastaban menos y tenían mejores hábitos antes de empezar.</p>
+          <p><b>El mercado regional es frágil.</b> En Perú, Interseguro se alió con Betterfly, una plataforma de bienestar para empresas. Betterfly cerró operaciones en cinco países en 2025.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta para los dos experimentos, ambos en EE.UU. Lo de Betterfly viene de notas de prensa.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Prometerle ahorro en salud a una empresa no tiene respaldo. El negocio de bienestar corporativo en la región es frágil.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Vender detección y derivación: tamizaje cardiovascular en la empresa con un resultado que lleva a una consulta. Medir casos detectados y casos controlados, que sí se pueden mostrar.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Si se le promete a la empresa que bajarán sus costos de salud, la evidencia indica que no ocurrirá, al menos en uno o dos años.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Ofrecer detección y derivación: un chequeo cardiovascular en la empresa y una cita en la clínica para quien salga con un problema. Reportar lo que sí se puede contar: casos detectados y casos que logran controlarse.</p></div>
       </div>
     </article>
 
     <article class="card">
-      <p class="tag">Modelo 4</p>
-      <h3>Un beneficio de la prepaga</h3>
+      <p class="tag">Modelo 4 · Beneficio de la prepaga</p>
+      <h3>La prepaga es el mejor lugar para probar, si se distingue quién entra de cuánto mejora</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">El programa va dentro de la cuota y su valor se mide en ventas y retención de afiliados.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>Cuando quien paga también atiende, se queda con el ahorro de la prevención y con la relación de largo plazo. Discovery, la empresa detrás de Vitality, muestra utilidades crecientes con este modelo, pero no separa cuánto viene de cambiar la conducta y cuánto de atraer y retener clientes más sanos <span class="cite">(Discovery, resultados interinos 2026)</span>.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">El programa va dentro de la cuota. A la clínica le sirve para vender y retener afiliados, y su costo se mide contra eso.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Vitality gana dinero, pero no sabe del todo por qué.</b> Discovery, la empresa sudafricana detrás de Vitality, reporta utilidades crecientes con su programa. No separa cuánto se debe a que sus clientes cambian de hábitos y cuánto a que atrae y retiene a clientes que ya eran más sanos <span class="cite">(Discovery, resultados del semestre a diciembre de 2025)</span>.</p>
+          <p><b>Nuestra lectura:</b> cuando la misma organización cobra la cuota y atiende al paciente, se queda con lo que ahorra la prevención. En los otros modelos, ese ahorro queda en otra empresa.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Media. Son resultados oficiales de una empresa que cotiza en bolsa, pero no aíslan el efecto del programa.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Si el programa solo atrae afiliados sanos, la cartera mejora, pero nadie mejora su salud. Hay que medir las dos cosas por separado.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Es el encaje más directo para un descuento en la cuota: la clínica fija el precio y recibe el beneficio de la retención. Es el mejor lugar para el piloto.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Un programa que solo atrae afiliados sanos mejora las cuentas de la prepaga sin mejorar la salud de nadie. Mirando solo los resultados, los dos casos se ven iguales.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Hacer aquí el piloto de recompensas. La clínica fija el precio de la cuota y recibe directamente el beneficio de que los afiliados se queden. Medir por separado quién se inscribe y cuánto cambia su salud.</p></div>
       </div>
     </article>
 
     <article class="card">
-      <p class="tag">Modelo 5</p>
-      <h3>La clínica lo sigue financiando</h3>
+      <p class="tag">Modelo 5 · La clínica lo sigue financiando</p>
+      <h3>Comparar a quien participa con quien no participa exagera el resultado</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">Es la línea de base, medida por consultas, exámenes y pacientes que se quedan.</p></div>
-        <div><p class="lbl">Lo que dice la literatura</p>
-          <p>Comparar participantes con no participantes infla el efecto, porque quien se inscribe ya era distinto. En supermercados, el efecto real de un programa de lealtad fue siete veces menor que el de la comparación simple <span class="cite">(Leenheer y otros, 2007)</span>. En Illinois, la comparación simple habría mostrado un ahorro que el experimento no encontró <span class="cite">(Jones y otros, 2019)</span>.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La clínica lo trata como una inversión medida por consultas, exámenes y pacientes que se quedan. Es la línea de base para comparar los otros modelos.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Quien se inscribe ya era distinto.</b> En supermercados de Países Bajos, el efecto real de un programa de lealtad fue siete veces menor que el de una comparación simple entre socios y no socios <span class="cite">(Leenheer y otros, 2007)</span>.</p>
+          <p><b>En salud pasó lo mismo.</b> En Illinois, la comparación simple habría mostrado un ahorro que el experimento no encontró <span class="cite">(Jones y otros, 2019)</span>.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Los dos estudios corrigen el sesgo de quién decide participar; uno lo hace con un experimento.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Medir solo consultas y exámenes premia el volumen y le atribuye al programa pacientes que habrían venido igual.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Una línea de base seria: un grupo de comparación (lista de espera o inscripción escalonada) e indicadores clínicos, además de los comerciales.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Medir el retorno solo con consultas y exámenes premia hacer más atenciones. Además, le atribuye al programa pacientes que habrían venido igual.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Armar la línea de base con un grupo de comparación, por ejemplo, una lista de espera o una inscripción por etapas. Medir también indicadores clínicos, como la presión controlada, junto a los comerciales.</p></div>
       </div>
     </article>
 
     <article class="card">
       <p class="tag">Mapa del sistema</p>
-      <h3>Faltan dos flujos: los datos y el médico</h3>
+      <h3>Al mapa le faltan dos piezas: los datos del paciente y el médico</h3>
       <div class="pair">
-        <div><p class="lbl">Lo que plantea el enfoque</p><p class="quote">La persona llega por tres caminos y las empresas por dos. La aseguradora le paga a la clínica las atenciones.</p></div>
-        <div><p class="lbl">Lo que dice la literatura y el contexto</p>
-          <p>Los datos de salud son datos sensibles en Perú. Su uso requiere consentimiento expreso y por escrito <span class="cite">(Ley 29733; reglamento vigente desde el 30 de marzo de 2025)</span>. Cualquier modelo con recompensas mueve datos entre clínica, aseguradora o empresa, y ese flujo no está en el mapa.</p>
-          <p>El enfoque pregunta qué podría aportar la Red Quirónsalud. Fresenius, dueña de Quirónsalud, anunció en abril de 2024 que cerró la venta de su participación en la clínica a la familia Verme y otros inversionistas locales, y que con eso salía del mercado hospitalario peruano <span class="cite">(Fresenius, 2024)</span>.</p></div>
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">La persona llega por tres caminos y las empresas por dos. La aseguradora le paga a la clínica las atenciones.</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Los datos de salud tienen protección especial.</b> En Perú son datos sensibles. Usarlos exige el consentimiento expreso y por escrito del paciente <span class="cite">(Ley 29733; reglamento vigente desde el 30 de marzo de 2025)</span>.</p>
+          <p><b>Nuestra lectura:</b> cualquier modelo con recompensas mueve esos datos de la clínica a la aseguradora o a la empresa. Ese flujo no aparece en el mapa.</p></div>
       </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Es una norma vigente. La leímos en resúmenes; conviene que un abogado confirme los artículos exactos.</p>
       <div class="verdict">
-        <div class="flag alert"><p class="lbl">Alerta</p><p>Confirmar con la clínica qué relación queda con Quirónsalud antes de la reunión. Una pregunta mal planteada aquí resta credibilidad.</p></div>
-        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Sumar al mapa el flujo de datos con consentimiento y a los cardiólogos como canal. Ellos inscriben a los pacientes y validan las acciones.</p></div>
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Sin un consentimiento bien diseñado, los modelos con aseguradoras y empresas no pueden operar.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Dibujar en el mapa qué dato viaja, a quién y con qué permiso. Sumar a los cardiólogos: ellos inscriben a los pacientes y pueden validar sus acciones.</p></div>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="tag">El entorno y el futuro</p>
+      <h3>Conviene confirmar la relación con Quirónsalud antes de la reunión</h3>
+      <div class="pair">
+        <div><p class="lbl">Lo que dice el enfoque</p><p class="quote">¿Cómo ven el programa las aseguradoras y los cardiólogos, y qué podría aportar la Red Quirónsalud?</p></div>
+        <div><p class="lbl">Lo que muestra la evidencia</p>
+          <p><b>Quirónsalud ya no es accionista de la clínica.</b> Fresenius, la dueña de Quirónsalud, anunció en abril de 2024 que cerró la venta de su participación. Compraron la familia Verme y otros inversionistas locales. Con esa venta, Fresenius salió del mercado hospitalario peruano <span class="cite">(Fresenius, 2024)</span>.</p>
+          <p>No sabemos si queda algún acuerdo de colaboración entre la clínica y la red.</p></div>
+      </div>
+      <p class="solid"><span class="lbl">Qué tan sólida es</span> Alta. Es un comunicado oficial de una empresa que cotiza en bolsa, confirmado por la prensa.</p>
+      <div class="verdict">
+        <div class="flag alert"><p class="lbl">Alerta</p><p>Preguntar por la red como si la clínica siguiera dentro puede restarle credibilidad al equipo.</p></div>
+        <div class="flag opp"><p class="lbl">Oportunidad</p><p>Reformular la pregunta: «¿Qué relación tiene hoy la clínica con la Red Quirónsalud y qué queda de esa colaboración?».</p></div>
       </div>
     </article>
   </div>
