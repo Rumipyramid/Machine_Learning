@@ -44,6 +44,11 @@ RR. HH. o con otra empresa) con hechos ordenados, no con indignación.
 
 ## 2. Registro
 
+**Primero, quién es quién.** Antes de analizar, confirma el rol de cada persona y su relación con el
+usuario (jefatura directa, nivel superior, par, equipo). Un mismo comentario pesa distinto según quién
+lo dice y qué decide. No supongas jerarquías: pregunta o márcalas "por confirmar".
+`expediente.py actor <caso> --nombre ... --rol ... --relacion ... --decide ... --postura ...`
+
 `expediente.py add <caso> --cat <categoria> --fecha AAAA-MM-DD --titulo ... --fuerza ...`
 
 | Categoría | Qué entra |

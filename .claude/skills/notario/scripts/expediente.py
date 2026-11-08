@@ -150,6 +150,27 @@ def _line(e: dict) -> str:
     return s
 
 
+def actors_path(caso: str) -> Path:
+    return BASE / f"{caso}.actores.json"
+
+
+def load_actors(caso: str) -> list[dict]:
+    p = actors_path(caso)
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else []
+
+
+def cmd_actor(a):
+    """Registra o actualiza a una persona del caso: rol, relación con el usuario y postura conocida."""
+    p = actors_path(a.caso)
+    ensure_private(p)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    actors = [x for x in load_actors(a.caso) if x["nombre"] != a.nombre]
+    actors.append({"nombre": a.nombre, "rol": a.rol or "", "relacion": a.relacion or "",
+                   "postura": a.postura or "desconocida", "decide": a.decide or ""})
+    p.write_text(json.dumps(actors, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Actor registrado: {a.nombre} ({a.rol}).")
+
+
 def cmd_list(a):
     for e in load(a.caso):
         if a.cat and e["cat"] != a.cat:
@@ -194,6 +215,12 @@ def cmd_render(a):
     hoy = dt.date.today().isoformat()
     L = [f"# Expediente: {a.caso}", "",
          f"> Privado. Generado {hoy} por `/notario`. No se versiona. {len(items)} registros.", ""]
+    actors = load_actors(a.caso)
+    if actors:
+        L += ["## Quién es quién", "", "| Persona | Rol | Relación con el usuario | Qué decide | Postura conocida |",
+              "|---|---|---|---|---|"]
+        L += [f"| {x['nombre']} | {x['rol']} | {x['relacion']} | {x['decide']} | {x['postura']} |" for x in actors]
+        L.append("")
     L += ["## Escala de fuerza", ""] + [f"- {v[0]} {v[1]}" for v in FUERZA.values()] + [""]
     L += ["## Conteo", "", "| Categoría | Registros | 🟢 | 🔵 | 🟡 | 🟠 | 🔴 |", "|---|---|---|---|---|---|---|"]
     for c, name in CATS.items():
@@ -279,6 +306,9 @@ def main():
     s.add_argument("--fuerza", required=True); s.add_argument("--literal", action="store_true")
     s.add_argument("--testigos"); s.add_argument("--medido", choices=["medido", "estimado"])
     s.add_argument("--refs"); s.add_argument("--respuesta"); s.set_defaults(f=cmd_add)
+    s = sp.add_parser("actor"); s.add_argument("caso"); s.add_argument("--nombre", required=True)
+    s.add_argument("--rol"); s.add_argument("--relacion"); s.add_argument("--postura"); s.add_argument("--decide")
+    s.set_defaults(f=cmd_actor)
     s = sp.add_parser("list"); s.add_argument("caso"); s.add_argument("--cat"); s.set_defaults(f=cmd_list)
     s = sp.add_parser("render"); s.add_argument("caso"); s.set_defaults(f=cmd_render)
     s = sp.add_parser("scan"); s.add_argument("--autor"); s.add_argument("--max", type=int, default=8)
