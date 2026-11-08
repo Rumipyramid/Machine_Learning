@@ -10,3 +10,6 @@ research/personas/**/*.csv
 !research/personas/datasets/*.csv
 !research/personas/generador/usuarios_sinteticos_ejemplo.csv
 research/grafo/preguntar/mu-corpus.json
+
+# Expedientes privados de /notario (datos personales y de terceros: NUNCA se versionan; el repo es público)
+research/privado/
