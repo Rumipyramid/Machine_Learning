@@ -294,3 +294,6 @@
 | F-723 | 🟢 A | 2026-11-07 | Intuición 274 — la aversión a la pérdida no está probada como regla; parte es inercia: probar inercia antes de encuadrar como pérdida (abstract y comentarios; lectura débil) |
 | F-739 | 🟢 A | 2026-11-07 | Intuición 275 — una correlación nacida de pocos niños de un solo ambiente se encogió en la réplica grande con controles (resúmenes y prensa; lectura débil) |
 | F-551 | 🟢 A | 2026-11-07 | Intuición 276 — un modelo de lenguaje acierta lo estándar y falla con variaciones mínimas; probar con casos reformulados (preprint, PMC y prensa; lectura débil) |
+| F-714 | 🟢 A | 2026-11-08 | Intuición 277 — el efecto pesa más que la muestra; asumir que el tamaño real es una fracción del publicado (abstracts y fichas; lectura débil) |
+| F-750 | 🟢 A | 2026-11-08 | Intuición 278 — el daño climático se concentra en embarazadas y hogares pobres; dirigir la alerta al grupo (resumen y fichas; lectura débil) |
+| F-686 | 🟢 A | 2026-11-08 | Intuición 279 — con un solo estímulo no se separa persona de ejemplo; probar varios mensajes (PMC y resúmenes; lectura débil) |
