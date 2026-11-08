@@ -11,3 +11,4 @@ research/personas/**/*.csv
 !research/personas/generador/usuarios_sinteticos_ejemplo.csv
 research/grafo/preguntar/mu-corpus.json
 research/grafo/examen/prompts/
+research/grafo/preguntar/mu-bolsillo.html

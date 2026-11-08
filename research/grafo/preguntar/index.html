@@ -675,10 +675,22 @@ Devuelve SOLO un objeto JSON con estas claves:
     refused: "Claude no respondió a esta pregunta. Prueba formularla de otra manera.",
     empty_completion: "La respuesta llegó vacía. Prueba con una pregunta más concreta.",
   };
+  // Sin modelo, Mu no redacta: muestra la evidencia ordenada (lo que encontró, qué tan sólido es, qué está en disputa).
   function offline(entry, r, msg) {
-    entry.box.classList.add("err");
-    const parts = [`<p>${esc(msg)}</p>`];
-    if (r.nodes.length) parts.push("<p><b>Fragmentos más cercanos en el cerebro:</b></p><ul>" + r.nodes.slice(0, 5).map(c => `<li><b>${esc(c.titulo)}</b> — ${esc(c.seccion)}: ${inline(c.texto.replace(/\s+/g, " ").slice(0, 260))}…</li>`).join("") + "</ul>");
+    const S = String, corto = (t, n) => { t = S(t || "").replace(/\s+/g, " ").trim(); return t.length > n ? t.slice(0, n) + "…" : t; };
+    const SOL = { A: "solidez alta", B: "solidez buena", C: "solidez media", D: "solidez baja", E: "solidez muy baja" };
+    const parts = [`<p><i>${esc(msg)}</i></p>`];
+    if (!r.nodes.length && !r.fuentes.length) { parts.push("<p>Mu no encontró nada en el cerebro sobre esto.</p>"); entry.body.innerHTML = parts.join(""); return; }
+    const fs = r.fuentes.filter(Boolean), ab = fs.filter(f => "AB".includes(f.rig)).length;
+    parts.push(`<p><b>Lo que hay en el cerebro:</b> ${new Set(r.nodes.map(c => c.node)).size} nodo(s), ${fs.length} fuente(s), ${ab} de solidez alta o buena.</p>`);
+    if (r.juicio && r.juicio.length) parts.push("<p><b>Lo que el cerebro ya concluyó</b></p><ul>" + r.juicio.map(c => `<li><b>${esc(c.titulo)}</b> — ${esc(c.seccion)}: ${inline(corto(c.texto, 420))}</li>`).join("") + "</ul>");
+    const porNodo = new Map(); for (const c of r.nodes) { if (!porNodo.has(c.titulo)) porNodo.set(c.titulo, []); porNodo.get(c.titulo).push(c); }
+    parts.push("<p><b>Fragmentos más cercanos, por nodo</b></p>" + [...porNodo].map(([t, cs]) => `<p><b>${esc(t)}</b></p><ul>` + cs.map(c => `<li><i>${esc(c.seccion)}:</i> ${inline(corto(c.texto, 360))}</li>`).join("") + "</ul>").join(""));
+    if (fs.length) parts.push("<p><b>Fuentes, de la más sólida a la menos</b></p><ul>" + [...fs].sort((a, b) => RIGOR_ORDEN(a) - RIGOR_ORDEN(b)).slice(0, 10).map(f => `<li>[${esc(f.id)}] ${esc(corto(f.autor, 60))} (${esc(S(f.anio || ""))}) — <i>${SOL[f.rig] || "solidez sin calificar"}</i>. ${esc(corto(f.resumen, 260))}</li>`).join("") + "</ul>");
+    const abiertas = (r.tens || []).filter(t => t.abierta);
+    if (abiertas.length) parts.push("<p><b>En disputa</b></p><ul>" + abiertas.slice(0, 4).map(t => `<li>[${esc(t.f)}] "${esc(corto(t.s, 90))}" choca con "${esc(corto(t.o, 90))}". ${esc(corto(t.nota || t.apoyo, 200))}</li>`).join("") + "</ul>");
+    if (r.hyps && r.hyps.length) parts.push("<p><b>Ideas en prueba</b></p><ul>" + r.hyps.slice(0, 4).map(h => `<li><i>${esc(S(h.estado))}</i>: ${esc(corto(h.texto, 200))}</li>`).join("") + "</ul>");
+    if (r.lecciones && r.lecciones.length) parts.push("<p><b>Lecciones del equipo</b> (criterio, no evidencia)</p><ul>" + r.lecciones.map(l => `<li>${esc(corto(l.titulo, 200))}</li>`).join("") + "</ul>");
     entry.body.innerHTML = parts.join("");
   }
   function herramientas(entry, r) {
