@@ -16,8 +16,19 @@ RR. HH. o con otra empresa) con hechos ordenados, no con indignación.
   se niega a escribir en una ruta versionada. **Nunca** se copian hechos del caso a nodes, outputs,
   `CLAUDE.md`, mensajes de commit, PRs, artefactos ni a la base de datos de Mu.
 - Nunca se nombra a terceros del caso fuera del expediente privado.
-- El contenedor es efímero: al cerrar, ofrece guardar una copia del expediente en un documento
-  **privado** del Drive personal del usuario. No lo hagas sin que diga que sí.
+- **Guardado en Drive privado (regla del usuario, 2026-11-08): todo lo personal y delicado se guarda
+  en su Drive personal sin volver a preguntar.** El contenedor es efímero, así que al cerrar cada
+  avance del caso:
+  1. Busca la carpeta `Privado — Expedientes (Notario)` en el Drive personal (`title contains
+     'Expedientes (Notario)'`). Si no existe, créala con `inheritedPermissionsDisabled: true`.
+  2. Sube o reemplaza ahí tres archivos por caso: `Análisis del caso — <tema> (<fecha>)` y
+     `Expediente — <tema>` como documentos de Google (markdown), y `<caso>.respaldo.json` sin
+     conversión (sale de `expediente.py exportar <caso>`).
+  3. Verifica con los permisos del archivo que el único acceso sea el del dueño. Si aparece otra
+     persona o un enlace público, avisa al usuario en el acto.
+  Nunca uses artefactos, Claude Docs, la base de Mu ni el repo para esto: solo el Drive personal.
+- **Restaurar en una sesión nueva:** descarga `<caso>.respaldo.json` de esa carpeta al scratchpad y
+  corre `expediente.py importar <ruta>`; luego `render`.
 - No se copian documentos confidenciales de la empresa a cuentas personales. Del archivo de trabajo
   basta registrar el **metadato** (nombre, fecha de creación, autor de cada versión, quién lo compartió
   con quién), no su contenido. Recomienda capturas del historial de versiones en el equipo de trabajo.

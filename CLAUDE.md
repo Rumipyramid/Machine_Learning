@@ -300,7 +300,11 @@ Regla del usuario (2026-11-08): el sistema detecta información que construye un
   sin él, una conversación sobre el futuro de su rol, equipo o disciplina, una evaluación, un ascenso o un resultado de
   impacto del equipo, ofrécele **una vez** registrarlo en su expediente (`/notario`). Si dice que no, no insistas.
 - Todo hecho del caso va a `research/privado/expediente/` (ignorado por git). **Nada del caso entra al repo, a commits,
-  PRs, artefactos ni a la base de Mu.** Al cerrar la sesión, ofrecer copia en un documento privado del Drive personal.
+  PRs, artefactos ni a la base de Mu.**
+- **Lo personal y delicado se guarda en el Drive personal, sin volver a preguntar (regla del usuario, 2026-11-08).**
+  Destino: carpeta `Privado — Expedientes (Notario)`, solo con acceso del dueño (verificar permisos tras cada subida).
+  Para restaurar en una sesión nueva: descargar `<caso>.respaldo.json` y correr `expediente.py importar`. Procedimiento
+  en `.claude/skills/notario/SKILL.md` §0.
 - El Notario separa hecho de interpretación, exige la mejor versión de la postura contraria y propone jugadas de menor a
   mayor escalamiento. Detalle en `.claude/skills/notario/SKILL.md`.
 

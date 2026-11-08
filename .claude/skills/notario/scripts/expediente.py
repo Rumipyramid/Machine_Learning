@@ -171,6 +171,26 @@ def cmd_actor(a):
     print(f"Actor registrado: {a.nombre} ({a.rol}).")
 
 
+def cmd_exportar(a):
+    """Imprime un respaldo JSON único (actores + registros) para guardarlo en el Drive privado."""
+    print(json.dumps({"caso": a.caso, "actores": load_actors(a.caso), "registros": load(a.caso)},
+                     ensure_ascii=False, separators=(",", ":")))
+
+
+def cmd_importar(a):
+    """Restaura un caso desde su respaldo JSON (descargado del Drive privado) en una sesión nueva."""
+    data = json.loads(Path(a.respaldo).read_text(encoding="utf-8"))
+    caso = data["caso"]
+    p, ap_ = case_path(caso), actors_path(caso)
+    ensure_private(p)
+    if p.exists() and p.stat().st_size and not a.forzar:
+        sys.exit(f"{p.relative_to(ROOT)} ya existe. Usa --forzar para reemplazarlo.")
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in data["registros"]), encoding="utf-8")
+    ap_.write_text(json.dumps(data.get("actores", []), ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Caso {caso} restaurado: {len(data['registros'])} registros, {len(data.get('actores', []))} actores.")
+
+
 def cmd_list(a):
     for e in load(a.caso):
         if a.cat and e["cat"] != a.cat:
@@ -309,6 +329,9 @@ def main():
     s = sp.add_parser("actor"); s.add_argument("caso"); s.add_argument("--nombre", required=True)
     s.add_argument("--rol"); s.add_argument("--relacion"); s.add_argument("--postura"); s.add_argument("--decide")
     s.set_defaults(f=cmd_actor)
+    s = sp.add_parser("exportar"); s.add_argument("caso"); s.set_defaults(f=cmd_exportar)
+    s = sp.add_parser("importar"); s.add_argument("respaldo"); s.add_argument("--forzar", action="store_true")
+    s.set_defaults(f=cmd_importar)
     s = sp.add_parser("list"); s.add_argument("caso"); s.add_argument("--cat"); s.set_defaults(f=cmd_list)
     s = sp.add_parser("render"); s.add_argument("caso"); s.set_defaults(f=cmd_render)
     s = sp.add_parser("scan"); s.add_argument("--autor"); s.add_argument("--max", type=int, default=8)
