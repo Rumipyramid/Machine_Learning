@@ -103,7 +103,7 @@
 | 2026-10-06 | `944e196` | 528 | 16 | 4 | 84 | 423 | 1948 | 17 | 17 | 22 |
 | 2026-10-07 | `7d6f508` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-15 | `d2adac5` | 845 | 20 | 5 | 124 | 738 | 2002 | 15 | 20 | 22 |
-| 2026-11-09 | `23a326e` | 884 | 21 | 6 | 132 | 776 | 2002 | 15 | 20 | 22 |
+| 2026-11-09 | `749cd06` | 900 | 21 | 6 | 132 | 790 | 2002 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -127,7 +127,7 @@
 - ✅ Wikilinks **rotos** (destino inexistente): **0**
 - ✅ Nodes **aislados** (sin enlaces): **0**
 - ✅ Nodes **ausentes** de la tabla de `alma.md`: **0**
-- ⚠️ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-09-28; antes es indeterminable): **7** — behavioral-design-estado-disciplina (alma 2026-10-04 < git 2026-10-15), fenomenos-psicologicos (alma 2026-10-04 < git 2026-10-15), mecanismos-seguros-salud (alma 2026-10-04 < git 2026-10-15), modelo-personas-sinteticas (alma 2026-10-07 < git 2026-11-09), modelo-salud-ia-farmacias-peru (alma 2026-10-07 < git 2026-11-09), seguros-comportamiento-mundo-peru (alma 2026-10-07 < git 2026-11-09), tendencias-diseno-innovacion (alma 2026-10-04 < git 2026-10-15)
+- ⚠️ Nodes **más nuevos que su fecha en `alma.md`** (solo se juzga si el último commit es posterior al inicio del historial visible, 2026-09-28; antes es indeterminable): **4** — behavioral-design-estado-disciplina (alma 2026-10-04 < git 2026-10-15), fenomenos-psicologicos (alma 2026-10-04 < git 2026-10-15), mecanismos-seguros-salud (alma 2026-10-04 < git 2026-10-15), tendencias-diseno-innovacion (alma 2026-10-04 < git 2026-10-15)
 - ✅ Outputs que **no citan ningún node** (viola regla 4): **0**
 
 ## 6. Tabla por node
@@ -143,9 +143,9 @@
 | `lealtad-gamificacion-recompensas-retail` | 222 | 44 | 17 | 4/4 | 2026-10-15 | 2026-10-15 v1.0 |
 | `conducta-humano-ia` | 142 | 41 | 28 | 7/7 | 2026-10-04 | 2026-10-04 v1.1 |
 | `proyecto-back-to-basics-ffvv-vida` | 976 | 33 | 29 | 7/7 | 2026-10-12 | 2026-10-12 v1.4 |
-| `modelo-salud-ia-farmacias-peru` | 620 | 26 | 19 | 5/5 | 2026-11-09 | 2026-10-07 v1.0 |
+| `modelo-salud-ia-farmacias-peru` | 620 | 26 | 19 | 5/5 | 2026-11-09 | 2026-11-09 v1.0 |
 | `futuro-asesores-seguros-venta-digital` | 389 | 23 | 2 | 6/6 | 2026-10-04 | 2026-10-04 v1.0 |
-| `seguros-comportamiento-mundo-peru` | 343 | 23 | 12 | 16/16 | 2026-11-09 | 2026-10-07 v1.1 |
+| `seguros-comportamiento-mundo-peru` | 343 | 23 | 12 | 16/16 | 2026-11-09 | 2026-11-09 v1.1 |
 | `transicion-venta-fria-a-opt-in` | 325 | 18 | 7 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `evaluacion-calidad-agentes-conversacionales-ia` | 256 | 17 | 11 | 4/4 | 2026-10-04 | 2026-10-04 v1.0 |
 | `material-visual-venta-consultiva` | 377 | 17 | 12 | 8/8 | 2026-10-04 | 2026-10-04 v1.1 |
@@ -154,7 +154,7 @@
 | `venta-vida-digital-hibrida-latam` | 233 | 8 | 4 | 2/2 | 2026-10-04 | 2026-10-04 v1.0 |
 | `glosario-seguro-salud-peru` | 196 | 6 | 5 | 4/4 | indeterminada (≤ 2026-09-28, historial truncado) | 2026-07-21 v1.0 |
 | `matriz-productos-vida-rimac` | 184 | 0 | 0 | 2/2 | indeterminada (≤ 2026-09-28, historial truncado) | 2026-07-26 v1.2 |
-| `modelo-personas-sinteticas` | 83 | 0 | 0 | 7/7 | 2026-11-09 | 2026-10-07 v1.0 |
+| `modelo-personas-sinteticas` | 83 | 0 | 0 | 7/7 | 2026-11-09 | 2026-11-09 v1.0 |
 
 ## 7. Límites declarados de esta medición
 

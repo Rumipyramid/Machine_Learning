@@ -15809,12 +15809,12 @@
     "fuente": "git"
    },
    {
-    "fuentes": 884,
+    "fuentes": 900,
     "rigor": {
-     "B": 137,
-     "A": 303,
-     "C": 186,
-     "D": 206,
+     "B": 138,
+     "A": 307,
+     "C": 188,
+     "D": 215,
      "?": 15,
      "E": 37
     },
@@ -15822,7 +15822,7 @@
     "outputs": 6,
     "wikilinks": 132,
     "derivaciones": 14,
-    "fuentes_citadas_en_nodes": 776,
+    "fuentes_citadas_en_nodes": 790,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15843,7 +15843,7 @@
      "cites": 274
     },
     "fecha": "2026-11-09",
-    "commit": "23a326e",
+    "commit": "749cd06",
     "fuente": "git"
    }
   ],
