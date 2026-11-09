@@ -6,7 +6,7 @@
 > principales fenómenos sociales y climatológicos que afectan al Perú hoy, en 2026, en la vida de las
 > personas: su economía, su salud y sus oportunidades?"*.
 > Fuentes en `research/fuentes/codice.md`: F-851, F-856, F-858 a F-867, F-870, F-874, F-879 a F-882,
-> F-884 (nuevas), más F-742 a F-801 del node de El Niño.
+> F-884 (nuevas), más F-742 a F-801 del node de El Niño · **§7 (banca y seguros): F-886 a F-901**.
 > El Niño se trata en profundidad en [[fenomeno-el-nino-impacto-personas|su propio node]]; aquí solo se
 > ubica dentro del cuadro general.
 > Output derivado: `research/_outputs/informe-fenomenos-peru-2026-el-nino-2026-11-09.md`.
@@ -95,6 +95,40 @@ primer trimestre). El dengue es el indicador sanitario que más rápido sube con
   de desastre.
 - Las cifras de 2026 son preliminares y de cortes distintos; las de pobreza e informalidad son de 2025.
 - El orden de importancia de §1 es un juicio sobre cifras no comparables entre sí.
+
+## 7. 💼 Cómo responden la banca y los seguros (negocio sostenible e impacto social)
+
+> Agregado el 2026-11-09 a pedido del usuario. El desarrollo completo, con la tabla de 11 modelos de
+> negocio, está en el output (§6). Aquí queda lo que cambia el conocimiento.
+
+**Conclusión.** El negocio sostenible está donde el producto protege la **liquidez del hogar** o su
+**capacidad de invertir**, se distribuye por un canal existente (crédito, billetera, colectivo) y paga
+en días con un índice. El crédito adicional, solo, ayuda poco.
+
+**Lo que dice la evidencia causal (🟢 A, fuera del Perú):**
+- El seguro de lluvia aumenta la inversión agrícola más que el efectivo: el freno es el riesgo no
+  asegurado (Ghana; F-893).
+- Con dinero móvil, un shock no reduce el consumo de los usuarios; el de los no usuarios cae ~7%
+  (Kenia; F-894). A largo plazo, ~2% de los hogares salió de la pobreza (F-895, disputado).
+- El microcrédito tiene efectos modestos, no transformadores (seis experimentos; F-896).
+
+**Lo que existe en el Perú (🟡 C / 🟠 D):**
+- Seguro Agrícola Catastrófico: gratis, hasta S/1.000 por hectárea; S/50 M pagados a >110 mil
+  productores en 2025 (F-886).
+- Garantías de S/2.000 M del Fondo CRECER y reprogramación hasta 84 meses para mypes (F-887).
+- Mibanco: 54 mil clientes preparados ante El Niño y S/190 M de provisiones voluntarias (F-888).
+- Bono social de género de BBVA (US$200 M) y bonos verdes de BCP y BanBif; impacto no reportado
+  (F-889, F-901).
+- Yape: 15,5 M de usuarios activos (82% de la PEA) y ~100 M de microcréditos (F-897).
+- Microseguros: último dato oficial hallado, 4,87 M de usuarios en 2017 (F-891).
+
+**Contraevidencia y riesgos:**
+- El desgravamen de bajo valor (siniestralidad ~15% en un caso) erosiona la confianza (F-899).
+- El impacto de las microfinancieras se declara sin grupo de comparación (F-890).
+- El seguro de extorsión solo llega a patrimonios altos; el bodeguero no tiene opción (F-892).
+
+**Huecos 2026:** liquidez del hogar del norte, ingreso puente del pescador y del jornalero, mype
+extorsionada, gasto en dengue fuera del SIS, colegios y postas sin seguro.
 
 ---
 

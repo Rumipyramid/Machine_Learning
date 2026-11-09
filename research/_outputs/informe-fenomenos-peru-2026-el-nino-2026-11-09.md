@@ -26,6 +26,7 @@
 4. **El daño de El Niño en las personas tiene dos tiempos.** En el corto plazo: casas inundadas, ingreso que se apaga, comida más cara, diarrea y dengue. En el largo plazo: niños expuestos en el útero o en sus primeros dos años que, diez años después, miden menos y rinden menos en pruebas cognitivas (F-744, F-745, F-746). Ese segundo daño no aparece en ninguna cifra de damnificados.
 5. **Dónde:** la costa norte (Tumbes, Piura, Lambayeque, La Libertad) es el epicentro en todos los eventos. Pero en 2026 el riesgo también está en la periferia de Lima (609.586 personas en riesgo muy alto de inundación, F-854) y, por sequía, en el sur andino (4,3 millones expuestos, F-853).
 6. **Quiénes:** los niños pequeños, los hogares pobres y vulnerables, los trabajadores informales, los agricultores, jornaleros y pescadores, las madres de hogares inundados y las mujeres jóvenes.
+7. **Qué pueden hacer la banca y los seguros (sección 6):** el negocio sostenible está en proteger la liquidez del hogar con seguros paramétricos distribuidos por microfinancieras, billeteras o colectivos, que pagan en días y sin reclamo. La evidencia apoya más al seguro y al dinero rápido que al crédito adicional. Los huecos más grandes son el hogar del norte, el pescador, la mype extorsionada y el gasto en dengue.
 
 **Las tres pistas de evidencia.**
 - 🔬 La **evidencia académica** dice que el daño más caro es lento e invisible: la nutrición y el aprendizaje de los niños, y la pobreza que se vuelve crónica.
@@ -294,7 +295,116 @@ Cada pista mide cosas distintas. No se mezclan ni se promedian.
 
 ---
 
-## 6. Limitaciones
+## 6. Cómo la banca y las aseguradoras convierten estos contextos en negocio sostenible e impacto social
+
+> Sección agregada el 9 de noviembre de 2026, a pedido. Pista de negocio con apoyo de la pista empírica
+> para saber qué ayuda de verdad a las personas. Fuentes nuevas F-886 a F-901; se reutilizan F-773 a
+> F-801 (investigación sobre El Niño y oportunidades de seguro, octubre de 2026).
+
+### 6.1 La conclusión
+
+**Hay negocio sostenible cuando el producto ataca el canal real del daño, viaja por un canal que ya existe y paga rápido.**
+
+1. **El canal del daño** es la liquidez del hogar en las semanas del golpe y el riesgo no asegurado que le impide invertir. Esa es la cadena que llega a la nutrición de los niños (sección 3.3).
+2. **El canal de distribución** es el crédito, la billetera digital o un colectivo: microfinanciera, cooperativa, empleador, municipio o programa público. El seguro vendido suelto al hogar no se masifica (F-799, F-800).
+3. **El pago rápido** se logra con un índice (lluvia, temperatura del mar, sismo) que dispara el pago sin reclamo ni perito.
+
+**Lo que no funciona** son tres cosas:
+- El seguro que se cobra pero casi nunca paga, como el desgravamen de bajo valor.
+- El crédito como única respuesta, porque reprogramar no repone el ingreso perdido.
+- Las etiquetas "social" o "verde" sin medición de impacto.
+
+### 6.2 Por qué hay un negocio por hacer: la brecha
+
+- **En el Perú casi nadie está protegido.** Solo ~3,3% de los hogares tiene seguro contra desastres (node de seguros del proyecto). En el Niño Costero de 2017, el seguro cubrió entre ~7% y ~35% del daño, según la base usada, y lo cobraron sobre todo empresas (F-773).
+- **El riesgo sigue creciendo.** En 2024 las catástrofes del mundo causaron ~US$318 mil millones de pérdidas, y más de la mitad no tenía seguro. En los mercados emergentes, la resiliencia ante catástrofes cayó en la última década (Swiss Re; F-900).
+- **El riesgo también es de la banca.** El crédito a microempresas ya cayó 12,9% en un año y su morosidad subió a ~5% antes del pico del Niño (F-872). En la cartera de Mibanco, el 70% de las mypes encuestadas espera que El Niño afecte su negocio (F-888).
+- **La regulación acaba de abrir la puerta.** Desde setiembre de 2026, el reglamento de seguros paramétricos de la SBS permite contratarlos a personas jurídicas o entidades públicas **en beneficio de una colectividad** (F-786). Es decir, el camino para llegar al hogar pasa por un intermediario (B2B2C), no por la venta directa.
+
+### 6.3 Qué ayuda de verdad a las personas (🔬 evidencia)
+
+Antes de ver los modelos de negocio, conviene saber qué producto financiero tiene efecto probado. Los estudios más sólidos dicen esto:
+
+| Producto | Qué demostró | Diseño y rigor | Fuente |
+|---|---|---|---|
+| **Seguro índice de lluvia** | Los agricultores asegurados **invierten más** en su chacra que los que reciben efectivo. El freno es el riesgo no asegurado, no la falta de capital | Experimento aleatorizado, Ghana · 🟢 A | F-893 |
+| **Seguro índice de ganado** | Tras la sequía, los asegurados protegen su consumo (los más pobres) o sus animales (los menos pobres) en vez de saltarse comidas | Peer-reviewed, Kenia · 🟢 A | F-792 |
+| **Dinero móvil** | Ante un shock, el consumo de los no usuarios cae ~7%; el de los usuarios no cae, porque reciben más ayuda de familiares | Panel de 2.282 hogares, Kenia · 🟢 A | F-894 |
+| **Dinero móvil, a largo plazo** | ~2% de los hogares salió de la pobreza; el efecto es mayor en hogares encabezados por mujeres | Peer-reviewed, Kenia · 🟢 A, ⚠️ disputado | F-895 |
+| **Transferencia anticipada por celular** | Pagar 5 días **antes** del pico de una inundación redujo en 36% la probabilidad de pasar un día sin comer | Cuasi-experimento, Bangladesh · 🔵 B | F-793 |
+| **Microcrédito** | Efectos **modestos, no transformadores**: más actividad de negocio, sin reducción clara de la pobreza | Seis experimentos aleatorizados · 🟢 A | F-896 |
+| **Demanda de seguro índice** | No se masifica ni con buen precio: frenan la desconfianza, la falta de liquidez y la baja saliencia. Mejora combinado con crédito y con apoyo público | Experimentos y revisión · 🟢 A | F-799, F-800 |
+| **Demanda tras un desastre** | La contratación de seguro de inundación sube ~10% el año siguiente y se diluye en ~15 años | Panel, EE. UU. · 🟢 A | F-791 |
+
+**Lectura.** La evidencia favorece más al **seguro y al dinero rápido** que al crédito adicional. El crédito ayuda poco a salir de la pobreza; el seguro y la liquidez evitan caer en ella. Además, hay una ventana comercial: la demanda sube justo después del golpe.
+
+### 6.4 Modelos que ya funcionan, y cómo ganan dinero (💼 negocio)
+
+| # | Modelo | Ejemplo y cifra | Cómo gana dinero quien lo ofrece | Impacto en las personas | Evidencia |
+|---|---|---|---|---|---|
+| 1 | **Paramétrico distribuido por microfinancieras** | MiCRO (Centroamérica y Colombia): **171 mil pólizas** activas y **US$26 M pagados** sin reclamo, con datos satelitales | Prima en cada crédito; el riesgo se cede al reaseguro; la microfinanciera protege su cartera | Liquidez en días; el cliente no se descapitaliza | 🟡 C (cifras propias) · F-790 |
+| 2 | **Seguro agrícola público-privado** | Seguro Agrícola Catastrófico (Perú): gratis para el productor, hasta S/1.000 por hectárea; en 2025 pagó **S/50 M a más de 110 mil productores** | El Estado paga la prima; la aseguradora gestiona el riesgo y verifica los daños | Piso mínimo de ingreso para el pequeño agricultor | 🟠 D · F-886 |
+| 3 | **Seguro de pronóstico de El Niño** | La Positiva (2010): paga si el mar en la región Niño 1+2 supera 24,5 °C, cuando empieza la inundación y **antes** de las pérdidas mayores. Fue el primero de su tipo regulado en el mundo | Prima de agroexportadores, asociaciones y financieras del norte | Dinero al inicio de la emergencia, no solo para reconstruir | 🔵 B · F-775, F-798 |
+| 4 | **Paramétrico soberano o de ecosistema** | CCRIF (gobiernos del Caribe): US$44 M a Granada tras el huracán Beryl. Seguro de arrecife de Quintana Roo: US$850 mil tras el huracán Delta | Primas de gobiernos y fondos; reaseguro global | Respuesta pública rápida; repara el activo que sostiene el turismo y la pesca | 🟠 D · F-898 |
+| 5 | **Crédito de emergencia con garantía estatal** | Cajas municipales en 2017: **>S/1.000 M prestados y S/600 M postergados**. En 2026: garantías de **S/2.000 M** del Fondo CRECER y reprogramación hasta 84 meses sin subir la tasa | Margen financiero con riesgo compartido con el Estado; retención del cliente | Evita la quiebra del negocio, pero no repone el ingreso perdido | 🟠 D · F-778, F-887, F-872 |
+| 6 | **Preparación del cliente como gestión de riesgo** | Mibanco: **54 mil clientes** capacitados y diagnosticados ante El Niño; S/190 M de provisiones voluntarias | Menos morosidad futura; cartera más resistente | Negocios mejor preparados (sin medición de resultado) | 🟡 C · F-888 |
+| 7 | **Bonos sociales y verdes** | BBVA Perú: bono social de género de **US$200 M** para mypes de mujeres (con BID Invest y COFIDE). BCP: primer bono verde de la banca peruana (US$30 M). Solo ~3% de la renta fija local es verde | Fondeo más barato y diversificado; acceso a inversionistas de impacto | Más crédito para segmentos excluidos; **impacto no reportado** | 🟠 D · F-889, F-901 |
+| 8 | **Billetera digital como infraestructura de liquidez** | Yape: **15,5 M de usuarios activos** (82% de la población económicamente activa); ~100 M de microcréditos colocados; seguro de salud digital. El uso de billeteras entre los pobres subió 7,2 puntos | Comisiones, crédito masivo de bajo monto, venta cruzada de seguros | Canal para enviar ayuda o pagar un seguro en horas (el mecanismo de F-894 y F-793) | 🟠 D · F-897 |
+| 9 | **Microfinanzas que miden su impacto social** | Financiera Confianza: 240 mil hogares evaluados; 27% sale de la pobreza económica al tercer año | Margen de microcrédito con fondeo de impacto | Declarado por la entidad, **sin grupo de comparación** | 🟡 C · F-890 |
+| 10 | **Microseguros masivos** | 4,87 M de usuarios (2017, último dato oficial hallado); prima mensual máxima de S/30 desde 2024 | Volumen alto, prima baja, distribución por crédito o retail | Depende del valor real; ver riesgos en 6.6 | 🟠 D · F-891 |
+| 11 | **Seguro de salud por enfermedad tropical** | Prudential Brasil: indemnización por diagnóstico de dengue, chikungunya y zika | Prima individual o familiar; demanda que sube con cada epidemia | Cubre el costo directo: en Piura una clínica pedía ~S/3.000 de adelanto por tratar dengue | 🟠 D · F-795, F-796 |
+
+### 6.5 Mapa: qué necesita cada persona y quién podría resolverlo
+
+| Fenómeno | Qué necesita la persona | Respuesta financiera con evidencia | Estado en el Perú (2026) |
+|---|---|---|---|
+| **El Niño en la costa norte** | Liquidez en los primeros días; reparar la casa | Paramétrico colectivo + pago por billetera (F-790, F-793, F-894) | Reglamento recién aprobado (F-786); hogar casi sin cobertura. **Hueco principal** |
+| **El Niño en el agro** | Que la pérdida no lo saque de la actividad | Seguro índice + crédito (F-893, F-800) | Seguro Agrícola Catastrófico con tope bajo (F-886); paramétricos de nicho para café y agroexportación (F-789, F-775) |
+| **Pesca sin temporada** | Ingreso puente de meses | Reprogramación con garantía (F-887); seguro de ingreso (sin ejemplo) | Solo reprogramación; **sin producto de ingreso** para pescadores |
+| **Dengue** | Pagar el tratamiento sin endeudarse | Seguro de diagnóstico tropical (F-795) | El SIS financió >280 mil tratamientos en 2023 (F-796); casi no hay oferta privada |
+| **Pobreza e informalidad** | Ahorro, crédito pequeño, protección básica | Dinero móvil (F-894, F-895); microcrédito con expectativa modesta (F-896) | Yape masivo (F-897); microseguro con dato viejo (F-891) |
+| **Extorsión** | Que un cupo no quiebre el negocio | — (sin evidencia de producto eficaz) | Seguro de extorsión solo para patrimonios altos; el bodeguero no accede (F-892). **Hueco sin solución probada** |
+| **Escuelas y servicios** | Que el colegio o la posta vuelva a abrir pronto | Paramétrico público (F-898) | Solo 187 de ~50 mil colegios tienen seguro contra desastres (F-779) |
+
+### 6.6 Riesgos y contraevidencia (búsqueda activa de señales de problema)
+
+1. **Seguro que no paga.** El desgravamen vendido con microcréditos suele dar poco valor: en un caso de Camboya la siniestralidad promedió ~15%. La OIT advierte que estos productos refuerzan la mala imagen del seguro (F-899). Un microseguro con siniestralidad muy baja es rentable a corto plazo, pero destruye la confianza: en el Perú ya desconfía del seguro ~48% de la población (node de seguros del proyecto).
+2. **Sobreendeudamiento.** Reprogramar alivia el flujo, pero no repone el ingreso (F-872). Prestar más a un hogar que perdió su ingreso puede agravar el problema. El microcrédito, solo, no saca de la pobreza (F-896).
+3. **Riesgo de base.** Si el índice no coincide con el daño real (llovió en la estación, pero no en la chacra), el cliente paga y no cobra. Es la primera causa de desconfianza en el seguro índice (F-800).
+4. **Antiselección por pronóstico público.** Con el ENFEN anunciando un Niño extraordinario, quien compra hoy compra cuando el riesgo ya es casi seguro. Un producto así necesita ventanas de venta que cierren antes de la alerta o un precio que incorpore el pronóstico. Es una inferencia de diseño, no un dato publicado.
+5. **Reaseguro barato hoy, caro mañana.** Las tarifas de reaseguro catastrófico bajaron 16% en julio de 2026 justo antes de un Niño récord (F-797). Si el evento es grande, la renovación de 2027 encarecerá todo producto que dependa de él.
+6. **Impacto autodeclarado.** Los bonos sociales no publican resultados en sus beneficiarias (F-889), y las cifras de salida de la pobreza de las microfinancieras no tienen grupo de comparación (F-890). Sin contrafactual, es marketing de impacto, no impacto medido.
+
+### 6.7 📱 Lo que dice la conversación social
+
+- **Pista débil.** No se encontró conversación pública relevante sobre bancos o aseguradoras frente a El Niño en 2026.
+- **Lo que sí se ve** es que una aseguradora ocupa el espacio de la preparación con una alianza editorial con una radio nacional (Pacífico con RPP; F-785).
+- **La desconfianza es el telón de fondo:** ~48% desconfía del seguro, y la causa principal es la falta de información (node de seguros).
+- **Implicación:** el primer siniestro bien pagado es la mejor campaña. La demanda sube cuando el propio cliente o alguien de su red cobra (F-893).
+
+### 6.8 Qué distingue el negocio sostenible del oportunista
+
+Criterios destilados de la evidencia anterior. Sirven como lista de chequeo para evaluar un producto:
+
+| Criterio | Pregunta de control | Por qué |
+|---|---|---|
+| **Ataca el canal real del daño** | ¿Protege la liquidez del hogar o su capacidad de invertir? | Es lo que tiene efecto probado (F-893, F-894, F-793) |
+| **Viaja por un canal existente** | ¿Llega por crédito, billetera o colectivo, y no por venta suelta? | El seguro índice vendido suelto no se masifica (F-799) y la norma peruana exige un intermediario (F-786) |
+| **Paga rápido y sin reclamo** | ¿Cuántos días entre el evento y el dinero? | El dinero antes del pico vale más que después (F-793) |
+| **Da valor medible** | ¿La siniestralidad es razonable para el cliente? | Siniestralidad muy baja = mal valor y desconfianza (F-899) |
+| **Comparte el riesgo** | ¿Hay Estado, reaseguro o garantía detrás? | Sin eso, un Niño extraordinario quiebra la cartera (F-797, F-887) |
+| **Mide impacto con comparación** | ¿Hay grupo de control o al menos línea de base? | Sin contrafactual, el impacto social es declarado (F-890) |
+
+**Dónde están los huecos más grandes en 2026**, ordenados por tamaño de la necesidad:
+1. **La liquidez del hogar del norte** en las semanas del golpe, que es el canal hacia la desnutrición infantil.
+2. **El ingreso puente** del pescador y el jornalero agrícola.
+3. **La mype extorsionada**, para la que no existe ninguna solución financiera probada.
+4. **El gasto de salud por dengue** fuera del SIS.
+5. **La infraestructura pública**: colegios y postas.
+
+---
+
+## 7. Limitaciones
 
 - **Cifras de 2026 en movimiento.** Daños, dengue, precios y extorsión cambiarán semana a semana. La mayoría se leyó en prensa que cita fuentes oficiales.
 - **Pista social débil.** No hubo lectura directa de redes.
@@ -303,10 +413,11 @@ Cada pista mide cosas distintas. No se mezclan ni se promedian.
 - **Cifras que no cuadran.** Muertos de 1982-83 (512 frente a ~9.000), daño de 2017 (US$3.100 M frente a US$9.200 M), inseguridad alimentaria (30,5% frente a 51,7%) y población en riesgo (8 frente a 12,5 millones). Cada una depende de qué mide la fuente.
 - **No se investigó:** retroceso glaciar, calidad del aire, salud mental fuera del desastre, efecto de El Niño en el trabajo infantil o la migración interna.
 - **El orden de importancia** de la Parte I es un juicio sobre cifras no comparables entre sí.
+- **Sección de banca y seguros (6):** casi todas las cifras peruanas vienen de la propia empresa o de prensa (🟡 C, 🟠 D). No hay evaluación independiente del impacto de ningún producto financiero peruano frente a El Niño. El dato oficial más reciente de microseguros hallado es de 2017. La evidencia causal (🟢 A) es de Ghana, Kenia y Bangladesh: se usa como guía de diseño, no como prueba de que funcionará igual en el Perú.
 
 ---
 
-## 7. Fuentes
+## 8. Fuentes
 
 Todas están registradas en `research/fuentes/codice.md` con su rigor. Aquí, las principales con enlace.
 
@@ -354,3 +465,22 @@ Todas están registradas en `research/fuentes/codice.md` con su rigor. Aquí, la
 **Historia**
 - F-877 · Impactos de 1982-83, 1997-98 y 2017 — [Andina](https://andina.pe/agencia/noticia-como-impacto-nino-peru-los-eventos-19821983-19971998-y-2017-943812.aspx)
 - F-763 a F-766, F-773 · Cifras de 1997-98, 2017 y 2023 — ver ledger
+
+**Banca y seguros (sección 6)**
+- F-893 · Karlan et al. 2014, seguro de lluvia en Ghana — [NBER](https://www.nber.org/papers/w18463.pdf)
+- F-894 · Jack & Suri 2014, dinero móvil y shocks — [RePEc](https://econpapers.repec.org/RePEc:aea:aecrev:v:104:y:2014:i:1:p:183-223)
+- F-895 · Suri & Jack 2016, dinero móvil y pobreza — [ScienceDaily](https://sciencedaily.com/releases/2016/12/161208151920.htm)
+- F-896 · Banerjee, Karlan & Zinman 2015, microcrédito — [MIT](https://economics.mit.edu/sites/default/files/publications/Six%20Randomized%20Evaluations%20of%20Microcredit.pdf)
+- F-886 · Seguro Agrícola Catastrófico — [Infobae](https://www.infobae.com/peru/2026/06/09/productores-agrarios-acceden-a-cobertura-de-s-1000-por-hectarea-con-el-seguro-agricola-catastrofico/)
+- F-887 · D.U. 015-2026, garantías para mypes — [LP Derecho](https://lpderecho.pe/aprueban-medidas-para-facilitar-el-financiamiento-de-las-mype-ante-el-fenomeno-el-nino-du-015-2026/)
+- F-888 · Mibanco ante El Niño — [RPP](https://rpp.pe/economia/economia/mypes-se-preparan-para-la-campana-navidena-financiandose-con-mas-deuda-y-preocupacion-por-el-fenomeno-el-nino-noticia-1713972)
+- F-889 · BBVA Perú, bono social de género — [BBVA](https://www.bbva.com/es/pe/sostenibilidad/bbva-en-peru-es-reconocido-internacionalmente-por-su-bono-social-para-mujeres-emprendedoras/)
+- F-890 · Financiera Confianza, informe de impacto — [BBVA](https://www.bbva.com/es/pe/sostenibilidad/financiera-confianza-presenta-resultados-de-pobreza-multidimensional-con-mas-de-240-mil-hogares-evaluados/)
+- F-891 · Microseguros en el Perú — [Andina](https://andina.pe/ingles/noticia-cuantos-peruanos-y-mypes-tienen-un-microseguro-el-peru-688889.aspx) · [PNUD](https://www.undp.org/es/peru/publicaciones/diagnostico-de-microseguros-en-el-peru)
+- F-892 · Seguros de extorsión y secuestro — [Gestión](https://gestion.pe/tu-dinero/empresarios-comienzan-a-asegurar-a-su-familia-contra-extorsion-y-secuestro-y-trabajadores-noticia/)
+- F-897 · Yape — [Peru Retail](https://www.peru-retail.com/credicorp-destaca-crecimiento-de-yape-tras-llegar-a-mas-de15-millones-de-usuarios-activos-mensuales/)
+- F-898 · Paramétricos de arrecife y del Caribe — [InsuranceNewsNet](https://insurancenewsnet.com/oarticle/nature-conservancy-worlds-first-coral-reef-insurance-policy-triggered-by-hurricane-delta) · [Insurance Insider](https://insuranceinsiderus.com/article/2dhce7djgpa1hgnjl4gzk/industry-wide/ccrif-to-pay-grenada-44mn-due-to-hurricane-beryl)
+- F-899 · Valor del microseguro de desgravamen — [MILK/Milliman](https://microinsurancecentre.milliman.com/en/insight/do-clients-get-value-from-microinsurance-a-systematic-review-of-recent-and-current-research)
+- F-900 · Swiss Re, brecha de protección — [Insurance Business](https://www.insurancebusinessmag.com/uk/news/breaking-news/protection-gaps-widening-around-the-globe--report-450164.aspx)
+- F-901 · Bonos verdes en la banca peruana — [ProActivo](https://proactivo.com.pe/cofide-alista-pronta-emision-de-bonos-verdes-en-el-mercado-local/)
+- F-786, F-790, F-793, F-797, F-799, F-800 · Reglamento paramétrico, MiCRO, transferencia anticipada, reaseguro y demanda de seguro índice — ver ledger y el informe de oportunidades para RIMAC del 7-oct-2026

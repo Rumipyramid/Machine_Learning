@@ -108,8 +108,8 @@
   {
    "id": "panorama-fenomenos-sociales-climaticos-peru-2026",
    "type": "node",
-   "lines": 113,
-   "cites": 32,
+   "lines": 147,
+   "cites": 46,
    "design": false
   },
   {
@@ -8138,6 +8138,150 @@
    "autor": "Revista Andina de Educación (PUCP); Minedu (vía Lampadia); Ayuda en Acción",
    "anio": "2023",
    "huerfana": false
+  },
+  {
+   "id": "F-886",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Seguro Agrícola Catastrófico (SAC) 2026-2027: renovación y cobertura",
+   "autor": "MIDAGRI, vía Infobae, Andina, TV Perú y Revista Lombriz",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-887",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Medidas para facilitar el financiamiento y la reprogramación de créditos de las mypes ante El Niño",
+   "autor": "Poder Ejecutivo — Decreto de Urgencia N.° 015-2026, vía LP Derecho, El Peruano y Diario de Chimbote",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-888",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Mypes se preparan para la campaña navideña con preocupación por El Niño / Mibanco — informe de clasificación",
+   "autor": "Mibanco (vía RPP); Moody's Local / AAI (informe de clasificación jun-2026)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-889",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "BBVA en Perú lanza su primer bono social internacional de género dirigido a mypes lideradas por mujeres",
+   "autor": "BBVA Perú, BID Invest y COFIDE (vía BBVA, Gestión y Andina)",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-890",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Informe de Impacto 2024 (y Informes de Desempeño Social anteriores)",
+   "autor": "Financiera Confianza y Fundación Microfinanzas BBVA",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-891",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Microseguros en el Perú: usuarios, primas y reglamento / Diagnóstico de microseguros en el Perú (PNUD, mar-2026)",
+   "autor": "SBS (vía Andina y Gestión); PNUD Perú",
+   "anio": "2017-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-892",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Empresarios comienzan a asegurar a su familia contra extorsión y secuestro, y a sus trabajadores",
+   "autor": "Gestión",
+   "anio": "2024-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-893",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Agricultural Decisions after Relaxing Credit and Risk Constraints (Quarterly Journal of Economics, 129(2):597-652)",
+   "autor": "Karlan, D.; Osei, R.; Osei-Akoto, I.; Udry, C.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-894",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Risk Sharing and Transactions Costs: Evidence from Kenya's Mobile Money Revolution (American Economic Review, 104(1):183-223)",
+   "autor": "Jack, W. & Suri, T.",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-895",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The long-run poverty and gender impacts of mobile money (Science, 354(6317):1288-1292)",
+   "autor": "Suri, T. & Jack, W.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-896",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Six Randomized Evaluations of Microcredit: Introduction and Further Steps (American Economic Journal: Applied Economics, 7(1):1-21)",
+   "autor": "Banerjee, A.; Karlan, D.; Zinman, J.",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-897",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Yape: usuarios activos, préstamos y seguros",
+   "autor": "Credicorp y Yape (vía Peru Retail y Mercado Negro)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-898",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Primer seguro de arrecife de coral activado / pago a Quintana Roo tras Beryl / CCRIF paga US$44 M a Granada",
+   "autor": "The Nature Conservancy y gobierno de Quintana Roo (vía InsuranceNewsNet y The Insurer); CCRIF (vía Insurance Insider)",
+   "anio": "2020-2024",
+   "huerfana": true
+  },
+  {
+   "id": "F-899",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Doing the Math: Loan protection insurance in Cambodia / Improving credit life microinsurance / Do life microinsurance schemes with low claim",
+   "autor": "MicroInsurance Centre at Milliman (MILK); OIT; Cenfri/FinMark",
+   "anio": "2014-2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-900",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Protection gaps widening around the globe / resiliencia ante catástrofes en mercados emergentes",
+   "autor": "Swiss Re Institute (sigma), vía Insurance Business y Insurance Journal",
+   "anio": "2024-2026",
+   "huerfana": true
+  },
+  {
+   "id": "F-901",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Bonos y créditos verdes en la banca peruana",
+   "autor": "BCP, BanBif y COFIDE (vía Revista Economía, ProActivo y Peru Retail)",
+   "anio": "2022-2026",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -13697,6 +13841,76 @@
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-885",
    "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-886",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-887",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-888",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-889",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-890",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-891",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-892",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-893",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-894",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-895",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-896",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-897",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-899",
+   "k": "cita"
+  },
+  {
+   "s": "panorama-fenomenos-sociales-climaticos-peru-2026",
+   "t": "F-901",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -13978,14 +14192,15 @@
    },
    {
     "fecha": "2026-11-09",
-    "nuevas": 39,
-    "acumuladas": 884,
-    "AB": 12,
+    "nuevas": 55,
+    "acumuladas": 900,
+    "AB": 17,
     "rigor": {
-     "B": 12,
-     "D": 24,
-     "C": 2,
-     "E": 1
+     "B": 13,
+     "D": 33,
+     "C": 4,
+     "E": 1,
+     "A": 4
     }
    }
   ],
@@ -15594,20 +15809,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 884,
     "rigor": {
-     "B": 125,
+     "B": 137,
      "A": 303,
-     "C": 184,
-     "D": 182,
+     "C": 186,
+     "D": 206,
      "?": 15,
-     "E": 36
+     "E": 37
     },
-    "nodes": 20,
-    "outputs": 5,
-    "wikilinks": 124,
-    "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "nodes": 21,
+    "outputs": 6,
+    "wikilinks": 132,
+    "derivaciones": 14,
+    "fuentes_citadas_en_nodes": 776,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15628,7 +15843,7 @@
      "cites": 274
     },
     "fecha": "2026-11-09",
-    "commit": "b36b1e2",
+    "commit": "23a326e",
     "fuente": "git"
    }
   ],
