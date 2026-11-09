@@ -1,14 +1,17 @@
 # Fenómeno El Niño: qué le hace a la vida de las personas (evidencia cuanti y cualitativa)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.1** (iter. 2: el alcance
-> se amplía a la aplicación de negocio para RIMAC, §8)
+> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-11-09 · Versión: **v1.2** (iter. 2: el alcance
+> se amplía a la aplicación de negocio para RIMAC, §8 · iter. 3: coyuntura a noviembre de 2026, mapa de
+> zonas y grupos más afectados, §9)
 > Origen: `/trinidad` (pista empírica/teórica + social/mediática + negocio), a pedido del usuario:
 > *"la documentación y evidencia más sólida, cuanti y cualitativa, que retrate el impacto del fenómeno
 > del Niño en la vida de las personas"*.
 > Fuentes en `research/fuentes/codice.md`: **F-742 a F-783** (iter. 1; todas nuevas, el ledger no tenía
-> nada sobre ENSO) · **F-784 a F-801** (iter. 2, foco de negocio y oportunidades para RIMAC).
-> Output derivado: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`.
+> nada sobre ENSO) · **F-784 a F-801** (iter. 2, foco de negocio y oportunidades para RIMAC) ·
+> **F-847 a F-885** (iter. 3, coyuntura, zonas y grupos; compartidas en parte con el node de panorama 2026).
+> Outputs derivados: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md` ·
+> `research/_outputs/informe-fenomenos-peru-2026-el-nino-2026-11-09.md`.
 > Pregunta permanente: **¿qué le pasa concretamente a una persona (su cuerpo, su casa, su ingreso,
 > sus hijos, su ánimo) cuando llega un Niño fuerte, cuánto dura, y a quién le pega más?**
 
@@ -391,6 +394,84 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
 
 ---
 
+## 9. 🗺️ Iteración 3 (2026-11-09): dónde pega, a quién y cómo va el Niño a noviembre
+
+> Tercera corrida de `/trinidad`, dentro de una pregunta más amplia sobre los fenómenos que afectan al
+> Perú en 2026 (ver [[panorama-fenomenos-sociales-climaticos-peru-2026]]). El informe completo vive en
+> `_outputs/informe-fenomenos-peru-2026-el-nino-2026-11-09.md`. Aquí queda solo lo que cambia el node.
+
+### 9.1 Coyuntura a noviembre de 2026 (actualiza §1)
+
+- **El Niño ya llegó a la costa norte, antes de la temporada de lluvias.** Lluvias de octubre entre
+  70 y 80 veces lo normal en Tumbes y Piura, con el mar a más de +5 °C; primeras inundaciones en Piura
+  desde el 19-20 de octubre (F-850). En Tumbes, al 7 de noviembre: 338 damnificados y 1.284 afectados,
+  casi todos en Zarumilla (F-848).
+- **ENFEN mantiene la alerta** (comunicado del 30-oct): magnitud extraordinaria hasta febrero de 2027
+  y declive gradual hasta junio; lluvias sobre lo normal en la costa norte y central y la sierra
+  occidental entre noviembre y enero (F-847).
+- **Emergencia en más del 70% del país:** 1.380 distritos de 24 departamentos, incluidos Lima y Callao
+  (D.S. 149-2026-PCM, 3-nov) (F-849).
+- **El daño empezó antes del Niño pleno.** La temporada de lluvias de enero a marzo de 2026 dejó 74
+  muertos y 27.555 damnificados (F-851).
+- **Dengue en alza:** 82.554 casos (+153%) y 91 a 101 muertes a fines de octubre; los tres
+  departamentos con más casos son los del Niño (La Libertad, Piura, Lambayeque) (F-856).
+
+### 9.2 ¿Dónde? Mapa de las zonas más afectadas
+
+| Zona | Por qué | Evidencia |
+|---|---|---|
+| **Costa norte: Tumbes, Piura, Lambayeque, La Libertad** | Epicentro en 1983, 1998, 2017, 2023 y 2026. Con ~11% del PBI generan 35% de la pesca y 25% del agro | 2017: Piura 92.896 damnificados, La Libertad 75.028, Lambayeque 50.041 (F-878); costo 2026-27 (F-868); lluvias de octubre (F-850) |
+| **Sierra norte (Cajamarca) y Áncash** | Huaicos y deslizamientos | Cajamarca: 65 distritos en riesgo muy alto o alto (F-852 vía CENEPRED) |
+| **Periferia de Lima** | Quebradas y riberas densamente pobladas | 609.586 personas en riesgo muy alto de inundación; SJL concentra ~19%; también Puente Piedra, Surco, Comas y SJM (F-854) |
+| **Sur andino (Apurímac, Arequipa, Ayacucho, Cusco, Huancavelica, Moquegua, Puno, Tacna)** | El Niño trae **sequía** al altiplano | 4,3 M expuestos; 622.301 en riesgo muy alto en 76 distritos (F-853) |
+| **Todo el país, por huaicos** | Movimientos en masa en el verano de 2027 | 12,5 M en riesgo alto o muy alto; 702 distritos en riesgo muy alto (F-852) |
+
+### 9.3 Economía: lo nuevo de 2026
+
+- **Pesca:** no habrá segunda temporada de anchoveta (79% de juveniles); la industria podría parar
+  hasta 2027 y la producción pesquera ya cayó 27% en julio (F-857).
+- **Agro y empleo:** ~100 mil empleos formales del agro en riesgo; mango −40% a −60% (Piura aporta
+  ~72% del mango) y limón Tahití hasta −40% (F-869).
+- **Precios:** inflación de alimentos de ~5,8% y transporte de ~14,5% en 12 meses; el INEI cita la
+  menor oferta por El Niño (F-867).
+- **Macro:** S/16.000 M de pérdida (Credicorp, F-868); ~2 pp menos de crecimiento entre 2026 y 2027
+  (BCRP, F-866).
+- **Crédito:** el crédito a microempresas cayó 12,9% en un año y su morosidad sube a ~5% (F-872).
+
+### 9.4 ¿Quiénes? Los grupos más afectados (con su evidencia)
+
+| Grupo | Por qué pierde más | Evidencia |
+|---|---|---|
+| **Niños en el útero y en sus primeros 2 años** | El daño en talla y cognición dura una década | F-744, F-745, F-746; parten de anemia 34,9% y desnutrición rural 21,7% (F-859) |
+| **Niños menores de 5** | Diarrea y dengue en el pico | F-747 (diarrea ×2), F-856 |
+| **Hogares pobres y vulnerables** (58,5% de la población) | Sin ahorro; el desastre multiplica por 21 la probabilidad de pobreza crónica | F-858, F-754, F-752 |
+| **Trabajadores informales** (70,7%; rural 94,8%) | Sin seguro de desempleo ni licencia | F-860 |
+| **Agricultores, jornaleros y pescadores** | Su ingreso es el que El Niño apaga | F-857, F-869, F-753 |
+| **Madres de hogares inundados** | 38% con estrés postraumático y 90% con hambre severa a los 3 meses | F-751 |
+| **Mujeres jóvenes** | Más violencia de género con lluvias intensas | F-875 (Perú, documento de trabajo), F-876 (correlacional) |
+| **Habitantes de la periferia urbana** | Viven en cauces y quebradas; en 2017 la pobreza subió más en la ciudad | F-854, F-752 |
+| **Escolares** | Cierre adelantado del año escolar; en 2017, ~2.000 locales inhabilitados | F-873, F-885 |
+| **Pacientes del sistema público** | 2.957 establecimientos de salud en riesgo de inundación | F-871 |
+| **Microempresarios** | Crédito que se contrae y morosidad que sube | F-872 |
+
+### 9.5 Social y negocio (lo nuevo)
+
+- 📱 La alerta se volvió política: la presidenta habla de "meganiño" y pide evacuaciones (F-882); hay
+  estafas y noticias falsas que usan la alerta (F-883). La pista social sigue débil: sin lectura
+  directa de redes.
+- 💼 Las cifras de negocio de 2026 (pesca, agro, crédito, inflación) **confirman por el lado del
+  ingreso** lo que la evidencia académica predice por el lado de la nutrición: el canal es la caída de
+  ingreso del hogar.
+
+### 9.6 Historia comparada (completa §3.1)
+
+- **1982-83:** pérdidas de US$3.283 M (11,6% del PBI de 1983; el BCRP mide 5,3% de pérdida de
+  actividad); 1.267.720 damnificados; muertos entre 512 (Congreso) y ~9.000 (otras fuentes, incluidas
+  epidemias); 2,6 M de cabezas de ganado perdidas en el sur por sequía (F-877). ⚠️ Cifras dispares: no
+  citar una sola sin la advertencia.
+
+---
+
 ## Conexiones
 
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros (Mundo vs. Perú)]] —
@@ -401,3 +482,6 @@ por pronóstico público y endurecimiento del reaseguro en 2027.
   norte. Es un caso de estrés para el diseño del triage.
 - [[modelo-personas-sinteticas|Modelo de personas sintéticas (`lapuerta`)]] — se propone una variable
   de exposición a inundación/Niño análoga a la exposición sísmica (§6.1); no aplicada.
+- [[panorama-fenomenos-sociales-climaticos-peru-2026|Panorama 2026 de fenómenos sociales y climáticos]] —
+  ubica a El Niño junto a la inseguridad, la pobreza, la informalidad y el costo de vida; ese node
+  explica por qué el mismo Niño pega más en 2026 sobre un terreno con 58,5% de pobres o vulnerables.

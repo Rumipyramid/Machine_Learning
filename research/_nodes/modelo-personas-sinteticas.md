@@ -62,6 +62,9 @@ tienen simulación de consumidores calibrada con microdato nacional, no solo sup
 - Propuesta pendiente desde → [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la
   vida de las personas]] §6.1: variable de exposición a inundación/Niño análoga a `exposicion_sismica`
   (no aplicada; decide `cerrajero`/usuario).
+- Insumo candidato desde → [[panorama-fenomenos-sociales-climaticos-peru-2026|Panorama 2026 de fenómenos
+  sociales y climáticos]]: informalidad (70,7%), vulnerabilidad (32,8%) y exposición a extorsión como
+  posibles variables de hogar (no aplicado).
 - Calibrado con → [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración
   frente a seguros (Mundo vs. Perú)]] (SBS, APESEG, marginales)
 - Posicionado por → [[behavioral-design-estado-disciplina|Behavioral design: estado de la
