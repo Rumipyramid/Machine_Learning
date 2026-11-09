@@ -21,14 +21,17 @@ RR. HH. o con otra empresa) con hechos ordenados, no con indignación.
   avance del caso:
   1. Busca la carpeta `Privado — Expedientes (Notario)` en el Drive personal (`title contains
      'Expedientes (Notario)'`). Si no existe, créala con `inheritedPermissionsDisabled: true`.
-  2. Sube o reemplaza ahí tres archivos por caso: `Análisis del caso — <tema> (<fecha>)` y
-     `Expediente — <tema>` como documentos de Google (markdown), y `<caso>.respaldo.json` sin
-     conversión (sale de `expediente.py exportar <caso>`).
+  2. Mantén ahí, por caso: `Análisis del caso — <tema> (<fecha>)` y `Expediente — <tema>` como
+     documentos de Google (las novedades se agregan al final con fecha), y el respaldo de datos sin
+     conversión: un completo `<caso>.respaldo.json` (`expediente.py exportar <caso>`) más
+     incrementales livianos `<caso>.respaldo.desde-E-0NN.json` (`exportar <caso> --desde E-0NN`).
+     Rehaz el completo cuando los incrementales sean muchos.
   3. Verifica con los permisos del archivo que el único acceso sea el del dueño. Si aparece otra
      persona o un enlace público, avisa al usuario en el acto.
   Nunca uses artefactos, Claude Docs, la base de Mu ni el repo para esto: solo el Drive personal.
-- **Restaurar en una sesión nueva:** descarga `<caso>.respaldo.json` de esa carpeta al scratchpad y
-  corre `expediente.py importar <ruta>`; luego `render`.
+- **Restaurar en una sesión nueva:** descarga los respaldos del caso de esa carpeta al scratchpad y
+  corre `expediente.py importar <completo> <incremental1> <incremental2> …` (en orden; lo posterior
+  reemplaza a lo anterior); luego `render`.
 - No se copian documentos confidenciales de la empresa a cuentas personales. Del archivo de trabajo
   basta registrar el **metadato** (nombre, fecha de creación, autor de cada versión, quién lo compartió
   con quién), no su contenido. Recomienda capturas del historial de versiones en el equipo de trabajo.

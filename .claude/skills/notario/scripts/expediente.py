@@ -172,23 +172,40 @@ def cmd_actor(a):
 
 
 def cmd_exportar(a):
-    """Imprime un respaldo JSON único (actores + registros) para guardarlo en el Drive privado."""
-    print(json.dumps({"caso": a.caso, "actores": load_actors(a.caso), "registros": load(a.caso)},
+    """Imprime un respaldo JSON (actores + registros) para guardarlo en el Drive privado.
+
+    Con --desde E-0NN exporta solo los registros desde ese id (respaldo incremental, más liviano);
+    `importar` combina el respaldo completo con los incrementales en orden.
+    """
+    regs = load(a.caso)
+    if a.desde:
+        regs = [r for r in regs if r["id"] >= a.desde]
+    print(json.dumps({"caso": a.caso, "actores": load_actors(a.caso), "registros": regs,
+                      "incremental_desde": a.desde or None},
                      ensure_ascii=False, separators=(",", ":")))
 
 
 def cmd_importar(a):
-    """Restaura un caso desde su respaldo JSON (descargado del Drive privado) en una sesión nueva."""
-    data = json.loads(Path(a.respaldo).read_text(encoding="utf-8"))
-    caso = data["caso"]
+    """Restaura un caso desde sus respaldos (completo + incrementales, en orden) en una sesión nueva.
+
+    Los registros se combinan por id y los actores por nombre: lo posterior reemplaza a lo anterior.
+    """
+    caso, regs, acts = None, {}, {}
+    for ruta in a.respaldos:
+        data = json.loads(Path(ruta).read_text(encoding="utf-8"))
+        if caso and data["caso"] != caso:
+            sys.exit(f"Los respaldos son de casos distintos: {caso} y {data['caso']}.")
+        caso = data["caso"]
+        regs.update({r["id"]: r for r in data["registros"]})
+        acts.update({x["nombre"]: x for x in data.get("actores", [])})
     p, ap_ = case_path(caso), actors_path(caso)
     ensure_private(p)
     if p.exists() and p.stat().st_size and not a.forzar:
         sys.exit(f"{p.relative_to(ROOT)} ya existe. Usa --forzar para reemplazarlo.")
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in data["registros"]), encoding="utf-8")
-    ap_.write_text(json.dumps(data.get("actores", []), ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Caso {caso} restaurado: {len(data['registros'])} registros, {len(data.get('actores', []))} actores.")
+    p.write_text("".join(json.dumps(regs[k], ensure_ascii=False) + "\n" for k in sorted(regs)), encoding="utf-8")
+    ap_.write_text(json.dumps(list(acts.values()), ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Caso {caso} restaurado: {len(regs)} registros, {len(acts)} actores.")
 
 
 def cmd_list(a):
@@ -329,8 +346,8 @@ def main():
     s = sp.add_parser("actor"); s.add_argument("caso"); s.add_argument("--nombre", required=True)
     s.add_argument("--rol"); s.add_argument("--relacion"); s.add_argument("--postura"); s.add_argument("--decide")
     s.set_defaults(f=cmd_actor)
-    s = sp.add_parser("exportar"); s.add_argument("caso"); s.set_defaults(f=cmd_exportar)
-    s = sp.add_parser("importar"); s.add_argument("respaldo"); s.add_argument("--forzar", action="store_true")
+    s = sp.add_parser("exportar"); s.add_argument("caso"); s.add_argument("--desde"); s.set_defaults(f=cmd_exportar)
+    s = sp.add_parser("importar"); s.add_argument("respaldos", nargs="+"); s.add_argument("--forzar", action="store_true")
     s.set_defaults(f=cmd_importar)
     s = sp.add_parser("list"); s.add_argument("caso"); s.add_argument("--cat"); s.set_defaults(f=cmd_list)
     s = sp.add_parser("render"); s.add_argument("caso"); s.set_defaults(f=cmd_render)
