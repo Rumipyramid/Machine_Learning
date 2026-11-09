@@ -181,6 +181,7 @@ Por eso este glosario funciona mejor como parte de un sistema:
 
 ## Conexiones
 
+- [[emision-salud-colectiva-modelo-operativo|Emisión eficiente en salud colectiva]] — usa los términos EPS, EsSalud, capa simple y crédito EPS de este glosario para el diseño operativo de la emisión colectiva.
 - [[seguros-comportamiento-mundo-peru|Comportamiento y mercado global de seguros]] — la falta de
   información/comprensión es la causa #1 de desconfianza en Perú (§3.3 de ese node); este
   glosario es una respuesta directa a esa brecha.

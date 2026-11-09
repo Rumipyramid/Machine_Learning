@@ -3,8 +3,8 @@
   {
    "id": "behavioral-design-estado-disciplina",
    "type": "node",
-   "lines": 320,
-   "cites": 9,
+   "lines": 321,
+   "cites": 10,
    "design": false
   },
   {
@@ -19,6 +19,13 @@
    "type": "node",
    "lines": 245,
    "cites": 115,
+   "design": false
+  },
+  {
+   "id": "emision-salud-colectiva-modelo-operativo",
+   "type": "node",
+   "lines": 479,
+   "cites": 59,
    "design": false
   },
   {
@@ -38,21 +45,21 @@
   {
    "id": "fenomenos-psicologicos",
    "type": "node",
-   "lines": 547,
+   "lines": 548,
    "cites": 106,
    "design": false
   },
   {
    "id": "futuro-asesores-seguros-venta-digital",
    "type": "node",
-   "lines": 389,
+   "lines": 390,
    "cites": 23,
    "design": false
   },
   {
    "id": "glosario-seguro-salud-peru",
    "type": "node",
-   "lines": 196,
+   "lines": 197,
    "cites": 6,
    "design": false
   },
@@ -61,6 +68,13 @@
    "type": "node",
    "lines": 216,
    "cites": 8,
+   "design": false
+  },
+  {
+   "id": "lealtad-gamificacion-recompensas-retail",
+   "type": "node",
+   "lines": 222,
+   "cites": 44,
    "design": false
   },
   {
@@ -80,7 +94,7 @@
   {
    "id": "mecanismos-seguros-salud",
    "type": "node",
-   "lines": 354,
+   "lines": 356,
    "cites": 53,
    "design": false
   },
@@ -101,21 +115,21 @@
   {
    "id": "proyecto-back-to-basics-ffvv-vida",
    "type": "node",
-   "lines": 932,
+   "lines": 976,
    "cites": 33,
    "design": false
   },
   {
    "id": "seguros-comportamiento-mundo-peru",
    "type": "node",
-   "lines": 340,
+   "lines": 341,
    "cites": 21,
    "design": false
   },
   {
    "id": "tendencias-diseno-innovacion",
    "type": "node",
-   "lines": 2001,
+   "lines": 2003,
    "cites": 274,
    "design": true
   },
@@ -7362,6 +7376,942 @@
    "autor": "Pacífico Seguros",
    "anio": "s.f. (vigente 2026)",
    "huerfana": false
+  },
+  {
+   "id": "F-802",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Endowed Progress Effect: How Artificial Advancement Increases Effort (revista JCR según fuente secundaria; vol. no verificado)",
+   "autor": "Nunes, J. C. & Drèze, X.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-803",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Goal-Gradient Hypothesis Resurrected (revista y datos no confirmados en la búsqueda)",
+   "autor": "Kivetz, R.; Urminsky, O.; Zheng, Y.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-804",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "40 years of loyalty programs: how effective are they? Generalizations from a meta-analysis (J. Acad. Mark. Sci. 50(1):147-173; DOI 10.1007/s",
+   "autor": "Belli, A. et al.",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-805",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Do loyalty programs really enhance behavioral loyalty? An empirical analysis accounting for self-selecting members (Int. J. Res. Mark. 24(1)",
+   "autor": "Leenheer, J.; van Heerde, H.; Bijmolt, T.; Smidts, A.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-806",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Long-Term Impact of Loyalty Programs on Consumer Purchase Behavior and Loyalty (J. Mark. 71(4):19-35)",
+   "autor": "Liu, Y.",
+   "anio": "2007",
+   "huerfana": false
+  },
+  {
+   "id": "F-807",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Fun Shopping: A Randomized Field Experiment on Gamification (Inf. Syst. Res. 34(2):766-785; DOI 10.1287/isre.2022.1147)",
+   "autor": "Ho, Y.-J.; Liu, S.; Wang, L.",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-808",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "How push messaging impacts consumer spending and reward redemption in store-loyalty programs (Int. J. Res. Mark.; revista inferida del ident",
+   "autor": "Bies, Bronnenberg & Gijsbrechts (iniciales no verificadas)",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-809",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio sobre canje de recompensas en programa sin caducidad (Int. J. Res. Mark.; título exacto no verificado)",
+   "autor": "Dorotic, M.; Verhoef, P. C. et al. (lista completa no verificada)",
+   "anio": "2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-810",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio sobre caducidad de puntos (Marketing Letters 28(4); título exacto no verificado)",
+   "autor": "Breugelmans, E. & Liu-Thompkins, Y.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-811",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Efecto de ventas de un programa de frecuencia de retail (título y revista no verificados; leído solo vía revisión secundaria)",
+   "autor": "Taylor, G. A. & Neslin, S. A.",
+   "anio": "2005",
+   "huerfana": false
+  },
+  {
+   "id": "F-812",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Grocery retail loyalty program effects: self-selection or purchase behavior change? (J. Acad. Mark. Sci.)",
+   "autor": "Autores no confirmados en la búsqueda (atribución de memoria, sin verificar: Meyer-Waarden & Benavent)",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-813",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Does Customer Demotion Jeopardize Loyalty? (J. Mark.)",
+   "autor": "Wagner, T.; Hennig-Thurau, T.; Rudolph, T.",
+   "anio": "2009",
+   "huerfana": false
+  },
+  {
+   "id": "F-814",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Estudio de retiro de estatus en banco minorista de Corea del Sur (Asia Marketing Journal 22(1))",
+   "autor": "Chang (nombre completo no verificado)",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-815",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Designing successful temporary loyalty programs: An exploratory study on retailer and country differences (Int. J. Res. Mark.; año inferido ",
+   "autor": "Autores no verificados",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-816",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Impacto de programas de suscripción en la conducta del cliente (J. Mark. Res.; año 2022/2023 según la fuente)",
+   "autor": "Iyengar, R.; Park, Y.-H.; Yu, Q. (título exacto no verificado)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-817",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Suscripción y conducta de compra en un gran retailer en línea (PACIS 2023; título exacto no verificado)",
+   "autor": "Fang; Wang; Wang; Leung",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-818",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Gamified in-store mobile marketing: The mixed effect of gamified point-of-purchase advertising (J. Retail. Consum. Serv. 50:298-304)",
+   "autor": "Högberg, J., Shams, P. & Wästlund, E.",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-819",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Gamified loyalty programs in online grocery retail: A mixed-methods investigation of consumer engagement and behaviour (J. Retail. Consum. S",
+   "autor": "Autores no verificados",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-820",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "How does gamification affect customer behavior and revenue?",
+   "autor": "Autores y revista no verificados",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-821",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Gamificación y compra por impulso en Taobao/Tmall (PACIS 2019)",
+   "autor": "Autores no verificados",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-822",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Mecánicas de gamificación en compra grupal en línea (AMCIS 2019; Pinduoduo)",
+   "autor": "Autores no verificados",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-823",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "'I Am So Done' — Starbucks New Reward Program Has Customers Fuming",
+   "autor": "The Takeout",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-824",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Starbucks Rewards program changes 3/10/2026 (hilo y nota)",
+   "autor": "Slickdeals (foro de usuarios)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-825",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks Rewards changes devaluation elite status",
+   "autor": "One Mile at a Time",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-826",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks defends changes to rewards program; The new Starbucks Rewards program confused a lot of people",
+   "autor": "Fast Casual / Motley Fool",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-827",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Shoppers Drug Mart controversy (Optimum)",
+   "autor": "Castanet Kamloops (Canadian Press)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-828",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Have loyalty programs fallen miles behind customer needs?",
+   "autor": "Canadian Grocer",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-829",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "CMA probe into supermarket loyalty comes to nothing",
+   "autor": "Decision Marketing (UK)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-830",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Supermarkets hike prices to make loyalty card customers feel like they are getting a discount, new study claims",
+   "autor": "City A.M. (sobre estudio de Which?)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-831",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Formulario 10-K FY2016",
+   "autor": "Starbucks Corp.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-832",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Starbucks brings back chance to win free coffee (y nota 2017 'confused a lot of people')",
+   "autor": "Motley Fool (citando llamadas de resultados de Starbucks)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-833",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Starbucks Loyalty Program: Complete Breakdown of the 2026 Rewards Overhaul",
+   "autor": "Joy.so (blog de proveedor de lealtad)",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-834",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Amazon Prime vs Walmart+ (informes de CIRP en Substack)",
+   "autor": "CIRP (Consumer Intelligence Research Partners)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-835",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Notas sobre Mifarma/Inkafarma (Monedero del Ahorro >12 M de suscriptores; ingresos 3T2020 +9,6%)",
+   "autor": "Peru Retail",
+   "anio": "2020",
+   "huerfana": false
+  },
+  {
+   "id": "F-836",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Cencosud cambia su programa de puntos: duplica la acumulación y reduce el mínimo para canjear",
+   "autor": "Peru Retail",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-837",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Grupo Falabella dice adiós a CMR Puntos y presenta Fpuntos",
+   "autor": "Peru Retail",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-838",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Pasivos del retail por canje de puntos superan los US$ 60 millones",
+   "autor": "Diario Financiero",
+   "anio": "2011",
+   "huerfana": true
+  },
+  {
+   "id": "F-839",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Programas de fidelización prefieren descuentos en productos",
+   "autor": "Nielsen (citado por Diario Financiero / CERET U. de Chile)",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-840",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "More than 50% of Middle East and Africa consumers in loyalty programmes want freebies",
+   "autor": "Euromonitor International",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-841",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Loyalty programmes draw in shoppers",
+   "autor": "Business Report / Nielsen",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-842",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "The Sisyphean tasks of Pinduoduo's gamification (partes 1 y 2)",
+   "autor": "ChinaTalk",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-843",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Loyalty plans emerge as new battleground for drug chains (y notas afines)",
+   "autor": "Chain Drug Review",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-844",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "QSR gamification mechanics",
+   "autor": "Open Loyalty (proveedor de software)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-845",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Estudio de retail alimentario en Brasil",
+   "autor": "CVA Solutions (citado por ESM Magazine)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-846",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Ahora se podrán acumular CMR Puntos en Tottus con cualquier medio de pago",
+   "autor": "Chocale.cl",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-847",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Newest enhancements to Data Exchange Standards (LDEx) allow enrollment in all employee benefits plans",
+   "autor": "LIMRA",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-848",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "LDEx battle card",
+   "autor": "LIMRA",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-849",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Obamacare 834 error rate falls from 25 percent to 10 percent",
+   "autor": "CMS vía The New Republic / Benton",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-850",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Harris Poll reveals consumer impact of bad data in employee benefits",
+   "autor": "The Harris Poll (encargo de Noyo)",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-851",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Why keeping carriers in sync with enrollment data is harder than it looks",
+   "autor": "Impakter",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-852",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Workplace Benefits Broker Survey",
+   "autor": "Wellfleet & EIS Group",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-853",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "It's Not All About Comp Anymore",
+   "autor": "LIMRA vía InsuranceNewsNet",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-854",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Workplace benefits technology study",
+   "autor": "LIMRA & EY",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-855",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "The future of group life insurance in the United States",
+   "autor": "McKinsey & Company",
+   "anio": "~2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-856",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "AIG Canada A&H deploys EIS core insurance software for its group benefits business",
+   "autor": "EIS Group",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-857",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "How leading insurers launch new products faster",
+   "autor": "Duck Creek",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-858",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Group insurers' need for speed to market",
+   "autor": "Vitech (cita encuesta Novarica)",
+   "anio": "2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-859",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "CareFirst BlueCross BlueShield customer case study",
+   "autor": "Pegasystems",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-860",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Ushur unveils AI-powered automation for group benefits quoting and RFP intake",
+   "autor": "Ushur",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-861",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Intelligent underwriting: strategic business value for group, voluntary and worksite insurers",
+   "autor": "Majesco",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-862",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Small Group Medical Underwriting Guidelines",
+   "autor": "Milliman",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-863",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "A practical approach to assigning credibility for group medical insurance pricing",
+   "autor": "Society of Actuaries",
+   "anio": "2015",
+   "huerfana": false
+  },
+  {
+   "id": "F-864",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Finding success across the insurance value chain / commercial insurance transformation",
+   "autor": "Capco (cita Novarica)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-865",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "SulAmérica traz novidade para planos empresariais de saúde e odonto (y nota sobre plataforma Acelera)",
+   "autor": "SulAmérica vía Revista Apólice",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-866",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Bradesco simplifica contratação de seguro saúde com tecnologia",
+   "autor": "Bradesco Saúde vía Revista Apólice",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-867",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "RN 309/2012 — agrupamento de contratos coletivos (pool de risco); nota técnica 2013",
+   "autor": "ANS (Agência Nacional de Saúde Suplementar)",
+   "anio": "2012-2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-868",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Manual do corretor (abril y diciembre 2025)",
+   "autor": "Alice (operadora de salud)",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-869",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Sami capta R$90M e aposta em novo canal de vendas via corretores",
+   "autor": "Sami vía Revista Apólice / Brazil Journal",
+   "anio": "2020-2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-870",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Press room y cartas a accionistas 2025",
+   "autor": "Alan",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-871",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Betterfly cerró sus operaciones en Perú y otros cuatro países",
+   "autor": "Forbes Perú / Forbes Chile",
+   "anio": "2023, 2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-872",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "SUSEP publica novos prazos e regras para o Open Insurance; retrospectiva 2025",
+   "autor": "Demarest Advogados / Legismap",
+   "anio": "2024-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-873",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Rippling launches direct carrier integrations with Guardian, MetLife and Unum; Sun Life joins (oct-2026)",
+   "autor": "Rippling; Guardian; Sun Life",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-874",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Alianzas de conectividad de datos de beneficios",
+   "autor": "Noyo; Ideon; Guardian; Sun Life",
+   "anio": "2020-2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-875",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Integraciones 2025; transición de Ease a Employee Navigator",
+   "autor": "Employee Navigator / Warner Pacific",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-876",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Avisos de empleo: Group Operations Fulfillment, Benefit Services",
+   "autor": "Gusto",
+   "anio": "2025-2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-877",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Estudio de KYC y onboarding de clientes corporativos",
+   "autor": "Fenergo",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-878",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Unlocking growth through pricing and quoting automation",
+   "autor": "Simon-Kucher",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-879",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Portales de aseguradora vs. sistemas de agencia; integraciones API",
+   "autor": "Novarica; Celent (vía Insurance Journal e Insurance-Canada)",
+   "anio": "2009-2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-880",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "The Economics of Insurance Intermediaries (J. Risk Insur. 73(3):359-396; DOI 10.1111/j.1539-6975.2006.00180.x)",
+   "autor": "Cummins, J. D. & Doherty, N. A.",
+   "anio": "2006",
+   "huerfana": false
+  },
+  {
+   "id": "F-881",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Policy administration systems for group benefits not living up to expectations",
+   "autor": "FINEOS",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-882",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "MetLife: group benefits and the AI transformation",
+   "autor": "PitchGrade (terceros)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-883",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Res. SBS N° 4143-2019, Reglamento de Gestión de Conducta de Mercado del Sistema de Seguros (y modificatorias 00277-2021, 01840-2022)",
+   "autor": "SBS",
+   "anio": "2019",
+   "huerfana": false
+  },
+  {
+   "id": "F-884",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Res. SBS N° 3201-2013, Reglamento para el uso de pólizas electrónicas",
+   "autor": "SBS",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-885",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Res. SBS N° 7044-2013, Reglamento de Registro de Modelos de Pólizas y Requerimientos Mínimos de Notas Técnicas (citada en Res. 04208-2024 y ",
+   "autor": "SBS",
+   "anio": "2013",
+   "huerfana": false
+  },
+  {
+   "id": "F-886",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Condiciones mínimas con aviso de renovación; comparativa de cláusulas Perú-Colombia",
+   "autor": "SBS (condiciones mínimas aprobadas) / Fundación MAPFRE",
+   "anio": "varios",
+   "huerfana": false
+  },
+  {
+   "id": "F-887",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "EPS vs EsSalud; planes EPS",
+   "autor": "Trámites Perú (sobre Ley 26790)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-888",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Orientación T-Registro y PLAME; uso del crédito EPS",
+   "autor": "SUNAT; Noticiero Contable (foro)",
+   "anio": "2023-2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-889",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Política regulatoria de SUSALUD (y lineamientos de IAFAS)",
+   "autor": "SUSALUD",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-890",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Res. de Superintendencia 124-2021-SUSALUD/S (registro de corredores de aseguramiento universal en salud); proyecto de lineamientos de cláusu",
+   "autor": "SUSALUD",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-891",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Nuevo Reglamento de la Ley de Protección de Datos Personales (DS 016-2024-JUS)",
+   "autor": "Garrigues; CMS; El Peruano",
+   "anio": "2024-2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-892",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Opinión Consultiva 013-2021-JUS/DGTAIPD — datos de salud de trabajadores",
+   "autor": "ANPD (MINJUSDH) vía LP Derecho",
+   "anio": "2021",
+   "huerfana": false
+  },
+  {
+   "id": "F-893",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Ley 27269 de Firmas y Certificados Digitales; DS 052-2008-PCM",
+   "autor": "Congreso de la República; PCM",
+   "anio": "2000, 2008",
+   "huerfana": false
+  },
+  {
+   "id": "F-894",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Policy brief EsSalud",
+   "autor": "ComexPerú (datos SUSALUD)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-895",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Folleto Seguro Pyme Salud Base (feb-2026)",
+   "autor": "Pacífico Seguros",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-896",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Depósito de Pólizas",
+   "autor": "CMF Chile",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-897",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Zurich lanza seguro complementario de vida y salud para pymes desde 5 empleados",
+   "autor": "Chócale.cl",
+   "anio": "2025",
+   "huerfana": false
+  },
+  {
+   "id": "F-898",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Ley de Instituciones de Seguros y de Fianzas, arts. 200-201 (extracto)",
+   "autor": "Congreso de la Unión (México)",
+   "anio": "—",
+   "huerfana": false
+  },
+  {
+   "id": "F-899",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Benefits data moves to center of broker renewal talks",
+   "autor": "Gallagher vía Insurance Business",
+   "anio": "2026",
+   "huerfana": false
+  },
+  {
+   "id": "F-900",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "List bill vs self-admin; reportes de discrepancias; conciliación",
+   "autor": "Standard Insurance; Kaiser Permanente; Net@Work; GIC Massachusetts",
+   "anio": "varios",
+   "huerfana": false
+  },
+  {
+   "id": "F-901",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Personalización y estandarización de planes de grupo",
+   "autor": "SOA (The Independent Consultant); Benefits Canada",
+   "anio": "2010; s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-902",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Coaseguro: art. 89 Ley del Contrato de Seguro; Reglamento de reaseguros y coaseguros; jurisprudencia colombiana",
+   "autor": "Congreso (Ley 29946); SBS; Pérez-Llorca / Asuntos Legales (Colombia)",
+   "anio": "2012; 2024",
+   "huerfana": false
+  },
+  {
+   "id": "F-903",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "AVLA lanza Iglu, la nueva plataforma digital para corredores de seguros",
+   "autor": "Infomercado",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-904",
+   "type": "fuente",
+   "rigor": "B",
+   "titulo": "Res. SBS 02107-2022 — aprobación Vida Grupo Betterfly",
+   "autor": "SBS vía Interseguro",
+   "anio": "2022",
+   "huerfana": false
+  },
+  {
+   "id": "F-905",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Product standardization in small group markets (MD, NJ, MA, NY)",
+   "autor": "Rockefeller Institute of Government",
+   "anio": "s.f.",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -7385,6 +8335,12 @@
   },
   {
    "s": "behavioral-design-estado-disciplina",
+   "t": "lealtad-gamificacion-recompensas-retail",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -7499,6 +8455,36 @@
   },
   {
    "s": "convergencia-psicologia-economia-ia",
+   "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "futuro-asesores-seguros-venta-digital",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "glosario-seguro-salud-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "seguros-comportamiento-mundo-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
    "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
@@ -7565,6 +8551,12 @@
   },
   {
    "s": "fenomenos-psicologicos",
+   "t": "lealtad-gamificacion-recompensas-retail",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "fenomenos-psicologicos",
    "t": "material-visual-venta-consultiva",
    "k": "wikilink",
    "recip": true
@@ -7584,6 +8576,12 @@
   {
    "s": "fenomenos-psicologicos",
    "t": "tendencias-diseno-innovacion",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "futuro-asesores-seguros-venta-digital",
+   "t": "emision-salud-colectiva-modelo-operativo",
    "k": "wikilink",
    "recip": true
   },
@@ -7620,6 +8618,12 @@
   {
    "s": "futuro-asesores-seguros-venta-digital",
    "t": "venta-vida-digital-hibrida-latam",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "glosario-seguro-salud-peru",
+   "t": "emision-salud-colectiva-modelo-operativo",
    "k": "wikilink",
    "recip": true
   },
@@ -7662,6 +8666,30 @@
   {
    "s": "glosario-seguro-vida-peru",
    "t": "proyecto-back-to-basics-ffvv-vida",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "behavioral-design-estado-disciplina",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "mecanismos-seguros-salud",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "tendencias-diseno-innovacion",
    "k": "wikilink",
    "recip": true
   },
@@ -7739,6 +8767,12 @@
   },
   {
    "s": "mecanismos-seguros-salud",
+   "t": "emision-salud-colectiva-modelo-operativo",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
    "t": "futuro-asesores-seguros-venta-digital",
    "k": "wikilink",
    "recip": true
@@ -7746,6 +8780,12 @@
   {
    "s": "mecanismos-seguros-salud",
    "t": "glosario-seguro-salud-peru",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "mecanismos-seguros-salud",
+   "t": "lealtad-gamificacion-recompensas-retail",
    "k": "wikilink",
    "recip": true
   },
@@ -7895,6 +8935,12 @@
   },
   {
    "s": "seguros-comportamiento-mundo-peru",
+   "t": "emision-salud-colectiva-modelo-operativo",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "seguros-comportamiento-mundo-peru",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
    "k": "wikilink",
    "recip": true
@@ -7985,6 +9031,12 @@
   },
   {
    "s": "tendencias-diseno-innovacion",
+   "t": "emision-salud-colectiva-modelo-operativo",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
    "t": "evaluacion-calidad-agentes-conversacionales-ia",
    "k": "wikilink",
    "recip": true
@@ -7992,6 +9044,12 @@
   {
    "s": "tendencias-diseno-innovacion",
    "t": "fenomenos-psicologicos",
+   "k": "wikilink",
+   "recip": true
+  },
+  {
+   "s": "tendencias-diseno-innovacion",
+   "t": "lealtad-gamificacion-recompensas-retail",
    "k": "wikilink",
    "recip": true
   },
@@ -12270,10 +13328,530 @@
    "s": "fenomeno-el-nino-impacto-personas",
    "t": "F-801",
    "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-802",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-803",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-804",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-805",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-806",
+   "k": "cita"
+  },
+  {
+   "s": "behavioral-design-estado-disciplina",
+   "t": "F-807",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-807",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-808",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-809",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-810",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-811",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-812",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-813",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-814",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-815",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-816",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-817",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-818",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-819",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-820",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-821",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-822",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-823",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-824",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-825",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-826",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-827",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-828",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-829",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-830",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-831",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-832",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-833",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-834",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-835",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-836",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-837",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-839",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-840",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-841",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-842",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-843",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-844",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-845",
+   "k": "cita"
+  },
+  {
+   "s": "lealtad-gamificacion-recompensas-retail",
+   "t": "F-846",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-847",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-848",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-849",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-850",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-851",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-852",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-853",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-854",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-855",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-856",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-857",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-858",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-859",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-860",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-861",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-862",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-863",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-864",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-865",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-866",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-867",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-868",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-869",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-870",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-871",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-872",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-873",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-874",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-875",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-877",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-878",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-879",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-880",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-881",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-882",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-883",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-884",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-885",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-886",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-887",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-888",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-889",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-890",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-891",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-892",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-893",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-894",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-895",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-896",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-897",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-898",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-899",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-900",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-901",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-902",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-903",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-904",
+   "k": "cita"
+  },
+  {
+   "s": "emision-salud-colectiva-modelo-operativo",
+   "t": "F-905",
+   "k": "cita"
   }
  ],
  "meta": {
-  "generado": "2026-10-07",
+  "generado": "2026-11-09",
   "timeline": [
    {
     "fecha": "2026-06-22",
@@ -12535,1530 +14113,35 @@
      "C": 3,
      "D": 23
     }
+   },
+   {
+    "fecha": "2026-10-15",
+    "nuevas": 45,
+    "acumuladas": 845,
+    "AB": 17,
+    "rigor": {
+     "A": 16,
+     "C": 10,
+     "D": 15,
+     "E": 3,
+     "B": 1
+    }
+   },
+   {
+    "fecha": "2026-11-09",
+    "nuevas": 59,
+    "acumuladas": 904,
+    "AB": 19,
+    "rigor": {
+     "C": 16,
+     "D": 15,
+     "E": 9,
+     "B": 18,
+     "A": 1
+    }
    }
   ],
   "hist": [
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-20",
-    "commit": "e8ba645",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-21",
-    "commit": "6324fc0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-22",
-    "commit": "8cc091a",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-23",
-    "commit": "396f4cc",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-24",
-    "commit": "4d6b7c5",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-25",
-    "commit": "c5aadfa",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-26",
-    "commit": "e68ecd4",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-27",
-    "commit": "29b2246",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-28",
-    "commit": "5612e59",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-29",
-    "commit": "a1450e0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-30",
-    "commit": "0386d20",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-08-31",
-    "commit": "426eec7",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-01",
-    "commit": "a2807ae",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-02",
-    "commit": "3156ce7",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-03",
-    "commit": "f6292dc",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-04",
-    "commit": "bf1c531",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-05",
-    "commit": "e0a7da3",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-06",
-    "commit": "0cc2b76",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-07",
-    "commit": "6c7c30a",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-08",
-    "commit": "2937e16",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-09",
-    "commit": "856aaf0",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-10",
-    "commit": "fb4eefb",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-11",
-    "commit": "ff84439",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-12",
-    "commit": "45c1d02",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-13",
-    "commit": "19e967d",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-14",
-    "commit": "b8c3a63",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-15",
-    "commit": "5aeb9c3",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-16",
-    "commit": "350961c",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-17",
-    "commit": "3fa24e4",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-18",
-    "commit": "25729ee",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-19",
-    "commit": "debc81a",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-20",
-    "commit": "4237a35",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-21",
-    "commit": "0c40870",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-22",
-    "commit": "8fb9453",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-23",
-    "commit": "cefa920",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-24",
-    "commit": "8cafc4d",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-25",
-    "commit": "934aa0e",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-26",
-    "commit": "6100887",
-    "fuente": "git"
-   },
-   {
-    "fuentes": 468,
-    "rigor": {
-     "B": 76,
-     "A": 134,
-     "C": 100,
-     "D": 117,
-     "?": 13,
-     "E": 28
-    },
-    "nodes": 15,
-    "outputs": 4,
-    "wikilinks": 69,
-    "derivaciones": 8,
-    "fuentes_citadas_en_nodes": 352,
-    "diseno": {
-     "hyp": {
-      "abierta": 19,
-      "parcial": 9,
-      "refutada": 1,
-      "respaldada": 1,
-      "otra": 1
-     },
-     "rules": 22,
-     "rules_cited": 5,
-     "scale": {
-      "🟢": 15,
-      "🟡": 8,
-      "🔴": 15,
-      "⚔️": 4
-     },
-     "iterations": 4,
-     "lines": 1800,
-     "cites": 167
-    },
-    "fecha": "2026-09-27",
-    "commit": "5498d78",
-    "fuente": "git"
-   },
    {
     "fuentes": 468,
     "rigor": {
@@ -14216,42 +14299,42 @@
     "fuente": "git"
    },
    {
-    "fuentes": 515,
+    "fuentes": 468,
     "rigor": {
-     "B": 91,
-     "A": 139,
-     "C": 121,
-     "D": 121,
-     "?": 14,
-     "E": 29
+     "B": 76,
+     "A": 134,
+     "C": 100,
+     "D": 117,
+     "?": 13,
+     "E": 28
     },
-    "nodes": 16,
+    "nodes": 15,
     "outputs": 4,
-    "wikilinks": 84,
-    "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 404,
+    "wikilinks": 69,
+    "derivaciones": 8,
+    "fuentes_citadas_en_nodes": 352,
     "diseno": {
      "hyp": {
       "abierta": 19,
-      "parcial": 10,
-      "respaldada": 2,
+      "parcial": 9,
       "refutada": 1,
+      "respaldada": 1,
       "otra": 1
      },
      "rules": 22,
-     "rules_cited": 22,
+     "rules_cited": 5,
      "scale": {
-      "🟢": 16,
-      "🟡": 10,
+      "🟢": 15,
+      "🟡": 8,
       "🔴": 15,
       "⚔️": 4
      },
-     "iterations": 5,
-     "lines": 1898,
-     "cites": 203
+     "iterations": 4,
+     "lines": 1800,
+     "cites": 167
     },
     "fecha": "2026-10-02",
-    "commit": "e32e8e5",
+    "commit": "54232af",
     "fuente": "git"
    },
    {
@@ -14294,27 +14377,26 @@
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 740,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
+     "B": 110,
+     "A": 268,
+     "C": 171,
+     "D": 144,
      "?": 14,
-     "E": 29
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 18,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 110,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 636,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14325,35 +14407,34 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-04",
-    "commit": "ab6bf54",
+    "commit": "b635cd4",
     "fuente": "git"
    },
    {
-    "fuentes": 528,
+    "fuentes": 740,
     "rigor": {
-     "B": 96,
-     "A": 144,
-     "C": 123,
-     "D": 122,
+     "B": 110,
+     "A": 268,
+     "C": 171,
+     "D": 144,
      "?": 14,
-     "E": 29
+     "E": 33
     },
-    "nodes": 16,
+    "nodes": 18,
     "outputs": 4,
-    "wikilinks": 84,
+    "wikilinks": 110,
     "derivaciones": 11,
-    "fuentes_citadas_en_nodes": 423,
+    "fuentes_citadas_en_nodes": 636,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14364,11 +14445,11 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-05",
-    "commit": "5416451",
+    "commit": "643ba4f",
     "fuente": "git"
    },
    {
@@ -14411,27 +14492,26 @@
     "fuente": "git"
    },
    {
-    "fuentes": 588,
+    "fuentes": 800,
     "rigor": {
-     "B": 110,
-     "A": 163,
-     "C": 126,
-     "D": 145,
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
      "?": 15,
-     "E": 29
+     "E": 33
     },
-    "nodes": 17,
+    "nodes": 19,
     "outputs": 5,
-    "wikilinks": 90,
+    "wikilinks": 116,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 481,
+    "fuentes_citadas_en_nodes": 694,
     "diseno": {
      "hyp": {
-      "abierta": 17,
-      "parcial": 13,
-      "refutada": 1,
-      "respaldada": 2,
-      "otra": 1
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
      },
      "rules": 22,
      "rules_cited": 22,
@@ -14442,11 +14522,1265 @@
       "⚔️": 4
      },
      "iterations": 5,
-     "lines": 1948,
-     "cites": 259
+     "lines": 2001,
+     "cites": 274
     },
     "fecha": "2026-10-07",
-    "commit": "9520c9d",
+    "commit": "7d6f508",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-08",
+    "commit": "a0bc891",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-09",
+    "commit": "de3c9ed",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-10",
+    "commit": "da11708",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-11",
+    "commit": "bf95a7c",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-12",
+    "commit": "e54ba41",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-13",
+    "commit": "0c0cb1b",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 800,
+    "rigor": {
+     "B": 124,
+     "A": 287,
+     "C": 174,
+     "D": 167,
+     "?": 15,
+     "E": 33
+    },
+    "nodes": 19,
+    "outputs": 5,
+    "wikilinks": 116,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 694,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2001,
+     "cites": 274
+    },
+    "fecha": "2026-10-14",
+    "commit": "0798365",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-15",
+    "commit": "d2adac5",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-16",
+    "commit": "c0a2c03",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-17",
+    "commit": "0c09965",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-18",
+    "commit": "2af3787",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-19",
+    "commit": "e34cc82",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-20",
+    "commit": "9ec515f",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-21",
+    "commit": "604f16e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-22",
+    "commit": "a046a98",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-23",
+    "commit": "bbc486e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-24",
+    "commit": "00d6d2e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-25",
+    "commit": "1c02cf6",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-26",
+    "commit": "aaa42ff",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-27",
+    "commit": "33ba34e",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-28",
+    "commit": "91e3195",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-29",
+    "commit": "470c10c",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-30",
+    "commit": "ee1c4e7",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-10-31",
+    "commit": "64922fd",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-01",
+    "commit": "ee839a4",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-02",
+    "commit": "cd940df",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-03",
+    "commit": "b66993f",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-04",
+    "commit": "7d9fb5b",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-05",
+    "commit": "a8bbe6f",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-06",
+    "commit": "053c783",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-07",
+    "commit": "7a2df68",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-08",
+    "commit": "55c99c3",
+    "fuente": "git"
+   },
+   {
+    "fuentes": 845,
+    "rigor": {
+     "B": 125,
+     "A": 303,
+     "C": 184,
+     "D": 182,
+     "?": 15,
+     "E": 36
+    },
+    "nodes": 20,
+    "outputs": 5,
+    "wikilinks": 124,
+    "derivaciones": 12,
+    "fuentes_citadas_en_nodes": 738,
+    "diseno": {
+     "hyp": {
+      "abierta": 15,
+      "parcial": 14,
+      "refutada": 4,
+      "respaldada": 2
+     },
+     "rules": 22,
+     "rules_cited": 22,
+     "scale": {
+      "🟢": 16,
+      "🟡": 10,
+      "🔴": 15,
+      "⚔️": 4
+     },
+     "iterations": 5,
+     "lines": 2002,
+     "cites": 274
+    },
+    "fecha": "2026-11-09",
+    "commit": "b36b1e2",
     "fuente": "git"
    }
   ],
@@ -14466,7 +15800,7 @@
     "⚔️": 4
    },
    "iterations": 5,
-   "lines": 2001,
+   "lines": 2003,
    "iter_dates": [
     "2026-07-26",
     "2026-07-29",

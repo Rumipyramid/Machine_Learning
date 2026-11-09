@@ -1908,6 +1908,7 @@ aleatoria de cualquiera de las dos lo devolvería a 16%, y así debe registrarse
 
 ## Conexiones
 
+- [[emision-salud-colectiva-modelo-operativo|Emisión eficiente en salud colectiva]] — caso de aplicación de la regla sobre cifras de proveedores interesados: casi toda la evidencia de automatización en colectivos es de quien vende el software.
 - [[behavioral-design-estado-disciplina|Behavioral design: estado de la disciplina y del mercado]] —
   node hermano y precedente metodológico directo: allí la crisis del nudge por sesgo de publicación,
   aquí la crisis del ROI del diseño por eco de cita. **El mismo patrón en dos disciplinas vecinas:

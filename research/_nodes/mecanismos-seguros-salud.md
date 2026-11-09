@@ -335,6 +335,7 @@ Resultados del 2T de Lemonade, actualidad del PL 08488 y de los modelos de farma
 
 ## Conexiones
 
+- [[emision-salud-colectiva-modelo-operativo|Emisión eficiente en salud colectiva]] — la presión de costo médico de este node explica las alzas de renovación y el interés en planes pyme estandarizados que aquel node documenta (P1, P7).
 - [[modelo-salud-ia-farmacias-peru|Modelo de triage IA + farmacias (Perú)]] — este node aporta el
   marco de mecanismos globales; ese node aplica el diseño concreto al caso peruano (PL 08488,
   automedicación, InkaFarma/Mifarma).

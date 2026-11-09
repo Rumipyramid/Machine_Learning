@@ -300,6 +300,7 @@ seguro de auto (protección pura) mezcla categorías económicamente distintas b
 
 ## Conexiones
 
+- [[emision-salud-colectiva-modelo-operativo|Emisión eficiente en salud colectiva]] — aplica la intermediación del broker y la confianza a la emisión de salud colectiva (EPS y AMC).
 - [[fenomeno-el-nino-impacto-personas|Fenómeno El Niño: impacto en la vida de las personas]] — caso
   real de la brecha de protección (~3,3% de hogares con seguro de desastres): en el Niño Costero 2017 el seguro cubrió ~7% del daño
   (F-773) y los hogares se recuperaron con donaciones, no con indemnizaciones (F-752); coyuntura 2026-27.

@@ -364,6 +364,7 @@ apostar a que la conversación compleja deje de necesitar a una persona.
 
 ## Conexiones
 
+- [[emision-salud-colectiva-modelo-operativo|Emisión eficiente en salud colectiva]] — evidencia sobre qué herramientas da la aseguradora al broker en colectivos y si la experiencia operativa pesa frente a la comisión (P5, H9, H12).
 - [[seguros-comportamiento-mundo-peru|Comportamiento, percepción y valoración frente a
   seguros (Mundo vs. Perú)]] — ese node documenta que en Perú, específicamente, la
   confianza sube con intermediación de un broker (§3.3); este node aporta el marco
