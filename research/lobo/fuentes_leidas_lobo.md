@@ -297,3 +297,6 @@
 | F-714 | 🟢 A | 2026-11-08 | Intuición 277 — el efecto pesa más que la muestra; asumir que el tamaño real es una fracción del publicado (abstracts y fichas; lectura débil) |
 | F-750 | 🟢 A | 2026-11-08 | Intuición 278 — el daño climático se concentra en embarazadas y hogares pobres; dirigir la alerta al grupo (resumen y fichas; lectura débil) |
 | F-686 | 🟢 A | 2026-11-08 | Intuición 279 — con un solo estímulo no se separa persona de ejemplo; probar varios mensajes (PMC y resúmenes; lectura débil) |
+| F-660 | 🟢 A | 2026-11-09 | Intuición 280 — en conflictos reales grabados casi siempre alguien interviene; no asumir que la gente mira (resúmenes y prensa; lectura débil) |
+| F-540 | 🟢 A | 2026-11-09 | Intuición 281 — rastrear la cita de una cifra redonda de fracaso antes de usarla; suele ser un eco (ficha y secundarias; lectura débil) |
+| F-800 | 🟢 A | 2026-11-09 | Intuición 282 — el seguro indexado no se vende solo: mirar riesgo de base, subsidio y paquete con crédito (resumen y fichas; lectura débil) |
