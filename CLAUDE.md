@@ -337,6 +337,10 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   `contexto-peruano`, que existía como archivo suelto y por eso Claude Code no la reconocía).
 
 ## Convenciones
+- **Siempre ofrecer la descarga de los `.md` (regla del usuario, 2026-11-09).** Cada vez que una sesión cree o modifique
+  un archivo Markdown para el usuario (node, output, reporte, nota del garaje, etc.), al cerrar se le entrega como
+  archivo descargable (en Claude Code: `SendUserFile` con `display: "attach"`), además de commitearlo. Si son varios,
+  se envían juntos en una sola entrega. No reemplaza el commit ni el push.
 - **Redacción de experto en todo output escrito (regla del usuario, 2026-10-10).** Respuestas en el chat, nodes,
   outputs, lecturas de las mentes, notas del garaje, mensajes de commit y textos de las páginas se escriben como lo
   haría un experto en redacción: primero la conclusión, una idea por frase, frases cortas y **autoexplicativas**. Nunca
