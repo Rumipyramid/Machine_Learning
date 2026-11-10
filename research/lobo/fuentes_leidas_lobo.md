@@ -300,3 +300,6 @@
 | F-660 | 🟢 A | 2026-11-09 | Intuición 280 — en conflictos reales grabados casi siempre alguien interviene; no asumir que la gente mira (resúmenes y prensa; lectura débil) |
 | F-540 | 🟢 A | 2026-11-09 | Intuición 281 — rastrear la cita de una cifra redonda de fracaso antes de usarla; suele ser un eco (ficha y secundarias; lectura débil) |
 | F-800 | 🟢 A | 2026-11-09 | Intuición 282 — el seguro indexado no se vende solo: mirar riesgo de base, subsidio y paquete con crédito (resumen y fichas; lectura débil) |
+| F-667 | 🟢 A | 2026-11-10 | Intuición 283 — parte de la ley de Vierordt la produce el orden aleatorio del protocolo; probar el orden real del producto (resumen y comentario; lectura débil) |
+| F-722 | 🟢 A | 2026-11-10 | Intuición 284 — la brecha pagar-vender persiste con entrenamiento; asumir que el que ya tiene el bien lo valora más (resumen y fichas; lectura débil) |
+| F-597 | 🟢 A | 2026-11-10 | Intuición 285 — simulaciones con modelos de lenguaje: explorar sí, confirmar no; cinco problemas abiertos (resumen y metadatos; lectura débil) |
