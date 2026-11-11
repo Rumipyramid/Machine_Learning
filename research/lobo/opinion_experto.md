@@ -6405,6 +6405,27 @@ F-597 (Anthis y otros, ICML 2025, PMLR 267, pp. 81005-81034; artículo de posici
 - **Leído a fondo:** 2026-11-10 (`WebSearch`; resumen y metadatos; lectura débil, declarada)
 - **Conexión razonada, no forzada:** coincide con la tesis 27 (las muestras sintéticas ordenan hipótesis, no estiman efectos); sin cambio de confianza.
 
+### 286. Sonreír a propósito sube un poco la felicidad declarada; el método discreto del lápiz no lo prueba
+F-702 (Coles y la colaboración Many Smiles, *Nature Human Behaviour* 6, 2022; arbitrado y prerregistrado). Fue una colaboración «adversarial»: defensores y críticos del efecto diseñaron juntos la prueba. Participaron 3.878 personas de 19 países que no conocían la hipótesis. Imitar una sonrisa de una foto o mover los músculos por instrucción aumentó la felicidad declarada, e incluso la inició sin estímulo. El método del lápiz en la boca, el único que oculta el propósito, dio evidencia poco concluyente. Las notas de divulgación describen los efectos como pequeños. Leí resúmenes, fichas de repositorios y notas de prensa; no vi el tamaño de efecto en el texto.
+**Heurística:** cuando un efecto aparece con la tarea obvia y se diluye con la tarea discreta, sospechar que parte es lo que el participante cree que debe sentir. Antes de usar un efecto en un producto, preguntar si funciona cuando el cliente no sabe que lo están midiendo.
+- **Fuente:** F-702 (🟢A según el ledger; tamaño de efecto no verificado)
+- **Leído a fondo:** 2026-11-11 (`WebSearch`; resúmenes, repositorios y prensa; lectura débil, declarada)
+- **Conexión razonada, no forzada:** completa la entrada 267 (el meta-análisis de 2019 halló un efecto pequeño y variable) y la 211 (el nulo de 17 laboratorios con el lápiz); sin cambio de confianza.
+
+### 287. Elegir el boleto no crea ilusión de control: 17 experimentos con más de 10.000 personas no hallaron el efecto del clásico de 1975
+F-737 (Langer, *Journal of Personality and Social Psychology*, 1975; arbitrado, fundacional). El estudio decía que elegir el propio boleto de lotería hace sentir más probable ganar: quienes eligieron pedían más dinero por revenderlo (unos 8,67 dólares, según una fuente secundaria). Klusowski, Small y Simmons (*Psychological Science* 32(2), 2021, pp. 159-172) lo pusieron a prueba en 17 experimentos con 10.825 personas. Elegir casi nunca hizo sentir más probable el buen resultado. Cuando lo hizo, fue porque la gente ya creía que las opciones no eran iguales. Otra réplica en línea de un estudio hermano (Langer y Roth, 1975) halló el efecto, pero más débil que el original. Leí resúmenes y fichas; no el texto de 1975. No confirmé que fueran seis estudios.
+**Heurística:** dar a elegir no garantiza que el cliente se sienta en control ni que valore más lo elegido. Antes de justificar un cotizador «arma tu póliza» con la ilusión de control, medir si el cliente cree que las opciones son distintas de verdad.
+- **Fuente:** F-737 (🟢A según el ledger; la ficha no recoge la refutación de 2021)
+- **Leído a fondo:** 2026-11-11 (`WebSearch`; resúmenes y fichas de réplicas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** se suma a la entrada 245 (el efecto IKEA se replica en dirección, no en magnitud): las dos razones clásicas para que el cliente arme su producto son más débiles de lo que se cita. Sin cambio de confianza.
+
+### 288. Un portapapeles pesado no hace que algo parezca más importante: la réplica con 2.285 personas dio un efecto casi nulo
+F-703 (Jostmann, Lakens y Schubert, *Psychological Science* 20(9), 2009, pp. 1169-1174; arbitrado). Cuatro estudios decían que sostener un portapapeles pesado sube el valor estimado y la importancia que se da a un asunto. La réplica en laboratorios de Many Labs 3 (Ebersole y otros, 2016; 2.285 personas) dio d = 0,03, es decir, nada. Otras dos réplicas de 2015 tampoco hallaron el efecto principal, y una de ellas encontró señales de sesgo de publicación. Un estudio de 2017 mostró que el efecto se borra si se llama la atención sobre el peso. Uno de los autores originales, Lakens, es hoy una voz conocida de la reforma metodológica. Leí resúmenes y un atlas de réplicas; no el texto original.
+**Heurística:** un efecto sensorial sutil que viene de cuatro estudios pequeños vale cero hasta que una réplica grande diga otra cosa. No gastar en papel grueso, carpetas pesadas o empaques «de peso» para que la póliza parezca importante si la única razón es este efecto.
+- **Fuente:** F-703 (🟢A según el ledger; la ficha ya anota que no se replicó en Many Labs 3)
+- **Leído a fondo:** 2026-11-11 (`WebSearch`; resúmenes y atlas de réplicas; lectura débil, declarada)
+- **Conexión razonada, no forzada:** coincide con las entradas 203 (la taza caliente) y 261 (la letra difícil): los efectos de cognición encarnada de muestras pequeñas no sobreviven a réplicas grandes. Sin cambio de confianza.
+
 ## 📔 Bitácora
 
 - **2026-07-12 a 2026-07-19** — *(Resumida el 2026-08-10 al cumplir la ventana de ~30 días; el
@@ -6573,49 +6594,19 @@ F-597 (Anthis y otros, ICML 2025, PMLR 267, pp. 81005-81034; artículo de posici
   confianza.
   **2026-09-01** — sin cambios sustanciales en el ledger (F-468); corrida de intuición
   (🔵B) sin cambio de confianza en tesis. **2026-09-03** — ledger en F-468, sin cambios; corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-04** — corrida diaria sin novedad sustancial; intuición (🔵B), sin cambio de confianza en tesis (fusionado al resumen el 2026-10-04). **2026-09-05** — corrida de intuición (🔵B), sin cambio de confianza en tesis. **2026-09-06** — corrida de intuición, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-06). **2026-09-07** — corrida diaria de refinamiento, sin cambio de confianza en tesis (fusionado al resumen el 2026-10-07).
-- **2026-10-05** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
-  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** desde la entrada de ayer
-  (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni confianzas; matiz de lectura: F-521 (🟢A) es
-  evidencia causal de caída de demanda por tarea en una plataforma, no de empleo total. **Intuición (nivel 🟢A, 15
-  pendientes → 12 tras hoy):** sorteo F-521, F-499 y F-489 (F-457 salió en el sorteo pero es 🔵B: coincidencia de
-  emoji en el texto de la fila; sustituida), leídas vía `WebSearch`. Entradas 175 (caída de demanda en plataforma:
-  dirección, no tamaño), 176 (un nulo de personalización = el mensaje base ya rendía) y 177 (persuasión sube,
-  exactitud baja: medir conversión con exactitud). Poda: 09-05 fusionado al resumen; Bitácora cubre 2026-09-06 a
-  hoy. `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-06** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no
-  existe; el ledger vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger:
-  2026-10-03). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A, 6 pendientes → 3 tras hoy):** sorteo F-519,
-  F-490 y F-514, leídas vía `WebSearch`. Entradas 178 (personalización: efecto modesto mediado por relevancia), 179 (F-490
-  atribuida a Hackenburg en el ledger, pero el artículo es de Bai et al. — autoría a corregir) y 180 (diseño→ROA observacional,
-  mecanismo vía ventas). Además F-519 figura como *Journal of Advertising/T&F* y es *Journal of Advertising Research*; F-514
-  no nombra autores (Han, Tang & Li). Correcciones pendientes para `cronista`, no tocadas aquí. Poda: 09-06 fusionado al
-  resumen; Bitácora cubre 2026-09-07 a hoy. `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-07** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger
-  vigente es `codice.md`: **528 filas (F-1 a F-528), cero fuentes nuevas** (último cambio del ledger: 2026-10-03). Sin cambios en tesis ni
-  confianzas. **Intuición (nivel 🟢A, quedaban 3 reales → 0 pendientes tras hoy; nueve candidatos en la comparación bruta eran falsos
-  positivos por emoji en el texto de otras filas — F-149, F-249, F-262, F-265, F-436, F-457 no son 🟢A):** F-498, F-524 y F-525, leídas vía
-  `WebSearch`. Entradas 181 (XAI: la explicación aporta poco sobre la IA sola), 182 (revisión de design thinking = mapa, no efecto; autoría
-  de F-524: Rösch, Tiberius & Kraus) y 183 (innovación→desempeño depende de apropiación y escala; autoría de F-525: Rousseau et al.).
-  Correcciones de autoría pendientes para `cronista`, no tocadas aquí. Con el nivel 🟢A agotado, desde mañana sigue 🔵B. Poda: 09-07
-  fusionado al resumen; Bitácora cubre 2026-09-08 a hoy. `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-08** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es
-  `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), +272 desde mi última lectura (F-528)**. Cuatro bloques nuevos: F-529 a F-541 (cierre de la iteración 5 de
-  `tendencias-diseno-innovacion`), `convergencia-psicologia-economia-ia` (F-543 a F-645), `fenomenos-psicologicos` (F-647 a F-741) y `fenomeno-el-nino-impacto-personas`
-  (F-742 a F-801, renumerado). **Integrado:** tesis 26 (El Niño 2026-27: el hueco de RIMAC es la liquidez del hogar y se cubre por B2B2C; confianza Media-alta en que el índice B2C
-  directo no escala, Media en la vía B2B2C, Baja en el tamaño) y tesis 27 (muestras sintéticas por LLM: ordenan hipótesis, no estiman efectos; confianza Media porque tres de los cuatro
-  hallazgos de inflación son preprints 🟡C). Ninguna confianza previa cambió. **Intuición (nivel 🟢A; 144 pendientes tras la ampliación del ledger, 141 tras hoy):** sorteo F-689, F-563 y F-728,
-  leídas vía `WebSearch`. Entradas 184 (predictor que acierta ≠ entiende: prueba de la consigna vaciada, Centaur), 185 (señuelo asimétrico: replica con condiciones angostas; falta prueba de campo) y 186
-  (revisión canónica = marco, no efecto). Dato verificado en la lectura: la réplica de 2014 al señuelo es de *Journal of Marketing Research*, no del JCR. Poda: 09-08 fusionado al resumen; Bitácora cubre 2026-09-09 a hoy.
-  `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** desde ayer (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 141 pendientes → 138 tras hoy):** sorteo F-664, F-738 y F-647, leídas vía `WebSearch` (resúmenes y literatura secundaria; lectura débil, declarada). Entradas 187 (norma descriptiva: cuenta la cercanía a la situación inmediata), 188 (D grande sobre constructo heterogéneo ≠ peso en una decisión; sesgo de publicación) y 189 (Asch: la unanimidad es frágil). Pendiente para `cronista`: el buscador no confirmó la autoría de F-738 (Stefan & David). Poda: 09-09 fusionado al resumen; Bitácora cubre 2026-09-10 a hoy. `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 140 pendientes → 137 tras hoy):** sorteo F-707, F-673 y F-553, leídas vía `WebSearch` (resúmenes y secundarias; lectura débil, declarada). Entradas 190 (ego depletion: d≈0,62 en 1998-meta vs. d≈0,04 en réplica multilab de 2016; el desacuerdo es la señal), 191 (informar la espera reduce la sobreestimación pero puede empeorar la evaluación) y 192 (sujetos sintéticos: malrepresentan y aplanan al grupo; mirar dispersión). Pendiente para `cronista`: F-707 no recoge las réplicas de 2016 que cambian su lectura. Poda: 09-10 fusionado al resumen; Bitácora cubre 2026-09-11 a hoy. `fuentes_leidas_lobo.md` actualizado.
-
-- **2026-10-11** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 135 pendientes → 132 tras hoy):** sorteo F-711, F-751 y F-753, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada). Entradas 193 (el nulo de réplicas directas pesa más que el estudio original), 194 (tras un desastre la crisis aguda se disipa en ~12 meses: importa el momento del contacto) y 195 (el hogar recorta salud y educación; el seguro vale por lo que evita recortar). F-751 y F-753 apoyan la tesis 26 sin subir su confianza (un evento, un contexto). Poda: 09-11 fusionado al resumen; Bitácora cubre 2026-09-12 a hoy. `fuentes_leidas_lobo.md` actualizado.
+- **2026-10-05 a 2026-10-11** — *(Resumida el 2026-11-11 al salir de la ventana de ~30 días; el detalle de cada
+  heurística vive en 🧠 Intuición acumulada.)* Siete corridas diarias. **Ledger:** 528 filas hasta el 10-07; el
+  10-08 lo leí en 800 filas (F-1 a F-801; F-734 retirado), con cuatro bloques nuevos: cierre de la iteración 5 de
+  tendencias de diseño e innovación (F-529 a F-541), convergencia psicología-economía-IA (F-543 a F-645), fenómenos
+  psicológicos (F-647 a F-741) y Fenómeno El Niño (F-742 a F-801). **Tesis:** el 10-08 nacieron la tesis 26 (El
+  Niño 2026-27: el hueco de RIMAC es la liquidez del hogar y se cubre por canal B2B2C; confianza Media-alta en que
+  el seguro indexado directo al cliente no escala, Media en la vía B2B2C, Baja en el tamaño) y la tesis 27 (las
+  muestras sintéticas hechas con modelos de lenguaje ordenan hipótesis, no estiman efectos; confianza Media).
+  Ninguna confianza previa cambió; el 10-11 dos estudios de desastres (F-751, F-753) apoyaron la tesis 26 sin
+  subirla. **Intuición:** entradas 175 a 195. El nivel 🟢A se agotó el 10-07 y se reabrió el 10-08 con 144
+  pendientes por la ampliación del ledger. **Pendientes para `cronista` que dejé anotados:** autoría de F-490 (el
+  artículo es de Bai y otros), revista de F-519 (*Journal of Advertising Research*), autores de F-514, F-524 y
+  F-525, autoría sin confirmar de F-738, y F-707 sin las réplicas de 2016.
 
 - **2026-10-12** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **800 filas (F-1 a F-801; F-734 retirado), cero fuentes nuevas** (último cambio del ledger: 2026-10-07). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 132 pendientes → 129 tras hoy):** sorteo F-727, F-542 y F-566, leídas vía `WebSearch` (resúmenes y fichas; lectura débil, declarada; F-566 no apareció en la búsqueda y se apoya en la ficha). Entradas 196 (el coeficiente medio de aversión a la pérdida no es parámetro de producto), 197 (persuasión de IA con datos personales: real en laboratorio, no probada en campo) y 198 (un predictor flexible sirve para detectar fallas de la teoría, no como teoría). Poda: 09-12 fusionado al resumen; Bitácora cubre 2026-09-13 a hoy. `fuentes_leidas_lobo.md` actualizado.
 
@@ -6676,3 +6667,5 @@ F-597 (Anthis y otros, ICML 2025, PMLR 267, pp. 81005-81034; artículo de posici
 - **2026-11-09** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 65 pendientes → 62 tras hoy):** sorteo F-660, F-540 y F-800, leídas vía `WebSearch` (resúmenes, fichas y comentarios; lectura débil, declarada). Entradas 280 (en conflictos reales grabados por cámaras, casi siempre alguien interviene), 281 (el «70% de cambios fracasa» no tiene respaldo: es un eco de cita) y 282 (el seguro indexado agrícola no se vende solo; pide subsidio, mejor medición y paquete con crédito). Pendiente para `cronista`: F-660, la ficha no recoge el límite de muestra (solo centros urbanos); F-800, confirmar el DOI 10.1146/annurev-resource-100516-053352. Bitácora sin podar: sigue por encima de 30 días desde 2026-10-05; pendiente resumirla en una corrida aparte. `fuentes_leidas_lobo.md` actualizado.
 
 - **2026-11-10** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 62 pendientes → 59 tras hoy):** sorteo F-667, F-722 y F-597, leídas vía `WebSearch` (resúmenes, fichas y metadatos; lectura débil, declarada). Entradas 283 (parte de la ley de Vierordt la produce el protocolo experimental), 284 (la brecha entre pagar y vender sobrevivió a una réplica con entrenamiento) y 285 (las simulaciones con modelos de lenguaje sirven para explorar, no confirmar). Bitácora sin podar: sigue por encima de 30 días; pendiente resumirla en una corrida aparte. `fuentes_leidas_lobo.md` actualizado.
+
+- **2026-11-11** — Corrida diaria de refinamiento. `main` al día. El prompt apunta a `registro_fuentes.md`, que no existe; el ledger vigente es `codice.md`: **845 filas (F-1 a F-846; F-734 retirado), cero fuentes nuevas** (sin filas nuevas desde 2026-10-15). Sin cambios en tesis ni confianzas. **Intuición (nivel 🟢A; 58 pendientes → 55 tras hoy, según el recuento contra `fuentes_leidas_lobo.md`):** sorteo F-702, F-737 y F-703, leídas vía `WebSearch` (resúmenes, fichas y atlas de réplicas; lectura débil, declarada). Entradas 286 (sonreír a propósito sube poco la felicidad declarada; el método discreto del lápiz no lo prueba), 287 (elegir el boleto no crea ilusión de control en 17 experimentos con 10.825 personas) y 288 (el portapapeles pesado no sube la importancia percibida: d = 0,03 en la réplica grande). Matiz de negocio, como instinto: las dos razones clásicas para dejar que el cliente «arme su póliza» (ilusión de control y efecto IKEA) son más débiles de lo que se cita; el configurador debe justificarse por conversión medida, no por esos efectos. Pendiente para `cronista`: F-737 no recoge la refutación de Klusowski, Small y Simmons (2021) ni el volumen y páginas (32(2), 311-328, sin confirmar en fuente oficial); F-702, las fichas discrepan en el número de la revista (6(12), pp. 1731-1742, es la más repetida). **Poda hecha:** 10-05 a 10-11 fusionados en un resumen; la Bitácora diaria cubre 2026-10-12 a hoy. `fuentes_leidas_lobo.md` actualizado.

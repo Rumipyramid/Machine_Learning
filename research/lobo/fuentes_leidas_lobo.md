@@ -303,3 +303,6 @@
 | F-667 | 🟢 A | 2026-11-10 | Intuición 283 — parte de la ley de Vierordt la produce el orden aleatorio del protocolo; probar el orden real del producto (resumen y comentario; lectura débil) |
 | F-722 | 🟢 A | 2026-11-10 | Intuición 284 — la brecha pagar-vender persiste con entrenamiento; asumir que el que ya tiene el bien lo valora más (resumen y fichas; lectura débil) |
 | F-597 | 🟢 A | 2026-11-10 | Intuición 285 — simulaciones con modelos de lenguaje: explorar sí, confirmar no; cinco problemas abiertos (resumen y metadatos; lectura débil) |
+| F-702 | 🟢 A | 2026-11-11 | Intuición 286 — sonreír a propósito sube poco la felicidad declarada y el método discreto no lo prueba; preguntar si el efecto funciona sin que el cliente sepa que lo miden (resúmenes y prensa; lectura débil) |
+| F-737 | 🟢 A | 2026-11-11 | Intuición 287 — elegir no crea ilusión de control en 17 experimentos; medir si el cliente cree que las opciones son distintas (resúmenes y fichas; lectura débil) |
+| F-703 | 🟢 A | 2026-11-11 | Intuición 288 — el peso del objeto no sube la importancia percibida (d = 0,03 en la réplica grande); no pagar por «peso» en materiales (resúmenes y atlas de réplicas; lectura débil) |
