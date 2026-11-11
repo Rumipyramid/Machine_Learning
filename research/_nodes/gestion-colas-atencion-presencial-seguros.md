@@ -1,8 +1,10 @@
 # Gestión de colas en la atención presencial de aseguradoras: benchmarking
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-11-11 · Última actualización: 2026-11-11 · Versión: v1.0
-> Origen: `/seeker` (registro empírico + teórico/crítico). Fuentes F-847 a F-872.
+> Fecha de elaboración: 2026-11-11 · Última actualización: 2026-11-11 · Versión: v1.1
+> Origen: `/seeker` (registro empírico + teórico/crítico). Fuentes F-847 a F-886.
+> v1.1 (2026-11-11): se amplía el alcance a **la espera como espacio de awareness** (§10), a pedido
+> del usuario, con prioridad en evidencia latinoamericana. F-873 a F-886.
 
 ---
 
@@ -244,6 +246,99 @@ espera máximo 10 minutos" no se registraron como evidencia porque no tienen fue
   resolución de Indecopi contra el banco.
 - No se encontró el reglamento de conducta de mercado del sistema de seguros para verificar si
   exige atención humana.
+
+---
+
+## 10. La espera como espacio de awareness (v1.1)
+
+**Pregunta.** Cómo se aprovecha el tiempo de espera en la oficina para dar a conocer la marca,
+los productos o información útil, con prioridad en estudios latinoamericanos.
+
+### 10.1 Conclusión
+
+- **No se encontró ningún estudio, latinoamericano o de otra región, que mida awareness durante la
+  espera en una aseguradora.** La evidencia viene de salas de espera de salud, bancos y transporte.
+- **La evidencia más sólida es de salud.** Las pantallas y videos en salas de espera suben un poco
+  el conocimiento, casi no cambian la conducta y sí provocan preguntas al profesional (F-875,
+  F-876). Para una aseguradora, el efecto útil sería ese último: que el cliente llegue a la
+  ventanilla con una pregunta sobre un producto.
+- **Quien espera está más receptivo.** En un estudio de campo con 66.473 personas en tránsito, la
+  gente "cautiva" respondió más a la publicidad móvil, porque siente que le sobra tiempo (F-877).
+- **Lo que hace agradable la espera pesa más que acortarla.** Mejorar el ambiente de espera calmó
+  más el efecto negativo de esperar que reducir el tiempo real (F-874). Una pizarra de noticias en
+  el lobby de un banco hizo la espera más llevadera y mejoró la evaluación del servicio (F-873).
+- **En Latinoamérica la evidencia es de salud pública y es débil.** En Brasil, la "sala de espera"
+  es una estrategia habitual de educación en salud del SUS, pero la evidencia es casi solo
+  cualitativa (F-878). En México hay estudios del IMSS y de centros de salud con resultados de
+  conocimiento, de diseño débil o no verificado (F-879, F-880). En Perú no se encontró ningún
+  estudio de contenidos en sala de espera; una tesis peruana sí recomienda gestionar la
+  experiencia en sala porque el tiempo real de espera se relaciona poco con la satisfacción
+  (F-885).
+- **Las cifras de recordación que circulan son de proveedores.** "52% de recordación en pantallas
+  frente a 32% en TV", "75% recuerda un mensaje en hospitales" o "awareness de producto de 22% a
+  45% en bancos" vienen de empresas que venden pantallas o de estudios que ellas encargaron
+  (F-882, F-883, F-884). No sirven para decidir.
+
+### 10.2 Evidencia por tipo de uso
+
+| Uso del tiempo de espera | Mejor evidencia | Qué muestra | Solidez |
+|---|---|---|---|
+| **Educación (salud, finanzas)** | Revisión sistemática de 14 estudios en atención primaria (Berkhout y otros, 2018 — 🟢 peer-reviewed, *European Journal of General Practice*; F-875) | Ganancia pequeña de conocimiento, quizá no relevante; sin cambio robusto de conducta; los pacientes notan las pantallas y preguntan al médico | 🟢 Alta como revisión, pero estudios primarios de calidad baja o media |
+| | Revisión integrativa de 33 estudios (Cass, Ball y Leveritt, 2016 — 🟢 peer-reviewed, *Australian Journal of Primary Health*; F-876) | Efecto positivo general en conocimiento, intención, uso de servicios y conducta; actitudes mixtas; pocos estudios de alta calidad | 🟡 Media |
+| **Publicidad de marca o producto** | Estudio de campo sobre "audiencia cautiva" (*Journal of Advertising*, 2023 — 🟢 peer-reviewed; F-877) | Quien está obligado a esperar responde más a anuncios; lo explica la sensación de tener tiempo de sobra y el aburrimiento | 🟢 Alta, pero es publicidad móvil en transporte, no pantallas en oficina |
+| | Pantallas en sucursales bancarias (proveedores; F-883) | Awareness y venta cruzada al alza, con cifras que no coinciden entre sí | 🔴 Baja |
+| **Entretenimiento o información general** | Pizarra de noticias en el lobby de un banco de Boston (Katz, Larson y Larson, 1991; F-873) | Espera más llevadera y mejor evaluación del servicio, según quienes lo citan | 🟡 Media; no se leyó el original |
+| **Ambiente de espera** | Pruyn y Smidts, 1998 (🟢 peer-reviewed, *International Journal of Research in Marketing*; F-874) | Mejorar el ambiente calma más que acortar la espera; el efecto de la TV es contradictorio según quién lo cita | 🟢 Alta |
+| **Información del propio proceso** | Transparencia operativa (F-854, F-855; ver §3.4) | Mostrar el trabajo que se hace sube el valor percibido | 🟢 Alta |
+
+### 10.3 Latinoamérica: lo que hay
+
+| País | Estudio | Qué encontró | Solidez |
+|---|---|---|---|
+| Brasil | Revisión integrativa de 8 artículos sobre la sala de espera como espacio de educación en salud en el SUS (Quadros, Kosinski y Schmidt, 2017; F-878) | Consenso de que sirve para educar y crear vínculo; casi todo son relatos de experiencia, sin resultados medidos | 🟡 Baja-media |
+| Brasil | Encuesta de industria sobre campañas en ambientes de salud (Meio & Mensagem; F-881) | 83% dice notar televisores en salas de espera o pasillos; 90% en clínicas. Mide exposición, no recordación | 🟠 Baja |
+| México | Herramienta multimedia sobre diabetes que los pacientes del IMSS consultan en la sala de espera (*Cirugía y Cirujanos*, 2018; F-879) | El texto la llama ensayo aleatorizado y el título, cuasiexperimento; no se obtuvieron los resultados | ⚠️ No verificado |
+| México | Intervención educativa de 15 minutos sobre infecciones respiratorias en la sala de espera de un centro de salud (revista de la UADY; F-880) | Subió el conocimiento; diseño cuasiexperimental sin aleatorización | 🟡 Baja-media |
+| Perú | Tesis de la UPCH sobre tiempos de espera en consulta externa (F-885) | El tiempo real de espera se relaciona poco con la satisfacción; recomienda informar sobre demoras y gestionar la sala de espera | 🟡 Media (tesis) |
+| Chile u otro país | Fila de un supermercado en una ciudad latinoamericana (Lu y otros, 2013; F-850) | No mide awareness: muestra que la fila visible cuesta ventas | 🟢 Alta, otro tema |
+
+### 10.4 Contraevidencia buscada a propósito
+
+1. **La TV en la sala de espera puede alargar la espera percibida.** Una revisión cita un estudio en
+   una clínica donde quienes veían televisión percibieron una espera más larga y quedaron menos
+   satisfechos; otra revisión dice que la TV en un hospital no cambió la experiencia (vía F-874).
+   El resultado sigue abierto.
+2. **Notar una pantalla no es comprar.** En una encuesta encargada por un proveedor, 84% dijo que
+   las pantallas hacen pasar el tiempo más rápido, pero solo 40% dijo que eso lo haría preferir la
+   tienda (F-886).
+3. **El conocimiento sube poco y la conducta casi no cambia** (F-875). Si el objetivo es venta, la
+   pantalla sola no basta; su valor está en abrir la conversación con el asesor.
+4. **No se encontró ningún estudio que pruebe que la publicidad en la espera irrita.** Sí hay
+   evidencia vecina: en anuncios de video, mostrar un temporizador baja la irritación, salvo si
+   además hay un botón para saltar el anuncio (búsqueda de esta iteración, no registrada como
+   fuente por falta de cita completa).
+
+### 10.5 Qué se puede llevar a una aseguradora (inferencias, ordenadas por respaldo)
+
+1. **Contenido que lleve a una pregunta, no solo a recordar la marca.** Por ejemplo: "¿Sabías que
+   tu seguro vehicular cubre X? Pregúntale a tu asesor". Respaldo: el efecto más consistente en
+   salud es que el paciente pregunta (F-875).
+2. **Contenido ligado al motivo de la visita.** Quien viene por un siniestro o un reembolso está en
+   un momento de dependencia y desconfianza (§4). Mostrar el estado y los pasos de su trámite
+   (F-854, F-855) es más seguro que mostrarle un producto nuevo. Ofrecer otro producto en ese
+   momento puede leerse como aprovecharse; esto es una inferencia, no un resultado medido.
+3. **Mejorar el ambiente antes que llenar la pantalla de anuncios** (F-874, F-873).
+4. **Medir con grupo de control.** No hay evidencia en seguros. Lo correcto es probar contenido A
+   frente a contenido B por sucursal y semana, y medir preguntas al asesor, cotizaciones y
+   abandono de la fila, no recordación declarada.
+
+### 10.6 Limitaciones de esta ampliación
+
+- No se leyeron a texto completo Katz y otros (1991), el estudio del IMSS ni el de la UADY.
+- No se encontraron campañas documentadas de aseguradoras o bancos latinoamericanos (Sura,
+  Bancolombia, BancoEstado, RIMAC, Pacífico) en sus salas de espera.
+- Los buscadores de salud latinoamericanos (LILACS, SciELO) se consultaron solo a través de un
+  buscador general.
 
 ---
 

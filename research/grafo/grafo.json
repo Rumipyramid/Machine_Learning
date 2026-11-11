@@ -52,8 +52,8 @@
   {
    "id": "gestion-colas-atencion-presencial-seguros",
    "type": "node",
-   "lines": 263,
-   "cites": 26,
+   "lines": 358,
+   "cites": 40,
    "design": false
   },
   {
@@ -8015,6 +8015,132 @@
    "autor": "LP Derecho",
    "anio": "s.f.",
    "huerfana": false
+  },
+  {
+   "id": "F-873",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Prescription for the waiting-in-line blues: Entertain, enlighten, and engage (Sloan Management Review 32(2):44)",
+   "autor": "Katz, K. L.; Larson, B. M.; Larson, R. C. (base: tesis MIT de Katz y Martin, 1989, en una sucursal del Bank of Boston)",
+   "anio": "1991",
+   "huerfana": false
+  },
+  {
+   "id": "F-874",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Effects of waiting on the satisfaction with the service: Beyond objective time measures (International Journal of Research in Marketing)",
+   "autor": "Pruyn, A. & Smidts, A.",
+   "anio": "1998",
+   "huerfana": false
+  },
+  {
+   "id": "F-875",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Audiovisual aids in primary healthcare settings' waiting rooms. A systematic review (European Journal of General Practice)",
+   "autor": "Berkhout, C. et al.",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-876",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "Passive interventions in primary healthcare waiting rooms are effective in promoting healthy lifestyle behaviours: an integrative review (Au",
+   "autor": "Cass, S. J.; Ball, L. E.; Leveritt, M. D.",
+   "anio": "2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-877",
+   "type": "fuente",
+   "rigor": "A",
+   "titulo": "It's All about Timing: Captive Targeting through Mobile Ads (Journal of Advertising, DOI 10.1080/00913367.2023.2212010)",
+   "autor": "⚠️ autoría completa no verificada (línea de trabajo de Hong e Im, ICIS 2018)",
+   "anio": "2023",
+   "huerfana": false
+  },
+  {
+   "id": "F-878",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Revisión integrativa sobre la sala de espera como espacio de educación en salud (anales de evento, Universidade Federal da Fronteira Sul)",
+   "autor": "Quadros, A. I.; Kosinski, R.; Schmidt, C. L.",
+   "anio": "2017",
+   "huerfana": false
+  },
+  {
+   "id": "F-879",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Herramienta multimedia Monitor DM2 consultada en la sala de espera por pacientes con diabetes tipo 2 (Cirugía y Cirujanos)",
+   "autor": "IMSS (autores no verificados)",
+   "anio": "2018",
+   "huerfana": false
+  },
+  {
+   "id": "F-880",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Intervención educativa sobre infecciones respiratorias agudas en la sala de espera de un centro de salud",
+   "autor": "Revista Ciencia y Humanismo en la Salud (UADY; autores no verificados)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-881",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Campanhas em ambientes de cuidado incentivam ações, diz estudo",
+   "autor": "Meio & Mensagem",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-882",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Business case for digital signage in the waiting line · hospital patients prefer digital signage",
+   "autor": "Digital Signage Today (cita a Nielsen 2014, una red de hospitales de EE.UU. 2013 y Arbitron)",
+   "anio": "2013-2014",
+   "huerfana": false
+  },
+  {
+   "id": "F-883",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Pantallas digitales en sucursales bancarias: encuestas y casos (incluye Scotiabank)",
+   "autor": "DBSI, StrataCache/LEWIS, Reflect Systems (proveedores)",
+   "anio": "2014-2016",
+   "huerfana": false
+  },
+  {
+   "id": "F-884",
+   "type": "fuente",
+   "rigor": "E",
+   "titulo": "Casos de publicidad en sala de espera médica",
+   "autor": "PatientPoint (proveedor)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-885",
+   "type": "fuente",
+   "rigor": "C",
+   "titulo": "Tiempos de espera en consulta externa (repositorio UPCH)",
+   "autor": "Universidad Peruana Cayetano Heredia (tesis)",
+   "anio": "s.f.",
+   "huerfana": false
+  },
+  {
+   "id": "F-886",
+   "type": "fuente",
+   "rigor": "D",
+   "titulo": "Can digital signage make wait times less annoying?",
+   "autor": "RetailWire (encuesta encargada por un proveedor de pantallas)",
+   "anio": "s.f.",
+   "huerfana": false
   }
  ],
  "edges": [
@@ -13374,6 +13500,76 @@
    "s": "gestion-colas-atencion-presencial-seguros",
    "t": "F-872",
    "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-873",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-874",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-875",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-876",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-877",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-878",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-879",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-880",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-881",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-882",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-883",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-884",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-885",
+   "k": "cita"
+  },
+  {
+   "s": "gestion-colas-atencion-presencial-seguros",
+   "t": "F-886",
+   "k": "cita"
   }
  ],
  "meta": {
@@ -13655,14 +13851,14 @@
    },
    {
     "fecha": "2026-11-11",
-    "nuevas": 26,
-    "acumuladas": 871,
-    "AB": 14,
+    "nuevas": 40,
+    "acumuladas": 885,
+    "AB": 18,
     "rigor": {
-     "C": 4,
-     "A": 10,
-     "E": 3,
-     "D": 5,
+     "C": 9,
+     "A": 14,
+     "E": 5,
+     "D": 8,
      "B": 4
     }
    }
@@ -15270,20 +15466,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 871,
     "rigor": {
-     "B": 125,
-     "A": 303,
-     "C": 184,
-     "D": 182,
+     "B": 129,
+     "A": 313,
+     "C": 188,
+     "D": 187,
      "?": 15,
-     "E": 36
+     "E": 39
     },
-    "nodes": 20,
+    "nodes": 21,
     "outputs": 5,
-    "wikilinks": 124,
+    "wikilinks": 132,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "fuentes_citadas_en_nodes": 764,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15304,7 +15500,7 @@
      "cites": 274
     },
     "fecha": "2026-11-11",
-    "commit": "511088d",
+    "commit": "0d9a0c7",
     "fuente": "git"
    }
   ],
