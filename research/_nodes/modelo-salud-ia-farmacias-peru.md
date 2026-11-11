@@ -614,3 +614,4 @@ principio de diseño transversal del proyecto, no una coincidencia puntual.
   documento.
 - [[glosario-seguro-salud-peru|Glosario de seguro de salud en Perú]] — vocabulario base para la
   comunicación del flujo con usuarios finales.
+- [[gestion-colas-atencion-presencial-seguros|Gestión de colas en la atención presencial de aseguradoras]] — el triage en la puerta y la derivación de casos al canal remoto son el mismo problema de enrutar la demanda.
