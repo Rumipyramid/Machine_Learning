@@ -306,3 +306,6 @@
 | F-702 | 🟢 A | 2026-11-11 | Intuición 286 — sonreír a propósito sube poco la felicidad declarada y el método discreto no lo prueba; preguntar si el efecto funciona sin que el cliente sepa que lo miden (resúmenes y prensa; lectura débil) |
 | F-737 | 🟢 A | 2026-11-11 | Intuición 287 — elegir no crea ilusión de control en 17 experimentos; medir si el cliente cree que las opciones son distintas (resúmenes y fichas; lectura débil) |
 | F-703 | 🟢 A | 2026-11-11 | Intuición 288 — el peso del objeto no sube la importancia percibida (d = 0,03 en la réplica grande); no pagar por «peso» en materiales (resúmenes y atlas de réplicas; lectura débil) |
+| F-674 | 🟢 A | 2026-11-12 | Intuición 289 — una barra de progreso animada acorta la espera percibida; vale para esperas de segundos y se mide con abandono real (resúmenes y prensa; lectura débil) |
+| F-691 | 🟢 A | 2026-11-12 | Intuición 290 — que algo se active junto al resultado no prueba que lo cause; se prueba quitándolo (resumen y comentarios; lectura débil) |
+| F-572 | 🟢 A | 2026-11-12 | Intuición 291 — los sesgos de un modelo de lenguaje caducan con la versión; repetir la prueba en el modelo que se usará (resúmenes y fichas; lectura débil) |
