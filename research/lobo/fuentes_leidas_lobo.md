@@ -309,3 +309,6 @@
 | F-674 | 🟢 A | 2026-11-12 | Intuición 289 — una barra de progreso animada acorta la espera percibida; vale para esperas de segundos y se mide con abandono real (resúmenes y prensa; lectura débil) |
 | F-691 | 🟢 A | 2026-11-12 | Intuición 290 — que algo se active junto al resultado no prueba que lo cause; se prueba quitándolo (resumen y comentarios; lectura débil) |
 | F-572 | 🟢 A | 2026-11-12 | Intuición 291 — los sesgos de un modelo de lenguaje caducan con la versión; repetir la prueba en el modelo que se usará (resúmenes y fichas; lectura débil) |
+| F-685 | 🟢 A | 2026-11-13 | Intuición 292 — un promedio puede esconder dos grupos estables; mirar la distribución y el formato de respuesta antes de usarlo (resumen y fichas; lectura débil) |
+| F-591 | 🟢 A | 2026-11-13 | Intuición 293 — un catálogo de usos de IA sirve de mapa para pilotos, no de prueba de ahorro; mirar la fecha (resúmenes y fichas; lectura débil) |
+| F-577 | 🟢 A | 2026-11-13 | Intuición 294 — el puntaje de un modelo no dice el mecanismo; cambiar la pregunta para ver si falla por cautela o acierta por sesgo (resúmenes y prensa; lectura débil) |
