@@ -312,3 +312,6 @@
 | F-685 | 🟢 A | 2026-11-13 | Intuición 292 — un promedio puede esconder dos grupos estables; mirar la distribución y el formato de respuesta antes de usarlo (resumen y fichas; lectura débil) |
 | F-591 | 🟢 A | 2026-11-13 | Intuición 293 — un catálogo de usos de IA sirve de mapa para pilotos, no de prueba de ahorro; mirar la fecha (resúmenes y fichas; lectura débil) |
 | F-577 | 🟢 A | 2026-11-13 | Intuición 294 — el puntaje de un modelo no dice el mecanismo; cambiar la pregunta para ver si falla por cautela o acierta por sesgo (resúmenes y prensa; lectura débil) |
+| F-748 | 🟢 A | 2026-11-14 | Intuición 295 — atar un producto climático solo a las enfermedades con vínculo probado con El Niño; el pronóstico estacional sirve de disparador (resumen y fichas; lectura débil) |
+| F-747 | 🟢 A | 2026-11-14 | Intuición 296 — el costo de salud de El Niño se mide por día y por grado con datos de un hospital (+8% por °C en Lima); la anomalía pesa más que la temperatura (resumen y prensa; lectura débil) |
+| F-564 | 🟢 A | 2026-11-14 | Intuición 297 — cambiar la instrucción para ver si un modelo imita la decisión o recuerda el examen (nota de la revista y prensa; lectura débil) |
