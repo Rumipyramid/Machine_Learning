@@ -315,3 +315,6 @@
 | F-748 | 🟢 A | 2026-11-14 | Intuición 295 — atar un producto climático solo a las enfermedades con vínculo probado con El Niño; el pronóstico estacional sirve de disparador (resumen y fichas; lectura débil) |
 | F-747 | 🟢 A | 2026-11-14 | Intuición 296 — el costo de salud de El Niño se mide por día y por grado con datos de un hospital (+8% por °C en Lima); la anomalía pesa más que la temperatura (resumen y prensa; lectura débil) |
 | F-564 | 🟢 A | 2026-11-14 | Intuición 297 — cambiar la instrucción para ver si un modelo imita la decisión o recuerda el examen (nota de la revista y prensa; lectura débil) |
+| F-688 | 🟢 A | 2026-11-15 | Intuición 298 — un efecto robusto en el promedio puede ser inútil para clasificar personas; pedir fiabilidad test-retest antes de segmentar (resumen y fichas; lectura débil) |
+| F-699 | 🟢 A | 2026-11-15 | Intuición 299 — la sonrisa forzada solo funcionó sin cámara; preguntar si un efecto sobrevive cuando el cliente se sabe observado (resúmenes e informe de réplica; lectura débil) |
+| F-573 | 🟢 A | 2026-11-15 | Intuición 300 — un modelo de lenguaje tiene sesgos humanos de decisión; sirve para ensayar mensajes y obliga a auditar al agente (resumen, PubMed y preprint; lectura débil) |
