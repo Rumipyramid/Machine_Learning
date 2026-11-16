@@ -318,3 +318,6 @@
 | F-688 | 🟢 A | 2026-11-15 | Intuición 298 — un efecto robusto en el promedio puede ser inútil para clasificar personas; pedir fiabilidad test-retest antes de segmentar (resumen y fichas; lectura débil) |
 | F-699 | 🟢 A | 2026-11-15 | Intuición 299 — la sonrisa forzada solo funcionó sin cámara; preguntar si un efecto sobrevive cuando el cliente se sabe observado (resúmenes e informe de réplica; lectura débil) |
 | F-573 | 🟢 A | 2026-11-15 | Intuición 300 — un modelo de lenguaje tiene sesgos humanos de decisión; sirve para ensayar mensajes y obliga a auditar al agente (resumen, PubMed y preprint; lectura débil) |
+| F-718 | 🟢 A | 2026-11-16 | Intuición 301 — se recuerda el peor momento y el cierre, no la duración; diseñar el cierre del siniestro (resúmenes y fichas; lectura débil) |
+| F-544 | 🟢 A | 2026-11-16 | Intuición 302 — la muestra sintética imita al subgrupo promedio; probar la fidelidad en cada segmento (resumen y fichas; lectura débil) |
+| F-654 | 🟢 A | 2026-11-16 | Intuición 303 — la desobediencia se juega en el primer pedido de parar; en retención, atender el primer reclamo (resumen y secundarias; lectura débil) |
