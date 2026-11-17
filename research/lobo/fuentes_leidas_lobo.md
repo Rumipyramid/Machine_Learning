@@ -321,3 +321,6 @@
 | F-718 | 🟢 A | 2026-11-16 | Intuición 301 — se recuerda el peor momento y el cierre, no la duración; diseñar el cierre del siniestro (resúmenes y fichas; lectura débil) |
 | F-544 | 🟢 A | 2026-11-16 | Intuición 302 — la muestra sintética imita al subgrupo promedio; probar la fidelidad en cada segmento (resumen y fichas; lectura débil) |
 | F-654 | 🟢 A | 2026-11-16 | Intuición 303 — la desobediencia se juega en el primer pedido de parar; en retención, atender el primer reclamo (resumen y secundarias; lectura débil) |
+| F-735 | 🟢 A | 2026-11-17 | Intuición 304 — la impaciencia medida mezcla desconfianza en el pago, liquidez y preferencia pura; separar antes de segmentar o tarifar (resumen y fichas; lectura débil) |
+| F-683 | 🟢 A | 2026-11-17 | Intuición 305 — la mitad no nota el cambio de interlocutor; en el traspaso bot-humano se protege el contexto, no la cara (resumen y reseñas; lectura débil) |
+| F-690 | 🟢 A | 2026-11-17 | Intuición 306 — la cognición encarnada son seis tesis con respaldo desigual; la de descarga en el entorno es la útil (resumen y copia en PhilArchive; lectura débil) |
