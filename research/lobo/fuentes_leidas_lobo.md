@@ -324,3 +324,6 @@
 | F-735 | 🟢 A | 2026-11-17 | Intuición 304 — la impaciencia medida mezcla desconfianza en el pago, liquidez y preferencia pura; separar antes de segmentar o tarifar (resumen y fichas; lectura débil) |
 | F-683 | 🟢 A | 2026-11-17 | Intuición 305 — la mitad no nota el cambio de interlocutor; en el traspaso bot-humano se protege el contexto, no la cara (resumen y reseñas; lectura débil) |
 | F-690 | 🟢 A | 2026-11-17 | Intuición 306 — la cognición encarnada son seis tesis con respaldo desigual; la de descarga en el entorno es la útil (resumen y copia en PhilArchive; lectura débil) |
+| F-671 | 🟢 A | 2026-11-18 | Intuición 307 — lo distinto se siente más largo en milisegundos; no estirar el efecto a esperas de días; dos explicaciones rivales piden jugadas distintas (resumen y fichas; lectura débil) |
+| F-804 | 🟢 A | 2026-11-18 | Intuición 308 — el programa de lealtad compra conducta, no actitud; la renovación comprada no repara la desconfianza (resumen; texto cerrado; lectura débil) |
+| F-651 | 🟢 A | 2026-11-18 | Intuición 309 — una réplica cortada en un punto seguro mide un indicador temprano y presta el resto; cuidado con pilotos que proyectan la venta desde el clic (resumen, nota APA y comentarios; lectura débil) |
