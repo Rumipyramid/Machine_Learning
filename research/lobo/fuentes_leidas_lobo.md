@@ -327,3 +327,6 @@
 | F-671 | 🟢 A | 2026-11-18 | Intuición 307 — lo distinto se siente más largo en milisegundos; no estirar el efecto a esperas de días; dos explicaciones rivales piden jugadas distintas (resumen y fichas; lectura débil) |
 | F-804 | 🟢 A | 2026-11-18 | Intuición 308 — el programa de lealtad compra conducta, no actitud; la renovación comprada no repara la desconfianza (resumen; texto cerrado; lectura débil) |
 | F-651 | 🟢 A | 2026-11-18 | Intuición 309 — una réplica cortada en un punto seguro mide un indicador temprano y presta el resto; cuidado con pilotos que proyectan la venta desde el clic (resumen, nota APA y comentarios; lectura débil) |
+| F-709 | 🟢 A | 2026-11-19 | Intuición 310 — si los defensores de un efecto diseñan la prueba y da cero, no es palanca de diseño; la fatiga declarada sí parece moderar (resúmenes y fichas; lectura débil) |
+| F-574 | 🟢 A | 2026-11-19 | Intuición 311 — un modelo de lenguaje se equivoca distinto que una persona; clasificar sus errores antes de usarlo para simular clientes (resumen y prensa; lectura débil) |
+| F-704 | 🟢 A | 2026-11-19 | Intuición 312 — antes de culpar a la muestra, verificar que el efecto exista; las interacciones rasgo-tratamiento se caen primero (resúmenes y reseña; lectura débil) |
