@@ -330,3 +330,6 @@
 | F-709 | 🟢 A | 2026-11-19 | Intuición 310 — si los defensores de un efecto diseñan la prueba y da cero, no es palanca de diseño; la fatiga declarada sí parece moderar (resúmenes y fichas; lectura débil) |
 | F-574 | 🟢 A | 2026-11-19 | Intuición 311 — un modelo de lenguaje se equivoca distinto que una persona; clasificar sus errores antes de usarlo para simular clientes (resumen y prensa; lectura débil) |
 | F-704 | 🟢 A | 2026-11-19 | Intuición 312 — antes de culpar a la muestra, verificar que el efecto exista; las interacciones rasgo-tratamiento se caen primero (resúmenes y reseña; lectura débil) |
+| F-803 | 🟢 A | 2026-11-20 | Intuición 313 — el avance regalado acelera la meta si es creíble y proporcional; tras el canje, reabrir meta (ficha y resúmenes; lectura débil) |
+| F-719 | 🟢 A | 2026-11-20 | Intuición 314 — la repetición construye simpatía, no comprensión; no cierra la desconfianza (resúmenes y secundarias; lectura débil) |
+| F-656 | 🟢 A | 2026-11-20 | Intuición 315 — quien no cree el escenario obedece más; una prueba sin nada en juego infla la aceptación (resúmenes y prensa; lectura débil) |
