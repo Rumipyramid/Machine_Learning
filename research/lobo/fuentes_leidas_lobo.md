@@ -333,3 +333,6 @@
 | F-803 | 🟢 A | 2026-11-20 | Intuición 313 — el avance regalado acelera la meta si es creíble y proporcional; tras el canje, reabrir meta (ficha y resúmenes; lectura débil) |
 | F-719 | 🟢 A | 2026-11-20 | Intuición 314 — la repetición construye simpatía, no comprensión; no cierra la desconfianza (resúmenes y secundarias; lectura débil) |
 | F-656 | 🟢 A | 2026-11-20 | Intuición 315 — quien no cree el escenario obedece más; una prueba sin nada en juego infla la aceptación (resúmenes y prensa; lectura débil) |
+| F-813 | 🟢 A | 2026-11-21 | Intuición 316 — bajar de nivel cuesta más lealtad de la que gana subir; diseñar la salida de los niveles antes de lanzarlos (resúmenes y citas; lectura débil) |
+| F-808 | 🟢 A | 2026-11-21 | Intuición 317 — un push puede subir más el canje que la venta; medir venta neta del costo del premio, por segmento (resumen oficial; lectura débil) |
+| F-710 | 🟢 A | 2026-11-21 | Intuición 318 — la fama de un estudio mide novedad, no solidez; pedir muestra y réplica antes que la revista (reseñas y prensa; lectura débil) |
