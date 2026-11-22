@@ -336,3 +336,6 @@
 | F-813 | 🟢 A | 2026-11-21 | Intuición 316 — bajar de nivel cuesta más lealtad de la que gana subir; diseñar la salida de los niveles antes de lanzarlos (resúmenes y citas; lectura débil) |
 | F-808 | 🟢 A | 2026-11-21 | Intuición 317 — un push puede subir más el canje que la venta; medir venta neta del costo del premio, por segmento (resumen oficial; lectura débil) |
 | F-710 | 🟢 A | 2026-11-21 | Intuición 318 — la fama de un estudio mide novedad, no solidez; pedir muestra y réplica antes que la revista (reseñas y prensa; lectura débil) |
+| F-571 | 🟢 A | 2026-11-22 | Intuición 319 — un modelo más coherente que las personas es mal espejo del cliente; probarlo con el encuadre real del precio (resumen y columna VoxEU; lectura débil) |
+| F-799 | 🟢 A | 2026-11-22 | Intuición 320 — si bajar el precio no masifica, el freno es confianza y liquidez; invertir en el canal confiable y en el momento de cobro (resúmenes y reporte NY Fed; lectura débil) |
+| F-792 | 🟢 A | 2026-11-22 | Intuición 321 — el seguro protege comida en el pobre y patrimonio en el menos pobre; dos promesas, y no citar cifras de borrador (resúmenes NBER; lectura débil) |
