@@ -339,3 +339,6 @@
 | F-571 | 🟢 A | 2026-11-22 | Intuición 319 — un modelo más coherente que las personas es mal espejo del cliente; probarlo con el encuadre real del precio (resumen y columna VoxEU; lectura débil) |
 | F-799 | 🟢 A | 2026-11-22 | Intuición 320 — si bajar el precio no masifica, el freno es confianza y liquidez; invertir en el canal confiable y en el momento de cobro (resúmenes y reporte NY Fed; lectura débil) |
 | F-792 | 🟢 A | 2026-11-22 | Intuición 321 — el seguro protege comida en el pobre y patrimonio en el menos pobre; dos promesas, y no citar cifras de borrador (resúmenes NBER; lectura débil) |
+| F-598 | 🟢 A | 2026-11-23 | Intuición 322 — el agente de IA aprueba el 99,8% de los controles de atención; verificar que respondió una persona antes de decidir con una encuesta online (resumen y comentarios; lectura débil) |
+| F-653 | 🟢 A | 2026-11-23 | Intuición 323 — la obediencia promedio de Milgram fue 43,6%, no 65%; buscar el rango entre condiciones antes de citar la cifra icónica (resumen y PMC; lectura débil) |
+| F-575 | 🟢 A | 2026-11-23 | Intuición 324 — resolver una prueba de «leer la mente» no prueba comprensión; probar al agente con casos reformulados (PubMed, preprint y revisiones; lectura débil) |
