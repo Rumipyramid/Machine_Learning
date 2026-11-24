@@ -342,3 +342,6 @@
 | F-598 | 🟢 A | 2026-11-23 | Intuición 322 — el agente de IA aprueba el 99,8% de los controles de atención; verificar que respondió una persona antes de decidir con una encuesta online (resumen y comentarios; lectura débil) |
 | F-653 | 🟢 A | 2026-11-23 | Intuición 323 — la obediencia promedio de Milgram fue 43,6%, no 65%; buscar el rango entre condiciones antes de citar la cifra icónica (resumen y PMC; lectura débil) |
 | F-575 | 🟢 A | 2026-11-23 | Intuición 324 — resolver una prueba de «leer la mente» no prueba comprensión; probar al agente con casos reformulados (PubMed, preprint y revisiones; lectura débil) |
+| F-694 | 🟢 A | 2026-11-24 | Intuición 325 — la compresa caliente no vuelve generosa a la gente; pedir réplicas directas, no conceptuales, antes de invertir en «ambiente cálido» (resumen y comentarios; lectura débil) |
+| F-724 | 🟢 A | 2026-11-24 | Intuición 326 — la aversión a la pérdida se achica con el conocimiento del atributo; encuadrar en pérdidas rinde más con el novato y el mayor (resumen y nota de prensa; lectura débil) |
+| F-666 | 🟢 A | 2026-11-24 | Intuición 327 — una espera se juzga contra las esperas previas; comunicar consistencia, no el récord (resumen y PMC; lectura débil) |
