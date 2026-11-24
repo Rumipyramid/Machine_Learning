@@ -1,0 +1,453 @@
+<title>El Niño y las personas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: instrumento de medición de Mu — cabecera MU gigante, secciones numeradas con barra invertida, rejilla de celdas que se tocan, un solo naranja de alerta. */
+:root{--bg:#fff;--fg:#000;--acc:#ff3b00;--g2:#666;--g3:#bbb;--ink-on-acc:#000;
+  --f-disp:Impact,'Arial Black','Helvetica Neue',sans-serif;--f-mono:ui-monospace,Menlo,Consolas,'Liberation Mono',monospace}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#000;--fg:#fff;--acc:#ff5a26;--g2:#999;--g3:#444;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#000;--fg:#fff;--acc:#ff5a26;--g2:#999;--g3:#444;color-scheme:dark}
+*{box-sizing:border-box;border-radius:0}
+body{background:var(--bg);color:var(--fg);font:14px/1.45 var(--f-mono)}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 24px;max-width:1180px;margin:0 auto}
+header{border-bottom:8px solid var(--fg);padding-block:16px 12px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px}
+h1{font:900 clamp(56px,14vw,128px)/.85 var(--f-disp);margin:0;letter-spacing:-.04em}
+.hd{display:grid;gap:4px;min-width:0}
+.hd p{margin:0;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+.hd .q{font:900 clamp(20px,3.4vw,30px)/1.05 var(--f-disp);text-transform:none;letter-spacing:.01em;text-wrap:balance}
+section{border-bottom:8px solid var(--fg)}
+h2{margin:0;padding:6px 12px;background:var(--fg);color:var(--bg);font:900 20px/1.2 var(--f-disp);letter-spacing:.04em;text-wrap:balance}
+h2 .num{color:var(--acc);margin-right:10px}
+h3{margin:18px 0 6px;font-size:12px;text-transform:uppercase;border-bottom:2px solid var(--fg);letter-spacing:.03em}
+.lead{font-size:15px;max-width:78ch;margin:12px 0}
+.lead b{background:var(--acc);color:var(--ink-on-acc);padding:0 3px}
+p{max-width:78ch;margin:8px 0}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));margin:12px 0 4px 1px}
+.c{border:2px solid var(--fg);margin:-1px 0 0 -1px;padding:10px 12px;min-width:0}
+.c.w{background:var(--acc);color:var(--ink-on-acc)}.c.w .sub{color:var(--ink-on-acc)}
+.big{font:900 44px/1 var(--f-disp);letter-spacing:-.01em}
+.big small{font-size:18px;color:var(--g2)}.c.w .big small{color:var(--ink-on-acc)}
+.c.w .r{border-color:var(--ink-on-acc)}
+.lab{font-weight:700;font-size:12px;text-transform:uppercase;margin-top:6px}
+.sub{font-size:11px;color:var(--g2);margin-top:4px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:0 28px}
+.cols>div{min-width:0}
+ul{margin:6px 0;padding:0;list-style:none}
+li{border-left:8px solid var(--g3);padding:3px 10px;margin:4px 0;font-size:13px}
+li.ko{border-color:var(--acc)}li.ok{border-color:var(--fg)}
+.tw{overflow-x:auto;margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:12px;min-width:620px}
+td,th{border:2px solid var(--fg);padding:5px 7px;text-align:left;vertical-align:top}
+th{background:var(--fg);color:var(--bg);text-transform:uppercase;font-size:11px}
+td.k{font-weight:700;white-space:nowrap}
+.r{display:inline-block;border:2px solid var(--fg);font-weight:700;font-size:10px;line-height:1;padding:2px 4px;vertical-align:1px}
+.r.a{background:var(--fg);color:var(--bg)}
+.f{font-size:11px;color:var(--g2);white-space:nowrap}
+.st{font-weight:900}.st.ko{color:var(--acc)}
+svg{width:100%;height:auto;display:block;max-width:760px}
+.t{font:11px var(--f-mono);fill:var(--fg)}.t.b{font-weight:700}.t.s{fill:var(--g2)}
+.bar-f{fill:var(--fg)}.bar-a{fill:var(--acc)}.ax{stroke:var(--fg);stroke-width:2}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));margin:12px 0 4px 1px}
+.two .c h4{margin:0 0 6px;font:900 22px/1 var(--f-disp);letter-spacing:.02em}
+.role{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));margin:12px 0 4px 1px}
+.role .c .n{font:900 34px/1 var(--f-disp);color:var(--acc)}
+.role .c h4{margin:4px 0 6px;font-size:13px;text-transform:uppercase}
+.role .c p{font-size:12px;margin:4px 0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:11px;color:var(--g2);margin:10px 0}
+.legend span{display:flex;gap:6px;align-items:center}
+details.dd{margin:14px 0 4px;border:2px solid var(--fg)}
+details.dd summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:6px 10px;font-weight:700;font-size:12px;text-transform:uppercase}
+details.dd summary::-webkit-details-marker{display:none}
+details.dd summary:before{content:"▸";font-size:14px;width:1em}
+details.dd[open] summary:before{content:"▾"}
+details.dd summary span{font-weight:400;color:var(--g2);text-transform:none}
+details.dd summary:hover,details.dd summary:focus-visible{background:var(--fg);color:var(--bg);outline:none}
+details.dd summary:hover span,details.dd summary:focus-visible span{color:var(--bg)}
+details.dd[open] summary{border-bottom:2px solid var(--fg)}
+details.dd .ddb{padding:8px;overflow-x:auto}
+details.dd table{min-width:760px}
+a{color:inherit;text-decoration-thickness:2px;text-underline-offset:2px}
+a:hover,a:focus-visible{background:var(--acc);color:var(--ink-on-acc);outline:none}
+code{background:var(--g3);padding:0 3px}
+.note{font-size:11px;color:var(--g2)}
+footer{font-size:11px;color:var(--g2);padding-block:10px;border-top:2px solid var(--fg)}
+.pad{padding:4px 0 14px}
+</style>
+
+<div class="wrap">
+
+<header>
+  <h1>MU</h1>
+  <div class="hd">
+    <p>Informe de investigación · /trinidad (empírica + social + negocio) · 24 nov 2026</p>
+    <p class="q">El Niño en la vida de las personas, y el papel de la empresa privada</p>
+    <p>Fuente de verdad: node <code>fenomeno-el-nino-impacto-personas</code> v1.2 · 93 fuentes del ledger (F-742 a F-801, F-847 a F-879)</p>
+  </div>
+</header>
+
+<!-- 00 -->
+<section>
+<h2><span class="num">00</span>CONCLUSIÓN — ¿QUÉ LE HACE EL NIÑO A UNA PERSONA?</h2>
+<div class="pad">
+<p class="lead">El Niño golpea en <b>dos tiempos</b>. El corto es visible: la casa inundada, el hambre, la diarrea y el dengue, el precio de la comida y el miedo. El largo casi nadie lo ve: <b>el niño concebido ese verano mide menos y aprende menos una década después</b>, y la familia sale de la pobreza más tarde o no sale. Lo que decide cuánto daño hace no es la lluvia: es la <b>pobreza previa del hogar</b>.</p>
+<div class="g">
+  <div class="c w"><div class="big">9 de 10</div><div class="lab">Madres con hambre severa</div><div class="sub">Hogares inundados de Piura, 3 meses después de 2017. F-751</div></div>
+  <div class="c"><div class="big">+8,3<small> pp</small></div><div class="lab">Desnutrición crónica infantil</div><div class="sub">Niños expuestos entre el embarazo y los 2 años (México, 1998-99). F-746</div></div>
+  <div class="c"><div class="big">21×</div><div class="lab">Más riesgo de pobreza permanente</div><div class="sub">Hogar peruano que sufrió un desastre, frente a uno que no. F-754</div></div>
+  <div class="c"><div class="big">~7<small>%</small></div><div class="lab">Daño de 2017 cubierto por seguro</div><div class="sub">Sube a ~35% con otra base de daño: cifra en disputa. F-773</div></div>
+  <div class="c"><div class="big">11,2<small> M</small></div><div class="lab">Peruanos en casas precarias en zona de riesgo</div><div class="sub">768 distritos de riesgo alto de inundación (IPE, nov-2026). F-850</div></div>
+  <div class="c w"><div class="big">FEB 27</div><div class="lab">Magnitud extraordinaria hasta</div><div class="sub">Debilitamiento hasta julio de 2027 (ENFEN N.° 20-2026). F-847</div></div>
+</div>
+<div class="legend">
+  <span><span class="r a">A</span> académico revisado por pares</span>
+  <span><span class="r">B</span> oficial o documento de trabajo con método</span>
+  <span><span class="r">C</span> consultora o empresa con método propio</span>
+  <span><span class="r">D</span> prensa que cita a otros</span>
+  <span><span class="r">E</span> opinión sin método</span>
+</div>
+<p class="note">Las tres pistas se reportan por separado y no se mezclan: la solidez académica (A-B) no se suma a lo que dice la gente ni a lo que declaran las empresas.</p>
+</div>
+</section>
+
+<!-- 01 -->
+<section>
+<h2><span class="num">01</span>COYUNTURA — ¿DÓNDE ESTAMOS AL 24 DE NOVIEMBRE?</h2>
+<div class="pad">
+<p class="lead">Lo peor todavía no llega. Las lluvias fuertes recién empiezan en el norte y el golpe al ingreso agrícola caerá sobre todo en <b>2027</b>.</p>
+<ul>
+  <li class="ko"><b>Más largo de lo previsto.</b> El ENFEN mantiene la magnitud extraordinaria hasta febrero de 2027 y prevé lluvias sobre lo normal de noviembre a enero en la costa norte y central. Es la categoría de 1982-83 y 1997-98. <span class="r">B</span> <span class="f">F-847, F-780</span></li>
+  <li class="ko"><b>El año ya tuvo muertos.</b> Entre enero y marzo de 2026, antes del pico, el COEN contó 58 fallecidos y 16.095 damnificados; un corte de INDECI de mediados de marzo da 92. Son cortes distintos: no se suman. <span class="r">D</span> <span class="f">F-848</span></li>
+  <li><b>Noviembre.</b> Tumbes sumaba 324 damnificados, 109 viviendas inhabitables y clases suspendidas al 6-nov. Rige un estado de emergencia de 60 días. No hay balance nacional consolidado del mes. <span class="r">D</span> <span class="f">F-849</span></li>
+  <li class="ko"><b>La vivienda es el punto débil.</b> 11,2 M de personas viven en casas con techo de calamina, estera o caña con barro en distritos de riesgo alto. Y 6 de cada 10 proyectos de drenaje pluvial (329 de 534) están abandonados o paralizados. <span class="r">C</span> <span class="f">F-850</span></li>
+  <li><b>Lima también está expuesta.</b> El Centro de Monitoreo de RIMAC ubica 116 distritos de Lima y Callao (65%) en riesgo alto o muy alto de inundación o huaico. <span class="r">C</span> <span class="f">F-851</span></li>
+  <li><b>La economía.</b> El BCRP estima que El Niño resta ~0,9 pp de crecimiento en 2026 y ~1,1 pp en 2027, con pesca −30,7%. Las agroexportaciones perderían US$1.498 M en 2026-27, sobre todo en 2027. <span class="r">C</span> <span class="f">F-782, F-852</span></li>
+</ul>
+</div>
+</section>
+
+<!-- 02 -->
+<section>
+<h2><span class="num">02</span>TIEMPO CORTO — ¿QUÉ VIVE UNA PERSONA EN LAS SEMANAS DEL GOLPE?</h2>
+<div class="pad">
+<p class="lead">La fase aguda es <b>devastadora y casi universal</b> en el hogar inundado. La mejor evidencia peruana es una cohorte de 179 madres de Piura, Castilla y Catacaos medida a los 3, 8 y 12 meses de 2017, con entrevistas en profundidad.</p>
+
+<svg viewBox="0 0 640 250" role="img" aria-labelledby="ch1t ch1d">
+  <title id="ch1t">Madres de Piura tras el Niño Costero de 2017</title>
+  <desc id="ch1d">Estrés postraumático: 38,1% a los 3 meses, 1,9% a los 8 meses y casi 0% a los 12. Inseguridad alimentaria severa: 90,0%, 31,8% y 13,1%.</desc>
+  <line class="ax" x1="30" y1="190" x2="610" y2="190"/>
+  <!-- escala: 1% = 1,5 px; base y=190 -->
+  <rect class="bar-a" x="60" y="132.85" width="48" height="57.15"/>
+  <rect class="bar-f" x="120" y="187.15" width="48" height="2.85"/>
+  <rect class="bar-f" x="180" y="189" width="48" height="1"/>
+  <text class="t b" x="84" y="126" text-anchor="middle">38,1%</text>
+  <text class="t b" x="144" y="180" text-anchor="middle">1,9%</text>
+  <text class="t b" x="204" y="180" text-anchor="middle">≈0%</text>
+  <rect class="bar-a" x="360" y="55" width="48" height="135"/>
+  <rect class="bar-f" x="420" y="142.3" width="48" height="47.7"/>
+  <rect class="bar-f" x="480" y="170.35" width="48" height="19.65"/>
+  <text class="t b" x="384" y="48" text-anchor="middle">90,0%</text>
+  <text class="t b" x="444" y="135" text-anchor="middle">31,8%</text>
+  <text class="t b" x="504" y="163" text-anchor="middle">13,1%</text>
+  <text class="t s" x="84" y="206" text-anchor="middle">3 meses</text>
+  <text class="t s" x="144" y="206" text-anchor="middle">8 meses</text>
+  <text class="t s" x="204" y="206" text-anchor="middle">12 meses</text>
+  <text class="t s" x="384" y="206" text-anchor="middle">3 meses</text>
+  <text class="t s" x="444" y="206" text-anchor="middle">8 meses</text>
+  <text class="t s" x="504" y="206" text-anchor="middle">12 meses</text>
+  <text class="t b" x="144" y="232" text-anchor="middle">ESTRÉS POSTRAUMÁTICO</text>
+  <text class="t b" x="444" y="232" text-anchor="middle">INSEGURIDAD ALIMENTARIA SEVERA</text>
+</svg>
+<p class="note">Culquichicón et al. 2024, PLOS Global Public Health <span class="r a">A</span> F-751. Muestra chica y sin grupo control: la recuperación psicológica es más rápida que la económica, pero no conviene generalizar.</p>
+
+<div class="cols">
+<div>
+<h3>Cuerpo y salud</h3>
+<ul>
+  <li><b>Diarrea infantil:</b> en Lima 1997-98, los ingresos diarios llegaron al 200% de lo normal; cada grado más de temperatura sumó ~8% de ingresos (57.331 niños). <span class="r a">A</span> <span class="f">F-747</span></li>
+  <li><b>Malaria:</b> 247.229 casos en 1998, con focos en Piura, Sullana y Tumbes. <span class="r">B</span> <span class="f">F-761</span></li>
+  <li><b>Dengue:</b> 445 muertes en 2023, el 65% en Piura y Lambayeque. <span class="r">B</span> <span class="f">F-766</span></li>
+  <li><b>Carga total:</b> el IGP ubica a 1997-98 como el evento con más años de vida saludable perdidos de los tres comparados. <span class="r">B</span> <span class="f">F-874</span></li>
+</ul>
+</div>
+<div>
+<h3>Casa, precios y miedo</h3>
+<ul>
+  <li><b>Casas:</b> 2017 dejó 283 mil damnificados, 1,43 M de afectados y 29.821 viviendas colapsadas; 1997-98, 531 mil damnificados. <span class="r">B</span> <span class="f">F-763, F-764</span></li>
+  <li><b>Comida:</b> el kilo de limón llegó a S/22 en 2023 (+70% en un mes) tras perderse el 90% de la floración en Piura. <span class="r">D</span> <span class="f">F-767, F-777</span></li>
+  <li><b>Lo que hace el hogar:</b> el 90% tomaría alguna acción; en el norte, la prioridad es reforzar la vivienda (78%). <span class="r">C</span> <span class="f">F-771</span></li>
+  <li><b>Miedo:</b> audios y videos falsos de huaicos circulan en cada temporada; el SENAMHI los desmiente. <span class="r">D</span> <span class="f">F-768</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 03 -->
+<section>
+<h2><span class="num">03</span>TIEMPO LARGO — ¿QUÉ QUEDA AÑOS DESPUÉS?</h2>
+<div class="pad">
+<p class="lead">El daño más caro <b>no aparece en ninguna cifra de damnificados</b>. Tres países, tres equipos y tres diseños independientes coinciden: la ventana de los primeros 1.000 días es donde El Niño deja la cicatriz más larga.</p>
+<div class="tw"><table>
+<tr><th>Estudio</th><th>Dónde y cuándo</th><th>Diseño</th><th>Hallazgo</th><th>Rigor</th></tr>
+<tr><td class="k">Danysh et al. 2014</td><td>Perú (Tumbes), 1997-98</td><td>Muestra aleatoria de 2.095 niños medidos 10 años después</td><td>La mejora de talla por cohorte cayó a menos de la mitad; en hogares con más probabilidad de inundación se volvió negativa. Menos masa magra.</td><td><span class="r a">A</span> <span class="f">F-744</span></td></tr>
+<tr><td class="k">Rosales-Rueda 2018</td><td>Ecuador, 1997-98</td><td>Cuasi-experimento por intensidad de inundación y trimestre de embarazo</td><td>Exposición en el 3.er trimestre: bajo peso al nacer y menor talla a los 5-7 años. En el 1.er trimestre: menor puntaje cognitivo.</td><td><span class="r a">A</span> <span class="f">F-745</span></td></tr>
+<tr><td class="k">Aguilar y Vicarelli 2022</td><td>México rural, 1998-99</td><td>Variación geográfica de la lluvia extrema</td><td>+8,3 pp de desnutrición crónica; 4-5 años después, 11-21% menos en lenguaje, memoria y razonamiento. El canal es la caída del ingreso y de la dieta.</td><td><span class="r a">A</span> <span class="f">F-746</span></td></tr>
+</table></div>
+<div class="cols">
+<div>
+<h3>Ingreso, pobreza y escuela</h3>
+<ul>
+  <li><b>Pobreza persistente:</b> un hogar que sufrió un desastre tiene 21 veces más probabilidad de ser "siempre pobre" que "nunca pobre". <span class="r">B</span> <span class="f">F-754</span></li>
+  <li><b>2017:</b> los hogares afectados pierden ingreso y gasto; amortiguan con donaciones de comida y ropa, no con seguro. <span class="r">B</span> <span class="f">F-752</span></li>
+  <li><b>Recorte en capital humano:</b> los hogares rurales de la costa norte gastaron menos en salud y educación tras 2017. <span class="r a">A</span> <span class="f">F-753</span></li>
+  <li><b>Escuela:</b> hay señal de más retraso escolar tras 2017, pero no una medición sólida de aprendizajes. <span class="r">C</span> <span class="f">F-872, F-873</span></li>
+</ul>
+</div>
+<div>
+<h3>Economía de un país</h3>
+<ul>
+  <li><b>Crecimiento perdido por más de 5 años</b> (hasta 14 en el trópico). Los Niños de 1982-83 y 1997-98 costaron US$4,1 y 5,7 billones de ingreso mundial no realizado. <span class="r a">A</span> <span class="f">F-742</span></li>
+  <li class="ko"><b>Sin réplica:</b> se buscó y no apareció ninguna réplica ni crítica publicada de ese estudio. <span class="f">F-742</span></li>
+  <li><b>Contrapeso:</b> el efecto es desigual; algunos países crecen. Y El Niño sube la inflación de alimentos. <span class="r a">A</span> <span class="f">F-743</span></li>
+  <li><b>Recesión de 2023:</b> −0,55%, la primera en 25 años fuera de la pandemia; pobreza de 27,5% a 29%. <span class="r">B</span> <span class="f">F-765</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 04 -->
+<section>
+<h2><span class="num">04</span>QUIÉN PAGA MÁS — ¿POR QUÉ EL MISMO AGUA NO DAÑA IGUAL?</h2>
+<div class="pad">
+<p class="lead">El clima detona; la vulnerabilidad decide. Los efectos son sistemáticamente mayores en hogares <b>pobres, rurales, informales y sin seguro</b>.</p>
+<ul>
+  <li class="ok"><b>Pobreza:</b> el humo de los incendios por sequía de El Niño en Indonesia (1997) se asoció con ~15.600 muertes fetales, infantiles y de niños, mucho más en las zonas pobres. <span class="r a">A</span> <span class="f">F-750</span></li>
+  <li class="ok"><b>Redes:</b> el capital social acelera la recuperación de las madres de Piura. <span class="r a">A</span> <span class="f">F-751</span></li>
+  <li class="ok"><b>Lectura histórica:</b> las sequías de 1876-1902 mataron entre 30 y 50 millones de personas con graneros llenos; lo que convirtió sequía en hambruna fue la política. <span class="r">Teórico</span> <span class="f">F-759</span></li>
+  <li><b>Lo que el norte también recuerda:</b> para las poblaciones del desierto, El Niño también es "año de abundancia": agua, pasto, algarrobo. <span class="r">C</span> <span class="f">F-760</span></li>
+  <li class="ko"><b>En disputa:</b> que El Niño duplique el riesgo de conflicto civil en el trópico (F-756) no resiste otros modelos (F-757). No usar como dato firme.</li>
+  <li class="ko"><b>Hueco:</b> la sequía aumenta la violencia de pareja en África (F-758), pero en Perú no hay medición: solo un trabajo de maestría con una cifra no interpretable (F-875) y una nota de UNFPA sobre falta de servicios para mujeres (F-876).</li>
+</ul>
+</div>
+</section>
+
+<!-- 05 -->
+<section>
+<h2><span class="num">05</span>LO QUE DICE LA GENTE — ¿CÓMO SE VIVE EN LA CONVERSACIÓN?</h2>
+<div class="pad">
+<p class="lead">Instalado en cada evento. El Niño se vive como <b>precio</b>, como <b>abandono del Estado</b> y como <b>miedo</b>. La conversación no ve el daño de largo plazo en los niños.</p>
+<div class="tw"><table>
+<tr><th>Narrativa</th><th>Qué circula</th><th>Validación social</th><th>Fuente</th></tr>
+<tr><td class="k">El limón como moneda</td><td>Kilo a S/22; el ministro sugirió cambiar el ceviche por pollo saltado; carteles de "aceptamos limones como pago"</td><td>Alta, humor masivo; prensa de Ecuador, Chile y España</td><td><span class="r">D</span> <span class="f">F-767</span></td></tr>
+<tr><td class="k">La reconstrucción como engaño</td><td>Obras de 2017 sin terminar; 32 obras con doble costo y triple plazo; 217 paralizadas</td><td>Alta en prensa regional; la Contraloría lo confirma</td><td><span class="r">D</span> <span class="f">F-769, F-865</span></td></tr>
+<tr><td class="k">Prevención que no se ejecuta</td><td>Solo 30% del presupuesto preventivo gastado en 2023</td><td>Alta: el contralor la puso en agenda</td><td><span class="r">D</span> <span class="f">F-770</span></td></tr>
+<tr><td class="k">Pánico</td><td>Audios de WhatsApp de huaicos no anunciados; videos viejos</td><td>Desmentida: es amplificación, no validación</td><td><span class="r">D</span> <span class="f">F-768</span></td></tr>
+<tr><td class="k">"El país no está preparado"</td><td>94% de economistas lo cree (IPE, 2026)</td><td>Opinión de expertos, no de la ciudadanía</td><td><span class="r">C</span> <span class="f">F-772</span></td></tr>
+</table></div>
+<p class="note">Pista más débil del informe: no se leyeron Reddit, X ni TikTok de primera mano; se reconstruye por la prensa que los cubrió. Una encuesta del IEP de agosto de 2026 sobre afectación y percepción de emergencias no se pudo abrir: es la lectura pendiente más valiosa.</p>
+</div>
+</section>
+
+<!-- 06 -->
+<section>
+<h2><span class="num">06</span>NEGOCIO Y SEGUROS — ¿QUIÉN ESTABA PROTEGIDO?</h2>
+<div class="pad">
+<p class="lead">El seguro protegió <b>activos de empresas</b>. El hogar se recuperó con donaciones, no con indemnizaciones.</p>
+<div class="g">
+  <div class="c"><div class="big">~15 mil</div><div class="lab">Siniestros por 2017</div><div class="sub">US$428 M pagados a jun-2018; US$660 M reservados. F-773</div></div>
+  <div class="c"><div class="big">89<small>%</small></div><div class="lab">Pagado por reaseguro extranjero</div><div class="sub">La retención local fue de ~11%. F-773</div></div>
+  <div class="c w"><div class="big">~3,3<small>%</small></div><div class="lab">Hogares con seguro de desastres</div><div class="sub">En un país sísmico e inundable. Node de seguros</div></div>
+  <div class="c w"><div class="big">~5<small>%</small></div><div class="lab">Empresas con seguro de desastres</div><div class="sub">Estimación de una aseguradora, sin método publicado. F-871</div></div>
+</div>
+<ul>
+  <li><b>Regulación nueva:</b> la SBS aprobó en setiembre de 2026 el primer reglamento de seguros paramétricos; permite contratarlos en beneficio de una colectividad. <span class="r">B</span> <span class="f">F-786</span></li>
+  <li><b>Demanda:</b> la compra de seguro de inundación sube ~10% el año siguiente al evento y se diluye. El seguro índice vendido al hogar no se masifica por desconfianza, falta de liquidez y baja saliencia. <span class="r a">A</span> <span class="f">F-791, F-799, F-800</span></li>
+  <li class="ko"><b>Cifra en disputa:</b> el "~7% asegurado" usa US$9.200 M de daño (APESEG). Con US$3.100 M (1,6% del PBI) sería ~35%. No citar el 7% sin esta advertencia. <span class="f">F-763, F-773</span></li>
+</ul>
+</div>
+</section>
+
+<!-- 07 -->
+<section>
+<h2><span class="num">07</span>LA EMPRESA PRIVADA — ¿AGRAVA, AMORTIGUA O AMBAS?</h2>
+<div class="pad">
+<p class="lead">Ambas. La empresa privada <b>decide buena parte del daño</b> en los tres tiempos: antes elige dónde se invierte y se construye; durante, de ella dependen el empleo, el crédito, el seguro y el abastecimiento; después reconstruye. Su aporte más valioso no es la donación visible: es <b>mantener a flote el ingreso y la liquidez del hogar</b> en las semanas del golpe, que es el canal por el que El Niño termina en hambre y en niños más bajos.</p>
+
+<h3>Seis papeles</h3>
+<div class="role">
+  <div class="c"><div class="n">1</div><h4>Transmite el golpe</h4><p>En Japón 2011, el daño llegó a empresas a 2 y 3 eslabones de distancia de la zona afectada <span class="r a">A</span> <span class="f">F-854</span>. En Perú, El Niño subió la morosidad de las agroexportadoras 1,29 pp (1,54 en mypes) desde el segundo mes <span class="r">B</span> <span class="f">F-856</span>. El agro emplea a 3 de cada 10 trabajadores de Piura <span class="r">D</span> <span class="f">F-853</span>.</p></div>
+  <div class="c"><div class="n">2</div><h4>Amortigua al hogar</h4><p>Dar liquidez antes del pico redujo 36% los días sin comer <span class="r a">A</span> <span class="f">F-793</span>. En 2017 se reprogramaron S/2.491 M en deudas de mypes en dos meses <span class="r">D</span> <span class="f">F-863</span> y las cajas postergaron S/600 M en cobros <span class="r">D</span> <span class="f">F-778</span>.</p></div>
+  <div class="c"><div class="n">3</div><h4>Responde en la emergencia</h4><p>En 2017, 500 t de alimentos vía la SNI y la Marina; Cencosud abrió 19 tiendas de acopio; Ferreycorp, S/4 M en maquinaria. No existe un total público <span class="r">D</span> <span class="f">F-866</span>. Walmart llegó antes que el Estado tras Katrina (caso con sesgo pro-mercado) <span class="r">C</span> <span class="f">F-861</span>.</p></div>
+  <div class="c"><div class="n">4</div><h4>Construye y reconstruye</h4><p>Obras por Impuestos se abrió para la reconstrucción: 140 proyectos por S/1.295 M en abril de 2017 <span class="r">D</span> <span class="f">F-864</span>. La reconstrucción en conjunto acumuló sobrecostos y obras paralizadas <span class="r">D</span> <span class="f">F-865</span>.</p></div>
+  <div class="c w"><div class="n" style="color:var(--ink-on-acc)">5</div><h4>Genera riesgo</h4><p>Las empresas hacen 70-85% de la inversión: deciden cuánto riesgo se acumula <span class="r">B</span> F-862. En Trujillo 2017, el daño vino sobre todo de urbanizar quebradas sin plan <span class="r">B</span> F-869; en Virú, 3.700 casas destruidas o inhabitables, muchas en terrenos de traficantes <span class="r">D</span> F-870.</p></div>
+  <div class="c"><div class="n">6</div><h4>Produce información</h4><p>El Centro de Monitoreo de RIMAC publicó la exposición de Lima y Callao <span class="r">C</span> <span class="f">F-851</span>. Los paramétricos pagan por índice, sin peritaje <span class="r">B</span> <span class="f">F-775, F-786</span>.</p></div>
+</div>
+
+<div class="cols">
+<div>
+<h3>Qué hace que una empresa amortigüe en vez de transmitir</h3>
+<ul>
+  <li class="ok"><b>La gestión pesa más que el tamaño.</b> En ~8.000 firmas de 33 países, las mejor gestionadas perdieron mucho menos empleo y capital tras un desastre y se adaptaron más. <span class="r">B</span> <span class="f">F-855</span></li>
+  <li class="ok"><b>Lo que más daña es la interrupción.</b> En Tanzania, las firmas sufrieron sobre todo por caminos, luz y agua cortados. En Perú, casi la mitad de la red vial está en distritos de riesgo alto. <span class="r">B</span> <span class="f">F-858, F-850</span></li>
+  <li class="ko"><b>La mype queda sola.</b> Resisten las firmas grandes y con financiamiento; casi todas las peruanas son mypes y ~5% tiene seguro. <span class="r">B</span> <span class="f">F-859, F-871</span></li>
+  <li class="ko"><b>Empleo:</b> los desastres cuestan ~90 M de empleos al año; en países pobres la pérdida duplica la de ingreso medio-alto y los informales son los últimos en recuperarse. <span class="r">B</span> <span class="f">F-857</span></li>
+</ul>
+</div>
+<div>
+<h3>Tensiones que no se resuelven</h3>
+<ul>
+  <li class="ko"><b>La agenda gremial protege a la empresa.</b> La CCL pide liquidez y alivio tributario, y también la suspensión perfecta de labores, que traslada el golpe al ingreso del hogar. <span class="r">D</span> <span class="f">F-868</span></li>
+  <li><b>Más ágil no es más eficaz.</b> No hay evidencia de que las obras ejecutadas por empresas rindieran mejor que las públicas. <span class="f">F-864, F-865</span></li>
+  <li><b>Especulación: lo que se dice y lo que se prueba.</b> Las alzas de 2023 se explican por la caída de la oferta. El INDECOPI no puede sancionar alzas, solo la concertación; la especulación es delito penal. <span class="r">B</span> <span class="f">F-867, F-777</span></li>
+  <li><b>La donación no cubre la recuperación.</b> La mitad de lo donado llega en dos semanas, y las empresas dan donde hay atención mediática o mercado. <span class="r">D</span> <span class="f">F-877, F-878</span></li>
+  <li><b>Lado positivo poco visible:</b> en 2017, el 89% de lo asegurado lo pagó el reaseguro internacional: capital privado que absorbió la pérdida. <span class="f">F-773</span></li>
+</ul>
+</div>
+</div>
+
+<h3>Qué dice la gente de las empresas</h3>
+<p>Poco. La conversación culpa al Estado y habla de precios. Las empresas aparecen con dos caras: la solidaridad visible de #UnaSolaFuerza en 2017 (F-866) y la culpa estructural que solo plantean medios militantes (F-879, <span class="r">E</span>). No se encontró conversación sobre reclamos a aseguradoras por siniestros de 2026.</p>
+
+<h3>Qué recomienda la evidencia a una empresa (de más a menos sólido)</h3>
+<div class="tw"><table>
+<tr><th>#</th><th>Acción</th><th>Por qué</th><th>Respaldo</th></tr>
+<tr><td class="k">1</td><td>Proteger la liquidez del hogar en las semanas del golpe, y si se puede antes: anticipar sueldos, reprogramar sin penalizar, seguro colectivo que pague rápido</td><td>Es lo que la evidencia más sólida conecta con menos hambre y menos daño infantil</td><td><span class="r a">A</span> <span class="f">F-793, F-746, F-752</span></td></tr>
+<tr><td class="k">2</td><td>Mantener la operación y la cadena: proveedores y logística alternativos</td><td>La continuidad del negocio es empleo y abastecimiento</td><td><span class="r a">A</span> <span class="f">F-854, F-855, F-858</span></td></tr>
+<tr><td class="k">3</td><td>No financiar ni construir riesgo: incluir la exposición a inundación en crédito, inversión inmobiliaria y ubicación de plantas</td><td>La inversión privada decide cuánto riesgo se acumula</td><td><span class="r">B</span> <span class="f">F-862, F-869</span></td></tr>
+<tr><td class="k">4</td><td>Cuidar a gestantes y niños pequeños de la planilla y de la cadena agrícola</td><td>Es la ventana donde el daño dura décadas</td><td><span class="r a">A</span> <span class="f">F-744, F-745, F-746</span></td></tr>
+<tr><td class="k">5</td><td>Donar para la recuperación, no solo para la emergencia, y publicar las cifras</td><td>La recuperación larga recibe poco dinero y poca atención</td><td><span class="r">D</span> <span class="f">F-877, F-878</span></td></tr>
+<tr><td class="k">6</td><td>Abastecer y ser transparente con los precios</td><td>Reduce el miedo y el ruido de especulación</td><td><span class="r">B</span> <span class="f">F-867, F-768</span></td></tr>
+</table></div>
+<p class="note">Para RIMAC (derivado, no evidencia): su estudio de exposición de Lima y Callao es un bien público que pocas empresas producen. La recomendación 1 coincide con lo que ya proponía el informe de octubre: proteger la cartera de las microfinancieras y ofrecer un seguro colectivo de liquidez para hogares a través de socios (cajas, empleadores), no vendiendo seguro índice al hogar directo.</p>
+</div>
+</section>
+
+<!-- 08 -->
+<section>
+<h2><span class="num">08</span>SÍNTESIS — ¿DÓNDE COINCIDEN Y DÓNDE CHOCAN LAS TRES PISTAS?</h2>
+<div class="pad">
+<div class="two">
+  <div class="c"><h4>COINCIDEN</h4>
+    <ul>
+      <li class="ok"><b>La vulnerabilidad previa decide el daño.</b> La academia lo mide, la gente lo narra como abandono y los números de seguros lo confirman por omisión.</li>
+      <li class="ok"><b>El norte costero es el epicentro humano</b> (Tumbes, Piura, Lambayeque) en todos los eventos y en las tres pistas.</li>
+      <li class="ok"><b>El hueco de protección es del hogar y de la mype</b>, no de la gran empresa.</li>
+    </ul>
+  </div>
+  <div class="c"><h4>CHOCAN</h4>
+    <ul>
+      <li class="ko"><b>Visible contra invisible.</b> La conversación y el negocio miran casas, precios y siniestros. La evidencia dice que el daño más caro es lento: talla, aprendizaje y crecimiento perdidos. Nadie asegura ni comenta ese daño.</li>
+      <li class="ko"><b>Donación contra recuperación.</b> Lo que la empresa hace más visible (donar en la emergencia) no es lo que la evidencia más respalda (sostener el ingreso del hogar).</li>
+      <li class="ko"><b>Cifras de daño de 2017 incompatibles:</b> US$3.100 M frente a US$9.200 M. Sin resolver.</li>
+    </ul>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- 09 -->
+<section>
+<h2><span class="num">09</span>LO QUE NO SE SABE — ¿QUÉ SIGUE ABIERTO?</h2>
+<div class="pad">
+<div class="tw"><table>
+<tr><th>Pregunta</th><th>Estado</th><th>Qué haría falta</th></tr>
+<tr><td>¿Cuánto daño dejó 2017 en los niños concebidos ese año?</td><td class="st ko">✗ Sin medir</td><td>Seguimiento de la cohorte de 2017 en el norte</td></tr>
+<tr><td>¿Aumenta la violencia de pareja tras las inundaciones en Perú?</td><td class="st ko">✗ Sin medir</td><td>Cruce ENDES con exposición a inundación</td></tr>
+<tr><td>¿Cuántas personas murieron en 1997-98?</td><td class="st ko">✗ Sin cifra oficial consolidada</td><td>Informes históricos de INDECI o MINSA/OPS</td></tr>
+<tr><td>¿Se sostiene la pérdida de crecimiento de largo plazo?</td><td class="st ko">✗ Sin réplica</td><td>Réplica independiente del estudio de <i>Science</i></td></tr>
+<tr><td>¿Cuántos empleos perdieron las empresas en 2017 y 2023?</td><td class="st ko">✗ Sin estudio peruano</td><td>Planillas (SUNAT) o ENAHO con exposición</td></tr>
+<tr><td>¿Cuánto donaron las empresas en 2017?</td><td class="st ko">✗ Sin total público</td><td>Balance de gremios o de la campaña</td></tr>
+<tr><td>¿Cómo vivió la gente las emergencias de 2026?</td><td class="st">◐ Pendiente de lectura</td><td>Encuesta del IEP de agosto de 2026 (sitio no accesible)</td></tr>
+<tr><td>¿Afectó 2017 los aprendizajes?</td><td class="st">◐ Señal débil</td><td>Evaluación censal comparada (en 2017 no se aplicó)</td></tr>
+</table></div>
+<p class="note">Varias cifras de 2026 vienen de prensa que cita fuentes oficiales, gremios o empresas, y cambiarán semana a semana. Algunas fuentes académicas se leyeron por resumen; cada caso está anotado en el ledger.</p>
+</div>
+</section>
+
+<!-- 10 -->
+<section>
+<h2><span class="num">10</span>FUENTES — ¿DE DÓNDE SALE CADA CIFRA?</h2>
+<div class="pad">
+<details class="dd"><summary>Fuentes citadas en este informe <span>71 fichas del ledger del proyecto, con su rigor y enlace</span></summary>
+<div class="ddb"><table>
+<tr><th>ID</th><th>Autor</th><th>Año</th><th>Título</th><th>Rigor</th><th>Enlace</th></tr>
+<tr><td class="k">F-742</td><td>Callahan, C. W. &amp; Mankin, J. S. (Dartmouth)</td><td>2023</td><td>Persistent effect of El Niño on global economic growth (Science)</td><td><span class="r a">A</span></td><td><a href="https://bibliotheque.meteo.fr/pub/DOC00056038-persistent-effect-nino-global-economic-growth.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-743</td><td>Mohaddes, K.; Cashin, P.; Raissi, M.</td><td>2017</td><td>Fair weather or foul? The macroeconomic effects of El Niño (Journal of International Economics)</td><td><span class="r a">A</span></td><td><a href="https://www.imf.org/external/pubs/ft/fandd/2016/03/cashin.htm" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-744</td><td>Danysh, H. E.; Gilman, R. H.; Wells, J. C. K.; Pan, W. K.; Zaitchik…</td><td>2014</td><td>El Niño adversely affected childhood stature and lean mass in northern Peru (Climate Change Responses, BMC)</td><td><span class="r a">A</span></td><td><a href="https://doi.org/10.1186/s40665-014-0007-z" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-745</td><td>Rosales-Rueda, M. F.</td><td>2018</td><td>The impact of early life shocks on human capital formation: evidence from El Niño floods in Ecuador (Journal of Health Economics, 62:13-44)</td><td><span class="r a">A</span></td><td><a href="https://ideas.repec.org/a/eee/jhecon/v62y2018icp13-44.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-746</td><td>Aguilar, A. &amp; Vicarelli, M.</td><td>2022</td><td>El Niño and children: Medium-term effects of early-life weather shocks on cognitive and health outcomes (World Development, 150)</td><td><span class="r a">A</span></td><td><a href="https://ideas.repec.org/a/eee/wdevel/v150y2022ics0305750x21003053.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-747</td><td>Checkley, W. et al.</td><td>2000</td><td>Effects of El Niño and ambient temperature on hospital admissions for diarrhoeal diseases in Peruvian children (The Lancet)</td><td><span class="r a">A</span></td><td><a href="https://investigadores.uandes.cl/en/publications/effects-of-el-nino-and-ambient-temperature-on-hospital-admissions-4/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-750</td><td>Jayachandran, S.</td><td>2009</td><td>Air quality and early-life mortality: Evidence from Indonesia&#x27;s wildfires (Journal of Human Resources, 44(4))</td><td><span class="r a">A</span></td><td><a href="https://www.nber.org/papers/w14011" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-751</td><td>Culquichicón, C.; Astudillo-Rueda, D.; Niño-García, R.; Martínez-Ri…</td><td>2024</td><td>Post-traumatic stress disorder, food insecurity, and social capital after the 2017 coastal El Niño flooding among mothers from Piura, Per…</td><td><span class="r a">A</span></td><td><a href="https://doi.org/10.1371/journal.pgph.0002996" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-752</td><td>Cobian-Alvarez, J. &amp; Resosudarmo, B. P. (ANU, Arndt-Corden Dept…</td><td>2025</td><td>Under the water: flood impacts and economic dynamics in northern Peru (Working Paper in Trade and Development 2025/07)</td><td><span class="r">B</span></td><td><a href="https://crawford.anu.edu.au/acde/content-centre/research/under-water-flood-impacts-and-economic-dynamics-northern-peru" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-753</td><td>Malpartida, R. &amp; Guembes, M. (Universidad de Piura)</td><td>2025</td><td>Impact of natural disasters on household health and education expenditure: Evidence from El Niño phenomenon in Peru (Economía, PUCP)</td><td><span class="r a">A</span></td><td><a href="https://revistas.pucp.edu.pe/index.php/economia/article/view/31733" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-754</td><td>Fort, R.; Glave, M.; Rosemberg, C. (GRADE)</td><td>2010</td><td>Effect of natural disasters on poverty transitions and consumption growth. Evidence for rural Perú</td><td><span class="r">B</span></td><td><a href="https://grade.org.pe/en/publicaciones/1019-effect-of-natural-disasters-on-poverty-transitions-and-consumption-growth-evidence-for-rural-peru/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-756</td><td>Hsiang, S. M.; Meng, K. C.; Cane, M. A.</td><td>2011</td><td>Civil conflicts are associated with the global climate (Nature, vol. 476)</td><td><span class="r a">A</span></td><td><a href="https://ideas.repec.org/a/nat/nature/v476y2011i7361d10.1038_nature10311.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-757</td><td>Buhaug, H.</td><td>2010</td><td>Climate not to blame for African civil wars (PNAS)</td><td><span class="r a">A</span></td><td><a href="https://www.newsecuritybeat.org/?p=262" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-758</td><td>Epstein, A.; Bendavid, E.; Nash, D.; Charlebois, E. D.; Weiser, S. D.</td><td>2020</td><td>Drought and intimate partner violence towards women in 19 countries in sub-Saharan Africa during 2011-2018 (PLOS Medicine 17(3))</td><td><span class="r a">A</span></td><td><a href="https://ideas.repec.org/a/plo/pmed00/1003064.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-759</td><td>Davis, M.</td><td>2001</td><td>Late Victorian Holocausts: El Niño Famines and the Making of the Third World (Verso)</td><td><span class="r">Teórico</span></td><td><a href="https://versobooks.com/books/2311-late-victorian-holocausts" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-760</td><td>Autoría no capturada — &quot;Water Gives, Water Takes Away. Memory,…</td><td>s.f. (≈2017-2024)</td><td>Etnografía histórico-geográfica y estudio cualitativo de percepción de riesgo</td><td><span class="r">C</span></td><td><a href="https://repositorio.pucp.edu.pe/items/9ca5cb7c-da78-444d-afed-5238391c46fa" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-761</td><td>IGP (Ciencia Climática) / OPS (Malaria Report 2008, Perú)</td><td>2008-2015</td><td>Impacto del fenómeno El Niño de 1997-1998 en la salud de la población peruana / Informe de malaria, Perú</td><td><span class="r">B</span></td><td><a href="https://paho.org/sites/default/files/Malaria_Report_2008_Spa_Peru.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-763</td><td>INDECI / OPS-OMS Perú</td><td>2017</td><td>Emergencia por impacto del Fenómeno &quot;El Niño Costero&quot; – Perú, 2017</td><td><span class="r">B</span></td><td><a href="https://www.paho.org/es/peru/emergencia-por-impacto-fenomeno-nino-costero-peru-2017" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-764</td><td>CAF (vía Andina e IGP)</td><td>2000 (cit. 2023)</td><td>¿Cómo impactó El Niño en Perú en los eventos de 1982-1983, 1997-1998 y 2017? / Las lecciones de El Niño (CAF)</td><td><span class="r">D</span></td><td><a href="https://andina.pe/agencia/noticia-como-impacto-nino-peru-los-eventos-19821983-19971998-y-2017-943812.aspx" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-765</td><td>INEI / BCRP (vía Andina, La República, Forbes Perú, Infobae)</td><td>2023-2024</td><td>Economía peruana cayó 0,55% en 2023 / pobreza 2023</td><td><span class="r">D</span></td><td><a href="https://andina.pe/agencia/noticia-economia-peruana-cayo-055-el-2023-manufactura-y-construccion-974474.aspx" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-766</td><td>AFP vía La Nación (Paraguay), Mongabay, Save the Children (sobre da…</td><td>2023</td><td>Más de 440 muertos por dengue desde enero en Perú</td><td><span class="r">D</span></td><td><a href="https://www.lanacion.com.py/mundo_edicion_impresa/2023/11/28/mas-de-440-muertos-por-dengue-desde-enero-en-peru/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-767</td><td>Expreso (Ecuador), 24horas (Chile), Ara (España), Infomercado (Perú)</td><td>2023</td><td>Precio del limón se dispara en Perú; el ministro sugiere cambiar el ceviche por pollo; memes del &quot;limón como moneda&quot;</td><td><span class="r">D</span></td><td><a href="https://www.expreso.ec/actualidad/economia/precio-limon-dispara-peru-nino-afecta-ceviche-172103.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-768</td><td>El Comercio; El Búho (verificación)</td><td>2017-2023</td><td>Audios de WhatsApp anuncian lluvias y huaicos / Falso video de personas en pánico ante caída de huaico en Trujillo no es actual</td><td><span class="r">D</span></td><td><a href="https://elcomercio.pe/lima/whatsapp-audios-anuncian-lluvias-huaicos-145201-noticia" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-769</td><td>El Búho, Expreso, El Comercio, Comunicaciones del Congreso, Mesa de…</td><td>2018-2023</td><td>Críticas a la Reconstrucción con Cambios: obras sin ejecutar, vivienda &quot;Una Sola Fuerza&quot; abandonada, pedidos de balance de S/25…</td><td><span class="r">D</span></td><td><a href="https://elcomercio.pe/peru/piura-ano-tragedia-situacion-actual-nino-costero-noticia-507536-noticia" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-770</td><td>Gestión (entrevista al contralor Nelson Shack)</td><td>2023</td><td>Contraloría sobre obras de El Niño: se ha gastado solo el 30%</td><td><span class="r">D</span></td><td><a href="https://gestion.pe/economia/nelson-shack-contraloria-sobre-obras-de-el-nino-se-ha-gastado-solo-el-30-economia-gestion-noticia/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-771</td><td>Kantar División Worldpanel Perú</td><td>2024</td><td>Fenómenos Climatológicos 2024 — De qué manera el fenómeno del Niño afecta a los hogares peruanos</td><td><span class="r">C</span></td><td><a href="https://www.kantar.com/latin-america/inspiracion/consumidor/de-que-manera-el-fenomeno-del-nino-afecta-los-hogares-peruanos-en-2024" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-772</td><td>IPE (Instituto Peruano de Economía), vía Infomercado y Perú21</td><td>2026</td><td>6 de cada 10 peruanos están en riesgo de inundación por El Niño / &quot;Los economistas opinan&quot;</td><td><span class="r">D</span></td><td><a href="https://infomercado.pe/ipe-6-de-cada-10-peruanos-estan-en-riesgo-de-inundacion-por-el-nino/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-773</td><td>APESEG / SBS vía Andina</td><td>2018</td><td>Pagos de seguros por Fenómeno El Niño suman US$428 millones</td><td><span class="r">D</span></td><td><a href="https://andina.pe/agencia/noticia-pagos-seguros-fenomeno-nino-suman-660-millones-722702.aspx" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-775</td><td>Agraria.pe / Proactivo (sobre La Positiva Seguros)</td><td>2013</td><td>La Positiva desarrolla seguros para la adaptación al cambio climático</td><td><span class="r">D</span></td><td><a href="https://agraria.pe/noticias/%E2%80%9Cla-positiva%E2%80%9D-creo-seguros-para-la-adaptacion-al-cambio-clim-5736" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-777</td><td>FreshPlaza; El Búho (sobre la Cámara de Comercio y Producción de Pi…</td><td>2023</td><td>Mango and lemon crops in Peru lost almost 90% of their blossom</td><td><span class="r">D</span></td><td><a href="https://www.freshplaza.com/latin-america/article/9564278/mango-and-lemon-crops-in-peru-lost-almost-90-of-their-blossom/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-778</td><td>Infomercado (sobre la FEPCMAC)</td><td>2017-2018</td><td>Cajas otorgaron 1.000 millones en préstamos [a afectados por el Niño Costero]</td><td><span class="r">D</span></td><td><a href="https://infomercado.pe/cajas-otorgaron-1000-millones-prestamos/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-780</td><td>ENFEN (Comisión Multisectorial; IMARPE, SENAMHI, IGP, DHN, ANA, IND…</td><td>2026</td><td>Comunicado Oficial ENFEN N.° 16-2026 (14-set-2026): Alerta de El Niño Costero</td><td><span class="r">B</span></td><td><a href="https://enfen.imarpe.gob.pe/download/comunicado-oficial-enfen-n-16-2026/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-782</td><td>BCRP (vía Caretas, Panamericana, Gestión)</td><td>2026</td><td>BCRP reduce a 3,2% su proyección de crecimiento por el impacto de El Niño extraordinario</td><td><span class="r">D</span></td><td><a href="https://caretas.pe/?p=834819" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-786</td><td>SBS — Resolución SBS N.° 02260-2026 (vía El Peruano, LP Derecho, In…</td><td>2026</td><td>Reglamento de Seguros Paramétricos</td><td><span class="r">B</span></td><td><a href="https://elperuano.pe/noticia/304594-sbs-aprueba-reglamento-de-seguros-parametricos-para-su-funcionamiento-en-el-mercado-peruano" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-791</td><td>Gallagher, J.</td><td>2014</td><td>Learning about an Infrequent Event: Evidence from Flood Insurance Take-Up in the United States (American Economic Journal: Applied Econom…</td><td><span class="r a">A</span></td><td><a href="https://www.aeaweb.org/research/will-flood-insurance-takeup-spike" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-793</td><td>Pople, A.; Hill, R.; Dercon, S.; Brunckhorst, B. (CSAE, Oxford; eva…</td><td>2021</td><td>Anticipatory Cash Transfers in Climate Disaster Response</td><td><span class="r">B</span></td><td><a href="https://www.csae.ox.ac.uk/node/2132846" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-799</td><td>Cole, S.; Giné, X.; Tobacman, J.; Topalova, P.; Townsend, R.; Vicke…</td><td>2013</td><td>Barriers to Household Risk Management: Evidence from India (American Economic Journal: Applied Economics, 5(1):104-135)</td><td><span class="r a">A</span></td><td><a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr373.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-800</td><td>Carter, M.; de Janvry, A.; Sadoulet, E.; Sarris, A.</td><td>2017</td><td>Index Insurance for Developing Country Agriculture: A Reassessment (Annual Review of Resource Economics, 9:421-438)</td><td><span class="r a">A</span></td><td><a href="https://ideas.repec.org/a/anr/reseco/v9y2017p421-438.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-801</td><td>Pacífico Seguros</td><td>s.f. (vigente 2026)</td><td>Cláusula adicional de terremoto, temblor y riesgos de la naturaleza — Seguro Hogar Flex Digital</td><td><span class="r">B</span></td><td><a href="https://www.pacifico.com.pe/documents/28730/130560273/Cl%C3%A1usula+adicional+de+terremoto%2C+temblor+y+riesgos+de+la+naturaleza+-+Seguro+Hogar+Flex+Digital.pdf/57d5405f-28d2-4712-cff0-121a73c8cb89" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-847</td><td>ENFEN (Comisión Multisectorial; IMARPE, IGP, SENAMHI y otros)</td><td>2026</td><td>Comunicado Oficial ENFEN N.° 20-2026 (13-nov-2026)</td><td><span class="r">B</span></td><td><a href="https://enfen.imarpe.gob.pe/comunicados/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-848</td><td>COEN / INDECI (vía La República y AFP)</td><td>2026</td><td>Balance de lluvias enero-marzo de 2026</td><td><span class="r">D</span></td><td><a href="https://larepublica.pe/sociedad/2026/03/10/lluvias-en-peru-dejan-mas-de-16000-damnificados-y-58-fallecidos-entre-enero-y-marzo-segun-coen-718090" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-849</td><td>COEN (vía Infobae y Oceana Perú); PCM</td><td>2026</td><td>Lluvias de noviembre en Tumbes y Piura; D. S. N.° 149-2026-PCM</td><td><span class="r">D</span></td><td><a href="https://www.infobae.com/peru/2026/11/03/el-norte-del-peru-ya-sufre-los-estragos-de-el-nino-mas-de-300-damnificados-calles-inundadas-y-clases-suspendidas-en-tumbes/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-850</td><td>Instituto Peruano de Economía (IPE)</td><td>2026</td><td>Más de 11 millones de peruanos habitan viviendas precarias en distritos con alto riesgo de inundación (nov-2026)</td><td><span class="r">C</span></td><td><a href="https://energiminas.com/?p=53306" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-851</td><td>RIMAC Seguros (Centro de Monitoreo)</td><td>2026</td><td>Estudio de exposición de Lima y Callao a inundaciones y huaicos ante El Niño 2026-27; estimación de impacto en el PBI</td><td><span class="r">C</span></td><td><a href="https://infomercado.pe/rimac-estima-que-el-nino-le-quitaria-2-puntos-al-crecimiento-del-pbi-en-dos-anos/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-852</td><td>Preciso Consultoría (vía FreshPlaza y FreshFruitPortal/Agronometrics)</td><td>2026</td><td>Extreme El Niño could cost Peru&#x27;s agricultural export sector nearly US$1.5 billion in 2026-2027</td><td><span class="r">C</span></td><td><a href="https://www.freshplaza.com/article/9875296/extreme-el-nino-could-cost-peru-s-agricultural-export-sector-nearly-1-5-billion-in-losses-in-2026-2027/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-853</td><td>Agraria.pe; Cámara de Comercio y Producción de Piura; APEM</td><td>2026</td><td>Mango peruano entre El Niño y la competencia de Brasil (9-nov-2026); Piura: El Niño pone en riesgo la producción de limón en 2027 (28-oct…</td><td><span class="r">D</span></td><td><a href="https://agraria.pe/index.php/noticias/mango-peruano-entre-el-nino-y-la-competencia-de-brasil-43437" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-854</td><td>Carvalho, V. M.; Nirei, M.; Saito, Y. U.; Tahbaz-Salehi, A.</td><td>2021</td><td>Supply Chain Disruptions: Evidence from the Great East Japan Earthquake (Quarterly Journal of Economics 136(2):1255-1321)</td><td><span class="r a">A</span></td><td><a href="https://econpapers.repec.org/RePEc:oup:qjecon:v:136:y:2021:i:2:p:1255-1321" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-855</td><td>Norris Keiller, A. &amp; Van Reenen, J.</td><td>2024</td><td>Disaster Management (NBER Working Paper 32595; CEP Discussion Paper 2007)</td><td><span class="r">B</span></td><td><a href="https://nber.org/papers/w32595" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-856</td><td>Azañedo, P.; Casaverde, L.; Casiano, D.; Lupú, J. (BCRP)</td><td>2024</td><td>El Fenómeno El Niño y la morosidad de las empresas agroexportadoras (Documento de Trabajo BCRP 2024-007)</td><td><span class="r">B</span></td><td><a href="https://www.bcrp.gob.pe/docs/Publicaciones/Documentos-de-Trabajo/2024/documento-de-trabajo-007-2024.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-857</td><td>Banco Mundial</td><td>2025 (⚠️ año por confirmar)</td><td>Unlocking 90 million jobs by managing disaster risk (blog y estudio de 132 países)</td><td><span class="r">B</span></td><td><a href="https://blogs.worldbank.org/en/sustainablecities/unlocking-90-million-jobs-by-managing-disaster-risk-and-natural-" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-858</td><td>Rentschler, J.; Erman, A.; Hallegatte, S. y otros (Banco Mundial)</td><td>2021</td><td>Floods and Their Impacts on Firms: Evidence from Tanzania (Policy Research Working Paper)</td><td><span class="r">B</span></td><td><a href="https://documents1.worldbank.org/curated/en/481961631557620454/pdf/Floods-and-Their-Impacts-on-Firms-Evidence-from-Tanzania.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-859</td><td>Grover, A. &amp; Kahn, M. E.</td><td>2024</td><td>Firm resilience to natural disasters in developing countries (NBER Working Paper 32848, revisión de literatura)</td><td><span class="r">B</span></td><td><a href="https://nber.org/system/files/working_papers/w32848/w32848.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-861</td><td>Horwitz, S.</td><td>2009</td><td>Wal-Mart to the Rescue: Private Enterprise&#x27;s Response to Hurricane Katrina (The Independent Review 13(4))</td><td><span class="r">C</span></td><td><a href="https://www.mercatus.org/hayekprogram/research/journal-articles/wal-mart-rescue" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-862</td><td>UNISDR (hoy UNDRR)</td><td>2013</td><td>Global Assessment Report on Disaster Risk Reduction 2013: From Shared Risk to Shared Value — The Business Case for Disaster Risk Reduction</td><td><span class="r">B</span></td><td><a href="https://www.undrr.org/quick/11322" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-863</td><td>SBS (vía Andina); Sentinel</td><td>2017</td><td>Reprogramación de deudas de mypes por El Niño suman S/2.491 millones; Solo 10% de créditos se refinanciaron por el Niño costero de 2017</td><td><span class="r">D</span></td><td><a href="https://andina.pe/ingles/noticia-sbs-reprogramacion-deudas-mypes-nino-suman-s-2491-millones-671184.aspx" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-864</td><td>ARCC / ProInversión (vía Andina); ESAN</td><td>2017</td><td>Reconstrucción con Cambios insta al sector privado a participar en Obras por Impuestos; Obras por impuestos y su papel en la reconstrucci…</td><td><span class="r">D</span></td><td><a href="https://andina.pe/ingles/noticia-reconstruccion-cambios-insta-al-sector-privado-a-participar-obras-impuestos-721333.aspx" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-865</td><td>Contraloría General de la República (vía Expreso y El Tiempo)</td><td>2026 (⚠️ fecha de algunas notas sin confirmar)</td><td>Auditoría a la Reconstrucción con Cambios: 32 obras duplicaron su costo y triplicaron plazos</td><td><span class="r">D</span></td><td><a href="https://www.expreso.com.pe/actualidad/32-obras-duplicaron-su-costo-y-triplicaron-plazos-revela-contraloria-noticia/1303258/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-866</td><td>Sociedad Nacional de Industrias (SNI); Perú21</td><td>2017</td><td>BAP Tacna zarpó con 500 toneladas de alimentos donados por la SNI; #UnaSolaFuerza: diversas empresas apoyan a damnificados</td><td><span class="r">D</span></td><td><a href="https://sni.org.pe/?p=7896" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-867</td><td>INDECOPI</td><td>2026</td><td>Presentación ante la Comisión de Defensa del Consumidor del Congreso (28-abr-2026)</td><td><span class="r">B</span></td><td><a href="https://www3.congreso.gob.pe/Docs/comisiones2025/consumidor/files/ppt_indecopi_so13_28.04.26cdc_28.04_compressed.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-868</td><td>Cámara de Comercio de Lima (CCL); CONFIEP (vía El Peruano, Gestión …</td><td>2026</td><td>CCL propone 12 medidas urgentes para enfrentar El Niño y evitar repetir los errores de 2017; Gremios empresariales expresan disposición a…</td><td><span class="r">D</span></td><td><a href="https://elperuano.pe/noticia/302860-ccl-propone-12-medidas-urgentes-para-enfrentar-el-nino-y-evitar-repetir-los-errores-de-2017" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-869</td><td>INGEMMET</td><td>2017</td><td>Informe técnico sobre las inundaciones y flujos de detritos en Trujillo (quebradas San Ildefonso y El León) durante el Niño Costero 2017</td><td><span class="r">B</span></td><td><a href="https://app.ingemmet.gob.pe/biblioteca/pdf/Repo-1937-31.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-870</td><td>El Comercio; La República</td><td>2017 / 2020</td><td>2017: El Niño costero, postales de una tragedia que no ha terminado; Trujillo: casi mil personas viven en cauces y márgenes de quebradas</td><td><span class="r">D</span></td><td><a href="https://elcomercio.pe/bicentenario/2017-l-el-nino-costero-postales-de-una-tragedia-que-no-ha-terminado-l-bicentenario-noticia/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-871</td><td>AVLA Perú (vía Correo)</td><td>2026</td><td>Solo 5% de empresas en Perú tiene seguro ante desastres naturales</td><td><span class="r">D</span></td><td><a href="https://diariocorreo.pe/peru/solo-5-de-empresas-en-peru-tiene-seguro-ante-desastres-naturales-noticia/" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-872</td><td>Universidad de Piura (tesis; autor no verificado)</td><td>s.f. (c. 2021-2024)</td><td>Impacto del Fenómeno El Niño Costero sobre el retraso escolar en hogares de la costa del Perú (ENAHO 2015-2019)</td><td><span class="r">C</span></td><td><a href="https://pirhua.udep.edu.pe/backend/api/core/bitstreams/09225b83-6922-4aa2-8316-7d9726d532e5/content" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-873</td><td>Revista Andina de Educación</td><td>2025</td><td>Revisión sobre el impacto de los Fenómenos El Niño de 1982, 1997 y 2017 en la escuela peruana</td><td><span class="r">C</span></td><td><a href="https://www.redalyc.org/journal/7300/730081529004/730081529004.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-874</td><td>Instituto Geofísico del Perú (IGP); Suarez-Ognio, L. y otros</td><td>2025 / 2015</td><td>Boletín científico IGP sobre Análisis Multidimensional de Daños (MDDA) de los Niños de 1982-83, 1997-98 y 2017; Impacto del fenómeno El N…</td><td><span class="r">B</span></td><td><a href="https://repositorio.igp.gob.pe/bitstreams/1e0de203-cec2-4e53-a7db-cd88582921ed/download" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-875</td><td>Churango, ? &amp; Furtado, ? (Harvard Kennedy School, SYPA con Save…</td><td>s.f.</td><td>Caso Perú: clima extremo y violencia basada en género tras el Niño Costero 2017 (Second Year Policy Analysis)</td><td><span class="r">C</span></td><td><a href="https://www.hks.harvard.edu/sites/default/files/wappp_files/pdfs/SYPA%20-%20Churango%20and%20Furtado.pdf" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-876</td><td>UNFPA</td><td>2018</td><td>Un año después de las inundaciones en Piura y Lambayeque (nota institucional)</td><td><span class="r">D</span></td><td><a href="https://www.unfpa.org/node/17488" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-877</td><td>NPR (entrevista a Dan Shea, experto en filantropía de desastres)</td><td>2012</td><td>Disaster Donations Surge, But What About Tomorrow?</td><td><span class="r">D</span></td><td><a href="https://www.npr.org/2012/11/25/165871080/disaster-donations-surge-but-what-about-tomorrow" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-878</td><td>Vice (Tonic)</td><td>2017</td><td>Compared to Harvey, very few companies have given toward Maria relief</td><td><span class="r">D</span></td><td><a href="https://tonic.vice.com/en/article/4347bp/compared-to-harvey-very-few-companies-have-given-toward-maria-relief" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+<tr><td class="k">F-879</td><td>World Socialist Web Site (WSWS)</td><td>2026</td><td>&quot;El Niño Costero 2026&quot; en Perú: el calor, las inundaciones y la negligencia criminal del gobierno cobran decenas de vidas (16-m…</td><td><span class="r">E</span></td><td><a href="https://www.wsws.org/es/articles/2026/03/16/35f3-m16.html" target="_blank" rel="noopener">abrir ↗</a></td></tr>
+</table></div></details>
+</div>
+</section>
+
+<footer>
+MU · Informe generado el 24-nov-2026 con <code>/trinidad</code> sobre lo que el segundo cerebro ya sabía (node <code>fenomeno-el-nino-impacto-personas</code> v1.2, informe para RIMAC de octubre, lecciones de El Lobo) más 33 fuentes nuevas. Las tres pistas (empírica, social, negocio) se miden con criterios distintos y no se promedian. Citar no es validar: la rúbrica A-E califica el método de cada fuente, no si su conclusión es cierta.
+</footer>
+
+</div>

@@ -10,7 +10,8 @@
 > Fuentes en `research/fuentes/codice.md`: **F-742 a F-783** (iter. 1; todas nuevas, el ledger no tenía
 > nada sobre ENSO) · **F-784 a F-801** (iter. 2, foco de negocio y oportunidades para RIMAC) · **F-847 a F-879**
 > (iter. 3, 2026-11-24: coyuntura, huecos y rol de la empresa privada).
-> Output derivado: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`.
+> Outputs derivados: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md` (requiere refresh) ·
+> `research/_outputs/informe-el-nino-personas-empresa-2026-11-24.html` (informe final de la iter. 3, en HTML).
 > Pregunta permanente: **¿qué le pasa concretamente a una persona (su cuerpo, su casa, su ingreso,
 > sus hijos, su ánimo) cuando llega un Niño fuerte, cuánto dura, y a quién le pega más?**
 

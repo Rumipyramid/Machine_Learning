@@ -31,7 +31,7 @@
   {
    "id": "fenomeno-el-nino-impacto-personas",
    "type": "node",
-   "lines": 575,
+   "lines": 576,
    "cites": 91,
    "design": false
   },
@@ -166,6 +166,12 @@
   },
   {
    "id": "informe-el-nino-oportunidades-rimac-2026-10-07.md",
+   "type": "output",
+   "lines": 0,
+   "cites": 0
+  },
+  {
+   "id": "informe-el-nino-personas-empresa-2026-11-24.html",
    "type": "output",
    "lines": 0,
    "cites": 0
@@ -8879,6 +8885,11 @@
    "k": "deriva"
   },
   {
+   "s": "informe-el-nino-personas-empresa-2026-11-24.html",
+   "t": "fenomeno-el-nino-impacto-personas",
+   "k": "deriva"
+  },
+  {
    "s": "proyecto-back-to-basics-ffvv-vida",
    "t": "F-3",
    "k": "cita"
@@ -15422,20 +15433,20 @@
     "fuente": "git"
    },
    {
-    "fuentes": 845,
+    "fuentes": 878,
     "rigor": {
-     "B": 125,
-     "A": 303,
-     "C": 184,
-     "D": 182,
+     "B": 136,
+     "A": 304,
+     "C": 191,
+     "D": 195,
      "?": 15,
-     "E": 36
+     "E": 37
     },
     "nodes": 20,
     "outputs": 5,
     "wikilinks": 124,
     "derivaciones": 12,
-    "fuentes_citadas_en_nodes": 738,
+    "fuentes_citadas_en_nodes": 771,
     "diseno": {
      "hyp": {
       "abierta": 15,
@@ -15456,7 +15467,7 @@
      "cites": 274
     },
     "fecha": "2026-11-24",
-    "commit": "133ed92",
+    "commit": "a0e27b6",
     "fuente": "git"
    }
   ],

@@ -8,8 +8,8 @@
 
 | Capa | Cantidad | Detalle |
 |---|---|---|
-| Nodes (`_nodes/`) | 20 | 8,599 líneas |
-| Outputs (`_outputs/`) | 5 | derivan de nodes: 5 de 5 citan algún node |
+| Nodes (`_nodes/`) | 20 | 8,600 líneas |
+| Outputs (`_outputs/`) | 6 | derivan de nodes: 6 de 6 citan algún node |
 | Fuentes en el ledger | 878 | 🟢A 304 · 🔵B 136 · 🟡C 191 · 🟠D 195 · 🔴E 37 · otras/sin clasificar 15 |
 | Aristas wikilink (node→node) | 124 | recíprocas: 124 de 124 (100%) |
 | Fuentes citadas por ≥1 node | 771 de 878 | 88% del ledger; **107 viven solo en el ledger** |
@@ -98,6 +98,7 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 2026-10-10 | `7338d6a` | 800 | 19 | 5 | 116 | 694 | 2001 | 15 | 20 | 22 |
 | 2026-10-15 | `d2adac5` | 845 | 20 | 5 | 124 | 738 | 2002 | 15 | 20 | 22 |
+| 2026-11-24 | `a0e27b6` | 878 | 20 | 5 | 124 | 771 | 2002 | 15 | 20 | 22 |
 
 *(Se omiten los días sin cambio en estas columnas.)*
 
@@ -131,7 +132,7 @@
 | `tendencias-diseno-innovacion` | 2002 | 274 | 140 | 11/11 | 2026-10-15 | 2026-10-04 v4.1 |
 | `convergencia-psicologia-economia-ia` | 245 | 115 | 49 | 7/7 | indeterminada (≤ 2026-10-10, historial truncado) | 2026-10-04 v1.0 |
 | `fenomenos-psicologicos` | 548 | 106 | 104 | 8/8 | 2026-10-15 | 2026-10-04 v1.0 |
-| `fenomeno-el-nino-impacto-personas` | 575 | 91 | 44 | 3/3 | indeterminada (≤ 2026-10-10, historial truncado) | 2026-11-24 v1.2 |
+| `fenomeno-el-nino-impacto-personas` | 576 | 91 | 44 | 3/3 | 2026-11-24 | 2026-11-24 v1.2 |
 | `mecanismos-seguros-salud` | 355 | 53 | 33 | 9/9 | 2026-10-15 | 2026-10-04 v1.2 |
 | `lealtad-gamificacion-recompensas-retail` | 222 | 44 | 17 | 4/4 | 2026-10-15 | 2026-10-15 v1.0 |
 | `conducta-humano-ia` | 142 | 41 | 28 | 7/7 | indeterminada (≤ 2026-10-10, historial truncado) | 2026-10-04 v1.1 |
