@@ -345,6 +345,11 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   back-to-basics" → ✓ la lección, la idea o el tema dichos con palabras (el código, si hace falta, va entre paréntesis
   después). Las fuentes se cuentan (qué encontró, quién, cuándo, qué tan sólida es). Guía completa:
   `.claude/skills/mentes/REDACCION.md`.
+- **Estilo del obelisco (definido por el usuario, 2026-11-24).** Cuando el usuario pida "el estilo del obelisco": estética
+  brutalista, minimalista y low-fi; fondo negro; texto, caracteres e imágenes en **violeta y blanco** (sin otros colores);
+  tipografía pixelada para titulares (VT323) y monoespaciada para el cuerpo (IBM Plex Mono); esquinas rectas, líneas de 1px,
+  rótulos `[NN]`, barras de bloques de texto (█░) e imágenes pixeladas en violeta. Referencia viva:
+  `research/_outputs/informe-el-nino-personas-empresa-2026-11-24.html`. Es distinto de la identidad de Mu (blanco/negro + naranja).
 - Documentación de investigación → `research/` (con índice en `research/README.md`).
 - Modelo de personas sintéticas → `research/personas/generador/` (fuente de verdad de desarrollo);
   el skill `lapuerta` lleva su propia copia autocontenida para compartir.
