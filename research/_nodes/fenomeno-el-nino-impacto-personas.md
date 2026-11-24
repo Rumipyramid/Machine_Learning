@@ -1,13 +1,15 @@
 # Fenómeno El Niño: qué le hace a la vida de las personas (evidencia cuanti y cualitativa)
 
 > Documento de investigación. Fuente persistente y versionada en el repositorio.
-> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-10-07 · Versión: **v1.1** (iter. 2: el alcance
-> se amplía a la aplicación de negocio para RIMAC, §8)
+> Fecha de elaboración: 2026-10-07 · Última actualización: 2026-11-24 · Versión: **v1.2** (iter. 3: el alcance
+> se amplía al **rol de la empresa privada**, §10; coyuntura al 24-nov-2026, §1.1; huecos cerrados, §9).
+> Versiones previas: v1.1 (iter. 2, aplicación de negocio para RIMAC, §8) · v1.0 (iter. 1).
 > Origen: `/trinidad` (pista empírica/teórica + social/mediática + negocio), a pedido del usuario:
 > *"la documentación y evidencia más sólida, cuanti y cualitativa, que retrate el impacto del fenómeno
 > del Niño en la vida de las personas"*.
 > Fuentes en `research/fuentes/codice.md`: **F-742 a F-783** (iter. 1; todas nuevas, el ledger no tenía
-> nada sobre ENSO) · **F-784 a F-801** (iter. 2, foco de negocio y oportunidades para RIMAC).
+> nada sobre ENSO) · **F-784 a F-801** (iter. 2, foco de negocio y oportunidades para RIMAC) · **F-847 a F-879**
+> (iter. 3, 2026-11-24: coyuntura, huecos y rol de la empresa privada).
 > Output derivado: `research/_outputs/informe-el-nino-oportunidades-rimac-2026-10-07.md`.
 > Pregunta permanente: **¿qué le pasa concretamente a una persona (su cuerpo, su casa, su ingreso,
 > sus hijos, su ánimo) cuando llega un Niño fuerte, cuánto dura, y a quién le pega más?**
@@ -43,6 +45,30 @@
 
 **Lectura:** lo que sigue no es historia, es el **prospecto** de lo que vivirán millones de peruanos
 entre ahora y mediados de 2027.
+
+### 1.1 Actualización al 24-nov-2026 (iter. 3)
+
+**Conclusión:** lo peor todavía no llega. Las lluvias fuertes recién empiezan en el norte y el golpe al
+ingreso agrícola caerá sobre todo en 2027.
+
+- **Duración más larga.** El ENFEN (Comunicado N.° 20-2026, 13-nov) extiende la magnitud
+  **extraordinaria hasta febrero de 2027** y el debilitamiento hasta julio de 2027. Prevé lluvias sobre lo
+  normal de noviembre a enero en la costa norte y central (F-847).
+- **El año ya tuvo muertos.** Entre enero y marzo de 2026, antes del pico, el COEN contó **58 fallecidos**
+  y 16.095 damnificados; un corte de INDECI de mediados de marzo da **92 fallecidos**. Son cortes
+  distintos: no se suman (F-848).
+- **Noviembre:** al 6-nov, Tumbes sumaba 324 damnificados, 109 viviendas inhabitables y clases
+  suspendidas. Desde el 3-nov rige un estado de emergencia de 60 días (D. S. 149-2026-PCM). No hay balance
+  nacional consolidado del mes (F-849).
+- **La vivienda es el punto débil.** Según el IPE, **11,2 millones** de peruanos viven en casas precarias
+  (92% con techo de calamina, estera o caña con barro) dentro de distritos de riesgo alto de inundación.
+  Y **6 de cada 10 proyectos de drenaje pluvial** (329 de 534) están abandonados o paralizados (F-850).
+- **Lima también está expuesta.** Un estudio del Centro de Monitoreo de RIMAC ubica **116 distritos de
+  Lima y Callao (65%)** en riesgo alto o muy alto de inundación o huaico; ~6,85 M de personas viven en los
+  expuestos a inundación (F-851).
+- **El golpe al agro es diferido.** Preciso Consultoría estima pérdidas de **US$1.498 M** en
+  agroexportaciones en 2026-27, concentradas en **2027**. La campaña de mango de Piura ya va 39,6% por
+  debajo de la anterior y el limón de 2027 está en riesgo (F-852, F-853).
 
 ## 2. Resumen ejecutivo
 
@@ -388,6 +414,151 @@ empleadores, municipios), que además es la única que la evidencia de demanda r
 
 Además, "Primeros 1.000 días" como alianza de marca. **Riesgos clave:** riesgo de base, antiselección
 por pronóstico público y endurecimiento del reaseguro en 2027.
+
+---
+
+## 9. 🔍 Iteración 3 (2026-11-24): huecos que se buscaron cerrar
+
+> Tercera corrida de `/trinidad`, a pedido del usuario: *"la evidencia más sólida cuanti y cualitativa
+> que retrate el impacto del fenómeno del Niño en la vida de las personas"*, más una sección nueva sobre
+> el rol de la empresa privada (§10). Primero se leyó lo que el cerebro ya sabía (este node, el informe
+> para RIMAC y las lecciones de El Lobo sobre El Niño); la búsqueda se dirigió a los huecos declarados
+> en §7.
+
+### 9.1 🔬 Pista empírica: qué cambió
+
+| Hueco declarado en §7 | Qué se encontró | Estado |
+|---|---|---|
+| Carga total de salud | El IGP concluye que El Niño de 1997-98 fue el de **mayor pérdida de años de vida saludable** de los tres eventos comparados (1982-83, 1997-98, 2017). No se obtuvo la cifra exacta (F-874). | 🟡 Parcial |
+| Educación | Una tesis de la Universidad de Piura estima que 2017 aumentó el **retraso escolar** en la costa (fragmento: 14% del retraso del país en el periodo; cifra no firme, F-872). Una revisión de 2025 documenta colegios dañados, calendario retrasado y falta de datos sobre aprendizajes (F-873). En 2017 hubo además huelga docente: los efectos se confunden. | 🟡 Parcial: hay señal, no hay medición sólida |
+| Empleo | El Banco Mundial estima ~**90 M de empleos** perdidos al año por desastres y calor; la tasa de pérdida en países pobres duplica la de ingreso medio-alto y los informales son los últimos en recuperarse (F-857). En el norte peruano, el agro emplea a 3 de cada 10 trabajadores de Piura (F-853). | 🔵 Contexto global sólido; sin medición peruana |
+| Violencia de género en Perú | Solo un trabajo de maestría de Harvard con Save the Children (cifra sin población identificable, F-875) y una nota de UNFPA sobre falta de servicios para mujeres en Piura y Lambayeque (F-876). | 🔴 **Sigue abierto** |
+| Muertes de 1997-98 | No se encontró cifra oficial consolidada. | 🔴 Sigue abierto |
+| Réplica o crítica de las pérdidas macro de largo plazo (F-742) | Se buscó y no apareció ningún comentario, réplica ni crítica publicada. | 🔴 Sigue sin réplica |
+| Cohorte infantil de 2017 | Se buscó; nadie ha publicado todavía el seguimiento de los niños concebidos en 2017. | 🔴 Sigue abierto |
+
+**Lectura:** el retrato del daño (§2-§6) **no cambia**. Se agregan dos canales con evidencia más débil
+(educación y empleo). El núcleo sólido sigue siendo la cicatriz infantil y la caída del ingreso del hogar.
+
+### 9.2 📱 Pista social: sigue siendo la más débil
+
+- Se intentó leer una encuesta del IEP de agosto de 2026 sobre **afectación y percepción de emergencias**:
+  el sitio no fue accesible desde esta sesión. ⚠️ **Lectura pendiente**: es la fuente cuantitativa de
+  percepción ciudadana más prometedora para 2026.
+- No se encontró conversación de Reddit ni X indexada. La pista se sigue reconstruyendo desde la prensa.
+
+### 9.3 💼 Pista de negocio: ver §10
+
+Todo lo nuevo de negocio se integra en el rol de la empresa privada (§10).
+
+---
+
+## 10. 🏭 El rol de la empresa privada
+
+> Sección nueva (iter. 3). Pregunta: **¿qué papel juega la empresa privada en lo que El Niño le hace a
+> las personas: lo agrava, lo amortigua o ambas cosas?** Se mantienen separadas las tres pistas: la
+> solidez académica (🟢/🔵) no se mezcla con lo que dice la gente ni con lo que declaran los gremios.
+
+### 10.0 Conclusión
+
+La empresa privada **decide buena parte del daño** en los tres tiempos del Niño. **Antes**, porque elige
+dónde se invierte y se construye. **Durante**, porque de ella dependen el empleo, el crédito, el seguro y el
+abastecimiento del hogar. **Después**, porque reconstruye y financia la recuperación. La evidencia más
+sólida dice que su aporte más valioso **no es la donación visible** sino **mantener a flote el ingreso y
+la liquidez del hogar** en las semanas del golpe. Ese es el canal por el que El Niño termina en hambre y
+en niños más bajos (§3.4-3.5). También dice que la empresa puede **empeorar** el daño: transmite el golpe
+por sus cadenas y, cuando invierte o urbaniza en zonas expuestas, construye el riesgo.
+
+### 10.1 Seis papeles, con su evidencia
+
+| Papel | Qué hace | Evidencia más sólida | Solidez |
+|---|---|---|---|
+| **1. Transmisora del golpe** | El daño viaja por la cadena de proveedores y clientes, y llega al trabajador como despido, menos horas o menos jornales. | En Japón 2011, el golpe llegó a firmas a **2 y 3 grados de distancia** de la zona afectada (F-854). En Perú, El Niño elevó la **morosidad de las agroexportadoras en 1,29 pp** (1,54 pp en mypes) desde el segundo mes (F-856). Agroexportación: −US$1.498 M en 2026-27 (F-852). | 🟢 A (mecanismo global) · 🔵 B (Perú) |
+| **2. Amortiguadora del hogar** | Crédito reprogramado, seguro, salario que se mantiene, góndola abastecida. | La **liquidez antes del pico** reduce 36% los días sin comer (F-793). En 2017 se reprogramaron **S/2.491 M** en deudas de mypes en dos meses (F-863) y las cajas postergaron S/600 M en cobros (F-778). Pero el seguro cubrió entre ~7% y ~35% del daño, según la base (F-773, §6); solo ~3,3% de hogares y ~**5% de empresas** tienen seguro de desastres (F-871). | 🟢 A (mecanismo) · 🟠 D (cifras de 2017) |
+| **3. Respondedora en la emergencia** | Dona, presta su logística, abre tiendas como centros de acopio. | 2017: la SNI envió 500 t de alimentos con la Marina; Cencosud 95 t y 19 tiendas de acopio; Ferreycorp S/4 M en maquinaria (F-866). No existe un total público de lo donado. Caso Walmart tras Katrina: llegó antes que el Estado (F-861, fuente con sesgo pro-mercado). | 🟡 C / 🟠 D |
+| **4. Constructora y financista** | Ejecuta obras de prevención y reconstrucción (Obras por Impuestos, contratos). | La Ley 30556 abrió Obras por Impuestos para la reconstrucción; en abril de 2017 había 140 proyectos por S/1.295 M (F-864). Pero 32 obras de la reconstrucción **duplicaron su costo y triplicaron su plazo** y 217 quedaron paralizadas (F-865); 6 de cada 10 drenajes pluviales siguen paralizados en 2026 (F-850). | 🟠 D (fallas documentadas por la Contraloría) |
+| **5. Generadora de riesgo** | Invierte, urbaniza o vende en zonas expuestas; especula con precios. | Las empresas hacen **70-85% de la inversión**: deciden cuánto riesgo se acumula (F-862). En Trujillo 2017, el daño se debió **sobre todo a la urbanización sin plan** sobre quebradas (F-869); en Virú, 3.700 viviendas destruidas o inhabitables, muchas en terrenos de traficantes (F-870). | 🔵 B |
+| **6. Productora de información** | Mide el riesgo, avisa, paga por índice. | El Centro de Monitoreo de RIMAC publicó la exposición de Lima y Callao (F-851) y asesora a sus empresas aseguradas (F-784). Los seguros paramétricos pagan por índice (F-775, F-786). | 🟡 C |
+
+### 10.2 Qué hace que una empresa amortigüe en vez de transmitir
+
+- **La gestión importa más que el tamaño.** En un panel de ~8.000 firmas de 33 países, las **mejor
+  gestionadas** perdieron mucho menos empleo y capital tras un desastre, y se adaptaron más (F-855,
+  documento de trabajo).
+- **Lo que más daña es la interrupción, no el agua.** En Tanzania, las firmas sufrieron sobre todo por
+  caminos, luz y agua cortados (F-858). En el norte peruano, eso equivale a carreteras: casi la mitad de la
+  red vial está en distritos de riesgo alto (F-850).
+- **La mype queda sola.** Resisten mejor las firmas grandes, productivas y con acceso a financiamiento
+  (F-859). Pero casi todas las empresas peruanas son mypes y solo ~5% tiene seguro (F-871). El hogar que
+  depende de una mype o del jornal agrícola no tiene quien lo amortigüe.
+
+### 10.3 Tensiones que no se resuelven
+
+1. **La agenda empresarial protege a la empresa, no siempre al trabajador.** La CCL pide para 2026
+   liquidez y alivio tributario, y también **flexibilizar jornadas y aplicar la suspensión perfecta de
+   labores** (F-868). Es racional para salvar la firma, pero traslada el golpe al ingreso del hogar, que es
+   justo el canal del daño infantil (F-746, F-752).
+2. **Más ágil no es más eficaz.** Obras por Impuestos se vendió como vía rápida (F-864); la reconstrucción
+   en conjunto terminó con sobrecostos, obras paralizadas y prevención sin ejecutar (F-865, F-769, F-770).
+   La evidencia no permite saber si las obras ejecutadas por empresas rindieron mejor que las públicas.
+3. **Especulación: lo que se dice y lo que se prueba.** La conversación social culpa a los vendedores por
+   el precio del limón (F-767). Pero las alzas de 2023 se explican por la caída de la oferta (90% de la
+   floración perdida, F-777). Además, el INDECOPI **no puede sancionar alzas de precio**; solo la
+   concertación. La especulación es delito penal y la ve el Ministerio Público (F-867). No se encontró
+   ninguna sanción por especulación ligada a 2017.
+4. **La empresa como parte de la vulnerabilidad.** La ecología política sostiene que el clima detona y la
+   vulnerabilidad mata (F-759). Aplicado aquí: una parte de esa vulnerabilidad la **construyeron actores
+   privados**, formales (inversión en zonas expuestas, F-862) e informales (tráfico de terrenos, F-870).
+
+### 10.4 📱 Qué dice la gente de las empresas (pista social)
+
+**Nivel de instalación: 💬 presente, no instalado.** La conversación pública sobre El Niño culpa al
+**Estado** (reconstrucción inconclusa, prevención sin ejecutar: F-769, F-770) y habla de **precios**
+(F-767). Las empresas aparecen poco y con dos caras:
+
+- **Solidaridad visible:** la campaña #UnaSolaFuerza de 2017 con donaciones de marcas conocidas (F-866).
+- **Culpa estructural:** solo medios militantes culpan a la vez al gobierno y a las élites económicas
+  (F-879, 🔴 E); no se midió validación social.
+- No se encontró conversación sobre **reclamos a aseguradoras** por siniestros de 2026 (se buscó).
+
+### 10.5 Contraevidencia buscada
+
+- **¿Y si el mercado se recupera solo?** En EE. UU., tras un desastre el empleo se recupera y los salarios
+  suben a largo plazo (F-860). **No se traslada al Perú:** allí hay seguro, transferencias y crédito; en
+  economías informales la pérdida de empleo es mucho mayor (F-857).
+- **¿La empresa responde mejor que el Estado?** Solo hay estudios de caso con sesgo pro-mercado (F-861).
+  No se encontró medición independiente.
+- **¿La donación corporativa cubre la recuperación?** No: la mitad de lo donado llega en dos semanas (F-877)
+  y las empresas dan donde hay atención mediática o mercado, no donde hay más necesidad (F-878).
+- **Lado positivo poco visible:** en 2017, el **89% de lo asegurado lo pagó el reaseguro internacional**
+  (F-773). Es capital privado extranjero que absorbió la pérdida, no el Estado ni el hogar.
+
+### 10.6 Qué recomienda la evidencia a una empresa (de más a menos sólido)
+
+1. **Proteger la liquidez del hogar en las semanas del golpe**, y si es posible antes: anticipar sueldos,
+   reprogramar sin penalizar, seguro colectivo que pague rápido. Es lo que la evidencia más sólida conecta
+   con menos hambre y menos daño infantil (F-793, F-746, F-752).
+2. **Mantener la operación y la cadena**, porque la continuidad del negocio es empleo y abastecimiento.
+   Planificar con proveedores y logística alternativa (F-854, F-855, F-858).
+3. **No financiar ni construir riesgo:** incorporar la exposición a inundación en crédito hipotecario,
+   inversión inmobiliaria y ubicación de plantas (F-862, F-869).
+4. **Cuidar a gestantes y niños pequeños** de la planilla y de la cadena (agro norteño): es la ventana
+   donde el daño dura décadas (F-744 a F-746).
+5. **Donar para la recuperación, no solo para la emergencia**, y hacerlo público con cifras (F-877, F-878).
+6. **Abastecer y ser transparente con los precios**: reduce el miedo y el ruido de especulación (F-867,
+   F-768).
+
+**Para RIMAC** (derivado, no evidencia): su propio estudio de exposición de Lima y Callao (F-851) es un
+bien público que pocas empresas producen; la recomendación 1 coincide con las apuestas A y B del informe
+para RIMAC (§8.2) y con la lección de El Lobo de que el hueco está en la liquidez del hogar y se cubre por
+socios (cajas, empleadores), no vendiendo seguro índice al hogar directo.
+
+### 10.7 Limitaciones de esta sección
+
+- **No hay estudio peruano** que mida el empleo perdido en empresas por El Niño de 2017 ni de 2023 (se buscó).
+- No existe un **total público de donaciones** privadas en 2017.
+- Varias cifras de 2026 vienen de prensa que cita a gremios o a empresas (🟡 C / 🟠 D) y cambiarán.
+- La pista social sobre empresas es casi inexistente: la conversación mira al Estado.
 
 ---
 
