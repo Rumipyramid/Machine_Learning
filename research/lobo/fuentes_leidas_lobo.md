@@ -345,3 +345,6 @@
 | F-694 | 🟢 A | 2026-11-24 | Intuición 325 — la compresa caliente no vuelve generosa a la gente; pedir réplicas directas, no conceptuales, antes de invertir en «ambiente cálido» (resumen y comentarios; lectura débil) |
 | F-724 | 🟢 A | 2026-11-24 | Intuición 326 — la aversión a la pérdida se achica con el conocimiento del atributo; encuadrar en pérdidas rinde más con el novato y el mayor (resumen y nota de prensa; lectura débil) |
 | F-666 | 🟢 A | 2026-11-24 | Intuición 327 — una espera se juzga contra las esperas previas; comunicar consistencia, no el récord (resumen y PMC; lectura débil) |
+| F-681 | 🟢 A | 2026-11-25 | Intuición 330 — los principios de agrupamiento visual son sólidos y sus explicaciones viejas no; diseñar la cotización con el fenómeno y probar cuál gana cuando chocan (resumen y fichas; lectura débil) |
+| F-581 | 🟢 A | 2026-11-25 | Intuición 329 — la IA generativa acelera tareas cerradas y el 68% entrega el borrador sin editar; medir el piloto con el contexto real y revisar contenido (documento de trabajo; lectura media) |
+| F-662 | 🟢 A | 2026-11-25 | Intuición 328 — el incentivo chico puede hacer creer en lo hecho y el grande solo compra la conducta; el clásico es frágil, probar en piloto (resúmenes y textos docentes; lectura débil) |
