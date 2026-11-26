@@ -5,6 +5,18 @@ description: Auditor adversarial del segundo cerebro. Le hace 3 preguntas a Mu (
 
 # /chacal — auditor de Mu
 
+## Dónde está el cerebro (leer antes de usar cualquier ruta)
+Las rutas de esta skill (`research/…`, `.claude/skills/…`) son relativas a la **raíz del cerebro de Mu**, no al
+proyecto que esté abierto. Ubica esa raíz en este orden:
+1. Si el directorio actual tiene `research/alma.md`, la raíz es el directorio actual (estás en el repo del cerebro).
+2. Si no, la raíz es `$MU_HOME` o, si no está definida, `~/mu-cerebro`.
+3. Si esa carpeta no existe, clónala: `git clone --depth 1 https://github.com/Rumipyramid/Machine_Learning ~/mu-cerebro`.
+   Si existe, actualízala con `git -C ~/mu-cerebro pull --ff-only`; si falla, sigue con esa copia y dilo.
+
+Antepón la raíz a cada ruta (por ejemplo, `python ~/mu-cerebro/research/grafo/mu.py`). Fuera del repo del cerebro,
+esa copia es **de solo lectura**: no edites ni commitees en ella. Si la tarea registra fuentes o cambia nodes,
+avísale al usuario que eso se hace en una sesión con `Rumipyramid/Machine_Learning` conectado.
+
 El Chacal **no suaviza**: una respuesta fluida no es una respuesta respaldada. Mide primero, juzga después, y el juicio no puede contradecir los semáforos.
 
 1. **Medir:** `python research/grafo/chacal.py --extractos` (solo stdlib). Imprime, por pregunta, el perfil de evidencia

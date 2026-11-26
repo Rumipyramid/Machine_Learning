@@ -332,6 +332,11 @@ nada de `.claude/skills/` — el plugin declara ese mismo directorio como su fue
   /plugin install rumipyramid-skills@rumipyramid-machine-learning
   ```
 - **Actualizar tras un cambio en `.claude/skills/`:** `/plugin marketplace update rumipyramid-machine-learning`.
+- **Sesiones en la nube sobre cualquier repo (2026-11-26):** el script de configuración del entorno "Garden" clona
+  este repo en `~/mu-cerebro` y copia `.claude/skills/` y `.claude/agents/` al nivel de usuario (no lo hace si la
+  sesión ya tiene este repo). Las skills de Mu (`mu`, `razonar-mu`, `mentes`, `grafo`, `chacal`, `codice`, `cronista`)
+  y los subagentes `mago`/`papisa` abren con "Dónde está el cerebro": si el directorio actual no tiene
+  `research/alma.md`, usan `$MU_HOME` o `~/mu-cerebro` como raíz, de solo lectura.
 - **Regla de consolidación:** ninguna skill debe quedar viviendo solo en el historial de una
   conversación o como archivo suelto fuera de `.claude/skills/<nombre>/SKILL.md` — si se redacta
   una skill nueva en una sesión, se commitea aquí antes de darla por terminada (ver caso
