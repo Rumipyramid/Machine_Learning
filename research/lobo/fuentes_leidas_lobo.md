@@ -348,3 +348,6 @@
 | F-681 | 🟢 A | 2026-11-25 | Intuición 330 — los principios de agrupamiento visual son sólidos y sus explicaciones viejas no; diseñar la cotización con el fenómeno y probar cuál gana cuando chocan (resumen y fichas; lectura débil) |
 | F-581 | 🟢 A | 2026-11-25 | Intuición 329 — la IA generativa acelera tareas cerradas y el 68% entrega el borrador sin editar; medir el piloto con el contexto real y revisar contenido (documento de trabajo; lectura media) |
 | F-662 | 🟢 A | 2026-11-25 | Intuición 328 — el incentivo chico puede hacer creer en lo hecho y el grande solo compra la conducta; el clásico es frágil, probar en piloto (resúmenes y textos docentes; lectura débil) |
+| F-725 | 🟢 A | 2026-11-26 | Intuición 331 — el peso de la pérdida cambia con el rango de montos mostrado; la atenuación resiste, la inversión no replicó; probar el encuadre con dos menús (resumen, PMC, crítica y réplica; lectura débil) |
+| F-805 | 🟢 A | 2026-11-26 | Intuición 332 — corregir la autoselección divide por siete el efecto de un programa de lealtad; preguntar cuánto gastaría el afiliado sin afiliarse (resúmenes y nota de prensa; lectura débil) |
+| F-712 | 🟢 A | 2026-11-26 | Intuición 333 — la fuerza de la evidencia original y lo sorprendente del efecto predicen la réplica; dividir el efecto publicado por dos al planificar (resúmenes y repositorios; lectura débil) |
