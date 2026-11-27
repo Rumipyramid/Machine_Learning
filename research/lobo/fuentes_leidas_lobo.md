@@ -351,3 +351,6 @@
 | F-725 | 🟢 A | 2026-11-26 | Intuición 331 — el peso de la pérdida cambia con el rango de montos mostrado; la atenuación resiste, la inversión no replicó; probar el encuadre con dos menús (resumen, PMC, crítica y réplica; lectura débil) |
 | F-805 | 🟢 A | 2026-11-26 | Intuición 332 — corregir la autoselección divide por siete el efecto de un programa de lealtad; preguntar cuánto gastaría el afiliado sin afiliarse (resúmenes y nota de prensa; lectura débil) |
 | F-712 | 🟢 A | 2026-11-26 | Intuición 333 — la fuerza de la evidencia original y lo sorprendente del efecto predicen la réplica; dividir el efecto publicado por dos al planificar (resúmenes y repositorios; lectura débil) |
+| F-715 | 🟢 A | 2026-11-27 | Intuición 334 — se prefiere más dolor con mejor final; la prueba fue con dolor leve y breve: probar el cierre suave del siniestro midiendo renovación (resúmenes y reseñas; lectura débil) |
+| F-743 | 🟢 A | 2026-11-27 | Intuición 335 — El Niño resta en unos países, suma en otros y sube precios: preguntar quién pierde y por qué canal (resúmenes FMI y RePEc; lectura débil) |
+| F-810 | 🟢 A | 2026-11-27 | Intuición 336 — la caducidad de puntos sube la compra solo en el cliente con holgura; segmentar por capacidad de respuesta (fichas y página de la autora; lectura débil) |
