@@ -354,3 +354,6 @@
 | F-715 | 🟢 A | 2026-11-27 | Intuición 334 — se prefiere más dolor con mejor final; la prueba fue con dolor leve y breve: probar el cierre suave del siniestro midiendo renovación (resúmenes y reseñas; lectura débil) |
 | F-743 | 🟢 A | 2026-11-27 | Intuición 335 — El Niño resta en unos países, suma en otros y sube precios: preguntar quién pierde y por qué canal (resúmenes FMI y RePEc; lectura débil) |
 | F-810 | 🟢 A | 2026-11-27 | Intuición 336 — la caducidad de puntos sube la compra solo en el cliente con holgura; segmentar por capacidad de respuesta (fichas y página de la autora; lectura débil) |
+| F-730 | 🟢 A | 2026-11-28 | Intuición 337 — el esfuerzo propio sube el valor solo si la tarea termina; medir qué parte del flujo de autoservicio se completa (resúmenes y repositorio de Harvard; lectura débil) |
+| F-726 | 🟢 A | 2026-11-28 | Intuición 338 — comparar grupos solo sobre los mismos estímulos; si no, la diferencia puede ser de mezcla (resúmenes y respuesta de los autores; lectura débil) |
+| F-814 | 🟢 A | 2026-11-28 | Intuición 339 — bajar de nivel destruye más rentabilidad en el cliente alto; calcular lo que deja de aportar y ofrecer salida suave (resumen DOAJ y fichas; lectura débil) |
